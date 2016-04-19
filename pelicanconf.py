@@ -12,7 +12,7 @@ TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
 
-THEME = "pelican-hyde"
+THEME = "pelican-hyde-modified"
 
 
 # Feed generation is usually not desired when developing
