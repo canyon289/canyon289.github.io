@@ -1,0 +1,21 @@
+<div class="sidebar">
+    <div class="container">
+        <div >
+            <h1 class="sidebar-title">
+                <a href="/">
+                    <!---<img class="profile-picture" src="{{ SITEURL }}/images/{{ PROFILE_IMAGE }}"> --->
+                    {{ SITENAME }}
+                </a>
+            </h1>
+        </div>
+      {% for p in pages %}
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="{{ SITEURL }}/{{ p.url }}">
+              {{ p.title }}
+              </a>
+            </h1>
+        </div>
+      {% endfor %}
+    </div>
+</div>

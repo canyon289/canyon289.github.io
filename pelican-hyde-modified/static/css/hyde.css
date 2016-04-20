@@ -65,8 +65,8 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
-    text-align: center;
+    width: 17rem;
+    text-align: left;
   }
 }
 
@@ -75,17 +75,36 @@ html {
   color: #fff;
 }
 
-/* About section */
+/* Title section */
 
-.sidebar-about h1 {
+.sidebar-title {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: right;
 }
 
-.sidebar-about .lead {
-  font-size: .8rem;
+.sidebar-page {
+  color: #fff;
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Add Horizontal Line */
+
+.sidebar-title:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 30px 0;
+    background: #fff;
+    background: rgba( 255, 255, 255, 0.2 );
 }
 
 .sidebar-about .profile-picture {
@@ -125,6 +144,8 @@ a.sidebar-nav-item.active:focus {
   color: #fff;
 }
 
+
+
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
@@ -162,7 +183,7 @@ a.sidebar-nav-item.active:focus {
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 22rem;
+    margin-left: 24rem;
     margin-right: 4rem;
   }
 }
@@ -273,4 +294,15 @@ a.sidebar-nav-item.active:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+  
+}
+
+/* Dark Green */
+.theme-base-darkgreen .sidebar {
+  background-color: #395e40;
+}
+.theme-base-darkgreen .content a,
+.theme-base-darkgreen .related-posts li a:hover {
+  color: #395e40;
+  
 }
