@@ -6,7 +6,10 @@ AUTHOR = 'Ravin Kumar'
 SITENAME = 'Cracking the Data Science Interview'
 SITEURL = ''
 
+#Content Path
 PATH = 'content'
+
+OUTPUT_PATH = '..'
 
 TIMEZONE = 'America/Los_Angeles'
 
@@ -14,6 +17,9 @@ DEFAULT_LANG = 'en'
 
 THEME = "pelican-hyde-modified"
 
+DELETE_OUTPUT_DIRECTORY = True
+
+SUMMARY_MAX_LENGTH = 40
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
