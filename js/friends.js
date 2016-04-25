@@ -68,7 +68,7 @@ console.log(circles)
 
 
 //Load data and go through functions
-d3.text("data/friends/input03.txt", function(error, file_data) {
+d3.text("data/friends/input07.txt", function(error, file_data) {
   
   //Split into array and drop first item
   raw_data = file_data.split("\n").splice(1)

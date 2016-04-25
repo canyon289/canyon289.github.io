@@ -3,8 +3,8 @@ conjunction with the DFS program found in the
 adjacent file
 */
 
-var height = 500
-var width = 500
+var height = 600
+var width = 600
 var radius = 5
 var d3_data
 
@@ -42,7 +42,7 @@ function draw_network(){
         .size([width,height])
         .nodes(d3_data["nodes"])
         .links(d3_data["edges"])
-        .linkDistance([15])
+        .linkDistance([30])
         .charge([-30])
         .start();
     

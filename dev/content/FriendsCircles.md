@@ -5,6 +5,7 @@ Tags:
 Slug: FriendsCircles
 Authors: Ravin Kumar
 javascripts: https://d3js.org/d3.v3.min.js, friends.js, friends_vis.js
+Stylesheets: friends_vis.css
 Status: published
 
 
@@ -69,8 +70,8 @@ and ran out of time
 
 ##The Solution
 It was misleading that the problem was titled Friends Circles
-because the problem is actually asking How many people
-know are connected through their friends and their 
+because the problem is actually asking how many people
+ are connected through their friends and their 
 friends friends. In math terms it's asking how many groups
 of nodes are connected by their edges.  
   
