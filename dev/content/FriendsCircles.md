@@ -4,6 +4,7 @@ Category:
 Tags: 
 Slug: FriendsCircles
 Authors: Ravin Kumar
+javascripts: https://d3js.org/d3.v3.min.js, friends.js, friends_vis.js
 Status: published
 
 
@@ -82,9 +83,16 @@ next node and try again. The number of unique trees
 is the answer to all the test cases.
 
 ##Code
-Given a sparse representation of a network
+The first order of business is to read in the inputs that look like this  
+```
+YYNN  
+YYYN  
+NYYN  
+NNNY  
+```
 
-###Representation
+into a sparse matrix that looks like this
+
 ```python
 network = {0:[1]
            1:[0,2],
@@ -92,10 +100,12 @@ network = {0:[1]
            3:[]
            }
 ```
+I chose the sparse matrix because beside being very human readable it also
+lends itself to the search process.
 
-The following algorithm picks a person, does a depth first search
-of that person's friends, and adds 1 to the circle count when it's found
-all its friends
+Given a sparse matrix we can now find circles by doing a depth first search
+of that person's friends as shown below.
+
 ```python
 
 def find_circles(friends_dict):
@@ -122,7 +132,11 @@ def find_circles(friends_dict):
         
     return circle
 ```
-In particular to note is that the find_friends function is the workhouse
+The algorithm works initially picking a node. It then traverses the tree
+to find all others nodes (friends) that are connected with the initial node.
+When it exhausts all friends in the chain it tries the next node.
+
+In particular is the the find_friends function. This is the workhouse
 of this implementation. It recursively finds the friends of the current node.
 The find_circles function mostly acts as an outer wrapper, storing the
 friends count and the visited list.
@@ -131,3 +145,15 @@ The visited list is particularly important because it ensures two things.
 One is that we don't waste computational time finding all the friends of a 
 person we've already searched. Additionally it allows the find_friends
 function to terminate once all the visited friends in a tree have been found.
+
+##Visualization
+Here's a visualization of the search process. You notice that once the algorithm
+finds a tree it stays on it until there are no more nodes left.
+
+To make this visualization the algorithm was also reimplemented in javascript which
+you can find here. The visualization is possible due to the awesome
+d3 javascript library which will get a post of it's own in the future
+
+###Click to start search
+<div id="vis"> </div>
+

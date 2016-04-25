@@ -18,6 +18,8 @@
 		<link rel="stylesheet" href="/theme/css/hyde.css" />
 		<link rel="stylesheet" href="/theme/css/syntax.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- CSS style sheets for pelican javascript plugin -->    
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -102,8 +104,15 @@ to find all the nodes that share a tree, then move onto the
 next node and try again. The number of unique trees
 is the answer to all the test cases.</p>
 <h2 id="code"><a class="toclink" href="#code">Code</a></h2>
-<p>Given a sparse representation of a network</p>
-<h3 id="representation"><a class="toclink" href="#representation">Representation</a></h3>
+<p>The first order of business is to read in the inputs that look like this  </p>
+<div class="highlight"><pre><span class="code-line"><span></span>YYNN  </span>
+<span class="code-line">YYYN  </span>
+<span class="code-line">NYYN  </span>
+<span class="code-line">NNNY  </span>
+</pre></div>
+
+
+<p>into a sparse matrix that looks like this</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="n">network</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:[</span><span class="mi">1</span><span class="p">]</span></span>
 <span class="code-line">           <span class="mi">1</span><span class="p">:[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span></span>
 <span class="code-line">           <span class="mi">2</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span></span>
@@ -112,6 +121,10 @@ is the answer to all the test cases.</p>
 </pre></div>
 
 
+<p>I chose the sparse matrix because beside being very human readable it also
+lends itself to the search process.</p>
+<p>Given a sparse matrix we can now find circles by doing a depth first search
+of that person's friends as shown below.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">find_circles</span><span class="p">(</span><span class="n">friends_dict</span><span class="p">):</span></span>
 <span class="code-line">    <span class="sd">&#39;&#39;&#39;</span></span>
 <span class="code-line"><span class="sd">    Iterate through friends dict to find </span></span>
@@ -138,8 +151,30 @@ is the answer to all the test cases.</p>
 </pre></div>
 
 
-<h1 id="test3"><a class="toclink" href="#test3">Test3</a></h1>
+<p>The algorithm works initially picking a node. It then traverses the tree
+to find all others nodes (friends) that are connected with the initial node.
+When it exhausts all friends in the chain it tries the next node.</p>
+<p>In particular is the the find_friends function. This is the workhouse
+of this implementation. It recursively finds the friends of the current node.
+The find_circles function mostly acts as an outer wrapper, storing the
+friends count and the visited list.</p>
+<p>The visited list is particularly important because it ensures two things.
+One is that we don't waste computational time finding all the friends of a 
+person we've already searched. Additionally it allows the find_friends
+function to terminate once all the visited friends in a tree have been found.</p>
+<h2 id="visualization"><a class="toclink" href="#visualization">Visualization</a></h2>
+<p>Here's a visualization of the search process. You notice that once the algorithm
+finds a tree it stays on it until there are no more nodes left.</p>
+<p>To make this visualization the algorithm was also reimplemented in javascript which
+you can find here. The visualization is possible due to the awesome
+d3 javascript library which will get a post of it's own in the future</p>
+<h3 id="click-to-start-search"><a class="toclink" href="#click-to-start-search">Click to start search</a></h3>
+<p><div id="vis"> </div></p>
 </div>
 		</div>
 	</body>
+    <!-- Javascript Loader for Pelican Javascript plugin-->
+                <script src="https://d3js.org/d3.v3.min.js"></script>
+                <script src="/js/friends.js"></script>
+                <script src="/js/friends_vis.js"></script>
 </html>

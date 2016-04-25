@@ -21,6 +21,8 @@ DELETE_OUTPUT_DIRECTORY = True
 
 SUMMARY_MAX_LENGTH = 40
 
+STATIC_PATHS = ['images', 'data']
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -41,7 +43,8 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = False
 DISPLAY_PAGES_ON_MENU = True
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["better_codeblock_line_numbering"]
+PLUGINS = ["better_codeblock_line_numbering",
+           "pelican_javascript"]
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
