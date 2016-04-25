@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Cracking the Data Science Interview</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/theme/css/poole.css" />
+		<link rel="stylesheet" href="/theme/css/hyde.css" />
+		<link rel="stylesheet" href="/theme/css/syntax.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	</head>
+
+	<body class="theme-base-darkgreen">
+<div class="sidebar">
+    <div class="container">
+        <div >
+            <h1 class="sidebar-title">
+                <a href="/">
+                    <!---<img class="profile-picture" src="/images/"> --->
+                    Cracking the Data Science Interview
+                </a>
+            </h1>
+        </div>
+    </div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">Q: Friend Circles</h1>
+	<span class="post-date">Sat 23 April 2016</span>
+	<p>There are N students in a class. Some of them are friends, while some are not.
+Their friendship is transitive in nature, i.e., if A is friend of B and B is friend of C,
+then A is also friend of C. A friend circle is a group of students who are directly or
+indirectly friends.
+You have to complete a function int friendCircles(char[][] friends) which returns the
+number of friend circles in the class. Its argument, friends, is a NxN matrix which
+consists of characters 'Y' or 'N'. If friends[i][j] = 'Y', then i and j students are
+friends with each other, otherwise not. You have to return the total number of
+friend circles in the class.
+Note: The method signature will differ by language. For example, Java will have 'int
+friendCircles﴾String[] friends﴿' where "friends" is an array of strings, which can be
+viewed as a 2 dimensional array of characters.</p>
+<p>Constraints:<br />
+-  1 &lt;= N &lt;= 300<br />
+-  Each element of matrix friends will be 'Y' or 'N'<br />
+-  Number of rows and columns will be equal in friends<br />
+-  friends[i][i] = 'Y', where 0 &lt;= i &lt; N<br />
+-  friends[i][j] = friends[j][i], where 0 &lt;= i &lt; j &lt; N  </p>
+<h2 id="question-format"><a class="toclink" href="#question-format">Question Format</a></h2>
+<p>Online coding challenge</p>
+<h2 id="time-constraint"><a class="toclink" href="#time-constraint">Time Constraint</a></h2>
+<p>1 of 3 Coding problems 2 Hours given</p>
+<h2 id="context"><a class="toclink" href="#context">Context</a></h2>
+<p>This question was a 2nd round automated interview question
+given after passing multiple choice statistics question</p>
+<h2 id="initial-thoughts"><a class="toclink" href="#initial-thoughts">Initial thoughts</a></h2>
+<p>When I saw this question I made a critical error
+in my initial understanding of what a friends circle meant.</p>
+<p>I was able to make the first key insight which is that
+that the friends and relationships are a structure called
+Network Graph. The problem is asking to find the number
+of unique relationships that span friends. I first
+ran into my first issue here.</p>
+<p>Because of the title Friends Circles I became fixated
+on the thought that a closed loop is what I was
+looking for. Loops in graphs are called cycles
+and numerous algorithms exist to find them. However
+this is not what this question was asked for and I wasted
+pretty much 40 minutes implementing this solution.</p>
+<h2 id="where-i-went-wrong"><a class="toclink" href="#where-i-went-wrong">Where I went wrong</a></h2>
+<h3 id="not-understanding-the-question"><a class="toclink" href="#not-understanding-the-question">Not understanding the question</a></h3>
+<p>During the interview I wasn't able to understand the 
+question correctly. Unfortunately since I had no human
+interviewer I was unable to ask for clarification</p>
+<h3 id="too-slow-to-iterate"><a class="toclink" href="#too-slow-to-iterate">Too slow to iterate</a></h3>
+<p>It became apparent to me that my understanding was
+wrong when I failed the majority of the test cases.
+But I had already wasted 30 minutes to get to that point
+and ran out of time</p>
+<h2 id="the-solution"><a class="toclink" href="#the-solution">The Solution</a></h2>
+<p>It was misleading that the problem was titled Friends Circles
+because the problem is actually asking How many people
+know are connected through their friends and their 
+friends friends. In math terms it's asking how many groups
+of nodes are connected by their edges.  </p>
+<p>Given this understanding the problem is extremely simple.
+Any graph can be composed into a tree. This is a concept
+called tree composition. In this problem all we needed
+to do was pick a node, run a depth first search algorithm
+to find all the nodes that share a tree, then move onto the
+next node and try again. The number of unique trees
+is the answer to all the test cases.</p>
+<h2 id="code"><a class="toclink" href="#code">Code</a></h2>
+<p>Given a sparse representation of a network</p>
+<h3 id="representation"><a class="toclink" href="#representation">Representation</a></h3>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="n">network</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:[</span><span class="mi">1</span><span class="p">]</span></span>
+<span class="code-line">           <span class="mi">1</span><span class="p">:[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span></span>
+<span class="code-line">           <span class="mi">2</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span></span>
+<span class="code-line">           <span class="mi">3</span><span class="p">:[]</span></span>
+<span class="code-line">           <span class="p">}</span></span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">find_circles</span><span class="p">(</span><span class="n">friends_dict</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&#39;&#39;&#39;</span></span>
+<span class="code-line"><span class="sd">    Iterate through friends dict to find </span></span>
+<span class="code-line"><span class="sd">    &#39;&#39;&#39;</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">find_friends</span><span class="p">(</span><span class="n">person</span><span class="p">):</span></span>
+<span class="code-line">        <span class="sd">&#39;&#39;&#39;</span></span>
+<span class="code-line"><span class="sd">        Recursive function that does Depth First Search of all friends</span></span>
+<span class="code-line"><span class="sd">        &#39;&#39;&#39;</span></span>
+<span class="code-line">        <span class="k">if</span> <span class="n">person</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span></span>
+<span class="code-line">            <span class="n">visited</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">person</span><span class="p">)</span></span>
+<span class="code-line">            <span class="k">for</span> <span class="n">friend</span> <span class="ow">in</span> <span class="n">friends_dict</span><span class="p">[</span><span class="n">person</span><span class="p">]:</span></span>
+<span class="code-line">                <span class="n">find_friends</span><span class="p">(</span><span class="n">friend</span><span class="p">)</span></span>
+<span class="code-line">        <span class="k">return</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="n">visited</span> <span class="o">=</span> <span class="p">[]</span></span>
+<span class="code-line">    <span class="n">circle</span> <span class="o">=</span> <span class="mi">0</span></span>
+<span class="code-line">    <span class="k">for</span> <span class="n">person</span> <span class="ow">in</span> <span class="n">friends_dict</span><span class="p">:</span></span>
+<span class="code-line">        <span class="k">if</span> <span class="n">person</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span></span>
+<span class="code-line">            <span class="n">find_friends</span><span class="p">(</span><span class="n">person</span><span class="p">)</span></span>
+<span class="code-line">            <span class="n">circle</span> <span class="o">+=</span><span class="mi">1</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">circle</span></span>
+</pre></div>
+
+
+<h1 id="test3"><a class="toclink" href="#test3">Test3</a></h1>
+</div>
+		</div>
+	</body>
+</html>

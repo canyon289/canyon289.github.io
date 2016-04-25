@@ -40,6 +40,22 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = False
 DISPLAY_PAGES_ON_MENU = True
+PLUGIN_PATHS = ["pelican-plugins"]
+PLUGINS = ["better_codeblock_line_numbering"]
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+MD_EXTENSIONS = {'markdown.extensions.codehilite' : {'css_class': 'highlight'},
+                'markdown.extensions.extra': {},
+                'markdown.extensions.meta': {},
+                'markdown.extensions.toc': {'anchorlink':True},
+                'markdown.extensions.sane_lists':{}}
+                
+MD_EXTENSIONS = ['fenced_code',
+                'codehilite(css_class=highlight, linenums=False)',
+                'extra',
+                'toc(anchorlink = True)',
+                'sane_lists']
+
+

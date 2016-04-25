@@ -1,5 +1,5 @@
 Title: The Data Science Interview
-Date: 2010-12-03 10:20
+Date: 2016-4-20 10:20
 Category:
 Tags: 
 Slug: TheInterview
