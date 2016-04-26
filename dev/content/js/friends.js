@@ -69,11 +69,10 @@ console.log(circles)
 
 //Load data and go through functions
 d3.text("data/friends/input07.txt", function(error, file_data) {
-  
+
   //Split into array and drop first item
   raw_data = file_data.split("\n").splice(1)
   relationships = format_input(raw_data)
   draw_network()
-  //find_circles(relationships) 
 });
 

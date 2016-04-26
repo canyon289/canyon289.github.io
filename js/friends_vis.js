@@ -7,6 +7,8 @@ var height = 600
 var width = 600
 var radius = 5
 var d3_data
+var in_progress
+
 
 function d3_parser(raw_data){
     d3_data = {"nodes":[], "edges":[]}
@@ -25,12 +27,23 @@ function d3_parser(raw_data){
     return d3_data
 };
 
-//Click Header to start animiation
+//Click Header to start animation
 d3.select("#click-to-start-search")
-        .on("click", function() {find_circles(relationships)})
+        .on("click", function() {
+            if (in_progress){
+                console.log("Visualisation already running")
+                return;
+            }
+            else {
+            //Click header to start animation
+            find_circles(relationships)
+            in_progress = true
+            }
+        });
         
  
 function draw_network(){ 
+    //Draws Network Diagram
     d3_data = d3_parser(raw_data)
     
     var svg = d3.select("#vis").append("svg")
@@ -60,7 +73,7 @@ function draw_network(){
                 .attr("class", "node")
                 .attr("id", function(d) {return(d["number"])})
                 .attr("r", radius)
-                //.call(force.drag)
+                .call(force.drag)
     
 
 
