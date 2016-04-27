@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Cracking the Data Science Interview</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/theme/css/poole.css" />
+		<link rel="stylesheet" href="/theme/css/hyde.css" />
+		<link rel="stylesheet" href="/theme/css/syntax.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- CSS style sheets for pelican javascript plugin -->    
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class="theme-base-darkgreen">
+<div class="sidebar">
+    <div class="container">
+        <div >
+            <h1 class="sidebar-title">
+                <a href="/">
+                    <!---<img class="profile-picture" src="/images/"> --->
+                    Cracking the Data Science Interview
+                </a>
+            </h1>
+        </div>
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="/pages/reference_page.html">
+              References
+              </a>
+            </h1>
+        </div>
+    </div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">Q: Finding a match</h1>
+	<span class="post-date">Mon 25 April 2016</span>
+	<p>Two people join a dating site independently. Upon signing up they pick 5 words to
+describe themselves out of 25 given words. If 4 out of 5 of the words are the
+same the dating site declares they're a match. What's the probability
+those couples match?</p>
+<h2 id="question-format"><a class="toclink" href="#question-format">Question Format</a></h2>
+<p>Online text input box</p>
+<h2 id="time-constraint"><a class="toclink" href="#time-constraint">Time Constraint</a></h2>
+<p>1 of 20 problems on a one hour test</p>
+<h2 id="context"><a class="toclink" href="#context">Context</a></h2>
+<p>This question was a 1st round automated interview test.</p>
+<h2 id="standard-assumptions"><a class="toclink" href="#standard-assumptions">Standard Assumptions</a></h2>
+<p>Given problems like this it's safe to assume the picks are independent
+both between the people, and even between the words themselves. In real life
+if the adjectives "vegetarian" and "steak eater" were in the same list
+it's unlikely the same person would pick both and the choices. Would not 
+entirely be independent. Likewise if the two people were already dating it
+that also would not be independent. But this is a probability 
+multiple choice test so assume independence.</p>
+<p>Another trick which greatly simplifies the problem
+is to assume one person already picked 5 words so find 
+the probability the other person picks 4 out of the 5 words.
+Mathematically it's the same but conceptually it helps
+me work with the problem more easily.</p>
+<h2 id="solution-1"><a class="toclink" href="#solution-1">Solution 1</a></h2>
+<p>If you're unlucky there's a chance you'll blank on the elegant
+way to solve this.<br />
+However if you're partially lucky you'll be sitting in 
+front of a computer with no one around.</p>
+<p>As it turns out I was partially lucky.</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="c1">#Python Monte Carlo Simulation</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">)))</span></span>
+<span class="code-line"><span class="n">number_of_trials</span><span class="p">,</span> <span class="n">matches</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">while</span> <span class="n">number_of_trials</span> <span class="o">&lt;</span> <span class="mi">1000000</span><span class="p">:</span></span>
+<span class="code-line">    <span class="n">c1</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)]</span></span>
+<span class="code-line">    <span class="n">c2</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)]</span></span>
+<span class="code-line">    <span class="k">if</span> <span class="n">c2</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">c1</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span></span>
+<span class="code-line">        <span class="n">matches</span> <span class="o">+=</span><span class="mi">1</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="n">number_of_trials</span> <span class="o">+=</span><span class="mi">1</span></span>
+<span class="code-line">    <span class="k">print</span><span class="p">(</span><span class="n">matches</span><span class="o">/</span><span class="n">number_of_trials</span><span class="p">)</span></span>
+</pre></div>
+
+
+<p>The above code is as crude as it gets. Python
+randomly picks 5 integers out of 24 with no replacement twice.
+It turns compares it's picks. If 4 match the numerator
+increments by one. For each pair of random picks the 
+denominator increments by one. </p>
+<p>If we do this a million times we get a number really close
+to the closed form solution. It actually turns out that
+this simulation gets close to the real answer really quickly
+in close to 1000 iterations which is less than 2 seconds 
+on my laptop.</p>
+<p>This type of solution is called the Monte Carlo method.
+It's actually very useful for a wide range of problems
+that are too complicated for closed form solutions.
+But for this problem there are better solutions.</p>
+<h2 id="solution-2"><a class="toclink" href="#solution-2">Solution 2</a></h2>
+<p>But before we get to the better solution let's say you're
+really unlucky.  You both forgot the elegant method
+and don't have a computer. This problem can be brute forced.  </p>
+<p>To restate the problem this individual needs to pick 
+4 specific words out of 25 with no replacement with 5 picks.
+Let's call this individual Sam.  </p>
+<p>Limiting this to two picks on the first pick there's a 
+5 out of 24 chance that Sam will pick a "match" word
+and a 19 out of 24 that the person will pick a "non match" word.</p>
+<p>However on the second pick the probability is dependent on
+the first pick. If the first pick was a "match" word
+there is now a 4 out of 23 chance that Sam will pick
+a "match" word. Likewise there is a 19/23 chance Sam
+will pick a non match word.</p>
+<p>Since each pick is independent we can multiply the probabilities
+to get the chance of a sequence of picks. We also can add
+each way the picks could play out to get the total chance
+at least 4 match. To save yourself a lot of multiplication
+and division here's the math in Python.</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">print</span><span class="p">(</span></span>
+<span class="code-line"><span class="c1">#All five match</span></span>
+<span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span> <span class="o">+</span> </span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1">#First four are match words, last one isn&#39;t</span></span>
+<span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span> <span class="o">+</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1">#First 3 are match words, 4th doesn&#39;t, last does</span></span>
+<span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>  <span class="o">+</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1">#First 2 are match words, 3rd doesn&#39;t, last 2 do</span></span>
+<span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>  <span class="o">+</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1">#First matches words, 2nd doesn&#39;t, last 3 do</span></span>
+<span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>  <span class="o">+</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1">#First doesn&#39;t match, last 4 do</span></span>
+<span class="code-line"><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span></span>
+<span class="code-line"><span class="p">)</span></span>
+</pre></div>
+
+
+<p>If you multiplied and divided by hand it would be a pain
+but you would get the exact answer.</p>
+<p>If you typed the above by hand into Python
+it would also be a pain and you'd get almost
+the right answer.
+(You don't because of floating point error)</p>
+<h2 id="solution-3"><a class="toclink" href="#solution-3">Solution 3</a></h2>
+<p>If you were really on your game though you'd realize
+that this is a combinatorics problem. Essentially we need to pick
+X winning combinations out of Y possible combinations.</p>
+<p>In combination notation it looks like this.
+</p>
+<div class="math">$${{5 \choose 4}{19 \choose 1} + {5 \choose 5}{19 \choose 0}}
+  \over {25 \choose 5}$$</div>
+<p>In python we can use the Combinations function to get the answer</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">combinations</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">def</span> <span class="nf">cl</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span></span>
+<span class="code-line">    <span class="sd">&#39;&#39;&#39;</span></span>
+<span class="code-line"><span class="sd">    k combination of out length n set</span></span>
+<span class="code-line"><span class="sd">    &#39;&#39;&#39;</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">combinations</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="n">k</span><span class="p">)))</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">numerator</span> <span class="o">=</span>  <span class="n">cl</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="n">cl</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">cl</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="n">cl</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">denominator</span> <span class="o">=</span> <span class="n">cl</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">numerator</span><span class="o">/</span><span class="n">denominator</span></span>
+</pre></div>
+
+
+<p>There are some additional tricks that would allow you to simplify the calculation
+even further but I leave it up to you to explore combinatorics further</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+</div>
+		</div>
+	</body>
+    <!-- Javascript Loader for Pelican Javascript plugin-->
+</html>

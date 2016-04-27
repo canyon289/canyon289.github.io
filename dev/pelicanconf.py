@@ -23,6 +23,8 @@ SUMMARY_MAX_LENGTH = 40
 
 STATIC_PATHS = ['images', 'data']
 
+GOOGLE_ANALYTICS = 'UA-52706904-2'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None

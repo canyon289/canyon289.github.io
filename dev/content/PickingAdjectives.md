@@ -4,7 +4,7 @@ Category:
 Tags: 
 Slug: pickingadjectives
 Authors: Ravin Kumar
-Status: draft
+Status: published
 
 
 Two people join a dating site independently. Upon signing up they pick 5 words to
@@ -25,7 +25,7 @@ This question was a 1st round automated interview test.
 ##Standard Assumptions
 Given problems like this it's safe to assume the picks are independent
 both between the people, and even between the words themselves. In real life
-if the adjectives "vegetarian" and "bbq lover" were in the same list
+if the adjectives "vegetarian" and "steak eater" were in the same list
 it's unlikely the same person would pick both and the choices. Would not 
 entirely be independent. Likewise if the two people were already dating it
 that also would not be independent. But this is a probability 
@@ -160,4 +160,4 @@ numerator/denominator
 ```
 
 There are some additional tricks that would allow you to simplify the calculation
-even further.
+even further but I leave it up to you to explore combinatorics further
