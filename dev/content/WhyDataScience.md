@@ -37,7 +37,7 @@ As it stands humans using computers are better at Chess, Go,
 and predicting which drugs are safe, better than the traditional experts in
 field. And on top of that these people are given enormous flexibility
 to learn from subject matter experts, answer difficult questions,
-and learn an enormous amounts about pretty much topic 
+and learn an enormous amounts about pretty much any topic 
 of their choosing. And they can do this over and over
 for a wide range of subjects.
 

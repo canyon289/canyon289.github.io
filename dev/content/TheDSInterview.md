@@ -28,7 +28,7 @@ wracking.
 ##Why the DS interview is so difficult
 During my Manufacturing Engineering interviews when I'm asked a question
 it's almost always about Manufacturing Engineering. I feel confident in my 
-understanding and I'm able to convincly answer questions. I know this 
+understanding and I'm able to convincingly answer questions. I know this 
 because I've gotten Manufacturing Engineering jobs.
 
 However during Data Scientist interviews, when I'm asked a question it ranges
