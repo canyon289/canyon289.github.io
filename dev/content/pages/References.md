@@ -14,3 +14,7 @@ As a bonus it should also service as handy portal link if you're looking
 for resources!
 
 ##Visualization
+
+
+##Javascript
+[http://adripofjavascript.com/blog/drips/variable-and-function-hoisting]
