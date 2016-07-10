@@ -21,7 +21,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 SUMMARY_MAX_LENGTH = 40
 
-STATIC_PATHS = ['images', 'data']
+STATIC_PATHS = ['images', 'data', 'js', 'css']
 
 GOOGLE_ANALYTICS = 'UA-52706904-2'
 
