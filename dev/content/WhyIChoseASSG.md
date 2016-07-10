@@ -10,8 +10,10 @@ Status: published
 
 
 Initially when I decided to start this blog I started with what I already
-had a WordPress blog. However after a couple of hours I realized there were
-some issues that would present problems.
+had a WordPress blog. Wordpress had served me well in the past, especially
+when I had a more limited programming background. Given the needs of this blog
+however, a Statically Generated Site, turned out to be a better choice.
+
 
 ##Syntax Highlighting
 Wordpress syntax highlighting was ok, but not the best. Given that there 
@@ -43,7 +45,7 @@ and always be worried about updates and security
 
 ##I already have enough to learn
 Given that I'm trying to learn more about Data Science, it just made
-more sense to pick a Static Side Generator (SSG) using a Python based generator. 
+more sense to pick a SSG using a Python based generator. 
 This means I could stay in the same software stack I use for Data Science 
 and continually learn about those things, rather than have to struggle with 
 learning how WordPress works
