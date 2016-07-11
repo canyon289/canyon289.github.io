@@ -8,8 +8,8 @@ Javascripts:
 Stylesheets: 
 Status: published 
 
-Once I had decided to use a [Statically Generated Site]({filename}WhyIChoseASSG.md)
-I had to pick a template. Trouble is that I had already found a template for
+After deciding to use a [Statically Generated Site]({filename}WhyIChoseASSG.md)
+I needed to pick a template. Trouble was that I had already found a template for
 WordPress that I had liked.
 
 ![WordPressTheme]({filename}/images/PelicanTemplate/WordPressTemplate.png)
