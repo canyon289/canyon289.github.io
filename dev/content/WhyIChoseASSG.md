@@ -1,4 +1,4 @@
-Title: Why I chose a SSG
+Title: Why a Statically Generated Site
 Date: 2016-7-10 
 Category: 
 Tags: Tutorial 
@@ -21,9 +21,9 @@ would be a lot of code on this blog this was a huge knock against the WordPress
 environment
 
 ##Difficulty in supporting Javascript/D3
-There is a plugin to support d3 in Wordpress but it's docs only list
-3.3, and given that 3.5 has been around for a while, and 4.0 came up,
-it was evident that trying to embedd visualizations or javascript programs
+There is a plugin to support d3 in Wordpress but its docs only list
+3.3, and given that 3.5 has been around for a while, and that 4.0 just got released,
+it was evident that trying to embedded visualizations or javascript programs
 into the blog wouldn't be straightforward
 
 ##Latex support is limited
