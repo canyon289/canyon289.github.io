@@ -57,7 +57,7 @@ I also wanted links to be added for the static pages to include pages
 such as About This Blog and References. Luckily Pelican decided to use 
 the jinja2 templateing engine which is simple to use.
 
-![Template Modifications]({filename}/images/PelicanTemplate/TemplateModifications.PNG)
+![Template Modifications]({filename}/images/PelicanTemplate/TemplateModifications.png)
 
 By adding the above loop in white, links will now be added for each sidebar link.
 
