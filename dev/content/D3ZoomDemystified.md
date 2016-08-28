@@ -8,7 +8,6 @@ Javascripts: https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js, D3Zoom.j
 Stylesheets: svgcenter.css
 Status: draft
 
-#Demystifying D3 Zoom
 D3 is a fantastic library for sharing and engaging users in visualizations.
 One of the best ways it does this is by leveraging user interactions, by means
 of clicks, drags, and scrolls to highlight data. We'll be exploring how to 
