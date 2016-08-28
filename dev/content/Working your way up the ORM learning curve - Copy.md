@@ -1,12 +1,23 @@
 Title: Modifying a Pelican Template 
-Date: 2016-7-10 
+Date: 2016-8-15 
 Category: 
-Tags: Tutorial 
-Slug: ModifyingATemplate 
+Tags: Opinion 
+Slug: ORMLearningCurve
 Authors: Ravin Kumar
 Javascripts: 
 Stylesheets: 
-Status: published 
+Status: draft
+
+When working with data it's going to come in a lot of sources. If you're
+unlucky it will be a unstructured text or a network folder full of 
+Excel files. If you're really lucky it will be in a a
+[Tidy](http://vita.had.co.nz/papers/tidy-data.pdf) format. Somewhere inbetween
+are databases.
+
+#Databases structure 
+Databases are great, the data is structured, types are well represented,
+and the data is available for all. What's not great is the data is not
+always structured in the way a data scientist would like to use it.
 
 After deciding to use a [Statically Generated Site]({filename}WhyIChoseASSG.md)
 I needed to pick a template. Trouble was that I had already found a template for
