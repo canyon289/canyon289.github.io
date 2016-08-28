@@ -17,13 +17,15 @@ DEFAULT_LANG = 'en'
 
 THEME = "pelican-hyde-modified"
 
-DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = False
 
 SUMMARY_MAX_LENGTH = 40
 
 STATIC_PATHS = ['images', 'data', 'js', 'css']
 
-GOOGLE_ANALYTICS = 'UA-52706904-2'
+OUTPUT_RETENTION = [".git", "dev"]
+
+#GOOGLE_ANALYTICS = 'UA-52706904-2'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
