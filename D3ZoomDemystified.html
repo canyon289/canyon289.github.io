@@ -24,6 +24,14 @@
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
 	</head>
 
 	<body class="theme-base-darkgreen">
@@ -56,7 +64,7 @@
 </div>		<div class="content container">
 <div class="post">
 	<h1 class="post-title">D3 4.0 Zoom demystified</h1>
-	<span class="post-date">Sat 27 August 2016</span>
+	<span class="post-date">Sun 25 September 2016</span>
 	<p>In the <a href="/ImplementingD3Zoom.html">last post</a> we covered how to implement
 basic zoom and pan in a D3 svg with one line but also left ourselves with an example
 of an unexpected behavior.</p>
@@ -142,7 +150,7 @@ attribute jumps to somewhere near (0,0). Since d3 is now adjusting
 the transform attribute and since it still thinks everything is referenced
 from an identity position, that's where the zoom starts.</p>
 <p>If the wording is confusing take a look at the adjusted code.
-Starting with line 11 and 14, notice that we're creating an inital zoom object
+Starting with line 11 and 14, notice that we're creating an initial zoom object
 and a zoomTransform object that we're offsetting.</p>
 <p>In line 29 were setting this zoomTransform object on svg. This is the key
 line, the one that "tells" d3 the initial state of the transform.  </p>
