@@ -25,7 +25,7 @@ STATIC_PATHS = ['images', 'data', 'js', 'css']
 
 OUTPUT_RETENTION = [".git", "dev"]
 
-#GOOGLE_ANALYTICS = 'UA-52706904-2'
+GOOGLE_ANALYTICS = 'UA-52706904-2'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
