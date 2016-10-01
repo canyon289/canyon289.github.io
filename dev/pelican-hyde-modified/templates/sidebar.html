@@ -18,5 +18,21 @@
             </h1>
         </div>
       {% endfor %}
+    <div>
+    <nav class="sidebar-nav">
+        {% for name, link in SOCIAL %}
+            {% if name == 'email' %}
+                <a class="sidebar-nav-item" href="mailto:{{ link }}">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            {% else %}
+                <a class="sidebar-nav-item" href="{{ link }}">
+                    <i class="fa fa-{{ name }}"></i>
+                </a>
+            {% endif %}
+        {% endfor %}
+
+    </nav>
+    </div>
     </div>
 </div>
