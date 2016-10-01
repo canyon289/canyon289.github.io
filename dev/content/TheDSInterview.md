@@ -41,8 +41,8 @@ as I've now had multiple first round
 interviews but failed to make it to the final round or secure a job.
 Seems that other people have this problem too
 
-##My second admissions and why this blog
-I am partly making this blog to help myself
+##My second admission and why this blog
+I am partly making this blog to help myself.
 Every question I get asked during a data science interview will go onto
 this blog, where it will be discussed, solved, and then dissected into great
 detail. By explaining the answer on a public blog I also hope to gain the
