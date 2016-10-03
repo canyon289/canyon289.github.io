@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Ravin Kumar'
-SITENAME = 'Cracking the Data Science Interview'
-SITEURL = ''
+SITENAME = ['Manufacturing', 'Machines', 'Machine Learning', 'and (Micro)computers']
+SITEURL = 'http://canyon289.github.io'
 
 #Content Path
 PATH = 'content'

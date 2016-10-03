@@ -4,7 +4,9 @@
             <h1 class="sidebar-title">
                 <a href="/">
                     <!---<img class="profile-picture" src="{{ SITEURL }}/images/{{ PROFILE_IMAGE }}"> --->
-                    {{ SITENAME }}
+                    <!---{{ SITENAME }}--->
+                    {{SITENAME|join("<br>")}}
+                    
                 </a>
             </h1>
         </div>
