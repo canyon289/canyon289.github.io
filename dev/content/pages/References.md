@@ -17,4 +17,5 @@ for resources!
 
 
 ##Javascript
-[http://adripofjavascript.com/blog/drips/variable-and-function-hoisting]
+[Variable and Function Hoisting](http://adripofjavascript.com/blog/drips/variable-and-function-hoisting)
+

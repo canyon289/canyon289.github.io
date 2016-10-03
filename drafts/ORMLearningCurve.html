@@ -8,19 +8,19 @@
 		<!-- Enable responsiveness on mobile devices-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-		<title>Cracking the Data Science Interview</title>
+		<title>['Manufacturing', 'Machines', 'Machine Learning', 'and (Micro)computers']</title>
 
 		<!-- CSS -->
 		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
 		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/theme/css/poole.css" />
-		<link rel="stylesheet" href="/theme/css/hyde.css" />
-		<link rel="stylesheet" href="/theme/css/syntax.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/poole.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/hyde.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/syntax.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     
     <!-- CSS style sheets for pelican javascript plugin -->    
-                <link rel="stylesheet" href="/css/" type="text/css" />
+                <link rel="stylesheet" href="http://canyon289.github.io/css/" type="text/css" />
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -40,22 +40,24 @@
         <div >
             <h1 class="sidebar-title">
                 <a href="/">
-                    <!---<img class="profile-picture" src="/images/"> --->
-                    Cracking the Data Science Interview
+                    <!---<img class="profile-picture" src="http://canyon289.github.io/images/"> --->
+                    <!---['Manufacturing', 'Machines', 'Machine Learning', 'and (Micro)computers']--->
+                    Manufacturing<br>Machines<br>Machine Learning<br>and (Micro)computers
+                    
                 </a>
             </h1>
         </div>
       <!---Add Pages for Static Content --->
         <div>
             <h1 class = "sidebar-page">
-              <a href="/pages/About.html">
+              <a href="http://canyon289.github.io/pages/About.html">
               About
               </a>
             </h1>
         </div>
         <div>
             <h1 class = "sidebar-page">
-              <a href="/pages/reference_page.html">
+              <a href="http://canyon289.github.io/pages/reference_page.html">
               References
               </a>
             </h1>
@@ -85,15 +87,15 @@ are databases.</p>
 <p>Databases are great, the data is structured, types are well represented,
 and the data is available for all. What's not great is the data is not
 always structured in the way a data scientist would like to use it.</p>
-<p>After deciding to use a <a href="/WhyIChoseaSSG.html">Statically Generated Site</a>
+<p>After deciding to use a <a href="http://canyon289.github.io/WhyIChoseaSSG.html">Statically Generated Site</a>
 I needed to pick a template. Trouble was that I had already found a template for
 WordPress that I had liked.</p>
-<p><img alt="WordPressTheme" src="/images/PelicanTemplate/WordPressTemplate.png" />
+<p><img alt="WordPressTheme" src="http://canyon289.github.io/images/PelicanTemplate/WordPressTemplate.png" />
 <em>The Wordpress theme</em> </p>
 <p>Luckily there was a <a href="https://github.com/getpelican/pelican-themes">GitHubRepo</a>
 that had many prexisting themes and even more luckily there was one 
 that was already a <a href="https://github.com/jvanz/pelican-hyde">close fit</a>
-<img alt="WordPressTheme" src="/images/PelicanTemplate/PelicanHydeTheme.png" />
+<img alt="WordPressTheme" src="http://canyon289.github.io/images/PelicanTemplate/PelicanHydeTheme.png" />
 <em>The Pelican-Hyde theme</em> </p>
 <p>There were some things I didn't like though. I didn't like the sidebar size,
 the links to social media, and the font, or that the sidebar was focused
@@ -108,7 +110,7 @@ from an html file and multiple css stylesheets. Bluntly put figuring out why
 certain things are laid out a certain way, or why they're a certain color, can
 still be a pain. Luckily though the Chrome Team developed awesome dev tools
 which make figuring out what's going on much easier
-<img alt="ChromeDevTools" src="/images/PelicanTemplate/ChromeDevTools.png" />
+<img alt="ChromeDevTools" src="http://canyon289.github.io/images/PelicanTemplate/ChromeDevTools.png" />
 <em>Chrome Dev Tools</em></p>
 <p>In the screenshot above you can see a couple of awesome things. One is that
 by highlighting over an element I can both see the code in the Document
@@ -117,7 +119,7 @@ and position. While I won't go into all the tools here, there are numerous
 other tabs and functions to dive even deeper into more complex applications.
 However in generality using the dev tools is what I used in the following
 steps to deconstruct the Wordpress and Pelican themes</p>
-<p><img alt="ChromeDevTools" src="/images/PelicanTemplate/CSSModifications.png" />
+<p><img alt="ChromeDevTools" src="http://canyon289.github.io/images/PelicanTemplate/CSSModifications.png" />
 <em>Adding a Dark Green Class</em><br />
 For the most part this modifying the CSS to reflect the styles we want.
 For instance above an addition was made the CSS style sheets to allow for
@@ -126,7 +128,7 @@ a Dark Green class that uses the same green in the original WordPress Theme.</p>
 <p>I also wanted links to be added for the static pages to include pages 
 such as About This Blog and References. Luckily Pelican decided to use 
 the jinja2 templating engine which is simple to use.</p>
-<p><img alt="Template Modifications" src="/images/PelicanTemplate/TemplateModification.png" /></p>
+<p><img alt="Template Modifications" src="http://canyon289.github.io/images/PelicanTemplate/TemplateModification.png" /></p>
 <p>By adding the above loop in white, links will now be added for each sidebar link.</p>
 <h1 id="why-does-this-matter-for-data-science"><a class="toclink" href="#why-does-this-matter-for-data-science">Why does this matter for Data Science</a></h1>
 <p>As a data scientist part of the job is being able to present information
@@ -140,5 +142,5 @@ dashboards.</p>
 		</div>
 	</body>
     <!-- Javascript Loader for Pelican Javascript plugin-->
-                <script src="/js/"></script>
+                <script src="http://canyon289.github.io/js/"></script>
 </html>
