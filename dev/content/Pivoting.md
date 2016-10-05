@@ -9,10 +9,10 @@ Status: published
 Originally when I started this blog I was frustrated with the Data Science
 Interview process, having been in it for a number of months. However
 shortly after starting this blog I was hired on full time by SpaceX, and
-as a consequence stopped participating in the interview process. 
+as a consequence stopped seeking interviews. 
 
 # Where this put me
-As luck would have it I was fortune and was placed into a data heavy department.
+As luck would have it I was fortunate enough to be  placed into a data heavy department.
 My day now heavily consists of data mining, visualizations, and data storytelling
 all facilitated with heavy use of SQL, Javascript, Python, Tableau and whatever
 else it takes. While I don't have the data scientist title I get asked to do
