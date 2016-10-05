@@ -11,7 +11,6 @@ a style based on experience partially based on experience but also with a
 large dose of personal opinion. In fact I would argue go as far to argue that
 if you can't develop an opinion your growth a developer will be stunted.
 
-# When starting out with a language
 When you're starting to learn how to program, especially if you don't have a
 mentor or aren't working in a team, you likely won't have a strong guide for code style.
 But you want to learn how to write software so you just have to start
