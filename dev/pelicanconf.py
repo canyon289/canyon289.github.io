@@ -49,7 +49,8 @@ DISPLAY_PAGES_ON_MENU = True
 PLUGIN_PATHS = ["pelican-plugins"]
 PLUGINS = ["better_codeblock_line_numbering",
            "pelican_javascript",
-           "render_math"]
+           "render_math",
+           "simple_footnotes"]
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

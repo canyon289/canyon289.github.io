@@ -97,7 +97,7 @@ However unlike other svg geometry it needs to be defined in the <strong>defs</st
 section of the svg.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;defs&gt;</span></span>
-<span class="code-line">    <span class="nt">&lt;clipPath</span> <span class="na">id=</span><span class="s">&quot;bluerect&quot;</span><span class="nt">&gt;</span></span>
+<span class="code-line">    <span class="nt">&lt;clipPath</span> <span class="na">id=</span><span class="s">"bluerect"</span><span class="nt">&gt;</span></span>
 <span class="code-line">      <span class="c">&lt;!--Geometry goes here--&gt;</span></span>
 <span class="code-line">    <span class="nt">&lt;/clipPath&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;/defs&gt;</span> </span>
@@ -111,7 +111,7 @@ are a tag for reuseable elements in SVGs. In this case
 element needs to be defined in this block.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;defs&gt;</span></span>
-<span class="code-line">    <span class="nt">&lt;clipPath</span> <span class="na">id=</span><span class="s">&quot;bluerect&quot;</span><span class="nt">&gt;</span></span>
+<span class="code-line">    <span class="nt">&lt;clipPath</span> <span class="na">id=</span><span class="s">"bluerect"</span><span class="nt">&gt;</span></span>
 <span class="code-line">      <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">0</span> <span class="na">y=</span><span class="s">0</span> <span class="na">height=</span><span class="s">300</span> <span class="na">width=</span><span class="s">150</span><span class="nt">&gt;&lt;/rect&gt;</span></span>
 <span class="code-line">    <span class="nt">&lt;/clipPath&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;/defs&gt;</span> </span>
@@ -121,12 +121,13 @@ element needs to be defined in this block.</p>
 
 <p>Once defined in the defs section the clip path can be applied to an element
 by adding a <strong>clip-path</strong> attribute on the element. The blue is removed
-from the example code for code clarity.  </p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;circle&quot;</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="nx">width</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="nx">height</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="nx">r</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;clip-path&quot;</span><span class="p">,</span> <span class="s2">&quot;url(#cliprect)&quot;</span><span class="p">)</span></span>
+from the example code for code clarity. 
+<sup id="sf-clippaths-1-back"><a href="#sf-clippaths-1" title=" While sample bl.ocks are great sometimes when going through them it's hard to isolate the specific feature I'm trying to learn from all the other functionality" class="simple-footnote">1</a></sup></p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"circle"</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"cx"</span><span class="p">,</span> <span class="nx">width</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"cy"</span><span class="p">,</span> <span class="nx">height</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="nx">r</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"r"</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"clip-path"</span><span class="p">,</span> <span class="s2">"url(#cliprect)"</span><span class="p">)</span></span>
 </pre></div>
 
 
@@ -145,11 +146,11 @@ case this is EXTREMELY handy as it allows us to do two major things</p>
 </ul>
 <p>The simplified SVG structure looks like this.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg&gt;</span></span>
-<span class="code-line"><span class="nt">&lt;g</span> <span class="na">id=</span><span class="s">&quot;alwaysvisiblecircle&quot;</span> <span class="na">class=</span><span class="s">&quot;pan_and_zoom_class&quot;</span><span class="nt">&gt;</span></span>
+<span class="code-line"><span class="nt">&lt;g</span> <span class="na">id=</span><span class="s">"alwaysvisiblecircle"</span> <span class="na">class=</span><span class="s">"pan_and_zoom_class"</span><span class="nt">&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;circle&gt;</span></span>
 <span class="code-line"><span class="nt">&lt;/g&gt;</span></span>
-<span class="code-line"><span class="nt">&lt;g</span> <span class="na">id=</span><span class="s">&quot;url(#clippathdef)&quot;</span><span class="nt">&gt;</span></span>
-<span class="code-line">  <span class="nt">&lt;g</span> <span class="na">class=</span><span class="s">&quot;pan_and_zoom_class&quot;</span><span class="nt">&gt;</span></span>
+<span class="code-line"><span class="nt">&lt;g</span> <span class="na">id=</span><span class="s">"url(#clippathdef)"</span><span class="nt">&gt;</span></span>
+<span class="code-line">  <span class="nt">&lt;g</span> <span class="na">class=</span><span class="s">"pan_and_zoom_class"</span><span class="nt">&gt;</span></span>
 <span class="code-line">    <span class="nt">&lt;circle&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;/g&gt;</span></span>
 <span class="code-line"><span class="nt">&lt;/g&gt;</span></span>
@@ -167,7 +168,9 @@ if you move left</p>
 <p>The code for these visualizations are available on my Github. Additionally
 there is a much more extensive writeup on clip paths written by
 <a href="https://sarasoueidan.com/blog/css-svg-clipping/">Sara Soueidan</a> which
-I highly recommend. </p>
+I highly recommend. </p><ol class="simple-footnotes"><li id="sf-clippaths-1"> While sample bl.ocks are great sometimes when going through them
+it's hard to isolate the specific feature I'm trying to learn
+from all the other functionality <a href="#sf-clippaths-1-back" class="simple-footnote-back">↩</a></li></ol>
 </div>
 		</div>
 	</body>

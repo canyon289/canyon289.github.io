@@ -88,6 +88,8 @@ Figure References         Provides a system to number and references figures
 
 Filetime from Git         Uses Git commit to determine page date
 
+Filetime from Hg          Uses Mercurial commit to determine page date
+
 Footer Insert             Add standardized footer (e.g., author information) at end of every article
 
 GA Page View              Display Google Analytics page views on individual articles and pages
@@ -99,6 +101,8 @@ Gist directive            This plugin adds a ``gist`` reStructuredText directive
 GitHub activity           On the template side, you just have to iterate over the ``github_activity`` variable
 
 Global license            Allows you to define a ``LICENSE`` setting and adds the contents of that license variable to the article's context
+
+Glossary                  Adds a variable containing definitions extracted from definition lists in articles and pages. This variable is visible to all page templates.
 
 Goodreads activity        Lists books from your Goodreads shelves
 
@@ -121,6 +125,8 @@ ical                      Looks for and parses an ``.ics`` file if it is defined
 Image Process             Automates the processing of images based on their class attributes
 
 Interlinks                Lets you add frequently used URLs to your markup using short keywords
+
+Jinja2 Content            Allows the use of Jinja2 template code in articles, including ``include`` and ``import`` statements. Replacement for pelican-jinja2content.
 
 Just table                Easily create tables in articles
 
@@ -193,6 +199,8 @@ Pelican YouTube           Enables you to embed YouTube videos in your pages and 
 pelicanfly                Lets you type things like ``i ♥ :fa-coffee:`` in your Markdown documents and have it come out as little Font Awesome icons in the browser
 
 Photos                    Add a photo or a gallery of photos to an article, or include photos in the body text. Resize photos as needed.
+
+permalink                 Enables a kind of permalink using html redirects.
 
 Pin to top                Pin Pelican's article(s) to top "Sticky article"
 
