@@ -52,7 +52,7 @@ PLUGINS = ["better_codeblock_line_numbering",
            "render_math"]
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 MD_EXTENSIONS = {'markdown.extensions.codehilite' : {'css_class': 'highlight'},
                 'markdown.extensions.extra': {},

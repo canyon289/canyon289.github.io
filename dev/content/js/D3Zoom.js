@@ -1,5 +1,5 @@
 
-//Visualziation for basic zoom
+//Visualization for basic zoom
 (function basic_zoom(){
 var svg = d3.select("#basic_zoom")
            .append("svg")

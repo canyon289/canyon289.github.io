@@ -6,11 +6,18 @@ Status: published
 
 
 ##About me
-I'm somewhere between an engineer, programmer, and data scientist.
+My name is Ravin Kumar and I'm somewhere between an engineer, programmer,
+and data scientist. I currently work for SpaceX but it is important to note
+that **all of the writing and opinions on this blog represent my own** and
+not of any organization I work for or have worked for in the past.
+
+# What I do as a career
 My primary occupation focus has been on improving processes for companies,
 typically manufacturing companies. 
-I'm currently working  at SpaceX using data methods and developing
-applications to help further SpaceX's mission to Mars. 
+I'm currently use data methods to understand organizational processes, either
+making stuff doing stuff, and develop applications to to help improve those
+processes. For example check out my [LinkedIn](https://www.linkedin.com/in/ravinakumar)
+
 
 In the past I've served in more traditional industrial/manufacturing
 engineering roles, using techniques such as tolerance analysis and Lean/Six Sigma

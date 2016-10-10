@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Ravin Kumar</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/poole.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/hyde.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/syntax.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- CSS style sheets for pelican javascript plugin -->    
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class="theme-base-darkgreen">
+<div class="sidebar">
+    <div class="container">
+        <div >
+            <h1 class="sidebar-title">
+                <a href="/">
+                    <!---<img class="profile-picture" src="http://canyon289.github.io/images/"> --->
+                    <!---['Manufacturing', 'Machines', 'Machine Learning', 'and (Micro)computers']--->
+                    Manufacturing<br>Machines<br>Machine Learning<br>and (Micro)computers
+                    
+                </a>
+            </h1>
+        </div>
+      <!---Add Pages for Static Content --->
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="http://canyon289.github.io/pages/About.html">
+              About
+              </a>
+            </h1>
+        </div>
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="http://canyon289.github.io/pages/reference_page.html">
+              References
+              </a>
+            </h1>
+        </div>
+    <div>
+    <nav class="sidebar-nav">
+                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a class="sidebar-nav-item" href="https://github.com/canyon289">
+                    <i class="fa fa-github"></i>
+                </a>
+
+    </nav>
+    </div>
+    </div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">Writing good software requires you to have an opinion</h1>
+	<span class="post-date">Mon 03 October 2016</span>
+	<p>If you want to write good software I would argue that you have to develop a
+a style based on experience partially based on experience but also with a 
+large dose of personal opinion. In fact I would argue go as far to argue that
+if you can't develop an opinion your growth a developer will be stunted.</p>
+<p>When you're starting to learn how to program, especially if you don't have a
+mentor or aren't working in a team, you likely won't have a strong guide for code style.
+But you want to learn how to write software so you just have to start
+But without prior experience how do you structure your code?
+If you're anything like me this means you'll
+end up reading a lot of blog posts, Stack Overflow answers, and books to 
+find "the best way" of doing things.</p>
+<h1 id="some-languages-require-you-to-opine-right-off-the-bat"><a class="toclink" href="#some-languages-require-you-to-opine-right-off-the-bat">Some languages require you to opine right off the bat</a></h1>
+<p>Languages like Perl <a href="https://en.wikipedia.org/wiki/There%27s_more_than_one_way_to_do_it">leave it up to you</a>.
+There really isn't a best way of doing things, so each programmer is left
+with a choice of what they think is best. But as a learner this makes
+things quite difficult as you'll have to both learn to read each style
+and develop your own fairly early in your learning.</p>
+<h1 id="sometimes-the-language-has-one-obvious-way"><a class="toclink" href="#sometimes-the-language-has-one-obvious-way">Sometimes the language has "one obvious way"</a></h1>
+<p>In Python there's "one obvious way" to do things. As a beginner this is great.
+This means you can now google away and always find "the best way" to do things.</p>
+<p>For example if we want to print each letter I've seen a lot of beginners 
+write this.</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="n">array</span> <span class="o">=</span>  <span class="p">[</span><span class="s2">&quot;Foo&quot;</span><span class="p">,</span> <span class="s2">&quot;Bar&quot;</span><span class="p">,</span> <span class="s2">&quot;Baz&quot;</span></span>
+<span class="code-line"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)):</span></span>
+<span class="code-line">    <span class="k">print</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">])</span></span>
+</pre></div>
+
+
+<p>Great it works.
+But now you wan to make your code better and you want to see how the experts 
+structure their code. To do so you go out and pick up two books
+"Writing Idiomatic Python" and "Effective Python".</p>
+<p>You read through and you see Item 10 in Idiomatic Python "Prefer Enumerate over Range"
+and items 1.2.1 and 1.2.2 in "Writing Effective Python".</p>
+<p>"Now I know to iterate directly over an array rather over a range and index"
+you say, and quickly write what almost everyone will agree is better or
+more "Pythonic".</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="n">array</span><span class="p">:</span></span>
+<span class="code-line">    <span class="k">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span></span>
+</pre></div>
+
+
+<p>In Python you can actually get really far this way, as a community there are
+a ton of "almost always" best practices for doing things and the Python
+language does a great job encouraging this. For me it became routine to
+figure out what I needed to do, then google "best way of doing X" for a while.</p>
+<h1 id="but-there-isnt-always-one-obvious-way"><a class="toclink" href="#but-there-isnt-always-one-obvious-way">But there isn't always "one obvious way"</a></h1>
+<p>Let's say we have a new problem now. We now want to write a program that makes
+requests to websites until it receives a 404 error. If they all work we want
+a message telling us so.</p>
+<p>Here's out first attempt using the requests library. Writing Idiomatic Python
+suggests this structure saying that "even if the for structure isn't clear,
+our code is clear enough to teach them"</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">requests</span></span>
+<span class="code-line"><span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;google.com&quot;</span><span class="p">,</span> <span class="s2">&quot;facebook.com&quot;</span><span class="p">,</span> <span class="s2">&quot;cnn.com&quot;</span><span class="p">]:</span></span>
+<span class="code-line">   <span class="n">reqest</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span></span>
+<span class="code-line">   <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span></span>
+<span class="code-line">      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Request Failed&quot;</span><span class="p">)</span></span>
+<span class="code-line">      <span class="k">break</span></span>
+<span class="code-line"><span class="k">else</span><span class="p">:</span></span>
+<span class="code-line">   <span class="k">print</span><span class="p">(</span><span class="s2">&quot;All good&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+
+<p>However if we take a look at what Effective Python suggests using this approach</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">requests</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">success</span> <span class="o">=</span> <span class="bp">True</span></span>
+<span class="code-line"><span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;google.com&quot;</span><span class="p">,</span> <span class="s2">&quot;facebook.com&quot;</span><span class="p">,</span> <span class="s2">&quot;cnn.com&quot;</span><span class="p">]:</span></span>
+<span class="code-line">   <span class="n">reqest</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span></span>
+<span class="code-line">   <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span></span>
+<span class="code-line">      <span class="n">success</span> <span class="o">=</span> <span class="bp">False</span></span>
+<span class="code-line">      <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Request Failed&quot;</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">if</span> <span class="n">success</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span></span>
+<span class="code-line">   <span class="k">print</span><span class="p">(</span><span class="s2">&quot;All good&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+
+<p>but this is the exact opposite of what Idiomatic Python suggests. In fact
+these two books completely disagree with each other, each saying each others
+method is unreadable and harmful</p>
+<h1 id="it-gets-worse"><a class="toclink" href="#it-gets-worse">It gets worse</a></h1>
+<p>Once you start moving into larger projects you'll find many differing opinions.
+Want a web framework? Well there's django, flask, pyramid and pecan.
+Unit Testing? Pick between Nose, Nose2, pytest, unittest, and doctest.
+Even for this statically generated site there's Nikola, Pelican, Hyde</p>
+<p>Let's not even get started with Javascript.
+Hell, even with simple text editors there's Atom, Sublime, vim, emacs, etc</p>
+<h1 id="why-you-need-to-develop-an-educated-opinion-fast"><a class="toclink" href="#why-you-need-to-develop-an-educated-opinion-fast">Why you need to develop an educated opinion fast</a></h1>
+<p>If you can't make an educated choice quickly you'll never get anything done,
+instead switching back and forth between whatever the last person told you
+was the best way to do things</p>
+<h1 id="how-to-develop-an-educated-opinion"><a class="toclink" href="#how-to-develop-an-educated-opinion">How to develop an educated opinion</a></h1>
+<p>Unfortunately there really isn't a way to do this other than take in the advice
+from others, but then also apply them and see what works best for you. When
+reading code or taking feedback pay close attention to why the person is arguing
+for or against a method but think about how it fits into what you know and
+what you need to get done.</p>
+<h1 id="but-its-worth-it"><a class="toclink" href="#but-its-worth-it">But it's worth it</a></h1>
+<p>Watch <a href="https://www.youtube.com/watch?v=bpZS9ehw98">this</a> of Kenneth Reitz
+the developer of the Requests library, which also happens to be the most
+popular Python package of all time. Notice how opionated he is about the state
+of other libraries and what he values in software. If Kenneth had tried
+to design a library that made everyone happy, it likely wouldn't have made
+anyone happy.  </p>
+<h1 id="in-closing"><a class="toclink" href="#in-closing">In Closing</a></h1>
+<ul>
+<li>There rarely is one right way to do things. If you keep trying to search for one
+you'll never get anything done.</li>
+<li>Take the time to develop your own opinion</li>
+<li>Do this taking the time to understand others opinions by taking in information</li>
+<li>But also develop your own by doing things</li>
+<li>You'll never get everyone to agree with your approach but that doesn't mean it's wrong</li>
+</ul>
+</div>
+		</div>
+	</body>
+    <!-- Javascript Loader for Pelican Javascript plugin-->
+</html>
