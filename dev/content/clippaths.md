@@ -56,7 +56,10 @@ element needs to be defined in this block.
 
 Once defined in the defs section the clip path can be applied to an element
 by adding a **clip-path** attribute on the element. The blue is removed
-from the example code for code clarity.  
+from the example code for code clarity. 
+[ref] While sample bl.ocks are great sometimes when going through them
+it's hard to isolate the specific feature I'm trying to learn
+from all the other functionality[/ref]
 
 ```javascript
 g.append("circle")

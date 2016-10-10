@@ -4,17 +4,16 @@ Slug: reference_page
 Authors: Ravin Kumar
 Status: published
 
-While I wish I was smart enough to come up with everything I've found
-on this blog from scratch the truth is that I've both learned a great
-deal from other much smarter people share their knowledge 
-and also use the their code and libraries as well.  
+Much of what I've learned and my ability to comes from others who have
+share their knowledge, ideas, and their code.
 
-Instead of acknowledging them in each post I'll be keeping a running list here.
+I'll try to put links and references each post but I'll also be keeping a
+running list here.
 As a bonus it should also service as handy portal link if you're looking
 for resources!
 
 ##Visualization
-
+[Data Driven Documents](https://d3js.org/)
 
 ##Javascript
 [Variable and Function Hoisting](http://adripofjavascript.com/blog/drips/variable-and-function-hoisting)
