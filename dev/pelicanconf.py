@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Ravin Kumar'
-SITENAME = ['Manufacturing', 'Machines', 'Machine Learning', 'and (Micro)computers']
+SITENAME = ['Manufacturing', 'and Machine Learning']
 SITEURL = 'http://canyon289.github.io'
 
 #Content Path
