@@ -82,13 +82,13 @@
 in one portion of the SVG but perhaps in another. An example would be a chart
 with axes that also implements zoom and pan. As we move the chart elements
 into the axes area we don't wany any overlap.</p>
-<h1 id="an-example"><a href="#an-example" class="toclink">An example</a></h1>
+<h1 id="an-example"><a class="toclink" href="#an-example">An example</a></h1>
 <p>In the visualization below zoom and pan have been applied using the method in
 the <a href="./ImplementingD3Zoom.html">zoom and pan post</a>. We only want the blue
 dot to be visible in the blue region but it's clearly visible everywhere.</p>
 <div id="unclipped"></div>
 
-<h1 id="clip-paths"><a href="#clip-paths" class="toclink">Clip Paths</a></h1>
+<h1 id="clip-paths"><a class="toclink" href="#clip-paths">Clip Paths</a></h1>
 <p>Luckily the SVGs support a concept called clip-path. The idea is simple,
 essentially defining an area where elements are visible, however the implementation
 is a bit more convoluted.  </p>
@@ -137,7 +137,7 @@ from the example code for code clarity.
 <p>The clip path clearly worked but unfortunately it stick with the element
 regardless of position. What we really want is the circle to be visible
 depending on where it is in the svg.</p>
-<h1 id="clip-path-groups"><a href="#clip-path-groups" class="toclink">Clip Path Groups</a></h1>
+<h1 id="clip-path-groups"><a class="toclink" href="#clip-path-groups">Clip Path Groups</a></h1>
 <p>Before fixing the issue above it should be mentioned that clip paths 
 can also be applied to groups. There are a lot of uses for it but in our 
 case this is EXTREMELY handy as it allows us to do two major things</p>
@@ -165,7 +165,7 @@ case this is EXTREMELY handy as it allows us to do two major things</p>
 to! If you try dragging the circles, you'll notice that one of them starts
 disapearing as it's location moves to the right, but start appearing again
 if you move left</p>
-<h1 id="references"><a href="#references" class="toclink">References</a></h1>
+<h1 id="references"><a class="toclink" href="#references">References</a></h1>
 <p>The code for these visualizations are available on my Github. Additionally
 there is a much more extensive writeup on clip paths written by
 <a href="https://sarasoueidan.com/blog/css-svg-clipping/">Sara Soueidan</a> which
