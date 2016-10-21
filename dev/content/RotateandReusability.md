@@ -10,14 +10,14 @@ Status: published
 SVGs aren't always the most straightforward to work it and also are deceptively
 simple but as you'll get more familiar with the API you'll be able to
 combine SVG "methods" to more easily get what you need.  
-In this post we'll cover rotation and reuseability of SVG elements as well
+In this post we'll cover rotation and reusability of SVG elements as well
 as the practical problem this solved for me
 
 # The Backstory
 At SpaceX I'm currently writing a program that will calculate a timeline
 of activities and am using D3 for the visualization portion. For this particular
 business process there were activities, thing that happen over a period of time,
-and milestones, significant dates that occured after the completion of
+and milestones, significant dates that occurred after the completion of
 a series of activities
 
 # Gantt Charts
@@ -43,7 +43,7 @@ such as x,y location of te top left corner and width and height.
   <rect x="20" y="20" height="20" width="40"></rect>
 </svg>
 ```
-They can be repsented in either of the formats above, the only difference
+They can be represented in either of the formats above, the only difference
 being the closing block for the svg element.The resulting SVG looks like this.
 Seemingly unspectacular but actually pretty cool for only 4 lines of code.  
 <svg>
@@ -51,7 +51,7 @@ Seemingly unspectacular but actually pretty cool for only 4 lines of code.
   <rect x="20" y="40" height="20" width="40"></rect>
 </svg>
 
-Our next challenge is reprsenting a diamond. There is no basic shape for a
+Our next challenge is representing a diamond. There is no basic shape for a
 diamond in the SVG library. Given that we can't just "tell" the renderer
 to draw a diamond we could instead manually "draw" the lines like this
 
