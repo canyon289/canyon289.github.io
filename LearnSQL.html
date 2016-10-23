@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Ravin Kumar</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/poole.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/hyde.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/syntax.css" />
+        <link rel="stylesheet" href="http://canyon289.github.io/theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- CSS style sheets for pelican javascript plugin -->    
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class="theme-base-darkgreen">
+<div class="sidebar">
+    <div class="container">
+        <div >
+            <h1 class="sidebar-title">
+                <a href="/">
+                    <!---<img class="profile-picture" src="http://canyon289.github.io/images/"> --->
+                    <!---['Manufacturing', 'and Machine Learning']--->
+                    Manufacturing<br>and Machine Learning
+                    
+                </a>
+            </h1>
+        </div>
+      <!---Add Pages for Static Content --->
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="http://canyon289.github.io/pages/About.html">
+              About
+              </a>
+            </h1>
+        </div>
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="http://canyon289.github.io/pages/reference_page.html">
+              References
+              </a>
+            </h1>
+        </div>
+    <div>
+    <nav class="sidebar-nav">
+                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a class="sidebar-nav-item" href="https://github.com/canyon289">
+                    <i class="fa fa-github"></i>
+                </a>
+
+    </nav>
+    </div>
+    </div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">You should learn SQL</h1>
+	<span class="post-date">Sat 22 October 2016</span>
+	<p>I'm not the first to say this and I really doubt
+I'll be the last. Being able to use and understand data is 
+becoming, if not already, a very powerful skill. Let me
+go through the two perspectives I've encountered below.</p>
+<h1 id="but-im-already-learning-pythonpandasr"><a class="toclink" href="#but-im-already-learning-pythonpandasr">But I'm already learning Python/Pandas/R</a></h1>
+<p>Cool! So you're already interested and well on your way to being
+a data professional. Then there's two reasons you should learn
+SQL.  </p>
+<h2 id="youll-become-the-data-girlguy-faster"><a class="toclink" href="#youll-become-the-data-girlguy-faster">You'll become the data girl/guy faster</a></h2>
+<p>If you're trying to break into an analytical role your employer
+will be much more supportive, and likely even pay you, if you
+can show results. I would argue that SQL is the much quicker
+route to get a data role and start gaining experience for
+the following reasons.</p>
+<h3 id="declarative-vs-imperative-languages"><a class="toclink" href="#declarative-vs-imperative-languages">Declarative vs Imperative Languages</a></h3>
+<p>Without going deeply into the nuances between declarative
+and imperative languages what's easier to write and understand?</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></span>
+<span class="code-line"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;http: iris url ) #This is dependent on your data source</span></span>
+<span class="code-line"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">5</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">IRIS</span></span>
+</pre></div>
+
+
+<p>With Python you'll have know how to import pandas, call
+the correct method to read a csv file, know what argument
+to pass to the read_csv method, know about variables, and then
+know you can call a method on that assignment. A lot of the symbols
+are not "english" intuitive either. </p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">5</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">IRIS</span></span>
+</pre></div>
+
+
+<p>Comparatively SQL is much more approachable and basically reads straight across.
+Now yes SQL has it's own set of complexities and limitations but just starting
+out it's been my experience that there's much less you need to learn
+before you're able to do useful things. But.... </p>
+<h3 id="its-probably-already-setup-for-you"><a class="toclink" href="#its-probably-already-setup-for-you">It's probably already setup for you</a></h3>
+<p>I don't have strong evidence to back this claim I would argue nearly all
+businesses have a need to store data in tabular format and already do. This
+means you just need to start querying it, without having to worry about setting
+up a local Python or R environment, especially when most companies lock
+down admin privileges anyway and make this sometimes difficult to do.</p>
+<h3 id="since-its-setup-theres-a-resident-database-admin"><a class="toclink" href="#since-its-setup-theres-a-resident-database-admin">Since it's setup there's a resident Database Admin</a></h3>
+<p>If the assumption above holds there already will be at least one person
+who's job it is to maintain that database who knows SQL. I would argue
+there's more companies that pay a DBA than companies that are hiring data scientists.
+In my experience nearly all companies have data these days, not nearly as many
+have Python/R stack data scientists on staff.</p>
+<h3 id="sql-has-a-standard"><a class="toclink" href="#sql-has-a-standard">SQL has a standard</a></h3>
+<p>SQL is more standardized than other data languages.
+While there are differences the basic queries are pretty much the same
+across platforms. The switching cost between Python and R is much higher.
+This makes it easier to learn and use in a variety of settings, even if not 
+every place you go uses the same database and SQL variant.</p>
+<h3 id="youre-going-to-have-to-learn-it-anyway"><a class="toclink" href="#youre-going-to-have-to-learn-it-anyway">You're going to have to learn it anyway</a></h3>
+<p>Even if you end up using Pandas or R you'll have to find some data. While it's 
+true a lot of data is not in database, a lot of data is in a database.</p>
+<h2 id="but-im-a-manager"><a class="toclink" href="#but-im-a-manager">But I'm a manager</a></h2>
+<p>Even if you have direct reports that can write SQL, knowing a bit of SQL will
+help you become much more literate. Some of the managers who I've worked with
+have been able to use data to great effect to paint a story both to their 
+direct reports and in discussions with their peers and superiors. It's harder
+to argue with the results from a query.</p>
+<h1 id="in-conclusion"><a class="toclink" href="#in-conclusion">In Conclusion</a></h1>
+<p>If you're relatively new to data it's my opinion that learning SQL gives you
+the most "bang for your buck". It has a relatively low barrier to entry
+given that most companies already use it, and it's simpler to start out with
+and get useful results. And once your employer sees some results it'll be easier
+to sneak some Python/R and fancier stuff in as well!</p>
+</div>
+		</div>
+	</body>
+    <!-- Javascript Loader for Pelican Javascript plugin-->
+</html>
