@@ -16,9 +16,8 @@ as the practical problem this solved for me
 # The Backstory
 At SpaceX I'm currently writing a program that will calculate a timeline
 of activities and am using D3 for the visualization portion. For this particular
-business process there were activities, thing that happen over a period of time,
-and milestones, significant dates that occurred after the completion of
-a series of activities
+business process there are activities, things that happen over a period of time,
+and milestones, significant dates that mark the completion of a series of activities
 
 # Gantt Charts
 Schedules are nothing new, over a 100 years ago 
