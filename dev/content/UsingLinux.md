@@ -63,7 +63,15 @@ to Linux. If you don't have two computers then go with a dual boot but if you
 can spare the money and are dedicated to learning Linux a dedicated machine
 will smooth the process.
 
+## Some applications just require Windows which makes switching costs higher
+If you were wondering why I kept switching back and forth it was this.
+Previously I needed programs like Solidworks to do my job. Even with 
+Wine things just didn't work well. Unfortunately this also meant that I would
+end up just spending more time with Windows and neglect Linux. The dual
+boot option works here but it does mean Linux will likely remain your
+secondary computer if you need Windows programs in your daily tasks.
+
 # Get started
 Hopefully this provides answers for some of the basic questions. I'll be
-writing follow up posts on Why I picked Linux this time and the hurdles I ran into
-with Arch Linux.
+writing followup posts on why I picked Linux this time and an abbreivated tutorial
+for installing Arch Linux.
