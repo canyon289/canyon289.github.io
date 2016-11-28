@@ -5,7 +5,7 @@ Tags: Software
 Slug: UsingLinux
 Authors: Ravin Kumar
 Javascripts: 
-Status: draft
+Status: published 
 
 Recently I decided to start using Linux again as a primary OS on my laptop. I'm
 doing this because I believe Linux is the best OS to solve my problems and 
