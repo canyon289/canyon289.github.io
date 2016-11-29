@@ -7,7 +7,7 @@ Authors: Ravin Kumar
 Javascripts: d3.v4.js, doubledatajoin.js
 Status: published 
 
-Perhaps the most fundamental concept of D3 is the data join **insert link here**
+Perhaps the most fundamental concept of D3 is the [data join](https://bost.ocks.org/mike/join/)
 which shortly summarized compares a dataset in memory with the data in a selection.
 New elements are **entered**  where no matched data exists in the selection, 
 current elements are **updated** and missing elements are **exited**.
