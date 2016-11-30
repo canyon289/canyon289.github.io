@@ -1,7 +1,7 @@
 Title: You should learn SQL
 Date: 2016-10-22
 Category: Programming 
-Tags: Data
+Tags: Data, SQL
 Slug:  LearnSQL
 Authors: Ravin Kumar
 Status: published
