@@ -125,12 +125,12 @@ Once your queries start getting complex it'll help to store results
 in intermediate tables. To manage these you'll need to get familar with commands
 such as 
 
-## 15. Select * into #(table_name(
+## 15. Select * into #table_name
 The easiest way to create a temp table, just select some values and 
 tell SQL Server to automagically create a table from the results.
 
 ## 16. Create Table
-While Select into is great, as you progress you'll sometimes need to
+While Select Into is great, as you progress you'll sometimes need to
 have more control over the data types and other details like indexes in your 
 temp table. To do so you'll have to start with Create Table, which then allows
 you to specify all of these details. 
