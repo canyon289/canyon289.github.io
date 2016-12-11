@@ -27,7 +27,7 @@ you'll start learning the others.
 
 ## 2. Select
 Select is the workhorse command that will return your results. Might seem
-obvious but there are some important concepts like select, like **Select &ast**,
+obvious but there are some important concepts like select, like **Select `*` **,
 **Select Top** and the order in which Logical Query Processing executes a Select.
 More on this later
 
