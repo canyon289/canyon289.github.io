@@ -9,7 +9,7 @@ Status: published
 This is Part 2 in a series about how learning how to program could affect
 your career and some of the experiences I've had with programming in mine
 
-* [Intent of series and introduction]({filename}NonProgammer.md)
+* [Intent of series and introduction]({filename}NonProgrammer.md)
 * What Programming without being a Programmer means
 * Why Programming could be very helpful for your life and career
 * Why Programming could be very bad for your life and career
