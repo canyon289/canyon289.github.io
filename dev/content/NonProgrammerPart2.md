@@ -19,11 +19,10 @@ your career and some of the experiences I've had with programming in mine
 
 # What Programming without being a Programmer means
 
-Programmer, or coder, is a pretty broad term these days but in one way
-there is a simple split to describe what a Non Programmer is, that we
-can define by defining the opposite term.
+Programmer, or coder, is a pretty broad term these days but 
+there is a simple split to describe what a Non Programmer is
 
-I would argue that the split is  
+I would describe  the split as  
 
 * People that get paid primarily for their skill to write code
 * People that get paid primarily to do somethhing that isn't write code  
