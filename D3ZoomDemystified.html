@@ -84,7 +84,7 @@ basic zoom and pan in a D3 svg with one line but also left ourselves with an exa
 of an unexpected behavior.</p>
 <p>In this post will dig deeper to see what's happening under the hood and how we 
 can get around our issue. Before we get into D3 let's start with the basics.</p>
-<h2 id="what-is-zoom-and-pan-in-an-svg"><a class="toclink" href="#what-is-zoom-and-pan-in-an-svg">What is Zoom and Pan in an SVG?</a></h2>
+<h2>What is Zoom and Pan in an SVG?</h2>
 <p>SVG stands for Scalable Vector Graphics. Vectors are mathematical
 of a magnitude and direction in a coordinate space. So when we're zooming, panning,
 or rotating and skewing, an SVG we are <strong>applying coordinate transformations
@@ -100,7 +100,7 @@ SVG element we would add an attribute tag as so</p>
 double all the linear dimensions". For further details on the SVG spec take a look
 at the <a href="https://developer.mozilla.org/en/docs/Web/SVG/Attribute/transform">Mozillla Foundation Documentation</a>
 or visit this blog post by <a href="https://sarasoueidan.com/blog/svg-transformations/">Sara Soueidan</a></p>
-<h2 id="what-are-dom-events-and-event-handlers"><a class="toclink" href="#what-are-dom-events-and-event-handlers">What are DOM Events and Event handlers?</a></h2>
+<h2>What are DOM Events and Event handlers?</h2>
 <p>We won't get too far into this one but take a moment to think about the mechanics
 of event handlers. If you're reading this blog you're likely aware that nothing
 is "magic" in programming, but instead a well structured set of rules has been implement</p>
@@ -109,7 +109,7 @@ their mousewheel, in d3 we see that the SVG correspondly reacts.</p>
 <p>Mozilla Foundation once again comes through and <a href="https://developer.mozilla.org/en-US/docs/Web/Events">lists nearly all</a>
 the event handlers available. For those paying close attention you'll notice zoom
 isn't listed, we'll cover that in a second.</p>
-<h2 id="how-does-d3-implement-zoom"><a class="toclink" href="#how-does-d3-implement-zoom">How does D3 Implement Zoom</a></h2>
+<h2>How does D3 Implement Zoom</h2>
 <p>With an understanding how how SVGs work with zoom and with how browsers handle events
 we can now focus on D3 itself.
 D3 implements zoom in two major piece, mostly encapsulated in two objects.
@@ -119,7 +119,7 @@ its <a href="https://github.com/d3/d3-zoom#api-reference">custom event handler</
 <p>There's also the <strong>d3.ZoomTransform</strong> element which stores the zoom transform
 for a certain element. It is important to note at time of writing d3 does not support
 rotate or any of the other SVG transforms in the Zoom API.</p>
-<h2 id="the-one-liner-explanation"><a class="toclink" href="#the-one-liner-explanation">The One Liner explanation</a></h2>
+<h2>The One Liner explanation</h2>
 <p>With all this newfound knowledge let's dissect the one liner from the previous post,
 here again for reference</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">().</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;zoom&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">g</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">transform</span><span class="p">)}))</span></span>
@@ -148,7 +148,7 @@ d3 zoom event handler</p>
 <p>In this last set of code we are telling d3 change the attribute "transform" on the svg
 group g, whenever the zoom event is invoked. d3.event.transform returns
 an svg string that details the current transform.</p>
-<h2 id="why-the-initial-visualization-jumps"><a class="toclink" href="#why-the-initial-visualization-jumps">Why the initial visualization jumps</a></h2>
+<h2>Why the initial visualization jumps</h2>
 <p>To answer our question from last week here's why the visualization jumps.</p>
 <p>When we initially create the svg group, we manually code the transformed
 position as an attribute on the svg group, copied here for reference</p>
@@ -216,7 +216,7 @@ line, the one that "tells" d3 the initial state of the transform.  </p>
 </pre></div>
 
 
-<h2 id="what-we-covered"><a class="toclink" href="#what-we-covered">What we covered</a></h2>
+<h2>What we covered</h2>
 <p>In the previous post we covered how to implement zoom and pan easily in one
 line of code. In this post we covered how d3 controls zoom behavior with the 
 d3.zoom() object/function and how d3 "remembers" zoom states by setting 
