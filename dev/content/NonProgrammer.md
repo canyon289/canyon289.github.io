@@ -11,8 +11,8 @@ your career and some of the experiences I've had with programming in mine
 
 * Intent of series and introduction
 * What Programming without being a Programmer means
-* Why Programming could be very helpful for your life and career
-* Why Programming could be very bad for your life and career
+* Why Programming could be beneficial for your life and career
+* Why Programming could be detrimental for your life and career
 * My lessons and experiences writing code as a non programmer
 * Steps I'm taking in the future
 
