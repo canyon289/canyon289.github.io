@@ -25,7 +25,7 @@ there is a simple split to describe what a Non Programmer is
 I would describe  the split as  
 
 * People that get paid primarily for their skill to write code
-* People that get paid primarily to do somethhing that isn't write code  
+* People that get paid primarily to do something that isn't write code  
 
 There are people at all companies at which I've been employeed which fit into category one,
 they are given software programs and the expectation of their role 
