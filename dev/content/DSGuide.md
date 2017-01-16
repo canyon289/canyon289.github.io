@@ -94,7 +94,7 @@ This is great because
 getting feedback from others is in my opinion the best way to learn.
 
 However the downside is that the reviewers are usually your peers, and they
-unfortuneately they don't know much more than you typically. Another downside
+unfortunately they don't know much more than you typically. Another downside
 is their motive for feedback is usually just so they can pass the course themselves,
 giving feedback is a requirement for passing. Therefore I personally found
 the feedback to be pretty weak. I made it through 8 out of 10 of the
@@ -103,9 +103,9 @@ of the Coursera Data Science program was a fixed $500 dollars.
 
 ## Udacity Data Analyst Nanodegree
 Udacity, like Coursera, has both free and guided courses. However the major
-difference I found was that Udacity gives you much more access to more experience
+difference I found was that Udacity gives you much more access to more experienced
 mentors. The Udacity projects are much more substantive, some taking more 
-than a month to complete, and during the process you get continous feedback
+than a month to complete, and during the process you get continuous feedback
 from those more experienced mentors. The feedback was critical and 
 forced me to really learn and execute concepts correctly. It was much different
 than Coursera, from which i felt other peers would just rubber stamp my 
@@ -119,7 +119,7 @@ is great if you have motivation, but bad when you didn't.
 
 ## Berkeley Master in Data Science Program
 The Master Degree programs are some of the newest kids on the block in terms
-of Data Science accrediations. The allure is that they combine traditional
+of Data Science accreditations. The allure is that they combine traditional
 education with newer data science topics. I enrolled in the 
 Berkeley program because I felt that I would get a comprehensive education 
 with access to experts in the field, along with the Berkeley accreditation.
@@ -137,7 +137,7 @@ Although I was accepted and attended roughly a month's worth of the lectures
 I ultimately ended up dropping out because I felt the price to value ratio
 was lot, especially since I already had spent tens of thousands of dollars on
 two other bachelors and masters degrees. The program itself was well thought out
-and well put together, but given the much cheaper alteratives above I couldn't
+and well put together, but given the much cheaper alternatives above I couldn't
 justify staying in the program after I learned more about it.
 
 ## PhD
@@ -164,7 +164,7 @@ to participate in these. But if you have the time and money these may be a good
 option for you.
 
 ## Hands on experience
-If you can find smoeone that will mentor you at your job that is by far
+If you can find someone that will mentor you at your job that is by far
 the best option. Nothing beats real world experience in learning how to actually
 do the job. You may need to refer to some of the learning above to get the
 fundamentals but experience is a great teacher.
