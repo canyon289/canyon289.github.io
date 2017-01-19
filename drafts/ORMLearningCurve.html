@@ -84,26 +84,26 @@ unlucky it will be a unstructured text or a network folder full of
 Excel files. If you're really lucky it will be in a a
 <a href="http://vita.had.co.nz/papers/tidy-data.pdf">Tidy</a> format. Somewhere inbetween
 are databases.</p>
-<h1>Databases structure</h1>
+<h1 id="databases-structure"><a class="toclink" href="#databases-structure">Databases structure</a></h1>
 <p>Databases are great, the data is structured, types are well represented,
 and the data is available for all. What's not great is the data is not
 always structured in the way a data scientist would like to use it.</p>
 <p>After deciding to use a <a href="http://canyon289.github.io/WhyIChoseaSSG.html">Statically Generated Site</a>
 I needed to pick a template. Trouble was that I had already found a template for
 WordPress that I had liked.</p>
-<p><img alt="WordPressTheme" src="http://canyon289.github.io/images/PelicanTemplate/WordPressTemplate.png">
+<p><img alt="WordPressTheme" src="http://canyon289.github.io/images/PelicanTemplate/WordPressTemplate.png" />
 <em>The Wordpress theme</em> </p>
 <p>Luckily there was a <a href="https://github.com/getpelican/pelican-themes">GitHubRepo</a>
 that had many prexisting themes and even more luckily there was one 
 that was already a <a href="https://github.com/jvanz/pelican-hyde">close fit</a>
-<img alt="WordPressTheme" src="http://canyon289.github.io/images/PelicanTemplate/PelicanHydeTheme.png">
+<img alt="WordPressTheme" src="http://canyon289.github.io/images/PelicanTemplate/PelicanHydeTheme.png" />
 <em>The Pelican-Hyde theme</em> </p>
 <p>There were some things I didn't like though. I didn't like the sidebar size,
 the links to social media, and the font, or that the sidebar was focused
 on the bottom. Additionally I wanted the horizontal line element from the 
 WordPress theme. Given that this theme was so close though, rather than
 start from scratch I decided to modify the existing one instead.</p>
-<h1>Peeking under the hood</h1>
+<h1 id="peeking-under-the-hood"><a class="toclink" href="#peeking-under-the-hood">Peeking under the hood</a></h1>
 <p>Given that this is a Statically Generated Site everything you see can be
 traced back to a single file quite easily. However given this is still web
 technology there is still the possibility that the formatting could be coming
@@ -111,7 +111,7 @@ from an html file and multiple css stylesheets. Bluntly put figuring out why
 certain things are laid out a certain way, or why they're a certain color, can
 still be a pain. Luckily though the Chrome Team developed awesome dev tools
 which make figuring out what's going on much easier
-<img alt="ChromeDevTools" src="http://canyon289.github.io/images/PelicanTemplate/ChromeDevTools.png">
+<img alt="ChromeDevTools" src="http://canyon289.github.io/images/PelicanTemplate/ChromeDevTools.png" />
 <em>Chrome Dev Tools</em></p>
 <p>In the screenshot above you can see a couple of awesome things. One is that
 by highlighting over an element I can both see the code in the Document
@@ -120,18 +120,18 @@ and position. While I won't go into all the tools here, there are numerous
 other tabs and functions to dive even deeper into more complex applications.
 However in generality using the dev tools is what I used in the following
 steps to deconstruct the Wordpress and Pelican themes</p>
-<p><img alt="ChromeDevTools" src="http://canyon289.github.io/images/PelicanTemplate/CSSModifications.png">
-<em>Adding a Dark Green Class</em><br>
+<p><img alt="ChromeDevTools" src="http://canyon289.github.io/images/PelicanTemplate/CSSModifications.png" />
+<em>Adding a Dark Green Class</em><br />
 For the most part this modifying the CSS to reflect the styles we want.
 For instance above an addition was made the CSS style sheets to allow for
 a Dark Green class that uses the same green in the original WordPress Theme.</p>
-<h1>Modifying the template</h1>
+<h1 id="modifying-the-template"><a class="toclink" href="#modifying-the-template">Modifying the template</a></h1>
 <p>I also wanted links to be added for the static pages to include pages 
 such as About This Blog and References. Luckily Pelican decided to use 
 the jinja2 templating engine which is simple to use.</p>
-<p><img alt="Template Modifications" src="http://canyon289.github.io/images/PelicanTemplate/TemplateModification.png"></p>
+<p><img alt="Template Modifications" src="http://canyon289.github.io/images/PelicanTemplate/TemplateModification.png" /></p>
 <p>By adding the above loop in white, links will now be added for each sidebar link.</p>
-<h1>Why does this matter for Data Science</h1>
+<h1 id="why-does-this-matter-for-data-science"><a class="toclink" href="#why-does-this-matter-for-data-science">Why does this matter for Data Science</a></h1>
 <p>As a data scientist part of the job is being able to present information
 seamlessly and quickly. The Web was built for this 
 Using it to be able to quickly and effectively use this medium is an extremely

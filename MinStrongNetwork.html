@@ -85,18 +85,18 @@ are considered to be strongly connected if each person knows each other person
 within the group.</p>
 <p>Given M nodes and N edges develop an algorithm that determines
 the minimum size of the largest strongly connected group.</p>
-<p>Constraints:<br>
--  1 &lt;= N &lt;= 100000<br>
--  2 &lt;= M &lt;= 10000<br>
+<p>Constraints:<br />
+-  1 &lt;= N &lt;= 100000<br />
+-  2 &lt;= M &lt;= 10000<br />
 -  1 &lt;= M &lt;= N*(N-1)/2 </p>
-<h2>Question Format</h2>
+<h2 id="question-format"><a class="toclink" href="#question-format">Question Format</a></h2>
 <p>Online coding challenge</p>
-<h2>Time Constraint</h2>
+<h2 id="time-constraint"><a class="toclink" href="#time-constraint">Time Constraint</a></h2>
 <p>1 of 3 Coding problems 2 Hours given</p>
-<h2>Context</h2>
+<h2 id="context"><a class="toclink" href="#context">Context</a></h2>
 <p>This question was a 2nd round automated interview question
 given after passing multiple choice statistics question</p>
-<h2>Initial thoughts</h2>
+<h2 id="initial-thoughts"><a class="toclink" href="#initial-thoughts">Initial thoughts</a></h2>
 <p>There exist algorithms that can efficiently find strongly groups in
 directed graphs such as 
 <a href="https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm">Tarjan's Algorithm</a>
@@ -117,7 +117,7 @@ connected groups of 2 and 1 strongly connected group of three.  </p>
 <p>Instead if we place 4 edges like this, the largest connected
 group is 2 even though the number of edges and nodes are the same.
 <div id="betterconnectedgraph"></div>  </p>
-<h2>Experimental Solution</h2>
+<h2 id="experimental-solution"><a class="toclink" href="#experimental-solution">Experimental Solution</a></h2>
 <p>The trick to this problem is to construct the most weakly connected
 network possible. this can intuitively be done in stages. At first the edges
 are placed to connect the nodes "around the edges". Up until this point the
@@ -132,7 +132,7 @@ while maintaining a strongly connected group of 2.</p>
 connected groups are placed and groups of three begin to appear.</p>
 <p>In words this is challenging to describe but the algorithm is quite visually
 intuitive as shown below.</p>
-<h3>Click to start search</h3>
+<h3 id="click-to-start-search"><a class="toclink" href="#click-to-start-search">Click to start search</a></h3>
 <div id="vis"></div>
 
 <div class="highlight"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">add_edge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span></span>

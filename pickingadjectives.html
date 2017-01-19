@@ -82,13 +82,13 @@
 describe themselves out of 25 given words. If 4 out of 5 of the words are the
 same the dating site declares they're a match. What's the probability
 those couples match?</p>
-<h2>Question Format</h2>
+<h2 id="question-format"><a class="toclink" href="#question-format">Question Format</a></h2>
 <p>Online text input box</p>
-<h2>Time Constraint</h2>
+<h2 id="time-constraint"><a class="toclink" href="#time-constraint">Time Constraint</a></h2>
 <p>1 of 20 problems on a one hour test</p>
-<h2>Context</h2>
+<h2 id="context"><a class="toclink" href="#context">Context</a></h2>
 <p>This question was a 1st round automated interview test.</p>
-<h2>Standard Assumptions</h2>
+<h2 id="standard-assumptions"><a class="toclink" href="#standard-assumptions">Standard Assumptions</a></h2>
 <p>Given problems like this it's safe to assume the picks are independent
 both between the people, and even between the words themselves. In real life
 if the adjectives "vegetarian" and "steak eater" were in the same list
@@ -101,9 +101,9 @@ is to assume one person already picked 5 words so find
 the probability the other person picks 4 out of the 5 words.
 Mathematically it's the same but conceptually it helps
 me work with the problem more easily.</p>
-<h2>Solution 1</h2>
+<h2 id="solution-1"><a class="toclink" href="#solution-1">Solution 1</a></h2>
 <p>If you're unlucky there's a chance you'll blank on the elegant
-way to solve this.<br>
+way to solve this.<br />
 However if you're partially lucky you'll be sitting in 
 front of a computer with no one around.</p>
 <p>As it turns out I was partially lucky.</p>
@@ -139,7 +139,7 @@ on my laptop.</p>
 It's actually very useful for a wide range of problems
 that are too complicated for closed form solutions.
 But for this problem there are better solutions.</p>
-<h2>Solution 2</h2>
+<h2 id="solution-2"><a class="toclink" href="#solution-2">Solution 2</a></h2>
 <p>But before we get to the better solution let's say you're
 really unlucky.  You both forgot the elegant method
 and don't have a computer. This problem can be brute forced.  </p>
@@ -187,13 +187,14 @@ but you would get the exact answer.</p>
 it would also be a pain and you'd get almost
 the right answer.
 (You don't because of floating point error)</p>
-<h2>Solution 3</h2>
+<h2 id="solution-3"><a class="toclink" href="#solution-3">Solution 3</a></h2>
 <p>If you were really on your game though you'd realize
 that this is a combinatorics problem. Essentially we need to pick
 X winning combinations out of Y possible combinations.</p>
 <p>In combination notation it looks like this.
-$${{5 \choose 4}{19 \choose 1} + {5 \choose 5}{19 \choose 0}}
-  \over {25 \choose 5}$$  </p>
+</p>
+<div class="math">$${{5 \choose 4}{19 \choose 1} + {5 \choose 5}{19 \choose 0}}
+  \over {25 \choose 5}$$</div>
 <p>In python we can use the Combinations function to get the answer</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">combinations</span></span>
 <span class="code-line"></span>
@@ -211,6 +212,63 @@ $${{5 \choose 4}{19 \choose 1} + {5 \choose 5}{19 \choose 0}}
 
 <p>There are some additional tricks that would allow you to simplify the calculation
 even further but I leave it up to you to explore combinatorics further</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 </div>
 		</div>
 	</body>
