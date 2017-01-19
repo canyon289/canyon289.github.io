@@ -91,20 +91,20 @@ friend circles in the class.
 Note: The method signature will differ by language. For example, Java will have 'int
 friendCircles﴾String[] friends﴿' where "friends" is an array of strings, which can be
 viewed as a 2 dimensional array of characters.</p>
-<p>Constraints:<br>
--  1 &lt;= N &lt;= 300<br>
--  Each element of matrix friends will be 'Y' or 'N'<br>
--  Number of rows and columns will be equal in friends<br>
--  friends[i][i] = 'Y', where 0 &lt;= i &lt; N<br>
+<p>Constraints:<br />
+-  1 &lt;= N &lt;= 300<br />
+-  Each element of matrix friends will be 'Y' or 'N'<br />
+-  Number of rows and columns will be equal in friends<br />
+-  friends[i][i] = 'Y', where 0 &lt;= i &lt; N<br />
 -  friends[i][j] = friends[j][i], where 0 &lt;= i &lt; j &lt; N  </p>
-<h2>Question Format</h2>
+<h2 id="question-format"><a class="toclink" href="#question-format">Question Format</a></h2>
 <p>Online coding challenge</p>
-<h2>Time Constraint</h2>
+<h2 id="time-constraint"><a class="toclink" href="#time-constraint">Time Constraint</a></h2>
 <p>1 of 3 Coding problems 2 Hours given</p>
-<h2>Context</h2>
+<h2 id="context"><a class="toclink" href="#context">Context</a></h2>
 <p>This question was a 2nd round automated interview question
 given after passing multiple choice statistics question</p>
-<h2>Initial thoughts</h2>
+<h2 id="initial-thoughts"><a class="toclink" href="#initial-thoughts">Initial thoughts</a></h2>
 <p>When I saw this question I made a critical error
 in my initial understanding of what a friends circle meant.</p>
 <p>I was able to make the first key insight which is that
@@ -118,17 +118,17 @@ looking for. Loops in graphs are called cycles
 and numerous algorithms exist to find them. However
 this is not what this question was asked for and I wasted
 pretty much 40 minutes implementing this solution.</p>
-<h2>Where I went wrong</h2>
-<h3>Not understanding the question</h3>
+<h2 id="where-i-went-wrong"><a class="toclink" href="#where-i-went-wrong">Where I went wrong</a></h2>
+<h3 id="not-understanding-the-question"><a class="toclink" href="#not-understanding-the-question">Not understanding the question</a></h3>
 <p>During the interview I wasn't able to understand the 
 question correctly. Unfortunately since I had no human
 interviewer I was unable to ask for clarification</p>
-<h3>Too slow to iterate</h3>
+<h3 id="too-slow-to-iterate"><a class="toclink" href="#too-slow-to-iterate">Too slow to iterate</a></h3>
 <p>It became apparent to me that my understanding was
 wrong when I failed the majority of the test cases.
 But I had already wasted 30 minutes to get to that point
 and ran out of time</p>
-<h2>The Solution</h2>
+<h2 id="the-solution"><a class="toclink" href="#the-solution">The Solution</a></h2>
 <p>It was misleading that the problem was titled Friends Circles
 because the problem is actually asking how many people
  are connected through their friends and their 
@@ -141,7 +141,7 @@ to do was pick a node, run a depth first search algorithm
 to find all the nodes that share a tree, then move onto the
 next node and try again. The number of unique trees
 is the answer to all the test cases.</p>
-<h2>Code</h2>
+<h2 id="code"><a class="toclink" href="#code">Code</a></h2>
 <p>The first order of business is to read in the inputs that look like this  </p>
 <div class="highlight"><pre><span class="code-line"><span></span>YYNN  </span>
 <span class="code-line">YYYN  </span>
@@ -200,13 +200,13 @@ friends count and the visited list.</p>
 One is that we don't waste computational time finding all the friends of a 
 person we've already searched. Additionally it allows the find_friends
 function to terminate once all the visited friends in a tree have been found.</p>
-<h2>Visualization</h2>
+<h2 id="visualization"><a class="toclink" href="#visualization">Visualization</a></h2>
 <p>Here's a visualization of the search process. You notice that once the algorithm
 finds a tree it stays on it until there are no more nodes left.</p>
 <p>To make this visualization the algorithm was also reimplemented in javascript which
 you can find here. The visualization is possible due to the awesome
 d3 javascript library which will get a post of it's own in the future</p>
-<h3>Click to start search</h3>
+<h3 id="click-to-start-search"><a class="toclink" href="#click-to-start-search">Click to start search</a></h3>
 <p><div id="vis"> </div></p>
 </div>
 		</div>

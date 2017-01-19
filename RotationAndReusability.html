@@ -80,24 +80,24 @@
 	<span class="post-date">Sat 15 October 2016</span>
 	<p>SVGs aren't always the most straightforward to work it and also are deceptively
 simple but as you'll get more familiar with the API you'll be able to
-combine SVG "methods" to more easily get what you need.<br>
+combine SVG "methods" to more easily get what you need.<br />
 In this post we'll cover rotation and reusability of SVG elements as well
 as the practical problem this solved for me</p>
-<h1>The Backstory</h1>
+<h1 id="the-backstory"><a class="toclink" href="#the-backstory">The Backstory</a></h1>
 <p>At SpaceX I'm currently writing a program that will calculate a timeline
 of activities and am using D3 for the visualization portion. For this particular
 business process there are activities, things that happen over a period of time,
 and milestones, significant dates that mark the completion of a series of activities</p>
-<h1>Gantt Charts</h1>
+<h1 id="gantt-charts"><a class="toclink" href="#gantt-charts">Gantt Charts</a></h1>
 <p>Schedules are nothing new, over a 100 years ago 
 <a href="https://en.wikipedia.org/wiki/Gantt_chart">the Gantt Chart</a> was developed
 to visualize and communicate project timelines
-<img alt="test" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/ConceptDraw_Project_Gantt_Chart.png"></p>
+<img alt="test" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/ConceptDraw_Project_Gantt_Chart.png" /></p>
 <p>There's now numerous visual encodings but the two that are most used are
 the rectangle, displaying activity duration, and diamonds, which signify milestones
 or completion times of important events.
 <div id="unclipped"></div></p>
-<h1>Creating a diamond</h1>
+<h1 id="creating-a-diamond"><a class="toclink" href="#creating-a-diamond">Creating a diamond</a></h1>
 <p>SVG supports a number of 
 <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes">basic shapes</a>
 Rectangles are oneof these and creating one just requires easily understood parameters
@@ -111,7 +111,7 @@ such as x,y location of te top left corner and width and height.</p>
 
 <p>They can be represented in either of the formats above, the only difference
 being the closing block for the svg element.The resulting SVG looks like this.
-Seemingly unspectacular but actually pretty cool for only 4 lines of code.<br>
+Seemingly unspectacular but actually pretty cool for only 4 lines of code.<br />
 <svg>
   <rect x="10" y="10" height="20" width="40"/>
   <rect x="20" y="40" height="20" width="40"></rect>
@@ -123,7 +123,7 @@ to draw a diamond we could instead manually "draw" the lines like this</p>
   <path d="M50 15 L15 50 L50 85 L85 50 Z"></path>
 </svg>
 But this feels like a bit much, we really just want a diamond.</p>
-<h1>Rotation</h1>
+<h1 id="rotation"><a class="toclink" href="#rotation">Rotation</a></h1>
 <p>Taking a step back though if we think about it a diamond really is just 
 a rotated rectangle. Luckily there is a simple method to rotate elements in SVGs.</p>
 <div class="highlight"><pre><span class="code-line"><span></span>transform = &quot;rotate(degrees, x,y)&quot;</span>
@@ -173,7 +173,7 @@ but it's not at the coordinates we wanted it to be.</p>
 The blue square and the black diamond share the same x and y attribute, but since
 the center of rotation is at red dot, the diamond isn't in the position as the
 black square.</p>
-<h1>SVG Reusability</h1>
+<h1 id="svg-reusability"><a class="toclink" href="#svg-reusability">SVG Reusability</a></h1>
 <p>SVG has another trick up it's sleeve though. Take a guess what the following
 SVG will look like.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
@@ -228,7 +228,7 @@ the id of the element.</p>
   <use xlink:href="#diamond" x="50" y="50"/>
   <use xlink:href="#diamond" x="100" y="100"/>
 </svg></p>
-<h1>In Closing</h1>
+<h1 id="in-closing"><a class="toclink" href="#in-closing">In Closing</a></h1>
 <p>Declaring elements in the defs tag is how DRY, Don't Repeat Yourself, is 
 implemented in SVGs. As you can see they're also extremely useful in
 very practical situations. If you have any questions feel free to contact

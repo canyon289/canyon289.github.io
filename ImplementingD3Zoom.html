@@ -83,18 +83,18 @@
 One of the best ways it does this is by leveraging user interactions, by means
 of clicks, drags, and scrolls to highlight data. We'll be exploring how to 
 implement one of these interactions, the zoom interaction in D3 4.0</p>
-<h2>The benefits of Zoom</h2>
+<h2 id="the-benefits-of-zoom"><a class="toclink" href="#the-benefits-of-zoom">The benefits of Zoom</a></h2>
 <p>In data visualization zooming is a handy method to allow the user both see the
 whole picture but also the minute details. This also means the user can focus 
 on the details that personally matter to them. Perhaps the most prevalent 
 example of this is with services like Google Maps, where users can seamlessly
 transition from a map of the entire world, to a detailed map of their neighborhood.</p>
-<h2>Zoom in D3</h2>
+<h2 id="zoom-in-d3"><a class="toclink" href="#zoom-in-d3">Zoom in D3</a></h2>
 <p>As with the rest of the library zoom in D3 the API is not immediately obvious,
 and potentially frustrating. However as you become more familiar with it you'll
 come to realize how well it implements an intuitive response and abstracts away
 complicated mathematical but still leaves the ability to change the underlying behavior.</p>
-<h2>The One Liner</h2>
+<h2 id="the-one-liner"><a class="toclink" href="#the-one-liner">The One Liner</a></h2>
 <p>If you need basic zooming and panning behavior and in D3 it's extremely simple
 to implement.  </p>
 <p>Let's start by creating an svg with a group and adding a circle to it.</p>
@@ -126,7 +126,7 @@ to implement.  </p>
 
 <p><strong>Before you leave</strong> note that the event listener has been applied to the svg
 but the transformation is applied to the group.</p>
-<h2>Zoom + Margin convention</h2>
+<h2 id="zoom-margin-convention"><a class="toclink" href="#zoom-margin-convention">Zoom + Margin convention</a></h2>
 <p>For the visualization I was building at first I was thrilled having solved
 my problem, but I ran into another problem.  </p>
 <p>My visualization was using the <a href="https://bl.ocks.org/mbostock/3019563">margin convention</a>
