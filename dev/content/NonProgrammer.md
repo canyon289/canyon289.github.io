@@ -49,7 +49,7 @@ that it's a skill, both as a hobby and as a marketable ability.
 
 # What to expect
 In the upcoming articles I'll talk about some of the benefits, but also
-challenges, I faced when attemping to do this, how I was able work the
+challenges, I faced when attempting to do this, how I was able work the
 new skills into my current career and how interactions with full time
 developers worked and didn't work. In the next post I'll specifically
 talk about what I mean with the title
