@@ -1,4 +1,4 @@
-Title: Part 1: Programming without being a Programmer 
+Title: Programming as a Non Programmer - Part 1
 Date: 2017-01-09
 Category: Programming 
 Tags: 
@@ -10,7 +10,7 @@ This is Part 1 in a series about how learning how to program could affect
 your career and some of the experiences I've had with programming in mine
 
 * Intent of series and introduction
-* What Programming without being a Programmer means
+* What Programming as a Non Programmer means
 * Why Programming could be beneficial for your life and career
 * Why Programming could be detrimental for your life and career
 * My lessons and experiences writing code as a non programmer
