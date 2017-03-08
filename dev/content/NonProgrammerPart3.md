@@ -31,9 +31,9 @@ Some reasons that I read or I hear usually follow along the lines of
 2. Programmers make more money
 3. My boss will give me a raise if I learn how to program
 4. Computers are everywhere in everyday life, you should learn how to program them 
-5. You'll get to work wherever you want, whenever you want (Link)
+5. You'll get to work wherever you want, whenever you want 
 6. Founder XYZ of startup ABC made a billion dollars programming
-7. "If you're an English Major ... or didn't go to college .. or were raised by Wolves" (link)
+7. ["If you're an English Major ... or didn't go to college .. or were raised by Wolves"](https://www.forbes.com/sites/laurencebradford/2016/06/20/why-every-millennial-should-learn-some-code/2/#)
 
 These pitches are echoed all over the place, even literally from Forbes.
 A lot of times it's accompanied by
@@ -49,9 +49,9 @@ but again I strongly believe this advice does not universally apply.
 
 ## Programming is not a get rich quick scheme
 If you're learning programming with the sole intent of making money easily,
-or conversely getting a "work from anywhere" lifestyle, consider the economics 
+or getting a "work from anywhere" lifestyle, consider the economics 
 of this. If programming was easy, if anyone learn it in 6 months, if you can
-work remotely, why would companies **you** a nice salary to do it? When I say
+work remotely, why would companies pay **you** a nice salary to do it? When I say
 you, I mean you, versus a person in India, or Mexico, who can work for one 
 tenth of the cost. Or you versus the high schooler down the street that
 just graduated. Cal Newport writes an excellent blog series, one of the points
@@ -82,6 +82,34 @@ people to program. I feel that people should be interested in an activity
 for it's merits, rather than being scared into it by being told that 
 their previous choices were largely mistakes.
 
+# Past the flashy titles
+If you look past click bait titles there's some underlying truths to 
+how people generate value from their skills.
+
+## Writing a program is easy, mastering programming is hard 
+I write English. There are other people that
+also write English such as JK Rowling, Tom Clancy, and J.R.R. Tolkien.
+Yet those people were paid millions of dollars for their words. I doubt
+anyone will pay me for the words on this  blog. The difference is those people have mastered
+the English language in their own unique way through years of hard work and practice.
+
+Learning to do program isn't free, even if Youtube videos or books cost $0 dollars
+online you'll need to spend many hours of your life focusing on learning
+programming (or any other skill really). 
+
+## Programming skills by themselves are rarely valued 
+Pay attention to the skillsets of the people that earned value from
+programming, usually people like Bill Gates or Mark Zuckerberg are examples.
+Those people were good at programming, but they were also good at other things,
+especially leadership and figuring out what people wanted. A good programmer
+that can't communicate or work with others usually does not have a great life.
+An unfortunate example of this is Phil Katz, who was an extraordinary programmer,
+but had trouble working with others and arguably did not have an ideal life in
+his later days. Strongly consider what skills you have that you can work on 
+outside of programming constantly.
+
+# The ugly truth
+##
 # The Summary
 There's a lot of good reasons to learn how to program, but the reasons
 above in my opinion are not the right ones. If you're deciding to program
