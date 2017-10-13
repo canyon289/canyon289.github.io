@@ -1,4 +1,4 @@
-Title: A reccomendation on Berkeley's Deep Reinforcement Learning Bootcamp
+Title: A recommendation on Berkeley's Deep Reinforcement Learning Bootcamp
 Date: 2017-08-27
 Category: Programming, MachineLearning
 Tags: 
@@ -7,24 +7,24 @@ Authors: Ravin Kumar
 Status: published 
 
 I just spent the weekend at the Berkeley Reinforcement Learning Bootcamp. Below
-you'll find a collection of my thoughts and my reccomendations if you should
+you'll find a collection of my thoughts and my recommendations if you should
 attend.
 
 # Recommendations 
 I'm guessing most people will care about this so I'll just put it at the top.
-My reccomendation is basically split into three categories.
+My recommendation is basically split into three categories.
 
 ## I'm at least lightly interested in AI/RL and my employer will pay
 Then you should definitely come. It's definitely worth the weekend because
 no matter what you'll be walking out of here with more knowledge than when
-you started.  The informatin has been condensed by the experts to maximize
+you started.  The information has been condensed by the experts to maximize
 your learning in a short time.
 
 ## I'm interested but I'm paying myself
 Sort of a toss up here. The bootcamp is pretty expensive but it still might
 be worthwhile. Read on for more details to see if it's worth it for you.
 
-# An approximate achedule and what was covered
+# An approximate schedule and what was covered
 The bootcamp was split over two days, with approximately 12 hours of activity
 each day. In a day specifically there about
 
