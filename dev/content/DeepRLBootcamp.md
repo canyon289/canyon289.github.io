@@ -6,8 +6,10 @@ Slug:  DeepRLBootcamp
 Authors: Ravin Kumar
 Status: published 
 
-I just spent the weekend at the Berkeley Reinforcement Learning Bootcamp. Below
-you'll find a collection of my thoughts and my recommendations if you should
+I just spent the weekend at the Berkeley Reinforcement Learning Bootcamp. 
+Overall I found it to be an intense but rewarding experience but also
+expensive if you're paying out of pocket.
+Read on for more of my thoughts and my recommendations if you should
 attend.
 
 # Recommendations 
