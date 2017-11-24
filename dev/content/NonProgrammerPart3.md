@@ -108,8 +108,6 @@ but had trouble working with others and arguably did not have an ideal life in
 his later days. Strongly consider what skills you have that you can work on 
 outside of programming constantly.
 
-# The ugly truth
-##
 # The Summary
 There's a lot of good reasons to learn how to program, but the reasons
 above in my opinion are not the right ones. If you're deciding to program

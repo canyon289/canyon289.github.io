@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Ravin Kumar</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/poole.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/hyde.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/syntax.css" />
+        <link rel="stylesheet" href="http://canyon289.github.io/theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- CSS style sheets for pelican javascript plugin -->    
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class="theme-base-darkgreen">
+<div class="sidebar">
+    <div class="container">
+        <div >
+            <h1 class="sidebar-title">
+                <a href="/">
+                    <!---<img class="profile-picture" src="http://canyon289.github.io/images/"> --->
+                    <!---['Manufacturing', 'and Machine Learning']--->
+                    Manufacturing<br>and Machine Learning
+                    
+                </a>
+            </h1>
+        </div>
+      <!---Add Pages for Static Content --->
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="http://canyon289.github.io/pages/About.html">
+              About
+              </a>
+            </h1>
+        </div>
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="http://canyon289.github.io/pages/reference_page.html">
+              References
+              </a>
+            </h1>
+        </div>
+    <div>
+    <nav class="sidebar-nav">
+                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a class="sidebar-nav-item" href="https://github.com/canyon289">
+                    <i class="fa fa-github"></i>
+                </a>
+
+    </nav>
+    </div>
+    </div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">Maintainable Machine Learning Code</h1>
+	<span class="post-date">Sun 26 November 2017</span>
+	<p>Creating a machine learning pipeline requires almost no thought these days but 
+maintaining a reusable and understandable codebase the whole way
+through is much more challenging. However there are some steps and 
+ideas that can be borrowed from traditional programming that are
+still relevant.</p>
+<h2 id="big-ball-of-mud-machine-learning-edition"><a class="toclink" href="#big-ball-of-mud-machine-learning-edition">Big Ball of Mud - Machine Learning Edition</a></h2>
+<p>Below is
+complete program to make predictions on the Iris dataset</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv&quot;</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;species&quot;</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">clf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span></span>
+<span class="code-line"><span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df</span><span class="p">)</span></span>
+</pre></div>
+
+
+<p>Even to non programmers the above lines of code are pretty easy to read,
+and it's easy enough to just put that into a python file in some
+directory with the data files next to it,
+<em>you need an immediate fix for a small problem, or a quick prototype or proof of concept</em>.</p>
+<p>Later on you realize there's some steps you can do to make your model better.
+It starts off innocently enough, perhaps just one line to normalize
+the features, maybe a loop to perform cross validation
+but within a couple of hours you'll end up with one large python
+script that has true false statements all over the place, code chunks
+that are commented out, and incoherent comments all over the place. Suddenly
+the <em>piecemeal growth</em> of our project dawns on you.</p>
+<p>Hopefully you're using version control but even then all your code commits will be
+on the master branch with commit messages like "model 1" or "added pickling column".
+You'll find some features are engineered off other features, or 
+portions of your code relied on a datatype coercion you made somewhere between
+the third and sixth commit. As your code progressed
+<em>Different artifacts change at different rates</em> and you're trying
+to remember which processing steps were required to run one of the predictions
+you had that other day.</p>
+<p>Your code is now a <a href="http://www.laputan.org/mud/">Big Ball of Mud</a>. Big Ball of
+Mud is an excellent paper written in 1999 about what happens when code
+is haphazardly written. The paper is still relevant today, with all the
+text in italics copied and pasted straight from the paper. At
+the core the paper is warning us that if architecture is not persistently considered
+the final code base will become unmaintainable that it will eventually need to be 
+totally torn down.
+Unfortunately this is how I've seen so many machine learning implementations turn out.
+The issue is present even at large companies like <a href="" title="https://eng.uber.com/michelangelo/">Uber</a>
+who have built dedicated platforms for creating maintainable machine learning
+pipelines.</p>
+<p>Even if you're just writing code for yourself there's still benefits intentionally
+writing your code in a reusable way. You'll be able to iterate faster,
+structure your experiments, and be able to revisit your code with minimal effort
+later on. </p>
+<h1 id="general-approaches"><a class="toclink" href="#general-approaches">General approaches</a></h1>
+<p>With some experimentation I've been able to find an approach that works for me.</p>
+<h2 id="start-with-a-package"><a class="toclink" href="#start-with-a-package">Start with a package</a></h2>
+<p>Whether you're using R, Python, or any other language really, study up
+on what is typically done to package the code. </p>
+<p>With Python I immediately do four things at a minimum
+<em> Create a requirements.txt or environment.yml file
+</em> Create a source code directory
+<em> Write a README.md
+</em> Initialize a git repo and commit everything</p>
+<p>These are the minimum steps for reproducibility. Imagine how hard it would be
+if someone handed you a flash drive full of Python files. How do you know
+what is required to run it, or what packages are needed? Rather
+than worry if they were using Python 2 or 3, or pandas .19, etc 
+With these four basic steps you're guaranteeing that the environment
+is reproducible.</p>
+<p>A great tool that helps with this is CookieCutter templates,
+specifically this <a href="https://github.com/drivendata/cookiecutter-data-science">Data Science Template</a>
+It's got even more than detailed here but really will make setting up a reuseable
+package easy.</p>
+<h2 id="write-a-library-for-reusable-components-of-your-code"><a class="toclink" href="#write-a-library-for-reusable-components-of-your-code">Write a library for reusable components of your code</a></h2>
+<p>Don't put everything in your main.py file. For code that loads datasets,
+or writes predictions to a file, write a package that lets you abstract
+that away from your machine learning code. Although it takes more 
+effort up front, later on it means your actual prediction script
+will be much easier to read.</p>
+<p>For example in the example above we can write a function that looks like this</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">load_iris</span><span class="p">():</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;Loads iris dataset from github, returns (df,y)&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/uiuc-cse/data-fa14/gh-pages/data/iris.csv&quot;</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;species&quot;</span><span class="p">)</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">df</span><span class="p">,</span> <span class="n">y</span></span>
+</pre></div>
+
+
+<p>Doing this has multiple benefits, if written in the package you can import
+this into any script without any duplication. It also clearly demarcates
+that this set of code has no dependencies on other lines.</p>
+<h2 id="use-a-testing-package"><a class="toclink" href="#use-a-testing-package">Use a testing package</a></h2>
+<p>Unittests are still relevant with machine learning code. You can use
+tests for your own code. There are many examples of 
+<a href="https://www.google.com/search?q=test+driven+development">test driven development</a>.
+However I also use tests to test my own understanding of how machine
+learning libraries work. By writing the following tests I can double check
+my understanding of word lemmatizers and CountVectorizer in sklearn.</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">test_lemmatization</span><span class="p">():</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;Test that Lemmatizer works&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="n">wnl</span> <span class="o">=</span> <span class="n">WordNetLemmatizer</span><span class="p">()</span></span>
+<span class="code-line">    <span class="k">assert</span> <span class="n">wnl</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="s1">&#39;dogs&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;dog&#39;</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">def</span> <span class="nf">test_lemmatization_with_countvectorizer</span><span class="p">():</span></span>
+<span class="code-line">    <span class="sd">&quot;&quot;&quot;Test Lemmatization with Stop Words removal&quot;&quot;&quot;</span></span>
+<span class="code-line">    <span class="n">strings</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;I like Dogs and&quot;</span><span class="p">,</span> <span class="s2">&quot;I like Churches and&quot;</span><span class="p">]</span></span>
+<span class="code-line">    <span class="n">count</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">tokenizer</span><span class="o">=</span><span class="n">lemmatizer</span><span class="p">,</span> <span class="n">stop_words</span><span class="o">=</span><span class="s1">&#39;english&#39;</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">count</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">strings</span><span class="p">)</span></span>
+<span class="code-line">    <span class="k">assert</span> <span class="p">{</span><span class="s1">&#39;church&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;like&#39;</span><span class="p">}</span> <span class="o">==</span> <span class="nb">set</span><span class="p">(</span><span class="n">count</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">())</span></span>
+</pre></div>
+
+
+<p>It's not about my doubt that the code is implemented poorly, but moreso
+to double check and reinforce my own understanding. By writing series
+of these tests I find that I both understand what other libraries are doing and
+that I double check my understanding fundamentals of the theory.</p>
+<h1 id="scikit-learn-specific"><a class="toclink" href="#scikit-learn-specific">Scikit-learn specific</a></h1>
+<p>If you use scikit there are some additional tools that are helpfuk.
+sckit-learn itself is written in a way that makes machine learning composable.
+It's so good that other non scikit-learn libraries
+tend to build similar APIs to maintain compatability, for example XGBoost
+implements a scikit-learn abstraction layer.</p>
+<h2 id="use-pipelines"><a class="toclink" href="#use-pipelines">Use pipelines</a></h2>
+<p>sckit-learn makes it very easy to tie data processing steps together, without
+storing intermediate results. It also makes it easy to turn off
+or turn on portions of your pipeline without having to comment entire
+blocks of code. And lastly it makes it very easy to use parameter grid searches
+and cross validation in one or two lines.</p>
+<h2 id="write-your-own-predictors-and-transformers"><a class="toclink" href="#write-your-own-predictors-and-transformers">Write your own predictors and transformers</a></h2>
+<p>Most of the time however data will require some data munging before
+scikit-learns transformers and predictors can use it. For these activities
+scikit-learn provides all the scaffolding you need 
+<a href="http://scikit-learn.org/stable/modules/classes.html#module-sklearn.base">in its base module</a>
+By utilizing these it keeps you within the pipeline framework which
+again makes it easy to use all the built in tools for experimentation.</p>
+<p>For example here is an implementation of a transformer I used in a Natural 
+Language Processing Problem that found word count and string length for a given string.</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">class</span> <span class="nc">TextTransformer</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">features</span><span class="p">):</span></span>
+<span class="code-line">        <span class="sd">&quot;&quot;&quot;Takes column of text and returns back array of features. Features list is specified by features</span></span>
+<span class="code-line"><span class="sd">        Parameters</span></span>
+<span class="code-line"><span class="sd">        ----------</span></span>
+<span class="code-line"><span class="sd">        features : iter</span></span>
+<span class="code-line"><span class="sd">            Iterable of features strings that correspond to class</span></span>
+<span class="code-line"><span class="sd">        &quot;&quot;&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line">        <span class="bp">self</span><span class="o">.</span><span class="n">features</span> <span class="o">=</span> <span class="n">features</span></span>
+<span class="code-line">        <span class="k">return</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span></span>
+<span class="code-line">        <span class="k">return</span> <span class="bp">self</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span></span>
+<span class="code-line">        <span class="sd">&quot;&quot;&quot;Accepts Pandas Series and returns back a dataframe where each column is a feature&quot;&quot;&quot;</span></span>
+<span class="code-line"></span>
+<span class="code-line">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">features</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span></span>
+<span class="code-line">            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Features must be a list of features that will be used in this model&quot;</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line">        <span class="n">features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span></span>
+<span class="code-line"></span>
+<span class="code-line">        <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">features</span><span class="p">:</span></span>
+<span class="code-line">            <span class="n">transformer</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feature</span><span class="p">)</span></span>
+<span class="code-line">            <span class="n">col</span> <span class="o">=</span> <span class="n">transformer</span><span class="p">(</span><span class="n">X</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line">            <span class="n">features</span><span class="p">[</span><span class="n">feature</span><span class="p">]</span> <span class="o">=</span> <span class="n">col</span></span>
+<span class="code-line"></span>
+<span class="code-line">        <span class="k">return</span> <span class="n">features</span><span class="o">.</span><span class="n">values</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="nd">@staticmethod</span></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">word_count</span><span class="p">(</span><span class="n">X</span><span class="p">):</span></span>
+<span class="code-line">        <span class="sd">&quot;&quot;&quot;Count the number of words in each string&quot;&quot;&quot;</span></span>
+<span class="code-line">        <span class="k">return</span> <span class="n">X</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)))</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="nd">@staticmethod</span></span>
+<span class="code-line">    <span class="k">def</span> <span class="nf">sentence_length</span><span class="p">(</span><span class="n">X</span><span class="p">):</span></span>
+<span class="code-line">        <span class="sd">&quot;&quot;&quot;Get the length of the string for each author&quot;&quot;&quot;</span></span>
+<span class="code-line">        <span class="k">return</span> <span class="n">X</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span></span>
+</pre></div>
+
+
+<p>While seemingly verbose, if using packages in my machine learning code
+this entire feature processing portion of logic looked like this</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">FeatureUnion</span><span class="p">(</span></span>
+<span class="code-line">    <span class="p">[</span></span>
+<span class="code-line">    <span class="p">(</span><span class="s1">&#39;basic_preprocessing&#39;</span><span class="p">,</span> <span class="n">TextTransformer</span><span class="p">(</span><span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;word_count&#39;</span><span class="p">,</span> <span class="s1">&#39;sentence_length&#39;</span><span class="p">])),</span></span>
+<span class="code-line">    <span class="p">(</span><span class="s2">&quot;tfidf&quot;</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">())</span></span>
+<span class="code-line">    <span class="p">]</span></span>
+<span class="code-line"><span class="p">)</span></span>
+</pre></div>
+
+
+<p>It made it dead simple for me to add or remove features with just one
+line of code, making my experimentation and feature selection process
+that much quicker.</p>
+</div>
+		</div>
+	</body>
+    <!-- Javascript Loader for Pelican Javascript plugin-->
+</html>
