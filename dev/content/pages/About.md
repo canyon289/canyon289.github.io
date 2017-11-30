@@ -5,7 +5,7 @@ Authors: Ravin Kumar
 Status: published
 
 
-##About me
+## About me
 My name is Ravin Kumar and I'm somewhere between an engineer, programmer,
 and data scientist. I currently work for SpaceX but it is important to note
 that **all of the writing and opinions on this blog represent my own** and
@@ -27,15 +27,9 @@ data science and computational methods to understand and improve
 things of all types. It really is fun!
 
 
-##This blog
+## This blog
 This blog focuses on the technologies, opinions, and challenges that are
 present in my everyday life. Right now it's focused on using technology
 to literally make, as in manufacture, items in a much more efficient
 and effective way. 
 
-My previous intent was to blog about Data Science interview questions and their
-solutions so I could succesfully pass the interview process. But then I got another
-job which made writing about the interview process much less interesting.
-
-More about the original motivation of this blog can be read
-[here]({filename}../TheDSInterview.md)
