@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Ravin Kumar</title>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/poole.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/hyde.css" />
+		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/syntax.css" />
+        <link rel="stylesheet" href="http://canyon289.github.io/theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <!-- CSS style sheets for pelican javascript plugin -->    
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class="theme-base-darkgreen">
+<div class="sidebar">
+    <div class="container">
+        <div >
+            <h1 class="sidebar-title">
+                <a href="/">
+                    <!---<img class="profile-picture" src="http://canyon289.github.io/images/"> --->
+                    <!---['Manufacturing', 'and Machine Learning']--->
+                    Manufacturing<br>and Machine Learning
+                    
+                </a>
+            </h1>
+        </div>
+      <!---Add Pages for Static Content --->
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="http://canyon289.github.io/pages/About.html">
+              About
+              </a>
+            </h1>
+        </div>
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="http://canyon289.github.io/pages/reference_page.html">
+              References
+              </a>
+            </h1>
+        </div>
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="http://canyon289.github.io/pages/Talks.html">
+              Talks
+              </a>
+            </h1>
+        </div>
+    <div>
+    <nav class="sidebar-nav">
+                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a class="sidebar-nav-item" href="https://github.com/canyon289">
+                    <i class="fa fa-github"></i>
+                </a>
+
+    </nav>
+    </div>
+    </div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">Coding Confusion</h1>
+	<span class="post-date">Mon 12 March 2018</span>
+	<p>Recently I've been teaching coding more than ever, both to coworkers and
+to students in my bootcamp. While they're all catching on and getting some
+results, its made me step back and realize, modern day programming is not
+straightforward and often is just plain confusing.</p>
+<h1 id="your-first-program"><a class="toclink" href="#your-first-program">Your first program</a></h1>
+<p>Python is a popular programming language so it feels simple enough to tell a 
+new programmer, "Hey open up a text editor and write the following commands"</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+
+<p>At this point the you feel accomplished, the student feels accomplished, 
+but then it quickly wears off as both of you realize this program doesn't
+do anything useful. So you start trying to explain the next steps, but where
+do you start?</p>
+<p>Theres data types in Python, such as lists, dictionaries, etc. There's also
+the concept of iteration and control loops. But DRY is a thing so you 
+quickly have to explain functions, but then you get into scope, and with
+Python there's whitespace formatting to cover as well. </p>
+<p>Somewhere in there you fit in a lesson about shell commands, and depending
+on whether they're in Windows or a POSIX client you wave your hands about
+OS file systems.</p>
+<p>All the code shouldn't be in one file though or it's confusing so then you explain
+Python import machinery, but modules have their own nuances. Somewhere
+in there you ramble on about functional design vs OOP.</p>
+<p>Well now the student has something more complex working and they're thrilled
+but they want to deploy it. So now you need to teach them about git, but
+its also important that they know about isolated environments through
+virtualenv, or conda.</p>
+<p>After all this they finally get their code packaged up and put into a repo.
+Their code works and is available  but man it's ugly so you start explaining
+the importance of code quality, and how PEP8 is a thing, and why spaces after
+single line comments and cameling casing are oh so important.</p>
+<p>They didn't know about unit testing though so you go through a lecture on
+Test Driven Development. Their monolithic logic needs to be refactored.</p>
+<p>And now their code needs to be deployed, so you ask them hard questions
+of how it will be used. If it's going to be a local package did they make
+sure it worked across all operating systems and python versions?</p>
+<p>They instead want a webapp, which eliminates most of the issues above, sweet!
+You introduce them to Flask but now they need to learn about WSGIs and
+API design.</p>
+<p>Don't forget the front end though, where they now jump into HTML/CSS/Javascript.
+You explain that while most of the concepts above are still relevant, they're
+ever so different in anotehr language. And let's hope they don't need a backend
+or you'll spend the rest of the day explaining what an ORM is but only
+after you teach them bare SQl so they know what's going on under the hood.</p>
+<p>Then you need to talk about Continous Integration and explain various
+deployment strategies from Virtual Machines to Docker Containers to self hosting
+versus cloud hosting.</p>
+<p>And if they're doing machine learning be sure to cover at least a semester's
+worth of math.</p>
+<h1 id="the-point"><a class="toclink" href="#the-point">The Point</a></h1>
+<p>Take it from me modern programming is still not very simple, and for people
+that are new to programming it can be very frustrating. If you're a seasoned
+programmer take a second to step back and realize how many moving parts
+their are to your job, and how to someone new it can be very difficult to
+see the forest for the trees! There's a lot of steps between Hello World
+and a robust library or application. When teaching someone new just take a breath
+and remember what it took you to gain that understanding as you guide your
+junior programmer. They will appreciate the help.
+appreciate the hepl.</p>
+</div>
+		</div>
+	</body>
+    <!-- Javascript Loader for Pelican Javascript plugin-->
+</html>
