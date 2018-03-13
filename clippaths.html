@@ -57,6 +57,13 @@
         </div>
         <div>
             <h1 class = "sidebar-page">
+              <a href="http://canyon289.github.io/pages/Podcast.html">
+              Implementation
+              </a>
+            </h1>
+        </div>
+        <div>
+            <h1 class = "sidebar-page">
               <a href="http://canyon289.github.io/pages/reference_page.html">
               References
               </a>
@@ -89,13 +96,13 @@
 in one portion of the SVG but perhaps in another. An example would be a chart
 with axes that also implements zoom and pan. As we move the chart elements
 into the axes area we don't wany any overlap.</p>
-<h1 id="an-example"><a href="#an-example" class="toclink">An example</a></h1>
+<h1 id="an-example"><a class="toclink" href="#an-example">An example</a></h1>
 <p>In the visualization below zoom and pan have been applied using the method in
 the <a href="http://canyon289.github.io/ImplementingD3Zoom.html">zoom and pan post</a>. We only want the blue
 dot to be visible in the blue region but it's clearly visible everywhere.</p>
 <div id="unclipped"></div>
 
-<h1 id="clip-paths"><a href="#clip-paths" class="toclink">Clip Paths</a></h1>
+<h1 id="clip-paths"><a class="toclink" href="#clip-paths">Clip Paths</a></h1>
 <p>Luckily the SVGs support a concept called clip-path. The idea is simple,
 essentially defining an area where elements are visible, however the implementation
 is a bit more convoluted.  </p>
@@ -130,7 +137,7 @@ element needs to be defined in this block.</p>
 <p>Once defined in the defs section the clip path can be applied to an element
 by adding a <strong>clip-path</strong> attribute on the element. The blue is removed
 from the example code for code clarity. 
-<sup id="sf-clippaths-1-back"><a title=" While sample bl.ocks are great sometimes when going through them it's hard to isolate the specific feature I'm trying to learn from all the other functionality" href="#sf-clippaths-1" class="simple-footnote">1</a></sup></p>
+<sup id="sf-clippaths-1-back"><a class="simple-footnote" href="#sf-clippaths-1" title=" While sample bl.ocks are great sometimes when going through them it's hard to isolate the specific feature I'm trying to learn from all the other functionality">1</a></sup></p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"circle"</span><span class="p">)</span></span>
 <span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"cx"</span><span class="p">,</span> <span class="nx">width</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span></span>
 <span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"cy"</span><span class="p">,</span> <span class="nx">height</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="nx">r</span><span class="p">)</span></span>
@@ -144,7 +151,7 @@ from the example code for code clarity.
 <p>The clip path clearly worked but unfortunately it stick with the element
 regardless of position. What we really want is the circle to be visible
 depending on where it is in the svg.</p>
-<h1 id="clip-path-groups"><a href="#clip-path-groups" class="toclink">Clip Path Groups</a></h1>
+<h1 id="clip-path-groups"><a class="toclink" href="#clip-path-groups">Clip Path Groups</a></h1>
 <p>Before fixing the issue above it should be mentioned that clip paths 
 can also be applied to groups. There are a lot of uses for it but in our 
 case this is EXTREMELY handy as it allows us to do two major things</p>
@@ -172,13 +179,13 @@ case this is EXTREMELY handy as it allows us to do two major things</p>
 to! If you try dragging the circles, you'll notice that one of them starts
 disapearing as it's location moves to the right, but start appearing again
 if you move left</p>
-<h1 id="references"><a href="#references" class="toclink">References</a></h1>
+<h1 id="references"><a class="toclink" href="#references">References</a></h1>
 <p>The code for these visualizations are available on my Github. Additionally
 there is a much more extensive writeup on clip paths written by
 <a href="https://sarasoueidan.com/blog/css-svg-clipping/">Sara Soueidan</a> which
 I highly recommend. </p><ol class="simple-footnotes"><li id="sf-clippaths-1"> While sample bl.ocks are great sometimes when going through them
 it's hard to isolate the specific feature I'm trying to learn
-from all the other functionality <a href="#sf-clippaths-1-back" class="simple-footnote-back">↩</a></li></ol>
+from all the other functionality <a class="simple-footnote-back" href="#sf-clippaths-1-back">↩</a></li></ol>
 </div>
 		</div>
 	</body>
