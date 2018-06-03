@@ -22,7 +22,7 @@ session in no particular order I need to
 Tmux, a terminal multiplexer, makes it easier to switch between the terminals
 running these processes, but starting them manually is a pain
 
-Luckily tmux supports scripting which makes solving this problem really easy.
+Luckily Tmux supports scripting which makes solving this problem really easy.
 
 # Tmux script
 The shell script below runs all the commands needed to start a blogging
