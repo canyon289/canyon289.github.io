@@ -1,5 +1,4 @@
 /*
- *  __                  __
  * /\ \                /\ \
  * \ \ \___   __  __   \_\ \     __
  *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
@@ -304,6 +303,7 @@ a.sidebar-nav-item.active:focus {
   background-color: #395e40;
 }
 .theme-base-darkgreen .content a,
+.theme-base-darkgreen .post-title,
 .theme-base-darkgreen .related-posts li a:hover {
   color: #395e40;
   
