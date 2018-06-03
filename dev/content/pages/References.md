@@ -2,7 +2,7 @@ Title: References
 Date: 2016-4-21 
 Slug: reference_page
 Authors: Ravin Kumar
-Status: published
+Status: hidden
 
 Much of what I've learned and my ability to comes from others who have
 share their knowledge, ideas, and their code.
