@@ -7,7 +7,7 @@ Status: published
 
 ## Code Camp 2017 - Pytest
 Introductory level talk meant to encourage others to use python testing by
-going through basic and intermediate pytest examples
+going through basic and intermediate pytest examples  
 [Code and Slides](https://github.com/canyon289/CodeCampPytest)
 
 
