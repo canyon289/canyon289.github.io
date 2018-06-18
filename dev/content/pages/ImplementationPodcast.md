@@ -14,4 +14,4 @@ to where it'll likely be in the near future.
 
 We're always open to topics so if you have any suggestions please reach out!
 
-## [Implementation](http://www.podcasts.com/implementation--abe2ee872)
+## [www.ImplementationPodcast.com](http://ImplementationPodcast.com)
