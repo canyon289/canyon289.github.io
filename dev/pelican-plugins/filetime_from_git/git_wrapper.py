@@ -31,6 +31,11 @@ class _GitWrapperCommon(object):
     '''
     def __init__(self, repo_path):
         self.git = Git()
+        self.git.update_environment(
+            GIT_CONFIG_NOSYSTEM='true',
+            HOME=os.getcwd(),
+            XDG_CONFIG_HOME=os.getcwd()
+        )
         self.repo = Repo(os.path.abspath('.'))
 
     def is_file_managed_by_git(self, path):
@@ -128,10 +133,12 @@ class _GitWrapper(_GitWrapperCommon):
         :returns: Sequence of commit objects. Newest to oldest
 
         .. NOTE ::
-            If this fails it could be that your gitpython version is out of sync with the git
-            binary on your distro. Make sure you use the correct gitpython version.
+            If this fails it could be that your gitpython version is out of
+            sync with the git binary on your distro.
+            Make sure you use the correct gitpython version.
 
-            Alternatively enabling GIT_FILETIME_FOLLOW may also make your problem go away.
+            Alternatively enabling GIT_FILETIME_FOLLOW may also make your
+            problem go away.
         '''
         return list(self.repo.iter_commits(paths=path))
 
