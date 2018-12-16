@@ -44,6 +44,9 @@ use the following ``SITEMAP`` setting.
 If a key is missing or a value is incorrect, it will be replaced with the
 default value.
 
+You can also exclude an individual URL by adding metadata to it setting ``private``
+to ``True``.
+
 The sitemap is saved in ``<output_path>/sitemap.<format>``.
 
 .. note::
@@ -56,8 +59,9 @@ The sitemap is saved in ``<output_path>/sitemap.<format>``.
 Here is an example configuration (it's also the default settings):
 
 .. code-block:: python
-
-    PLUGINS=['pelican.plugins.sitemap',]
+    # Where your plug-ins reside
+    PLUGIN_PATHS = ['/where/you/cloned/it/pelican-plugins/', ]
+    PLUGINS=['sitemap',]
 
     SITEMAP = {
         'format': 'xml',

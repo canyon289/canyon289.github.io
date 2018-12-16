@@ -12,7 +12,10 @@ import posixpath
 from copy import copy
 from itertools import chain
 from operator import attrgetter
-from collections import OrderedDict
+try:
+    from collections.abc import OrderedDict
+except ImportError:
+    from collections import OrderedDict
 from contextlib import contextmanager
 from six.moves.urllib.parse import urlparse
 
@@ -22,7 +25,10 @@ import locale
 from pelican import signals
 from pelican.generators import ArticlesGenerator, PagesGenerator
 from pelican.settings import configure_settings
-from pelican.contents import Draft
+try:
+    from pelican.contents import Draft
+except ImportError:
+    from pelican.contents import Article as Draft
 
 
 # Global vars
@@ -270,7 +276,13 @@ def install_templates_translations(generator):
     Only if the 'jinja2.ext.i18n' jinja2 extension is enabled
     the translations for the current DEFAULT_LANG are installed.
     '''
-    if 'jinja2.ext.i18n' in generator.settings['JINJA_EXTENSIONS']:
+    if 'JINJA_ENVIRONMENT' in generator.settings: # pelican 3.7+
+        jinja_extensions = generator.settings['JINJA_ENVIRONMENT'].get(
+            'extensions', [])
+    else:
+        jinja_extensions = generator.settings['JINJA_EXTENSIONS']
+
+    if 'jinja2.ext.i18n' in jinja_extensions:
         domain = generator.settings.get('I18N_GETTEXT_DOMAIN', 'messages')
         localedir = generator.settings.get('I18N_GETTEXT_LOCALEDIR')
         if localedir is None:
@@ -347,13 +359,19 @@ def interlink_static_files(generator):
     '''Add links to static files in the main site if necessary'''
     if generator.settings['STATIC_PATHS'] != []:
         return                               # customized STATIC_PATHS
-    filenames = generator.context['filenames'] # minimize attr lookup
+    try: # minimize attr lookup
+        static_content = generator.context['static_content']
+    except KeyError:
+        static_content = generator.context['filenames']
     relpath = relpath_to_site(generator.settings['DEFAULT_LANG'], _MAIN_LANG)
     for staticfile in _MAIN_STATIC_FILES:
-        if staticfile.get_relative_source_path() not in filenames:
+        if staticfile.get_relative_source_path() not in static_content:
             staticfile = copy(staticfile) # prevent override in main site
             staticfile.override_url = posixpath.join(relpath, staticfile.url)
-            generator.add_source_path(staticfile)
+            try:
+                generator.add_source_path(staticfile, static=True)
+            except TypeError:
+                generator.add_source_path(staticfile)
 
 
 def save_main_static_files(static_generator):
