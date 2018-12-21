@@ -110,7 +110,7 @@ Mathematically it's the same but conceptually it helps
 me work with the problem more easily.</p>
 <h2 id="solution-1"><a class="toclink" href="#solution-1">Solution 1</a></h2>
 <p>If you're unlucky there's a chance you'll blank on the elegant
-way to solve this.<br />
+way to solve this.<br>
 However if you're partially lucky you'll be sitting in 
 front of a computer with no one around.</p>
 <p>As it turns out I was partially lucky.</p>
@@ -231,11 +231,9 @@ even further but I leave it up to you to explore combinatorics further</p>
     }
 
     var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
