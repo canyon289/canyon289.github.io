@@ -2,7 +2,7 @@ Title: Bayesian Decision Making
 Date: 2019-01-14 
 Slug: BayesianDecisionMaking
 Authors: Ravin Kumar
-Status: Published
+Status: draft
 
 
 When [Thomas Wiecki](https://twitter.com/twieckii)
@@ -15,6 +15,6 @@ a [great tutorial on hierarchial models](https://twiecki.github.io/blog/2017/02/
 and inference methods such as 
 [MCMC Sampling for Dummies](https://twiecki.github.io/blog/2015/11/10/mcmc-sampling/)
 
-# Bayesian Decision Making in Supply Chain
+## Bayesian Decision Making in Supply Chain
 {% notebook bayesian_decision_making.ipynb %}
 
