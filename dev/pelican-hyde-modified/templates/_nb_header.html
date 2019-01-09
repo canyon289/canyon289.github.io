@@ -11,15 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-.content html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-.content body {
-  margin: 0;
-}
-.content article,
+article,
 aside,
 details,
 figcaption,
@@ -263,17 +255,6 @@ th {
   src: url('../components/bootstrap/fonts/glyphicons-halflings-regular.eot');
   src: url('../components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
-html {
-  font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  line-height: 1.42857143;
-  color: #000;
-  background-color: #fff;
-}
 input,
 button,
 select,
@@ -356,139 +337,6 @@ hr {
 }
 [role="button"] {
   cursor: pointer;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small,
-.h1 small,
-.h2 small,
-.h3 small,
-.h4 small,
-.h5 small,
-.h6 small,
-h1 .small,
-h2 .small,
-h3 .small,
-h4 .small,
-h5 .small,
-h6 .small,
-.h1 .small,
-.h2 .small,
-.h3 .small,
-.h4 .small,
-.h5 .small,
-.h6 .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #777777;
-}
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-  margin-top: 18px;
-  margin-bottom: 9px;
-}
-h1 small,
-.h1 small,
-h2 small,
-.h2 small,
-h3 small,
-.h3 small,
-h1 .small,
-.h1 .small,
-h2 .small,
-.h2 .small,
-h3 .small,
-.h3 .small {
-  font-size: 65%;
-}
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  margin-top: 9px;
-  margin-bottom: 9px;
-}
-h4 small,
-.h4 small,
-h5 small,
-.h5 small,
-h6 small,
-.h6 small,
-h4 .small,
-.h4 .small,
-h5 .small,
-.h5 .small,
-h6 .small,
-.h6 .small {
-  font-size: 75%;
-}
-h1,
-.h1 {
-  font-size: 33px;
-}
-h2,
-.h2 {
-  font-size: 27px;
-}
-h3,
-.h3 {
-  font-size: 23px;
-}
-h4,
-.h4 {
-  font-size: 17px;
-}
-h5,
-.h5 {
-  font-size: 13px;
-}
-h6,
-.h6 {
-  font-size: 12px;
-}
-p {
-  margin: 0 0 9px;
-}
-.lead {
-  margin-bottom: 18px;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.4;
-}
-@media (min-width: 768px) {
-  .lead {
-    font-size: 19.5px;
-  }
-}
-small,
-.small {
-  font-size: 92%;
 }
 mark,
 .mark {
@@ -631,9 +479,6 @@ dt,
 dd {
   line-height: 1.42857143;
 }
-dt {
-  font-weight: bold;
-}
 dd {
   margin-left: 0;
 }
@@ -656,14 +501,10 @@ abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #777777;
 }
-.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
 blockquote {
   padding: 9px 18px;
   margin: 0 0 18px;
-  font-size: inherit;
+  // font-size: inherit;
   border-left: 5px solid #eeeeee;
 }
 blockquote p:last-child,
