@@ -8,19 +8,57 @@
 		<!-- Enable responsiveness on mobile devices-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-		<title>['Manufacturing', 'and Machine Learning'] - Programming category</title>
+		<title>[u'Manufacturing', u'and Machine Learning'] - Programming category</title>
+
+		<!-- For Jupyter Notebooks -->
+
+<!--Notebook Configuration-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true,
+          displayMath: [['$$','$$'], ["\\[","\\]"]]
+      }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+      $("div.collapseheader").click(function () {
+      $header = $(this).children("span").first();
+      $codearea = $(this).children(".input_area");
+      console.log($(this).children());
+      $codearea.slideToggle(500, function () {
+          $header.text(function () {
+              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+          });
+      });
+  });
+  });
+</script>
 
 		<!-- CSS -->
 		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
 		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/poole.css" />
-		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/hyde.css" />
-		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/syntax.css" />
-        <link rel="stylesheet" href="http://canyon289.github.io/theme/css/svgcenter.css" />
+
+		<link rel="stylesheet" href="../theme/css/notebook.css" />
+
+		<link rel="stylesheet" href="../theme/css/poole.css" />
+		<link rel="stylesheet" href="../theme/css/hyde.css" />
+		<link rel="stylesheet" href="../theme/css/syntax.css" />
+        <link rel="stylesheet" href="../theme/css/svgcenter.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    
-    <!-- CSS style sheets for pelican javascript plugin -->    
+
+
+        <!-- CSS style sheets for pelican javascript plugin -->
+
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -40,8 +78,8 @@
         <div >
             <h1 class="sidebar-title">
                 <a href="/">
-                    <!---<img class="profile-picture" src="http://canyon289.github.io/images/"> --->
-                    <!---['Manufacturing', 'and Machine Learning']--->
+                    <!---<img class="profile-picture" src="../images/"> --->
+                    <!---[u'Manufacturing', u'and Machine Learning']--->
                     Manufacturing<br>and Machine Learning
                     
                 </a>
@@ -50,21 +88,21 @@
       <!---Add Pages for Static Content --->
         <div>
             <h1 class = "sidebar-page">
-              <a href="http://canyon289.github.io/pages/About.html">
+              <a href="../pages/About.html">
               About
               </a>
             </h1>
         </div>
         <div>
             <h1 class = "sidebar-page">
-              <a href="http://canyon289.github.io/pages/Podcast.html">
+              <a href="../pages/Podcast.html">
               Implementation
               </a>
             </h1>
         </div>
         <div>
             <h1 class = "sidebar-page">
-              <a href="http://canyon289.github.io/pages/Talks.html">
+              <a href="../pages/Talks.html">
               Talks
               </a>
             </h1>
@@ -77,6 +115,9 @@
                 <a class="sidebar-nav-item" href="https://github.com/canyon289">
                     <i class="fa fa-github"></i>
                 </a>
+                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
+                    <i class="fa fa-twitter"></i>
+                </a>
 
     </nav>
     </div>
@@ -84,8 +125,8 @@
 </div>		<div class="content container">
 	<div class="posts">
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/TmuxBlogging.html#TmuxBlogging">
-					<a href="http://canyon289.github.io/TmuxBlogging.html#TmuxBlogging">Faster blogging with Tmux</a>
+				<h1 class="post-title" href="../TmuxBlogging.html#TmuxBlogging">
+					<a href="../TmuxBlogging.html#TmuxBlogging">Faster blogging with Tmux</a>
 				</h1>
 				<span class="post-date">Fri 18 May 2018</span>
 				<p>
@@ -99,8 +140,8 @@ session in no particular order I need to  </p>
 				<a class="read-more" href="TmuxBlogging.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/CodingConfusion.html#CodingConfusion">
-					<a href="http://canyon289.github.io/CodingConfusion.html#CodingConfusion">Coding Confusion</a>
+				<h1 class="post-title" href="../CodingConfusion.html#CodingConfusion">
+					<a href="../CodingConfusion.html#CodingConfusion">Coding Confusion</a>
 				</h1>
 				<span class="post-date">Mon 12 March 2018</span>
 				<p>
@@ -112,36 +153,36 @@ straightforward and with …</p>
 				<a class="read-more" href="CodingConfusion.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/NonProgrammerP3.html#NonProgrammerP3">
-					<a href="http://canyon289.github.io/NonProgrammerP3.html#NonProgrammerP3">Programming as a Non Programmer - Part 3</a>
+				<h1 class="post-title" href="../NonProgrammerP3.html#NonProgrammerP3">
+					<a href="../NonProgrammerP3.html#NonProgrammerP3">Programming as a Non Programmer - Part 3</a>
 				</h1>
 				<span class="post-date">Mon 23 January 2017</span>
 				<p>
 					<p>This is Part 3 in a series about how learning how to program could affect
 your career and some of the experiences I've had with programming in mine</p>
 <ul>
-<li><a href="http://canyon289.github.io/NonProgrammerP1.html">Intent of series and introduction</a></li>
-<li><a href="http://canyon289.github.io/NonProgrammerP2.html">What Programming as a Non Programmer means …</a></li></ul>
+<li><a href="../NonProgrammerP1.html">Intent of series and introduction</a></li>
+<li><a href="../NonProgrammerP2.html">What Programming as a Non Programmer means …</a></li></ul>
 				</p>
 				<a class="read-more" href="NonProgrammerP3.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/NonProgrammerP2.html#NonProgrammerP2">
-					<a href="http://canyon289.github.io/NonProgrammerP2.html#NonProgrammerP2">Programming as a Non Programmer - Part 2</a>
+				<h1 class="post-title" href="../NonProgrammerP2.html#NonProgrammerP2">
+					<a href="../NonProgrammerP2.html#NonProgrammerP2">Programming as a Non Programmer - Part 2</a>
 				</h1>
 				<span class="post-date">Mon 16 January 2017</span>
 				<p>
 					<p>This is Part 2 in a series about how learning how to program could affect
 your career and some of the experiences I've had with programming in mine</p>
 <ul>
-<li><a href="http://canyon289.github.io/NonProgrammerP1.html">Intent of series and introduction</a></li>
+<li><a href="../NonProgrammerP1.html">Intent of series and introduction</a></li>
 <li>What Programming as a Non Programmer means …</li></ul>
 				</p>
 				<a class="read-more" href="NonProgrammerP2.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/NonProgrammerP1.html#NonProgrammerP1">
-					<a href="http://canyon289.github.io/NonProgrammerP1.html#NonProgrammerP1">Programming as a Non Programmer - Part 1</a>
+				<h1 class="post-title" href="../NonProgrammerP1.html#NonProgrammerP1">
+					<a href="../NonProgrammerP1.html#NonProgrammerP1">Programming as a Non Programmer - Part 1</a>
 				</h1>
 				<span class="post-date">Mon 09 January 2017</span>
 				<p>
@@ -154,8 +195,8 @@ your career and some of the experiences I've had with programming in mine</p>
 				<a class="read-more" href="NonProgrammerP1.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/DSGuide.html#DSGuide">
-					<a href="http://canyon289.github.io/DSGuide.html#DSGuide">My Guide on Data Science Programs</a>
+				<h1 class="post-title" href="../DSGuide.html#DSGuide">
+					<a href="../DSGuide.html#DSGuide">My Guide on Data Science Programs</a>
 				</h1>
 				<span class="post-date">Thu 01 December 2016</span>
 				<p>
@@ -167,8 +208,8 @@ time to talk about the experience I've had with previous Data Science programs. 
 				<a class="read-more" href="DSGuide.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/SqlForDataAnalysts.html#SqlForDataAnalysts">
-					<a href="http://canyon289.github.io/SqlForDataAnalysts.html#SqlForDataAnalysts">SQL for Data Analysts</a>
+				<h1 class="post-title" href="../SqlForDataAnalysts.html#SqlForDataAnalysts">
+					<a href="../SqlForDataAnalysts.html#SqlForDataAnalysts">SQL for Data Analysts</a>
 				</h1>
 				<span class="post-date">Mon 28 November 2016</span>
 				<p>
@@ -179,8 +220,8 @@ and commands in a rough order of importance …</p>
 				<a class="read-more" href="SqlForDataAnalysts.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/LearnSQL.html#LearnSQL">
-					<a href="http://canyon289.github.io/LearnSQL.html#LearnSQL">You should learn SQL</a>
+				<h1 class="post-title" href="../LearnSQL.html#LearnSQL">
+					<a href="../LearnSQL.html#LearnSQL">You should learn SQL</a>
 				</h1>
 				<span class="post-date">Sat 22 October 2016</span>
 				<p>
@@ -201,5 +242,6 @@ go through the two perspectives I've encountered …</p>
 --->
 		</div>
 	</body>
+
     <!-- Javascript Loader for Pelican Javascript plugin-->
 </html>

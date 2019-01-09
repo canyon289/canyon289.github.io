@@ -8,19 +8,57 @@
 		<!-- Enable responsiveness on mobile devices-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-		<title>['Manufacturing', 'and Machine Learning'] - Software tag</title>
+		<title>[u'Manufacturing', u'and Machine Learning'] - Software tag</title>
+
+		<!-- For Jupyter Notebooks -->
+
+<!--Notebook Configuration-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true,
+          displayMath: [['$$','$$'], ["\\[","\\]"]]
+      }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+      $("div.collapseheader").click(function () {
+      $header = $(this).children("span").first();
+      $codearea = $(this).children(".input_area");
+      console.log($(this).children());
+      $codearea.slideToggle(500, function () {
+          $header.text(function () {
+              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+          });
+      });
+  });
+  });
+</script>
 
 		<!-- CSS -->
 		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
 		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/poole.css" />
-		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/hyde.css" />
-		<link rel="stylesheet" href="http://canyon289.github.io/theme/css/syntax.css" />
-        <link rel="stylesheet" href="http://canyon289.github.io/theme/css/svgcenter.css" />
+
+		<link rel="stylesheet" href="../theme/css/notebook.css" />
+
+		<link rel="stylesheet" href="../theme/css/poole.css" />
+		<link rel="stylesheet" href="../theme/css/hyde.css" />
+		<link rel="stylesheet" href="../theme/css/syntax.css" />
+        <link rel="stylesheet" href="../theme/css/svgcenter.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    
-    <!-- CSS style sheets for pelican javascript plugin -->    
+
+
+        <!-- CSS style sheets for pelican javascript plugin -->
+
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -40,8 +78,8 @@
         <div >
             <h1 class="sidebar-title">
                 <a href="/">
-                    <!---<img class="profile-picture" src="http://canyon289.github.io/images/"> --->
-                    <!---['Manufacturing', 'and Machine Learning']--->
+                    <!---<img class="profile-picture" src="../images/"> --->
+                    <!---[u'Manufacturing', u'and Machine Learning']--->
                     Manufacturing<br>and Machine Learning
                     
                 </a>
@@ -50,21 +88,21 @@
       <!---Add Pages for Static Content --->
         <div>
             <h1 class = "sidebar-page">
-              <a href="http://canyon289.github.io/pages/About.html">
+              <a href="../pages/About.html">
               About
               </a>
             </h1>
         </div>
         <div>
             <h1 class = "sidebar-page">
-              <a href="http://canyon289.github.io/pages/Podcast.html">
+              <a href="../pages/Podcast.html">
               Implementation
               </a>
             </h1>
         </div>
         <div>
             <h1 class = "sidebar-page">
-              <a href="http://canyon289.github.io/pages/Talks.html">
+              <a href="../pages/Talks.html">
               Talks
               </a>
             </h1>
@@ -77,6 +115,9 @@
                 <a class="sidebar-nav-item" href="https://github.com/canyon289">
                     <i class="fa fa-github"></i>
                 </a>
+                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
+                    <i class="fa fa-twitter"></i>
+                </a>
 
     </nav>
     </div>
@@ -84,8 +125,8 @@
 </div>		<div class="content container">
 	<div class="posts">
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/UsingLinux.html#UsingLinux">
-					<a href="http://canyon289.github.io/UsingLinux.html#UsingLinux">Using Linux</a>
+				<h1 class="post-title" href="../UsingLinux.html#UsingLinux">
+					<a href="../UsingLinux.html#UsingLinux">Using Linux</a>
 				</h1>
 				<span class="post-date">Sun 27 November 2016</span>
 				<p>
@@ -96,8 +137,8 @@ I'm committed on sticking with it this time. If …</p>
 				<a class="read-more" href="UsingLinux.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/DoubleDataJoin.html#DoubleDataJoin">
-					<a href="http://canyon289.github.io/DoubleDataJoin.html#DoubleDataJoin">Double Data Joins</a>
+				<h1 class="post-title" href="../DoubleDataJoin.html#DoubleDataJoin">
+					<a href="../DoubleDataJoin.html#DoubleDataJoin">Double Data Joins</a>
 				</h1>
 				<span class="post-date">Mon 21 November 2016</span>
 				<p>
@@ -109,8 +150,8 @@ current elements are …</p>
 				<a class="read-more" href="DoubleDataJoin.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/RotationAndReusability.html#RotationAndReusability">
-					<a href="http://canyon289.github.io/RotationAndReusability.html#RotationAndReusability">SVG Rotation and Reusability</a>
+				<h1 class="post-title" href="../RotationAndReusability.html#RotationAndReusability">
+					<a href="../RotationAndReusability.html#RotationAndReusability">SVG Rotation and Reusability</a>
 				</h1>
 				<span class="post-date">Sat 15 October 2016</span>
 				<p>
@@ -122,8 +163,8 @@ In this post …</p>
 				<a class="read-more" href="RotationAndReusability.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/clippaths.html#clippaths">
-					<a href="http://canyon289.github.io/clippaths.html#clippaths">Clip Paths and Transforms</a>
+				<h1 class="post-title" href="../clippaths.html#clippaths">
+					<a href="../clippaths.html#clippaths">Clip Paths and Transforms</a>
 				</h1>
 				<span class="post-date">Sun 09 October 2016</span>
 				<p>
@@ -134,8 +175,8 @@ with axes that also implements zoom and pan. As we move the chart …</p>
 				<a class="read-more" href="clippaths.html">Continue reading »</a>
 			</div>
 			<div class="post">
-				<h1 class="post-title" href="http://canyon289.github.io/OpinionatedSoftware.html#OpinionatedSoftware">
-					<a href="http://canyon289.github.io/OpinionatedSoftware.html#OpinionatedSoftware">Writing good software requires you to have an opinion</a>
+				<h1 class="post-title" href="../OpinionatedSoftware.html#OpinionatedSoftware">
+					<a href="../OpinionatedSoftware.html#OpinionatedSoftware">Writing good software requires you to have an opinion</a>
 				</h1>
 				<span class="post-date">Mon 03 October 2016</span>
 				<p>
@@ -155,5 +196,6 @@ large dose of personal opinion. In fact I would argue go …</p>
 --->
 		</div>
 	</body>
+
     <!-- Javascript Loader for Pelican Javascript plugin-->
 </html>
