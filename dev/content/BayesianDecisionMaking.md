@@ -5,7 +5,7 @@ Authors: Ravin Kumar
 Status: draft
 
 
-When [Thomas Wiecki](https://twitter.com/twieckii)
+When [Thomas Wiecki](https://twitter.com/twiecki)
 asked if I'd like coauthor a blog post with him, the obvious
 answer was yes! For those who don't know Thomas is a PyMC core contributor
 and the VP of Data Science at Quantopian. This is a cross post **insert link here**
