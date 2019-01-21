@@ -1,5 +1,5 @@
 Title: Better Data Science CI with Docker
-Date: 2019-01-09
+Date: 2019-01-20
 Category: Programming, MachineLearning
 Tags: 
 Slug: DockerforDS
@@ -19,12 +19,12 @@ In turn the ArviZ Devs had the same expectations for Continuous Integration pipe
 It should "just work", so we can focus on writing new functionality for users ,
 not waste time feeling frustrated with our flaky infrastructure.
 
-But this was not the case, our Continuous Integration (CI) experience **was**,
-frustrating, not just for us, but especially for volunteer contributors
+But this was not the case, our Continuous Integration (CI) experience **was**
+frustrating, not just for us, but particularly for volunteer contributors
 that were submitting great code, only to have the CI process abort with
 an obscure failure message. At ArviZ we need our CI process to be smooth,
 partly because we want the code to be tested and verified, but moreso 
-to avoid wasting contributors time, and ensure they have a great experience.
+to avoid wasting contributors time and ensure they have a great experience.
 After all, the most finite resource is people's willpower, time, and enthusiasm.
 
 In other words

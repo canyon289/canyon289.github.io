@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="http://gmpg.org/xfn/11" rel="profile">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+		<!-- Enable responsiveness on mobile devices-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+		<title>Ravin Kumar</title>
+
+		<!-- For Jupyter Notebooks -->
+
+<!--Notebook Configuration-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true,
+          displayMath: [['$$','$$'], ["\\[","\\]"]]
+      }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+      $("div.collapseheader").click(function () {
+      $header = $(this).children("span").first();
+      $codearea = $(this).children(".input_area");
+      console.log($(this).children());
+      $codearea.slideToggle(500, function () {
+          $header.text(function () {
+              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+          });
+      });
+  });
+  });
+</script>
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
+		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="./theme/css/notebook.css" />
+
+		<link rel="stylesheet" href="./theme/css/poole.css" />
+		<link rel="stylesheet" href="./theme/css/hyde.css" />
+		<link rel="stylesheet" href="./theme/css/syntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+        <!-- CSS style sheets for pelican javascript plugin -->
+
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class="theme-base-darkgreen">
+<div class="sidebar">
+    <div class="container">
+        <div >
+            <h1 class="sidebar-title">
+                <a href="/">
+                    <!---<img class="profile-picture" src="./images/"> --->
+                    <!---['Manufacturing', 'and Machine Learning']--->
+                    Manufacturing<br>and Machine Learning
+                    
+                </a>
+            </h1>
+        </div>
+      <!---Add Pages for Static Content --->
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="./pages/About.html">
+              About
+              </a>
+            </h1>
+        </div>
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="./pages/Podcast.html">
+              Implementation
+              </a>
+            </h1>
+        </div>
+        <div>
+            <h1 class = "sidebar-page">
+              <a href="./pages/Talks.html">
+              Talks
+              </a>
+            </h1>
+        </div>
+    <div>
+    <nav class="sidebar-nav">
+                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a class="sidebar-nav-item" href="https://github.com/canyon289">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+    </nav>
+    </div>
+    </div>
+</div>		<div class="content container">
+<div class="post">
+	<h1 class="post-title">Better Data Science CI with Docker</h1>
+	<span class="post-date">Sun 20 January 2019</span>
+	<p>Know the feeling when you use a tool that "just works" and instead of
+frustration and time list, you end up being more productive?  </p>
+<p>ArviZ should be for Bayesian practitioners. 
+Bayesian practitioners should be able to use their inference library of choice,
+and be able to visualize their results, with no pain and no time taken away
+from the real work, interpreting results.</p>
+<p>In turn the ArviZ Devs had the same expectations for Continuous Integration pipeline
+It should "just work", so we can focus on writing new functionality for users ,
+not waste time feeling frustrated with our flaky infrastructure.</p>
+<p>But this was not the case, our Continuous Integration (CI) experience <strong>was</strong>
+frustrating, not just for us, but particularly for volunteer contributors
+that were submitting great code, only to have the CI process abort with
+an obscure failure message. At ArviZ we need our CI process to be smooth,
+partly because we want the code to be tested and verified, but moreso 
+to avoid wasting contributors time and ensure they have a great experience.
+After all, the most finite resource is people's willpower, time, and enthusiasm.</p>
+<p>In other words
+<img alt="Arviz Developer Experience" src="./images/DockerForDataScience/MarieKondo.png"></p>
+<p>To keep developers joyful we've moved to a docker based
+Continuous Integration system. In this post I'll 
+the issues we were having with CI, why we started
+using Docker in our CI, general instructions on how it all works,
+and a grab bag of tips.</p>
+<h2 id="the-tale-of-5-deep-learning-frameworks-a-local-machine-and-a-remote-virtual-machine"><a class="toclink" href="#the-tale-of-5-deep-learning-frameworks-a-local-machine-and-a-remote-virtual-machine">The tale of 5 deep learning frameworks, a local machine, and a remote virtual machine</a></h2>
+<p>Installing one deep learning framework can be a challenging experience,
+installing five at the same time can be perilous. To ensure
+ArviZ runs seamlessly on widely used Bayesian learning libraries, we 
+need to test against all of them, which means we need to install all of them.</p>
+<p>In the event of issues, debugging locally is painful enough, but when
+an error appears in the CI process, the developer has little access
+to see what went wrong. Debugging amounts to lots of print statements, git commits
+and waiting 15 minutes to see what happens. It's especially maddening
+when local testing passes, but only the CI virtual machine is failing.</p>
+<p>This is the situation we were facing with plain TravisCI. Code that worked
+great locally, suddenly was failing when contributors made pull requests. This is
+no way was TravisCI's fault, TravisCI is a great tool that we're still using,
+but it was a fault somewhere between the operation system, the five 
+C level libraries, and ArviZ.</p>
+<p>After a couple months of this we switched to docker based testing on 
+TravisCI for one simple reason, <strong>the developers local environment would
+be an exact replica of the CI environment.</strong> This meant that any CI
+issue was now locally reproducible, and locally solvable.</p>
+<h2 id="docker-ci-details"><a class="toclink" href="#docker-ci-details">Docker CI Details</a></h2>
+<p>Alright, enough with the talk, on with the details, how is it done?</p>
+<ol>
+<li>Create a Dockerfile for your CI environment</li>
+<li>Configure Continuous Integration service to build and test in your defined container</li>
+<li>Fix any integrations that may have broken</li>
+</ol>
+<p>Let's talk through each step one by one</p>
+<h3 id="step-1-dockerfile"><a class="toclink" href="#step-1-dockerfile">Step 1: Dockerfile</a></h3>
+<p>The first step is deciding what you want your environment to contain. In
+general you'll want your container to have all the tools needed to build
+and test your code, and ideally be as minimal as possible. We'll use the
+<a href="https://github.com/arviz-devs/arviz/blob/master/scripts/Dockerfile">ArviZ dockerfile</a>
+as an example.</p>
+<p>The first line is the base image.</p>
+<div class="highlight"><pre><span class="code-line"><span></span>FROM conda/miniconda3</span>
+</pre></div>
+
+
+<p>While it's typically recommended to start with a minimal image, like
+alpine, at ArviZ we found it much simpler to start with an environment
+that already had some things setup, and just work from there. This meant
+the image isn't as minimal as it could be, but we're not shipping containers
+"at scale" so this tradeoff was worth it.  </p>
+<p>Next we setup arguments and environmental variables</p>
+<div class="highlight"><pre><span class="code-line"><span></span>ARG SRC_DIR</span>
+<span class="code-line">ARG PYTHON_VERSION</span>
+<span class="code-line">ARG PYSTAN_VERSION</span>
+<span class="code-line">ARG PYRO_VERSION</span>
+<span class="code-line"></span>
+<span class="code-line">ENV PYTHON_VERSION=<span class="cp">${</span><span class="n">PYTHON_VERSION</span><span class="cp">}</span></span>
+<span class="code-line">ENV PYSTAN_VERSION=<span class="cp">${</span><span class="n">PYSTAN_VERSION</span><span class="cp">}</span></span>
+<span class="code-line">ENV PYRO_VERSION=<span class="cp">${</span><span class="n">PYRO_VERSION</span><span class="cp">}</span></span>
+<span class="code-line">ENV DOCKER_BUILD=true</span>
+<span class="code-line"></span>
+<span class="code-line"># For Sphinx documentation builds</span>
+<span class="code-line">ENV LC_ALL=C.UTF-8</span>
+<span class="code-line">ENV LANG=C.UTF-8</span>
+</pre></div>
+
+
+<p>The choices here were to allow some flexibility in what gets installed
+in each image. For ArviZ we test against different versions of libraries
+and we didn't want to create a dockerfile for each. By setting the 
+ENV variables here through command line arguments we afford some flexibility</p>
+<p>After this we actually start installing things</p>
+<div class="highlight"><pre><span class="code-line"><span></span>RUN apt-get update &amp;&amp; apt-get install -y git build-essential pandoc \</span>
+<span class="code-line">    &amp;&amp; rm -rf /var/lib/apt/lists/*</span>
+<span class="code-line"></span>
+<span class="code-line"># Copy requirements and environment installation scripts</span>
+<span class="code-line">COPY $SRC_DIR/requirements.txt  opt/arviz/</span>
+<span class="code-line">COPY $SRC_DIR/requirements-dev.txt  opt/arviz/</span>
+<span class="code-line">COPY $SRC_DIR/scripts/ opt/arviz/scripts</span>
+<span class="code-line"></span>
+<span class="code-line">WORKDIR /opt/arviz</span>
+<span class="code-line"></span>
+<span class="code-line"># Create conda environment. Defaults to Python 3.6</span>
+<span class="code-line">RUN ./scripts/create_testenv.sh</span>
+</pre></div>
+
+
+<p>Installations happen at two levels, some are at the container level,
+and the rest are in the Python environment. We choose to have a separate
+<code>create_testenv.sh</code> script because this allows users to run it outside
+of docker.</p>
+<p>The ext section of the file copies the ArviZ code base and
+removes any cached files/</p>
+<div class="highlight"><pre><span class="code-line"><span></span>COPY $SRC_DIR /opt/arviz</span>
+</pre></div>
+
+
+<p>The last section clears any remaining cache files and sets the default
+command of the container to execute tests. There is some weirdness
+with the <code>source /root/.bashrc</code> which I'll talk more about in
+the general tips section.</p>
+<div class="highlight"><pre><span class="code-line"><span></span>RUN rm -f arviz/tests/saved_models/*.pkl</span>
+<span class="code-line">RUN find -type d -name __pycache__ -exec rm -rf {} +</span>
+<span class="code-line"></span>
+<span class="code-line">CMD [&quot;/bin/bash&quot;, &quot;-c&quot;, &quot;source /root/.bashrc &amp;&amp; pytest -vv arviz/tests --cov=arviz/ &amp;&amp; echo Finished Testing&quot;]</span>
+</pre></div>
+
+
+<h3 id="step-2-configure-your-ci-service"><a class="toclink" href="#step-2-configure-your-ci-service">Step 2: Configure your CI service</a></h3>
+<p>The next step is configuring TravisCI. Luckily this is not too hard.
+Adding the lines below will install the latest version of docker-ce</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="n">addons</span><span class="o">:</span></span>
+<span class="code-line">  <span class="n">apt</span><span class="o">:</span></span>
+<span class="code-line">    <span class="n">packages</span><span class="o">:</span></span>
+<span class="code-line">      <span class="o">-</span> <span class="n">docker</span><span class="o">-</span><span class="n">ce</span></span>
+</pre></div>
+
+
+<p>After that you're able to build an image and run tests, coverage,
+documentation generation, or whatever else you'd need.</p>
+<h3 id="step-3-fix-any-integrations-that-may-have-broken"><a class="toclink" href="#step-3-fix-any-integrations-that-may-have-broken">Step 3: Fix any integrations that may have broken</a></h3>
+<p>One downside of testing in a container is that isolation is great,
+until it isn't. We found that some of the tooling that integrates with
+TravisCI, such as travis-sphinx, and coveralls, no longer worked.</p>
+<p>The trick here was to generate the documentation and coverage files in
+the container, but ensure they were available in the TravisCI environment
+by using a bind mount. An example can be found in 
+<a href="https://github.com/arviz-devs/arviz/blob/6d1b65e0c99bb716ee0ebcbdac8cdc9e1380a472/.travis.yml#L68-L69">the .travis.yml file</a>.</p>
+<p>Because the files were present in TravisCI file system, the integrated tools
+could then deploy the docs and coverage just as they had in the pa.</p>
+<p>Because the files were present in TravisCI file system, the integrated tools
+could then deploy the docs and coverage just as they had in the past.</p>
+<h2 id="miscellaneous-tips"><a class="toclink" href="#miscellaneous-tips">Miscellaneous tips</a></h2>
+<p>There were some gotchas that required some experimentation which I'll document here.</p>
+<h3 id="formatting-in-travisci-yml-files"><a class="toclink" href="#formatting-in-travisci-yml-files">Formatting in TravisCI yml files</a></h3>
+<p>TravisCI is picky about semicolons, spaces, and newlines in its .travis.yml file.
+If you're running into odd errors be sure to troubleshoot these first.</p>
+<h3 id="bash-profiles-in-non-interactive-shells"><a class="toclink" href="#bash-profiles-in-non-interactive-shells">Bash profiles in Non interactive shells</a></h3>
+<p>Not all bash shells are interactive, and 
+<a href="https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html">when they're not they don't invoke</a>
+a <code>.bashrc</code> file. This is why you see <code>source /root/.bashrc</code> frequently 
+in our <code>.travis.yml</code> files. This commands loads the `.bashrc. file  before
+executing the next command.
+While this workaround isn't the most elegant
+it did work for our purposes. However if you know of a better solution
+please let us know with an issue or a pull request! We would greatly appreciate it.</p>
+</div>
+		</div>
+	</body>
+
+    <!-- Javascript Loader for Pelican Javascript plugin-->
+</html>
