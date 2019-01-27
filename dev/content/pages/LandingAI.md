@@ -1,6 +1,6 @@
 Title: Landing.AI + Ravin = :)
 Date: 2016-4-21 
-Slug: landingai
+Slug: LandingAI
 Authors: Ravin Kumar
 Status: hidden
 

@@ -1,6 +1,6 @@
 Title: References
 Date: 2016-4-21 
-Slug: references
+Slug: References
 Authors: Ravin Kumar
 Status: Published
 
