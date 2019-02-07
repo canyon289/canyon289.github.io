@@ -1,4 +1,4 @@
-Title: Inference Cheatsheet
+Title: Bayesian Inference Cheatsheet
 Date: 2019-02-07
 Slug: InferenceCheatsheet
 Authors: Ravin Kumar
