@@ -131,14 +131,14 @@
     </div>
 </div>		<div class="content container">
 <div class="post">
-	<h1 class="post-title">Inference Cheatsheet</h1>
+	<h1 class="post-title">Bayesian Inference Cheatsheet</h1>
 	<p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Note</strong>: This cheatsheet is in "beta". Suggestions are welcome</p>
 <p>When performing Bayesian Inference, there are numerous ways to solve, or approximate, a posterior distribution. Usually an author of a book or tutorial will choose one, or they will present both but many chapters apart. This notebook solves the same problem each way all in Python. References are provided for each method for further exploration as well.</p>
-<h2 id="Another-great-reference">Another great reference<a class="anchor-link" href="#Another-great-reference">&#182;</a></h2><p>Chapter 8 of <a href="https://www.packtpub.com/big-data-and-business-intelligence/bayesian-analysis-python-second-edition">Osvaldo Martin's book</a> contains a more in depth overview of the methods below. I highly reccomend reaeding it as well, particularly if you would like a deeper understanding of each method.</p>
+<h2 id="Another-great-reference">Another great reference<a class="anchor-link" href="#Another-great-reference">&#182;</a></h2><p>Chapter 8 of <a href="https://www.packtpub.com/big-data-and-business-intelligence/bayesian-analysis-python-second-edition">Osvaldo Martin's book</a> contains a more in depth overview of the methods below. I highly recomend reading it as well, particularly if you would like a deeper understanding of each method.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Conjugate-Prior">Conjugate Prior<a class="anchor-link" href="#Conjugate-Prior">&#182;</a></h2><p>Conjugate priors are the "original" way of solving Bayes rule. Conjurage priors are analytical solutions, meaning that a good (probably great) mathematician was able to create a closed form solution by hand. For our Beta Binominal water tossing problem we can use the formula here and magically get the solution.</p>
+<h2 id="Conjugate-Prior">Conjugate Prior<a class="anchor-link" href="#Conjugate-Prior">&#182;</a></h2><p>Conjugate priors are the "original" way of solving Bayes rule. Conjurage priors are analytical solutions, meaning that a good (probably great) mathematician was able to create a closed form solution by hand. For our Beta Binominal water tossing problem we can use a formula (taken from Wikipedia) and to get the exact solution.</p>
 <h4 id="References">References<a class="anchor-link" href="#References">&#182;</a></h4><p><a href="https://en.wikipedia.org/wiki/Conjugate_prior">https://en.wikipedia.org/wiki/Conjugate_prior</a></p>
 
 </div>
@@ -293,7 +293,8 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">_alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">water_observations</span></span>
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="c1"># Analytical Formula magic</span></span>
+<span class="code-line"><span class="n">_alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">water_observations</span></span>
 <span class="code-line"><span class="n">_beta</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">total_observations</span> <span class="o">-</span> <span class="n">water_observations</span></span>
 </pre></div>
 
@@ -394,7 +395,8 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Conjugate-Prior-Pros">Conjugate Prior Pros<a class="anchor-link" href="#Conjugate-Prior-Pros">&#182;</a></h3><ul>
 <li>Posterior distribution is exact. It is <em>not</em> an estimation</li>
-<li>Most computationally efficient</li>
+<li>The fastest way to perform Bayesian Inference. At least 4 orders of magnitude faster than other methods</li>
+<li>Speed allows for novel applications, such as online posterior calculation for real time applications</li>
 </ul>
 <h3 id="Conjugate-Prior-Cons">Conjugate Prior Cons<a class="anchor-link" href="#Conjugate-Prior-Cons">&#182;</a></h3><ul>
 <li>Requires advanced math skills to get analytical solution</li>
@@ -413,7 +415,8 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <li>For each beta take another grid of points to get probability</li>
 <li>Calculate likelihood and posterior</li>
 </ol>
-<h4 id="References">References<a class="anchor-link" href="#References">&#182;</a></h4><p><strong>Statistical Rethinking</strong> Chapter 3 contains a great overview of Grid Search</p>
+<h4 id="References">References<a class="anchor-link" href="#References">&#182;</a></h4><p><strong>Statistical Rethinking</strong> Chapter 3 contains a great overview of Grid Search<br>
+<a href="https://xcelab.net/rm/statistical-rethinking/">https://xcelab.net/rm/statistical-rethinking/</a></p>
 
 </div>
 </div>
@@ -528,7 +531,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <li>Can theoretically be used to solve any problems</li>
 </ul>
 <h3 id="Grid-Search-Cons">Grid Search Cons<a class="anchor-link" href="#Grid-Search-Cons">&#182;</a></h3><ul>
-<li>Combinatorics will mean that solution scales very poorly. The sun will explode before inference is completed on most models</li>
+<li>Due to combinatorics this solution scales very poorly and can take a very long time to solve for non trivial models. The sun will explode before inference is completed on most models</li>
 </ul>
 
 </div>
@@ -539,7 +542,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Quadratic-(Laplace)-Approximation">Quadratic (Laplace) Approximation<a class="anchor-link" href="#Quadratic-(Laplace)-Approximation">&#182;</a></h2><p><a href="http://www.sumsar.net/blog/2013/11/easy-laplace-approximation/">http://www.sumsar.net/blog/2013/11/easy-laplace-approximation/</a><br>
 <a href="https://github.com/pymc-devs/resources/blob/master/Rethinking/Chp_02.ipynb">https://github.com/pymc-devs/resources/blob/master/Rethinking/Chp_02.ipynb</a></p>
-<h4 id="References">References<a class="anchor-link" href="#References">&#182;</a></h4><p>Chapter 8 of Bayesian Analysis in Python<br>
+<h4 id="References">References<a class="anchor-link" href="#References">&#182;</a></h4><p>Bayesian Analysis in Python Chapter 8
 <a href="https://www.packtpub.com/big-data-and-business-intelligence/bayesian-analysis-python-second-edition">https://www.packtpub.com/big-data-and-business-intelligence/bayesian-analysis-python-second-edition</a></p>
 
 </div>
@@ -901,7 +904,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="PyMC3-MCMC-Hamilton-Monte-Carlo-(Specifically-Nuts)">PyMC3 MCMC Hamilton Monte Carlo (Specifically Nuts)<a class="anchor-link" href="#PyMC3-MCMC-Hamilton-Monte-Carlo-(Specifically-Nuts)">&#182;</a></h2><p>Probabilistic Programming languages simplify Bayesian modeling tremendously but letting letting the statistician focus on the model, and less so on the sampler or other mathematical details. From a s</p>
+<h2 id="PyMC3-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">PyMC3 MCMC Hamiltonian Monte Carlo (Specifically No U Turn Sampler)<a class="anchor-link" href="#PyMC3-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">&#182;</a></h2><p>Probabilistic Programming languages simplify Bayesian modeling tremendously but letting letting the statistician focus on the model, and less so on the sampler or other mathematical details. From a s</p>
 
 </div>
 </div>
@@ -1018,7 +1021,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Stan-MCMC-Hamilton-Monte-Carlo-(Also-Nuts)">Stan MCMC Hamilton Monte Carlo (Also Nuts)<a class="anchor-link" href="#Stan-MCMC-Hamilton-Monte-Carlo-(Also-Nuts)">&#182;</a></h2><p>We can build the same model in Stan as well, in this case pystan, which is a python interface to Stan.</p>
+<h2 id="Stan-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">Stan MCMC Hamiltonian Monte Carlo (Specifically No U Turn Sampler)<a class="anchor-link" href="#Stan-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">&#182;</a></h2><p>We can build the same model in Stan as well, in this case pystan, which is a python interface to Stan.</p>
 
 </div>
 </div>
@@ -1141,9 +1144,14 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Markov-Monte-Carlo-Chain-Pros">Markov Monte Carlo Chain Pros<a class="anchor-link" href="#Markov-Monte-Carlo-Chain-Pros">&#182;</a></h2><ul>
+<h3 id="Markov-Monte-Carlo-Chain-Pros">Markov Monte Carlo Chain Pros<a class="anchor-link" href="#Markov-Monte-Carlo-Chain-Pros">&#182;</a></h3><ul>
 <li>MCMC seems to be most popular method at time of writing</li>
 <li>Popular libraries such as Stan, PyMC3, emcee, Pyro, use MCMC as main inference engine</li>
+</ul>
+<h3 id="Markov-Monte-Carlo-Chain-Cons">Markov Monte Carlo Chain Cons<a class="anchor-link" href="#Markov-Monte-Carlo-Chain-Cons">&#182;</a></h3><ul>
+<li>Sampling is not very computationally efficient. Advanced samples such as NUTS help but MCMC still can take a bit</li>
+<li>MCMC is suspectible to model parametrizations. An example of this is hierarhcial funnels. (Read Michael Betancourt has a great blog post explaining the issue)[<a href="https://mc-stan.org/users/documentation/case-studies/divergences_and_bias.html">https://mc-stan.org/users/documentation/case-studies/divergences_and_bias.html</a>]</li>
+<li>Although mostly "magic" MCMC st</li>
 </ul>
 
 </div>
@@ -1273,6 +1281,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 </ul>
 <h3 id="Variational-Inference-Cons">Variational Inference Cons<a class="anchor-link" href="#Variational-Inference-Cons">&#182;</a></h3><ul>
 <li>Not guaranteed to reach "optimal" KL Diverence</li>
+<li>The true posterior may not be well approximated by any distribution in the chosen class</li>
 </ul>
 
 </div>
@@ -1284,6 +1293,17 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <h1 id="Other-Inference-Methods">Other Inference Methods<a class="anchor-link" href="#Other-Inference-Methods">&#182;</a></h1><p>There are other Bayesian methods that I frankly don't know enough about to write a full treatement here. I will list the ones I do know about however.</p>
 <h2 id="Approximate-Bayesian-Computing">Approximate Bayesian Computing<a class="anchor-link" href="#Approximate-Bayesian-Computing">&#182;</a></h2><p>Agustina Arroyuelo has a great write up for Google Summer of Code 2018.<br>
 <a href="https://agustinaarroyuelo.github.io/jekyll/update/2018/05/29/PyMC3&#39;s-Journal-Club.html">https://agustinaarroyuelo.github.io/jekyll/update/2018/05/29/PyMC3&#39;s-Journal-Club.html</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Acknowledgements'">Acknowledgements'<a class="anchor-link" href="#Acknowledgements'">&#182;</a></h2><ul>
+<li>Austin Rochford (twitter: @AustinRochford)</li>
+<li>George Ho (twitter: @eigenfoo)</li>
+</ul>
 
 </div>
 </div>
