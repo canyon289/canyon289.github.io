@@ -394,12 +394,12 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Conjugate-Prior-Pros">Conjugate Prior Pros<a class="anchor-link" href="#Conjugate-Prior-Pros">&#182;</a></h3><ul>
-<li>Posterior distribution is exact. It is <em>not</em> an estimation</li>
+<li>Posterior distribution is exact. It is <em>not</em> a numerical approximation</li>
 <li>The fastest way to perform Bayesian Inference. At least 4 orders of magnitude faster than other methods</li>
-<li>Speed allows for novel applications, such as online posterior calculation for real time applications</li>
+<li>Speed allows for novel applications, such as online updates for posteriors for real time applications</li>
 </ul>
 <h3 id="Conjugate-Prior-Cons">Conjugate Prior Cons<a class="anchor-link" href="#Conjugate-Prior-Cons">&#182;</a></h3><ul>
-<li>Requires advanced math skills to get analytical solution</li>
+<li>Requires advanced math skills to derive analytical solution</li>
 <li>Only simple problems have been solved (<a href="https://en.wikipedia.org/wiki/Conjugate_prior#Table_of_conjugate_distributions">https://en.wikipedia.org/wiki/Conjugate_prior#Table_of_conjugate_distributions</a>)</li>
 </ul>
 
@@ -531,7 +531,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <li>Can theoretically be used to solve any problems</li>
 </ul>
 <h3 id="Grid-Search-Cons">Grid Search Cons<a class="anchor-link" href="#Grid-Search-Cons">&#182;</a></h3><ul>
-<li>Due to combinatorics this solution scales very poorly and can take a very long time to solve for non trivial models. The sun will explode before inference is completed on most models</li>
+<li>Due to combinatoric explosion ("the curse of dimensionality"), this solution scales very poorly and can take a very long time to solve for non trivial models. The sun will explode before inference is completed on most models</li>
 </ul>
 
 </div>
@@ -692,7 +692,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <li>Relatively fast compared to methods such as MCMC or ADVI</li>
 </ul>
 <h3 id="Laplace-Approximation-Cons">Laplace Approximation Cons<a class="anchor-link" href="#Laplace-Approximation-Cons">&#182;</a></h3><ul>
-<li>Normal distributions can't approximate everything, for example bimodel distributions</li>
+<li>Normal distributions can't approximate everything, for example bimodal or discrete distributions</li>
 </ul>
 
 </div>
@@ -701,7 +701,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Markov-Chain-Monte-Carlo">Markov Chain Monte Carlo<a class="anchor-link" href="#Markov-Chain-Monte-Carlo">&#182;</a></h2><p>Markov Chain Monte Carlo (MCMC) is a way approximate a posterior distribution by sampling from the posterior distribution. I found the visualizations in the link below make it easier to see what this means. The advances in MCMC are coming from advances in samplers. The No U Turn Sampler (NUTS) for example is one of the most widely popular at the moment, since it can "find" good samples more often than older samples such as Metropolis Hastings.</p>
+<h2 id="Markov-Chain-Monte-Carlo">Markov Chain Monte Carlo<a class="anchor-link" href="#Markov-Chain-Monte-Carlo">&#182;</a></h2><p>Markov Chain Monte Carlo (MCMC) is a way to numerically approximate a posterior distribution by iteratively sampling from it. I found the visualizations in the link below make it easier to see what this means. The advances in MCMC are coming from advances in samplers. The No U Turn Sampler (NUTS) for example is one of the most widely popular at the moment, since it can "find" good samples more often than older samples such as Metropolis Hastings.</p>
 <p>There are many bayesian libraries in addition to the two shown here.</p>
 <h4 id="References">References<a class="anchor-link" href="#References">&#182;</a></h4><p><a href="https://twiecki.io/blog/2015/11/10/mcmc-sampling/">https://twiecki.io/blog/2015/11/10/mcmc-sampling/</a><br>
 <a href="http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/">http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/</a></p>
@@ -854,7 +854,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Estimate-local-probability">Estimate local probability<a class="anchor-link" href="#Estimate-local-probability">&#182;</a></h3><p>Because MCMC provides samples and not an actual distribution, we have to take a ratio of counts, not a ratio of areas as before</p>
+<h3 id="Estimate-local-probability">Estimate local probability<a class="anchor-link" href="#Estimate-local-probability">&#182;</a></h3><p>Because MCMC provides samples and not an exact distribution, we have to take a ratio of counts, not a ratio of areas as before</p>
 
 </div>
 </div>
@@ -904,7 +904,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="PyMC3-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">PyMC3 MCMC Hamiltonian Monte Carlo (Specifically No U Turn Sampler)<a class="anchor-link" href="#PyMC3-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">&#182;</a></h2><p>Probabilistic Programming languages simplify Bayesian modeling tremendously but letting letting the statistician focus on the model, and less so on the sampler or other mathematical details. From a s</p>
+<h2 id="PyMC3-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">PyMC3 MCMC Hamiltonian Monte Carlo (Specifically No U Turn Sampler)<a class="anchor-link" href="#PyMC3-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">&#182;</a></h2><p>Probabilistic Programming languages simplify Bayesian modeling tremendously but letting letting the statistician focus on the model, and less so on the sampler or other implementation details. From a s</p>
 
 </div>
 </div>
@@ -1021,7 +1021,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Stan-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">Stan MCMC Hamiltonian Monte Carlo (Specifically No U Turn Sampler)<a class="anchor-link" href="#Stan-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">&#182;</a></h2><p>We can build the same model in Stan as well, in this case pystan, which is a python interface to Stan.</p>
+<h2 id="Stan-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">Stan MCMC Hamiltonian Monte Carlo (Specifically No U Turn Sampler)<a class="anchor-link" href="#Stan-MCMC-Hamiltonian-Monte-Carlo-(Specifically-No-U-Turn-Sampler)">&#182;</a></h2><p>We can fit the same model in pyStan as well, in this case pystan, which is a python interface to Stan.</p>
 
 </div>
 </div>
@@ -1149,8 +1149,8 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <li>Popular libraries such as Stan, PyMC3, emcee, Pyro, use MCMC as main inference engine</li>
 </ul>
 <h3 id="Markov-Monte-Carlo-Chain-Cons">Markov Monte Carlo Chain Cons<a class="anchor-link" href="#Markov-Monte-Carlo-Chain-Cons">&#182;</a></h3><ul>
-<li>Sampling is not very computationally efficient. Advanced samples such as NUTS help but MCMC still can take a bit</li>
-<li>MCMC is suspectible to model parametrizations. An example of this is hierarhcial funnels. (Read Michael Betancourt has a great blog post explaining the issue)[<a href="https://mc-stan.org/users/documentation/case-studies/divergences_and_bias.html">https://mc-stan.org/users/documentation/case-studies/divergences_and_bias.html</a>]</li>
+<li>Sampling is not very computationally efficient. Advanced samplers such as NUTS help but MCMC still can take a while</li>
+<li>MCMC is sensitive to model parametrizations. An example of this is hierarchical funnels. (Read Michael Betancourt's great blog post explaining the issue)[<a href="https://mc-stan.org/users/documentation/case-studies/divergences_and_bias.html">https://mc-stan.org/users/documentation/case-studies/divergences_and_bias.html</a>]</li>
 <li>Although mostly "magic" MCMC st</li>
 </ul>
 
@@ -1160,7 +1160,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="PyMC3-Variational-Inference-(Specifically-Automatic-Differentiation-Variational-Inference)">PyMC3 Variational Inference (Specifically Automatic Differentiation Variational Inference)<a class="anchor-link" href="#PyMC3-Variational-Inference-(Specifically-Automatic-Differentiation-Variational-Inference)">&#182;</a></h2><p>In short Variational Inference iteratively converts a model into an unconstrained space, then tries to optimize the Kullback-Leibler divergence.</p>
+<h2 id="PyMC3-Variational-Inference-(Specifically-Automatic-Differentiation-Variational-Inference)">PyMC3 Variational Inference (Specifically Automatic Differentiation Variational Inference)<a class="anchor-link" href="#PyMC3-Variational-Inference-(Specifically-Automatic-Differentiation-Variational-Inference)">&#182;</a></h2><p>In short Variational Inference iteratively transforms a model into an unconstrained space, then tries to optimize the Kullback-Leibler divergence.</p>
 <h4 id="References">References<a class="anchor-link" href="#References">&#182;</a></h4><p><a href="https://www.cs.toronto.edu/~duvenaud/papers/blackbox.pdf">https://www.cs.toronto.edu/~duvenaud/papers/blackbox.pdf</a><br>
 <a href="https://arxiv.org/pdf/1601.00670.pdf">https://arxiv.org/pdf/1601.00670.pdf</a></p>
 <p>A great explanation of the exact steps can be found at the bottom of page 3 in the paper below.<br>
@@ -1274,7 +1274,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Variational-Inference-Pros">Variational Inference Pros<a class="anchor-link" href="#Variational-Inference-Pros">&#182;</a></h3><ul>
-<li>No sampling required unlike MCMC</li>
+<li>No sampling required (unlike MCMC)</li>
 <li>Able to handle complex models</li>
 <li>Scales to large amounts of data better than MCMC</li>
 <li>Faster than MCMC</li>
@@ -1302,7 +1302,8 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Acknowledgements'">Acknowledgements'<a class="anchor-link" href="#Acknowledgements'">&#182;</a></h2><ul>
 <li>Austin Rochford (twitter: @AustinRochford)</li>
-<li>George Ho (twitter: @eigenfoo)</li>
+<li>George Ho (twitter: @_eigenfoo)</li>
+<li>Neal Fultz (LinkedIn: <a href="https://www.linkedin.com/in/nfultz/">https://www.linkedin.com/in/nfultz/</a>)</li>
 </ul>
 
 </div>
