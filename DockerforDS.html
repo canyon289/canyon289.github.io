@@ -153,7 +153,7 @@ After all, the most finite resource is people's willpower, time, and enthusiasm.
 <img alt="Arviz Developer Experience" src="./images/DockerForDataScience/MarieKondo.png"></p>
 <p>To keep developers joyful we've moved to a docker based
 Continuous Integration system. In this post I'll 
-the issues we were having with CI, why we started
+detail the issues we were having with CI, why we started
 using Docker in our CI, general instructions on how it all works,
 and a grab bag of tips.</p>
 <h2 id="the-tale-of-5-deep-learning-frameworks-a-local-machine-and-a-remote-virtual-machine"><a class="toclink" href="#the-tale-of-5-deep-learning-frameworks-a-local-machine-and-a-remote-virtual-machine">The tale of 5 deep learning frameworks, a local machine, and a remote virtual machine</a></h2>
@@ -167,10 +167,10 @@ to see what went wrong. Debugging amounts to lots of print statements, git commi
 and waiting 15 minutes to see what happens. It's especially maddening
 when local testing passes, but only the CI virtual machine is failing.</p>
 <p>This is the situation we were facing with plain TravisCI. Code that worked
-great locally, suddenly was failing when contributors made pull requests. This is
-no way was TravisCI's fault, TravisCI is a great tool that we're still using,
-but it was a fault somewhere between the operation system, the five 
-C level libraries, and ArviZ.</p>
+great locally, suddenly was failing when contributors made pull requests. This in
+no way is TravisCI's fault, TravisCI is a great tool that we're still using,
+but it was a fault somewhere between the operating system, the five 
+C level libraries, python, and ArviZ.</p>
 <p>After a couple months of this we switched to docker based testing on 
 TravisCI for one simple reason, <strong>the developers local environment would
 be an exact replica of the CI environment.</strong> This meant that any CI
@@ -240,7 +240,7 @@ ENV variables here through command line arguments we afford some flexibility</p>
 and the rest are in the Python environment. We choose to have a separate
 <code>create_testenv.sh</code> script because this allows users to run it outside
 of docker.</p>
-<p>The ext section of the file copies the ArviZ code base and
+<p>The next section of the file copies the ArviZ code base and
 removes any cached files/</p>
 <div class="highlight"><pre><span class="code-line"><span></span>COPY $SRC_DIR /opt/arviz</span>
 </pre></div>
@@ -277,8 +277,6 @@ TravisCI, such as travis-sphinx, and coveralls, no longer worked.</p>
 the container, but ensure they were available in the TravisCI environment
 by using a bind mount. An example can be found in 
 <a href="https://github.com/arviz-devs/arviz/blob/6d1b65e0c99bb716ee0ebcbdac8cdc9e1380a472/.travis.yml#L68-L69">the .travis.yml file</a>.</p>
-<p>Because the files were present in TravisCI file system, the integrated tools
-could then deploy the docs and coverage just as they had in the pa.</p>
 <p>Because the files were present in TravisCI file system, the integrated tools
 could then deploy the docs and coverage just as they had in the past.</p>
 <h2 id="miscellaneous-tips"><a class="toclink" href="#miscellaneous-tips">Miscellaneous tips</a></h2>

@@ -32,7 +32,7 @@ In other words
 
 To keep developers joyful we've moved to a docker based
 Continuous Integration system. In this post I'll 
-the issues we were having with CI, why we started
+detail the issues we were having with CI, why we started
 using Docker in our CI, general instructions on how it all works,
 and a grab bag of tips.
 
@@ -50,10 +50,10 @@ and waiting 15 minutes to see what happens. It's especially maddening
 when local testing passes, but only the CI virtual machine is failing.
 
 This is the situation we were facing with plain TravisCI. Code that worked
-great locally, suddenly was failing when contributors made pull requests. This is
-no way was TravisCI's fault, TravisCI is a great tool that we're still using,
-but it was a fault somewhere between the operation system, the five 
-C level libraries, and ArviZ.
+great locally, suddenly was failing when contributors made pull requests. This in
+no way is TravisCI's fault, TravisCI is a great tool that we're still using,
+but it was a fault somewhere between the operating system, the five 
+C level libraries, python, and ArviZ.
 
 After a couple months of this we switched to docker based testing on 
 TravisCI for one simple reason, **the developers local environment would
@@ -131,8 +131,9 @@ and the rest are in the Python environment. We choose to have a separate
 `create_testenv.sh` script because this allows users to run it outside
 of docker.
 
-The ext section of the file copies the ArviZ code base and
+The next section of the file copies the ArviZ code base and
 removes any cached files/
+
 ```
 COPY $SRC_DIR /opt/arviz
 ```
@@ -176,8 +177,6 @@ the container, but ensure they were available in the TravisCI environment
 by using a bind mount. An example can be found in 
 [the .travis.yml file](https://github.com/arviz-devs/arviz/blob/6d1b65e0c99bb716ee0ebcbdac8cdc9e1380a472/.travis.yml#L68-L69).
 
-Because the files were present in TravisCI file system, the integrated tools
-could then deploy the docs and coverage just as they had in the pa.
 
 Because the files were present in TravisCI file system, the integrated tools
 could then deploy the docs and coverage just as they had in the past.
