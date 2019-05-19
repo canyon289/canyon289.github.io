@@ -5,11 +5,19 @@ Authors: Ravin Kumar
 Status: published
 
 
-My name is Ravin Kumar and I'm somewhere between an engineer, programmer,
-and data scientist. I currently work for SpaceX but it is important to note
-not of any organization I work for or have worked for in the past.
+My name is Ravin Kumar. I specialize in using data and statistics to
+influence organizations, currently at sweetgreen and previously 
+at SpaceX and other organizations. My opnions are my own and not of any 
+organization.
 
-# What I do as a career
+# Open source work
+I'm a big advocate of open source. Open source makes knowledge accessible
+to anyone, not just those who can pay for expensive license fees
+or college education. Open Source is also free speech, allowing folks
+to share idea across the world. If you've been curious about open source
+feel free to reach out, I'm happy to chat about it.
+
+# My history
 My primary occupational focus has been on improving processes for organizations,
 I currently use data methods to figure out what's going on and then develop
 programs or applications to to help the organization improve.
