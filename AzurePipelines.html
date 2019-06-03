@@ -8,7 +8,7 @@
 		<!-- Enable responsiveness on mobile devices-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-		<title>['Manufacturing', 'and Machine Learning'] - Categories</title>
+		<title>Ravin Kumar</title>
 
 		<!-- For Jupyter Notebooks -->
 
@@ -130,16 +130,64 @@
     </div>
     </div>
 </div>		<div class="content container">
-    <h1>Categories on ['Manufacturing', 'and Machine Learning']</h1>
-    <ul>
-        <li><a href="./category/d3.html">D3</a> (2)</li>
-        <li><a href="./category/general.html">General</a> (5)</li>
-        <li><a href="./category/misc.html">misc</a> (9)</li>
-        <li><a href="./category/programming.html">Programming</a> (9)</li>
-        <li><a href="./category/programming-machinelearning.html">Programming, MachineLearning</a> (4)</li>
-        <li><a href="./category/question.html">Question</a> (1)</li>
-        <li><a href="./category/svg.html">SVG</a> (1)</li>
-    </ul>
+<div class="post">
+	<h1 class="post-title">Migrating from TravisCI to Azure Pipelines</h1>
+	<span class="post-date">Sun 02 June 2019</span>
+	<p>I'm in the process of testing out Azure Pipelines
+with <a href="https://arviz-devs.github.io/arviz/">ArviZ</a>, and in
+the process have learned more about the platform. I'll share
+my motivation as well as some tips.</p>
+<p>Note that this is a live blog post that I'll continue to
+update as a I learn more.</p>
+<h1 id="motivation"><a class="toclink" href="#motivation">Motivation</a></h1>
+<p>Many open Source projects on free tiers of services quite heavily.
+TravisCI was one of those vendors which provided a free tier for 
+open source but after its acquisition its future is uncertain.</p>
+<p>At the same time Microsoft seems to be heavily investing in open
+source, through acquisitions like GitHub and by open sourcing projects
+like VScode.</p>
+<p>Practically speaking Microsoft is also offering more parallel builds and longer runtime
+than TravisCI. PyMC3, one of the other projects I contribute to, PyMC3,
+recently ran into TravisCI's 50 minute build limit and we had to do some hacky
+stuff to get around it. Having 6 hours of build time in Azure is very convenient.</p>
+<p>Due to these we are trying both services in parallel to see which is a better
+fit for ArviZ given current circumstances.</p>
+<h2 id="tips"><a class="toclink" href="#tips">Tips</a></h2>
+<p>This section is a grab bag of tips from my ramp up to Azure. I'll be
+updating it as a I learn more.</p>
+<h2 id="skip-the-main-docs-initially"><a class="toclink" href="#skip-the-main-docs-initially">Skip the main docs initially</a></h2>
+<p>One upside of Azure is that it's more flexible than TravisCI, but it's
+also more complicated and the docs aren't great. I would advise skipping
+to the <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/migrate/from-travis?view=azure-devops">migration</a>
+section of the docs so you can start from known ground, before working
+into Azure's complexity.</p>
+<p>I also found this blog post from <a href="https://hynek.me/articles/simple-python-azure-pipelines/">Hynek Schlawack</a>
+to be quite helpful.</p>
+<h2 id="docs-exist-for-most-major-languages"><a class="toclink" href="#docs-exist-for-most-major-languages">Docs exist for most major languages</a></h2>
+<p>Specific documentation exists for common workflows in common languages.
+For example this <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/python?view=azure-devops">python</a>
+doc was particularly helpful as ArviZ is written in Python. </p>
+<h2 id="azure-pipelines-has-built-in-code-coverage-and-test-stats"><a class="toclink" href="#azure-pipelines-has-built-in-code-coverage-and-test-stats">Azure Pipelines has built in code coverage and test stats</a></h2>
+<p>Coveralls, codecov, and other provide great free tiers for their services
+but integration isn't always straightforward. In ArviZ's case Coveralls
+doesn't have an "out of the box" solution for Azure Pipelines yet.</p>
+<p>Luckily Azure Pipelines has a bunch of these services built in as tasks.
+Having things in one place is convenient should mean a lesser chance 
+of coverage or testing tools breaking.</p>
+<h2 id="tasks-are-like-functions"><a class="toclink" href="#tasks-are-like-functions">Tasks are like functions</a></h2>
+<p>I found the docs for tasks to be particularly confusing and it took me a while
+to latch onto the central concept, so in attempt to help here's my two liner.   </p>
+<p><em>Tasks are like functions, they take inputs and then they "do a thing".
+You can add tasks to your CI pipeline by copying a task block into your 
+YAML file</em></p>
+<p>Here's an example of the <a href="https://github.com/arviz-devs/arviz/blob/cb2a43d3882cbe1fd084d0a863be7bdaeb0a7ab5/azure-pipelines.yml#L85">Code Coverage task</a> from ArviZ in context. The official documentation
+shows <a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/index?view=azure-devops">some screenshots</a>
+, but after hours of clicking around I never found it and ended up realizing
+that that WebGUI was not needed.</p>
+<h2 id="whats-next"><a class="toclink" href="#whats-next">What's next</a></h2>
+<p>We're going to trial both CI pipelines with ArviZ to see which one we should
+move forward with. When we know I'll update this blog post. Happy CIing.</p>
+</div>
 		</div>
 	</body>
 
