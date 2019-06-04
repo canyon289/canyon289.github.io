@@ -17,7 +17,7 @@ Note that this is a live blog post that I'll continue to
 update as a I learn more.
 
 # Motivation
-Many open Source projects on free tiers of services quite heavily.
+Many Open Source projects on free tiers of services quite heavily.
 TravisCI was one of those vendors which provided a free tier for 
 open source but after its acquisition its future is uncertain.
 
@@ -26,16 +26,15 @@ source, through acquisitions like GitHub and by open sourcing projects
 like VScode.
 
 Practically speaking Microsoft is also offering more parallel builds and longer runtime
-than TravisCI. PyMC3, one of the other projects I contribute to, PyMC3,
-recently ran into TravisCI's 50 minute build limit and we had to do some hacky
+than TravisCI. PyMC3 recently ran into TravisCI's 50 minute build limit and we had to do some hacky
 stuff to get around it. Having 6 hours of build time in Azure is very convenient.
 
-Due to these we are trying both services in parallel to see which is a better
+Due to these reasons we are trying both services in parallel to see which is a better
 fit for ArviZ given current circumstances.
 
 ## Tips
 This section is a grab bag of tips from my ramp up to Azure. I'll be
-updating it as a I learn more.
+updating it as I learn more.
 
 ## Skip the main docs initially
 One upside of Azure is that it's more flexible than TravisCI, but it's
