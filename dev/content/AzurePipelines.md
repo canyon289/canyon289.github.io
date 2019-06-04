@@ -46,6 +46,15 @@ into Azure's complexity.
 I also found this blog post from [Hynek Schlawack](https://hynek.me/articles/simple-python-azure-pipelines/)
 to be quite helpful.
 
+## Read others implementations
+It's a lot easier to see the functionality if you look for other people's code.
+I referenced [PyJanitor's](https://github.com/ericmjl/pyjanitor/tree/dev/.azure-pipelines)
+implementation as a reference for mine.
+
+For your aid here's both our [TravisCI yaml file](https://github.com/arviz-devs/arviz/blob/master/.travis.yml)
+and our [Azure Pipelines](https://github.com/arviz-devs/arviz/pull/688/files)
+PR for a one to one comparison.
+
 ## Docs exist for most major languages
 Specific documentation exists for common workflows in common languages.
 For example this [python](https://docs.microsoft.com/en-us/azure/devops/pipelines/languages/python?view=azure-devops)
