@@ -2,24 +2,54 @@ name: blog
 channels:
   - defaults
 dependencies:
-  - beautifulsoup4=4.6.3
-  - ca-certificates=2018.03.07
-  - certifi=2018.11.29
-  - libedit=3.1.20170329
-  - libffi=3.2.1
-  - markdown=3.0.1
-  - ncurses=6.1
-  - openssl=1.1.1a
-  - pip=18.1
-  - pygments=2.3.1
-  - python=3.6.7
-  - readline=7.0
-  - setuptools=40.6.3
-  - sqlite=3.26.0
-  - tk=8.6.8
-  - wheel=0.32.3
-  - xz=5.2.4
-  - zlib=1.2.11
+  - _libgcc_mutex=0.1=main
+  - attrs=19.1.0=py36_1
+  - backcall=0.1.0=py36_0
+  - beautifulsoup4=4.8.0=py36_0
+  - bleach=3.1.0=py36_0
+  - ca-certificates=2019.8.28=0
+  - certifi=2019.9.11=py36_0
+  - decorator=4.4.0=py36_1
+  - defusedxml=0.6.0=py_0
+  - entrypoints=0.3=py36_0
+  - gmp=6.1.2=h6c8ec71_1
+  - ipython=7.8.0=py36h39e3cac_0
+  - ipython_genutils=0.2.0=py36_0
+  - jedi=0.15.1=py36_0
+  - jsonschema=3.0.2=py36_0
+  - jupyter_core=4.5.0=py_0
+  - libedit=3.1.20181209=hc058e9b_0
+  - libffi=3.2.1=hd88cf55_4
+  - libgcc-ng=9.1.0=hdf63c60_0
+  - libstdcxx-ng=9.1.0=hdf63c60_0
+  - markdown=3.1.1=py36_0
+  - mistune=0.8.4=py36h7b6447c_0
+  - nbconvert=5.6.0=py36_1
+  - nbformat=4.4.0=py36_0
+  - ncurses=6.1=he6710b0_1
+  - openssl=1.1.1d=h7b6447c_2
+  - pandoc=2.2.3.2=0
+  - pandocfilters=1.4.2=py36_1
+  - parso=0.5.1=py_0
+  - pexpect=4.7.0=py36_0
+  - pickleshare=0.7.5=py36_0
+  - pip=19.2.3=py36_0
+  - prompt_toolkit=2.0.9=py36_0
+  - ptyprocess=0.6.0=py36_0
+  - pygments=2.4.2=py_0
+  - pyrsistent=0.15.4=py36h7b6447c_0
+  - python=3.6.9=h265db76_0
+  - readline=7.0=h7b6447c_5
+  - setuptools=41.2.0=py36_0
+  - soupsieve=1.9.3=py36_0
+  - sqlite=3.30.0=h7b6447c_0
+  - testpath=0.4.2=py36_0
+  - tk=8.6.8=hbc83047_0
+  - traitlets=4.3.2=py36_0
+  - wcwidth=0.1.7=py36_0
+  - wheel=0.33.6=py36_0
+  - xz=5.2.4=h14c3975_4
+  - zlib=1.2.11=h7b6447c_3
   - pip:
     - blinker==1.4
     - docutils==0.14
@@ -27,7 +57,7 @@ dependencies:
     - html5lib==1.0.1
     - jinja2==2.10
     - markupsafe==1.1.0
-    - pelican==4.0.1
+    - pelican==4.1.2
     - python-dateutil==2.7.5
     - pytz==2018.7
     - six==1.12.0
