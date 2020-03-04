@@ -8,7 +8,7 @@ Status: Published
 
 
 Know the feeling when you use a tool that "just works" and instead of
-frustration and time list, you end up being more productive?  
+frustration and lost time, you end up being more productive?  
 
 ArviZ should be for Bayesian practitioners. 
 Bayesian practitioners should be able to use their inference library of choice,
