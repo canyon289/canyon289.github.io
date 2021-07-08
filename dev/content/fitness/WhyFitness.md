@@ -6,11 +6,18 @@ Slug: WhyFitness
 Authors: Ravin Kumar
 Status: Draft
 
-**tldr** A structured fitness plan can greatly improve your career and your quality of life as a knowledge worker. Ignoring health may work short term but catches up to you slowly and subtly.  Its really really really worth finding ways to include a baseline level of physical activity in your life. It yields dividends and is entirely worth it.
+**tldr** A structured fitness plan can greatly improve your career and your quality of life as a knowledge worker.
+Ignoring health may work short term but catches up to you slowly and subtly.
+I say this being someone who neglected my health to while trying to get
+ahead at work and then subsequently spending years losing the weight and 
+getting back to a healthier state.
+It's really really really worth finding ways to include a baseline level of physical activity in your life.
+It yields dividends in more ways than you may anticipate.
 
 I feel that most exercise related posts are either written to too general audience, written for fitness professionals, or are total scams.  I'm writing this blog post to hopefully show other knowledge workers transformational change *is possible* and very likely worth it, even if for no other reason than to make you a better knowledge worker.
 
-If you'd like to see me write more about this topic let me know. Send me an email, or @ me on twitter, or get a hold of me. Happy to "open source" my knowledge just like I open source my code.
+If you'd like to see me write more about this topic let me know. Send me an email, or @ me on twitter, or however else you can get a hold of mme.
+Happy to "open source" my knowledge just like I open source my code.
 
 ## Why are you posting this?
 I have a hypothesis that many of my desk bound folks are unaware of all of the benefits of physical activity can have on career specifically, or their lives in general. I think we also tend to easily sacrifice our long term health for our career. I say this from my experience going from a skinny nerd to one that became overweight from being "too career focused", I was found myself in a situation where frankly life just "didn't feel great".  For many reasons I felt I had to make a change and after much concerted efforts I've been able to make meaningful progress and want to plainly say *the benefits are greater in number and in magnitude than I had ever expected*
@@ -18,8 +25,8 @@ I have a hypothesis that many of my desk bound folks are unaware of all of the b
 For one for the first time ever I am not embarrassed about my self appearance.
 
 <p float="center">
-<img src="{static}/images/WhyFitness/BeachPicture.JPG" width="1400"/>
-<img src="{static}/images/WhyFitness/BeachBackPicture.JPG" width="1400"/> 
+<img src="{static}/images/WhyFitness/BeachPicture.JPG"/>
+<img src="{static}/images/WhyFitness/BeachBackPicture.JPG"/> 
 </p>
 
 
@@ -137,10 +144,20 @@ I'm can share what I know on topics such as
 
 If interested get in contact with me. I'm happy to share!
 
-## Weightlifting is cool (for everyone)
+## P.S. Weightlifting is really fun (for everyone)
 Lastly I'm most proud of my powerlifting ability, much more so than
-the physical appearances. Here's a picture of a recent deadlift! 
+my physical appearance. Here's a picture of a recent deadlift.
 
 <p float="center">
-<img src="{static}/images/WhyFitness/BeachPicture.JPG" width="1400"/>
+<img src="{static}/images/WhyFitness/Deadlifting.png"/>
 </p>
+
+It isn't "just for men either". My super awesome role model mom also performing
+a deadlift. She didn't start weightlifting until her 40s so don't let
+either age or gender hold you back. If you've been curious about trying out
+strength training I encourage you to try it out!
+
+<p float="center">
+<img src="{static}/images/WhyFitness/MomWeightLifting.png"/>
+</p>
+
