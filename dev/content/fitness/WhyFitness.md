@@ -4,7 +4,7 @@ Category: Fitness
 Tags: 
 Slug: WhyFitness
 Authors: Ravin Kumar
-Status: Draft
+Status: Published 
 
 **tldr** A structured fitness plan can greatly improve your career and your quality of life as a knowledge worker.
 Ignoring health may work short term but catches up to you slowly and subtly.
