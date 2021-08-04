@@ -134,13 +134,12 @@ current elements are <strong>updated</strong> and missing elements are <strong>e
 are also a selection. This means you can chain data joins on top of each other. </p>
 <h2 id="an-example"><a class="toclink" href="#an-example">An example</a></h2>
 <p>Say we have data that has a nested structure like this</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;red&quot;</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;Strawberries&quot;</span><span class="p">,</span> <span class="s2">&quot;Apple&quot;</span><span class="p">],</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;red&quot;</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;Strawberries&quot;</span><span class="p">,</span> <span class="s2">&quot;Apple&quot;</span><span class="p">],</span></span>
 <span class="code-line">            <span class="s2">&quot;blue&quot;</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;BlueBerries&quot;</span><span class="p">]}</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p>We can easily use this structure to our advantage using a d3 snippet like this</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kd">var</span> <span class="nx">doubledatajoin</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="kd">var</span> <span class="nx">doubledatajoin</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span></span>
 <span class="code-line">         <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">&quot;#example&quot;</span><span class="p">)</span></span>
 <span class="code-line">           <span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">)</span></span>
 <span class="code-line">           <span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span></span>
@@ -156,8 +155,7 @@ are also a selection. This means you can chain data joins on top of each other. 
 <span class="code-line"></span>
 <span class="code-line"><span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">&quot;#button&quot;</span><span class="p">)</span></span>
 <span class="code-line">  <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="nx">doubledatajoin</span><span class="p">)</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <div id="example">
   <button type="button" id="button">Perform Double Data</button>

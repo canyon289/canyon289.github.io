@@ -143,19 +143,19 @@ to visualize and communicate project timelines
 <img alt="test" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/ConceptDraw_Project_Gantt_Chart.png"></p>
 <p>There's now numerous visual encodings but the two that are most used are
 the rectangle, displaying activity duration, and diamonds, which signify milestones
-or completion times of important events.
-<div id="unclipped"></div></p>
+or completion times of important events.</p>
+<div id="unclipped"></div>
+
 <h1 id="creating-a-diamond"><a class="toclink" href="#creating-a-diamond">Creating a diamond</a></h1>
 <p>SVG supports a number of 
 <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes">basic shapes</a>
 Rectangles are oneof these and creating one just requires easily understood parameters
 such as x,y location of te top left corner and width and height.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg&gt;</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;svg&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;10&quot;</span> <span class="na">y=</span><span class="s">&quot;10&quot;</span> <span class="na">height=</span><span class="s">&quot;20&quot;</span> <span class="na">width=</span><span class="s">&quot;40&quot;</span><span class="nt">/&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;20&quot;</span> <span class="na">y=</span><span class="s">&quot;20&quot;</span> <span class="na">height=</span><span class="s">&quot;20&quot;</span> <span class="na">width=</span><span class="s">&quot;40&quot;</span><span class="nt">&gt;&lt;/rect&gt;</span></span>
 <span class="code-line"><span class="nt">&lt;/svg&gt;</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p>They can be represented in either of the formats above, the only difference
 being the closing block for the svg element.The resulting SVG looks like this.
@@ -174,29 +174,26 @@ But this feels like a bit much, we really just want a diamond.</p>
 <h1 id="rotation"><a class="toclink" href="#rotation">Rotation</a></h1>
 <p>Taking a step back though if we think about it a diamond really is just 
 a rotated rectangle. Luckily there is a simple method to rotate elements in SVGs.</p>
-<div class="highlight"><pre><span class="code-line"><span></span>transform = &quot;rotate(degrees, x,y)&quot;</span>
-</pre></div>
-
+<div class="highlight"><pre><span class="code-line"><span></span><code>transform = &quot;rotate(degrees, x,y)&quot;</span>
+<span class="code-line"></code></pre></div>
 
 <p>In the string above degrees are the degree of rotation, and x and y are
 rotation center. If not specified the rotation center defaults to the origin
 of the svg.</p>
 <p>Let's go through an example. Below is a basic rectangle like we saw above.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;25&quot;</span> <span class="na">y=</span><span class="s">&quot;25&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span></span>
 <span class="code-line"><span class="nt">&lt;/svg&gt;</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p><svg width ="100" height ="100">
   <rect x="25" y="25" height="50" width="50"></rect>
 </svg>  </p>
 <p>If we specify the rotation as so</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;25&quot;</span> <span class="na">y=</span><span class="s">&quot;25&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50 &quot;</span><span class="na">transform=</span><span class="s">&quot;rotate(45, 50,50)&quot;</span><span class="nt">&gt;&lt;/rect&gt;</span></span>
 <span class="code-line"><span class="nt">&lt;/svg&gt;</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p>we get the diamond with much less work!</p>
 <p><svg width ="100" height ="100">
@@ -206,12 +203,11 @@ of the svg.</p>
 translate the diamond slightly, without changing the rotate x and y coordinates
 we end up with effects like what you see below. We still got a diamond
 but it's not at the coordinates we wanted it to be.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;400&quot;</span> <span class="na">height =</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;400&quot;</span> <span class="na">height =</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;200&quot;</span> <span class="na">y=</span><span class="s">&quot;200&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">fill=</span><span class="s">&quot;blue&quot;</span><span class="nt">&gt;&lt;/rect&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;200&quot;</span> <span class="na">y=</span><span class="s">&quot;200&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">transform=</span><span class="s">&quot;rotate(45, 50,50)&quot;</span><span class="nt">&gt;&lt;/rect&gt;</span></span>
 <span class="code-line"><span class="nt">&lt;/svg&gt;</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p><svg width ="400" height ="400">
   <rect x="200" y="200" height="50" width="50" fill="blue"></rect>
@@ -224,13 +220,12 @@ black square.</p>
 <h1 id="svg-reusability"><a class="toclink" href="#svg-reusability">SVG Reusability</a></h1>
 <p>SVG has another trick up it's sleeve though. Take a guess what the following
 SVG will look like.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;defs&gt;</span></span>
 <span class="code-line">      <span class="nt">&lt;rect</span> <span class="na">id=</span><span class="s">&quot;myshape&quot;</span> <span class="na">x=</span><span class="s">&quot;0&quot;</span> <span class="na">y=</span><span class="s">&quot;0&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;/defs&gt;</span></span>
 <span class="code-line"><span class="nt">&lt;/svg&gt;</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p><svg width ="100" height ="100">
   <defs>
@@ -242,15 +237,14 @@ and similar to the <a href="./clippaths.html">clip paths</a> tutorial it's wrapp
 in <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs">defs</a> tags.</p>
 <p>Anything in defs tags can be reused by use of the "use" tag and referencing
 the id of the element.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;defs&gt;</span></span>
 <span class="code-line">      <span class="nt">&lt;rect</span> <span class="na">id=</span><span class="s">&quot;myshape&quot;</span> <span class="na">x=</span><span class="s">&quot;0&quot;</span> <span class="na">y=</span><span class="s">&quot;0&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;/defs&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">&quot;#myshape&quot;</span> <span class="na">x=</span><span class="s">&quot;10&quot;</span> <span class="na">y=</span><span class="s">&quot;10&quot;</span><span class="nt">/&gt;</span></span>
 <span class="code-line">      <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;0&quot;</span> <span class="na">y=</span><span class="s">&quot;0&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span></span>
 <span class="code-line"><span class="nt">&lt;/svg&gt;</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p><svg width ="100" height ="100">
   <defs>
@@ -259,15 +253,14 @@ the id of the element.</p>
   <use xlink:href="#myshape" x="10" y="10"/>
 </svg></p>
 <p>So for our diamond we can declare once and then use it anywhere with minimal effort.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;defs&gt;</span></span>
 <span class="code-line">      <span class="nt">&lt;rect</span> <span class="na">id=</span><span class="s">&quot;myshape&quot;</span> <span class="na">x=</span><span class="s">&quot;0&quot;</span> <span class="na">y=</span><span class="s">&quot;0&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;/defs&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">&quot;#myshape&quot;</span> <span class="na">x=</span><span class="s">&quot;10&quot;</span> <span class="na">y=</span><span class="s">&quot;10&quot;</span><span class="nt">/&gt;</span></span>
 <span class="code-line">      <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;0&quot;</span> <span class="na">y=</span><span class="s">&quot;0&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span></span>
 <span class="code-line"><span class="nt">&lt;/svg&gt;</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p><svg width ="200" height ="200">
   <defs>
