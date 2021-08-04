@@ -26,7 +26,6 @@ For one for the first time ever I am not embarrassed about my self appearance.
 
 <p float="center">
 <img src="{static}/images/WhyFitness/BeachPicture.JPG"/>
-<img src="{static}/images/WhyFitness/BeachBackPicture.JPG"/> 
 </p>
 
 
