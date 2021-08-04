@@ -144,7 +144,7 @@ running these processes, but starting them manually is a pain</p>
 <h1 id="tmux-script"><a class="toclink" href="#tmux-script">Tmux script</a></h1>
 <p>The shell script below runs all the commands needed to start a blogging
 environment on my computers.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="c1"># !/bin/sh</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="c1"># !/bin/sh</span></span>
 <span class="code-line"><span class="c1"># Small script that sets up blogging environment with one command</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="c1"># Kill open session</span></span>
@@ -164,16 +164,14 @@ environment on my computers.</p>
 <span class="code-line"><span class="c1"># Ready to blog</span></span>
 <span class="code-line">tmux new-window -n blog_article -c <span class="nv">$PWD</span><span class="s2">&quot;/content&quot;</span></span>
 <span class="code-line">tmux att -t blog</span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p>Breaking this apart, the first thing to do is ensure that no other tmux session
 is already running all the processes I need. This is done by checking
 if a session named <code>blog</code> is running and if so kills it. </p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="c1"># Kill open session</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="c1"># Kill open session</span></span>
 <span class="code-line">tmux kill-session -t blog <span class="o">||</span> <span class="nb">true</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p>The next step is creating a ession to group all the windows and panes
 that will be running the processes. The first done is starting a session
@@ -182,31 +180,28 @@ instead of running the command directly because in tmux if process stops
 the pane would close, not a behavior that was desired. <code>C-m</code> is a carriage
 return and instructs tmux to run the command after typing it in, the same
 as pressing enter does when manually typing the command.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="c1"># Create new session</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="c1"># Create new session</span></span>
 <span class="code-line">tmux new-session -d -s blog </span>
 <span class="code-line"></span>
 <span class="code-line"><span class="c1"># C-m is carriage return in tmux</span></span>
 <span class="code-line">tmux send-keys <span class="s1">&#39;source activate blog &amp;&amp; pelican -r -s pelicanconf.py&#39;</span> <span class="s1">&#39;C-m&#39;</span> </span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p>With the pelican process ready to generate the site, the next step is to
 start a local server to view the blog in a browser</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="c1"># Start http server</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="c1"># Start http server</span></span>
 <span class="code-line">tmux <span class="k">select</span>-window -t blog:0</span>
 <span class="code-line">tmux split-window -v </span>
 <span class="code-line">tmux send-keys <span class="s1">&#39;cd .. &amp;&amp; python -m http.server&#39;</span> <span class="s1">&#39;C-m&#39;</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p>Lastly we start a new window in the directory where the markdown files 
 where for this blog are stored. The final command is attaching the tmux
 session to the running terminal to start writing.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="c1"># Ready to blog</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="c1"># Ready to blog</span></span>
 <span class="code-line">tmux new-window -n blog_article -c <span class="nv">$PWD</span><span class="s2">&quot;/content&quot;</span></span>
 <span class="code-line">tmux att -t blog</span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <p>And with that were done!</p>
 <h1 id="why-go-through-the-trouble"><a class="toclink" href="#why-go-through-the-trouble">Why go through the trouble</a></h1>

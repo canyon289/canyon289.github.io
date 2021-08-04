@@ -140,9 +140,8 @@ to the vector space</strong> that our computer eventually turns into graphics.</
 <p>In SVGs these coordinate transforms are defined by attributes such as matrix,
 translate,scale,rotate etc. So for example if we wanted to "pan" a rectangle
 SVG element we would add an attribute tag as so</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;rect</span> <span class="na">width=</span><span class="s">&quot;100&quot;</span> <span class="na">height=</span><span class="s">&quot;100&quot;</span> <span class="na">transform =</span><span class="s">&quot;translate(50,50) scale(2)&quot;</span><span class="nt">&gt;&lt;/rect&gt;</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;rect</span> <span class="na">width=</span><span class="s">&quot;100&quot;</span> <span class="na">height=</span><span class="s">&quot;100&quot;</span> <span class="na">transform =</span><span class="s">&quot;translate(50,50) scale(2)&quot;</span><span class="nt">&gt;&lt;/rect&gt;</span></span>
+<span class="code-line"></code></pre></div>
 
 <p>The render inteprets this as move "50px right and 50px down from the origin and
 double all the linear dimensions". For further details on the SVG spec take a look
@@ -170,28 +169,24 @@ rotate or any of the other SVG transforms in the Zoom API.</p>
 <h2 id="the-one-liner-explanation"><a class="toclink" href="#the-one-liner-explanation">The One Liner explanation</a></h2>
 <p>With all this newfound knowledge let's dissect the one liner from the previous post,
 here again for reference</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">().</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;zoom&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">g</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">transform</span><span class="p">)}))</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">().</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;zoom&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">g</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">transform</span><span class="p">)}))</span></span>
+<span class="code-line"></code></pre></div>
 
 <p>Working our way from the outside in</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span></span>
+<span class="code-line"></code></pre></div>
 
 <p>If you recall the svg variable here is a refernce to our svg. The call is a d3
 method for applying a function to a selection</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">().</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;zoom&quot;</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">().</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;zoom&quot;</span></span>
+<span class="code-line"></code></pre></div>
 
 <p>In the next statement we are doing a couple of things. We're creating a zoom object,
 <a href="https://github.com/d3/d3-zoom#zoom">which is also a function</a> and applying it
 to svg through the call method. We also are binding the zoom behavior to the 
 d3 zoom event handler</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">().</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;zoom&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">g</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">transform</span><span class="p">)}))</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">().</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;zoom&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">g</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">transform</span><span class="p">)}))</span></span>
+<span class="code-line"></code></pre></div>
 
 <p>In this last set of code we are telling d3 change the attribute "transform" on the svg
 group g, whenever the zoom event is invoked. d3.event.transform returns
@@ -200,9 +195,8 @@ an svg string that details the current transform.</p>
 <p>To answer our question from last week here's why the visualization jumps.</p>
 <p>When we initially create the svg group, we manually code the transformed
 position as an attribute on the svg group, copied here for reference</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="s2">&quot;translate(&quot;</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="s2">&quot;translate(&quot;</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
 
 <p>when we do this d3 has no "knowledge" of the state of the SVG, but the svg
 "knows" and subsequently so does the browser rendering engine.</p>
@@ -218,14 +212,14 @@ and a zoomTransform object that we're offsetting.</p>
 line, the one that "tells" d3 the initial state of the transform.  </p>
 <p>We then go on to use this object to write the svg attribute string for us on line
 34 and finally we set the event handler on the svg selection on line 42 and 43.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kd">var</span> <span class="nx">zoom</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="kd">var</span> <span class="nx">zoom</span></span>
 <span class="code-line"><span class="kd">var</span> <span class="nx">svg</span></span>
 <span class="code-line"><span class="kd">var</span> <span class="nx">initial_transform</span></span>
 <span class="code-line"><span class="kd">var</span> <span class="nx">g</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">margin</span> <span class="o">=</span> <span class="p">{</span><span class="nx">top</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">right</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">bottom</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">left</span><span class="o">:</span> <span class="mi">50</span><span class="p">};</span></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">width</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">margin</span> <span class="o">=</span> <span class="p">{</span><span class="nx">top</span><span class="o">:</span> <span class="mf">50</span><span class="p">,</span> <span class="nx">right</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">bottom</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">left</span><span class="o">:</span> <span class="mf">50</span><span class="p">};</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">width</span> <span class="o">=</span> <span class="mf">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mf">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="c1">//Create Initial Zoom Behavior</span></span>
 <span class="code-line"><span class="nx">zoom</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">()</span></span>
@@ -254,15 +248,14 @@ line, the one that "tells" d3 the initial state of the transform.  </p>
 <span class="code-line">  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">initial_transform</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;circle&quot;</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mf">0</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mf">0</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mf">10</span><span class="p">);</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="c1">//Set the zoom Behavior, use the one initialized above instead of creating a new one</span></span>
 <span class="code-line"><span class="nx">svg</span></span>
 <span class="code-line"><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">zoom</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;zoom&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">g</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">transform</span><span class="p">)}))</span></span>
-</pre></div>
-
+<span class="code-line"></code></pre></div>
 
 <h2 id="what-we-covered"><a class="toclink" href="#what-we-covered">What we covered</a></h2>
 <p>In the previous post we covered how to implement zoom and pan easily in one
