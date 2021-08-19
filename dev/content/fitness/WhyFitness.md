@@ -8,21 +8,21 @@ Status: Published
 
 **tldr** A structured fitness plan can greatly improve your career and your quality of life as a knowledge worker.
 Ignoring health may work short term but catches up to you slowly and subtly.
-I say this being someone who neglected my health to while trying to get
+I say this being someone who neglected my health to long while trying to get
 ahead at work and then subsequently spending years losing the weight and 
 getting back to a healthier state.
 It's really really really worth finding ways to include a baseline level of physical activity in your life.
 It yields dividends in more ways than you may anticipate.
 
-I feel that most exercise related posts are either written to too general audience, written for fitness professionals, or are total scams.  I'm writing this blog post to hopefully show other knowledge workers transformational change *is possible* and very likely worth it, even if for no other reason than to make you a better knowledge worker.
+I feel that most exercise related posts are either written to a general audience, written for fitness professionals, or are total scams.  I'm writing this blog post to hopefully show other knowledge workers transformational change *is possible* and very likely worth it, even if for no other reason than to make you a better knowledge worker.
 
-If you'd like to see me write more about this topic let me know. Send me an email, or @ me on twitter, or however else you can get a hold of mme.
+If you'd like to see me write more about this topic let me know. Send me an email, or @ me on twitter, or however else you can get a hold of me.
 Happy to "open source" my knowledge just like I open source my code.
 
 ## Why are you posting this?
-I have a hypothesis that many of my desk bound folks are unaware of all of the benefits of physical activity can have on career specifically, or their lives in general. I think we also tend to easily sacrifice our long term health for our career. I say this from my experience going from a skinny nerd to one that became overweight from being "too career focused", I was found myself in a situation where frankly life just "didn't feel great".  For many reasons I felt I had to make a change and after much concerted efforts I've been able to make meaningful progress and want to plainly say *the benefits are greater in number and in magnitude than I had ever expected*
+I have a hypothesis that many of my desk bound folks are unaware of all of the benefits physical activity can have on their career specifically, or their lives in general. I think we also tend to easily sacrifice our long term health for our career. I say this from my experience going from a skinny nerd to one that became overweight from being "too career focused", I found myself in a situation where frankly life just "didn't feel great".  For many reasons I felt I had to make a change and after much concerted efforts I've been able to make meaningful progress and want to plainly say *the benefits are greater in number and in magnitude than I had ever expected*
 
-For one for the first time ever I am not embarrassed about my self appearance.
+For one, for the first time ever I am not embarrassed about my self appearance.
 
 <p float="center">
 <img src="{static}/images/WhyFitness/BeachPicture.JPG"/>
@@ -32,21 +32,21 @@ For one for the first time ever I am not embarrassed about my self appearance.
 But aside from that there are numerous benefits I've found in my knowledge working career.
 
 Before that though a disclaimer. I'm definitely not a medical professional. This is based on my own experience. 
-I am a professional statistician thought so I can say these are not controlled studies either.
-At best they are a  highly biased observational study of with a sample of one.
-However I've gone from feeling pretty poorly each day and being warned about my weight by doctor, to feeling so much better I feel like I have to share something. So I'm writing this in case it inspires someone to be a better version of themselves. I genuinely believe that its more possible and more beneficial than you may think.
+I am a professional statistician though so I can say these are not controlled studies either.
+At best they are a  highly biased observational study with a sample of one.
+However I've gone from feeling pretty poorly each day and being warned about my weight by doctor, to feeling so much better I feel like I have to share something. So I'm writing this in case it inspires someone to be a better version of themselves. I genuinely believe that it's more possible and more beneficial than you may think.
 
 
 ## So get to it already, what was better?
 I'll primarily speak to the short term benefits because I don't want to wait 50 years to make this blog post.
 I've experienced the usual ones you read about including increased energy, better sleep, and improved mood. For instance I don't have random pains when I wake up and In general I tend to feel like less of my days in general are less of a slog. 
 
-But more specifically I find there is a host of benefits for knowledge workers.  For me those have ranged from specific physical improvements related to desk to work to more holistic outlook changes. Overall I believe its put me on a better position to navigate my career with more productivity and reduced anxiety. These benefits for have included
+But more specifically I find there are a host of benefits for knowledge workers.  For me those have ranged from specific physical improvements related to desk to work to more holistic outlook changes. Overall I believe it's put me in a better position to navigate my career with more productivity and reduced anxiety. These benefits for have included
  
 ### Desk work that doesn't hurt anymore
 Typing used to hurt, literally.
 After using a keyboard for an extended period of time I used to get wrist pains and had to take breaks.
-I was 27 at this time so my body failing me was new phenomena.
+I was 27 at this time so my body failing me a was new phenomena.
 It also meant that I was able to output less work, and remember the occasional days where I'd grit through the pain to get something done for a deadline.
 This pain is now gone.
 All my desk related pain is gone and most pain in general.
@@ -85,7 +85,7 @@ As you may guess I feel the upsides far outweigh the downsides in my case, but w
 You really do have to think about what you want to do, why, and how to get there.
 Then you actually have to do it which can be a slog.
 Reading hackernews or eating unhealthy foods are all easier and comfortable in the short term.
-This downside can mitigated by making smaller magnitude changes 
+This downside can be mitigated by making smaller magnitude changes 
 but then it takes longer for results to appear.
 Unfortunately a level of dedication and patience is needed.
 
@@ -99,7 +99,7 @@ to dial in, working through
 ### It can take time
 Both of the above take time, the most valuable commodity, especially for knowledge workers.
 I personally learned to mitigate the "time loss' through a number of strategies
-but the fact remains that I need set aside dedicated hours in my week.
+but the fact remains that I need to set aside dedicated hours in my week.
 I'll say here I now think my peers use time an excuse way as a false 
 justification to avoid the work but that's a topic for another blog post
 
@@ -108,14 +108,14 @@ A lot of the content written out there is not targeted for working
 professionals. Ignoring the blatant scams, much of the material is written
 for other *professional* athletes or actors who can work out twice a day
 or eat 6 carefully measured meals. Cracking open a tupperware of tilapia
-in multiple meetings each day doesn't fit my life. The all in or not in
-mentality is a non starer. It a while for me to piece together what worked
+in multiple meetings each day doesn't fit my life. The all in or not
+mentality is a non starter. It took a while for me to piece together what worked
 in my situation, without me losing my job, and likely will for you as well.
 
 
 ## So where can you go from here?
-If you're compelled to make a change my first suggestion is to thoughtfully write down specific goal you'd like to achieve.
-This is no different than writing down precise objective functions for statistical model
+If you're compelled to make a change my first suggestion is to thoughtfully write down a specific goal you'd like to achieve.
+This is no different than writing down precise objective functions for statistical models
 or setting a concrete goal for a team. Saying you want your model to be "more accurate"
 is about as imprecise as saying "you want to walk more everyday". 
 
@@ -124,14 +124,14 @@ The quote “A problem well-defined is a problem half solved.” is applicable h
 Here's my goals for example.
 
    * I was unhappy with my body composition. From lots of internet research I learned I wanted to somewhere around 10% bodyfat
-   * I am particularly compelled people with high strength performance. I'd like to be able to deadlift 500lbs, squat 400 lbs, and bench 300 lbs. 
+   * I am particularly compelled by people with high strength performance. I'd like to be able to deadlift 500lbs, squat 400 lbs, and bench 300 lbs. 
    * I'd also like to be able to perform ring muscle ups for ease. This one is a not so well defined goal but since its a sub goal of the one above I'm ok with that.
 
 These are just some examples, if you'd like to know my other ones feel free to ask.
 
 
 ## Should I keep writing about these topics?
-I really believe in the power sharing ideas and knowledge with others.
+I really believe in the power of sharing ideas and knowledge with others.
 Its why so I'm so compelled with "open source" codes and communities, and it's something I believe here as well
 
 I'm can share what I know on topics such as
@@ -159,4 +159,3 @@ strength training I encourage you to try it out!
 <p float="center">
 <img src="{static}/images/WhyFitness/MomWeightLifting.png"/>
 </p>
-
