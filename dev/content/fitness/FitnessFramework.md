@@ -4,7 +4,7 @@ Category: Fitness
 Tags: 
 Slug: HealthFramework
 Authors: Ravin Kumar
-Status: Published
+Status: Draft
 
 
 There was more interest and questions from my why fitness post 
