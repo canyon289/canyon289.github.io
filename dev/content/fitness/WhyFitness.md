@@ -30,8 +30,8 @@ I say this from experience.
 I went from being a skinny nerd an overweight nerd because I was "too career focused".
 I found myself in a situation where, frankly, life just "didn't feel great".  
 For many reasons I had to make a change, and after much concerted effort,
-I've been able to make meaningful progress o
-I want to definiteively state *the benefits are greater in number and in magnitude than I ever expected*
+I've been able to make meaningful progress so
+I want to definitively state *the benefits are greater in number and in magnitude than I ever expected*
 
 For one, for the first time ever I am not embarrassed about my appearance.
 
@@ -94,7 +94,7 @@ Before when I missed a day of sleep I would mask the effects with caffeine and i
 It'd take a week or so of poor sleep habits before the effects became problematic  enough for me to correct them.
 Now, these lack-of-sleep regressions show up more quickly in my physical output levels, especially through the objective measurement I mentioned above.
 The same goes for stress levels or lack of mental focus at work. 
-Since the physical detriment shows up quickly I'm able to self-correct much faster0especially before it affects my knowledge work too severely. 
+Since the physical detriment shows up quickly I'm able to self-correct much faster especially before it affects my knowledge work too severely. 
 
 ### Increased confidence in navigating my career
 "Knowing things" is the bare minimum for a knowledge career.
@@ -114,14 +114,14 @@ As you can probably guess I feel the upsides far outweigh the downsides in my ca
 You really do have to think about what you want to do, why you want to do it, and how to get there.
 Then you actually have to do it which can be a slog.
 Reading Hacker News or eating unhealthy foods is easier and comfortable in the short term.
-This downside can be mitigated by making changes of a smaller magnitude.
+This downside can be mitigated by making changes of a smaller magnitude,
 but then it takes longer for results to appear.
 Bottom line, a level of dedication and patience is essential..
 
 ### It's harder at the beginning
 All of the above is compounded at the start, when you are not getting any of the benefits,
 but you're definitely paying the upfront costs of all the planning, confusion, and lack of experience. 
-Like anything changign your lifestyle is a learned skilled and it takes time
+Like anything changing your lifestyle is a learned skilled and it takes time
 to figure everything out before it becomes second nature. 
 
 ### It can take time
@@ -150,7 +150,7 @@ The quote “A problem well-defined is a problem half solved.” is applicable h
 
 For example here are my goals:
 
-   * I was unhappy with my body composition. After conducting a lot of internet research I determined that I wanted to somewhere around 10% bodyfat
+   * I was unhappy with my body composition. After conducting a lot of internet research I determined that I wanted to somewhere around 10% body fat
    * I am particularly inspired by people with high strength performance capabilities, so I've decided that I'd like to be able to deadlift 500 pounds squat 400 pounds, and bench 300 pounds. 
    * I'd also like to be able to perform [ring muscle up](https://www.youtube.com/watch?v=vpPjY4BtJuI) with ease.
    This one is not such a well-defined goal but since it's a sub goal of the one above I'm ok with adding it here.
