@@ -79,8 +79,8 @@
             <h1 class="sidebar-title">
                 <a href="/">
                     <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Manufacturing', 'and Machine Learning']--->
-                    Manufacturing<br>and Machine Learning
+                    <!---['Ravin Kumar']--->
+                    Ravin Kumar
                     
                 </a>
             </h1>
@@ -135,7 +135,7 @@ still relevant.</p>
 <p>Let's say you're starting out with Machine Learning and 
 <em>you need an immediate fix for a small problem, or a quick prototype or proof of concept</em>.
 Easy, below is a sample program to make predictions on the Iris dataset</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></span>
 <span class="code-line"><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span></span>
 <span class="code-line"><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span></span>
 <span class="code-line"><span class="n">iris_csv</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/&quot;</span></span>
@@ -145,7 +145,8 @@ Easy, below is a sample program to make predictions on the Iris dataset</p>
 <span class="code-line"><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></span>
 <span class="code-line"><span class="n">clf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span></span>
 <span class="code-line"><span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df</span><span class="p">)</span></span>
-<span class="code-line"></code></pre></div>
+</pre></div>
+
 
 <p>Even to non programmers the above lines of code are pretty easy to read.
 It's simple enough to just put that into a python script in some
@@ -209,7 +210,7 @@ that away from your machine learning code. Although it takes more
 effort up front, later on it means your actual prediction script
 will be much easier to read.</p>
 <p>In the example above we can write a function that looks like this</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="k">def</span> <span class="nf">load_iris</span><span class="p">():</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">load_iris</span><span class="p">():</span></span>
 <span class="code-line">    <span class="sd">&quot;&quot;&quot;Loads iris dataset from github and returns (df,y_raw)&quot;&quot;&quot;</span></span>
 <span class="code-line">    <span class="n">iris_csv</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/&quot;</span></span>
 <span class="code-line">                <span class="s2">&quot;uiuc-cse/data-fa14/gh-pages/data/iris.csv&quot;</span><span class="p">)</span></span>
@@ -217,7 +218,8 @@ will be much easier to read.</p>
 <span class="code-line">    <span class="n">y_raw</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;species&quot;</span><span class="p">]</span></span>
 <span class="code-line">    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;species&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></span>
 <span class="code-line">    <span class="k">return</span> <span class="n">df</span><span class="p">,</span> <span class="n">y_raw</span></span>
-<span class="code-line"></code></pre></div>
+</pre></div>
+
 
 <p>Doing this has multiple benefits, if written in the package you can import
 this into any script without any duplication. It also clearly demarcates
@@ -229,7 +231,7 @@ tests for your own code. There are many examples of
 However I also use tests to test my own understanding of how machine
 learning libraries work. By writing the following tests I can double check
 my understanding of word lemmatizers and CountVectorizer in scikit-learn.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="k">def</span> <span class="nf">test_lemmatization</span><span class="p">():</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">test_lemmatization</span><span class="p">():</span></span>
 <span class="code-line">    <span class="sd">&quot;&quot;&quot;Test that Lemmatizer works&quot;&quot;&quot;</span></span>
 <span class="code-line">    <span class="n">wnl</span> <span class="o">=</span> <span class="n">WordNetLemmatizer</span><span class="p">()</span></span>
 <span class="code-line">    <span class="k">assert</span> <span class="n">wnl</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="s1">&#39;dogs&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;dog&#39;</span></span>
@@ -241,7 +243,8 @@ my understanding of word lemmatizers and CountVectorizer in scikit-learn.</p>
 <span class="code-line">    <span class="n">count</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">tokenizer</span><span class="o">=</span><span class="n">lemmatizer</span><span class="p">,</span> <span class="n">stop_words</span><span class="o">=</span><span class="s1">&#39;english&#39;</span><span class="p">)</span></span>
 <span class="code-line">    <span class="n">count</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">strings</span><span class="p">)</span></span>
 <span class="code-line">    <span class="k">assert</span> <span class="p">{</span><span class="s1">&#39;church&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;like&#39;</span><span class="p">}</span> <span class="o">==</span> <span class="nb">set</span><span class="p">(</span><span class="n">count</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">())</span></span>
-<span class="code-line"></code></pre></div>
+</pre></div>
+
 
 <p>It's not about my doubt that the code is implemented poorly, but moreso
 to double check and reinforce my own understanding. By writing series
@@ -268,7 +271,7 @@ By utilizing these it keeps you within the pipeline framework which
 again makes it easy to use all the built in tools for experimentation.</p>
 <p>For example here is an implementation of a transformer I used in a Natural 
 Language Processing Problem that found word count and string length for a given string.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="k">class</span> <span class="nc">TextTransformer</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">class</span> <span class="nc">TextTransformer</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span></span>
 <span class="code-line"></span>
 <span class="code-line">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">features</span><span class="p">):</span></span>
 <span class="code-line">        <span class="sd">&quot;&quot;&quot;Takes column of text and returns back array of features. Features list is specified by features</span></span>
@@ -287,7 +290,7 @@ Language Processing Problem that found word count and string length for a given 
 <span class="code-line">    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span></span>
 <span class="code-line">        <span class="sd">&quot;&quot;&quot;Accepts Pandas Series and returns back a dataframe where each column is a feature&quot;&quot;&quot;</span></span>
 <span class="code-line"></span>
-<span class="code-line">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">features</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span></span>
+<span class="code-line">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">features</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span></span>
 <span class="code-line">            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Features must be a list of features that will be used in this model&quot;</span><span class="p">)</span></span>
 <span class="code-line"></span>
 <span class="code-line">        <span class="n">features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span></span>
@@ -309,17 +312,19 @@ Language Processing Problem that found word count and string length for a given 
 <span class="code-line">    <span class="k">def</span> <span class="nf">sentence_length</span><span class="p">(</span><span class="n">X</span><span class="p">):</span></span>
 <span class="code-line">        <span class="sd">&quot;&quot;&quot;Get the length of the string for each author&quot;&quot;&quot;</span></span>
 <span class="code-line">        <span class="k">return</span> <span class="n">X</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span></span>
-<span class="code-line"></code></pre></div>
+</pre></div>
+
 
 <p>While seemingly verbose, if using packages in my machine learning code
 this entire feature processing portion of logic looked like this</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">features</span> <span class="o">=</span> <span class="n">FeatureUnion</span><span class="p">(</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">FeatureUnion</span><span class="p">(</span></span>
 <span class="code-line">    <span class="p">[</span></span>
 <span class="code-line">    <span class="p">(</span><span class="s1">&#39;basic_preprocessing&#39;</span><span class="p">,</span> <span class="n">TextTransformer</span><span class="p">(</span><span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;word_count&#39;</span><span class="p">,</span> <span class="s1">&#39;sentence_length&#39;</span><span class="p">])),</span></span>
 <span class="code-line">    <span class="p">(</span><span class="s2">&quot;tfidf&quot;</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">())</span></span>
 <span class="code-line">    <span class="p">]</span></span>
 <span class="code-line"><span class="p">)</span></span>
-<span class="code-line"></code></pre></div>
+</pre></div>
+
 
 <p>It made it dead simple for me to add or remove features with just one
 line of code, making my experimentation and feature selection process

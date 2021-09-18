@@ -79,8 +79,8 @@
             <h1 class="sidebar-title">
                 <a href="/">
                     <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Manufacturing', 'and Machine Learning']--->
-                    Manufacturing<br>and Machine Learning
+                    <!---['Ravin Kumar']--->
+                    Ravin Kumar
                     
                 </a>
             </h1>
@@ -185,8 +185,9 @@ and test your code, and ideally to be as minimal as possible. We'll use the
 <a href="https://github.com/arviz-devs/arviz/blob/master/scripts/Dockerfile">ArviZ dockerfile</a>
 as an example.</p>
 <p>The first line is the base image.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code>FROM conda/miniconda3</span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">FROM</span> <span class="n">conda</span><span class="o">/</span><span class="n">miniconda3</span></span>
+</pre></div>
+
 
 <p>It's typically recommended to start with a minimal image, like
 alpine. However at ArviZ we found it much simpler to start with an environment
@@ -194,39 +195,41 @@ that already had some things set up, and just work from there. This means
 the image isn't as minimal as it could be, but we're not shipping containers
 "at scale" so this tradeoff was worth it.  </p>
 <p>Next, we setup arguments and environmental variables</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code>ARG SRC_DIR</span>
-<span class="code-line">ARG PYTHON_VERSION</span>
-<span class="code-line">ARG PYSTAN_VERSION</span>
-<span class="code-line">ARG PYRO_VERSION</span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="nv">ARG</span> <span class="nv">SRC_DIR</span></span>
+<span class="code-line"><span class="nv">ARG</span> <span class="nv">PYTHON_VERSION</span></span>
+<span class="code-line"><span class="nv">ARG</span> <span class="nv">PYSTAN_VERSION</span></span>
+<span class="code-line"><span class="nv">ARG</span> <span class="nv">PYRO_VERSION</span></span>
 <span class="code-line"></span>
-<span class="code-line">ENV PYTHON_VERSION=<span class="cp">${</span><span class="n">PYTHON_VERSION</span><span class="cp">}</span></span>
-<span class="code-line">ENV PYSTAN_VERSION=<span class="cp">${</span><span class="n">PYSTAN_VERSION</span><span class="cp">}</span></span>
-<span class="code-line">ENV PYRO_VERSION=<span class="cp">${</span><span class="n">PYRO_VERSION</span><span class="cp">}</span></span>
-<span class="code-line">ENV DOCKER_BUILD=true</span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">PYTHON_VERSION</span><span class="o">=</span>${<span class="nv">PYTHON_VERSION</span>}</span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">PYSTAN_VERSION</span><span class="o">=</span>${<span class="nv">PYSTAN_VERSION</span>}</span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">PYRO_VERSION</span><span class="o">=</span>${<span class="nv">PYRO_VERSION</span>}</span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">DOCKER_BUILD</span><span class="o">=</span><span class="nv">true</span></span>
 <span class="code-line"></span>
-<span class="code-line"># For Sphinx documentation builds</span>
-<span class="code-line">ENV LC_ALL=C.UTF-8</span>
-<span class="code-line">ENV LANG=C.UTF-8</span>
-<span class="code-line"></code></pre></div>
+<span class="code-line"># <span class="k">For</span> <span class="nv">Sphinx</span> <span class="nv">documentation</span> <span class="nv">builds</span></span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">LC_ALL</span><span class="o">=</span><span class="nv">C</span>.<span class="nv">UTF</span><span class="o">-</span><span class="mi">8</span></span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">LANG</span><span class="o">=</span><span class="nv">C</span>.<span class="nv">UTF</span><span class="o">-</span><span class="mi">8</span></span>
+</pre></div>
+
 
 <p>The choices are intended to allow some flexibility in what gets installed
 in each image. For ArviZ we test against different versions of libraries
 and we didn't want to create a dockerfile for each. By setting the 
 ENV variables here through command line arguments we afford some flexibility</p>
 <p>After this, we actually start installing things</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">RUN</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">git</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">pandoc</span> \</span>
-<span class="code-line">    <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="o">/*</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="n">RUN</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="k">update</span> <span class="o">&amp;&amp;</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">git</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">pandoc</span> <span class="err">\</span></span>
+<span class="code-line">    <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="cm">/*</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="c1"># Copy requirements and environment installation scripts</span></span>
-<span class="code-line"><span class="n">COPY</span> <span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>  <span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span></span>
-<span class="code-line"><span class="n">COPY</span> <span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">requirements</span><span class="o">-</span><span class="n">dev</span><span class="o">.</span><span class="n">txt</span>  <span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span></span>
-<span class="code-line"><span class="n">COPY</span> <span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span> <span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">scripts</span></span>
+<span class="code-line"><span class="cm"># Copy requirements and environment installation scripts</span></span>
+<span class="code-line"><span class="cm">COPY $SRC_DIR/requirements.txt  opt/arviz/</span></span>
+<span class="code-line"><span class="cm">COPY $SRC_DIR/requirements-dev.txt  opt/arviz/</span></span>
+<span class="code-line"><span class="cm">COPY $SRC_DIR/scripts/ opt/arviz/scripts</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="n">WORKDIR</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span></span>
+<span class="code-line"><span class="cm">WORKDIR /opt/arviz</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="c1"># Create conda environment. Defaults to Python 3.6</span></span>
-<span class="code-line"><span class="n">RUN</span> <span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">create_testenv</span><span class="o">.</span><span class="n">sh</span></span>
-<span class="code-line"></code></pre></div>
+<span class="code-line"><span class="cm"># Create conda environment. Defaults to Python 3.6</span></span>
+<span class="code-line"><span class="cm">RUN ./scripts/create_testenv.sh</span></span>
+</pre></div>
+
 
 <p>Installations happen at two levels, some are at the container level,
 and the rest are in the Python environment. We choose to have a separate
@@ -234,27 +237,30 @@ and the rest are in the Python environment. We choose to have a separate
 of Docker.</p>
 <p>The next section of the file copies the ArviZ code base and
 removes any cached files.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code>COPY $SRC_DIR /opt/arviz</span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">COPY</span> <span class="err">$</span><span class="n">SRC_DIR</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span></span>
+</pre></div>
+
 
 <p>The last section clears any remaining cache files and sets the default
 command of the container to execute tests. There is something weird
 with the <code>source /root/.bashrc</code> which I'll talk more about in
 the general tips section.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nv">RUN</span> <span class="nv">rm</span> <span class="o">-</span><span class="nv">f</span> <span class="nv">arviz</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">saved_models</span><span class="cm">/*.pkl</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="nv">RUN</span> <span class="nv">rm</span> <span class="o">-</span><span class="nv">f</span> <span class="nv">arviz</span><span class="o">/</span><span class="nv">tests</span><span class="o">/</span><span class="nv">saved_models</span><span class="cm">/*.pkl</span></span>
 <span class="code-line"><span class="cm">RUN find -type d -name __pycache__ -exec rm -rf {} +</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="cm">CMD [&quot;/bin/bash&quot;, &quot;-c&quot;, &quot;source /root/.bashrc &amp;&amp; pytest -vv arviz/tests --cov=arviz/ &amp;&amp; echo Finished Testing&quot;]</span></span>
-<span class="code-line"></code></pre></div>
+</pre></div>
+
 
 <h3 id="step-2-configure-your-ci-service"><a class="toclink" href="#step-2-configure-your-ci-service">Step 2: Configure your CI service</a></h3>
 <p>The next step is configuring TravisCI. Luckily, this is not too hard.
 Adding the lines below will install the latest version of <em>docker-ce</em>.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">addons</span><span class="o">:</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="n">addons</span><span class="o">:</span></span>
 <span class="code-line">  <span class="n">apt</span><span class="o">:</span></span>
 <span class="code-line">    <span class="n">packages</span><span class="o">:</span></span>
 <span class="code-line">      <span class="o">-</span> <span class="n">docker</span><span class="o">-</span><span class="n">ce</span></span>
-<span class="code-line"></code></pre></div>
+</pre></div>
+
 
 <p>After that you'll be able to build an image and run tests, capture code coverage,
 generate documentation, or whatever else you'd need.</p>
