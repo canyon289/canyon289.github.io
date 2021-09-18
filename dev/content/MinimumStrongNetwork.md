@@ -17,15 +17,16 @@ Given M nodes and N edges develop an algorithm that determines
 the minimum size of the largest strongly connected group.
 
 Constraints:  
--  `1 <= N <= 100000`
--  `2 <= M <= 10000`
--  `1 <= M <= N*(N-1)/2`
+-  `1 <= N <= 100000`  
+-  `2 <= M <= 10000`  
+-  `1 <= M <= N*(N-1)/2`  
 
 ##Question Format
 Online coding challenge
 
 ##Time Constraint
-1 of 3 Coding problems 2 Hours given
+* 1 of 3 coding problems 
+* 2 hours given
 
 ##Context
 This question was a 2nd round automated interview question
