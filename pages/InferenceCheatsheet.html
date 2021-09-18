@@ -79,8 +79,8 @@
             <h1 class="sidebar-title">
                 <a href="/">
                     <!---<img class="profile-picture" src="../images/"> --->
-                    <!---['Manufacturing', 'and Machine Learning']--->
-                    Manufacturing<br>and Machine Learning
+                    <!---['Ravin Kumar']--->
+                    Ravin Kumar
                     
                 </a>
             </h1>
@@ -140,7 +140,7 @@
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span></span>
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span></span>
 <span class="code-line"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span></span>
 <span class="code-line"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span></span>
 <span class="code-line"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span></span>
@@ -715,12 +715,12 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">samples</span> <span class="o">=</span> <span class="mi">5000</span></span>
-<span class="code-line"><span class="n">proposal_width</span> <span class="o">=</span> <span class="mf">.1</span></span>
-<span class="code-line"><span class="n">p_accept</span> <span class="o">=</span> <span class="mf">.5</span></span>
+<span class="code-line"><span class="n">proposal_width</span> <span class="o">=</span> <span class="o">.</span><span class="mi">1</span></span>
+<span class="code-line"><span class="n">p_accept</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="c1"># Assume Normal Prior for this example</span></span>
-<span class="code-line"><span class="n">p_water_current</span> <span class="o">=</span> <span class="mf">.5</span></span>
-<span class="code-line"><span class="n">p_water_prior_normal_mu</span> <span class="o">=</span> <span class="mf">.5</span></span>
+<span class="code-line"><span class="n">p_water_current</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span></span>
+<span class="code-line"><span class="n">p_water_prior_normal_mu</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span></span>
 <span class="code-line"><span class="n">p_water_prior_normal_sd</span> <span class="o">=</span> <span class="mi">1</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="n">mh_posterior</span> <span class="o">=</span> <span class="p">[]</span></span>
@@ -857,7 +857,7 @@ This question is taken from Richard McElreath's books and his lecture. Professor
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">estimate_prob_ratio_from_samples</span><span class="p">(</span><span class="n">mcmc_posterior</span><span class="p">,</span> <span class="n">prob_1</span><span class="o">=</span><span class="n">possible_probabilities</span><span class="p">[</span><span class="mi">40</span><span class="p">],</span></span>
-<span class="code-line">                                     <span class="n">prob_2</span><span class="o">=</span><span class="n">possible_probabilities</span><span class="p">[</span><span class="mi">70</span><span class="p">],</span> <span class="n">width</span><span class="o">=</span><span class="mf">.01</span><span class="p">):</span></span>
+<span class="code-line">                                     <span class="n">prob_2</span><span class="o">=</span><span class="n">possible_probabilities</span><span class="p">[</span><span class="mi">70</span><span class="p">],</span> <span class="n">width</span><span class="o">=.</span><span class="mi">01</span><span class="p">):</span></span>
 <span class="code-line">    </span>
 <span class="code-line">    <span class="c1"># We need to compare the same interval in the distribution as we did above</span></span>
 <span class="code-line">    <span class="c1"># In the above case x[20] is .01 wide centered at </span></span>

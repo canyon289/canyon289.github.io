@@ -2,33 +2,27 @@ Title: About
 Date: 2016-4-21 
 Slug: About 
 Authors: Ravin Kumar
-Status: published
+Status: Published
 
+My name is Ravin Kumar. I strive to be
 
-My name is Ravin Kumar. I specialize in using data and statistics to
-influence organizations, currently at sweetgreen and previously 
-at SpaceX and other organizations. My opinions are my own and not of any 
-organization.
+1. Really good at math, particularly computational math
+2. An effective community member and leader
+3. A knowledge contributor
 
-# Open source work
-I'm a big advocate of open source. Open source allows anyone access to
-knowledge, not just those who can pay for expensive license fees
-or college educations. Open Source is also free speech, allowing folks
-to share ideas across the world. If you've been curious about open source
-feel free to reach out, I'm happy to chat about it.
+Groups of people coming together and building awesome things with math
+has always been cool me, whether its rocket ships or computational statistics libraries.
 
-# My history
-My primary occupational focus has been on improving processes for organizations,
-I currently use data methods to figure out what's going on and then develop
-programs or applications to to help the organization improve.
-For examples check out my [LinkedIn](https://www.linkedin.com/in/ravinakumar)
+I experience this first hand Open Source Projects as a core contributor to ArviZ and PyMC3.
+I also am a scientist Google where I use data to inform decisions (although all my opinions here are my own!).
+I was lucky enough do to the same at sweetgreen and SpaceX where I got to work with amazing
+teams and build human and data systems.
 
-In the past I've served in more traditional industrial/manufacturing
-engineering roles, using techniques such as tolerance analysis and Lean/Six Sigma
-methods to improve manufacturing effectiveness.
+I believe the possibility of creating great outcomes with math and data has increased faster than
+the knowledge of how to do so, and I am working to fill the gap. You'll my, public,
+efforts in
 
-Moving forward I'm looking to increasingly learn how to leverage
-data science and computational methods to understand and improve
-things of all types. It really is fun!
-
-
+* My Open Source profile
+* A book Bayesian Statistics
+* Various presentations on topics
+* An upcoming statistics course
