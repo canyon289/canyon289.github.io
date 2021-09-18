@@ -134,9 +134,9 @@ within the group.</p>
 <p>Given M nodes and N edges develop an algorithm that determines
 the minimum size of the largest strongly connected group.</p>
 <p>Constraints:<br>
--  1 &lt;= N &lt;= 100000<br>
--  2 &lt;= M &lt;= 10000<br>
--  1 &lt;= M &lt;= N*(N-1)/2 </p>
+-  <code>1 &lt;= N &lt;= 100000</code>
+-  <code>2 &lt;= M &lt;= 10000</code>
+-  <code>1 &lt;= M &lt;= N*(N-1)/2</code></p>
 <h2 id="question-format"><a class="toclink" href="#question-format">Question Format</a></h2>
 <p>Online coding challenge</p>
 <h2 id="time-constraint"><a class="toclink" href="#time-constraint">Time Constraint</a></h2>
@@ -167,20 +167,21 @@ group is 2 even though the number of edges and nodes are the same.
 <div id="betterconnectedgraph"></div>  </p>
 <h2 id="experimental-solution"><a class="toclink" href="#experimental-solution">Experimental Solution</a></h2>
 <p>The trick to this problem is to construct the most weakly connected
-network possible. this can intuitively be done in stages. At first the edges
-are placed to connect the nodes "around the edges". Up until this point the
-minimum strongly connected network size is 2. In code this is done by connecting
+network possible. This can intuitively be done in stages. At first the edges
+are placed to connect the nodes "around the edges".
+Up until this point the minimum strongly connected network size is 2. In code this is done by connecting
 the N index node with the N+1 index node.</p>
-<p>After this the we can continue by connecting the N index node with the N + 2
-indexed node. We do this because if we connected the N node with the N+1 node
+<p>After this the we can continue by connecting the N index node with the N + 3
+indexed node. We do this because if we connected the N node with the N+2 node
 at this point we would end up with a strongly connected group of 3. Connecting
-the N indexed node with the N+2 indexed node we can continue placing edges
+the N indexed node with the N+3 indexed node we can continue placing edges
 while maintaining a strongly connected group of 2.</p>
-<p>Eventually however it becomes all possible edges that allow for only strongly
-connected groups are placed and groups of three begin to appear.</p>
+<p>Eventually it becomes the case that adding more edges will created strongly
+connected groups of three but the above algorithm avoids this case as
+long as possible.</p>
 <p>In words this is challenging to describe but the algorithm is quite visually
 intuitive as shown below.</p>
-<h3 id="click-to-start-search"><a class="toclink" href="#click-to-start-search">Click to start search</a></h3>
+<h3 id="click-to-start-visualization"><a class="toclink" href="#click-to-start-visualization">Click to start visualization</a></h3>
 <div id="vis"></div>
 
 <div class="highlight"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">add_edge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span></span>
@@ -200,9 +201,9 @@ intuitive as shown below.</p>
 <span class="code-line">        <span class="n">loop_adder</span> <span class="o">=</span> <span class="mi">0</span></span>
 <span class="code-line">        <span class="n">n</span> <span class="o">=</span><span class="mi">0</span></span>
 <span class="code-line"></span>
-<span class="code-line">        <span class="c1">#Add all the loops</span></span>
+<span class="code-line">        <span class="c1"># Add all the loops</span></span>
 <span class="code-line">        <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">edges_placed</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_edges</span><span class="p">:</span></span>
-<span class="code-line">            <span class="c1">#While adder is less than max n</span></span>
+<span class="code-line">            <span class="c1"># While adder is less than max n</span></span>
 <span class="code-line">            <span class="k">while</span> <span class="p">(</span><span class="n">base_adder</span> <span class="o">+</span> <span class="n">loop_adder</span><span class="p">)</span>  <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_n</span><span class="p">:</span></span>
 <span class="code-line">                <span class="c1">#While the node being iterated is less than the maximum</span></span>
 <span class="code-line">                <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_n</span><span class="p">:</span></span>
@@ -214,7 +215,7 @@ intuitive as shown below.</p>
 <span class="code-line">                        <span class="bp">self</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="p">(</span><span class="n">loop_adder</span><span class="o">+</span><span class="n">base_adder</span><span class="p">))</span></span>
 <span class="code-line">                        <span class="n">n</span><span class="o">+=</span><span class="mi">1</span></span>
 <span class="code-line"></span>
-<span class="code-line">                <span class="c1">#Continue connectiong nodes</span></span>
+<span class="code-line">                <span class="c1"># Continue connecting nodes</span></span>
 <span class="code-line">                <span class="n">loop_adder</span> <span class="o">+=</span> <span class="mi">2</span></span>
 <span class="code-line">                <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span></span>
 <span class="code-line">            <span class="c1">#Strong Connections Start</span></span>

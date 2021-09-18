@@ -17,9 +17,9 @@ Given M nodes and N edges develop an algorithm that determines
 the minimum size of the largest strongly connected group.
 
 Constraints:  
--  1 <= N <= 100000  
--  2 <= M <= 10000  
--  1 <= M <= N*(N-1)/2 
+-  `1 <= N <= 100000`
+-  `2 <= M <= 10000`
+-  `1 <= M <= N*(N-1)/2`
 
 ##Question Format
 Online coding challenge
@@ -62,24 +62,25 @@ group is 2 even though the number of edges and nodes are the same.
 
 ##Experimental Solution
 The trick to this problem is to construct the most weakly connected
-network possible. this can intuitively be done in stages. At first the edges
-are placed to connect the nodes "around the edges". Up until this point the
-minimum strongly connected network size is 2. In code this is done by connecting
+network possible. This can intuitively be done in stages. At first the edges
+are placed to connect the nodes "around the edges".
+Up until this point the minimum strongly connected network size is 2. In code this is done by connecting
 the N index node with the N+1 index node.
 
-After this the we can continue by connecting the N index node with the N + 2
-indexed node. We do this because if we connected the N node with the N+1 node
+After this the we can continue by connecting the N index node with the N + 3
+indexed node. We do this because if we connected the N node with the N+2 node
 at this point we would end up with a strongly connected group of 3. Connecting
-the N indexed node with the N+2 indexed node we can continue placing edges
+the N indexed node with the N+3 indexed node we can continue placing edges
 while maintaining a strongly connected group of 2.
 
-Eventually however it becomes all possible edges that allow for only strongly
-connected groups are placed and groups of three begin to appear.
+Eventually it becomes the case that adding more edges will created strongly
+connected groups of three but the above algorithm avoids this case as
+long as possible.
 
 In words this is challenging to describe but the algorithm is quite visually
 intuitive as shown below.
 
-###Click to start search
+###Click to start visualization
 
 <div id="vis"></div>
 
@@ -103,9 +104,9 @@ def add_edge(self, source, target):
         loop_adder = 0
         n =0
 
-        #Add all the loops
+        # Add all the loops
         while self.edges_placed < self.max_edges:
-            #While adder is less than max n
+            # While adder is less than max n
             while (base_adder + loop_adder)  < self.max_n:
                 #While the node being iterated is less than the maximum
                 while n < self.max_n:
@@ -117,7 +118,7 @@ def add_edge(self, source, target):
                         self.add_edge(n, n+(loop_adder+base_adder))
                         n+=1
 
-                #Continue connectiong nodes
+                # Continue connecting nodes
                 loop_adder += 2
                 n = 0
             #Strong Connections Start
