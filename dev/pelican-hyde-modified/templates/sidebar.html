@@ -6,12 +6,21 @@
                     <!---<img class="profile-picture" src="{{ SITEURL }}/images/{{ PROFILE_IMAGE }}"> --->
                     <!---{{ SITENAME }}--->
                     {{SITENAME|join("<br>")}}
-                    
+
                 </a>
             </h1>
         </div>
+
+        <!---Add Blog Manually --->
+        <h1 class = "sidebar-page">
+            <a href="{{ SITEURL }}/blog.html">
+                Blog
+            </a>
+        </h1>
+
       <!---Add Pages for Static Content --->
       {% for p in pages %}
+        {% if 'Ravin' not in p.title %}
         <div>
             <h1 class = "sidebar-page">
               <a href="{{ SITEURL }}/{{ p.url }}">
@@ -19,6 +28,8 @@
               </a>
             </h1>
         </div>
+        {% else %}
+        {% endif %}
       {% endfor %}
     <div>
     <nav class="sidebar-nav">

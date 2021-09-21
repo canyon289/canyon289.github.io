@@ -79,3 +79,4 @@ MARKDOWN = {
 EXTRA_PATH_METADATA = {
     'images/favicon.ico': {'path': 'favicon.ico'}
 }
+INDEX_SAVE_AS = 'blog.html'
