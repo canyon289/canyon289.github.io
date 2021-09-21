@@ -1,10 +1,11 @@
-Title: About
+Title: Hi I'm Ravin
 Date: 2016-4-21 
-Slug: About 
+Slug:  index
 Authors: Ravin Kumar
 Status: Published
+save_as: index.html 
 
-My name is Ravin Kumar. I strive to be
+I strive to be
 
 1. Really good at math, particularly computational math
 2. An effective community member and leader
