@@ -19,7 +19,7 @@ THEME = "pelican-hyde-modified"
 
 DELETE_OUTPUT_DIRECTORY = False
 
-SUMMARY_MAX_LENGTH = 40
+SUMMARY_MAX_LENGTH = 0
 
 STATIC_PATHS = ['images', 'data', 'js', 'css']
 
