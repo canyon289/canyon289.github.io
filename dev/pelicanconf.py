@@ -50,7 +50,7 @@ DISPLAY_PAGES_ON_MENU = True
 PLUGIN_PATHS = ["pelican-plugins"]
 PLUGINS = ["better_codeblock_line_numbering",
            "pelican_javascript",
-           "liquid_tags.img", 
+           "liquid_tags.img",
            'liquid_tags.include_code',
            'liquid_tags.notebook',
            'liquid_tags.literal',
@@ -76,3 +76,6 @@ MARKDOWN = {
             'output_format': 'html5',
                 }
 
+EXTRA_PATH_METADATA = {
+    'images/favicon.ico': {'path': 'favicon.ico'}
+}
