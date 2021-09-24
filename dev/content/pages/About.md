@@ -23,7 +23,7 @@ I believe the possibility of creating great outcomes with math and data has incr
 the knowledge of how to do so, and I am working to fill the gap. You'll my, public,
 efforts in
 
-* My Open Source profile
-* A book Bayesian Statistics
-* Various presentations on topics
+* My [open source profile](https://github.com/canyon289)
+* A [book about Bayesian Statistics](https://www.routledge.com/Bayesian-Modeling-and-Computation-in-Python/Martin-Kumar-Lao/p/book/9780367894368)
+* [Various talks and presentations]({filename}/pages/Talks.md)
 * An upcoming statistics course
