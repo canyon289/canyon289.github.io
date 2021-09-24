@@ -12,13 +12,13 @@ After deciding to use a [Statically Generated Site]({filename}WhyIChoseASSG.md)
 I needed to pick a template. Trouble was that I had already found a template for
 WordPress that I had liked.
 
-![WordPressTheme]({filename}/images/PelicanTemplate/WordPressTemplate.png)
+![WordPressTheme]({static}/images/PelicanTemplate/WordPressTemplate.png)
 *The Wordpress theme* 
 
 Luckily there was a [GitHubRepo](https://github.com/getpelican/pelican-themes)
 that had many prexisting themes and even more luckily there was one 
 that was already a [close fit](https://github.com/jvanz/pelican-hyde)
-![WordPressTheme]({filename}/images/PelicanTemplate/PelicanHydeTheme.png)
+![WordPressTheme]({static}/images/PelicanTemplate/PelicanHydeTheme.png)
 *The Pelican-Hyde theme* 
 
 There were some things I didn't like though. I didn't like the sidebar size,
@@ -35,7 +35,7 @@ from an html file and multiple css stylesheets. Bluntly put figuring out why
 certain things are laid out a certain way, or why they're a certain color, can
 still be a pain. Luckily though the Chrome Team developed awesome dev tools
 which make figuring out what's going on much easier
-![ChromeDevTools]({filename}/images/PelicanTemplate/ChromeDevTools.png)
+![ChromeDevTools]({static}/images/PelicanTemplate/ChromeDevTools.png)
 *Chrome Dev Tools*
 
 In the screenshot above you can see a couple of awesome things. One is that
@@ -46,7 +46,7 @@ other tabs and functions to dive even deeper into more complex applications.
 However in generality using the dev tools is what I used in the following
 steps to deconstruct the Wordpress and Pelican themes
 
-![ChromeDevTools]({filename}/images/PelicanTemplate/CSSModifications.png)
+![ChromeDevTools]({static}/images/PelicanTemplate/CSSModifications.png)
 *Adding a Dark Green Class*  
 For the most part this modifying the CSS to reflect the styles we want.
 For instance above an addition was made the CSS style sheets to allow for
@@ -57,7 +57,7 @@ I also wanted links to be added for the static pages to include pages
 such as About This Blog and References. Luckily Pelican decided to use 
 the jinja2 templating engine which is simple to use.
 
-![Template Modifications]({filename}/images/PelicanTemplate/TemplateModification.png)
+![Template Modifications]({static}/images/PelicanTemplate/TemplateModification.png)
 
 By adding the above loop in white, links will now be added for each sidebar link.
 
