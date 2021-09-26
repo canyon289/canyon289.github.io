@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block bodyclasses %}body-index{% endblock %}
+{% block content %}
+	<table class="blog-table">
+		<tr>
+			<th>Blog Post</th>
+			<th class="blog-table-right">Tags</th>
+			<th class="blog-table-right">Date</th>
+		</tr>
+		{% for article in articles_page.object_list %}
+		<tr>
+			<td href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">
+				<a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a>
+			</td>
+			<td class="blog-table-right">
+				{% for tag in article.tags %} <span class="blog-table-tag blog-table-tag-{{ tag|lower }}" >{{ tag|upper }}</span>{% endfor %}
+			</td>
+			<td class="blog-table-right">{{ article.locale_date }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+{% endblock %}
+
+{% set COLORS = [
+	"#7c78c1",
+	"#78cad4",
+	"#e19874",
+	"#bf74e1",
+	"#2c6854",
+	"#56bb92",
+	"#408bb3",
+	"#776d71",
+	"#b36764",
+	"#d3c875",
+] %}
+{% block tagcss %}
+<style>
+	{% for tag, contents in tags %}
+		.blog-table-tag-{{ tag|lower }} {
+			background-color: {{ COLORS[loop.index % COLORS|length] }};
+		}
+	{% endfor %}
+</style>
+{% endblock %}

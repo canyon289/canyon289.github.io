@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Ravin Kumar'
 SITENAME = ['Ravin Kumar']
 SITEURL = 'http://canyon289.github.io'
+META_DESCRIPTION = 'Ravin Kumar is a data scientist and an open source contributor.'
 
 #Content Path
 PATH = 'content'
@@ -15,7 +16,7 @@ TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
 
-THEME = "pelican-hyde-modified"
+THEME = "custom"
 
 DELETE_OUTPUT_DIRECTORY = False
 
@@ -70,13 +71,14 @@ MARKDOWN = {
             'extension_configs': {
                 'markdown.extensions.codehilite': {'css_class': 'highlight'},
                 'markdown.extensions.extra': {},
-                'markdown.extensions.toc': {'anchorlink':True},
+                'markdown.extensions.toc': {},  # Do not do anchor links {'anchorlink':True}
                 'markdown.extensions.meta': {}
                     },
             'output_format': 'html5',
                 }
 
 EXTRA_PATH_METADATA = {
-    'images/favicon.ico': {'path': 'favicon.ico'}
+    'images/logo/favicon.ico': {'path': 'favicon.ico'}
 }
+
 INDEX_SAVE_AS = 'blog.html'

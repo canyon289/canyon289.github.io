@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block bodyclasses %}body-category{% endblock %}
+{% block content %}
+    <table class="blog-table">
+        <tr>
+            <th>Blog Post</th>
+            <th class="blog-table-right">Date</th>
+        </tr>
+        {% for article in articles_page.object_list %}
+        <tr>
+            <td href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">
+                <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a>
+            </td>
+            <td class="blog-table-right">{{ article.locale_date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+

@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
-		<!-- For Jupyter Notebooks -->
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
 
 <!--Notebook Configuration-->
 <script type="text/x-mathjax-config">
@@ -44,24 +51,20 @@
 </script>
 
 		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="./theme/css/notebook.css" />
-
-		<link rel="stylesheet" href="./theme/css/poole.css" />
-		<link rel="stylesheet" href="./theme/css/hyde.css" />
-		<link rel="stylesheet" href="./theme/css/syntax.css" />
-        <link rel="stylesheet" href="./theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
 
-
-        <!-- CSS style sheets for pelican javascript plugin -->
-
+        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,72 +75,142 @@
 	</script>
 	</head>
 
-	<body class="theme-base-darkgreen">
-<div class="sidebar">
-    <div class="container">
-        <div >
-            <h1 class="sidebar-title">
-                <a href="/">
-                    <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Ravin Kumar']--->
-                    Ravin Kumar
+	<body class='page body-article'>  <!-- extends -->
 
-                </a>
-            </h1>
-        </div>
-
-        <!---Add Blog Manually --->
-        <h1 class = "sidebar-page">
-            <a href="./blog.html">
-                Blog
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
-        </h1>
-
-      <!---Add Pages for Static Content --->
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/References.html">
-              References
-              </a>
-            </h1>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
         </div>
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/Talks.html">
-              Talks
-              </a>
-            </h1>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
         </div>
-    <div>
-    <nav class="sidebar-nav">
-                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://github.com/canyon289">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
-                    <i class="fa fa-twitter"></i>
-                </a>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar -->
+						<div class="col-12 col-md-3 mb-3">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul>
+    <li class="">
+        <a href="./category/articles.html">
+            <span>articles</span>
+        </a>
+    </li>
+    <li class="active ">
+        <a href="./category/d3.html">
+            <span>D3</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/fitness.html">
+            <span>Fitness</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/general.html">
+            <span>General</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming-machinelearning.html">
+            <span>Programming, MachineLearning</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/question.html">
+            <span>Question</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/svg.html">
+            <span>SVG</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<div class="col-12 col-md-9">
 
-    </nav>
-    </div>
-    </div>
-</div>		<div class="content container">
-<div class="post">
-	<h1 class="post-title">Clip Paths and Transforms</h1>
-	<span class="post-date">Sun 09 October 2016</span>
+	<h1 class="page-title">Clip Paths and Transforms</h1>
+	<p class="post-date">Sun 09 October 2016</p>
 	<p>When creating visualizations sometimes we want an element to be visible 
 in one portion of the SVG but perhaps in another. An example would be a chart
 with axes that also implements zoom and pan. As we move the chart elements
 into the axes area we don't wany any overlap.</p>
-<h1 id=an-example><a class=toclink href=#an-example>An example</a></h1>
+<h1 id=an-example>An example</h1>
 <p>In the visualization below zoom and pan have been applied using the method in
 the <a href={filename}ImplementingD3Zoom.md>zoom and pan post</a>. We only want the blue
 dot to be visible in the blue region but it's clearly visible everywhere.</p>
 <div id=unclipped></div>
 
-<h1 id=clip-paths><a class=toclink href=#clip-paths>Clip Paths</a></h1>
+<h1 id=clip-paths>Clip Paths</h1>
 <p>Luckily the SVGs support a concept called clip-path. The idea is simple,
 essentially defining an area where elements are visible, however the implementation
 is a bit more convoluted.  </p>
@@ -174,9 +247,9 @@ by adding a <strong>clip-path</strong> attribute on the element. The blue is rem
 from the example code for code clarity. 
 <sup id=sf-clippaths-1-back><a href=#sf-clippaths-1 class=simple-footnote title=" While sample bl.ocks are great sometimes when going through them it's hard to isolate the specific feature I'm trying to learn from all the other functionality">1</a></sup></p>
 <div class=highlight><pre><span class=code-line><span></span><span class=nx>g</span><span class=p>.</span><span class=nx>append</span><span class=p>(</span><span class=s2>"circle"</span><span class=p>)</span></span>
-<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"cx"</span><span class=p>,</span> <span class=nx>width</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span></span>
-<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"cy"</span><span class=p>,</span> <span class=nx>height</span><span class=o>/</span><span class=mi>2</span> <span class=o>-</span> <span class=nx>r</span><span class=p>)</span></span>
-<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"r"</span><span class=p>,</span> <span class=mi>10</span><span class=p>)</span></span>
+<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"cx"</span><span class=p>,</span> <span class=nx>width</span><span class=o>/</span><span class=mf>2</span><span class=p>)</span></span>
+<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"cy"</span><span class=p>,</span> <span class=nx>height</span><span class=o>/</span><span class=mf>2</span> <span class=o>-</span> <span class=nx>r</span><span class=p>)</span></span>
+<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"r"</span><span class=p>,</span> <span class=mf>10</span><span class=p>)</span></span>
 <span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"clip-path"</span><span class=p>,</span> <span class=s2>"url(#cliprect)"</span><span class=p>)</span></span>
 </pre></div>
 
@@ -186,7 +259,7 @@ from the example code for code clarity.
 <p>The clip path clearly worked but unfortunately it stick with the element
 regardless of position. What we really want is the circle to be visible
 depending on where it is in the svg.</p>
-<h1 id=clip-path-groups><a class=toclink href=#clip-path-groups>Clip Path Groups</a></h1>
+<h1 id=clip-path-groups>Clip Path Groups</h1>
 <p>Before fixing the issue above it should be mentioned that clip paths 
 can also be applied to groups. There are a lot of uses for it but in our 
 case this is EXTREMELY handy as it allows us to do two major things</p>
@@ -214,20 +287,64 @@ case this is EXTREMELY handy as it allows us to do two major things</p>
 to! If you try dragging the circles, you'll notice that one of them starts
 disapearing as it's location moves to the right, but start appearing again
 if you move left</p>
-<h1 id=references><a class=toclink href=#references>References</a></h1>
+<h1 id=references>References</h1>
 <p>The code for these visualizations are available on my Github. Additionally
 there is a much more extensive writeup on clip paths written by
 <a href="https://sarasoueidan.com/blog/css-svg-clipping/">Sara Soueidan</a> which
 I highly recommend. </p><ol class=simple-footnotes><li id=sf-clippaths-1> While sample bl.ocks are great sometimes when going through them
 it's hard to isolate the specific feature I'm trying to learn
 from all the other functionality <a href=#sf-clippaths-1-back class=simple-footnote-back>↩</a></li></ol>
-</div>
+
+					</div> 
+				</div>
+			</div>
 		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+					<script src="js/unclipped.js"></script>
+					<script src="js/clippath_groups.js"></script>
+					<script src="js/clippath.js"></script>
+
 	</body>
 
-    <!-- Javascript Loader for Pelican Javascript plugin-->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
-                <script src="js/unclipped.js"></script>
-                <script src="js/clippath_groups.js"></script>
-                <script src="js/clippath.js"></script>
 </html>
