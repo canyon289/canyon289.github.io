@@ -7,7 +7,7 @@ SITENAME = ['Ravin Kumar']
 SITEURL = 'http://canyon289.github.io'
 META_DESCRIPTION = 'Ravin Kumar is a data scientist and an open source contributor.'
 
-#Content Path
+# Content Path
 PATH = 'content'
 
 OUTPUT_PATH = '..'
@@ -18,12 +18,11 @@ DEFAULT_LANG = 'en'
 
 THEME = "custom"
 
-DELETE_OUTPUT_DIRECTORY = False
-
 SUMMARY_MAX_LENGTH = 0
 
 STATIC_PATHS = ['images', 'data', 'js', 'css']
 
+DELETE_OUTPUT_DIRECTORY = True
 OUTPUT_RETENTION = [".git", "dev"]
 
 GOOGLE_ANALYTICS = 'UA-52706904-2'
