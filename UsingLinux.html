@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
-		<!-- For Jupyter Notebooks -->
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
 
 <!--Notebook Configuration-->
 <script type="text/x-mathjax-config">
@@ -44,24 +51,20 @@
 </script>
 
 		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="./theme/css/notebook.css" />
-
-		<link rel="stylesheet" href="./theme/css/poole.css" />
-		<link rel="stylesheet" href="./theme/css/hyde.css" />
-		<link rel="stylesheet" href="./theme/css/syntax.css" />
-        <link rel="stylesheet" href="./theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
 
-
-        <!-- CSS style sheets for pelican javascript plugin -->
-
+        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,77 +75,147 @@
 	</script>
 	</head>
 
-	<body class="theme-base-darkgreen">
-<div class="sidebar">
-    <div class="container">
-        <div >
-            <h1 class="sidebar-title">
-                <a href="/">
-                    <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Ravin Kumar']--->
-                    Ravin Kumar
+	<body class='page body-article'>  <!-- extends -->
 
-                </a>
-            </h1>
-        </div>
-
-        <!---Add Blog Manually --->
-        <h1 class = "sidebar-page">
-            <a href="./blog.html">
-                Blog
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
-        </h1>
-
-      <!---Add Pages for Static Content --->
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/References.html">
-              References
-              </a>
-            </h1>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
         </div>
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/Talks.html">
-              Talks
-              </a>
-            </h1>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
         </div>
-    <div>
-    <nav class="sidebar-nav">
-                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://github.com/canyon289">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
-                    <i class="fa fa-twitter"></i>
-                </a>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar -->
+						<div class="col-12 col-md-3 mb-3">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul>
+    <li class="">
+        <a href="./category/articles.html">
+            <span>articles</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/d3.html">
+            <span>D3</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/fitness.html">
+            <span>Fitness</span>
+        </a>
+    </li>
+    <li class="active ">
+        <a href="./category/general.html">
+            <span>General</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming-machinelearning.html">
+            <span>Programming, MachineLearning</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/question.html">
+            <span>Question</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/svg.html">
+            <span>SVG</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<div class="col-12 col-md-9">
 
-    </nav>
-    </div>
-    </div>
-</div>		<div class="content container">
-<div class="post">
-	<h1 class="post-title">Using Linux</h1>
-	<span class="post-date">Sun 27 November 2016</span>
+	<h1 class="page-title">Using Linux</h1>
+	<p class="post-date">Sun 27 November 2016</p>
 	<p>Recently I decided to start using Linux again as a primary OS on my laptop. I'm
 doing this because I believe Linux is the best OS to solve my problems and 
 I'm committed on sticking with it this time. If you're deciding to do this I'll
 walk you through my choice to hopefully help eliminate some of your confusion
 and avoid some of the mistakes I made.</p>
-<h1 id="some-history"><a class="toclink" href="#some-history">Some History</a></h1>
+<h1 id="some-history">Some History</h1>
 <p>This isn't my first time making this decision. For the past 20 years I've been
 back and forth between Windows and Linux as my primary OS. Through the years
 I've installed Mandrake Linux, RedHat, Fedora Core, Ubuntu, Backtrack and most
 recently Arch Linux.  Here's some of the lessons I've learned.</p>
-<h2 id="use-good-hardware-for-a-good-experience"><a class="toclink" href="#use-good-hardware-for-a-good-experience">Use good hardware for a good experience</a></h2>
+<h2 id="use-good-hardware-for-a-good-experience">Use good hardware for a good experience</h2>
 <p>I used to install Linux on laptops and desktops that were my "retired" devices. 
 It didn't help that the computers I used to buy were already budget models when
 they were new. While it's true Linux can be lightweight and can run on nearly
 all hardware the experience will be hampered. </p>
-<h2 id="be-prepared-to-do-some-hardware-configuration"><a class="toclink" href="#be-prepared-to-do-some-hardware-configuration">Be prepared to do some hardware configuration</a></h2>
+<h2 id="be-prepared-to-do-some-hardware-configuration">Be prepared to do some hardware configuration</h2>
 <p>When buying a Windows laptop the OEM configures everything to make it "just work"
 hiding stuff like driver installation and configuration from you.
 If you install a fresh copy of Windows you'll quickly see what I mean, things
@@ -151,7 +224,7 @@ and multiple reboots. And this is with an OEM that has a nice website with
 all drivers easily available and dedicated support</p>
 <p>Linux is no different, you'll need to spend some time working through
 peripherial installation. Expect this going in.</p>
-<h2 id="just-pick-a-distribution-and-go-with-it-when-first-starting"><a class="toclink" href="#just-pick-a-distribution-and-go-with-it-when-first-starting">Just pick a distribution and go with it when first starting</a></h2>
+<h2 id="just-pick-a-distribution-and-go-with-it-when-first-starting">Just pick a distribution and go with it when first starting</h2>
 <p>With OSX and Windows you usually just use the latest version. For those being
 nitpicky sure you could use an older version, and sure there's Windows Server
 and variants like that, but for an end user there really is just one obvious choice.</p>
@@ -160,12 +233,12 @@ first starting just quickly pick the one that suits you the best to get
 familiar. Virtual Machines are helpful here as well so you can test 
 many flavors without needing to go through the installation hassle. But don't
 spend too much time worrying about it, just get started.</p>
-<h2 id="dont-feel-like-you-cant-look-under-the-hood"><a class="toclink" href="#dont-feel-like-you-cant-look-under-the-hood">Don't feel like you can't look under the hood</a></h2>
+<h2 id="dont-feel-like-you-cant-look-under-the-hood">Don't feel like you can't look under the hood</h2>
 <p>Windows and OSX are closed source and it's impossible and sometimes actively
 discouraged to figure out what the OS is doing. Linux is the complete
 opposite, as it's actively encouraged to learn the ins and outs. There's
 a lot to learn but there's a helpful community to guide you through it. </p>
-<h2 id="dual-booting-is-doable-but-adds-complexity"><a class="toclink" href="#dual-booting-is-doable-but-adds-complexity">Dual booting is doable but adds complexity</a></h2>
+<h2 id="dual-booting-is-doable-but-adds-complexity">Dual booting is doable but adds complexity</h2>
 <p>A tempting option is to dual boot your computer so you can always switch back
 to Windows with a quick reboot. This is certainly possible, and not difficult
 to setup, but if you're new to working with computers at this level it becomes
@@ -174,21 +247,65 @@ my opinion that your life will be much easier initially if you just dedicate mac
 to Linux. If you don't have two computers then go with a dual boot but if you
 can spare the money and are dedicated to learning Linux a dedicated machine
 will smooth the process.</p>
-<h2 id="some-applications-just-require-windows-which-makes-switching-costs-higher"><a class="toclink" href="#some-applications-just-require-windows-which-makes-switching-costs-higher">Some applications just require Windows which makes switching costs higher</a></h2>
+<h2 id="some-applications-just-require-windows-which-makes-switching-costs-higher">Some applications just require Windows which makes switching costs higher</h2>
 <p>If you were wondering why I kept switching back and forth it was this.
 Previously I needed programs like Solidworks to do my job. Even with 
 Wine things just didn't work well. Unfortunately this also meant that I would
 end up just spending more time with Windows and neglect Linux. The dual
 boot option works here but it does mean Linux will likely remain your
 secondary computer if you need Windows programs in your daily tasks.</p>
-<h1 id="get-started"><a class="toclink" href="#get-started">Get started</a></h1>
+<h1 id="get-started">Get started</h1>
 <p>Hopefully this provides answers for some of the basic questions. I'll be
 writing followup posts on why I picked Linux this time and an abbreivated tutorial
 for installing Arch Linux.</p>
-</div>
+
+					</div> 
+				</div>
+			</div>
 		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+					<script src="js/"></script>
+
 	</body>
 
-    <!-- Javascript Loader for Pelican Javascript plugin-->
-                <script src="js/"></script>
 </html>

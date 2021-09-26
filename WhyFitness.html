@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
-		<!-- For Jupyter Notebooks -->
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
 
 <!--Notebook Configuration-->
 <script type="text/x-mathjax-config">
@@ -44,24 +51,20 @@
 </script>
 
 		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="./theme/css/notebook.css" />
-
-		<link rel="stylesheet" href="./theme/css/poole.css" />
-		<link rel="stylesheet" href="./theme/css/hyde.css" />
-		<link rel="stylesheet" href="./theme/css/syntax.css" />
-        <link rel="stylesheet" href="./theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
 
-
-        <!-- CSS style sheets for pelican javascript plugin -->
-
+        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,61 +75,131 @@
 	</script>
 	</head>
 
-	<body class="theme-base-darkgreen">
-<div class="sidebar">
-    <div class="container">
-        <div >
-            <h1 class="sidebar-title">
-                <a href="/">
-                    <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Ravin Kumar']--->
-                    Ravin Kumar
+	<body class='page body-article'>  <!-- extends -->
 
-                </a>
-            </h1>
-        </div>
-
-        <!---Add Blog Manually --->
-        <h1 class = "sidebar-page">
-            <a href="./blog.html">
-                Blog
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
-        </h1>
-
-      <!---Add Pages for Static Content --->
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/References.html">
-              References
-              </a>
-            </h1>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
         </div>
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/Talks.html">
-              Talks
-              </a>
-            </h1>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
         </div>
-    <div>
-    <nav class="sidebar-nav">
-                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://github.com/canyon289">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
-                    <i class="fa fa-twitter"></i>
-                </a>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar -->
+						<div class="col-12 col-md-3 mb-3">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul>
+    <li class="">
+        <a href="./category/articles.html">
+            <span>articles</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/d3.html">
+            <span>D3</span>
+        </a>
+    </li>
+    <li class="active ">
+        <a href="./category/fitness.html">
+            <span>Fitness</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/general.html">
+            <span>General</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming-machinelearning.html">
+            <span>Programming, MachineLearning</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/question.html">
+            <span>Question</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/svg.html">
+            <span>SVG</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<div class="col-12 col-md-9">
 
-    </nav>
-    </div>
-    </div>
-</div>		<div class="content container">
-<div class="post">
-	<h1 class="post-title">How positive outcomes are correlated with physical activity</h1>
-	<span class="post-date">Mon 07 June 2021</span>
+	<h1 class="page-title">How positive outcomes are correlated with physical activity</h1>
+	<p class="post-date">Mon 07 June 2021</p>
 	<p><strong>tldr</strong> A structured fitness plan can greatly improve your career and your quality of life as a knowledge worker.
 Ignoring your health may work in the short term but will catch up to you slowly and subtly.
 I say this as someone who neglected my health while trying to get ahead at work,
@@ -140,7 +213,7 @@ and worth it, even if for no other reason than to make you a better knowledge wo
 <p>If you'd like me to write more about this topic, send me an email, or @ me on <a href="www.twitter.com/canyon289">twitter</a>,
 or however else you can get a hold of me.
 I am happy to <a href="https://en.wikipedia.org/wiki/Open_source_(disambiguation)">open source</a> my knowledge just like I open source my code.</p>
-<h2 id="so-why-am-i-posting-this"><a class="toclink" href="#so-why-am-i-posting-this">So why am I posting this?</a></h2>
+<h2 id="so-why-am-i-posting-this">So why am I posting this?</h2>
 <p>I have a hypothesis that many desk-bound folks are unaware of all the benefits that physical activity can have
 specifically on one's career or on their lives in general. 
 I also think we tend to too easily sacrifice our long-term health for our career. 
@@ -151,10 +224,7 @@ For many reasons I had to make a change, and after much concerted effort,
 I've been able to make meaningful progress so
 I want to definitively state <em>the benefits are greater in number and in magnitude than I ever expected</em></p>
 <p>For one, for the first time ever I am not embarrassed about my appearance.</p>
-<p float="center">
-<img src="./images/WhyFitness/BeachPicture.JPG"/>
-</p>
-
+<p><img src="./images/WhyFitness/BeachPicture.JPG"/></p>
 <p>But aside from that I've discovered numerous benefits that I can apply in my knowledge-work career.</p>
 <p>Before that though, a disclaimer - I'm definitely not a medical professional.
 These observations are based on my own experience. 
@@ -164,7 +234,7 @@ However I feel like I <em>have</em> to share something,
 since I've gone from feeling pretty poorly each day and being warned about my weight by a doctor to feeling so much better.
 So I'm writing in that hope that it inspires someone to be a better version of themselves. 
 I genuinely believe that becoming a better version of yourself is  more possible and even more beneficial than you may think.</p>
-<h2 id="so-lets-get-to-it-already-what-is-better"><a class="toclink" href="#so-lets-get-to-it-already-what-is-better">So let's get to it already; What is better?</a></h2>
+<h2 id="so-lets-get-to-it-already-what-is-better">So let's get to it already; What is better?</h2>
 <p>I'll primarily speak to the short-term benefits because I don't want to wait 50 years to write this blog post.
 I've experienced the usual ones you read about including increased energy, better sleep, and improved mood. 
 For instance I no longer experience random pains when I wake up and in general I feel like more of my days in general are less of a slog. </p>
@@ -172,20 +242,20 @@ For instance I no longer experience random pains when I wake up and in general I
 For me those benefits have ranged from specific physical improvements related to desk work to more holistic changes.
 Overall, I believe it has put me in a better position to navigate my career with more productivity and reduced anxiety. 
 Below I'll talk about the benefits in greater detail.</p>
-<h3 id="desk-work-doesnt-hurt-anymore"><a class="toclink" href="#desk-work-doesnt-hurt-anymore">Desk work doesn't hurt anymore</a></h3>
+<h3 id="desk-work-doesnt-hurt-anymore">Desk work doesn't hurt anymore</h3>
 <p>Typing used to hurt-literally.
 After using a keyboard for an extended period of time I used to experience wrist pain and I had to take breaks.
 I was 27 at the time so my body failing me a was a new phenomenon.
 It also affected my work output and I still remember the occasional days when I'd have to grit my teeth through the pain to get something done to meet a deadline.
 But now I'm happy to report that all my desk related pain is gone and most pain in general.
 For me weightlifting was a better fix for desk ergonomics than any tutorial I read online or seminar I attended at work</p>
-<h3 id="increased-mental-focus"><a class="toclink" href="#increased-mental-focus">Increased mental focus</a></h3>
+<h3 id="increased-mental-focus">Increased mental focus</h3>
 <p>Strenuous physical exercise enhances your focus and mental toughness. 
 With knowledge work its easy to <em>feel</em> productive when you're  multitasking and not actually focused or when your mind is wandering. 
 Conversely it's really hard to multitask when you're physically exerting yourself. 
 Your performance notably drops. 
 The focus trained in physical exercise has helped me stay in <a href="https://en.wikipedia.org/wiki/Flow_(psychology)">flow states</a> to get more <a href="https://www.calnewport.com/books/deep-work/">deep work</a> done.</p>
-<h3 id="self-owned-objective-goals"><a class="toclink" href="#self-owned-objective-goals">Self-owned Objective goals</a></h3>
+<h3 id="self-owned-objective-goals">Self-owned Objective goals</h3>
 <p>It's hard to objectively measure knowledge work. 
 Ideas are largely judged by other humans and the measure is largely subjective. 
 Physical-activity goals, by contrast, are much more tangible. 
@@ -195,13 +265,13 @@ In particular, the time from goal initiation to final measurement usually happen
 What was happening was all progress and accomplishments were being measured by others. 
 With my fitness goals I now have a portion of my life where progress is owned entirely by me.
 Self owned goals has reduced the pressure I put on myself, as I no longer use work as the sole measure of life progress.</p>
-<h3 id="faster-feedback-loop"><a class="toclink" href="#faster-feedback-loop">Faster feedback loop</a></h3>
+<h3 id="faster-feedback-loop">Faster feedback loop</h3>
 <p>Before when I missed a day of sleep I would mask the effects with caffeine and ignore my reduced mental performance.
 It'd take a week or so of poor sleep habits before the effects became problematic  enough for me to correct them.
 Now, these lack-of-sleep regressions show up more quickly in my physical output levels, especially through the objective measurement I mentioned above.
 The same goes for stress levels or lack of mental focus at work. 
 Since the physical detriment shows up quickly I'm able to self-correct much faster especially before it affects my knowledge work too severely. </p>
-<h3 id="increased-confidence-in-navigating-my-career"><a class="toclink" href="#increased-confidence-in-navigating-my-career">Increased confidence in navigating my career</a></h3>
+<h3 id="increased-confidence-in-navigating-my-career">Increased confidence in navigating my career</h3>
 <p>"Knowing things" is the bare minimum for a knowledge career.
 Being able to clearly communicate ideas, tactfully push back on requests,
 or state your own self worth in situations such as performance reviews are important skills in intentionally controlling your destiny.
@@ -210,27 +280,27 @@ Even though the amount of weight I can lift, or the composition of my body shoul
 I find that, for me,  they are correlated.
 Put simply, improvements in my "physical" self have made me more confident in my "knowledge" self.
 I don't wake up wishing I were someone else or thinking that I have to "fake it" to "make it".</p>
-<h2 id="downsides"><a class="toclink" href="#downsides">Downsides</a></h2>
+<h2 id="downsides">Downsides</h2>
 <p>For all the upsides of changing my lifestyle I should mention the downsides. 
 As you can probably guess I feel the upsides far outweigh the downsides in my case, but I will list downsides I experienced here so you can judge for yourself.</p>
-<h3 id="it-takes-active-planning-effort"><a class="toclink" href="#it-takes-active-planning-effort">It takes active planning, effort</a></h3>
+<h3 id="it-takes-active-planning-effort">It takes active planning, effort</h3>
 <p>You really do have to think about what you want to do, why you want to do it, and how to get there.
 Then you actually have to do it which can be a slog.
 Reading Hacker News or eating unhealthy foods is easier and comfortable in the short term.
 This downside can be mitigated by making changes of a smaller magnitude,
 but then it takes longer for results to appear.
 Bottom line, a level of dedication and patience is essential..</p>
-<h3 id="its-harder-at-the-beginning"><a class="toclink" href="#its-harder-at-the-beginning">It's harder at the beginning</a></h3>
+<h3 id="its-harder-at-the-beginning">It's harder at the beginning</h3>
 <p>All of the above is compounded at the start, when you are not getting any of the benefits,
 but you're definitely paying the upfront costs of all the planning, confusion, and lack of experience. 
 Like anything changing your lifestyle is a learned skilled and it takes time
 to figure everything out before it becomes second nature. </p>
-<h3 id="it-can-take-time"><a class="toclink" href="#it-can-take-time">It can take time</a></h3>
+<h3 id="it-can-take-time">It can take time</h3>
 <p>The whole process takes time, the most valuable commodity-especially for knowledge workers.
 I personally learned to mitigate the "time loss" through a number of strategies
 but the fact remains that I need to set aside dedicated hours in my week.
 Now I think my peers use time as an excuse to justify avoiding the work but that's a topic for another blog post</p>
-<h3 id="lack-of-instruction-relevant-for-working-professionals"><a class="toclink" href="#lack-of-instruction-relevant-for-working-professionals">Lack of instruction relevant for working professionals</a></h3>
+<h3 id="lack-of-instruction-relevant-for-working-professionals">Lack of instruction relevant for working professionals</h3>
 <p>A lot of the content available is not targeted for working
 professionals. Even if we ignore the blatant scams, much of the material is written
 for <em>professional</em> athletes or actors who can work out twice a day
@@ -238,7 +308,7 @@ or eat six carefully measured meals. Cracking open a Tupperware container full o
 each day during multiple meetings each day doesn't fit my life. 
 The all-in or not-at-all mentality is a non starter. 
 It took a while for me to piece together what worked in my situation, without me losing my job, and it likely will for you too.</p>
-<h2 id="so-where-can-you-go-from-here"><a class="toclink" href="#so-where-can-you-go-from-here">So where can you go from here?</a></h2>
+<h2 id="so-where-can-you-go-from-here">So where can you go from here?</h2>
 <p>If you're compelled to make a change my first suggestion is to give it some thought and write down a specific goal you'd like to achieve.
 This is no different than writing down precise objective functions for a statistical model
 or setting a concrete goal for a team. Saying you want your model to be "more accurate"
@@ -252,7 +322,7 @@ is about as imprecise as saying "you want to walk more everyday." </p>
    This one is not such a well-defined goal but since it's a sub goal of the one above I'm ok with adding it here.</li>
 </ul>
 <p>These are just some examples: if you'd like to know my other goals feel free to ask.</p>
-<h2 id="should-i-keep-writing-about-these-topics"><a class="toclink" href="#should-i-keep-writing-about-these-topics">Should I keep writing about these topics?</a></h2>
+<h2 id="should-i-keep-writing-about-these-topics">Should I keep writing about these topics?</h2>
 <p>I really believe in the power of sharing ideas and knowledge with others.
 It's why so I'm so committed to "open source" codes and communities, and it's something I believe applies here as well</p>
 <p>I can also share what I know about topics like </p>
@@ -263,23 +333,62 @@ It's why so I'm so committed to "open source" codes and communities, and it's so
 <li>Anything else you'd like me to share</li>
 </ul>
 <p>If interested get in touch with me. I'm happy to share!</p>
-<h2 id="ps-weightlifting-is-really-fun-for-everyone"><a class="toclink" href="#ps-weightlifting-is-really-fun-for-everyone">P.S. Weightlifting is really fun (for everyone)</a></h2>
+<h2 id="ps-weightlifting-is-really-fun-for-everyone">P.S. Weightlifting is really fun (for everyone)</h2>
 <p>Lastly I'm most proud of my powerlifting ability, much more so than I am of
 my physical appearance. Here's a picture of a recent deadlift.</p>
-<p float="center">
-<img src="./images/WhyFitness/Deadlifting.png"/>
-</p>
-
+<p><img src="./images/WhyFitness/Deadlifting.png"/></p>
 <p>Powerlifting isn't "just for men either". Below my super awesome role model mom is also performing a deadlift. 
 She didn't start weightlifting until her 40s so don't let
 either age or gender hold you back. If you've been curious about trying out
 strength training I encourage you to give it a try!</p>
-<p float="center">
-<img src="./images/WhyFitness/MomWeightLifting.png"/>
-</p>
-</div>
+<p><img src="./images/WhyFitness/MomWeightLifting.png"/></p>
+
+					</div> 
+				</div>
+			</div>
 		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+
 	</body>
 
-    <!-- Javascript Loader for Pelican Javascript plugin-->
 </html>

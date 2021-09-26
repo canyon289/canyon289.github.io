@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
-		<!-- For Jupyter Notebooks -->
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
 
 <!--Notebook Configuration-->
 <script type="text/x-mathjax-config">
@@ -44,24 +51,20 @@
 </script>
 
 		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="./theme/css/notebook.css" />
-
-		<link rel="stylesheet" href="./theme/css/poole.css" />
-		<link rel="stylesheet" href="./theme/css/hyde.css" />
-		<link rel="stylesheet" href="./theme/css/syntax.css" />
-        <link rel="stylesheet" href="./theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
 
-
-        <!-- CSS style sheets for pelican javascript plugin -->
-
+        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,61 +75,131 @@
 	</script>
 	</head>
 
-	<body class="theme-base-darkgreen">
-<div class="sidebar">
-    <div class="container">
-        <div >
-            <h1 class="sidebar-title">
-                <a href="/">
-                    <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Ravin Kumar']--->
-                    Ravin Kumar
+	<body class='page body-article'>  <!-- extends -->
 
-                </a>
-            </h1>
-        </div>
-
-        <!---Add Blog Manually --->
-        <h1 class = "sidebar-page">
-            <a href="./blog.html">
-                Blog
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
-        </h1>
-
-      <!---Add Pages for Static Content --->
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/References.html">
-              References
-              </a>
-            </h1>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
         </div>
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/Talks.html">
-              Talks
-              </a>
-            </h1>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
         </div>
-    <div>
-    <nav class="sidebar-nav">
-                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://github.com/canyon289">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
-                    <i class="fa fa-twitter"></i>
-                </a>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar -->
+						<div class="col-12 col-md-3 mb-3">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul>
+    <li class="">
+        <a href="./category/articles.html">
+            <span>articles</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/d3.html">
+            <span>D3</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/fitness.html">
+            <span>Fitness</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/general.html">
+            <span>General</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="active ">
+        <a href="./category/programming-machinelearning.html">
+            <span>Programming, MachineLearning</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/question.html">
+            <span>Question</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/svg.html">
+            <span>SVG</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<div class="col-12 col-md-9">
 
-    </nav>
-    </div>
-    </div>
-</div>		<div class="content container">
-<div class="post">
-	<h1 class="post-title">Better Data Science CI with Docker</h1>
-	<span class="post-date">Sun 20 January 2019</span>
+	<h1 class="page-title">Better Data Science CI with Docker</h1>
+	<p class="post-date">Sun 20 January 2019</p>
 	<p>Know the feeling when you use a tool that "just works"? instead of feeling
 like you're wasting time and growing frustrated, you end up being more productive?  </p>
 <p>For Bayesian practioners, one such tool is ArviZ.
@@ -152,7 +225,7 @@ Continuous Integration system. In this post, I'll
 detail the issues we were having with CI, why we started
 using Docker in our CI, general instructions on how it all works,
 and along with a grab bag of tips.</p>
-<h2 id="the-tale-of-5-deep-learning-frameworks-a-local-machine-and-a-remote-virtual-machine"><a class="toclink" href="#the-tale-of-5-deep-learning-frameworks-a-local-machine-and-a-remote-virtual-machine">The tale of 5 deep learning frameworks, a local machine, and a remote virtual machine</a></h2>
+<h2 id="the-tale-of-5-deep-learning-frameworks-a-local-machine-and-a-remote-virtual-machine">The tale of 5 deep learning frameworks, a local machine, and a remote virtual machine</h2>
 <p>While installing one deep learning framework can be a challenging experience,
 installing five at the same time can be perilous. To ensure
 ArviZ runs seamlessly on widely used Bayesian learning libraries, we 
@@ -171,7 +244,7 @@ C level libraries, Python, and ArviZ.</p>
 TravisCI for one simple reason, <strong>the developers' coding environment would
 be an exact replica of the CI environment.</strong> This meant that any CI
 issue was now locally reproducible and locally solvable.</p>
-<h2 id="docker-ci-details"><a class="toclink" href="#docker-ci-details">Docker CI Details</a></h2>
+<h2 id="docker-ci-details">Docker CI Details</h2>
 <p>Alright, enough with the talk, on with the details, how is it done?</p>
 <ol>
 <li>Create a Dockerfile for your CI environment</li>
@@ -179,14 +252,14 @@ issue was now locally reproducible and locally solvable.</p>
 <li>Fix any integrations that may have broken</li>
 </ol>
 <p>Let's talk through each step, one by one</p>
-<h3 id="step-1-dockerfile"><a class="toclink" href="#step-1-dockerfile">Step 1: Dockerfile</a></h3>
+<h3 id="step-1-dockerfile">Step 1: Dockerfile</h3>
 <p>The first step is deciding what you want your environment to contain. In
 general you'll want your container to have all the tools needed to build
 and test your code, and ideally to be as minimal as possible. We'll use the
 <a href="https://github.com/arviz-devs/arviz/blob/master/scripts/Dockerfile">ArviZ dockerfile</a>
 as an example.</p>
 <p>The first line is the base image.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="k">FROM</span> <span class="n">conda</span><span class="o">/</span><span class="n">miniconda3</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span>FROM conda/miniconda3</span>
 </pre></div>
 
 
@@ -196,19 +269,19 @@ that already had some things set up, and just work from there. This means
 the image isn't as minimal as it could be, but we're not shipping containers
 "at scale" so this tradeoff was worth it.  </p>
 <p>Next, we setup arguments and environmental variables</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nv">ARG</span> <span class="nv">SRC_DIR</span></span>
-<span class="code-line"><span class="nv">ARG</span> <span class="nv">PYTHON_VERSION</span></span>
-<span class="code-line"><span class="nv">ARG</span> <span class="nv">PYSTAN_VERSION</span></span>
-<span class="code-line"><span class="nv">ARG</span> <span class="nv">PYRO_VERSION</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span>ARG SRC_DIR</span>
+<span class="code-line">ARG PYTHON_VERSION</span>
+<span class="code-line">ARG PYSTAN_VERSION</span>
+<span class="code-line">ARG PYRO_VERSION</span>
 <span class="code-line"></span>
-<span class="code-line"><span class="nv">ENV</span> <span class="nv">PYTHON_VERSION</span><span class="o">=</span>${<span class="nv">PYTHON_VERSION</span>}</span>
-<span class="code-line"><span class="nv">ENV</span> <span class="nv">PYSTAN_VERSION</span><span class="o">=</span>${<span class="nv">PYSTAN_VERSION</span>}</span>
-<span class="code-line"><span class="nv">ENV</span> <span class="nv">PYRO_VERSION</span><span class="o">=</span>${<span class="nv">PYRO_VERSION</span>}</span>
-<span class="code-line"><span class="nv">ENV</span> <span class="nv">DOCKER_BUILD</span><span class="o">=</span><span class="nv">true</span></span>
+<span class="code-line">ENV PYTHON_VERSION=<span class="cp">${</span><span class="n">PYTHON_VERSION</span><span class="cp">}</span></span>
+<span class="code-line">ENV PYSTAN_VERSION=<span class="cp">${</span><span class="n">PYSTAN_VERSION</span><span class="cp">}</span></span>
+<span class="code-line">ENV PYRO_VERSION=<span class="cp">${</span><span class="n">PYRO_VERSION</span><span class="cp">}</span></span>
+<span class="code-line">ENV DOCKER_BUILD=true</span>
 <span class="code-line"></span>
-<span class="code-line"># <span class="k">For</span> <span class="nv">Sphinx</span> <span class="nv">documentation</span> <span class="nv">builds</span></span>
-<span class="code-line"><span class="nv">ENV</span> <span class="nv">LC_ALL</span><span class="o">=</span><span class="nv">C</span>.<span class="nv">UTF</span><span class="o">-</span><span class="mi">8</span></span>
-<span class="code-line"><span class="nv">ENV</span> <span class="nv">LANG</span><span class="o">=</span><span class="nv">C</span>.<span class="nv">UTF</span><span class="o">-</span><span class="mi">8</span></span>
+<span class="code-line"># For Sphinx documentation builds</span>
+<span class="code-line">ENV LC_ALL=C.UTF-8</span>
+<span class="code-line">ENV LANG=C.UTF-8</span>
 </pre></div>
 
 
@@ -217,18 +290,18 @@ in each image. For ArviZ we test against different versions of libraries
 and we didn't want to create a dockerfile for each. By setting the 
 ENV variables here through command line arguments we afford some flexibility</p>
 <p>After this, we actually start installing things</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="n">RUN</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="k">update</span> <span class="o">&amp;&amp;</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">git</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">pandoc</span> <span class="err">\</span></span>
-<span class="code-line">    <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="cm">/*</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="n">RUN</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">git</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">pandoc</span> \</span>
+<span class="code-line">    <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="o">/*</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="cm"># Copy requirements and environment installation scripts</span></span>
-<span class="code-line"><span class="cm">COPY $SRC_DIR/requirements.txt  opt/arviz/</span></span>
-<span class="code-line"><span class="cm">COPY $SRC_DIR/requirements-dev.txt  opt/arviz/</span></span>
-<span class="code-line"><span class="cm">COPY $SRC_DIR/scripts/ opt/arviz/scripts</span></span>
+<span class="code-line"><span class="c1"># Copy requirements and environment installation scripts</span></span>
+<span class="code-line"><span class="n">COPY</span> <span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>  <span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span></span>
+<span class="code-line"><span class="n">COPY</span> <span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">requirements</span><span class="o">-</span><span class="n">dev</span><span class="o">.</span><span class="n">txt</span>  <span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span></span>
+<span class="code-line"><span class="n">COPY</span> <span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span> <span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">scripts</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="cm">WORKDIR /opt/arviz</span></span>
+<span class="code-line"><span class="n">WORKDIR</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="cm"># Create conda environment. Defaults to Python 3.6</span></span>
-<span class="code-line"><span class="cm">RUN ./scripts/create_testenv.sh</span></span>
+<span class="code-line"><span class="c1"># Create conda environment. Defaults to Python 3.6</span></span>
+<span class="code-line"><span class="n">RUN</span> <span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">create_testenv</span><span class="o">.</span><span class="n">sh</span></span>
 </pre></div>
 
 
@@ -238,7 +311,7 @@ and the rest are in the Python environment. We choose to have a separate
 of Docker.</p>
 <p>The next section of the file copies the ArviZ code base and
 removes any cached files.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="k">COPY</span> <span class="err">$</span><span class="n">SRC_DIR</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span>COPY $SRC_DIR /opt/arviz</span>
 </pre></div>
 
 
@@ -253,7 +326,7 @@ the general tips section.</p>
 </pre></div>
 
 
-<h3 id="step-2-configure-your-ci-service"><a class="toclink" href="#step-2-configure-your-ci-service">Step 2: Configure your CI service</a></h3>
+<h3 id="step-2-configure-your-ci-service">Step 2: Configure your CI service</h3>
 <p>The next step is configuring TravisCI. Luckily, this is not too hard.
 Adding the lines below will install the latest version of <em>docker-ce</em>.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="n">addons</span><span class="o">:</span></span>
@@ -265,7 +338,7 @@ Adding the lines below will install the latest version of <em>docker-ce</em>.</p
 
 <p>After that you'll be able to build an image and run tests, capture code coverage,
 generate documentation, or whatever else you'd need.</p>
-<h3 id="step-3-fix-any-integrations-that-may-have-broken"><a class="toclink" href="#step-3-fix-any-integrations-that-may-have-broken">Step 3: Fix any integrations that may have broken</a></h3>
+<h3 id="step-3-fix-any-integrations-that-may-have-broken">Step 3: Fix any integrations that may have broken</h3>
 <p>One downside of testing in a container is that isolation is great,
 until it isn't. We found that some of the tooling that integrates with
 TravisCI, such as travis-sphinx, and coveralls, no longer worked.</p>
@@ -275,12 +348,12 @@ by using a bind mount. An example can be found in
 <a href="https://github.com/arviz-devs/arviz/blob/6d1b65e0c99bb716ee0ebcbdac8cdc9e1380a472/.travis.yml#L68-L69">the .travis.yml file</a>.</p>
 <p>When the files are present in TravisCI file system, the integrated tools
 can deploy the docs and coverage just as they had done it the past.</p>
-<h2 id="miscellaneous-tips"><a class="toclink" href="#miscellaneous-tips">Miscellaneous tips</a></h2>
+<h2 id="miscellaneous-tips">Miscellaneous tips</h2>
 <p>There were some gotchas that required some experimentation which I'll document here.</p>
-<h3 id="formatting-in-travisci-yml-files"><a class="toclink" href="#formatting-in-travisci-yml-files">Formatting in TravisCI yml files</a></h3>
+<h3 id="formatting-in-travisci-yml-files">Formatting in TravisCI yml files</h3>
 <p>TravisCI is picky about semicolons, spaces, and newlines in its <code>.travis.yml</code> file.
 If you run into odd errors, be sure to troubleshoot these first.</p>
-<h3 id="bash-profiles-in-non-interactive-shells"><a class="toclink" href="#bash-profiles-in-non-interactive-shells">Bash profiles in non-interactive shells</a></h3>
+<h3 id="bash-profiles-in-non-interactive-shells">Bash profiles in non-interactive shells</h3>
 <p>Not all bash shells are interactive, and 
 <a href="https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html">when they're not, they don't invoke</a>
 a <code>.bashrc</code> file. This is why you see <code>source /root/.bashrc</code> frequently 
@@ -289,9 +362,53 @@ executing the next command.
 While this workaround isn't the most elegant, it did work for our purposes. 
 However, if you know of a better solution,
 please let us know through an issue or a pull request! We would greatly appreciate it.</p>
-</div>
+
+					</div> 
+				</div>
+			</div>
 		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+
 	</body>
 
-    <!-- Javascript Loader for Pelican Javascript plugin-->
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>{% block title %}{{ AUTHOR }}{% endblock title %}</title>
+		<link rel="shortcut icon" type="image/x-icon" href="{{ SITEURL }}/images/logo/logo.png" />
+
+		<meta name="description" content="{{ META_DESCRIPTION }}" />
+		<meta property="og:title" content="{{ AUTHOR }}" />
+		<meta property="og:url" content="{{ SITEURL }}" />
+		<meta property="og:image" content="{{ SITEURL }}/images/logo/logo.png" />
+		<meta property="og:description" content="{{ META_DESCRIPTION }}" />
+		<meta name="twitter:site" content="{% for name, link in SOCIAL %}{% if name == 'twitter' %}{{ link }}{% endif %}{% endfor %}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
+		{% include "fragments/_nb_header.html" %}
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/codesyntax.css" />
+        <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/svgstyles.css" />
+		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
+		{% block tagcss %}
+		{% endblock %}
+
+        <!-- CSS for Pelican Javascript plugin -->
+        {% if article %}
+            {% if article.stylesheets %}
+                {% for stylesheet in article.stylesheets %}
+                    {{ stylesheet }}
+                {% endfor %}
+            {% endif %}
+        {% endif %}
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
+		{% include 'fragments/google_analytics.html' %}
+	</head>
+
+	<body class='page {% block bodyclasses %}{% endblock %}'>  <!-- extends -->
+
+		{% include 'fragments/main-menu-mobile.html' %}
+
+		<div class="wrapper">
+			<!-- Header -->
+			{% include 'fragments/header.html' %}
+		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+					{% if article or category %}
+						<!-- Sidebar -->
+						<div class="col-12 col-md-3 mb-3">
+							<div class="sidebar">
+								{% include 'fragments/sidebar.html' %}
+							</div>
+						</div>
+					{% endif %}
+					<div class="col-12 {% if article or category %}col-md-9{% endif %}">
+						{% block content %}
+						{% endblock %}
+					</div> 
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		{% include 'fragments/footer.html' %}
+
+		<!-- Javascript -->
+		<script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+		{% if article %}
+			{% if article.javascripts %}
+				{% for javascript in article.javascripts %}
+					{{ javascript }}
+				{% endfor %}
+			{% endif %}
+		{% endif %}
+
+	</body>
+
+</html>

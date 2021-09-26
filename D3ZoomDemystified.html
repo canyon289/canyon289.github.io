@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
-		<!-- For Jupyter Notebooks -->
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
 
 <!--Notebook Configuration-->
 <script type="text/x-mathjax-config">
@@ -44,25 +51,21 @@
 </script>
 
 		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="./theme/css/notebook.css" />
-
-		<link rel="stylesheet" href="./theme/css/poole.css" />
-		<link rel="stylesheet" href="./theme/css/hyde.css" />
-		<link rel="stylesheet" href="./theme/css/syntax.css" />
-        <link rel="stylesheet" href="./theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
 
-
-        <!-- CSS style sheets for pelican javascript plugin -->
+        <!-- CSS for Pelican Javascript plugin -->
                     <link rel="stylesheet" href="css/svgcenter.css" type="text/css" />
-
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -73,67 +76,137 @@
 	</script>
 	</head>
 
-	<body class="theme-base-darkgreen">
-<div class="sidebar">
-    <div class="container">
-        <div >
-            <h1 class="sidebar-title">
-                <a href="/">
-                    <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Ravin Kumar']--->
-                    Ravin Kumar
+	<body class='page body-article'>  <!-- extends -->
 
-                </a>
-            </h1>
-        </div>
-
-        <!---Add Blog Manually --->
-        <h1 class = "sidebar-page">
-            <a href="./blog.html">
-                Blog
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
-        </h1>
-
-      <!---Add Pages for Static Content --->
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/References.html">
-              References
-              </a>
-            </h1>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
         </div>
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/Talks.html">
-              Talks
-              </a>
-            </h1>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
         </div>
-    <div>
-    <nav class="sidebar-nav">
-                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://github.com/canyon289">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
-                    <i class="fa fa-twitter"></i>
-                </a>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar -->
+						<div class="col-12 col-md-3 mb-3">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul>
+    <li class="active ">
+        <a href="./category/articles.html">
+            <span>articles</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/d3.html">
+            <span>D3</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/fitness.html">
+            <span>Fitness</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/general.html">
+            <span>General</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming-machinelearning.html">
+            <span>Programming, MachineLearning</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/question.html">
+            <span>Question</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/svg.html">
+            <span>SVG</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<div class="col-12 col-md-9">
 
-    </nav>
-    </div>
-    </div>
-</div>		<div class="content container">
-<div class="post">
-	<h1 class="post-title">D3 4.0 Zoom demystified</h1>
-	<span class="post-date">Sun 25 September 2016</span>
+	<h1 class="page-title">D3 4.0 Zoom demystified</h1>
+	<p class="post-date">Sun 25 September 2016</p>
 	<p>In the <a href="./ImplementingD3Zoom.html">last post</a> we covered how to implement
 basic zoom and pan in a D3 svg with one line but also left ourselves with an example
 of an unexpected behavior.</p>
 <p>In this post will dig deeper to see what's happening under the hood and how we 
 can get around our issue. Before we get into D3 let's start with the basics.</p>
-<h2 id="what-is-zoom-and-pan-in-an-svg"><a class="toclink" href="#what-is-zoom-and-pan-in-an-svg">What is Zoom and Pan in an SVG?</a></h2>
+<h2 id="what-is-zoom-and-pan-in-an-svg">What is Zoom and Pan in an SVG?</h2>
 <p>SVG stands for Scalable Vector Graphics. Vectors are mathematical
 of a magnitude and direction in a coordinate space. So when we're zooming, panning,
 or rotating and skewing, an SVG we are <strong>applying coordinate transformations
@@ -149,7 +222,7 @@ SVG element we would add an attribute tag as so</p>
 double all the linear dimensions". For further details on the SVG spec take a look
 at the <a href="https://developer.mozilla.org/en/docs/Web/SVG/Attribute/transform">Mozillla Foundation Documentation</a>
 or visit this blog post by <a href="https://sarasoueidan.com/blog/svg-transformations/">Sara Soueidan</a></p>
-<h2 id="what-are-dom-events-and-event-handlers"><a class="toclink" href="#what-are-dom-events-and-event-handlers">What are DOM Events and Event handlers?</a></h2>
+<h2 id="what-are-dom-events-and-event-handlers">What are DOM Events and Event handlers?</h2>
 <p>We won't get too far into this one but take a moment to think about the mechanics
 of event handlers. If you're reading this blog you're likely aware that nothing
 is "magic" in programming, but instead a well structured set of rules has been implement</p>
@@ -158,7 +231,7 @@ their mousewheel, in d3 we see that the SVG correspondly reacts.</p>
 <p>Mozilla Foundation once again comes through and <a href="https://developer.mozilla.org/en-US/docs/Web/Events">lists nearly all</a>
 the event handlers available. For those paying close attention you'll notice zoom
 isn't listed, we'll cover that in a second.</p>
-<h2 id="how-does-d3-implement-zoom"><a class="toclink" href="#how-does-d3-implement-zoom">How does D3 Implement Zoom</a></h2>
+<h2 id="how-does-d3-implement-zoom">How does D3 Implement Zoom</h2>
 <p>With an understanding how how SVGs work with zoom and with how browsers handle events
 we can now focus on D3 itself.
 D3 implements zoom in two major piece, mostly encapsulated in two objects.
@@ -168,7 +241,7 @@ its <a href="https://github.com/d3/d3-zoom#api-reference">custom event handler</
 <p>There's also the <strong>d3.ZoomTransform</strong> element which stores the zoom transform
 for a certain element. It is important to note at time of writing d3 does not support
 rotate or any of the other SVG transforms in the Zoom API.</p>
-<h2 id="the-one-liner-explanation"><a class="toclink" href="#the-one-liner-explanation">The One Liner explanation</a></h2>
+<h2 id="the-one-liner-explanation">The One Liner explanation</h2>
 <p>With all this newfound knowledge let's dissect the one liner from the previous post,
 here again for reference</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">().</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;zoom&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">g</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">transform</span><span class="p">)}))</span></span>
@@ -197,7 +270,7 @@ d3 zoom event handler</p>
 <p>In this last set of code we are telling d3 change the attribute "transform" on the svg
 group g, whenever the zoom event is invoked. d3.event.transform returns
 an svg string that details the current transform.</p>
-<h2 id="why-the-initial-visualization-jumps"><a class="toclink" href="#why-the-initial-visualization-jumps">Why the initial visualization jumps</a></h2>
+<h2 id="why-the-initial-visualization-jumps">Why the initial visualization jumps</h2>
 <p>To answer our question from last week here's why the visualization jumps.</p>
 <p>When we initially create the svg group, we manually code the transformed
 position as an attribute on the svg group, copied here for reference</p>
@@ -224,9 +297,9 @@ line, the one that "tells" d3 the initial state of the transform.  </p>
 <span class="code-line"><span class="kd">var</span> <span class="nx">initial_transform</span></span>
 <span class="code-line"><span class="kd">var</span> <span class="nx">g</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">margin</span> <span class="o">=</span> <span class="p">{</span><span class="nx">top</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">right</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">bottom</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">left</span><span class="o">:</span> <span class="mi">50</span><span class="p">};</span></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">width</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">margin</span> <span class="o">=</span> <span class="p">{</span><span class="nx">top</span><span class="o">:</span> <span class="mf">50</span><span class="p">,</span> <span class="nx">right</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">bottom</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">left</span><span class="o">:</span> <span class="mf">50</span><span class="p">};</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">width</span> <span class="o">=</span> <span class="mf">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mf">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="c1">//Create Initial Zoom Behavior</span></span>
 <span class="code-line"><span class="nx">zoom</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">()</span></span>
@@ -255,9 +328,9 @@ line, the one that "tells" d3 the initial state of the transform.  </p>
 <span class="code-line">  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">initial_transform</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;circle&quot;</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mf">0</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mf">0</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mf">10</span><span class="p">);</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="c1">//Set the zoom Behavior, use the one initialized above instead of creating a new one</span></span>
 <span class="code-line"><span class="nx">svg</span></span>
@@ -265,16 +338,60 @@ line, the one that "tells" d3 the initial state of the transform.  </p>
 </pre></div>
 
 
-<h2 id="what-we-covered"><a class="toclink" href="#what-we-covered">What we covered</a></h2>
+<h2 id="what-we-covered">What we covered</h2>
 <p>In the previous post we covered how to implement zoom and pan easily in one
 line of code. In this post we covered how d3 controls zoom behavior with the 
 d3.zoom() object/function and how d3 "remembers" zoom states by setting 
 d3.zoomTransform objects on elements where transforms have been applied.  </p>
-</div>
+
+					</div> 
+				</div>
+			</div>
 		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+					<script src="js/D3Zoom.js"></script>
+
 	</body>
 
-    <!-- Javascript Loader for Pelican Javascript plugin-->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
-                <script src="js/D3Zoom.js"></script>
 </html>

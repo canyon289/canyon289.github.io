@@ -4,17 +4,24 @@ Slug: Talks
 Authors: Ravin Kumar
 Status: published
 
-## Scipy 2019 - Intro to Bayesian Model Evaluation and Visualization
-[Recording](https://www.youtube.com/watch?v=bmWMdVQlzIA&E)  
-[Code](https://github.com/canyon289/bayesian-model-evaluation)
+### Intro to Bayesian Model Evaluation and Visualization
+SciPy 2019  
+[Recording](https://www.youtube.com/watch?v=bmWMdVQlzIA&E)
+&nbsp;
+[Code](https://github.com/canyon289/bayesian-model-evaluation)  
+<br>
 
-## PyDataLA 2018 - Pytest for Data Scientists
-[Recording](https://www.youtube.com/watch?v=dY1nNtDTruE)  
-[Code](https://github.com/canyon289/PyTestforDataScience_PyDataLA)
+### PyTest for Data Scientists
+PyDataLA 2018  
+[Recording](https://www.youtube.com/watch?v=dY1nNtDTruE)
+&nbsp;
+[Code](https://github.com/canyon289/PyTestforDataSciencePyDataLA)  
+<br>
 
-## Code Camp 2017 - Pytest
-Introductory level talk meant to encourage others to use python testing by
-going through basic and intermediate pytest examples  
-[Code and Slides](https://github.com/canyon289/CodeCampPytest)
-
-
+### PyTest
+Code Camp 2017  
+_Introductory level talk meant to encourage others to use python testing by going through basic and intermediate PyTest examples._  
+[Code](https://github.com/canyon289/CodeCampPytest)
+&nbsp;
+[Slides](https://docs.google.com/presentation/d/11A742qhUaQdtwL3IaXQGzT3lB9PfRTXOIN4SpgSbwxo/edit#slide=id.p)  
+<br>
