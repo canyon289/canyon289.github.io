@@ -1,7 +1,7 @@
 Title: D3 4.0 Zoom demystified
 Date: 2016-9-25
-Category: 
-Tags: HowTo 
+Category: Visualization
+Tags: Visualization
 Slug: D3ZoomDemystified 
 Authors: Ravin Kumar
 Javascripts: https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js, D3Zoom.js
@@ -37,17 +37,17 @@ or visit this blog post by [Sara Soueidan](https://sarasoueidan.com/blog/svg-tra
 ## What are DOM Events and Event handlers?
 We won't get too far into this one but take a moment to think about the mechanics
 of event handlers. If you're reading this blog you're likely aware that nothing
-is "magic" in programming, but instead a well structured set of rules has been implement
+is "magic" in programming, but instead a well-structured set of rules has been implemented.
 
 In the case of zoom when the user clicks and drags an element, or a user scrolls
-their mousewheel, in d3 we see that the SVG correspondly reacts.
+their mousewheel, in d3 we see that the SVG correspondingly reacts.
 
 Mozilla Foundation once again comes through and [lists nearly all](https://developer.mozilla.org/en-US/docs/Web/Events)
 the event handlers available. For those paying close attention you'll notice zoom
 isn't listed, we'll cover that in a second.
 
 ## How does D3 Implement Zoom 
-With an understanding how how SVGs work with zoom and with how browsers handle events
+With an understanding how SVGs work with zoom and with how browsers handle events
 we can now focus on D3 itself.
 D3 implements zoom in two major piece, mostly encapsulated in two objects.
 There's the **d3.zoom** object, which creates a zoom behavior and applies

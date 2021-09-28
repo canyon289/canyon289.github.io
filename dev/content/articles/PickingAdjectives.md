@@ -1,10 +1,10 @@
-Title: Q: Finding a match
-Date: 2016-4-25 10:20
-Category:
-Tags: 
-Slug: pickingadjectives
+Title: Interview Question: Finding a match
+Date: 2016-4-25 
+Category: Interview 
+Tags: Visualization, Algorithms, Interview
+Slug: PickingAdjectives
 Authors: Ravin Kumar
-Status: published
+Status: Published
 
 
 Two people join a dating site independently. Upon signing up they pick 5 words to

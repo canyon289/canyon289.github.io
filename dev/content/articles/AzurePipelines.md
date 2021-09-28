@@ -1,7 +1,7 @@
 Title: Migrating from TravisCI to Azure Pipelines
 Date: 2019-06-02
-Category: Programming 
-Tags: 
+Category: OpenSource
+Tags: Programming, Infra
 Slug:  AzurePipelines
 Authors: Ravin Kumar
 Status: published

@@ -1,10 +1,10 @@
 Title: Writing good software requires you to have an opinion
 Date: 2016-10-03 10:20
-Category: General
-Tags: software
+Category: Software
+Tags: Software
 Slug: OpinionatedSoftware 
 Authors: Ravin Kumar
-Status: published
+Status: Published
 
 If you want to write good software I would argue that you have to develop a
 a style based on experience partially based on experience but also with a 

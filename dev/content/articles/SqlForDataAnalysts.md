@@ -17,7 +17,7 @@ SQL.
 # The Basics
 If you want to produce any results you'll have to start here.
 
-## 1.Tables
+## 1. Tables
 Fundamental to relational databases is the concept of tables, all the data
 is stored in these. Quickly learn how business concepts are reprsented in
 tables. You'll quickly find that a couple central tables usually contain an
@@ -63,7 +63,7 @@ After getting the basics people will start asking more pointed questions like,
 **What's my sales per Region?** or **What are the 2nd most expensive parts
 we produce?** To answer these questions you'll need some more knowledge.
 
-## 8a. Built in Functions
+## 8a. Built-in Functions
 You'll need to these to do things like sum over a column, or count the number
 of records, but you'll also need these to numerically rank results.
 
@@ -87,7 +87,7 @@ in a subquery that's generating another table that you're joining on. You'll
 quickly find out when you need these when you realize you can't accomplish certain
 joins with just left and inner joins.
 
-## Advanced SQL
+# Advanced SQL
 ## 11. Variables
 Variables will you reuse values throughout your code and make certain things
 more obvious. For instance if you're filtering for records after a certain date
@@ -107,7 +107,7 @@ over time for a certain serial number part.
 
 ## 13. Common Table Expressions 
 Common table expressions are a useful way to annotate your code, they're
-somewhat analagous to object oriented programming where you can slowly
+somewhat analogous to object oriented programming where you can slowly
 build a results set over a more easily readable series of operations. You'll
 see what I mean when your queries starts with select, has 20 columns from
 various tables, and then 15 joins to get all the columns together. It gets
@@ -149,7 +149,7 @@ stored procedures, and functions, but those start getting into the realm
 of Database Administration, and sides by the time you get here anyway
 you'll be strong enough with SQL to figure out what you need.
 
-# Getting started
+# Getting Started
 Don't let this list intimidate you, you can get a lot of value from just
 the top 5 items. The others will come naturally as you figure out you need them
 and hopefully this list will help you figure out the terms to google once

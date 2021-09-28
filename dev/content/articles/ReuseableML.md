@@ -1,7 +1,7 @@
 Title: Maintainable Machine Learning Code
 Date: 2017-11-26
-Category: Programming, MachineLearning
-Tags: 
+Category: Programming
+Tags: MachineLearning, Programming
 Slug: ReuseableML
 Authors: Ravin Kumar
 Status: published 
@@ -121,7 +121,7 @@ Unittests are still relevant with machine learning code. You can use
 tests for your own code. There are many examples of 
 [test driven development](https://www.google.com/search?q=test+driven+development).
 However I also use tests to test my own understanding of how machine
-learning libraries work. By writing the following tests I can double check
+learning libraries work. By writing the following tests I can double-check
 my understanding of word lemmatizers and CountVectorizer in scikit-learn.
 
 ```python
@@ -163,7 +163,7 @@ scikit-learns transformers and predictors can use it. For these activities
 scikit-learn provides all the scaffolding you need 
 [in its base module](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.base)
 By utilizing these it keeps you within the pipeline framework which
-again makes it easy to use all the built in tools for experimentation.
+again makes it easy to use all the built-in tools for experimentation.
 
 For example here is an implementation of a transformer I used in a Natural 
 Language Processing Problem that found word count and string length for a given string.
