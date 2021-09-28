@@ -1,7 +1,7 @@
 Title: A recommendation on Berkeley's Deep Reinforcement Learning Bootcamp
 Date: 2017-08-27
-Category: Programming, MachineLearning
-Tags: 
+Category: DataScience
+Tags: Education, DataScience
 Slug:  DeepRLBootcamp
 Authors: Ravin Kumar
 Status: published 
@@ -40,8 +40,8 @@ through DQN, and then branched to focus on specific RL focus areas such
 as various types of Model Based Learning, Model Free Learning, Evolutionary
 methods, as well as lectures focused on general tips for learning how to learn
 Reinforcement Learning (say that three times fast). Overall the lectures
-were well structured, given by a variety of speakers, and very informative.
-However the target audience skillset varied greatly, the difficultly ranged  from 
+were wellrstructured, given by a variety of speakers, and very informative.
+However, the target audience skillset varied greatly, the difficultly ranged  from 
 basic to extremely intense (literally cutting edge) pretty fast.
 
 ## Labs
@@ -58,11 +58,11 @@ people certainly made the bootcamp more fun.
 
 # So If I'm paying myself is it worth it?
 Well you'll definitely learn something, but "Is it worth it?" is a different question.
-If you're just starting out in RL then you'll really won't be able to grok
+If you're just starting out in RL then you really won't be able to grok
 most of the knowledge unfortunately. You'd be better off reading books and following
 tutorials online.  
 
-However if you have some experience and practice using RL you're in the 
+However, if you have some experience and practice using RL you're in the 
 sweet spot, as the advanced topics will push your knowledge, and there are lots
 of friendly experts around to answer detailed questions.  
 

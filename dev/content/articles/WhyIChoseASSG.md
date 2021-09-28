@@ -1,12 +1,12 @@
 Title: Why a Statically Generated Site
 Date: 2016-7-10 
-Category: 
+Category: Tutorial
 Tags: Tutorial 
 Slug: WhyIChoseaSSG 
 Authors: Ravin Kumar
 javascripts: 
 Stylesheets: 
-Status: published 
+Status: Published 
 
 
 Initially when I decided to start this blog I started with what I already
@@ -40,7 +40,7 @@ what buttons do what. When adding additional plugins to do syntax highlighting
 and additional javascript it would become even more difficult to modify layouts
 and figure out how to make things work
 
-Additionally it would be a lot more work if I moved hosting services
+Additionally, it would be a lot more work if I moved hosting services
 and always be worried about updates and security
 
 ##I already have enough to learn
@@ -66,6 +66,6 @@ could render all the visualizations, math, and code nicely
 In part I made my final choice based on the positive experiences of others
 as well. Here are some links to their opinions
 
-<http://bdadam.com/blog/why-i-chose-a-statically-generated-website.html>
-<http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/>
+<http://bdadam.com/blog/why-i-chose-a-statically-generated-website.html>  
+<http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/>  
 <https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/>

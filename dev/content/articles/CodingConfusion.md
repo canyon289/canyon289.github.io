@@ -1,13 +1,15 @@
 Title: Coding Confusion
 Date: 2018-03-12
 Category: Programming
+Category: Visualization
+Tags: Visualization
 Tags: Programming
 Slug: CodingConfusion
 Authors: Ravin Kumar
-Status: published 
+Status: Published 
 
 
-Recently I've been teaching coding more than ever, both to coworkers and
+Recently I've been teaching more coding than ever, both to coworkers and
 to students in my bootcamp. While they're all catching on and getting
 results, its made me step back and realize, modern day programming is not
 straightforward and with all the various parts, often is just plain confusing.
@@ -34,7 +36,7 @@ Somewhere in there you fit in a lesson about shell commands, and depending
 on whether they're in Windows or a POSIX client you wave your hands about
 OS file systems.
 
-All the code shouldn't be in one file though or it's confusing so then you explain
+All the code shouldn't be in one file though or it's confusing, so then you explain
 Python import machinery, but modules have their own nuances. Somewhere
 in there you ramble on about functional design vs OOP.
 
@@ -47,7 +49,7 @@ pinning versions for imported packages might be necessary.
 After all this they finally get their code packaged up and put into a repo.
 Their code works and is available  but man it's ugly so you start explaining
 the importance of code quality, and how PEP8 is a thing, and why spaces after
-single line comments and cameling casing are oh so important. A linting
+single line comments and camel casing are oh so important. A linting
 package is installed a bunch of messages appear on the console
 after you show they how to run it.
 

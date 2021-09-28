@@ -1,13 +1,13 @@
 Title: A Pivot
 Date: 2016-10-01 10:20
 Category: General
-Tags: 
+Tags: General
 Slug: APivot
 Authors: Ravin Kumar
 Status: published
 
 Originally when I started this blog I was frustrated with the Data Science
-Interview process, having been in it for a number of months. However
+Interview process, having been in it for a number of months. However,
 shortly after starting this blog I was hired on full time by SpaceX, and
 as a consequence stopped seeking interviews. 
 

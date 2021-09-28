@@ -15,7 +15,7 @@ For those who
 [you might understand why](http://www.erinshellman.com/crushed-it-landing-a-data-science-job/) 
 but my own thoughts are below
 
-##Why's an interview so difficult 
+## Why's an interview so difficult 
 In a non interview setting when I'm asked a question, I'm able to do some 
 background research, find other known solutions, and weave together a solution.
 This process can take an hour up to a couple of days depending on the need.

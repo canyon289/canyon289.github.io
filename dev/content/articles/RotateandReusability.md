@@ -33,7 +33,7 @@ or completion times of important events.
 # Creating a diamond
 SVG supports a number of 
 [basic shapes]( https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)
-Rectangles are oneof these and creating one just requires easily understood parameters
+Rectangles are one of these and creating one just requires easily understood parameters
 such as x,y location of te top left corner and width and height.
 
 ```xml
@@ -52,14 +52,15 @@ Seemingly unspectacular but actually pretty cool for only 4 lines of code.
 
 Our next challenge is representing a diamond. There is no basic shape for a
 diamond in the SVG library. Given that we can't just "tell" the renderer
-to draw a diamond we could instead manually "draw" the lines like this
+to draw a diamond we could instead manually "draw" the lines like this.  
 
 <svg width=100 height=100>
   <path d="M50 15 L15 50 L50 85 L85 50 Z"></path>
 </svg>
+
 But this feels like a bit much, we really just want a diamond.
 
-#Rotation
+# Rotation
 Taking a step back though if we think about it a diamond really is just 
 a rotated rectangle. Luckily there is a simple method to rotate elements in SVGs.
 

@@ -1,7 +1,7 @@
 Title: Using Linux
 Date: 2016-11-27
 Category: General 
-Tags: Software
+Tags: General
 Slug: UsingLinux
 Authors: Ravin Kumar
 Javascripts: 
@@ -48,13 +48,13 @@ many flavors without needing to go through the installation hassle. But don't
 spend too much time worrying about it, just get started.
 
 ## Don't feel like you can't look under the hood
-Windows and OSX are closed source and it's impossible and sometimes actively
+Windows and OSX are closed source, and it's impossible and sometimes actively
 discouraged to figure out what the OS is doing. Linux is the complete
 opposite, as it's actively encouraged to learn the ins and outs. There's
 a lot to learn but there's a helpful community to guide you through it. 
 
 ## Dual booting is doable but adds complexity
-A tempting option is to dual boot your computer so you can always switch back
+A tempting option is to dual boot your computer, so you can always switch back
 to Windows with a quick reboot. This is certainly possible, and not difficult
 to setup, but if you're new to working with computers at this level it becomes
 all too easy to break things and subsequently difficult to repair. It's
@@ -68,10 +68,10 @@ If you were wondering why I kept switching back and forth it was this.
 Previously I needed programs like Solidworks to do my job. Even with 
 Wine things just didn't work well. Unfortunately this also meant that I would
 end up just spending more time with Windows and neglect Linux. The dual
-boot option works here but it does mean Linux will likely remain your
+boot option works here, but it does mean Linux will likely remain your
 secondary computer if you need Windows programs in your daily tasks.
 
 # Get started
-Hopefully this provides answers for some of the basic questions. I'll be
-writing followup posts on why I picked Linux this time and an abbreivated tutorial
+Hopefully this provides answers for some basic questions. I'll be
+writing followup posts on why I picked Linux this time and an abbreviated tutorial
 for installing Arch Linux.

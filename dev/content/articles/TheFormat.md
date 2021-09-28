@@ -4,7 +4,7 @@ Category:
 Tags: 
 Slug: TheBlogFormat
 Authors: Ravin Kumar
-Status: published
+Status: draft
 
 In this blog I will post every single data science question I've been asked
 during an interview, along with the context, and an in depth solution.
@@ -15,7 +15,7 @@ if the question was asked during a phone interview, ask your friend to call
 you, and work the solution over the phone with him or her.
 
 I also will be using questions I've found online on Glassdoor or other sites.
-If you have suggestions suggestions or comments  open
+If you have suggestions or comments  open
 Github issue to let me know! All code will also be posted on Github.
 
 

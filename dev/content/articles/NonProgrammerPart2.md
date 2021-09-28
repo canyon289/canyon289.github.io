@@ -1,20 +1,17 @@
 Title: Programming as a Non Programmer - Part 2
 Date: 2017-01-16
 Category: Programming 
-Tags: 
-Slug: NonProgrammerP2
+Tags: Programming
+Slug: NonProgrammerPart2
 Authors: Ravin Kumar
-Status: published
+Status: Published
 
 This is Part 2 in a series about how learning how to program could affect
-your career and some of the experiences I've had with programming in mine
+your career and the experiences I've had with programming in mine.
 
 * [Intent of series and introduction]({filename}NonProgrammer.md)
 * What Programming as a Non Programmer means
-* Why Programming as a Non Programmer  could be helpful for your life and career
-* Why Programming as a Non Programmer could be bad for your life and career
-* My lessons and experiences writing code as a non programmer
-* Steps I'm taking in the future
+* Why not to be a programmer
 
 
 # What Programming without being a Programmer means
