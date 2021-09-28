@@ -1,7 +1,7 @@
 Title:  How positive outcomes are correlated with physical activity
 Date: 2021-06-07
 Category: Fitness
-Tags: 
+Tags: Fitness
 Slug: WhyFitness
 Authors: Ravin Kumar
 Status: Published 
@@ -30,7 +30,7 @@ I say this from experience.
 I went from being a skinny nerd an overweight nerd because I was "too career focused".
 I found myself in a situation where, frankly, life just "didn't feel great".  
 For many reasons I had to make a change, and after much concerted effort,
-I've been able to make meaningful progress so
+I've been able to make meaningful progress, so
 I want to definitively state *the benefits are greater in number and in magnitude than I ever expected*
 
 For one, for the first time ever I am not embarrassed about my appearance.
@@ -44,7 +44,7 @@ But aside from that I've discovered numerous benefits that I can apply in my kno
 Before that though, a disclaimer - I'm definitely not a medical professional.
 These observations are based on my own experience. 
 I am a professional statistician though and I can say that is not controlled study either;
-At best they it is a biased observational study with a sample of one - me.
+At best it is a biased observational study with a sample of one - me.
 However I feel like I *have* to share something,
 since I've gone from feeling pretty poorly each day and being warned about my weight by a doctor to feeling so much better.
 So I'm writing in that hope that it inspires someone to be a better version of themselves. 
@@ -118,7 +118,7 @@ but then it takes longer for results to appear.
 Bottom line, a level of dedication and patience is essential..
 
 ### It's harder at the beginning
-All of the above is compounded at the start, when you are not getting any of the benefits,
+All the above is compounded at the start, when you are not getting any of the benefits,
 but you're definitely paying the upfront costs of all the planning, confusion, and lack of experience. 
 Like anything changing your lifestyle is a learned skilled and it takes time
 to figure everything out before it becomes second nature. 

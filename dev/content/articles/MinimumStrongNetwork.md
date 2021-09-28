@@ -1,7 +1,7 @@
-Title: Q: Minimum Strongly Connected Network
+Title: Interview Question: Minimum Strongly Connected Network
 Date: 2016-5-22
-Category: Question
-Tags: Programming
+Category: Interview
+Tags: Intervi
 Slug: MinStrongNetwork
 Authors: Ravin Kumar
 Javascripts: https://d3js.org/d3.v3.min.js, min_max_generator.js, min_max_vis_nonforce.js
@@ -53,10 +53,10 @@ If we needed to construct a graph of 4 nodes and 4 edges it could look like this
   
 <div id="wronglyconnectedgraph"></div>  
 
-However this solution is suboptimal. We can see that there are 3 strongly
+However, this solution is suboptimal. We can see that there are 3 strongly
 connected groups of 2 and 1 strongly connected group of three.  
 
-Instead if we place 4 edges like this, the largest connected
+Instead, if we place 4 edges like this, the largest connected
 group is 2 even though the number of edges and nodes are the same.
 <div id="betterconnectedgraph"></div>  
 
@@ -68,13 +68,13 @@ are placed to connect the nodes "around the edges".
 Up until this point the minimum strongly connected network size is 2. In code this is done by connecting
 the N index node with the N+1 index node.
 
-After this the we can continue by connecting the N index node with the N + 3
+After this we can continue by connecting the N index node with the N + 3
 indexed node. We do this because if we connected the N node with the N+2 node
 at this point we would end up with a strongly connected group of 3. Connecting
 the N indexed node with the N+3 indexed node we can continue placing edges
 while maintaining a strongly connected group of 2.
 
-Eventually it becomes the case that adding more edges will created strongly
+Eventually it becomes the case that adding more edges will create strongly
 connected groups of three but the above algorithm avoids this case as
 long as possible.
 

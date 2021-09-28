@@ -1,7 +1,7 @@
 Title: Double Data Joins
 Date: 2016-11-21 
-Category: D3 
-Tags: Software, Visualization
+Category: Visualization
+Tags: Visualization
 Slug: DoubleDataJoin 
 Authors: Ravin Kumar
 Javascripts: d3.v4.js, doubledatajoin.js
@@ -49,8 +49,8 @@ d3.select("#button")
 By using two data joins we can add the corresponding adjectives to into the 
 dom where it makes sense. The above example is quite trivial but where this
 can become extremely useful is nested groups. By being able to create
-hierarchial groups like this it becomes easy to transform, hide, and modify
+hierarchical groups like this it becomes easy to transform, hide, and modify
 like groups of elements. If you want an example of this feel free to contact me
-and I can add one to this post. Otherwise I hope you see the power of this
+and I can add one to this post. Otherwise, I hope you see the power of this
 and just how powerful combining concepts in D3 can be.
 

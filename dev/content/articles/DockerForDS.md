@@ -1,7 +1,7 @@
 Title: Better Data Science CI with Docker
 Date: 2019-01-20
-Category: Programming, MachineLearning
-Tags: 
+Category: DataScience
+Tags: Deployment, DataScience
 Slug: DockerforDS
 Authors: Ravin Kumar
 Status: Published
@@ -10,8 +10,8 @@ Status: Published
 Know the feeling when you use a tool that "just works"? instead of feeling
 like you're wasting time and growing frustrated, you end up being more productive?  
 
-For Bayesian practioners, one such tool is ArviZ.
-This Python package allows users to performed detailed exploratory analyses
+For Bayesian practitioners, one such tool is ArviZ.
+This Python package allows users to perform detailed exploratory analyses
 of Bayesian models. Bayesian practitioners should be able to use their inference library of choice,
 and be able to visualize their results, with no pain and no time taken away
 from the real work-interpreting results.
@@ -84,7 +84,7 @@ The first line is the base image.
 FROM conda/miniconda3
 ```
 It's typically recommended to start with a minimal image, like
-alpine. However at ArviZ we found it much simpler to start with an environment
+alpine. However, at ArviZ we found it much simpler to start with an environment
 that already had some things set up, and just work from there. This means
 the image isn't as minimal as it could be, but we're not shipping containers
 "at scale" so this tradeoff was worth it.  
@@ -172,7 +172,7 @@ generate documentation, or whatever else you'd need.
 ### Step 3: Fix any integrations that may have broken
 One downside of testing in a container is that isolation is great,
 until it isn't. We found that some of the tooling that integrates with
-TravisCI, such as travis-sphinx, and coveralls, no longer worked.
+TravisCI no longer worked , such as travis-sphinx, and coveralls, 
 
 The trick here was to generate the documentation and coverage files in
 the container, but ensure they were available in the TravisCI environment

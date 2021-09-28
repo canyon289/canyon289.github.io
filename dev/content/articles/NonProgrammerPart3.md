@@ -1,7 +1,7 @@
 Title: Programming as a Non Programmer - Part 3
 Date: 2017-01-23
 Category: Programming 
-Tags: 
+Tags: Programming
 Slug: NonProgrammerP3
 Authors: Ravin Kumar
 Status: published
@@ -11,10 +11,7 @@ your career and some of the experiences I've had with programming in mine
 
 * [Intent of series and introduction]({filename}NonProgrammer.md)
 * [What Programming as a Non Programmer means]({filename}NonProgrammerPart2.md)
-* Why Programming as a Non Programmer could be bad for your life and career
-* Why Programming as a Non Programmer could be helpful for your life and career
-* My lessons and experiences writing code as a non programmer
-* Steps I'm taking in the future
+* Why not to be a programmer
 
 
 # Why you shouldn't learn to program
@@ -22,10 +19,10 @@ your career and some of the experiences I've had with programming in mine
 shows hundreds of sites that proclaim you should learn how to program.
 I've personally doubled my salary learning how to program and it was a strong
 factor in SpaceX deciding to hire me. However this does not mean you should 
-learn to program and there are many cases in which I have recomended that people
+learn to program and there are many cases in which I have recommended that people
 don't learn programming.  
 
-Some reasons that I read or I hear usually follow along the lines of  
+Some reasons that I read, or I hear, usually follows the lines of  
 
 1. Programming is a hot skill
 2. Programmers make more money
@@ -35,14 +32,14 @@ Some reasons that I read or I hear usually follow along the lines of
 6. Founder XYZ of startup ABC made a billion dollars programming
 7. ["If you're an English Major ... or didn't go to college .. or were raised by Wolves"](https://www.forbes.com/sites/laurencebradford/2016/06/20/why-every-millennial-should-learn-some-code/2/#)
 
-These pitches are echoed all over the place, even literally from Forbes.
+These pitches are echoed all over the place, even from Forbes magazine.
 A lot of times it's accompanied by
 a pitch to then pay money for a bootcamp class, or book, or subscription
 to an ad sponsored email list. In these cases there's a clear reason why
 you're told to program, so someone else can earn money.
 
-This is not to say there aren't alturistic people teaching you how to program.
-There are plenty of well meaning people that also give the same advice,
+This is not to say there aren't altruistic people teaching you how to program.
+There are plenty of well-meaning people that also give the same advice,
 but again I strongly believe this advice does not universally apply.
 
 # Debunking the reasons
@@ -79,7 +76,7 @@ This one bothers me the most because implies programming is a superior
 skillset to whatever a person already knows. I feel like approach
 is largely negative, and even if it were true, is not a good way to convince 
 people to program. I feel that people should be interested in an activity
-for it's merits, rather than being scared into it by being told that 
+for its merits, rather than being scared into it by being told that 
 their previous choices were largely mistakes.
 
 # Past the flashy titles

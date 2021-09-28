@@ -1,7 +1,7 @@
 Title: Implementing Zoom in D3 4.0 
 Date: 2016-8-27
-Category: 
-Tags: HowTo 
+Category: Visualization
+Tags: Visualization 
 Slug: ImplementingD3Zoom 
 Authors: Ravin Kumar
 Javascripts: https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js, D3Zoom.js

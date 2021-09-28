@@ -1,7 +1,7 @@
 Title: Clip Paths and Transforms
 Date: 2016-10-09 10:20
-Category: D3 
-Tags: Software, Visualization
+Category: Visualization
+Tags: Visualization
 Slug: clippaths 
 Authors: Ravin Kumar
 Javascripts: https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js, unclipped.js, clippath_groups.js, clippath.js

@@ -1,7 +1,7 @@
 Title: Programming as a Non Programmer - Part 1
 Date: 2017-01-09
 Category: Programming 
-Tags: 
+Tags: Programming
 Slug: NonProgrammerP1
 Authors: Ravin Kumar
 Status: published
@@ -12,9 +12,6 @@ your career and some of the experiences I've had with programming in mine
 * Intent of series and introduction
 * What Programming as a Non Programmer means
 * Why Programming could be beneficial for your life and career
-* Why Programming could be detrimental for your life and career
-* My lessons and experiences writing code as a non programmer
-* Steps I'm taking in the future
 
 # An Introduction
 Whether you [should](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=you%20should%20learn%20to%20code), 
