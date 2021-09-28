@@ -5,7 +5,7 @@ Tags: LearningReferenceSheets
 Slug: NowAvailableReferenceSheets
 Authors: Ravin Kumar
 Javascripts: 
-Status: published
+Status: Published
 
 When learning new material I find it challenging immediately recall all
 the nuances of a particular term. As a learning strategy I frequently
@@ -15,7 +15,7 @@ for others to use as well.
 
 You can find them in on the blog sidebar under the *References* section.
 
-For now it contains a Bayesian Glossary, a quick refernece for common terms
+For now it contains a Bayesian Glossary, a quick reference for common terms
 used Bayesian statistics conversation. Coming soon will be a Bayesian Inference
 methods cheatsheet, and a Tensorflow cheatsheet as well. Feel free
 to contact me if you have a specific request. And happy learning!

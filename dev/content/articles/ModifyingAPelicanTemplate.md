@@ -6,7 +6,7 @@ Slug: ModifyingATemplate
 Authors: Ravin Kumar
 Javascripts: 
 Stylesheets: 
-Status: published 
+Status: Published 
 
 After deciding to use a [Statically Generated Site]({filename}WhyIChoseASSG.md)
 I needed to pick a template. Trouble was that I had already found a template for

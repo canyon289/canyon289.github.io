@@ -7,4 +7,3 @@ sys.path.append('.')
 from pelicanconf import *
 
 RELATIVE_URLS = True
-DELETE_OUTPUT_DIRECTORY = True

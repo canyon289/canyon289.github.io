@@ -1,5 +1,7 @@
 Title: Bayesian Decision Making 
-Date: 2019-01-14 
+Date: 2019-01-14
+Category: Statistics
+Tags: Bayes, Manufacturing
 Slug: BayesianDecisionMaking
 Authors: Ravin Kumar
 Status: Published

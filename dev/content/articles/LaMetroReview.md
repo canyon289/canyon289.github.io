@@ -1,7 +1,7 @@
 Title: A review of the Los Angeles Metro
-Date: 2017-3-8
+Date: 2017-03-08
 Category: General 
-Tags: 
+Tags: General
 Slug: LAMetro
 Authors: Ravin Kumar
 Javascripts: 
@@ -23,7 +23,7 @@ my mentality earlier
 Admittedly Los Angeles is a very expansive city, and with that comes
 longer times either by car or by public transportation. But the Metro does a good
 job of covering all areas of the city. Instead of sitting in traffic now I'm
-able read, or write this blog post for example. 
+able to read, or write this blog post for example. 
 
 ## The good
 The things I like about the LA Metro is that  
@@ -35,7 +35,7 @@ and related car expenses
 * Means I don't have to find and pay for parking when I go to Downtown LA or Santa Monica
 * I don't have to worry about the risks of driving, such as nodding off, DUIs, or other drivers  
 
-In general I can take the time to relax rather than fight my way through traffic
+In general, I can take the time to relax rather than fight my way through traffic
 and at the end of my journey I don't have to worry about where to leave my car,
 something that can be quite expensive. Overall I can get from Long Beach
 to Downtown in LA in the same time, with less stress, and at a tenth of the cost.
@@ -45,7 +45,7 @@ The things I dislike about the LA metro are
 
 * It sometimes has very long delays
 * It directly go to certain places, meaning you have to zig zag across LA sometimes`
-* At night I still feel unsafe using it in certain areas
+* At night, I still feel unsafe using it in certain areas
 * Some of the people are unscrupulous unfortunately  
 
 On the flip side the Metro is not optimized for your specific trip. Getting

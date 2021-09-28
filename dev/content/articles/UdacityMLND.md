@@ -1,10 +1,10 @@
 Title: A review of Udacity's Machine Learning Nanodegree
 Date: 2018-01-04
-Category: Programming, MachineLearning
-Tags: 
+Category: Programming
+Tags: Programming, Learning
 Slug: UdacityMLND
 Authors: Ravin Kumar
-Status: published 
+Status: Published 
 
 
 I recently finished the Udacity Machine Learning Nanodegree and wanted to share
@@ -17,7 +17,7 @@ of machine learning curriculum.
 
 # The rundown
 The Machine Learning Nanodegree is formatted in the previous style of Udacity
-nanodegrees where you're charged $200 dollars a month until all seven projects
+nanodegrees where you're charged 200 dollars a month until all seven projects
 are completed. The projects themselves range in complexity, starting from
 a basic linear regression, to clustering, to more challenging ones
 such as a reinforcement learning implementation, and a CNN implementation.  
@@ -27,7 +27,7 @@ a machine learning project on any dataset of your choosing.
 
 Overall I found the Machine Learning Nanodegree to be pretty comprehensive.
 Nearly all machine learning topics were covered. Expect this Nanodegree
-to take quite a bit of time, its challenging from both a code perspective
+to take quite a bit of time, it's challenging from both a code perspective
 and from a mathematical understanding perspective. The knocks I have 
 against the program are the level of hand holding, sometimes a bit too much
 code is implemented for you, and if you're lazy you can get away with just

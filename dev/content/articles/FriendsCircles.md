@@ -1,7 +1,7 @@
-Title: Q: Friend Circles
-Date: 2016-4-23 10:20
-Category:
-Tags: 
+Title: Interview Question: Friend Circles
+Date: 2016-4-23
+Category: Interview
+Tags: Visualization, Algorithms, Interview
 Slug: FriendsCircles
 Authors: Ravin Kumar
 javascripts: https://d3js.org/d3.v3.min.js, friends.js, friends_vis.js
@@ -43,8 +43,7 @@ given after passing multiple choice statistics question
 When I saw this question I made a critical error
 in my initial understanding of what a friends circle meant.
 
-I was able to make the first key insight which is that
-that the friends and relationships are a structure called
+I was able to make the first key insight which is that the friends and relationships are a structure called
 Network Graph. The problem is asking to find the number
 of unique relationships that span friends. I first
 ran into my first issue here.
@@ -71,8 +70,8 @@ and ran out of time
 ##The Solution
 It was misleading that the problem was titled Friends Circles
 because the problem is actually asking how many people
- are connected through their friends and their 
-friends friends. In math terms it's asking how many groups
+are connected through their friends and their 
+friends. In math terms it's asking how many groups
 of nodes are connected by their edges.  
   
 Given this understanding the problem is extremely simple.
@@ -137,14 +136,14 @@ The algorithm works initially picking a node. It then traverses the tree
 to find all others nodes (friends) that are connected with the initial node.
 When it exhausts all friends in the chain it tries the next node.
 
-In particular is the the find_friends function. This is the workhouse
+In particular is the find_friends function. This is the workhouse
 of this implementation. It recursively finds the friends of the current node.
 The find_circles function mostly acts as an outer wrapper, storing the
 friends count and the visited list.
 
 The visited list is particularly important because it ensures two things.
 One is that we don't waste computational time finding all the friends of a 
-person we've already searched. Additionally it allows the find_friends
+person we've already searched. Additionally, it allows the find_friends
 function to terminate once all the visited friends in a tree have been found.
 
 ##Visualization
@@ -153,7 +152,7 @@ finds a tree it stays on it until there are no more nodes left.
 
 To make this visualization the algorithm was also reimplemented in javascript which
 you can find here. The visualization is possible due to the awesome
-d3 javascript library which will get a post of it's own in the future
+d3 javascript library which will get a post of its own in the future
 
 ###Click to start search
 <div id="vis"> </div>
