@@ -92,7 +92,7 @@ code {
     counter-increment: linecounter;
     padding-left: 1em;
     text-indent: -1em;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .highlight pre span.code-line:before {
     content: counter(linecounter);
