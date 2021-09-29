@@ -15,6 +15,7 @@ OUTPUT_PATH = '..'
 TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
+DEFAULT_DATE_FORMAT = "%b %d, %Y"
 
 THEME = "custom"
 

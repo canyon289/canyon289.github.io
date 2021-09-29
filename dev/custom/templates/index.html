@@ -22,6 +22,7 @@
 	</table>
 {% endblock %}
 
+{% block tagcss %}
 {% set COLORS = [
 	"#7c78c1",
 	"#78cad4",
@@ -34,7 +35,6 @@
 	"#b36764",
 	"#d3c875",
 ] %}
-{% block tagcss %}
 <style>
 	{% for tag, contents in tags %}
 		.blog-table-tag-{{ tag|lower }} {

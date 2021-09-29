@@ -1,8 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
-*,
-*::before,
-*::after {
+
+* {
     box-sizing: border-box;
 }
 
@@ -186,10 +185,12 @@ figure {
 }
 
 img {
-    vertical-align: middle;
     border-style: none;
     max-height: 100%;
     max-width: 100%;
+    /* display + margin allows images (in markdown) to be centered */
+    display: block;
+    margin: 0 auto;
 }
 
 svg {
@@ -9789,22 +9790,6 @@ a.text-dark:focus {
     color: #009999;
 }
 
-/* Literal.Number.Integer.Long */
-/* ul,
-ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-} */
-
-/* p {
-    font-family: "Open Sans", sans-serif, -apple-system;
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #383f45;
-    font-weight: 400;
-} */
-
 .page {
     display: flex;
     min-height: 100vh;
@@ -10571,5 +10556,12 @@ h1.page-title {
     color: #fff;
     padding: 0.1rem 0.5rem 0.1rem 0.5rem;
     text-align: center;
-    /* background-color: #000; Need JS */
+}
+
+button { 
+    background-color: #00524b;
+    color: #ffffff;
+    border: none;
+    border-radius: .2rem;
+    padding: .4rem;
 }

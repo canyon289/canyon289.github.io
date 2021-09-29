@@ -8,9 +8,9 @@ save_as: index.html
 
 I am a data scientist at Google where I use data to inform decisions, although all my opinions here are my own. I have previously worked at Sweetgreen, designing systems that would benefit team members and communities through sustainable and healthy food, and SpaceX, creating tools that would ultimately launch rocket ships. I feel fortunate to have worked with amazing teams throughout my career.
 
-There are 3 types of people I strive to be:
+There are 3 things I strive to be:
 
-1. An expert computational math
+1. An expert computational mathematician
 2. An effective community member and leader
 3. A knowledge contributor
 
