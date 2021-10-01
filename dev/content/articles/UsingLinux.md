@@ -1,7 +1,7 @@
 Title: Using Linux
 Date: 2016-11-27
-Category: General 
-Tags: General
+Category: Programming
+Tags: Programming
 Slug: UsingLinux
 Authors: Ravin Kumar
 Javascripts: 

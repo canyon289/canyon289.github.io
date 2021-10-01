@@ -1,6 +1,6 @@
 Title: D3 4.0 Zoom demystified
 Date: 2016-9-25
-Category: Visualization
+Category: Data Science
 Tags: Visualization
 Slug: D3ZoomDemystified 
 Authors: Ravin Kumar

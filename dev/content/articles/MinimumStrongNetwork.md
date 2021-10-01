@@ -1,7 +1,7 @@
 Title: Interview Question: Minimum Strongly Connected Network
 Date: 2016-5-22
-Category: Interview
-Tags: Intervi
+Category: Programming
+Tags: Interview
 Slug: MinStrongNetwork
 Authors: Ravin Kumar
 Javascripts: https://d3js.org/d3.v3.min.js, min_max_generator.js, min_max_vis_nonforce.js

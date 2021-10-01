@@ -1,7 +1,7 @@
 Title: Why Data Science
 Date: 2016-2-21 10:20
-Category: DataScience
-Tags: DataScience
+Category: Data Science
+Tags: Data Science
 Slug: WhyDS
 Authors: Ravin Kumar
 Status: published

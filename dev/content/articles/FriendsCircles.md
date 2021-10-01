@@ -1,6 +1,6 @@
 Title: Interview Question: Friend Circles
 Date: 2016-4-23
-Category: Interview
+Category: Programming
 Tags: Visualization, Algorithms, Interview
 Slug: FriendsCircles
 Authors: Ravin Kumar
