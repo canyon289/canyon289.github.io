@@ -1,6 +1,6 @@
 Title: Implementing Zoom in D3 4.0 
 Date: 2016-8-27
-Category: Visualization
+Category: Data Science
 Tags: Visualization 
 Slug: ImplementingD3Zoom 
 Authors: Ravin Kumar

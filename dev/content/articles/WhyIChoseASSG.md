@@ -1,7 +1,7 @@
 Title: Why a Statically Generated Site
 Date: 2016-7-10 
-Category: Tutorial
-Tags: Tutorial 
+Category: Programming
+Tags: Programming
 Slug: WhyIChoseaSSG 
 Authors: Ravin Kumar
 javascripts: 

@@ -1,7 +1,7 @@
 Title: My Guide on Data Science Programs
 Date: 2016-12-01
-Category: DataScience 
-Tags: DataScience, Education
+Category: Data Science 
+Tags: Education
 Slug: DSGuide 
 Authors: Ravin Kumar
 Status: published 

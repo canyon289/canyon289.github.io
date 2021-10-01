@@ -1,7 +1,7 @@
 Title:  How positive outcomes are correlated with physical activity
 Date: 2021-06-07
-Category: Fitness
-Tags: Fitness
+Category: Life
+Tags: Life
 Slug: WhyFitness
 Authors: Ravin Kumar
 Status: Published 

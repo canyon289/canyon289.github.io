@@ -4,7 +4,7 @@ Category: Programming
 Tags: Programming
 Slug: NonProgrammerP3
 Authors: Ravin Kumar
-Status: published
+Status: Published
 
 This is Part 3 in a series about how learning how to program could affect
 your career and some of the experiences I've had with programming in mine

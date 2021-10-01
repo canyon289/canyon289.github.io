@@ -1,7 +1,7 @@
 Title: A review of Udacity's Machine Learning Nanodegree
 Date: 2018-01-04
 Category: Programming
-Tags: Programming, Learning
+Tags: Programming, Education
 Slug: UdacityMLND
 Authors: Ravin Kumar
 Status: Published 

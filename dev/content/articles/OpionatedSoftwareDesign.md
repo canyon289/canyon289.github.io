@@ -1,7 +1,7 @@
 Title: Writing good software requires you to have an opinion
 Date: 2016-10-03 10:20
-Category: Software
-Tags: Software
+Category: Programming
+Tags: Programming
 Slug: OpinionatedSoftware 
 Authors: Ravin Kumar
 Status: Published

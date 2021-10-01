@@ -1,6 +1,6 @@
 Title: Clip Paths and Transforms
 Date: 2016-10-09 10:20
-Category: Visualization
+Category: Data Science
 Tags: Visualization
 Slug: clippaths 
 Authors: Ravin Kumar

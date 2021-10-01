@@ -1,7 +1,7 @@
 Title: A review of the Los Angeles Metro
 Date: 2017-03-08
-Category: General 
-Tags: General
+Category: Life
+Tags: Life
 Slug: LAMetro
 Authors: Ravin Kumar
 Javascripts: 

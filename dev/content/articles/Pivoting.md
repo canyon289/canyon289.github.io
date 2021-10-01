@@ -1,10 +1,10 @@
 Title: A Pivot
 Date: 2016-10-01 10:20
-Category: General
-Tags: General
+Category: Life
+Tags: Life
 Slug: APivot
 Authors: Ravin Kumar
-Status: published
+Status: Published
 
 Originally when I started this blog I was frustrated with the Data Science
 Interview process, having been in it for a number of months. However,
