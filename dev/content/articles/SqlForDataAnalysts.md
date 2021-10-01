@@ -1,7 +1,7 @@
 Title: SQL for Data Analysts
 Date: 2016-11-28
 Category: Programming 
-Tags: Data, SQL
+Tags: SQL
 Slug: SqlForDataAnalysts 
 Authors: Ravin Kumar
 Status: published

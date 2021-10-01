@@ -1,7 +1,7 @@
 Title: Faster blogging with Tmux
 Date: 2018-05-18
 Category: Programming 
-Tags: Programming, Tmux
+Tags: Programming, MLOps
 Slug: TmuxBlogging
 Authors: Ravin Kumar
 Status: published

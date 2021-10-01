@@ -1,7 +1,7 @@
 Title: A recommendation on Berkeley's Deep Reinforcement Learning Bootcamp
 Date: 2017-08-27
-Category: DataScience
-Tags: Education, DataScience
+Category: Data Science
+Tags: Education
 Slug:  DeepRLBootcamp
 Authors: Ravin Kumar
 Status: published 
