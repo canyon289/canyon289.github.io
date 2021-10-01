@@ -1,7 +1,7 @@
 Title: Better Data Science CI with Docker
 Date: 2019-01-20
-Category: DataScience
-Tags: Deployment, DataScience
+Category: Data Science
+Tags: MLOps
 Slug: DockerforDS
 Authors: Ravin Kumar
 Status: Published

@@ -1,7 +1,7 @@
 Title: Maintainable Machine Learning Code
 Date: 2017-11-26
-Category: Programming
-Tags: MachineLearning, Programming
+Category: Data Science
+Tags: MLOps
 Slug: ReuseableML
 Authors: Ravin Kumar
 Status: published 

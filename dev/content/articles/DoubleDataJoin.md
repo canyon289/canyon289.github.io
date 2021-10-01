@@ -1,7 +1,7 @@
 Title: Double Data Joins
 Date: 2016-11-21 
-Category: Visualization
-Tags: Visualization
+Category: Data Science
+Tags: Visualization, D3
 Slug: DoubleDataJoin 
 Authors: Ravin Kumar
 Javascripts: d3.v4.js, doubledatajoin.js

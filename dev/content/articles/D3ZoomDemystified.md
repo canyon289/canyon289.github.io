@@ -1,7 +1,7 @@
 Title: D3 4.0 Zoom demystified
 Date: 2016-9-25
-Category: Visualization
-Tags: Visualization
+Category: Data Science
+Tags: Visualization, D3
 Slug: D3ZoomDemystified 
 Authors: Ravin Kumar
 Javascripts: https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js, D3Zoom.js

@@ -1,7 +1,7 @@
 Title: SVG Rotation and Reusability
 Date: 2016-10-15 10:20
-Category: SVG 
-Tags: Software, Visualization
+Category: Programming
+Tags: Visualization
 Slug: RotationAndReusability 
 Authors: Ravin Kumar
 Javascripts: https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js 

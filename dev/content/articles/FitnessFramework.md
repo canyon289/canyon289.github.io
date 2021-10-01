@@ -1,6 +1,6 @@
 Title: A Fitness Progression Mindset for Desk Workers
 Date: 2021-06-07
-Category: Fitness
+Category: Life
 Tags: Fitness
 Slug: HealthFramework
 Authors: Ravin Kumar

@@ -1,9 +1,7 @@
 Title: Coding Confusion
 Date: 2018-03-12
 Category: Programming
-Category: Visualization
 Tags: Visualization
-Tags: Programming
 Slug: CodingConfusion
 Authors: Ravin Kumar
 Status: Published 

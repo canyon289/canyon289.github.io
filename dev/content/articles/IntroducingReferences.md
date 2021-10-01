@@ -1,7 +1,7 @@
 Title: Now Available: Reference Sheets
 Date: 2019-01-26
-Category: General 
-Tags: LearningReferenceSheets 
+Category: Programming
+Tags: Education, Cheat Sheet
 Slug: NowAvailableReferenceSheets
 Authors: Ravin Kumar
 Javascripts: 

@@ -1,6 +1,6 @@
 Title: Modifying a Pelican Template 
 Date: 2016-7-10 
-Category: 
+Category: Programming
 Tags: Tutorial 
 Slug: ModifyingATemplate 
 Authors: Ravin Kumar
