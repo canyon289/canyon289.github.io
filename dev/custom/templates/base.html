@@ -26,10 +26,6 @@
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/svgstyles.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
-		{% block tagcss %}
-		{% endblock %}
 
         <!-- CSS for Pelican Javascript plugin -->
         {% if article %}
@@ -60,14 +56,15 @@
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
 					{% if article or category %}
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 								{% include 'fragments/sidebar.html' %}
 							</div>
 						</div>
 					{% endif %}
-					<div class="col-12 {% if article or category %}col-md-9{% endif %}">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 						{% block content %}
 						{% endblock %}
 					</div> 

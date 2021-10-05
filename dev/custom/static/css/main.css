@@ -9907,7 +9907,7 @@ a.text-dark:focus {
     }
 }
 .sub-footer {
-    background: #f4f5fb;
+    background: linear-gradient(to right, #8cccb2, #fff); /* #f4f5fb */
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -9921,21 +9921,21 @@ a.text-dark:focus {
     display: flex;
     flex-direction: column;
 }
-.sub-footer-inner-left, .sub-footer-inner-right {
-    width: 50%;
-}
-.sub-footer-inner-left li {
-    float: left;
-}
-.sub-footer-inner-right li {
-    float: right;
-}
 @media (min-width: 768px) {
     .sub-footer .sub-footer-inner {
         flex-direction: row;
     }
     .sub-footer .sub-footer-inner-left {
         flex-direction: column;
+    }
+    .sub-footer-inner-left, .sub-footer-inner-right {
+        width: 50%;
+    }
+    .sub-footer-inner-left li {
+        float: left;
+    }
+    .sub-footer-inner-right li {
+        float: right;
     }
 }
 .sub-footer .sub-footer-inner ul {
@@ -10540,22 +10540,52 @@ h1.page-title {
     width: 100%;
 }
 
-.blog-table td{
+.blog-table td {
     vertical-align: top;
     padding-top: 0.2rem;
 }
 
 .blog-table-right {
     text-align: right;
+    display: none;
 }
-
-.blog-table-tag {
-	height: 1rem;
-	border-radius: 0.3rem;
+.blog-table-mobile-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+}
+.blog-table-mobile-date {
+    max-width: 110px;
     font-size: 0.7rem;
-    color: #fff;
+}
+@media (min-width: 992px) {
+    .blog-table-right {
+        text-align: right;
+        display: table-cell;
+    }
+    .blog-table-mobile-container,
+    .blog-table-mobile-date {
+        display: none;
+    }
+}
+.blog-table-tag {
+    background-color: #f4f5fb;
+	height: 1rem;
+	border-radius: 0.2rem;
+    font-size: 0.7rem;
     padding: 0.1rem 0.5rem 0.1rem 0.5rem;
     text-align: center;
+    margin-left: 0.2rem;
+}
+
+.blog-table-tag:hover {
+    background-color: #ced3d1;
+}
+
+.blog-table-tag a {
+    color: #12221d;
+    text-decoration: none;
 }
 
 button { 
@@ -10564,4 +10594,21 @@ button {
     border: none;
     border-radius: .2rem;
     padding: .4rem;
+}
+
+.sidebar {
+    margin-bottom: 3rem;
+    color: #bebebe;
+}
+
+.sidebar ul li a {
+    color: #bebebe;
+}
+
+.sidebar-category {
+    float: left;
+}
+
+.sidebar-category span {
+    padding-right: 2rem;
 }
