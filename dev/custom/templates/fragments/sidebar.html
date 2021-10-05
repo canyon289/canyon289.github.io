@@ -1,8 +1,8 @@
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
+  <ul class="sidebar">
     {% for cat, articles in categories|sort %}
-    <li class="{% if (article and article.category == cat) or (category and cat == category) %}active {% endif %}">
+    <li class="sidebar-category {% if (article and article.category == cat) or (category and cat == category) %}active {% endif %}">
         <a href="{{ SITEURL }}/{{ cat.url }}">
             <span>{{ cat }}</span>
         </a>

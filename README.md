@@ -54,4 +54,3 @@ You can add the following metadata (and more) to your markdown files, but the cu
 # Other Notes
 
 * Do some checks when installing new Plugins. Sometimes the CSS for the new plugin will override/conflict with the main CSS.
-* Clear your public folder everytime Pelican builds the website. Pelican only writes files, so if you delete/rename a markdown, it will not know to remove the stale HTML.
