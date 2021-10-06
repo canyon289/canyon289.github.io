@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,63 +145,44 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category active ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="active ">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">Better Data Science CI with Docker</h1>
-	<p class="post-date">Sun 20 January 2019</p>
+	<p class="post-date">Jan 20, 2019</p>
 	<p>Know the feeling when you use a tool that "just works"? instead of feeling
 like you're wasting time and growing frustrated, you end up being more productive?  </p>
-<p>For Bayesian practioners, one such tool is ArviZ.
-This Python package allows users to performed detailed exploratory analyses
+<p>For Bayesian practitioners, one such tool is ArviZ.
+This Python package allows users to perform detailed exploratory analyses
 of Bayesian models. Bayesian practitioners should be able to use their inference library of choice,
 and be able to visualize their results, with no pain and no time taken away
 from the real work-interpreting results.</p>
@@ -259,29 +238,29 @@ and test your code, and ideally to be as minimal as possible. We'll use the
 <a href="https://github.com/arviz-devs/arviz/blob/master/scripts/Dockerfile">ArviZ dockerfile</a>
 as an example.</p>
 <p>The first line is the base image.</p>
-<div class="highlight"><pre><span class="code-line"><span></span>FROM conda/miniconda3</span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">FROM</span> <span class="n">conda</span><span class="o">/</span><span class="n">miniconda3</span></span>
 </pre></div>
 
 
 <p>It's typically recommended to start with a minimal image, like
-alpine. However at ArviZ we found it much simpler to start with an environment
+alpine. However, at ArviZ we found it much simpler to start with an environment
 that already had some things set up, and just work from there. This means
 the image isn't as minimal as it could be, but we're not shipping containers
 "at scale" so this tradeoff was worth it.  </p>
 <p>Next, we setup arguments and environmental variables</p>
-<div class="highlight"><pre><span class="code-line"><span></span>ARG SRC_DIR</span>
-<span class="code-line">ARG PYTHON_VERSION</span>
-<span class="code-line">ARG PYSTAN_VERSION</span>
-<span class="code-line">ARG PYRO_VERSION</span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="nv">ARG</span> <span class="nv">SRC_DIR</span></span>
+<span class="code-line"><span class="nv">ARG</span> <span class="nv">PYTHON_VERSION</span></span>
+<span class="code-line"><span class="nv">ARG</span> <span class="nv">PYSTAN_VERSION</span></span>
+<span class="code-line"><span class="nv">ARG</span> <span class="nv">PYRO_VERSION</span></span>
 <span class="code-line"></span>
-<span class="code-line">ENV PYTHON_VERSION=<span class="cp">${</span><span class="n">PYTHON_VERSION</span><span class="cp">}</span></span>
-<span class="code-line">ENV PYSTAN_VERSION=<span class="cp">${</span><span class="n">PYSTAN_VERSION</span><span class="cp">}</span></span>
-<span class="code-line">ENV PYRO_VERSION=<span class="cp">${</span><span class="n">PYRO_VERSION</span><span class="cp">}</span></span>
-<span class="code-line">ENV DOCKER_BUILD=true</span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">PYTHON_VERSION</span><span class="o">=</span>${<span class="nv">PYTHON_VERSION</span>}</span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">PYSTAN_VERSION</span><span class="o">=</span>${<span class="nv">PYSTAN_VERSION</span>}</span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">PYRO_VERSION</span><span class="o">=</span>${<span class="nv">PYRO_VERSION</span>}</span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">DOCKER_BUILD</span><span class="o">=</span><span class="nv">true</span></span>
 <span class="code-line"></span>
-<span class="code-line"># For Sphinx documentation builds</span>
-<span class="code-line">ENV LC_ALL=C.UTF-8</span>
-<span class="code-line">ENV LANG=C.UTF-8</span>
+<span class="code-line"># <span class="k">For</span> <span class="nv">Sphinx</span> <span class="nv">documentation</span> <span class="nv">builds</span></span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">LC_ALL</span><span class="o">=</span><span class="nv">C</span>.<span class="nv">UTF</span><span class="o">-</span><span class="mi">8</span></span>
+<span class="code-line"><span class="nv">ENV</span> <span class="nv">LANG</span><span class="o">=</span><span class="nv">C</span>.<span class="nv">UTF</span><span class="o">-</span><span class="mi">8</span></span>
 </pre></div>
 
 
@@ -290,18 +269,18 @@ in each image. For ArviZ we test against different versions of libraries
 and we didn't want to create a dockerfile for each. By setting the 
 ENV variables here through command line arguments we afford some flexibility</p>
 <p>After this, we actually start installing things</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="n">RUN</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">git</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">pandoc</span> \</span>
-<span class="code-line">    <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="o">/*</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="n">RUN</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="k">update</span> <span class="o">&amp;&amp;</span> <span class="n">apt</span><span class="o">-</span><span class="k">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">git</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">pandoc</span> <span class="err">\</span></span>
+<span class="code-line">    <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="cm">/*</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="c1"># Copy requirements and environment installation scripts</span></span>
-<span class="code-line"><span class="n">COPY</span> <span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>  <span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span></span>
-<span class="code-line"><span class="n">COPY</span> <span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">requirements</span><span class="o">-</span><span class="n">dev</span><span class="o">.</span><span class="n">txt</span>  <span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span></span>
-<span class="code-line"><span class="n">COPY</span> <span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span> <span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">scripts</span></span>
+<span class="code-line"><span class="cm"># Copy requirements and environment installation scripts</span></span>
+<span class="code-line"><span class="cm">COPY $SRC_DIR/requirements.txt  opt/arviz/</span></span>
+<span class="code-line"><span class="cm">COPY $SRC_DIR/requirements-dev.txt  opt/arviz/</span></span>
+<span class="code-line"><span class="cm">COPY $SRC_DIR/scripts/ opt/arviz/scripts</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="n">WORKDIR</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span></span>
+<span class="code-line"><span class="cm">WORKDIR /opt/arviz</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="c1"># Create conda environment. Defaults to Python 3.6</span></span>
-<span class="code-line"><span class="n">RUN</span> <span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">create_testenv</span><span class="o">.</span><span class="n">sh</span></span>
+<span class="code-line"><span class="cm"># Create conda environment. Defaults to Python 3.6</span></span>
+<span class="code-line"><span class="cm">RUN ./scripts/create_testenv.sh</span></span>
 </pre></div>
 
 
@@ -311,7 +290,7 @@ and the rest are in the Python environment. We choose to have a separate
 of Docker.</p>
 <p>The next section of the file copies the ArviZ code base and
 removes any cached files.</p>
-<div class="highlight"><pre><span class="code-line"><span></span>COPY $SRC_DIR /opt/arviz</span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">COPY</span> <span class="err">$</span><span class="n">SRC_DIR</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span></span>
 </pre></div>
 
 
@@ -341,7 +320,7 @@ generate documentation, or whatever else you'd need.</p>
 <h3 id="step-3-fix-any-integrations-that-may-have-broken">Step 3: Fix any integrations that may have broken</h3>
 <p>One downside of testing in a container is that isolation is great,
 until it isn't. We found that some of the tooling that integrates with
-TravisCI, such as travis-sphinx, and coveralls, no longer worked.</p>
+TravisCI no longer worked , such as travis-sphinx, and coveralls, </p>
 <p>The trick here was to generate the documentation and coverage files in
 the container, but ensure they were available in the TravisCI environment
 by using a bind mount. An example can be found in 

@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,59 +145,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category active ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="active ">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">SVG Rotation and Reusability</h1>
-	<p class="post-date">Sat 15 October 2016</p>
+	<p class="post-date">Oct 15, 2016</p>
 	<p>SVGs aren't always the most straightforward to work it and also are deceptively
 simple but as you'll get more familiar with the API you'll be able to
 combine SVG "methods" to more easily get what you need.<br>
@@ -222,7 +201,7 @@ or completion times of important events.
 <h1 id="creating-a-diamond">Creating a diamond</h1>
 <p>SVG supports a number of 
 <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes">basic shapes</a>
-Rectangles are oneof these and creating one just requires easily understood parameters
+Rectangles are one of these and creating one just requires easily understood parameters
 such as x,y location of te top left corner and width and height.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="nt">&lt;svg&gt;</span></span>
 <span class="code-line">  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;10&quot;</span> <span class="na">y=</span><span class="s">&quot;10&quot;</span> <span class="na">height=</span><span class="s">&quot;20&quot;</span> <span class="na">width=</span><span class="s">&quot;40&quot;</span><span class="nt">/&gt;</span></span>
@@ -240,11 +219,11 @@ Seemingly unspectacular but actually pretty cool for only 4 lines of code.<br>
 </svg></p>
 <p>Our next challenge is representing a diamond. There is no basic shape for a
 diamond in the SVG library. Given that we can't just "tell" the renderer
-to draw a diamond we could instead manually "draw" the lines like this</p>
+to draw a diamond we could instead manually "draw" the lines like this.  </p>
 <p><svg width=100 height=100>
   <path d="M50 15 L15 50 L50 85 L85 50 Z"></path>
-</svg>
-But this feels like a bit much, we really just want a diamond.</p>
+</svg></p>
+<p>But this feels like a bit much, we really just want a diamond.</p>
 <h1 id="rotation">Rotation</h1>
 <p>Taking a step back though if we think about it a diamond really is just 
 a rotated rectangle. Luckily there is a simple method to rotate elements in SVGs.</p>

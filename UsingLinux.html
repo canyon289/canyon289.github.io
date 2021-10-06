@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,59 +145,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="active ">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category active ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">Using Linux</h1>
-	<p class="post-date">Sun 27 November 2016</p>
+	<p class="post-date">Nov 27, 2016</p>
 	<p>Recently I decided to start using Linux again as a primary OS on my laptop. I'm
 doing this because I believe Linux is the best OS to solve my problems and 
 I'm committed on sticking with it this time. If you're deciding to do this I'll
@@ -234,12 +213,12 @@ familiar. Virtual Machines are helpful here as well so you can test
 many flavors without needing to go through the installation hassle. But don't
 spend too much time worrying about it, just get started.</p>
 <h2 id="dont-feel-like-you-cant-look-under-the-hood">Don't feel like you can't look under the hood</h2>
-<p>Windows and OSX are closed source and it's impossible and sometimes actively
+<p>Windows and OSX are closed source, and it's impossible and sometimes actively
 discouraged to figure out what the OS is doing. Linux is the complete
 opposite, as it's actively encouraged to learn the ins and outs. There's
 a lot to learn but there's a helpful community to guide you through it. </p>
 <h2 id="dual-booting-is-doable-but-adds-complexity">Dual booting is doable but adds complexity</h2>
-<p>A tempting option is to dual boot your computer so you can always switch back
+<p>A tempting option is to dual boot your computer, so you can always switch back
 to Windows with a quick reboot. This is certainly possible, and not difficult
 to setup, but if you're new to working with computers at this level it becomes
 all too easy to break things and subsequently difficult to repair. It's
@@ -252,11 +231,11 @@ will smooth the process.</p>
 Previously I needed programs like Solidworks to do my job. Even with 
 Wine things just didn't work well. Unfortunately this also meant that I would
 end up just spending more time with Windows and neglect Linux. The dual
-boot option works here but it does mean Linux will likely remain your
+boot option works here, but it does mean Linux will likely remain your
 secondary computer if you need Windows programs in your daily tasks.</p>
 <h1 id="get-started">Get started</h1>
-<p>Hopefully this provides answers for some of the basic questions. I'll be
-writing followup posts on why I picked Linux this time and an abbreivated tutorial
+<p>Hopefully this provides answers for some basic questions. I'll be
+writing followup posts on why I picked Linux this time and an abbreviated tutorial
 for installing Arch Linux.</p>
 
 					</div> 

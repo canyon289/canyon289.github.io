@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,59 +145,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category active ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="active ">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">A recommendation on Berkeley's Deep Reinforcement Learning Bootcamp</h1>
-	<p class="post-date">Sun 27 August 2017</p>
+	<p class="post-date">Aug 27, 2017</p>
 	<p>I just spent the weekend at the Berkeley Reinforcement Learning Bootcamp. 
 Overall I found it to be an intense but rewarding experience but also
 expensive if you're paying out of pocket.
@@ -230,8 +209,8 @@ through DQN, and then branched to focus on specific RL focus areas such
 as various types of Model Based Learning, Model Free Learning, Evolutionary
 methods, as well as lectures focused on general tips for learning how to learn
 Reinforcement Learning (say that three times fast). Overall the lectures
-were well structured, given by a variety of speakers, and very informative.
-However the target audience skillset varied greatly, the difficultly ranged  from 
+were wellrstructured, given by a variety of speakers, and very informative.
+However, the target audience skillset varied greatly, the difficultly ranged  from 
 basic to extremely intense (literally cutting edge) pretty fast.</p>
 <h2 id="labs">Labs</h2>
 <p>The labs were pretty basic, just implementations of Q and V learning, and
@@ -245,10 +224,10 @@ end of the pool, and wouldn't really be able to really utilize the specialized h
 people certainly made the bootcamp more fun.</p>
 <h1 id="so-if-im-paying-myself-is-it-worth-it">So If I'm paying myself is it worth it?</h1>
 <p>Well you'll definitely learn something, but "Is it worth it?" is a different question.
-If you're just starting out in RL then you'll really won't be able to grok
+If you're just starting out in RL then you really won't be able to grok
 most of the knowledge unfortunately. You'd be better off reading books and following
 tutorials online.  </p>
-<p>However if you have some experience and practice using RL you're in the 
+<p>However, if you have some experience and practice using RL you're in the 
 sweet spot, as the advanced topics will push your knowledge, and there are lots
 of friendly experts around to answer detailed questions.  </p>
 <h1 id="a-final-note">A Final Note</h1>

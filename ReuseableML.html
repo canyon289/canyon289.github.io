@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,59 +145,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category active ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="active ">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">Maintainable Machine Learning Code</h1>
-	<p class="post-date">Sun 26 November 2017</p>
+	<p class="post-date">Nov 26, 2017</p>
 	<p>Creating a machine learning pipeline requires almost no thought these days but 
 maintaining a reusable and understandable codebase the whole way
 through is much more challenging. However there are some steps and 
@@ -209,7 +188,7 @@ still relevant.</p>
 <p>Let's say you're starting out with Machine Learning and 
 <em>you need an immediate fix for a small problem, or a quick prototype or proof of concept</em>.
 Easy, below is a sample program to make predictions on the Iris dataset</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></span>
 <span class="code-line"><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span></span>
 <span class="code-line"><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span></span>
 <span class="code-line"><span class="n">iris_csv</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/&quot;</span></span>
@@ -303,7 +282,7 @@ that this set of code has no dependencies on other lines.</p>
 tests for your own code. There are many examples of 
 <a href="https://www.google.com/search?q=test+driven+development">test driven development</a>.
 However I also use tests to test my own understanding of how machine
-learning libraries work. By writing the following tests I can double check
+learning libraries work. By writing the following tests I can double-check
 my understanding of word lemmatizers and CountVectorizer in scikit-learn.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">test_lemmatization</span><span class="p">():</span></span>
 <span class="code-line">    <span class="sd">&quot;&quot;&quot;Test that Lemmatizer works&quot;&quot;&quot;</span></span>
@@ -342,7 +321,7 @@ scikit-learns transformers and predictors can use it. For these activities
 scikit-learn provides all the scaffolding you need 
 <a href="http://scikit-learn.org/stable/modules/classes.html#module-sklearn.base">in its base module</a>
 By utilizing these it keeps you within the pipeline framework which
-again makes it easy to use all the built in tools for experimentation.</p>
+again makes it easy to use all the built-in tools for experimentation.</p>
 <p>For example here is an implementation of a transformer I used in a Natural 
 Language Processing Problem that found word count and string length for a given string.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="k">class</span> <span class="nc">TextTransformer</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span></span>
@@ -364,7 +343,7 @@ Language Processing Problem that found word count and string length for a given 
 <span class="code-line">    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span></span>
 <span class="code-line">        <span class="sd">&quot;&quot;&quot;Accepts Pandas Series and returns back a dataframe where each column is a feature&quot;&quot;&quot;</span></span>
 <span class="code-line"></span>
-<span class="code-line">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">features</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span></span>
+<span class="code-line">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">features</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span></span>
 <span class="code-line">            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Features must be a list of features that will be used in this model&quot;</span><span class="p">)</span></span>
 <span class="code-line"></span>
 <span class="code-line">        <span class="n">features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span></span>

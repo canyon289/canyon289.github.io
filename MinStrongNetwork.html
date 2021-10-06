@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
                     <link rel="stylesheet" href="css/min_max_vis.css" type="text/css" />
@@ -148,59 +146,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category active ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="active ">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
-	<h1 class="page-title">Q: Minimum Strongly Connected Network</h1>
-	<p class="post-date">Sun 22 May 2016</p>
+	<h1 class="page-title">Interview Question: Minimum Strongly Connected Network</h1>
+	<p class="post-date">May 22, 2016</p>
 	<p>A group of software engineers want to develop an algorithm for finding strongly
 connected groups among members of a social networking site. A group of people
 are considered to be strongly connected if each person knows each other person
@@ -237,9 +216,9 @@ the sizes of the strongly connected groups, it's actually asking
 If we needed to construct a graph of 4 nodes and 4 edges it could look like this.</p>
 <div id="wronglyconnectedgraph"></div>
 
-<p>However this solution is suboptimal. We can see that there are 3 strongly
+<p>However, this solution is suboptimal. We can see that there are 3 strongly
 connected groups of 2 and 1 strongly connected group of three.  </p>
-<p>Instead if we place 4 edges like this, the largest connected
+<p>Instead, if we place 4 edges like this, the largest connected
 group is 2 even though the number of edges and nodes are the same.
 <div id="betterconnectedgraph"></div>  </p>
 <h2 id="experimental-solution">Experimental Solution</h2>
@@ -248,12 +227,12 @@ network possible. This can intuitively be done in stages. At first the edges
 are placed to connect the nodes "around the edges".
 Up until this point the minimum strongly connected network size is 2. In code this is done by connecting
 the N index node with the N+1 index node.</p>
-<p>After this the we can continue by connecting the N index node with the N + 3
+<p>After this we can continue by connecting the N index node with the N + 3
 indexed node. We do this because if we connected the N node with the N+2 node
 at this point we would end up with a strongly connected group of 3. Connecting
 the N indexed node with the N+3 indexed node we can continue placing edges
 while maintaining a strongly connected group of 2.</p>
-<p>Eventually it becomes the case that adding more edges will created strongly
+<p>Eventually it becomes the case that adding more edges will create strongly
 connected groups of three but the above algorithm avoids this case as
 long as possible.</p>
 <p>In words this is challenging to describe but the algorithm is quite visually

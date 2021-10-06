@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
                     <link rel="stylesheet" href="css/svgcenter.css" type="text/css" />
@@ -148,59 +146,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="active ">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category active ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">D3 4.0 Zoom demystified</h1>
-	<p class="post-date">Sun 25 September 2016</p>
+	<p class="post-date">Sep 25, 2016</p>
 	<p>In the <a href="./ImplementingD3Zoom.html">last post</a> we covered how to implement
 basic zoom and pan in a D3 svg with one line but also left ourselves with an example
 of an unexpected behavior.</p>
@@ -225,14 +204,14 @@ or visit this blog post by <a href="https://sarasoueidan.com/blog/svg-transforma
 <h2 id="what-are-dom-events-and-event-handlers">What are DOM Events and Event handlers?</h2>
 <p>We won't get too far into this one but take a moment to think about the mechanics
 of event handlers. If you're reading this blog you're likely aware that nothing
-is "magic" in programming, but instead a well structured set of rules has been implement</p>
+is "magic" in programming, but instead a well-structured set of rules has been implemented.</p>
 <p>In the case of zoom when the user clicks and drags an element, or a user scrolls
-their mousewheel, in d3 we see that the SVG correspondly reacts.</p>
+their mousewheel, in d3 we see that the SVG correspondingly reacts.</p>
 <p>Mozilla Foundation once again comes through and <a href="https://developer.mozilla.org/en-US/docs/Web/Events">lists nearly all</a>
 the event handlers available. For those paying close attention you'll notice zoom
 isn't listed, we'll cover that in a second.</p>
 <h2 id="how-does-d3-implement-zoom">How does D3 Implement Zoom</h2>
-<p>With an understanding how how SVGs work with zoom and with how browsers handle events
+<p>With an understanding how SVGs work with zoom and with how browsers handle events
 we can now focus on D3 itself.
 D3 implements zoom in two major piece, mostly encapsulated in two objects.
 There's the <strong>d3.zoom</strong> object, which creates a zoom behavior and applies
@@ -297,9 +276,9 @@ line, the one that "tells" d3 the initial state of the transform.  </p>
 <span class="code-line"><span class="kd">var</span> <span class="nx">initial_transform</span></span>
 <span class="code-line"><span class="kd">var</span> <span class="nx">g</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">margin</span> <span class="o">=</span> <span class="p">{</span><span class="nx">top</span><span class="o">:</span> <span class="mf">50</span><span class="p">,</span> <span class="nx">right</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">bottom</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">left</span><span class="o">:</span> <span class="mf">50</span><span class="p">};</span></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">width</span> <span class="o">=</span> <span class="mf">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mf">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">margin</span> <span class="o">=</span> <span class="p">{</span><span class="nx">top</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">right</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">bottom</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">left</span><span class="o">:</span> <span class="mi">50</span><span class="p">};</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">width</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="c1">//Create Initial Zoom Behavior</span></span>
 <span class="code-line"><span class="nx">zoom</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">()</span></span>
@@ -328,9 +307,9 @@ line, the one that "tells" d3 the initial state of the transform.  </p>
 <span class="code-line">  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">initial_transform</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;circle&quot;</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mf">0</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mf">0</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mf">10</span><span class="p">);</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="c1">//Set the zoom Behavior, use the one initialized above instead of creating a new one</span></span>
 <span class="code-line"><span class="nx">svg</span></span>

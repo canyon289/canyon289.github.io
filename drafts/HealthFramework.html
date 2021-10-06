@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="../theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="../theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,64 +145,45 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="../category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="../category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="../category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category active ">
+        <a href="../category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="active ">
-        <a href="../category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="../category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category ">
         <a href="../category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="../category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="../category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="../category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="../category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
-	<h1 class="page-title">A fitness progression mindset for desk workers</h1>
-	<p class="post-date">Mon 07 June 2021</p>
+	<h1 class="page-title">A Fitness Progression Mindset for Desk Workers</h1>
+	<p class="post-date">Jun 07, 2021</p>
 	<p>There was more interest and questions from my why fitness post 
 <a href="../WhyFitness.html">Why Fitness</a> than I had expected.
 The questions I received confirmed my own experience, there
-is a lot advice for fitness professions, random bits of advice, and
-clickbait. But and there isn't widely  available distilled advice on how to 
+is a lot of advice for fitness professions, random bits of advice, and
+clickbait. But there isn't widely  available distilled advice on how to 
 achieve "intermediate level" fitness as a knowledge worker. </p>
 <p>In a series of blog posts I will "open source" how I structured, tracked,
 and achieved my specific results. This first post will cover a more generic
@@ -221,27 +200,26 @@ lines of narratives of "diet, exercise and patience". </p>
 <p>Many folks are looking to reach a goal, such as lifting X amount of
 weight, looking a certain way,  or losing Y amount of kilos 
 If we break this down there are two typically are two key components, 
-promised either explicitly or impliciitly in many of these. 
+promised either explicitly or implicitly in many of these. 
 These an achievement level, and a timeframe. </p>
 <p>In the fitness industry a natural place for people to first look
 is at what professionals do because they want to "be like them"
 These are cross fit athletes, professional body builders or powerlifters or actors
 the ones that structure their entire life around their physical performance
 or aesthetic. These are folks that reached a specific <em>very high</em> achievement
-level because they needed to to be competitive. This could be lifting
+level because they needed to be competitive. This could be lifting
 a fixed amount of weight, reaching a certain look, etc.</p>
 <p>This is where you'll read things like eat six meals a day,
 or do a morning and night exercise session. It's often unclear however
 if this is what they needed to do to start making progress or what
-was needed to get the "extra edge" towards the the end. 
+was needed to get the "extra edge" towards the end. 
 These tips if implemented could be helpful, 
-but as someone that wants to keep their desk job 
-job its not feasible to do both,
+but as someone that wants to keep their desk job It's not feasible to do both,
 and therefore won't actually get you results.  It's worth noting
-here that their results reprsent both selection and survivorship bias
+here that their results represent both selection and survivors bias
 as well, we usually focus heavily on the winners of the winners. The ones
 that got the gold medals for instance, not even the other
-very successful atheletes that qualified.</p>
+very successful athletes that qualified.</p>
 <p>There's other frameworks that promise specific results within
 a fixed time period. Say 90 days to get abs or 30 days to lose 30 pounds
 of weight. Programs like these are tempting because they promise
@@ -249,7 +227,7 @@ specific results in a time bound but without knowing a starting point
 its impossible to know if this is achievable.</p>
 <h3 id="additional-noise">Additional Noise</h3>
 <p>There's also "fitness entertainment" and scams are very prevalent.
-Fitness entertaiment are things like Mens Health, 
+Fitness entertainment are things like Mens Health, 
 There is a sea of articles that provide random tips such as 
 "replace soda with water",i or "walking an hour burns calories". 
 These tips aren't very structured and its unclear
@@ -257,14 +235,14 @@ what effect they'll have towards moving you towards a goal
 Some of their tips probably work but the noise to signal
 ratio is high. 
 Their content structure
-is meant to be one that isn't optimized for getting you structured informationn
+is meant to be one that isn't optimized for getting you structured information
 but moreso be entertaining so you keep paying them, through either subscriptions
 or video views. </p>
 <p>What ends up happening is when people try and build plans around
 this content they have "fitness ADD" and keep switching things up based
 on the "hot tip" and never actually get anywhere, except frustrated with
 lack of progress. </p>
-<p>And lastly theres scams there's nothing surprising here, some
+<p>And lastly there's scams there's nothing surprising here, some
 people will <a href="https://www.youtube.com/watch?v=Qg84UW4F6r">lie to you to get your money</a>.</p>
 <h2 id="set-a-goal-track-relentlessly-focus-on-the-gradient-make-changes-as-needed">Set a goal, track relentlessly, focus on the gradient, make changes as needed</h2>
 <p>What I suggest instead is setting a general goal, finding a beginner program,

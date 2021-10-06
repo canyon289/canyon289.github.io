@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,59 +145,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="active ">
+    <li class="sidebar-category active ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">SQL for Data Analysts</h1>
-	<p class="post-date">Mon 28 November 2016</p>
+	<p class="post-date">Nov 28, 2016</p>
 	<p>SQL is a very extensive language but as a Data Analyst you don't have to know
 all the ins and outs to start doing useful work. Here's a list of SQL concepts
 and commands in a rough order of importance for Data Analysts. I'm basing this
@@ -209,7 +188,7 @@ but the general ideas and commands are present in pretty much every flavor of
 SQL.</p>
 <h1 id="the-basics">The Basics</h1>
 <p>If you want to produce any results you'll have to start here.</p>
-<h2 id="1tables">1.Tables</h2>
+<h2 id="1-tables">1. Tables</h2>
 <p>Fundamental to relational databases is the concept of tables, all the data
 is stored in these. Quickly learn how business concepts are reprsented in
 tables. You'll quickly find that a couple central tables usually contain an
@@ -247,7 +226,7 @@ it out. Order by does the work for you and, like it sounds, orders results</p>
 <p>After getting the basics people will start asking more pointed questions like,
 <strong>What's my sales per Region?</strong> or <strong>What are the 2nd most expensive parts
 we produce?</strong> To answer these questions you'll need some more knowledge.</p>
-<h2 id="8a-built-in-functions">8a. Built in Functions</h2>
+<h2 id="8a-built-in-functions">8a. Built-in Functions</h2>
 <p>You'll need to these to do things like sum over a column, or count the number
 of records, but you'll also need these to numerically rank results.</p>
 <h2 id="8b-groupby-and-partition-by">8b. Groupby and Partition By</h2>
@@ -267,7 +246,7 @@ that results. Another is to use information from one table as a filter condition
 in a subquery that's generating another table that you're joining on. You'll
 quickly find out when you need these when you realize you can't accomplish certain
 joins with just left and inner joins.</p>
-<h2 id="advanced-sql">Advanced SQL</h2>
+<h1 id="advanced-sql">Advanced SQL</h1>
 <h2 id="11-variables">11. Variables</h2>
 <p>Variables will you reuse values throughout your code and make certain things
 more obvious. For instance if you're filtering for records after a certain date
@@ -285,7 +264,7 @@ Or getting all parts that are a part of a Bill of Material. Or tracing transacti
 over time for a certain serial number part.</p>
 <h2 id="13-common-table-expressions">13. Common Table Expressions</h2>
 <p>Common table expressions are a useful way to annotate your code, they're
-somewhat analagous to object oriented programming where you can slowly
+somewhat analogous to object oriented programming where you can slowly
 build a results set over a more easily readable series of operations. You'll
 see what I mean when your queries starts with select, has 20 columns from
 various tables, and then 15 joins to get all the columns together. It gets
@@ -319,7 +298,7 @@ because it's way easier to drop tables than create them.</p>
 stored procedures, and functions, but those start getting into the realm
 of Database Administration, and sides by the time you get here anyway
 you'll be strong enough with SQL to figure out what you need.</p>
-<h1 id="getting-started">Getting started</h1>
+<h1 id="getting-started">Getting Started</h1>
 <p>Don't let this list intimidate you, you can get a lot of value from just
 the top 5 items. The others will come naturally as you figure out you need them
 and hopefully this list will help you figure out the terms to google once
