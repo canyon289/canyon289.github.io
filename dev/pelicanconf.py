@@ -18,7 +18,7 @@ TIMEZONE = 'America/Los_Angeles'
 DEFAULT_LANG = 'en'
 DEFAULT_DATE_FORMAT = "%b %d, %Y"
 
-THEME = "custom"
+THEME = "themes/custom"
 
 SUMMARY_MAX_LENGTH = 0
 
