@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,59 +145,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category active ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="active ">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">Clip Paths and Transforms</h1>
-	<p class="post-date">Sun 09 October 2016</p>
+	<p class="post-date">Oct 09, 2016</p>
 	<p>When creating visualizations sometimes we want an element to be visible 
 in one portion of the SVG but perhaps in another. An example would be a chart
 with axes that also implements zoom and pan. As we move the chart elements
@@ -247,9 +226,9 @@ by adding a <strong>clip-path</strong> attribute on the element. The blue is rem
 from the example code for code clarity. 
 <sup id=sf-clippaths-1-back><a href=#sf-clippaths-1 class=simple-footnote title=" While sample bl.ocks are great sometimes when going through them it's hard to isolate the specific feature I'm trying to learn from all the other functionality">1</a></sup></p>
 <div class=highlight><pre><span class=code-line><span></span><span class=nx>g</span><span class=p>.</span><span class=nx>append</span><span class=p>(</span><span class=s2>"circle"</span><span class=p>)</span></span>
-<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"cx"</span><span class=p>,</span> <span class=nx>width</span><span class=o>/</span><span class=mf>2</span><span class=p>)</span></span>
-<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"cy"</span><span class=p>,</span> <span class=nx>height</span><span class=o>/</span><span class=mf>2</span> <span class=o>-</span> <span class=nx>r</span><span class=p>)</span></span>
-<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"r"</span><span class=p>,</span> <span class=mf>10</span><span class=p>)</span></span>
+<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"cx"</span><span class=p>,</span> <span class=nx>width</span><span class=o>/</span><span class=mi>2</span><span class=p>)</span></span>
+<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"cy"</span><span class=p>,</span> <span class=nx>height</span><span class=o>/</span><span class=mi>2</span> <span class=o>-</span> <span class=nx>r</span><span class=p>)</span></span>
+<span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"r"</span><span class=p>,</span> <span class=mi>10</span><span class=p>)</span></span>
 <span class=code-line>   <span class=p>.</span><span class=nx>attr</span><span class=p>(</span><span class=s2>"clip-path"</span><span class=p>,</span> <span class=s2>"url(#cliprect)"</span><span class=p>)</span></span>
 </pre></div>
 

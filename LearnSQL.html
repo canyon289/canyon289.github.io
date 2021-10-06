@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,59 +145,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category active ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="active ">
+    <li class="sidebar-category ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">You should learn SQL</h1>
-	<p class="post-date">Sat 22 October 2016</p>
+	<p class="post-date">Oct 22, 2016</p>
 	<p>I'm not the first to say this and I really doubt
 I'll be the last. Being able to use and understand data is 
 becoming, if not already, a very powerful skill. Let me
@@ -217,8 +196,8 @@ the following reasons.</p>
 <h3 id="declarative-vs-imperative-languages">Declarative vs Imperative Languages</h3>
 <p>Without going deeply into the nuances between declarative
 and imperative languages what's easier to write and understand?</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span></span>
-<span class="code-line"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;http: iris url ) #This is dependent on your data source</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></span>
+<span class="code-line"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;http: iris url&quot;</span><span class="p">)</span> <span class="c1"># This is dependent on your data source</span></span>
 <span class="code-line"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></span>
 </pre></div>
 
@@ -231,13 +210,13 @@ and imperative languages what's easier to write and understand?</p>
 the correct method to read a csv file, know what argument
 to pass to the read_csv method, know about variables, and then
 know you can call a method on that assignment. A lot of the symbols
-are not "english" intuitive either. </p>
+are not "English" intuitive either. </p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">5</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">IRIS</span></span>
 </pre></div>
 
 
-<p>Comparatively SQL is much more approachable and basically reads straight across.
-Now yes SQL has it's own set of complexities and limitations but just starting
+<p>Comparatively, SQL is much more approachable and basically reads straight across.
+Now yes SQL has its own set of complexities and limitations but just starting
 out it's been my experience that there's much less you need to learn
 before you're able to do useful things. But.... </p>
 <h3 id="its-probably-already-setup-for-you">It's probably already setup for you</h3>
@@ -248,7 +227,7 @@ up a local Python or R environment, especially when most companies lock
 down admin privileges anyway and make this sometimes difficult to do.</p>
 <h3 id="since-its-setup-theres-a-resident-database-admin">Since it's setup there's a resident Database Admin</h3>
 <p>If the assumption above holds there already will be at least one person
-who's job it is to maintain that database who knows SQL. I would argue
+whose job it is to maintain that database who knows SQL. I would argue
 there's more companies that pay a DBA than companies that are hiring data scientists.
 In my experience nearly all companies have data these days, not nearly as many
 have Python/R stack data scientists on staff.</p>

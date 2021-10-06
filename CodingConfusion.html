@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,67 +145,48 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="active ">
+    <li class="sidebar-category active ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">Coding Confusion</h1>
-	<p class="post-date">Mon 12 March 2018</p>
-	<p>Recently I've been teaching coding more than ever, both to coworkers and
+	<p class="post-date">Mar 12, 2018</p>
+	<p>Recently I've been teaching more coding than ever, both to coworkers and
 to students in my bootcamp. While they're all catching on and getting
 results, its made me step back and realize, modern day programming is not
 straightforward and with all the various parts, often is just plain confusing.</p>
 <h1 id="your-first-program">Your first program</h1>
 <p>Python is a popular programming language so it feels simple enough to tell a 
 new programmer, "Hey open up a text editor and write the following commands"</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span></span>
 </pre></div>
 
 
@@ -223,7 +202,7 @@ Python there's whitespace formatting to cover as well. </p>
 <p>Somewhere in there you fit in a lesson about shell commands, and depending
 on whether they're in Windows or a POSIX client you wave your hands about
 OS file systems.</p>
-<p>All the code shouldn't be in one file though or it's confusing so then you explain
+<p>All the code shouldn't be in one file though or it's confusing, so then you explain
 Python import machinery, but modules have their own nuances. Somewhere
 in there you ramble on about functional design vs OOP.</p>
 <p>Well now the student has something more complex working and they're thrilled
@@ -234,7 +213,7 @@ pinning versions for imported packages might be necessary.</p>
 <p>After all this they finally get their code packaged up and put into a repo.
 Their code works and is available  but man it's ugly so you start explaining
 the importance of code quality, and how PEP8 is a thing, and why spaces after
-single line comments and cameling casing are oh so important. A linting
+single line comments and camel casing are oh so important. A linting
 package is installed a bunch of messages appear on the console
 after you show they how to run it.</p>
 <p>They didn't know about unit testing though so you go through a lecture on

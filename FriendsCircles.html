@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
                     <link rel="stylesheet" href="css/friends_vis.css" type="text/css" />
@@ -148,59 +146,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="active ">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category active ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
-	<h1 class="page-title">Q: Friend Circles</h1>
-	<p class="post-date">Sat 23 April 2016</p>
+	<h1 class="page-title">Interview Question: Friend Circles</h1>
+	<p class="post-date">Apr 23, 2016</p>
 	<p>There are N students in a class. Some of them are friends, while some are not.
 Their friendship is transitive in nature, i.e., if A is friend of B and B is friend of C,
 then A is also friend of C. A friend circle is a group of students who are directly or
@@ -229,8 +208,7 @@ given after passing multiple choice statistics question</p>
 <h2 id="initial-thoughts">Initial thoughts</h2>
 <p>When I saw this question I made a critical error
 in my initial understanding of what a friends circle meant.</p>
-<p>I was able to make the first key insight which is that
-that the friends and relationships are a structure called
+<p>I was able to make the first key insight which is that the friends and relationships are a structure called
 Network Graph. The problem is asking to find the number
 of unique relationships that span friends. I first
 ran into my first issue here.</p>
@@ -253,8 +231,8 @@ and ran out of time</p>
 <h2 id="the-solution">The Solution</h2>
 <p>It was misleading that the problem was titled Friends Circles
 because the problem is actually asking how many people
- are connected through their friends and their 
-friends friends. In math terms it's asking how many groups
+are connected through their friends and their 
+friends. In math terms it's asking how many groups
 of nodes are connected by their edges.  </p>
 <p>Given this understanding the problem is extremely simple.
 Any graph can be composed into a tree. This is a concept
@@ -265,10 +243,10 @@ next node and try again. The number of unique trees
 is the answer to all the test cases.</p>
 <h2 id="code">Code</h2>
 <p>The first order of business is to read in the inputs that look like this  </p>
-<div class="highlight"><pre><span class="code-line"><span></span>YYNN  </span>
-<span class="code-line">YYYN  </span>
-<span class="code-line">NYYN  </span>
-<span class="code-line">NNNY  </span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="n">YYNN</span>  </span>
+<span class="code-line"><span class="n">YYYN</span>  </span>
+<span class="code-line"><span class="n">NYYN</span>  </span>
+<span class="code-line"><span class="n">NNNY</span>  </span>
 </pre></div>
 
 
@@ -314,20 +292,20 @@ of that person's friends as shown below.</p>
 <p>The algorithm works initially picking a node. It then traverses the tree
 to find all others nodes (friends) that are connected with the initial node.
 When it exhausts all friends in the chain it tries the next node.</p>
-<p>In particular is the the find_friends function. This is the workhouse
+<p>In particular is the find_friends function. This is the workhouse
 of this implementation. It recursively finds the friends of the current node.
 The find_circles function mostly acts as an outer wrapper, storing the
 friends count and the visited list.</p>
 <p>The visited list is particularly important because it ensures two things.
 One is that we don't waste computational time finding all the friends of a 
-person we've already searched. Additionally it allows the find_friends
+person we've already searched. Additionally, it allows the find_friends
 function to terminate once all the visited friends in a tree have been found.</p>
 <h2 id="visualization">Visualization</h2>
 <p>Here's a visualization of the search process. You notice that once the algorithm
 finds a tree it stays on it until there are no more nodes left.</p>
 <p>To make this visualization the algorithm was also reimplemented in javascript which
 you can find here. The visualization is possible due to the awesome
-d3 javascript library which will get a post of it's own in the future</p>
+d3 javascript library which will get a post of its own in the future</p>
 <h3 id="click-to-start-search">Click to start search</h3>
 <p><div id="vis"> </div></p>
 

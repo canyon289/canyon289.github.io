@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
                     <link rel="stylesheet" href="css/" type="text/css" />
@@ -148,59 +146,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="active ">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category active ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">Why a Statically Generated Site</h1>
-	<p class="post-date">Sun 10 July 2016</p>
+	<p class="post-date">Jul 10, 2016</p>
 	<p>Initially when I decided to start this blog I started with what I already
 had a WordPress blog. Wordpress had served me well in the past, especially
 when I had a more limited programming background. Given the needs of this blog
@@ -226,7 +205,7 @@ extensively, and to write posts I would have to go into a WebGUI and figure out
 what buttons do what. When adding additional plugins to do syntax highlighting
 and additional javascript it would become even more difficult to modify layouts
 and figure out how to make things work</p>
-<p>Additionally it would be a lot more work if I moved hosting services
+<p>Additionally, it would be a lot more work if I moved hosting services
 and always be worried about updates and security</p>
 <h2 id="i-already-have-enough-to-learn">I already have enough to learn</h2>
 <p>Given that I'm trying to learn more about Data Science, it just made
@@ -248,8 +227,8 @@ could render all the visualizations, math, and code nicely</p>
 <h1 id="others-opinions">Others opinions</h1>
 <p>In part I made my final choice based on the positive experiences of others
 as well. Here are some links to their opinions</p>
-<p><a href="http://bdadam.com/blog/why-i-chose-a-statically-generated-website.html">http://bdadam.com/blog/why-i-chose-a-statically-generated-website.html</a>
-<a href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/">http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/</a>
+<p><a href="http://bdadam.com/blog/why-i-chose-a-statically-generated-website.html">http://bdadam.com/blog/why-i-chose-a-statically-generated-website.html</a><br>
+<a href="http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/">http://duncanlock.net/blog/2013/05/17/how-i-built-this-website-using-pelican-part-1-setup/</a><br>
 <a href="https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/">https://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/</a></p>
 
 					</div> 

@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
                     <link rel="stylesheet" href="css/svgcenter.css" type="text/css" />
@@ -148,59 +146,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="active ">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category active ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">Implementing Zoom in D3 4.0</h1>
-	<p class="post-date">Sat 27 August 2016</p>
+	<p class="post-date">Aug 27, 2016</p>
 	<p>D3 is a fantastic library for sharing and engaging users in visualizations.
 One of the best ways it does this is by leveraging user interactions, by means
 of clicks, drags, and scrolls to highlight data. We'll be exploring how to 
@@ -222,20 +201,20 @@ to implement.  </p>
 <p>Let's start by creating an svg with a group and adding a circle to it.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">&quot;#basic_zoom&quot;</span><span class="p">)</span></span>
 <span class="code-line">   <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;svg&quot;</span><span class="p">)</span></span>
-<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;width&quot;</span><span class="p">,</span> <span class="mf">100</span><span class="p">)</span></span>
-<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;height&quot;</span><span class="p">,</span> <span class="mf">100</span><span class="p">);</span></span>
+<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;width&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span></span>
+<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;height&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="kd">var</span> <span class="nx">g</span> <span class="o">=</span> <span class="nx">svg</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;g&quot;</span><span class="p">);</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;circle&quot;</span><span class="p">)</span></span>
-<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mf">50</span><span class="p">)</span></span>
-<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mf">50</span><span class="p">)</span></span>
-<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mf">10</span><span class="p">);</span></span>
+<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span></span>
+<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span></span>
+<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="nx">svg</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;circle&quot;</span><span class="p">)</span></span>
-<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mf">50</span><span class="p">)</span></span>
-<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mf">50</span><span class="p">)</span></span>
-<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mf">10</span><span class="p">);</span></span>
+<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span></span>
+<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span></span>
+<span class="code-line">     <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span></span>
 </pre></div>
 
 
@@ -254,9 +233,9 @@ my problem, but I ran into another problem.  </p>
 <p>My visualization was using the <a href="https://bl.ocks.org/mbostock/3019563">margin convention</a>
 and something odd was happening. See if you can find the same issue.</p>
 <p>Here's the code (bounding box added for reference)</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kd">var</span> <span class="nx">margin</span> <span class="o">=</span> <span class="p">{</span><span class="nx">top</span><span class="o">:</span> <span class="mf">50</span><span class="p">,</span> <span class="nx">right</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">bottom</span><span class="o">:</span> <span class="mf">0</span><span class="p">,</span> <span class="nx">left</span><span class="o">:</span> <span class="mf">50</span><span class="p">};</span></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">width</span> <span class="o">=</span> <span class="mf">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
-<span class="code-line"><span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mf">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="kd">var</span> <span class="nx">margin</span> <span class="o">=</span> <span class="p">{</span><span class="nx">top</span><span class="o">:</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">right</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">bottom</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">left</span><span class="o">:</span> <span class="mi">50</span><span class="p">};</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">width</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
+<span class="code-line"><span class="kd">var</span> <span class="nx">height</span> <span class="o">=</span> <span class="mi">50</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">right</span><span class="p">;</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="kd">var</span> <span class="nx">svg</span> <span class="o">=</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">&quot;#margin_zoom&quot;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;svg&quot;</span><span class="p">)</span></span>
 <span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;width&quot;</span><span class="p">,</span> <span class="nx">width</span><span class="p">)</span></span>
@@ -275,9 +254,9 @@ and something odd was happening. See if you can find the same issue.</p>
 <span class="code-line">  <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="s2">&quot;translate(&quot;</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">left</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="nx">margin</span><span class="p">.</span><span class="nx">top</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;circle&quot;</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mf">0</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mf">0</span><span class="p">)</span></span>
-<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mf">10</span><span class="p">);</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></span>
+<span class="code-line">   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="nx">svg</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">d3</span><span class="p">.</span><span class="nx">zoom</span><span class="p">().</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;zoom&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="nx">g</span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;transform&quot;</span><span class="p">,</span> <span class="nx">d3</span><span class="p">.</span><span class="nx">event</span><span class="p">.</span><span class="nx">transform</span><span class="p">)}))</span></span>
 </pre></div>

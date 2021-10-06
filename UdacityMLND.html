@@ -56,8 +56,6 @@
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -147,59 +145,40 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-						<!-- Sidebar -->
-						<div class="col-12 col-md-3 mb-3">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
 							<div class="sidebar">
 <div class="docs-menu">
   <h4>Categories</h4>
-  <ul>
-    <li class="">
-        <a href="./category/articles.html">
-            <span>articles</span>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/d3.html">
-            <span>D3</span>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
         </a>
     </li>
-    <li class="">
-        <a href="./category/fitness.html">
-            <span>Fitness</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/general.html">
-            <span>General</span>
-        </a>
-    </li>
-    <li class="">
+    <li class="sidebar-category active ">
         <a href="./category/programming.html">
             <span>Programming</span>
         </a>
     </li>
-    <li class="active ">
-        <a href="./category/programming-machinelearning.html">
-            <span>Programming, MachineLearning</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/question.html">
-            <span>Question</span>
-        </a>
-    </li>
-    <li class="">
-        <a href="./category/svg.html">
-            <span>SVG</span>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
         </a>
     </li>
   </ul>
 </div>							</div>
 						</div>
-					<div class="col-12 col-md-9">
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
 
 	<h1 class="page-title">A review of Udacity's Machine Learning Nanodegree</h1>
-	<p class="post-date">Thu 04 January 2018</p>
+	<p class="post-date">Jan 04, 2018</p>
 	<p>I recently finished the Udacity Machine Learning Nanodegree and wanted to share
 the following thoughts on my experience.</p>
 <p>If you haven't read my <a href="./DSGuide.html">Review of Data Science Programs</a>
@@ -207,7 +186,7 @@ I would do so first, to get a general explanation of the other types
 of machine learning curriculum.</p>
 <h1 id="the-rundown">The rundown</h1>
 <p>The Machine Learning Nanodegree is formatted in the previous style of Udacity
-nanodegrees where you're charged $200 dollars a month until all seven projects
+nanodegrees where you're charged 200 dollars a month until all seven projects
 are completed. The projects themselves range in complexity, starting from
 a basic linear regression, to clustering, to more challenging ones
 such as a reinforcement learning implementation, and a CNN implementation.  </p>
@@ -215,7 +194,7 @@ such as a reinforcement learning implementation, and a CNN implementation.  </p>
 a machine learning project on any dataset of your choosing.</p>
 <p>Overall I found the Machine Learning Nanodegree to be pretty comprehensive.
 Nearly all machine learning topics were covered. Expect this Nanodegree
-to take quite a bit of time, its challenging from both a code perspective
+to take quite a bit of time, it's challenging from both a code perspective
 and from a mathematical understanding perspective. The knocks I have 
 against the program are the level of hand holding, sometimes a bit too much
 code is implemented for you, and if you're lazy you can get away with just

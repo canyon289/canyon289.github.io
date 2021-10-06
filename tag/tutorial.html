@@ -6,7 +6,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>['Ravin Kumar'] - Tutorial tag</title>
+		<title>Ravin Kumar</title>
 		<link rel="shortcut icon" type="image/x-icon" href="../images/logo/logo.png" />
 
 		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
@@ -56,40 +56,6 @@
         <link rel="stylesheet" href="../theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="../theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- CSS for blog landing page -->
-<style>
-		.blog-table-tag-learningreferencesheets {
-			background-color: #78cad4;
-		}
-		.blog-table-tag-programming {
-			background-color: #e19874;
-		}
-		.blog-table-tag-tmux {
-			background-color: #bf74e1;
-		}
-		.blog-table-tag-datascience {
-			background-color: #2c6854;
-		}
-		.blog-table-tag-data {
-			background-color: #56bb92;
-		}
-		.blog-table-tag-sql {
-			background-color: #408bb3;
-		}
-		.blog-table-tag-software {
-			background-color: #776d71;
-		}
-		.blog-table-tag-visualization {
-			background-color: #b36764;
-		}
-		.blog-table-tag-howto {
-			background-color: #d3c875;
-		}
-		.blog-table-tag-tutorial {
-			background-color: #7c78c1;
-		}
-</style>
 
         <!-- CSS for Pelican Javascript plugin -->
 
@@ -107,7 +73,7 @@
 	</script>
 	</head>
 
-	<body class='page body-index'>  <!-- extends -->
+	<body class='page body-category'>  <!-- extends -->
 
 <div id="main-menu-mobile" class="main-menu-mobile">
     <ul>
@@ -179,31 +145,33 @@
 			
 			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
 				<div class="row">
-					<div class="col-12 ">
-	<table class="blog-table">
-		<tr>
-			<th>Blog Post</th>
-			<th class="blog-table-right">Tags</th>
-			<th class="blog-table-right">Date</th>
-		</tr>
-		<tr>
-			<td href="../ModifyingATemplate.html#ModifyingATemplate">
-				<a href="../ModifyingATemplate.html#ModifyingATemplate">Modifying a Pelican Template</a>
-			</td>
-			<td class="blog-table-right">
- <span class="blog-table-tag blog-table-tag-tutorial" >TUTORIAL</span>			</td>
-			<td class="blog-table-right">Sun 10 July 2016</td>
-		</tr>
-		<tr>
-			<td href="../WhyIChoseaSSG.html#WhyIChoseaSSG">
-				<a href="../WhyIChoseaSSG.html#WhyIChoseaSSG">Why a Statically Generated Site</a>
-			</td>
-			<td class="blog-table-right">
- <span class="blog-table-tag blog-table-tag-tutorial" >TUTORIAL</span>			</td>
-			<td class="blog-table-right">Sun 10 July 2016</td>
-		</tr>
-	</table>
-					</div> 
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
+<table class="blog-table">
+    <tr>
+        <th>Blog Post
+                <span class="blog-table-tag" >
+                    tag: TUTORIAL
+                </span>
+        </th>
+        <th class="blog-table-right">Tags</th>
+        <th class="blog-table-right">Date</th>
+    </tr>
+    <tr>
+        <td href="../ModifyingATemplate.html#ModifyingATemplate">
+            <a href="../ModifyingATemplate.html#ModifyingATemplate">Modifying a Pelican Template</a>
+            <div class="blog-table-mobile-container">
+                <div class="blog-table-mobile-date">Jul 10, 2016</div>
+            </div>
+        </td>
+        <td class="blog-table-right">
+                <span class="blog-table-tag blog-table-tag-tutorial" >
+                    <a href="../tag/tutorial.html">TUTORIAL</a>
+                </span>
+        </td>
+        <td class="blog-table-right blog-table-date">Jul 10, 2016</td>
+    </tr>
+</table>					</div> 
 				</div>
 			</div>
 		</div>
