@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
+
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
+
+<!--Notebook Configuration-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true,
+          displayMath: [['$$','$$'], ["\\[","\\]"]]
+      }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+      $("div.collapseheader").click(function () {
+      $header = $(this).children("span").first();
+      $codearea = $(this).children(".input_area");
+      console.log($(this).children());
+      $codearea.slideToggle(500, function () {
+          $header.text(function () {
+              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+          });
+      });
+  });
+  });
+</script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- CSS for Pelican Javascript plugin -->
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class='page body-article'>  <!-- extends -->
+
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
+            </a>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
+        </div>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
+        </div>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
+        </a>
+    </li>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
+        </a>
+    </li>
+    <li class="sidebar-category active ">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
+
+	<h1 class="page-title">Faster blogging with Tmux</h1>
+	<p class="post-date">May 18, 2018</p>
+	<p>Writing blog articles is great, but an aspect of it that is not is getting
+running all the scripts to get everything setup. To start a blogging
+session in no particular order I need to  </p>
+<ul>
+<li>Traverse to my repository  </li>
+<li>Start an http server  </li>
+<li>Traverse directories again  </li>
+<li>Start pelican  </li>
+<li>Traverse directories more  </li>
+<li>Start vim  </li>
+<li>Start writing</li>
+</ul>
+<p>Tmux, a terminal multiplexer, makes it easier to switch between the terminals
+running these processes, but starting them manually is a pain</p>
+<p>Luckily Tmux supports scripting which makes solving this problem really easy.</p>
+<h1 id="tmux-script">Tmux script</h1>
+<p>The shell script below runs all the commands needed to start a blogging
+environment on my computers.</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="c1"># !/bin/sh</span></span>
+<span class="code-line"><span class="c1"># Small script that sets up blogging environment with one command</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># Kill open session</span></span>
+<span class="code-line">tmux kill-session -t blog <span class="o">||</span> <span class="nb">true</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># Create new session</span></span>
+<span class="code-line">tmux new-session -d -s blog </span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># C-m is carriage return in tmux</span></span>
+<span class="code-line">tmux send-keys <span class="s1">&#39;source activate blog &amp;&amp; pelican -r -s pelicanconf.py&#39;</span> <span class="s1">&#39;C-m&#39;</span> </span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># Start http server</span></span>
+<span class="code-line">tmux <span class="k">select</span>-window -t blog:0</span>
+<span class="code-line">tmux split-window -v </span>
+<span class="code-line">tmux send-keys <span class="s1">&#39;cd .. &amp;&amp; python -m http.server&#39;</span> <span class="s1">&#39;C-m&#39;</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># Ready to blog</span></span>
+<span class="code-line">tmux new-window -n blog_article -c <span class="nv">$PWD</span><span class="s2">&quot;/content&quot;</span></span>
+<span class="code-line">tmux att -t blog</span>
+</pre></div>
+
+
+<p>Breaking this apart, the first thing to do is ensure that no other tmux session
+is already running all the processes I need. This is done by checking
+if a session named <code>blog</code> is running and if so kills it. </p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="c1"># Kill open session</span></span>
+<span class="code-line">tmux kill-session -t blog <span class="o">||</span> <span class="nb">true</span></span>
+</pre></div>
+
+
+<p>The next step is creating a ession to group all the windows and panes
+that will be running the processes. The first done is starting a session
+named blog. Next the pelican process is started. <code>send-keys</code> was used
+instead of running the command directly because in tmux if process stops
+the pane would close, not a behavior that was desired. <code>C-m</code> is a carriage
+return and instructs tmux to run the command after typing it in, the same
+as pressing enter does when manually typing the command.</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="c1"># Create new session</span></span>
+<span class="code-line">tmux new-session -d -s blog </span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># C-m is carriage return in tmux</span></span>
+<span class="code-line">tmux send-keys <span class="s1">&#39;source activate blog &amp;&amp; pelican -r -s pelicanconf.py&#39;</span> <span class="s1">&#39;C-m&#39;</span> </span>
+</pre></div>
+
+
+<p>With the pelican process ready to generate the site, the next step is to
+start a local server to view the blog in a browser</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="c1"># Start http server</span></span>
+<span class="code-line">tmux <span class="k">select</span>-window -t blog:0</span>
+<span class="code-line">tmux split-window -v </span>
+<span class="code-line">tmux send-keys <span class="s1">&#39;cd .. &amp;&amp; python -m http.server&#39;</span> <span class="s1">&#39;C-m&#39;</span></span>
+</pre></div>
+
+
+<p>Lastly we start a new window in the directory where the markdown files 
+where for this blog are stored. The final command is attaching the tmux
+session to the running terminal to start writing.</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="c1"># Ready to blog</span></span>
+<span class="code-line">tmux new-window -n blog_article -c <span class="nv">$PWD</span><span class="s2">&quot;/content&quot;</span></span>
+<span class="code-line">tmux att -t blog</span>
+</pre></div>
+
+
+<p>And with that were done!</p>
+<h1 id="why-go-through-the-trouble">Why go through the trouble</h1>
+<p>If the task I want to do is write a blog, every step between is a distraction
+and a time waste. This script allows me to bypass all the manual steps
+and jump straight into the value add work, writing content to share with you! </p>
+
+					</div> 
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+
+	</body>
+
+</html>
