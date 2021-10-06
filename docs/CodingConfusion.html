@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
+
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
+
+<!--Notebook Configuration-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true,
+          displayMath: [['$$','$$'], ["\\[","\\]"]]
+      }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+      $("div.collapseheader").click(function () {
+      $header = $(this).children("span").first();
+      $codearea = $(this).children(".input_area");
+      console.log($(this).children());
+      $codearea.slideToggle(500, function () {
+          $header.text(function () {
+              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+          });
+      });
+  });
+  });
+</script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- CSS for Pelican Javascript plugin -->
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class='page body-article'>  <!-- extends -->
+
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
+            </a>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
+        </div>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
+        </div>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
+        </a>
+    </li>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
+        </a>
+    </li>
+    <li class="sidebar-category active ">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
+
+	<h1 class="page-title">Coding Confusion</h1>
+	<p class="post-date">Mar 12, 2018</p>
+	<p>Recently I've been teaching more coding than ever, both to coworkers and
+to students in my bootcamp. While they're all catching on and getting
+results, its made me step back and realize, modern day programming is not
+straightforward and with all the various parts, often is just plain confusing.</p>
+<h1 id="your-first-program">Your first program</h1>
+<p>Python is a popular programming language so it feels simple enough to tell a 
+new programmer, "Hey open up a text editor and write the following commands"</p>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span></span>
+</pre></div>
+
+
+<p>At this point the you feel accomplished, the student feels accomplished, 
+but then it quickly wears off as both of you realize this program doesn't
+do anything useful. So you start trying to explain the next steps, but where
+do you start?</p>
+<h1 id="your-first-productionized-program">Your first productionized program</h1>
+<p>There's data types in Python, such as lists, dictionaries, etc. There's also
+the concept of iteration and control loops. But DRY is a thing so you 
+quickly have to explain functions, but then you get into scope, and with
+Python there's whitespace formatting to cover as well. </p>
+<p>Somewhere in there you fit in a lesson about shell commands, and depending
+on whether they're in Windows or a POSIX client you wave your hands about
+OS file systems.</p>
+<p>All the code shouldn't be in one file though or it's confusing, so then you explain
+Python import machinery, but modules have their own nuances. Somewhere
+in there you ramble on about functional design vs OOP.</p>
+<p>Well now the student has something more complex working and they're thrilled
+but they want to deploy it. So now you need to teach them about git, but
+its also important that they know about isolated environments through
+virtualenv, or conda. A conversation ensues about dependencies and why
+pinning versions for imported packages might be necessary.</p>
+<p>After all this they finally get their code packaged up and put into a repo.
+Their code works and is available  but man it's ugly so you start explaining
+the importance of code quality, and how PEP8 is a thing, and why spaces after
+single line comments and camel casing are oh so important. A linting
+package is installed a bunch of messages appear on the console
+after you show they how to run it.</p>
+<p>They didn't know about unit testing though so you go through a lecture on
+Test Driven Development. Their monolithic logic needs to be refactored.</p>
+<p>And now their code needs to be deployed, so you ask them hard questions
+of how it will be used. If it's going to be a local package did they make
+sure it worked across all operating systems and python versions?</p>
+<p>They instead want a webapp, which eliminates most of the issues above, sweet!
+You ask them which web framework they want to use but now they need to learn
+about WSGIs and API design. An explanation about networking and HTTP response
+codes fits in there as well.</p>
+<p>Don't forget the front end though, where they now jump into HTML/CSS/Javascript.
+You explain that while most of the concepts above are still relevant, they're
+ever so different in another language. And let's hope they don't need a backend
+or you'll spend the rest of the day explaining what an ORM is but only
+after you teach them bare SQL so they know what's going on under the hood.</p>
+<p>Then you need to talk about Continuous Integration and explain various
+deployment strategies from Virtual Machines to Docker Containers to self hosting
+versus cloud hosting.</p>
+<p>And if they're doing machine learning be sure to cover at least a semester's
+worth of statistics.</p>
+<h1 id="the-point">The Point</h1>
+<p>Going from starter code to production is a lot of steps and for people
+that are new to programming it can be very frustrating because the code seemed
+to work 10 steps ago. If you're a seasoned
+programmer take a second to step back and realize how many moving parts
+there are to deploying a "maintainable production ready" app/library,
+and how to someone new it can be very difficult to
+see the forest for the trees! There's a lot of steps and concepts between Hello World
+and a robust library or application. When teaching someone new just take a breath
+and remember what it took you to gain that understanding as you guide your
+junior programmer. They will appreciate the help.</p>
+
+					</div> 
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+
+	</body>
+
+</html>

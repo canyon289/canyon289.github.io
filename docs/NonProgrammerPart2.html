@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
+
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
+
+<!--Notebook Configuration-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true,
+          displayMath: [['$$','$$'], ["\\[","\\]"]]
+      }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+      $("div.collapseheader").click(function () {
+      $header = $(this).children("span").first();
+      $codearea = $(this).children(".input_area");
+      console.log($(this).children());
+      $codearea.slideToggle(500, function () {
+          $header.text(function () {
+              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+          });
+      });
+  });
+  });
+</script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- CSS for Pelican Javascript plugin -->
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class='page body-article'>  <!-- extends -->
+
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
+            </a>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
+        </div>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
+        </div>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar  col-md-3 mb-3 -->
+						<div class="col-12">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul class="sidebar">
+    <li class="sidebar-category ">
+        <a href="./category/data-science.html">
+            <span>Data Science</span>
+        </a>
+    </li>
+    <li class="sidebar-category ">
+        <a href="./category/life.html">
+            <span>Life</span>
+        </a>
+    </li>
+    <li class="sidebar-category active ">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="sidebar-category ">
+        <a href="./category/statistics.html">
+            <span>Statistics</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<!-- Content  { if article or category }col-md-9{ endif }-->
+					<div class="col-12">
+
+	<h1 class="page-title">Programming as a Non Programmer - Part 2</h1>
+	<p class="post-date">Jan 16, 2017</p>
+	<p>This is Part 2 in a series about how learning how to program could affect
+your career and the experiences I've had with programming in mine.</p>
+<ul>
+<li><a href="./NonProgrammerP1.html">Intent of series and introduction</a></li>
+<li>What Programming as a Non Programmer means</li>
+<li>Why not to be a programmer</li>
+</ul>
+<h1 id="what-programming-without-being-a-programmer-means">What Programming without being a Programmer means</h1>
+<p>Programmer, or coder, is a pretty broad term these days but 
+in this series we'll use the following split to differentiate 
+programmers from non programmers</p>
+<p>I would describe the split as  </p>
+<ol>
+<li>People that get paid primarily for their skill to write code (Programmers)</li>
+<li>People that get paid primarily to do something that isn't write code (Non Programmers)</li>
+</ol>
+<p>There are people at all companies at which I've been employed which fit into category one,
+they are given software programs and the expectation of their role 
+is to write code of some sort that solves a business problem. I consider
+these people to be programmers.</p>
+<p>I fall into the second category, my position is more dependent on domain
+expertise of supply chains and manufacturing processes. My coworkers
+only know very rudimentary programming, Excel sheets and
+basic SQL at most. The expectation of our job is make the manufacturing 
+execution more efficient. I do write programs at work, but I'm a Non
+Programmer</p>
+<p>This is what Programming without being a Programmer means. Essentially
+Programming (as a technical activity) without being a Programmer (in job title).</p>
+<h1 id="why-split-hairs">Why split hairs?</h1>
+<p>While it seems like a subtle difference in theory, but in practice it leads
+to major organizational differences. Group 1 is valued by the company by their
+ability to produce robust technical solutions that solve major business
+problems. Because they are valued for this the specific focus this group
+the people in this group are the ones we hear about all the time,
+the one that hires people that can implement FizzBuzz
+blindfolded,  the ones that setup continous integration environments, or
+are now using Docker containers to increase uptime. This organization focuses
+on hiring people that have lots of experience in Computer Science, <em>Programmers</em>
+as defined above. If you're in this group learning to program
+is very much tied to your ability to produce value, and your organization
+will more than likely support increasing your programming ability through paid trainings,
+finding you other programming colleagues, and investing in programming resources
+for you, like really nice computers. Simply put if these programmers can't program they're 
+probably going to get fired. Learning to program has a very obvious and 
+clear correlation with your ability to produce value to society, and improve
+your life condition.</p>
+<p>Group 2 is all the other organizations, the accounting department, building maintenance 
+department, purchasing department, or sales department.</p>
+<p>These people are valued by their ability to do something that's not write code,
+for example purchasing departments are typically valued on their ability
+to procure materials and services for a business as cheaply and effectively
+as possible. Facilities maintenance is usually valued on their ability
+to keep physical buildings as functional as possible by doing things
+like changing lights or maintaining plumbing in restrooms. Quite clearly these groups 
+are not valued on their ability program. A plumber is valued on his or her
+ability to fix plumbing issues. In their role they won't primarily be evaulated
+on their programming ability, if at all. </p>
+<p>If you're in this group learning to program might do nothing for your career,
+and in fact <strong>learning to program might be a complete waste of time and effort.</strong>  </p>
+<p>With that distinct made in the next two posts will cover my opinion the
+upsides and downsides as programming as a Non Programmer.</p>
+
+					</div> 
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+
+	</body>
+
+</html>
