@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
-		<!-- For Jupyter Notebooks -->
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
 
 <!--Notebook Configuration-->
 <script type="text/x-mathjax-config">
@@ -44,24 +51,20 @@
 </script>
 
 		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="./theme/css/notebook.css" />
-
-		<link rel="stylesheet" href="./theme/css/poole.css" />
-		<link rel="stylesheet" href="./theme/css/hyde.css" />
-		<link rel="stylesheet" href="./theme/css/syntax.css" />
-        <link rel="stylesheet" href="./theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
 
-
-        <!-- CSS style sheets for pelican javascript plugin -->
-
+        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,71 +75,141 @@
 	</script>
 	</head>
 
-	<body class="theme-base-darkgreen">
-<div class="sidebar">
-    <div class="container">
-        <div >
-            <h1 class="sidebar-title">
-                <a href="/">
-                    <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Ravin Kumar']--->
-                    Ravin Kumar
+	<body class='page body-article'>  <!-- extends -->
 
-                </a>
-            </h1>
-        </div>
-
-        <!---Add Blog Manually --->
-        <h1 class = "sidebar-page">
-            <a href="./blog.html">
-                Blog
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
-        </h1>
-
-      <!---Add Pages for Static Content --->
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/References.html">
-              References
-              </a>
-            </h1>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
         </div>
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/Talks.html">
-              Talks
-              </a>
-            </h1>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
         </div>
-    <div>
-    <nav class="sidebar-nav">
-                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://github.com/canyon289">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
-                    <i class="fa fa-twitter"></i>
-                </a>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar -->
+						<div class="col-12 col-md-3 mb-3">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul>
+    <li class="">
+        <a href="./category/articles.html">
+            <span>articles</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/d3.html">
+            <span>D3</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/fitness.html">
+            <span>Fitness</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/general.html">
+            <span>General</span>
+        </a>
+    </li>
+    <li class="active ">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming-machinelearning.html">
+            <span>Programming, MachineLearning</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/question.html">
+            <span>Question</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/svg.html">
+            <span>SVG</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<div class="col-12 col-md-9">
 
-    </nav>
-    </div>
-    </div>
-</div>		<div class="content container">
-<div class="post">
-	<h1 class="post-title">My Guide on Data Science Programs</h1>
-	<span class="post-date">Thu 01 December 2016</span>
+	<h1 class="page-title">My Guide on Data Science Programs</h1>
+	<p class="post-date">Thu 01 December 2016</p>
 	<p>I recently got accepted to the Udacity Artificial Intelligence Nanodegree program.
 While I am planning to write about that when it starts, now is a good
 time to talk about the experience I've had with previous Data Science programs.  </p>
-<h2 id="why-am-i-doing-this"><a class="toclink" href="#why-am-i-doing-this">Why am I doing this?</a></h2>
+<h2 id="why-am-i-doing-this">Why am I doing this?</h2>
 <p>As a beginner it's hard to figure out what's worthwhile and what's
 snake oil, and these days there seems to be hundreds of books, MOOCs, bootcamps
 and traditional degrees that are vying for your money and time. For those
 doing research I hope my experience gives you more information to make
 an informed decision.</p>
-<h2 id="what-basis-does-my-opinion-have"><a class="toclink" href="#what-basis-does-my-opinion-have">What basis does my opinion have?</a></h2>
+<h2 id="what-basis-does-my-opinion-have">What basis does my opinion have?</h2>
 <p>In the past five years I've enrolled in the Thinkful Data Science course,
 the Coursera Data Science specialization, the Udacity Data Analyst Nanodegree,
 and was accepted to the Berkeley Masters in Data Science masters degree
@@ -144,12 +217,12 @@ program. Between these programs I've spent thousands of dollars and hours
 trying to improve my skills with these programs. Not all of this time 
 was well spent and I bet I could have spent about a third less to get
 where I am now.</p>
-<h2 id="so-where-are-you-now"><a class="toclink" href="#so-where-are-you-now">So where <em>are</em> you now?</a></h2>
+<h2 id="so-where-are-you-now">So where <em>are</em> you now?</h2>
 <p>The details are in the <a href="pages/About.html">About Me</a> but essentially I do
 data science work for a living. The programs above actually did help me
 transition into the career I wanted, but as mentioned I could have made better
 decisions.</p>
-<h1 id="the-guide"><a class="toclink" href="#the-guide">The Guide</a></h1>
+<h1 id="the-guide">The Guide</h1>
 <p>The six categories I've been exposed to are  </p>
 <ul>
 <li>Self Learning from Internet</li>
@@ -160,7 +233,7 @@ decisions.</p>
 <li>A PhD</li>
 </ul>
 <p>Here's my thoughts on each one</p>
-<h2 id="self-learn-from-internet"><a class="toclink" href="#self-learn-from-internet">Self Learn from Internet</a></h2>
+<h2 id="self-learn-from-internet">Self Learn from Internet</h2>
 <p>This is certainly the easiest, cheapest, and most flexible. The hard
 part though is piecing together an education that is cohesive and increases
 in difficulty at an appropriate rate. You'll have to spend a lot of time
@@ -176,7 +249,7 @@ articles that appear on <a href="www.hackernews.com">HackerNews</a> and <a href=
 but there are literally thousands. You can also take the free courses 
 from Coursera and Udacity. I'll be talking more about their paid programs
 below.</p>
-<h2 id="books"><a class="toclink" href="#books">Books</a></h2>
+<h2 id="books">Books</h2>
 <p>Similar to Internet learning you'll have to first find books that are
 appropriate to the topic you want to learn. When you do find an appropriate
 book however the good news is that it likely covers the topic into much
@@ -191,7 +264,7 @@ them all.  </p>
 <p>If you've read this far you must really be interested in learning Data Science.
 If so that's good because everything from here down requires more commitment
 and money.</p>
-<h2 id="coursera-data-science-courses"><a class="toclink" href="#coursera-data-science-courses">Coursera Data Science Courses</a></h2>
+<h2 id="coursera-data-science-courses">Coursera Data Science Courses</h2>
 <p>Coursera has two ways you can learn. One is taking free courses, but the 
 more notable is paying for their specializations. For the money Coursera's
 Specializations give you two things that Books and Self Learning do not.
@@ -209,7 +282,7 @@ giving feedback is a requirement for passing. Therefore I personally found
 the feedback to be pretty weak. I made it through 8 out of 10 of the
 courses in the Specialization before I stopped participating. The cost
 of the Coursera Data Science program was a fixed $500 dollars.</p>
-<h2 id="udacity-data-analyst-nanodegree"><a class="toclink" href="#udacity-data-analyst-nanodegree">Udacity Data Analyst Nanodegree</a></h2>
+<h2 id="udacity-data-analyst-nanodegree">Udacity Data Analyst Nanodegree</h2>
 <p>Udacity, like Coursera, has both free and guided courses. However the major
 difference I found was that Udacity gives you much more access to more experienced
 mentors. The Udacity projects are much more substantive, some taking more 
@@ -223,7 +296,7 @@ all seven projects with passing reviews. If you finished within 12 months
 Udacity refunded half the money, a clever way to keep you motivated.</p>
 <p>A potential downside of the Udacity program was that was self paced, which 
 is great if you have motivation, but bad when you didn't. </p>
-<h2 id="berkeley-master-in-data-science-program"><a class="toclink" href="#berkeley-master-in-data-science-program">Berkeley Master in Data Science Program</a></h2>
+<h2 id="berkeley-master-in-data-science-program">Berkeley Master in Data Science Program</h2>
 <p>The Master Degree programs are some of the newest kids on the block in terms
 of Data Science accreditations. The allure is that they combine traditional
 education with newer data science topics. I enrolled in the 
@@ -243,7 +316,7 @@ was lot, especially since I already had spent tens of thousands of dollars on
 two other bachelors and masters degrees. The program itself was well thought out
 and well put together, but given the much cheaper alternatives above I couldn't
 justify staying in the program after I learned more about it.</p>
-<h2 id="phd"><a class="toclink" href="#phd">PhD</a></h2>
+<h2 id="phd">PhD</h2>
 <p>The last and hardest path is to
 get a PhD in a field related to data science. After all nearly all the people
 that have forged the way in Data methods have done so through research
@@ -252,8 +325,8 @@ those considering this option you already know it's a very heavy investment
 requiring at least half a decades worth of work. You're going to have
 to read a lot more than this blog post, and do a lot of soul search, before
 deciding if this option is really what you want to do.</p>
-<h1 id="the-other-options"><a class="toclink" href="#the-other-options">The Other Options</a></h1>
-<h2 id="bootcamps"><a class="toclink" href="#bootcamps">Bootcamps</a></h2>
+<h1 id="the-other-options">The Other Options</h1>
+<h2 id="bootcamps">Bootcamps</h2>
 <p>There are Data Science Bootcamps run by companies like Metis. These
 typically involve studying on site in places like New York through an intensive
 12 week program. The cost seems to be in the multi thousands. For the money
@@ -262,12 +335,12 @@ though you get to build a network and get coaching in person.</p>
 have had to quit a paying job, or quit a degreed program I was already in,
 to participate in these. But if you have the time and money these may be a good
 option for you.</p>
-<h2 id="hands-on-experience"><a class="toclink" href="#hands-on-experience">Hands on experience</a></h2>
+<h2 id="hands-on-experience">Hands on experience</h2>
 <p>If you can find someone that will mentor you at your job that is by far
 the best option. Nothing beats real world experience in learning how to actually
 do the job. You may need to refer to some of the learning above to get the
 fundamentals but experience is a great teacher.</p>
-<h1 id="so-what-should-i-do"><a class="toclink" href="#so-what-should-i-do">So what should I do?</a></h1>
+<h1 id="so-what-should-i-do">So what should I do?</h1>
 <p>If you're just starting out I suggest you start with an Udacity Nanodegree.
 I think it has the best balance of low cost, but with expert mentorship
 and just difficult enough projects to grow. After that you'll also have
@@ -283,9 +356,53 @@ decision and you should really read more and think on if this is ultimately
 the right choice for you.</p>
 <p>As always if you have any further questions feel free to send me a message
 on LinkedIn or Github. </p>
-</div>
+
+					</div> 
+				</div>
+			</div>
 		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+
 	</body>
 
-    <!-- Javascript Loader for Pelican Javascript plugin-->
 </html>

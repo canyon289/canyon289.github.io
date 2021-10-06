@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
-		<!-- For Jupyter Notebooks -->
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
 
 <!--Notebook Configuration-->
 <script type="text/x-mathjax-config">
@@ -44,25 +51,21 @@
 </script>
 
 		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="./theme/css/notebook.css" />
-
-		<link rel="stylesheet" href="./theme/css/poole.css" />
-		<link rel="stylesheet" href="./theme/css/hyde.css" />
-		<link rel="stylesheet" href="./theme/css/syntax.css" />
-        <link rel="stylesheet" href="./theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
 
-
-        <!-- CSS style sheets for pelican javascript plugin -->
+        <!-- CSS for Pelican Javascript plugin -->
                     <link rel="stylesheet" href="css/friends_vis.css" type="text/css" />
-
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -73,61 +76,131 @@
 	</script>
 	</head>
 
-	<body class="theme-base-darkgreen">
-<div class="sidebar">
-    <div class="container">
-        <div >
-            <h1 class="sidebar-title">
-                <a href="/">
-                    <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Ravin Kumar']--->
-                    Ravin Kumar
+	<body class='page body-article'>  <!-- extends -->
 
-                </a>
-            </h1>
-        </div>
-
-        <!---Add Blog Manually --->
-        <h1 class = "sidebar-page">
-            <a href="./blog.html">
-                Blog
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
-        </h1>
-
-      <!---Add Pages for Static Content --->
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/References.html">
-              References
-              </a>
-            </h1>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
         </div>
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/Talks.html">
-              Talks
-              </a>
-            </h1>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
         </div>
-    <div>
-    <nav class="sidebar-nav">
-                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://github.com/canyon289">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
-                    <i class="fa fa-twitter"></i>
-                </a>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar -->
+						<div class="col-12 col-md-3 mb-3">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul>
+    <li class="active ">
+        <a href="./category/articles.html">
+            <span>articles</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/d3.html">
+            <span>D3</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/fitness.html">
+            <span>Fitness</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/general.html">
+            <span>General</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming-machinelearning.html">
+            <span>Programming, MachineLearning</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/question.html">
+            <span>Question</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/svg.html">
+            <span>SVG</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<div class="col-12 col-md-9">
 
-    </nav>
-    </div>
-    </div>
-</div>		<div class="content container">
-<div class="post">
-	<h1 class="post-title">Q: Friend Circles</h1>
-	<span class="post-date">Sat 23 April 2016</span>
+	<h1 class="page-title">Q: Friend Circles</h1>
+	<p class="post-date">Sat 23 April 2016</p>
 	<p>There are N students in a class. Some of them are friends, while some are not.
 Their friendship is transitive in nature, i.e., if A is friend of B and B is friend of C,
 then A is also friend of C. A friend circle is a group of students who are directly or
@@ -146,14 +219,14 @@ viewed as a 2 dimensional array of characters.</p>
 -  Number of rows and columns will be equal in friends<br>
 -  friends[i][i] = 'Y', where 0 &lt;= i &lt; N<br>
 -  friends[i][j] = friends[j][i], where 0 &lt;= i &lt; j &lt; N  </p>
-<h2 id="question-format"><a class="toclink" href="#question-format">Question Format</a></h2>
+<h2 id="question-format">Question Format</h2>
 <p>Online coding challenge</p>
-<h2 id="time-constraint"><a class="toclink" href="#time-constraint">Time Constraint</a></h2>
+<h2 id="time-constraint">Time Constraint</h2>
 <p>1 of 3 Coding problems 2 Hours given</p>
-<h2 id="context"><a class="toclink" href="#context">Context</a></h2>
+<h2 id="context">Context</h2>
 <p>This question was a 2nd round automated interview question
 given after passing multiple choice statistics question</p>
-<h2 id="initial-thoughts"><a class="toclink" href="#initial-thoughts">Initial thoughts</a></h2>
+<h2 id="initial-thoughts">Initial thoughts</h2>
 <p>When I saw this question I made a critical error
 in my initial understanding of what a friends circle meant.</p>
 <p>I was able to make the first key insight which is that
@@ -167,17 +240,17 @@ looking for. Loops in graphs are called cycles
 and numerous algorithms exist to find them. However
 this is not what this question was asked for and I wasted
 pretty much 40 minutes implementing this solution.</p>
-<h2 id="where-i-went-wrong"><a class="toclink" href="#where-i-went-wrong">Where I went wrong</a></h2>
-<h3 id="not-understanding-the-question"><a class="toclink" href="#not-understanding-the-question">Not understanding the question</a></h3>
+<h2 id="where-i-went-wrong">Where I went wrong</h2>
+<h3 id="not-understanding-the-question">Not understanding the question</h3>
 <p>During the interview I wasn't able to understand the 
 question correctly. Unfortunately since I had no human
 interviewer I was unable to ask for clarification</p>
-<h3 id="too-slow-to-iterate"><a class="toclink" href="#too-slow-to-iterate">Too slow to iterate</a></h3>
+<h3 id="too-slow-to-iterate">Too slow to iterate</h3>
 <p>It became apparent to me that my understanding was
 wrong when I failed the majority of the test cases.
 But I had already wasted 30 minutes to get to that point
 and ran out of time</p>
-<h2 id="the-solution"><a class="toclink" href="#the-solution">The Solution</a></h2>
+<h2 id="the-solution">The Solution</h2>
 <p>It was misleading that the problem was titled Friends Circles
 because the problem is actually asking how many people
  are connected through their friends and their 
@@ -190,12 +263,12 @@ to do was pick a node, run a depth first search algorithm
 to find all the nodes that share a tree, then move onto the
 next node and try again. The number of unique trees
 is the answer to all the test cases.</p>
-<h2 id="code"><a class="toclink" href="#code">Code</a></h2>
+<h2 id="code">Code</h2>
 <p>The first order of business is to read in the inputs that look like this  </p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="n">YYNN</span>  </span>
-<span class="code-line"><span class="n">YYYN</span>  </span>
-<span class="code-line"><span class="n">NYYN</span>  </span>
-<span class="code-line"><span class="n">NNNY</span>  </span>
+<div class="highlight"><pre><span class="code-line"><span></span>YYNN  </span>
+<span class="code-line">YYYN  </span>
+<span class="code-line">NYYN  </span>
+<span class="code-line">NNNY  </span>
 </pre></div>
 
 
@@ -249,20 +322,64 @@ friends count and the visited list.</p>
 One is that we don't waste computational time finding all the friends of a 
 person we've already searched. Additionally it allows the find_friends
 function to terminate once all the visited friends in a tree have been found.</p>
-<h2 id="visualization"><a class="toclink" href="#visualization">Visualization</a></h2>
+<h2 id="visualization">Visualization</h2>
 <p>Here's a visualization of the search process. You notice that once the algorithm
 finds a tree it stays on it until there are no more nodes left.</p>
 <p>To make this visualization the algorithm was also reimplemented in javascript which
 you can find here. The visualization is possible due to the awesome
 d3 javascript library which will get a post of it's own in the future</p>
-<h3 id="click-to-start-search"><a class="toclink" href="#click-to-start-search">Click to start search</a></h3>
+<h3 id="click-to-start-search">Click to start search</h3>
 <p><div id="vis"> </div></p>
-</div>
+
+					</div> 
+				</div>
+			</div>
 		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+					<script src="https://d3js.org/d3.v3.min.js"></script>
+					<script src="js/friends.js"></script>
+					<script src="js/friends_vis.js"></script>
+
 	</body>
 
-    <!-- Javascript Loader for Pelican Javascript plugin-->
-                <script src="https://d3js.org/d3.v3.min.js"></script>
-                <script src="js/friends.js"></script>
-                <script src="js/friends_vis.js"></script>
 </html>

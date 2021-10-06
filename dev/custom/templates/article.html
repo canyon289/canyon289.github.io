@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block bodyclasses %}body-article{% endblock %}
+{% block content %}
+
+	<h1 class="page-title">{{ article.title }}</h1>
+	<p class="post-date">{{ article.locale_date }}</p>
+	{{ article.content }}
+	{% include 'fragments/disqus.html' %}
+
+{% endblock %}
+

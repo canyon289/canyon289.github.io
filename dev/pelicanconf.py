@@ -5,8 +5,9 @@ from __future__ import unicode_literals
 AUTHOR = 'Ravin Kumar'
 SITENAME = ['Ravin Kumar']
 SITEURL = 'http://canyon289.github.io'
+META_DESCRIPTION = 'Ravin Kumar is a data scientist and an open source contributor.'
 
-#Content Path
+# Content Path
 PATH = 'content'
 
 OUTPUT_PATH = '..'
@@ -14,15 +15,15 @@ OUTPUT_PATH = '..'
 TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
+DEFAULT_DATE_FORMAT = "%b %d, %Y"
 
-THEME = "pelican-hyde-modified"
-
-DELETE_OUTPUT_DIRECTORY = False
+THEME = "custom"
 
 SUMMARY_MAX_LENGTH = 0
 
 STATIC_PATHS = ['images', 'data', 'js', 'css']
 
+DELETE_OUTPUT_DIRECTORY = True
 OUTPUT_RETENTION = [".git", "dev"]
 
 GOOGLE_ANALYTICS = 'UA-52706904-2'
@@ -70,13 +71,14 @@ MARKDOWN = {
             'extension_configs': {
                 'markdown.extensions.codehilite': {'css_class': 'highlight'},
                 'markdown.extensions.extra': {},
-                'markdown.extensions.toc': {'anchorlink':True},
+                'markdown.extensions.toc': {},  # Do not do anchor links {'anchorlink':True}
                 'markdown.extensions.meta': {}
                     },
             'output_format': 'html5',
                 }
 
 EXTRA_PATH_METADATA = {
-    'images/favicon.ico': {'path': 'favicon.ico'}
+    'images/logo/favicon.ico': {'path': 'favicon.ico'}
 }
+
 INDEX_SAVE_AS = 'blog.html'
