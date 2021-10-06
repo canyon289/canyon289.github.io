@@ -1,5 +1,5 @@
 .ipynb_checkpoints/
-*.swp
+*swp
 .DS_Store
 *.pyc
 .idea/
