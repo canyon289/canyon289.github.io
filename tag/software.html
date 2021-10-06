@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>['Ravin Kumar'] - Software tag</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/logo/logo.png" />
 
-		<!-- For Jupyter Notebooks -->
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content=".." />
+		<meta property="og:image" content="../images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
 
 <!--Notebook Configuration-->
 <script type="text/x-mathjax-config">
@@ -44,24 +51,52 @@
 </script>
 
 		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="../theme/css/notebook.css" />
-
-		<link rel="stylesheet" href="../theme/css/poole.css" />
-		<link rel="stylesheet" href="../theme/css/hyde.css" />
-		<link rel="stylesheet" href="../theme/css/syntax.css" />
-        <link rel="stylesheet" href="../theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="../theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="../theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="../theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="../theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
+<style>
+		.blog-table-tag-learningreferencesheets {
+			background-color: #78cad4;
+		}
+		.blog-table-tag-programming {
+			background-color: #e19874;
+		}
+		.blog-table-tag-tmux {
+			background-color: #bf74e1;
+		}
+		.blog-table-tag-datascience {
+			background-color: #2c6854;
+		}
+		.blog-table-tag-data {
+			background-color: #56bb92;
+		}
+		.blog-table-tag-sql {
+			background-color: #408bb3;
+		}
+		.blog-table-tag-software {
+			background-color: #776d71;
+		}
+		.blog-table-tag-visualization {
+			background-color: #b36764;
+		}
+		.blog-table-tag-howto {
+			background-color: #d3c875;
+		}
+		.blog-table-tag-tutorial {
+			background-color: #7c78c1;
+		}
+</style>
 
-
-        <!-- CSS style sheets for pelican javascript plugin -->
-
+        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,119 +107,172 @@
 	</script>
 	</head>
 
-	<body class="theme-base-darkgreen">
-<div class="sidebar">
-    <div class="container">
-        <div >
-            <h1 class="sidebar-title">
-                <a href="/">
-                    <!---<img class="profile-picture" src="../images/"> --->
-                    <!---['Ravin Kumar']--->
-                    Ravin Kumar
+	<body class='page body-index'>  <!-- extends -->
 
-                </a>
-            </h1>
-        </div>
-
-        <!---Add Blog Manually --->
-        <h1 class = "sidebar-page">
-            <a href="../blog.html">
-                Blog
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href="..">
+                <img alt="Logo" src="../images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
-        </h1>
-
-      <!---Add Pages for Static Content --->
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="../pages/References.html">
-              References
-              </a>
-            </h1>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="../blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="../pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="../pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href="..">
+                <img alt="Logo" src="../images/logo/logo.png" style="padding: 10px;"/>
+            </a>
         </div>
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="../pages/Talks.html">
-              Talks
-              </a>
-            </h1>
+        <div class="logo-mobile">
+            <a href="..">
+                <img alt="Logo" src="../images/logo/logo.png" style="padding: 10%;"/>
+            </a>
         </div>
-    <div>
-    <nav class="sidebar-nav">
-                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://github.com/canyon289">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
-                    <i class="fa fa-twitter"></i>
-                </a>
-
-    </nav>
-    </div>
-    </div>
-</div>		<div class="content container">
-	<div class="posts">
-			<div class="post">
-				<h1 class="post-title" href="../UsingLinux.html#UsingLinux">
-					<a href="../UsingLinux.html#UsingLinux">Using Linux</a>
-				</h1>
-				<span class="post-date">Sun 27 November 2016</span>
-				<p>
-					
-				</p>
-<!--				<a class="read-more" href="UsingLinux.html">Continue reading »</a>-->
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="../blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="../pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="../pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+					<div class="col-12 ">
+	<table class="blog-table">
+		<tr>
+			<th>Blog Post</th>
+			<th class="blog-table-right">Tags</th>
+			<th class="blog-table-right">Date</th>
+		</tr>
+		<tr>
+			<td href="../UsingLinux.html#UsingLinux">
+				<a href="../UsingLinux.html#UsingLinux">Using Linux</a>
+			</td>
+			<td class="blog-table-right">
+ <span class="blog-table-tag blog-table-tag-software" >SOFTWARE</span>			</td>
+			<td class="blog-table-right">Sun 27 November 2016</td>
+		</tr>
+		<tr>
+			<td href="../DoubleDataJoin.html#DoubleDataJoin">
+				<a href="../DoubleDataJoin.html#DoubleDataJoin">Double Data Joins</a>
+			</td>
+			<td class="blog-table-right">
+ <span class="blog-table-tag blog-table-tag-software" >SOFTWARE</span> <span class="blog-table-tag blog-table-tag-visualization" >VISUALIZATION</span>			</td>
+			<td class="blog-table-right">Mon 21 November 2016</td>
+		</tr>
+		<tr>
+			<td href="../RotationAndReusability.html#RotationAndReusability">
+				<a href="../RotationAndReusability.html#RotationAndReusability">SVG Rotation and Reusability</a>
+			</td>
+			<td class="blog-table-right">
+ <span class="blog-table-tag blog-table-tag-software" >SOFTWARE</span> <span class="blog-table-tag blog-table-tag-visualization" >VISUALIZATION</span>			</td>
+			<td class="blog-table-right">Sat 15 October 2016</td>
+		</tr>
+		<tr>
+			<td href="../clippaths.html#clippaths">
+				<a href="../clippaths.html#clippaths">Clip Paths and Transforms</a>
+			</td>
+			<td class="blog-table-right">
+ <span class="blog-table-tag blog-table-tag-software" >SOFTWARE</span> <span class="blog-table-tag blog-table-tag-visualization" >VISUALIZATION</span>			</td>
+			<td class="blog-table-right">Sun 09 October 2016</td>
+		</tr>
+		<tr>
+			<td href="../OpinionatedSoftware.html#OpinionatedSoftware">
+				<a href="../OpinionatedSoftware.html#OpinionatedSoftware">Writing good software requires you to have an opinion</a>
+			</td>
+			<td class="blog-table-right">
+ <span class="blog-table-tag blog-table-tag-software" >SOFTWARE</span>			</td>
+			<td class="blog-table-right">Mon 03 October 2016</td>
+		</tr>
+	</table>
+					</div> 
+				</div>
 			</div>
-			<div class="post">
-				<h1 class="post-title" href="../DoubleDataJoin.html#DoubleDataJoin">
-					<a href="../DoubleDataJoin.html#DoubleDataJoin">Double Data Joins</a>
-				</h1>
-				<span class="post-date">Mon 21 November 2016</span>
-				<p>
-					
-				</p>
-<!--				<a class="read-more" href="DoubleDataJoin.html">Continue reading »</a>-->
-			</div>
-			<div class="post">
-				<h1 class="post-title" href="../RotationAndReusability.html#RotationAndReusability">
-					<a href="../RotationAndReusability.html#RotationAndReusability">SVG Rotation and Reusability</a>
-				</h1>
-				<span class="post-date">Sat 15 October 2016</span>
-				<p>
-					
-				</p>
-<!--				<a class="read-more" href="RotationAndReusability.html">Continue reading »</a>-->
-			</div>
-			<div class="post">
-				<h1 class="post-title" href="../clippaths.html#clippaths">
-					<a href="../clippaths.html#clippaths">Clip Paths and Transforms</a>
-				</h1>
-				<span class="post-date">Sun 09 October 2016</span>
-				<p>
-					
-				</p>
-<!--				<a class="read-more" href="clippaths.html">Continue reading »</a>-->
-			</div>
-			<div class="post">
-				<h1 class="post-title" href="../OpinionatedSoftware.html#OpinionatedSoftware">
-					<a href="../OpinionatedSoftware.html#OpinionatedSoftware">Writing good software requires you to have an opinion</a>
-				</h1>
-				<span class="post-date">Mon 03 October 2016</span>
-				<p>
-					
-				</p>
-<!--				<a class="read-more" href="OpinionatedSoftware.html">Continue reading »</a>-->
-			</div>
-	</div>
-<!--- No Pagination on my blog
-	<div class="pagination">
-		<span class="pagination-item older">Older</span>
-		<span class="pagination-item newer">Newer</span>
-
-	</div>
---->
 		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href="..">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="../theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+
 	</body>
 
-    <!-- Javascript Loader for Pelican Javascript plugin-->
 </html>

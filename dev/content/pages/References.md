@@ -9,5 +9,5 @@ learned instantly? I'm not, which is why I write these cheatsheets to help
 jog my memory of important concepts and ideas. I'm publishing
 them here in case others find benefit as well.
 
-[Bayesian Glossary]({filename}BayesianGlossary.md)  
-[Bayesian Inference Cheatsheet]({filename}InferenceCheatsheet.md)
+[Bayesian Glossary]({filename}references/BayesianGlossary.md)  
+[Bayesian Inference Cheatsheet]({filename}references/InferenceCheatsheet.md)

@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
-		<!-- For Jupyter Notebooks -->
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
 
 <!--Notebook Configuration-->
 <script type="text/x-mathjax-config">
@@ -44,24 +51,20 @@
 </script>
 
 		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="./theme/css/notebook.css" />
-
-		<link rel="stylesheet" href="./theme/css/poole.css" />
-		<link rel="stylesheet" href="./theme/css/hyde.css" />
-		<link rel="stylesheet" href="./theme/css/syntax.css" />
-        <link rel="stylesheet" href="./theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
 
-
-        <!-- CSS style sheets for pelican javascript plugin -->
-
+        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,61 +75,131 @@
 	</script>
 	</head>
 
-	<body class="theme-base-darkgreen">
-<div class="sidebar">
-    <div class="container">
-        <div >
-            <h1 class="sidebar-title">
-                <a href="/">
-                    <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Ravin Kumar']--->
-                    Ravin Kumar
+	<body class='page body-article'>  <!-- extends -->
 
-                </a>
-            </h1>
-        </div>
-
-        <!---Add Blog Manually --->
-        <h1 class = "sidebar-page">
-            <a href="./blog.html">
-                Blog
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
-        </h1>
-
-      <!---Add Pages for Static Content --->
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/References.html">
-              References
-              </a>
-            </h1>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
         </div>
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/Talks.html">
-              Talks
-              </a>
-            </h1>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
         </div>
-    <div>
-    <nav class="sidebar-nav">
-                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://github.com/canyon289">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
-                    <i class="fa fa-twitter"></i>
-                </a>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar -->
+						<div class="col-12 col-md-3 mb-3">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul>
+    <li class="active ">
+        <a href="./category/articles.html">
+            <span>articles</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/d3.html">
+            <span>D3</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/fitness.html">
+            <span>Fitness</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/general.html">
+            <span>General</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming-machinelearning.html">
+            <span>Programming, MachineLearning</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/question.html">
+            <span>Question</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/svg.html">
+            <span>SVG</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<div class="col-12 col-md-9">
 
-    </nav>
-    </div>
-    </div>
-</div>		<div class="content container">
-<div class="post">
-	<h1 class="post-title">Bayesian Decision Making</h1>
-	<span class="post-date">Mon 14 January 2019</span>
+	<h1 class="page-title">Bayesian Decision Making</h1>
+	<p class="post-date">Mon 14 January 2019</p>
 	<p>When <a href="https://twitter.com/twiecki">Thomas Wiecki</a>
 asked if I'd like coauthor a blog post with him, the obvious
 answer was yes! For those who don't know Thomas is a PyMC core contributor
@@ -136,7 +209,7 @@ where you'll find many other great posts like
 a <a href="https://twiecki.github.io/blog/2017/02/08/bayesian-hierchical-non-centered/">great tutorial on hierarchial models</a>
 and inference methods such as 
 <a href="https://twiecki.github.io/blog/2015/11/10/mcmc-sampling/">MCMC Sampling for Dummies</a></p>
-<h2 id="bayesian-decision-making-in-supply-chain"><a class="toclink" href="#bayesian-decision-making-in-supply-chain">Bayesian Decision Making in Supply Chain</a></h2>
+<h2 id="bayesian-decision-making-in-supply-chain">Bayesian Decision Making in Supply Chain</h2>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -160,12 +233,12 @@ and inference methods such as
 <span class="code-line"><span class="kn">import</span> <span class="nn">theano.tensor</span> <span class="k">as</span> <span class="nn">tt</span></span>
 <span class="code-line"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span></span>
 <span class="code-line"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span></span>
-<span class="code-line"><span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span></span>
 <span class="code-line"><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span></span>
 <span class="code-line"><span class="kn">import</span> <span class="nn">arviz</span> <span class="k">as</span> <span class="nn">az</span></span>
 <span class="code-line"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">set_matplotlib_formats</span></span>
+<span class="code-line"><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">set_matplotlib_formats</span></span>
 <span class="code-line"><span class="n">set_matplotlib_formats</span><span class="p">(</span><span class="s1">&#39;retina&#39;</span><span class="p">)</span></span>
 </pre></div>
 
@@ -188,8 +261,8 @@ and inference methods such as
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">SUPPLIER_YIELD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">.</span><span class="mi">9</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="o">.</span><span class="mi">8</span><span class="p">])</span> <span class="c1"># unknown</span></span>
-<span class="code-line"><span class="n">SUPPLIER_YIELD_SD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="o">.</span><span class="mi">2</span><span class="p">,</span> <span class="o">.</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># unknown</span></span>
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">SUPPLIER_YIELD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">.9</span><span class="p">,</span> <span class="mf">.5</span><span class="p">,</span> <span class="mf">.8</span><span class="p">])</span> <span class="c1"># unknown</span></span>
+<span class="code-line"><span class="n">SUPPLIER_YIELD_SD</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">.1</span><span class="p">,</span> <span class="mf">.2</span><span class="p">,</span> <span class="mf">.2</span><span class="p">])</span> <span class="c1"># unknown</span></span>
 <span class="code-line"><span class="n">PRICES</span> <span class="o">=</span> <span class="p">[</span><span class="mf">220.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">,</span> <span class="mf">120.0</span><span class="p">]</span> <span class="c1"># known</span></span>
 <span class="code-line"><span class="n">MAX_ORDER_SIZE</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span> <span class="c1"># known</span></span>
 </pre></div>
@@ -576,7 +649,7 @@ height=263
 <span class="code-line">    <span class="c1"># Different likelihood for every supplier because we have different</span></span>
 <span class="code-line">    <span class="c1"># number of data points</span></span>
 <span class="code-line">    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="p">):</span></span>
-<span class="code-line">        <span class="n">pm</span><span class="o">.</span><span class="n">Beta</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;supplier_yield_obs_</span><span class="si">{i}</span><span class="s1">&#39;</span><span class="p">,</span> </span>
+<span class="code-line">        <span class="n">pm</span><span class="o">.</span><span class="n">Beta</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;supplier_yield_obs_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> </span>
 <span class="code-line">            <span class="n">alpha</span><span class="o">=</span><span class="n">α</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">beta</span><span class="o">=</span><span class="n">β</span><span class="p">[</span><span class="n">i</span><span class="p">],</span></span>
 <span class="code-line">            <span class="n">observed</span><span class="o">=</span><span class="n">d</span><span class="p">)</span></span>
 <span class="code-line">    </span>
@@ -758,7 +831,7 @@ height=207
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">calc_yield_and_price</span><span class="p">(</span><span class="n">orders</span><span class="p">,</span> </span>
-<span class="code-line">                         <span class="n">supplier_yield</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">.</span><span class="mi">9</span><span class="p">,</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="o">.</span><span class="mi">8</span><span class="p">]),</span></span>
+<span class="code-line">                         <span class="n">supplier_yield</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">.9</span><span class="p">,</span> <span class="mf">.5</span><span class="p">,</span> <span class="mf">.8</span><span class="p">]),</span></span>
 <span class="code-line">                         <span class="n">prices</span><span class="o">=</span><span class="n">PRICES</span></span>
 <span class="code-line">                        <span class="p">):</span></span>
 <span class="code-line">    <span class="n">orders</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">orders</span><span class="p">)</span></span>
@@ -862,7 +935,7 @@ height=207
 <div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">optimize</span></span>
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">optimize</span></span>
 </pre></div>
 
     </div>
@@ -1369,9 +1442,53 @@ height=263
 </div>
 </div>
 </div>
-</div>
+
+					</div> 
+				</div>
+			</div>
 		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+
 	</body>
 
-    <!-- Javascript Loader for Pelican Javascript plugin-->
 </html>

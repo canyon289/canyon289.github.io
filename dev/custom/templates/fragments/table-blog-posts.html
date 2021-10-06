@@ -1,0 +1,31 @@
+<table class="blog-table">
+    <tr>
+        <th>Blog Post
+            {% if tag %}
+                <span class="blog-table-tag" >
+                    tag: {{ tag|upper }}
+                </span>
+            {% endif %}
+        </th>
+        <th class="blog-table-right">Tags</th>
+        <th class="blog-table-right">Date</th>
+    </tr>
+    {% for article in articles_page.object_list %}
+    <tr>
+        <td href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">
+            <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a>
+            <div class="blog-table-mobile-container">
+                <div class="blog-table-mobile-date">{{ article.locale_date }}</div>
+            </div>
+        </td>
+        <td class="blog-table-right">
+            {% for tag in article.tags %}
+                <span class="blog-table-tag blog-table-tag-{{ tag|lower }}" >
+                    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag|upper }}</a>
+                </span>
+            {% endfor %}
+        </td>
+        <td class="blog-table-right blog-table-date">{{ article.locale_date }}</td>
+    </tr>
+    {% endfor %}
+</table>

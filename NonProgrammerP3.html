@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Meta tags -->
+		<meta charset="utf-8">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
-		<!-- For Jupyter Notebooks -->
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
 
 <!--Notebook Configuration-->
 <script type="text/x-mathjax-config">
@@ -44,24 +51,20 @@
 </script>
 
 		<!-- CSS -->
-		<link href="//fonts.googleapis.com/" rel="dns-prefetch">
-		<link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Abril+Fatface|PT+Sans:400,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-
-		<link rel="stylesheet" href="./theme/css/notebook.css" />
-
-		<link rel="stylesheet" href="./theme/css/poole.css" />
-		<link rel="stylesheet" href="./theme/css/hyde.css" />
-		<link rel="stylesheet" href="./theme/css/syntax.css" />
-        <link rel="stylesheet" href="./theme/css/svgcenter.css" />
+		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+		<!-- CSS for blog landing page -->
 
-
-        <!-- CSS style sheets for pelican javascript plugin -->
-
+        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
 	<script type="text/javascript">
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -72,61 +75,131 @@
 	</script>
 	</head>
 
-	<body class="theme-base-darkgreen">
-<div class="sidebar">
-    <div class="container">
-        <div >
-            <h1 class="sidebar-title">
-                <a href="/">
-                    <!---<img class="profile-picture" src="./images/"> --->
-                    <!---['Ravin Kumar']--->
-                    Ravin Kumar
+	<body class='page body-article'>  <!-- extends -->
 
-                </a>
-            </h1>
-        </div>
-
-        <!---Add Blog Manually --->
-        <h1 class = "sidebar-page">
-            <a href="./blog.html">
-                Blog
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
-        </h1>
-
-      <!---Add Pages for Static Content --->
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/References.html">
-              References
-              </a>
-            </h1>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="container-box">
+        <div class="logo">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+            </a>
         </div>
-        <div>
-            <h1 class = "sidebar-page">
-              <a href="./pages/Talks.html">
-              Talks
-              </a>
-            </h1>
+        <div class="logo-mobile">
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+            </a>
         </div>
-    <div>
-    <nav class="sidebar-nav">
-                <a class="sidebar-nav-item" href="https://www.linkedin.com/in/ravinakumar">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://github.com/canyon289">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a class="sidebar-nav-item" href="https://twitter.com/canyon289">
-                    <i class="fa fa-twitter"></i>
-                </a>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="./blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="./pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="./pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>    </div>
+</div>		
+			<!-- Content -->
+			
+			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
+				<div class="row">
+						<!-- Sidebar -->
+						<div class="col-12 col-md-3 mb-3">
+							<div class="sidebar">
+<div class="docs-menu">
+  <h4>Categories</h4>
+  <ul>
+    <li class="">
+        <a href="./category/articles.html">
+            <span>articles</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/d3.html">
+            <span>D3</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/fitness.html">
+            <span>Fitness</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/general.html">
+            <span>General</span>
+        </a>
+    </li>
+    <li class="active ">
+        <a href="./category/programming.html">
+            <span>Programming</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/programming-machinelearning.html">
+            <span>Programming, MachineLearning</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/question.html">
+            <span>Question</span>
+        </a>
+    </li>
+    <li class="">
+        <a href="./category/svg.html">
+            <span>SVG</span>
+        </a>
+    </li>
+  </ul>
+</div>							</div>
+						</div>
+					<div class="col-12 col-md-9">
 
-    </nav>
-    </div>
-    </div>
-</div>		<div class="content container">
-<div class="post">
-	<h1 class="post-title">Programming as a Non Programmer - Part 3</h1>
-	<span class="post-date">Mon 23 January 2017</span>
+	<h1 class="page-title">Programming as a Non Programmer - Part 3</h1>
+	<p class="post-date">Mon 23 January 2017</p>
 	<p>This is Part 3 in a series about how learning how to program could affect
 your career and some of the experiences I've had with programming in mine</p>
 <ul>
@@ -137,7 +210,7 @@ your career and some of the experiences I've had with programming in mine</p>
 <li>My lessons and experiences writing code as a non programmer</li>
 <li>Steps I'm taking in the future</li>
 </ul>
-<h1 id="why-you-shouldnt-learn-to-program"><a class="toclink" href="#why-you-shouldnt-learn-to-program">Why you shouldn't learn to program</a></h1>
+<h1 id="why-you-shouldnt-learn-to-program">Why you shouldn't learn to program</h1>
 <p><a href="https://www.google.com/search?q=you+should+learn+to+program">A quick Google Search</a>
 shows hundreds of sites that proclaim you should learn how to program.
 I've personally doubled my salary learning how to program and it was a strong
@@ -162,8 +235,8 @@ you're told to program, so someone else can earn money.</p>
 <p>This is not to say there aren't alturistic people teaching you how to program.
 There are plenty of well meaning people that also give the same advice,
 but again I strongly believe this advice does not universally apply.</p>
-<h1 id="debunking-the-reasons"><a class="toclink" href="#debunking-the-reasons">Debunking the reasons</a></h1>
-<h2 id="programming-is-not-a-get-rich-quick-scheme"><a class="toclink" href="#programming-is-not-a-get-rich-quick-scheme">Programming is not a get rich quick scheme</a></h2>
+<h1 id="debunking-the-reasons">Debunking the reasons</h1>
+<h2 id="programming-is-not-a-get-rich-quick-scheme">Programming is not a get rich quick scheme</h2>
 <p>If you're learning programming with the sole intent of making money easily,
 or getting a "work from anywhere" lifestyle, consider the economics 
 of this. If programming was easy, if anyone learn it in 6 months, if you can
@@ -173,20 +246,20 @@ tenth of the cost. Or you versus the high schooler down the street that
 just graduated. Cal Newport writes an excellent blog series, one of the points
 being that to be valuable, you must provide unique value to someone else.
 What will make you a more valuable programmer versus anybody else?</p>
-<h2 id="the-fact-that-computers-are-commonplace-is-not-a-compelling-argument-to-program"><a class="toclink" href="#the-fact-that-computers-are-commonplace-is-not-a-compelling-argument-to-program">The fact that computers are commonplace is not a compelling argument to program</a></h2>
+<h2 id="the-fact-that-computers-are-commonplace-is-not-a-compelling-argument-to-program">The fact that computers are commonplace is not a compelling argument to program</h2>
 <p>It's true, computers are becoming and increasingly integral part of life,
 but just because they're around isn't itself a compelling reason to
 learn how to program. There are many objects that are common place,
 such as cars and houses but rarely do you see the advice
 "You live in a house, you should build your own", or "You use your car, you
 should learn how to make your own transmission". </p>
-<h2 id="learning-how-to-program-doesnt-teach-you-everything-about-computers-work"><a class="toclink" href="#learning-how-to-program-doesnt-teach-you-everything-about-computers-work">Learning how to program doesn't teach you everything about computers work</a></h2>
+<h2 id="learning-how-to-program-doesnt-teach-you-everything-about-computers-work">Learning how to program doesn't teach you everything about computers work</h2>
 <p>Conversely programming itself is an abstraction of physical transistors or byte code,
 but usually when people talk about "learning programming" they're talking about
 an arbitrary middle layer. Of course learning to program is a step
 in learning how computers work, but it's like saying that if you learn
 how to change your oil you understand how your car works.</p>
-<h2 id="the-skills-you-learned-before-are-not-as-valuable-as-programming"><a class="toclink" href="#the-skills-you-learned-before-are-not-as-valuable-as-programming">"The skills you learned before are not as valuable as Programming"</a></h2>
+<h2 id="the-skills-you-learned-before-are-not-as-valuable-as-programming">"The skills you learned before are not as valuable as Programming"</h2>
 <p>I commonly read about how "English Majors" should learn programming.
 This one bothers me the most because implies programming is a superior
 skillset to whatever a person already knows. I feel like approach
@@ -194,10 +267,10 @@ is largely negative, and even if it were true, is not a good way to convince
 people to program. I feel that people should be interested in an activity
 for it's merits, rather than being scared into it by being told that 
 their previous choices were largely mistakes.</p>
-<h1 id="past-the-flashy-titles"><a class="toclink" href="#past-the-flashy-titles">Past the flashy titles</a></h1>
+<h1 id="past-the-flashy-titles">Past the flashy titles</h1>
 <p>If you look past click bait titles there's some underlying truths to 
 how people generate value from their skills.</p>
-<h2 id="writing-a-program-is-easy-mastering-programming-is-hard"><a class="toclink" href="#writing-a-program-is-easy-mastering-programming-is-hard">Writing a program is easy, mastering programming is hard</a></h2>
+<h2 id="writing-a-program-is-easy-mastering-programming-is-hard">Writing a program is easy, mastering programming is hard</h2>
 <p>I write English. There are other people that
 also write English such as JK Rowling, Tom Clancy, and J.R.R. Tolkien.
 Yet those people were paid millions of dollars for their words. I doubt
@@ -206,7 +279,7 @@ the English language in their own unique way through years of hard work and prac
 <p>Learning to do program isn't free, even if Youtube videos or books cost $0 dollars
 online you'll need to spend many hours of your life focusing on learning
 programming (or any other skill really). </p>
-<h2 id="programming-skills-by-themselves-are-rarely-valued"><a class="toclink" href="#programming-skills-by-themselves-are-rarely-valued">Programming skills by themselves are rarely valued</a></h2>
+<h2 id="programming-skills-by-themselves-are-rarely-valued">Programming skills by themselves are rarely valued</h2>
 <p>Pay attention to the skillsets of the people that earned value from
 programming, usually people like Bill Gates or Mark Zuckerberg are examples.
 Those people were good at programming, but they were also good at other things,
@@ -216,16 +289,60 @@ An unfortunate example of this is Phil Katz, who was an extraordinary programmer
 but had trouble working with others and arguably did not have an ideal life in
 his later days. Strongly consider what skills you have that you can work on 
 outside of programming constantly.</p>
-<h1 id="the-summary"><a class="toclink" href="#the-summary">The Summary</a></h1>
+<h1 id="the-summary">The Summary</h1>
 <p>There's a lot of good reasons to learn how to program, but the reasons
 above in my opinion are not the right ones. If you're deciding to program
 I would carefully evaluate if you're being swayed by arguments
 such as the one above. If so think hard about whether learning programming
 is right for you. In the next post I'll talk about reasons why learning
 programming can be beneficial.</p>
-</div>
+
+					</div> 
+				</div>
+			</div>
 		</div>
+
+		<!-- Footer -->
+
+<div class="sub-footer">
+    <div class="container-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="sub-footer-inner">
+                    <div class="sub-footer-inner-left">
+                        <ul>
+                            <li>
+                                    <a href="https://www.linkedin.com/in/ravinakumar">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://github.com/canyon289">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                            </li>
+                            <li>
+                                    <a href="https://twitter.com/canyon289">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sub-footer-inner-right">
+                        <ul>
+                            <li><a href=".">Ravin Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="./theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+
 	</body>
 
-    <!-- Javascript Loader for Pelican Javascript plugin-->
 </html>
