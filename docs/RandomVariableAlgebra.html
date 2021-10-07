@@ -265,7 +265,7 @@ $$
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">number_of_people</span> <span class="o">=</span> <span class="mf">1e6</span></span>
-<span class="code-line"><span class="n">dose_per_person_ml</span> <span class="o">=</span> <span class="o">.</span><span class="mi">3</span></span>
+<span class="code-line"><span class="n">dose_per_person_ml</span> <span class="o">=</span> <span class="mf">.3</span></span>
 <span class="code-line"><span class="n">number_of_people</span> <span class="o">*</span> <span class="n">dose_per_person_ml</span></span>
 </pre></div>
 
@@ -319,10 +319,10 @@ $$
 <div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">stats</span></span>
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span></span>
 <span class="code-line"></span>
-<span class="code-line"><span class="n">mean_dose</span> <span class="o">=</span> <span class="o">.</span><span class="mi">3</span></span>
-<span class="code-line"><span class="n">std_dose</span> <span class="o">=</span> <span class="o">.</span><span class="mi">05</span></span>
+<span class="code-line"><span class="n">mean_dose</span> <span class="o">=</span> <span class="mf">.3</span></span>
+<span class="code-line"><span class="n">std_dose</span> <span class="o">=</span> <span class="mf">.05</span></span>
 <span class="code-line"><span class="n">dose_rv</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">mean_dose</span><span class="p">,</span> <span class="n">std_dose</span><span class="p">)</span></span>
 <span class="code-line"><span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">()</span></span>
 </pre></div>
@@ -407,8 +407,8 @@ $$
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="n">num_random_draws</span> <span class="o">=</span> <span class="mi">10000</span></span>
 <span class="code-line"><span class="n">samples</span> <span class="o">=</span> <span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">num_random_draws</span><span class="p">)</span></span>
-<span class="code-line"><span class="p">(</span><span class="n">f</span><span class="s2">&quot;The recovered mean is {samples.mean()}, &quot;</span></span>
-<span class="code-line"><span class="n">f</span><span class="s2">&quot;The recovered standard deviation is {samples.std()}&quot;</span><span class="p">)</span></span>
+<span class="code-line"><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The recovered mean is </span><span class="si">{</span><span class="n">samples</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s2">, &quot;</span></span>
+<span class="code-line"><span class="sa">f</span><span class="s2">&quot;The recovered standard deviation is </span><span class="si">{</span><span class="n">samples</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></span>
 </pre></div>
 
     </div>
@@ -615,8 +615,8 @@ $$
 <div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;The recovered mean is {amount_for_million_doses.mean()}, &quot;</span></span>
-<span class="code-line"><span class="n">f</span><span class="s2">&quot;The recovered standard deviation is {amount_for_million_doses.std()}&quot;</span><span class="p">)</span></span>
+<div class=" highlight hl-ipython3"><pre><span class="code-line"><span></span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The recovered mean is </span><span class="si">{</span><span class="n">amount_for_million_doses</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s2">, &quot;</span></span>
+<span class="code-line"><span class="sa">f</span><span class="s2">&quot;The recovered standard deviation is </span><span class="si">{</span><span class="n">amount_for_million_doses</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></span>
 </pre></div>
 
     </div>

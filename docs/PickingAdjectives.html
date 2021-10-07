@@ -209,20 +209,20 @@ However if you're partially lucky you'll be sitting in
 front of a computer with no one around.</p>
 <p>As it turns out I was partially lucky.</p>
 <div class="highlight"><pre><span class="code-line"><span></span><span class="c1">#Python Monte Carlo Simulation</span></span>
-<span class="code-line"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span></span>
-<span class="code-line"><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span></span>
+<span class="code-line"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">)))</span></span>
 <span class="code-line"><span class="n">number_of_trials</span><span class="p">,</span> <span class="n">matches</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span></span>
 <span class="code-line"></span>
 <span class="code-line"><span class="k">while</span> <span class="n">number_of_trials</span> <span class="o">&lt;</span> <span class="mi">1000000</span><span class="p">:</span></span>
-<span class="code-line">    <span class="n">c1</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)]</span></span>
-<span class="code-line">    <span class="n">c2</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)]</span></span>
+<span class="code-line">    <span class="n">c1</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)]</span></span>
+<span class="code-line">    <span class="n">c2</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)]</span></span>
 <span class="code-line">    <span class="k">if</span> <span class="n">c2</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">c1</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span></span>
 <span class="code-line">        <span class="n">matches</span> <span class="o">+=</span><span class="mi">1</span></span>
 <span class="code-line"></span>
 <span class="code-line">    <span class="n">number_of_trials</span> <span class="o">+=</span><span class="mi">1</span></span>
-<span class="code-line">    <span class="k">print</span><span class="p">(</span><span class="n">matches</span><span class="o">/</span><span class="n">number_of_trials</span><span class="p">)</span></span>
+<span class="code-line">    <span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="o">/</span><span class="n">number_of_trials</span><span class="p">)</span></span>
 </pre></div>
 
 
@@ -260,7 +260,7 @@ to get the chance of a sequence of picks. We also can add
 each way the picks could play out to get the total chance
 at least 4 match. To save yourself a lot of multiplication
 and division here's the math in Python.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="k">print</span><span class="p">(</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="nb">print</span><span class="p">(</span></span>
 <span class="code-line"><span class="c1">#All five match</span></span>
 <span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span> <span class="o">+</span> </span>
 <span class="code-line"></span>
