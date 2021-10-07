@@ -34,13 +34,13 @@ var sub_optimal2 = {"nodes":[
                     {source:2, target:3},
                     {source:3, target:0}
                     ]};
-                    
+
 //Draw both example networks immediately
 draw_network("#wronglyconnectedgraph", sub_optimal1)
 draw_network("#betterconnectedgraph", sub_optimal2)
 
 //Click Header to start animation
-d3.select("body").select("#click-to-start-search")
+d3.select("body").select("#click-to-start-visualization")
         .on("click", function() {
             if (in_progress){
                 console.log("Visualisation already running")
@@ -52,9 +52,9 @@ d3.select("body").select("#click-to-start-search")
             in_progress = true
             }
         });
-        
+
 function draw_network(div, data){
-    
+
     function xy_array_generator(){
         //Returns array of xy positions
         var x
@@ -66,16 +66,16 @@ function draw_network(div, data){
         if (data["nodes"].length % 2 === 0){
             int_angle = angle/2 + Math.PI/2
         }
-            
+
         for (var i=0; i < data["nodes"].length; i++) {
             x = width/2 + Math.cos(int_angle - angle*i)*initial_radius
             y = height/2 - Math.sin(int_angle - angle*i)*initial_radius
             //debugger
             xy_array.push({"x":x, "y":y})
-        }   
+        }
         return xy_array;
     }
-    
+
     var xy_array = xy_array_generator()
     var drawn_links = [];
 
@@ -95,7 +95,7 @@ function draw_network(div, data){
             .attr("r", radius)
             .attr("cx", function(d,i) {return xy_array[i].x;})
             .attr("cy", function(d,i) {return xy_array[i].y;});
-    
+
         node.append("text")
             .text(function(d,i) {return d["number"]})
             .attr("x", function(d,i) {return xy_array[i].x;})
@@ -122,11 +122,11 @@ function draw_network(div, data){
         var newedge = data.edges.shift();
         drawn_links.push(newedge);
         console.log(newedge)
-        
+
         // now add the links to the svg element
         link = svg.selectAll(".edge")
             .data(drawn_links);
-        
+
         link.enter()
             .insert("line", ":first-child")
             .attr("class", "edge") // make sure that the class is the same as the selector
