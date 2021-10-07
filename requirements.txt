@@ -31,7 +31,7 @@ nest-asyncio==1.5.1
 packaging==21.0
 pandocfilters==1.4.3
 parso==0.8.2
-pelican==4.6.0
+pelican==4.7.0
 pelican-liquid-tags==1.0.1
 pelican-simple-footnotes==1.0.2
 pexpect==4.8.0
