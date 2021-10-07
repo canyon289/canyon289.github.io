@@ -14,7 +14,7 @@ into the axes area we don't wany any overlap.
 
 # An example
 In the visualization below zoom and pan have been applied using the method in
-the [zoom and pan post]({filename}ImplementingD3Zoom.md). We only want the blue
+the [zoom and pan post]({filename}../Data Science/ImplementingD3Zoom.md). We only want the blue
 dot to be visible in the blue region but it's clearly visible everywhere.
 
 <div id="unclipped"></div>

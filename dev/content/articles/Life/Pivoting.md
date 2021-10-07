@@ -21,7 +21,7 @@ data science things daily. And as you may have guessed I have no issues with thi
 # Where this leaves you (and this blog)
 Instead of focusing specifically on the data scientist interview I'll focus more
 on the topics that come up during the course of my work. For instance
-I had to create a visualization in D3 [which required zoom]({filename}ImplementingD3Zoom.md)
+I had to create a visualization in D3 [which required zoom]({filename}../Data Science/ImplementingD3Zoom.md)
 As is such this blog for the time being this blog will focus more on data 
 challenges present in the enterprise environment and moreso on manufacturing and
 supply chain. I hope you still find the articles informative and useful

@@ -8,7 +8,7 @@ Javascripts: https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js, D3Zoom.j
 Stylesheets: svgcenter.css
 Status: published
 
-In the [last post]({filename}ImplementingD3Zoom.md) we covered how to implement
+In the [last post]({filename}../Data Science/ImplementingD3Zoom.md) we covered how to implement
 basic zoom and pan in a D3 svg with one line but also left ourselves with an example
 of an unexpected behavior.
 
