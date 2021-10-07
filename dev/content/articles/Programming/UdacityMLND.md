@@ -10,7 +10,7 @@ Status: Published
 I recently finished the Udacity Machine Learning Nanodegree and wanted to share
 the following thoughts on my experience.
 
-If you haven't read my [Review of Data Science Programs]({filename}./DSGuide.md)
+If you haven't read my [Review of Data Science Programs]({filename}../Data Science/DSGuide.md)
 I would do so first, to get a general explanation of the other types
 of machine learning curriculum.
 
