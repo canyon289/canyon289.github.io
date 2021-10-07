@@ -188,7 +188,7 @@ still relevant.</p>
 <p>Let's say you're starting out with Machine Learning and 
 <em>you need an immediate fix for a small problem, or a quick prototype or proof of concept</em>.
 Easy, below is a sample program to make predictions on the Iris dataset</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span></span>
+<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span></span>
 <span class="code-line"><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span></span>
 <span class="code-line"><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span></span>
 <span class="code-line"><span class="n">iris_csv</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/&quot;</span></span>
@@ -343,7 +343,7 @@ Language Processing Problem that found word count and string length for a given 
 <span class="code-line">    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span></span>
 <span class="code-line">        <span class="sd">&quot;&quot;&quot;Accepts Pandas Series and returns back a dataframe where each column is a feature&quot;&quot;&quot;</span></span>
 <span class="code-line"></span>
-<span class="code-line">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">features</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span></span>
+<span class="code-line">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">features</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span></span>
 <span class="code-line">            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Features must be a list of features that will be used in this model&quot;</span><span class="p">)</span></span>
 <span class="code-line"></span>
 <span class="code-line">        <span class="n">features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span></span>
