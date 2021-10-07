@@ -1,7 +1,7 @@
-Title: Interview Question: Finding a match
+Title: Interview Question: Finding a Match
 Date: 2016-4-25 
-Category: Programming
-Tags: Visualization, Interview
+Category: Statistics
+Tags: Interview
 Slug: PickingAdjectives
 Authors: Ravin Kumar
 Status: Published
