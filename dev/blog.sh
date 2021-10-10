@@ -13,7 +13,7 @@ tmux send-keys 'conda activate blog && pelican -r -s pelicanconf.py' 'C-m'
 # Start http server
 tmux select-window -t blog:0
 tmux split-window -v 
-tmux send-keys 'cd .. && conda activate blog && python -m http.server' 'C-m'
+tmux send-keys 'cd ../docs && python -m http.server' 'C-m'
 
 # Ready to blog
 tmux new-window -n blog_article -c $PWD"/content"
