@@ -25,7 +25,7 @@ You'll find essays on these topics in my blog.
 You can also find more of my work 
 
 * on my [open source profile](https://github.com/canyon289) 
-* [various talks and presentation]({filename}/pages/Talks.md)  
+* [various talks and presentations]({filename}/pages/Talks.md)  
 * a [book covering Bayesian Statistics](https://www.routledge.com/Bayesian-Modeling-and-Computation-in-Python/Martin-Kumar-Lao/p/book/9780367894368)   
 * an upcoming course on intuitive statistics  
  
