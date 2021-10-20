@@ -19,11 +19,11 @@ I strive to be:
 2. An effective community member and leader
 3. A knowledge contributor
 
-Aside from this blog you can find my work 
+Aside from this blog you can find more of my work 
 
-* on my [open source profile](https://github.com/canyon289) and data conferences  
+* on my [open source profile](https://github.com/canyon289) 
 * [various talks and presentation]({filename}/pages/Talks.md)  
-* a [book about Bayesian Statistics](https://www.routledge.com/Bayesian-Modeling-and-Computation-in-Python/Martin-Kumar-Lao/p/book/9780367894368)   
+* a [book covering Bayesian Statistics](https://www.routledge.com/Bayesian-Modeling-and-Computation-in-Python/Martin-Kumar-Lao/p/book/9780367894368)   
 * an upcoming course on intuitive statistics  
  
 <svg viewbox="0 0 100 100" style="position:absolute;z-index:-1;opacity:4%;max-width:60%;max-height:80%;left: 50%;-webkit-transform:translateX(-50%);-ms-transform: translateX(-50%);transform:translateX(-50%);bottom:-15%;">
