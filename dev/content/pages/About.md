@@ -15,7 +15,7 @@ I'm also an open source contributor and core contributor to
 It's so incredible that a group of self organizing unpaid strangers can create 
 some of the best software ever.
 
-Aside from wht I am, I strive to be:
+Aside from what I am, I strive to be:
 
 1. An expert computational mathematician
 2. An effective community member and leader
