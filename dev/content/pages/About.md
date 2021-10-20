@@ -10,16 +10,19 @@ I'm a data person. Characterizing real world systems with math and statistics is
 That's what I do at Google as a data scientist, and previously at Sweetgreen and SpaceX for
 food and rockets respectively.
 
-I'm also an open source person, as a core contributor to
-[ArviZ](https://arviz-devs.github.io/arviz/index.html) and [PyMC](https://docs.pymc.io/).
+I'm also an open source contributor and core contributor to
+[ArviZ](https://arviz-devs.github.io/arviz/index.html) and [PyMC](https://docs.pymc.io/). 
+It's so incredible that a group of self organizing unpaid strangers can create 
+some of the best software ever.
 
-I strive to be:
+Aside from wht I am, I strive to be:
 
 1. An expert computational mathematician
 2. An effective community member and leader
 3. A knowledge contributor
 
-Aside from this blog you can find more of my work 
+You'll find essays on these topics in my blog.  
+You can also find more of my work 
 
 * on my [open source profile](https://github.com/canyon289) 
 * [various talks and presentation]({filename}/pages/Talks.md)  
