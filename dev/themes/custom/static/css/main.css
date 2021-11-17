@@ -595,7 +595,17 @@ pre, .code-line {
 
 .input, .output_area, .output_subarea {
     display: flex;
+    flex-direction: row;
     overflow-x: auto;
     padding: 0.4rem;
     flex: 1;
+}
+@media (max-width: 768px) {
+    .input, .output_area {
+        flex-direction: column;
+    }
+
+    .input_prompt, .output_prompt {
+        text-align: start;
+    }
 }
