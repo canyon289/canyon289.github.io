@@ -1,33 +1,24 @@
-
-<div class="sub-footer">
-    <div class="container-box">
-        <div class="row">
-            <div class="col-12">
-                <div class="sub-footer-inner">
-                    <div class="sub-footer-inner-left">
-                        <ul>
-                            {% for name, link in SOCIAL %}
-                            <li>
-                                {% if name == 'email' %}
-                                    <a href="mailto:{{ link }}">
-                                        <i class="fa fa-envelope"></i>
-                                    </a>
-                                {% else %}
-                                    <a href="{{ link }}">
-                                        <i class="fa fa-{{ name }}"></i>
-                                    </a>
-                                {% endif %}
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="sub-footer-inner-right">
-                        <ul>
-                            <li><a href="{{ SITEURL }}">{{ AUTHOR }}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<div class="footer">
+    <div class="wrapper footer-wrapper">
+        <div class="footer-left">
+            <ul>
+                {% for name, link in SOCIAL %}
+                <li>
+                    {% if name == 'email' %}
+                    <a href="mailto:{{ link }}">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    {% else %}
+                    <a href="{{ link }}">
+                        <i class="fa fa-{{ name }}"></i>
+                    </a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="footer-right">
+            <a href="{{ SITEURL }}">{{ AUTHOR }}</a>
         </div>
     </div>
 </div>
