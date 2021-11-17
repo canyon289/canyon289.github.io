@@ -21,7 +21,6 @@
 		{% include "fragments/_nb_header.html" %}
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/codesyntax.css" />
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/svgstyles.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
@@ -47,29 +46,18 @@
 
 		{% include 'fragments/main-menu-mobile.html' %}
 
-		<div class="wrapper">
+		<div class="wrapper body-wrapper">
 			<!-- Header -->
 			{% include 'fragments/header.html' %}
 		
 			<!-- Content -->
-			
-			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
-				<div class="row">
-					{% if article or category %}
-						<!-- Sidebar  col-md-3 mb-3 -->
-						<div class="col-12">
-							<div class="sidebar">
-								{% include 'fragments/sidebar.html' %}
-							</div>
-						</div>
-					{% endif %}
-					<!-- Content  { if article or category }col-md-9{ endif }-->
-					<div class="col-12">
-						{% block content %}
-						{% endblock %}
-					</div> 
-				</div>
-			</div>
+			{% if article or category or not page %}
+				{% include 'fragments/categories.html' %}
+			{% endif %}
+			<div class="content">
+				{% block content %}
+				{% endblock %}
+			</div> 
 		</div>
 
 		<!-- Footer -->

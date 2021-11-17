@@ -2,16 +2,12 @@
     <ul>
         <!---Add Blog Manually --->
         <li class="menu-item-blog">
-            <a href="{{ SITEURL }}/blog.html">
-                <span>Blog</span>
-            </a>
+            <a href="{{ SITEURL }}/blog.html">Blog</a>
         </li>
         <!---Add Remaining Pages (excluding About) --->
         {% for p in pages %} {% if 'Ravin' not in p.title %}
         <li class="menu-item-{{ p.title | lower }}">
-            <a href="{{ SITEURL }}/{{ p.url }}">
-                <span>{{ p.title }}</span>
-            </a>
+            <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
         </li>
         {% endif %} {% endfor %}
     </ul>
