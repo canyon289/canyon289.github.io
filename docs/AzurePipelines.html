@@ -51,7 +51,6 @@
 </script>
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
@@ -101,81 +100,56 @@
         </li>
      </ul>
 </div>
-		<div class="wrapper">
+		<div class="wrapper body-wrapper">
 			<!-- Header -->
 <div class="header">
-    <div class="container-box">
-        <div class="logo">
-            <a href=".">
-                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
-            </a>
-        </div>
-        <div class="logo-mobile">
-            <a href=".">
-                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
-            </a>
-        </div>
+    <div class="logo">
+        <a href=".">
+            <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+        </a>
+    </div>
+    <div class="logo-mobile">
+        <a href=".">
+            <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+        </a>
+    </div>
 <div id="main-menu" class="main-menu">
     <ul>
         <!---Add Blog Manually --->
         <li class="menu-item-blog">
-            <a href="./blog.html">
-                <span>Blog</span>
-            </a>
+            <a href="./blog.html">Blog</a>
         </li>
         <!---Add Remaining Pages (excluding About) --->
            <li class="menu-item-references">
-            <a href="./pages/References.html">
-                <span>References</span>
-            </a>
+            <a href="./pages/References.html">References</a>
         </li>
           <li class="menu-item-talks">
-            <a href="./pages/Talks.html">
-                <span>Talks</span>
-            </a>
+            <a href="./pages/Talks.html">Talks</a>
         </li>
      </ul>
 </div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
     <span class="hamburger-box">
         <span class="hamburger-inner"></span>
     </span>
-</button>    </div>
-</div>		
+</button></div>		
 			<!-- Content -->
-			
-			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
-				<div class="row">
-						<!-- Sidebar  col-md-3 mb-3 -->
-						<div class="col-12">
-							<div class="sidebar">
-<div class="docs-menu">
-  <h4>Categories</h4>
-  <ul class="sidebar">
-    <li class="sidebar-category ">
-        <a href="./category/data-science.html">
-            <span>Data Science</span>
-        </a>
+<div class="categories-menu">
+  <h4>Search by Category</h4>
+  <ul class="categories">
+    <li>
+        <a href="./category/data-science.html" class="">Data Science</a>
     </li>
-    <li class="sidebar-category ">
-        <a href="./category/life.html">
-            <span>Life</span>
-        </a>
+    <li>
+        <a href="./category/life.html" class="">Life</a>
     </li>
-    <li class="sidebar-category active ">
-        <a href="./category/programming.html">
-            <span>Programming</span>
-        </a>
+    <li>
+        <a href="./category/programming.html" class="active">Programming</a>
     </li>
-    <li class="sidebar-category ">
-        <a href="./category/statistics.html">
-            <span>Statistics</span>
-        </a>
+    <li>
+        <a href="./category/statistics.html" class="">Statistics</a>
     </li>
   </ul>
-</div>							</div>
-						</div>
-					<!-- Content  { if article or category }col-md-9{ endif }-->
-					<div class="col-12">
+</div>			<div class="content">
 
 	<h1 class="page-title">Migrating from TravisCI to Azure Pipelines</h1>
 	<p class="post-date">Jun 02, 2019</p>
@@ -240,44 +214,33 @@ that that WebGUI was not needed.</p>
 <p>We're going to trial both CI pipelines with ArviZ to see which one we should
 move forward with. When we know I'll update this blog post. Happy CIing.</p>
 
-					</div> 
-				</div>
-			</div>
+			</div> 
 		</div>
 
 		<!-- Footer -->
-
-<div class="sub-footer">
-    <div class="container-box">
-        <div class="row">
-            <div class="col-12">
-                <div class="sub-footer-inner">
-                    <div class="sub-footer-inner-left">
-                        <ul>
-                            <li>
-                                    <a href="https://www.linkedin.com/in/ravinakumar">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                            </li>
-                            <li>
-                                    <a href="https://github.com/canyon289">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                            </li>
-                            <li>
-                                    <a href="https://twitter.com/canyon289">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub-footer-inner-right">
-                        <ul>
-                            <li><a href=".">Ravin Kumar</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<div class="footer">
+    <div class="wrapper footer-wrapper">
+        <div class="footer-left">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/ravinakumar">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/canyon289">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/canyon289">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <a href=".">Ravin Kumar</a>
         </div>
     </div>
 </div>

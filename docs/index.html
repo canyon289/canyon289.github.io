@@ -51,7 +51,6 @@
 </script>
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="./theme/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
         <link rel="stylesheet" href="./theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="./theme/css/main.css" />
@@ -101,76 +100,85 @@
         </li>
      </ul>
 </div>
-		<div class="wrapper">
+		<div class="wrapper body-wrapper">
 			<!-- Header -->
 <div class="header">
-    <div class="container-box">
-        <div class="logo">
-            <a href=".">
-                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
-            </a>
-        </div>
-        <div class="logo-mobile">
-            <a href=".">
-                <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
-            </a>
-        </div>
+    <div class="logo">
+        <a href=".">
+            <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
+        </a>
+    </div>
+    <div class="logo-mobile">
+        <a href=".">
+            <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
+        </a>
+    </div>
 <div id="main-menu" class="main-menu">
     <ul>
         <!---Add Blog Manually --->
         <li class="menu-item-blog">
-            <a href="./blog.html">
-                <span>Blog</span>
-            </a>
+            <a href="./blog.html">Blog</a>
         </li>
         <!---Add Remaining Pages (excluding About) --->
            <li class="menu-item-references">
-            <a href="./pages/References.html">
-                <span>References</span>
-            </a>
+            <a href="./pages/References.html">References</a>
         </li>
           <li class="menu-item-talks">
-            <a href="./pages/Talks.html">
-                <span>Talks</span>
-            </a>
+            <a href="./pages/Talks.html">Talks</a>
         </li>
      </ul>
 </div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
     <span class="hamburger-box">
         <span class="hamburger-inner"></span>
     </span>
-</button>    </div>
-</div>		
+</button></div>		
 			<!-- Content -->
-			
-			<div class="container-box pt-2 pt-md-6 pb-3 pb-md-6">
-				<div class="row">
-					<!-- Content  { if article or category }col-md-9{ endif }-->
-					<div class="col-12">
+			<div class="content">
 
 	<h1 class="page-title">Hi, I'm Ravin</h1>
-	<p>I'm a data person. Characterizing real world systems with math and statistics is absolutely fascinating.
-That's what I do at Google as a data scientist, and previously at Sweetgreen and SpaceX for
-food and rockets respectively.</p>
-<p>I'm also an open source contributor and core contributor to
-<a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC</a>. 
-It's so incredible that a group of self organizing unpaid strangers can create 
-some of the best software ever.</p>
-<p>Aside from wht I am, I strive to be:</p>
-<ol>
-<li>An expert computational mathematician</li>
-<li>An effective community member and leader</li>
-<li>A knowledge contributor</li>
-</ol>
-<p>You'll find essays on these topics in my blog.<br>
-You can also find more of my work </p>
-<ul>
-<li>on my <a href="https://github.com/canyon289">open source profile</a> </li>
-<li><a href="./pages/Talks.html">various talks and presentation</a>  </li>
-<li>a <a href="https://www.routledge.com/Bayesian-Modeling-and-Computation-in-Python/Martin-Kumar-Lao/p/book/9780367894368">book covering Bayesian Statistics</a>   </li>
-<li>an upcoming course on intuitive statistics  </li>
-</ul>
-<p><svg viewbox="0 0 100 100" style="position:absolute;z-index:-1;opacity:4%;max-width:60%;max-height:80%;left: 50%;-webkit-transform:translateX(-50%);-ms-transform: translateX(-50%);transform:translateX(-50%);bottom:-15%;">
+	<style type="text/css">
+    h1, h2, h3, h4 {
+        text-align: center;
+    }
+    h1:not(.page-title), h2, h3, h4 {
+        margin-top: 2.5rem;
+    }
+    #action-links {
+        max-width: 100%;
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .action-link {
+        border-radius: 5%;
+        background-color: #f4f5fb;
+        text-align: center;
+        max-width: 30%;
+        min-width: 120px;
+        padding: 15px;
+        margin: 1.5%;
+        flex: 1;
+        -webkit-transition: all 0.15s ease;
+        transition: all 0.15s ease;
+    }
+    .action-link a {
+        text-decoration: none;
+        color: #12221d;
+    }
+    .action-link:hover {
+        box-shadow: 0 0 10px #ccc;
+    }
+
+    .action-link img {
+        max-height: 100px;
+        margin-bottom: 1rem;
+    }
+
+</style>
+
+<p><svg viewbox="0 0 100 100" style="opacity:12%;max-width:100px;max-height:100px; margin:40px auto;">
     <style type="text/css">
         path {
             fill: none;
@@ -203,45 +211,51 @@ You can also find more of my work </p>
         <path id="K-triangle-2" d="M 56.2434 42.1297 L 85 91.6304 L 56.2434 91.6304 Z" pathLength="1"/>
     </g>
 </svg></p>
+<p>I am a data scientist at Google where I use data to inform decisions, although all my opinions here are my own. I have previously worked at Sweetgreen, designing systems that would benefit team members and communities through sustainable and healthy food, and SpaceX, creating tools that would ultimately launch rocket ships. I feel fortunate to have worked with amazing teams throughout my career.</p>
+<p>There are 3 things I strive to be:</p>
+<ol>
+<li>An expert computational mathematician</li>
+<li>An effective community member and leader</li>
+<li>A knowledge contributor</li>
+</ol>
+<p>I always thought it was cool that people would come together and use math to build awesome things, whether it be rocket ships or computational statistics libraries. One of my most rewarding experiences came from contributing to the open source community. Since then, I have been a core contributor to <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC3</a>.</p>
+<p>I believe in the possibility of creating great outcomes with math. The variety and volume of data has increased faster than the knowledge of how to make full use of it, and I am working to fill the gap. You'll see my public efforts in my <a href="https://github.com/canyon289">open source profile</a> and data conferences. I enjoy sharing my knowledge at <a href="./pages/Talks.html">various talks</a>, such as <a href="https://www.youtube.com/watch?v=bmWMdVQlzIA">SciPy</a> and <a href="https://www.youtube.com/watch?v=dY1nNtDTruE">PyData</a>. </p>
+<p>I also published a <a href="https://www.routledge.com/Bayesian-Modeling-and-Computation-in-Python/Martin-Kumar-Lao/p/book/9780367894368">book about Bayesian Statistics</a> and am working on an upcoming statistics course.</p>
+<h1 id="see-my-work">See my work</h1>
+<div id="action-links">
+<div class="action-link"><a href="https://github.com/canyon289/canyon289.github.io"><img src="./images/about/github.png" />Open source profile</a></div>
+<div class="action-link"><a href="https://ravinkumar.com/pages/References.html"><img src="./images/about/youtube.png" />Various talks</a></div>
+<div class="action-link"><a href="https://bayesiancomputationbook.com/welcome.html"><img src="./images/about/book.jpeg" />Book on bayesian statistics</a></div>
+<div class="action-link"><a href="https://www.intuitivebayes.com/"><img src="./images/about/course.svg" />Course on intuitive statistics</div>
+</a></div>
 
-					</div> 
-				</div>
-			</div>
+			</div> 
 		</div>
 
 		<!-- Footer -->
-
-<div class="sub-footer">
-    <div class="container-box">
-        <div class="row">
-            <div class="col-12">
-                <div class="sub-footer-inner">
-                    <div class="sub-footer-inner-left">
-                        <ul>
-                            <li>
-                                    <a href="https://www.linkedin.com/in/ravinakumar">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                            </li>
-                            <li>
-                                    <a href="https://github.com/canyon289">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                            </li>
-                            <li>
-                                    <a href="https://twitter.com/canyon289">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sub-footer-inner-right">
-                        <ul>
-                            <li><a href=".">Ravin Kumar</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+<div class="footer">
+    <div class="wrapper footer-wrapper">
+        <div class="footer-left">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/ravinakumar">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/canyon289">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/canyon289">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <a href=".">Ravin Kumar</a>
         </div>
     </div>
 </div>
