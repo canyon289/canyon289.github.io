@@ -408,7 +408,6 @@ ul.categories {
 .blog-table-right {
     text-align: right;
     display: none;
-    max-width: 120px;
 }
 .blog-table-mobile-container {
     display: flex;
@@ -416,9 +415,9 @@ ul.categories {
     padding-top: 0.2rem;
     padding-bottom: 1rem;
 }
-
 .blog-table-date {
     font-size: 0.9rem;
+    max-width: 120px;
 }
 .blog-table-mobile-date {
     font-size: 0.7rem;

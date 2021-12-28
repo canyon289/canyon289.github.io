@@ -5,23 +5,49 @@ Authors: Ravin Kumar
 Status: Published
 save_as: index.html 
 
+<style type="text/css">
+    h1, h2, h3, h4 {
+        text-align: center;
+    }
+    h1:not(.page-title), h2, h3, h4 {
+        margin-top: 2.5rem;
+    }
+    #action-links {
+        max-width: 100%;
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .action-link {
+        border-radius: 5%;
+        background-color: #f4f5fb;
+        text-align: center;
+        max-width: 30%;
+        min-width: 120px;
+        padding: 15px;
+        margin: 1.5%;
+        flex: 1;
+        -webkit-transition: all 0.15s ease;
+        transition: all 0.15s ease;
+    }
+    .action-link a {
+        text-decoration: none;
+        color: #12221d;
+    }
+    .action-link:hover {
+        box-shadow: 0 0 10px #ccc;
+    }
 
-I am a data scientist at Google where I use data to inform decisions, although all my opinions here are my own. I have previously worked at Sweetgreen, designing systems that would benefit team members and communities through sustainable and healthy food, and SpaceX, creating tools that would ultimately launch rocket ships. I feel fortunate to have worked with amazing teams throughout my career.
+    .action-link img {
+        max-height: 100px;
+        margin-bottom: 1rem;
+    }
 
-There are 3 things I strive to be:
+</style>
 
-1. An expert computational mathematician
-2. An effective community member and leader
-3. A knowledge contributor
-
-I always thought it was cool that people would come together and use math to build awesome things, whether it be rocket ships or computational statistics libraries. One of my most rewarding experiences came from contributing to the open source community. Since then, I have been a core contributor to [ArviZ](https://arviz-devs.github.io/arviz/index.html) and [PyMC3](https://docs.pymc.io/).
-
-I believe in the possibility of creating great outcomes with math. The variety and volume of data has increased faster than the knowledge of how to make full use of it, and I am working to fill the gap. You'll see my public efforts in my [open source profile](https://github.com/canyon289) and data conferences. I enjoy sharing my knowledge at [various talks]({filename}/pages/Talks.md), such as [SciPy](https://www.youtube.com/watch?v=bmWMdVQlzIA) and [PyData](https://www.youtube.com/watch?v=dY1nNtDTruE). 
-
-I also published a [book about Bayesian Statistics](https://www.routledge.com/Bayesian-Modeling-and-Computation-in-Python/Martin-Kumar-Lao/p/book/9780367894368) and am working on an upcoming statistics course.
-
-
-<svg viewbox="0 0 100 100" style="position:absolute;z-index:-1;opacity:4%;max-width:60%;max-height:60%;left: 50%;-webkit-transform:translateX(-50%);-ms-transform: translateX(-50%);transform:translateX(-50%);bottom:5%;">
+<svg viewbox="0 0 100 100" style="opacity:12%;max-width:100px;max-height:100px; margin:40px auto;">
     <style type="text/css">
         path {
             fill: none;
@@ -54,3 +80,27 @@ I also published a [book about Bayesian Statistics](https://www.routledge.com/Ba
         <path id="K-triangle-2" d="M 56.2434 42.1297 L 85 91.6304 L 56.2434 91.6304 Z" pathLength="1"/>
     </g>
 </svg>
+
+I am a data scientist at Google where I use data to inform decisions, although all my opinions here are my own. I have previously worked at Sweetgreen, designing systems that would benefit team members and communities through sustainable and healthy food, and SpaceX, creating tools that would ultimately launch rocket ships. I feel fortunate to have worked with amazing teams throughout my career.
+
+There are 3 things I strive to be:
+
+1. An expert computational mathematician
+2. An effective community member and leader
+3. A knowledge contributor
+
+I always thought it was cool that people would come together and use math to build awesome things, whether it be rocket ships or computational statistics libraries. One of my most rewarding experiences came from contributing to the open source community. Since then, I have been a core contributor to [ArviZ](https://arviz-devs.github.io/arviz/index.html) and [PyMC3](https://docs.pymc.io/).
+
+I believe in the possibility of creating great outcomes with math. The variety and volume of data has increased faster than the knowledge of how to make full use of it, and I am working to fill the gap. You'll see my public efforts in my [open source profile](https://github.com/canyon289) and data conferences. I enjoy sharing my knowledge at [various talks]({filename}/pages/Talks.md), such as [SciPy](https://www.youtube.com/watch?v=bmWMdVQlzIA) and [PyData](https://www.youtube.com/watch?v=dY1nNtDTruE). 
+
+I also published a [book about Bayesian Statistics](https://www.routledge.com/Bayesian-Modeling-and-Computation-in-Python/Martin-Kumar-Lao/p/book/9780367894368) and am working on an upcoming statistics course.
+
+
+# See my work
+
+<div id="action-links">
+<div class="action-link"><a href="https://github.com/canyon289/canyon289.github.io"><img src="{static}/images/about/github.png" />Open source profile</a></div>
+<div class="action-link"><a href="https://ravinkumar.com/pages/References.html"><img src="{static}/images/about/youtube.png" />Various talks</a></div>
+<div class="action-link"><a href="https://bayesiancomputationbook.com/welcome.html"><img src="{static}/images/about/book.jpeg" />Book on bayesian statistics</a></div>
+<div class="action-link"><a href="https://www.intuitivebayes.com/"><img src="{static}/images/about/course.svg" />Course on intuitive statistics</div>
+</a></div>
