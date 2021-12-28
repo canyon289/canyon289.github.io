@@ -6,7 +6,7 @@ blinker==1.4
 certifi==2019.9.11
 colorama==0.4.4
 commonmark==0.9.1
-dataclasses==0.8
+dataclasses
 decorator==4.4.0
 defusedxml==0.6.0
 docutils==0.17.1
