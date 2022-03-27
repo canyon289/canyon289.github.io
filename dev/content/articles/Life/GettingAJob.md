@@ -118,7 +118,7 @@ Here's some steps that I believe are more effective.
 2. Be able to articulate the details and why it brings value
 3. Showcase that work in a way that builds your reputation
 4. Trust your recruiter (if you have one)
-5. If you lose the role adjust and try again
+5. If you lose the role, adjust and try again
 
 Instead of focusing on a specific company or role as your
 primary outcome I strongly suggest focusing on doing
