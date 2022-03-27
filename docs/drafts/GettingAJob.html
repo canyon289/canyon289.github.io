@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/logo/logo.png" />
+
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content=".." />
+		<meta property="og:image" content="../images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
+
+<!--Notebook Configuration-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true,
+          displayMath: [['$$','$$'], ["\\[","\\]"]]
+      }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+      $("div.collapseheader").click(function () {
+      $header = $(this).children("span").first();
+      $codearea = $(this).children(".input_area");
+      console.log($(this).children());
+      $codearea.slideToggle(500, function () {
+          $header.text(function () {
+              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+          });
+      });
+  });
+  });
+</script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="../theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="../theme/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- CSS for Pelican Javascript plugin -->
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class='page body-article'>  <!-- extends -->
+
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href="..">
+                <img alt="Logo" src="../images/logo/logo-stroke-white.png" style="padding: 10px;"/>
+            </a>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="../blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="../pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="../pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper body-wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="logo">
+        <a href="..">
+            <img alt="Logo" src="../images/logo/logo.png" style="padding: 10px;"/>
+        </a>
+    </div>
+    <div class="logo-mobile">
+        <a href="..">
+            <img alt="Logo" src="../images/logo/logo.png" style="padding: 10%;"/>
+        </a>
+    </div>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="../blog.html">Blog</a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="../pages/References.html">References</a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="../pages/Talks.html">Talks</a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button></div>		
+			<!-- Content -->
+<div class="categories-menu">
+  <h4>Search by Category</h4>
+  <ul class="categories">
+    <li>
+        <a href="../category/data-science.html" class="">Data Science</a>
+    </li>
+    <li>
+        <a href="../category/life.html" class="active">Life</a>
+    </li>
+    <li>
+        <a href="../category/programming.html" class="">Programming</a>
+    </li>
+    <li>
+        <a href="../category/statistics.html" class="">Statistics</a>
+    </li>
+  </ul>
+</div>			<div class="content">
+
+	<h1 class="page-title">Getting that job at that one company that you think is cool</h1>
+	<p class="post-date">Mar 26, 2022</p>
+	<p>If you are reading this you likely have reached on <code>{LinkedIn/Twitter/Github/Email}</code>
+asking how to get a job at <code>{Google/SpaceX/Sweetgreen/Some other company}</code>.
+This post is for you. 
+Rather than give a short 280 character response,
+or quick response you'll be better served by a longer answer.</p>
+<h2 id="why-you-shouldnt-believe-me-at-least-exclusively">Why you shouldn't believe me (at least exclusively)</h2>
+<p>I really 
+Let me talk about why you shouldn't listen to me, or just me.</p>
+<h3 id="im-only-one-person">I'm only one person</h3>
+<p>Any individual is going to be biased, both in their lived experience and the way they tell it.</p>
+<p>Aside from this post look for other people's experiences as well 
+to get a distribution of perspective and form your own independent conclusion
+which brings me to my second point</p>
+<ul>
+<li>https://twitter.com/HamelHusain/status/1507757669867667456</li>
+</ul>
+<h3 id="survivorship-bias">Survivorship Bias</h3>
+<p><img src="../images/GettingAJob/SurvivorshipBias.png"/></p>
+<p>Only looking for successful cases has a name, it is called survivorship bias.</p>
+<p>When forming a strategy be sure to consider two more categories of folks.
+1. People that have applied and didn't get a job
+2. People that have worked there and quit</p>
+<p>The second group provides the most valuable feedback. For example,
+I can tell you why I joined <em>and</em> left SpaceX , but I can't
+tell you why I left Google because I haven't.</p>
+<p>Be sure to balance your information sourcing accordingly.</p>
+<h2 id="why-write-this">Why write this</h2>
+<p>After all that it might seem pointless for me to say anything, yet again there 
+are two reasons I'll do so.</p>
+<h3 id="i-was-once-like-you">I was once like you</h3>
+<p>When I started I was also cold emailing people.
+When people responded it gave me a lot of hope and
+I feel now that now folks are reaching out to me I should do the same.
+I found it very helpful to at least have some data rather than "no data".</p>
+<h3 id="to-counteract-the-bad-advice-out-there">To counteract the bad advice out there</h3>
+<p>Much of the advice out there is factually false. 
+So even if my perspective is biased I know what I'm saying is true
+and even if its biased it's some signal. In other words</p>
+<div class="highlight"><pre><span class="code-line"><span></span>wrong data &lt;&lt; missing data &lt;&lt; biased data</span>
+</pre></div>
+
+
+<p>So let's dive into it</p>
+<h2 id="how-can-i-get-a-job-at-xyz-company">"How can I get a job at XYZ company?"</h2>
+<p>Here's some possible strategies!</p>
+<h3 id="ask-for-blind-referrals-or-advice">Ask for blind referrals or advice</h3>
+<p>Connect with everyone at Google on Linkedin and DM them your resume.</p>
+<h3 id="resume-engineering">Resume Engineering</h3>
+<p>Stack the resume with lots of programming languages and the latest buzzwords.
+The more the better.</p>
+<h3 id="getting-your-information-from-clickbait-sources">Getting your information from clickbait sources</h3>
+<p>Google common interview questions for company XYZ memorize them.
+Here's one for SpaceX.</p>
+<p>You start at a point, walk one mile south, one mile east, one mile north, and end up at the same
+point. Where are you?</p>
+<p>Know the answer yet? Quick this is <a href="https://www.topinterview.com/interview-advice/how-to-answer-Elon-Musks-favorite-interview-question">Elon Musk's favorite question!</a></p>
+<h3 id="narrow-focus">Narrow focus</h3>
+<p>It's that "one company" or that "one perfect role" that is the one for you.
+Maybe its even a couple, one of the FAANG companies, perhaps that is you
+have to make it into next. If you focus on one company or one role as 
+your next step you'll surely make it in.</p>
+<h3 id="blind-nonstrategic-persistence">Blind nonstrategic persistence</h3>
+<p>At this point I'm sure you've heard about Michael Jordan taking 10,000 shots
+or Steve Jobs failing, or anything else along the lines of successful people fail!</p>
+<p>If you fail it means you need to try again right? 
+How can we achieve success if we're ot repeatedly failing after all?</p>
+<h3 id="these-are-all-losing-strategies">These are all losing strategies</h3>
+<p>All these are things that I tried and were ineffective
+but ones that I see from folks</p>
+<p>I can understand the appeal, these strategies are
+proximate to your end goal, which is getting a job. 
+It feels like if you just fix your resume, or find that one referral
+or check of all the boxes for SpaceX you'll make it in.</p>
+<p>The biggest downside is these strategies largely focus
+on the company you're trying to get which leaves
+you reacting to what you think they want.</p>
+<h2 id="another-set-of-strategies">Another set of strategies</h2>
+<p>Here's a list that I believe works much better</p>
+<ol>
+<li>Do the best work you can in a way that relates to your desired role</li>
+<li>Be able to articulate the details and why it brings value</li>
+<li>Showcase that work in a way that builds your reputation</li>
+<li>Trust your recruiter (if you have one)</li>
+</ol>
+<p>Instead of focusing on a specific company or role as your
+primary outcome I strongly suggest instead focusing on doing
+your best work wherever you can. This builds a solid foundation
+of aptitude which is what organizations are testing for. 
+This should be most of your effort.</p>
+<p>Be able to explain what your work is and why it is valuable.
+For example if doing a machine learning project be able to explain
+the details of your model, and why your model is best suited to
+produce value with the choices you've made. Be able to explain
+why other choices would be less valuable. </p>
+<p>There's the whole adage of "If a tree falls in the forest does it 
+make a sound?". Find ways to put your work out in a way that
+gets noticed. If you are in college join clubs with others
+where your peers can see your outcomes. 
+If you are in a company already present your work internally, as your
+colleagues may move companies and be able to vouch for you. </p>
+<p>If you do all of this your resume and network is a byproduct 
+rather than the direct focus. 
+And instead of you needing to reach out to companies, 
+people will start reaching out to you, and you'll be able to land an interview
+which brings us to the final point.</p>
+<p>Once you're talking to a recruiter, become their best candidate.
+Recruiter's entire job is to recruit and they <em>want you</em> to join 
+the organization. They'll have insights on what works and does not
+and while they can't give you the answers they will give you
+really strong hints of how to get to a position.
+Treat them as the strategic partners they are and take their advice.</p>
+<p>I hope this helps. I know you likely were looking for personal advice
+and it may feel impersonal that I've instead sent you this link
+so let me offer you this. Ping me again with a specific question and
+send me the sum of numbers in an isoformat date, with that 
+I'll know you have read this and will be able to better help you.</p>
+<h2 id="my-own-story-0-first-time-success-rate">My own story: 0% first time success rate</h2>
+<p>Know that I've been rejected by every full time you've seen
+on my LinkedIn at least once. Every. Single. One.
+Just because you're not in whatever company now or got rejected
+doesn't mean you aren't good enough. 
+Instead of focusing on their decision, focus on yourself.
+and keep working to be the best you can be.</p>
+
+			</div> 
+		</div>
+
+		<!-- Footer -->
+<div class="footer">
+    <div class="wrapper footer-wrapper">
+        <div class="footer-left">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/ravinakumar">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/canyon289">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/canyon289">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <a href="..">Ravin Kumar</a>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="../theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+
+	</body>
+
+</html>

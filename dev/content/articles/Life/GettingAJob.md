@@ -25,7 +25,7 @@ which brings me to my second point
 * https://twitter.com/HamelHusain/status/1507757669867667456
  
 ### Survivorship Bias
-<img src="{static}/images/GettingAJob/SurvivorShipBias.png"/>
+<img src="{static}/images/GettingAJob/SurvivorshipBias.png"/>
 
 Only looking for successful cases has a name, it is called survivorship bias.
 
