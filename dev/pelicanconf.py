@@ -24,7 +24,7 @@ SUMMARY_MAX_LENGTH = 0
 
 STATIC_PATHS = ['images', 'data', 'js', 'css']
 
-OUTPUT_RETENTION = [".git", "dev"]
+OUTPUT_RETENTION = [".git", "dev", "CNAME"]
 
 GOOGLE_ANALYTICS = 'UA-52706904-2'
 
