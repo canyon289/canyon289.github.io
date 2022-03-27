@@ -22,8 +22,10 @@ Aside from this post look for other people's experiences as well
 to get a distribution of perspective and form your own independent conclusion
 which brings me to my second point
 
-* https://twitter.com/HamelHusain/status/1507757669867667456
- 
+<div style="justify-content: center;">
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-theme="light"><p lang="en" dir="ltr">People have been repeating that nonsense forever <br><br>Remember that successful people can often be highly biased to think that other successful people have to be just like them, it’s simply not true at all</p>&mdash; Hamel Husain (@HamelHusain) <a href="https://twitter.com/HamelHusain/status/1507757669867667456?ref_src=twsrc%5Etfw">March 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+ </div>
+
 ### Survivorship Bias
 <img src="{static}/images/GettingAJob/SurvivorshipBias.png"/>
 
