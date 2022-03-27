@@ -6,25 +6,26 @@ Slug: GettingAJob
 Authors: Ravin Kumar
 Status: Draft
 
-If you are reading this you likely have reached on `{LinkedIn/Twitter/Github/Email}`
+If you are reading this you likely have reached to me on `{LinkedIn/Twitter/Github/Email}`
 asking how to get a job at `{Google/SpaceX/Sweetgreen/Some other company}`.
-This post is for you. 
-Rather than give a short 280 character response,
-or quick response you'll be better served by a longer answer.
+If so this post is for you. 
+Rather a short 280 character response,
+or off the cuff reply you'll be better served by a longer answer.
 
 ## Why you should not believe me (at least exclusively)
-I really hesitated writing this post, 
+Before reading the rest oof the post you should know the following.
 
 ### I'm only one person
 Any individual is going to be biased, both in their lived experience and the way they tell it.
 
-Aside from this post look for other people's experiences as well 
-to get a distribution of perspective and form your own independent conclusion
-which brings me to my second point
-
 <div style="justify-content: center;">
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-theme="light"><p lang="en" dir="ltr">People have been repeating that nonsense forever <br><br>Remember that successful people can often be highly biased to think that other successful people have to be just like them, it’s simply not true at all</p>&mdash; Hamel Husain (@HamelHusain) <a href="https://twitter.com/HamelHusain/status/1507757669867667456?ref_src=twsrc%5Etfw">March 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
  </div>
+
+Aside from this post look for other people's experiences 
+to get a distribution of perspectives and form your own independent conclusion.
+Which brings me to my second point
+
 
 ### Survivorship Bias
 <img src="{static}/images/GettingAJob/SurvivorshipBias.png"/>
@@ -38,24 +39,26 @@ When forming a strategy be sure to consider two more categories of folks.
 
 The second group provides the most valuable feedback. For example,
 I can tell you why I joined *and* left SpaceX , but I can't
-tell you why I left Google because I haven't. 
+tell you why I left Google because I haven't left yet. 
 Be sure to balance your information sourcing accordingly.
 
-## Why wrote this 
-After all that it might seem pointless for me to say anything, yet again there 
-are two reasons I'll do so.
+## Why I wrote this 
+After all that it might seem pointless for me to say anything. Yet again there 
+are two reasons I'll did so.
 
 ### I was once like you
-At the start of my career I aspirationally wanted to get into particular organizations.
+At the start of my career I also wanted to get into particular organizations.
 I didn't really know how so I tried things like cold emailing people.
 When people responded even with a short response it gave me a lot of hope.
 
 ### To counteract the bad advice out there
 The other thing I did was google "How to get a job at ..."
 Now that I've worked at these companies, and more importantly
-run conducted interviews I know much of the advice out there is factually false. 
+conducted interviews within them, 
+I know much of the advice out there is factually false. 
 
-Now that now folks are reaching out to me I feel I should provide some useful direction
+Now that people like you are reaching out to me
+I feel I should provide some useful direction
 even if potentially biased. In other words
 
 > wrong data < missing data < biased data
@@ -63,8 +66,9 @@ even if potentially biased. In other words
 ### To save time
 I can't give every person that pings me 1:1 session,
 it would overwhelm me. 
-Additionally it would just be inefficient at the majority of my advice would be the same.
-The most sensible thing is to write it down so you get your questions answered in a way that scales.
+Additionally it would just be inefficient as the majority of my advice would be the same.
+The most sensible thing is to write it down,
+so you get your questions answered in a way that scales.
 Hope this helps! With that lets dive into it
 
 ##  "How can I get a job at XYZ company?"
@@ -78,7 +82,7 @@ Stack the resume with lots of programming languages and the latest buzzwords.
 The more the better.
 
 ### Getting your information from clickbait sources
-Google common interview questions for company XYZ memorize them.
+Google common interview questions for company XYZ and memorize them. 
 Here's one for SpaceX.
 
 You start at a point, walk one mile south, one mile east, one mile north, and end up at the same
@@ -90,24 +94,24 @@ Maybe its even a couple, one of the FAANG companies, perhaps that is you
 have to make it into next. If you focus on one company or one role as 
 your next step you'll surely make it in.
 
-### Blind nonstrategic persistence
+### Keep trying the same thing over
 At this point I'm sure you've heard about Michael Jordan taking 10,000 shots
-or Steve Jobs failing, or anything else along the lines of successful people fail!
-
-If you fail it means you need to try again right? 
-How can we achieve success if we're ot repeatedly failing after all?
+or Steve Jobs getting fired. 
+If you fail just try doing the exact same thing again.
+After all how can we achieve success if we're ot repeatedly failing after all?
 
 ### These are all losing strategies
-All these are things that I tried and were ineffective
-but ones that I see from folks
+All these are things that I tried and were ineffective for me
+but ones ask for help doing the same.
 
 I can understand the appeal, these strategies are
-proximate to your end goal, which is getting a job. 
+directly proximate to your end goal, which is getting a job. 
 It feels like if you just fix your resume, or find that one referral
 or check of all the boxes for SpaceX you'll make it in. 
 The biggest downside is these strategies largely focus
 on the company you're trying to get which leaves
-you reacting to what you think they want.
+you reacting to what you think they want rather
+than building up yourself.
 
 ## Another set of strategies
 Here's a list that I believe works much better
@@ -116,24 +120,25 @@ Here's a list that I believe works much better
 2. Be able to articulate the details and why it brings value
 3. Showcase that work in a way that builds your reputation
 4. Trust your recruiter (if you have one)
+5. If you lose the role adjust and try again
 
 Instead of focusing on a specific company or role as your
-primary outcome I strongly suggest instead focusing on doing
+primary outcome I strongly suggest focusing on doing
 your best work wherever you can. This builds a solid foundation
-of aptitude which is what organizations are testing for. 
+of aptitude which is what organizations are looking for. 
 This should be most of your effort.
 
 Be able to explain what your work is and why it is valuable.
-For example if doing a machine learning project be able to explain
+For example if working on a machine learning project be able to explain
 the details of your model, and why your model is best suited to
 produce value with the choices you've made. Be able to explain
 why other choices would be less valuable. 
 
 There's the whole adage of "If a tree falls in the forest does it 
-make a sound?". Find ways to put your work out in a way that
+make a sound?" Find ways to showcase your work in a way that
 gets noticed. If you are in college join clubs with others
 where your peers can see your outcomes. 
-If you are in a company already present your work internally, as your
+If you are in a company present your work internally, as your
 colleagues may move companies and be able to vouch for you. 
 
 If you do all of this your resume and network is a byproduct 
@@ -143,11 +148,18 @@ people will start reaching out to you, and you'll be able to land an interview
 which brings us to the final point.
 
 Once you're talking to a recruiter, become their best candidate.
-Recruiter's entire job is to recruit and they *want you* to join 
-the organization. They'll have insights on what works and does not
+Recruiter's entire job is to recruit and they *want you* to join the organization.
+They'll have insights on what works and does not 
 and while they can't give you the answers they will give you
 really strong hints of how to get to a position.
 Treat them as the strategic partners they are and take their advice.
+
+If you get the job great! If you don't ask the recruiter,
+if you've built a good relationship with them they'll likely
+give you feedback. Again though don't focus solely on that
+one company, or one interview. Go back to the earlier
+steps and keep building expertise and communication skills
+until yuo get another shot.
 
 I hope this helps. I know you likely were looking for personal advice
 and it may feel impersonal that I've instead sent you this link
