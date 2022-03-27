@@ -89,20 +89,18 @@ You start at a point, walk one mile south, one mile east, one mile north, and en
 point. Where are you?  Know the answer yet? Quick this is [Elon Musk's favorite question!](https://www.topinterview.com/interview-advice/how-to-answer-Elon-Musks-favorite-interview-question)
 
 ### Narrow focus
-It's that "one company" or that "one perfect role" that is the one for you.
-Maybe its even a couple, one of the FAANG companies, perhaps that is you
-have to make it into next. If you focus on one company or one role as 
-your next step you'll surely make it in.
+It's that "one company" or that "one perfect role" that is perfect for you.
+Maybe its even a couple, one of the FAANG companies.
+If you focus on one company or one role as your next step you'll surely make it in.
 
 ### Keep trying the same thing over
 At this point I'm sure you've heard about Michael Jordan taking 10,000 shots
 or Steve Jobs getting fired. 
 If you fail just try doing the exact same thing again.
-After all how can we achieve success if we're ot repeatedly failing after all?
+After all how can we achieve success if we're not repeatedly failing after all?
 
 ### These are all losing strategies
-All these are things that I tried and were ineffective for me
-but ones ask for help doing the same.
+These are things that I tried earlier in my career and turned out to be ineffective for me.
 
 I can understand the appeal, these strategies are
 directly proximate to your end goal, which is getting a job. 
@@ -114,7 +112,7 @@ you reacting to what you think they want rather
 than building up yourself.
 
 ## Another set of strategies
-Here's a list that I believe works much better
+Here's some steps that I believe are more effective.
 
 1. Do the best work you can in a way that relates to your desired role
 2. Be able to articulate the details and why it brings value
