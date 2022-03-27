@@ -12,9 +12,9 @@ This post is for you.
 Rather than give a short 280 character response,
 or quick response you'll be better served by a longer answer.
 
-## Why you shouldn't believe me (at least exclusively)
-I really 
-Let me talk about why you shouldn't listen to me, or just me.
+## Why you should not believe me (at least exclusively)
+I really hesitated writing this post, 
+
 ### I'm only one person
 Any individual is going to be biased, both in their lived experience and the way they tell it.
 
@@ -22,46 +22,53 @@ Aside from this post look for other people's experiences as well
 to get a distribution of perspective and form your own independent conclusion
 which brings me to my second point
 
-* https://twitter.com/HamelHusain/status/1507757669867667456
- 
+<div style="justify-content: center;">
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-theme="light"><p lang="en" dir="ltr">People have been repeating that nonsense forever <br><br>Remember that successful people can often be highly biased to think that other successful people have to be just like them, it’s simply not true at all</p>&mdash; Hamel Husain (@HamelHusain) <a href="https://twitter.com/HamelHusain/status/1507757669867667456?ref_src=twsrc%5Etfw">March 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+ </div>
+
 ### Survivorship Bias
 <img src="{static}/images/GettingAJob/SurvivorshipBias.png"/>
 
 Only looking for successful cases has a name, it is called survivorship bias.
 
 When forming a strategy be sure to consider two more categories of folks.
-1. People that have applied and didn't get a job
-2. People that have worked there and quit
+
+1. People that have applied and didn't get a job  
+2. People that have worked there and quit  
 
 The second group provides the most valuable feedback. For example,
 I can tell you why I joined *and* left SpaceX , but I can't
-tell you why I left Google because I haven't.
-
+tell you why I left Google because I haven't. 
 Be sure to balance your information sourcing accordingly.
 
-## Why write this 
+## Why wrote this 
 After all that it might seem pointless for me to say anything, yet again there 
 are two reasons I'll do so.
 
 ### I was once like you
-When I started I was also cold emailing people.
-When people responded it gave me a lot of hope and
-I feel now that now folks are reaching out to me I should do the same.
-I found it very helpful to at least have some data rather than "no data".
+At the start of my career I aspirationally wanted to get into particular organizations.
+I didn't really know how so I tried things like cold emailing people.
+When people responded even with a short response it gave me a lot of hope.
 
 ### To counteract the bad advice out there
-Much of the advice out there is factually false. 
-So even if my perspective is biased I know what I'm saying is true
-and even if its biased it's some signal. In other words
+The other thing I did was google "How to get a job at ..."
+Now that I've worked at these companies, and more importantly
+run conducted interviews I know much of the advice out there is factually false. 
 
-```
-wrong data << missing data << biased data
-```
+Now that now folks are reaching out to me I feel I should provide some useful direction
+even if potentially biased. In other words
 
-So let's dive into it
+> wrong data < missing data < biased data
+
+### To save time
+I can't give every person that pings me 1:1 session,
+it would overwhelm me. 
+Additionally it would just be inefficient at the majority of my advice would be the same.
+The most sensible thing is to write it down so you get your questions answered in a way that scales.
+Hope this helps! With that lets dive into it
 
 ##  "How can I get a job at XYZ company?"
-Here's some possible strategies!
+Here are some possible strategies!
 
 ### Ask for blind referrals or advice
 Connect with everyone at Google on Linkedin and DM them your resume.
@@ -75,9 +82,7 @@ Google common interview questions for company XYZ memorize them.
 Here's one for SpaceX.
 
 You start at a point, walk one mile south, one mile east, one mile north, and end up at the same
-point. Where are you?
-
-Know the answer yet? Quick this is [Elon Musk's favorite question!](https://www.topinterview.com/interview-advice/how-to-answer-Elon-Musks-favorite-interview-question)
+point. Where are you?  Know the answer yet? Quick this is [Elon Musk's favorite question!](https://www.topinterview.com/interview-advice/how-to-answer-Elon-Musks-favorite-interview-question)
 
 ### Narrow focus
 It's that "one company" or that "one perfect role" that is the one for you.
@@ -99,8 +104,7 @@ but ones that I see from folks
 I can understand the appeal, these strategies are
 proximate to your end goal, which is getting a job. 
 It feels like if you just fix your resume, or find that one referral
-or check of all the boxes for SpaceX you'll make it in.
-
+or check of all the boxes for SpaceX you'll make it in. 
 The biggest downside is these strategies largely focus
 on the company you're trying to get which leaves
 you reacting to what you think they want.
