@@ -32,13 +32,13 @@ which brings me to my second point
 Only looking for successful cases has a name, it is called survivorship bias.
 
 When forming a strategy be sure to consider two more categories of folks.
-1. People that have applied and didn't get a job
-2. People that have worked there and quit
+
+1. People that have applied and didn't get a job  
+2. People that have worked there and quit  
 
 The second group provides the most valuable feedback. For example,
 I can tell you why I joined *and* left SpaceX , but I can't
-tell you why I left Google because I haven't.
-
+tell you why I left Google because I haven't. 
 Be sure to balance your information sourcing accordingly.
 
 ## Why write this 
@@ -56,14 +56,12 @@ Much of the advice out there is factually false.
 So even if my perspective is biased I know what I'm saying is true
 and even if its biased it's some signal. In other words
 
-```
-wrong data << missing data << biased data
-```
+> wrong data < missing data < biased data
 
 So let's dive into it
 
 ##  "How can I get a job at XYZ company?"
-Here's some possible strategies!
+Here are some possible strategies!
 
 ### Ask for blind referrals or advice
 Connect with everyone at Google on Linkedin and DM them your resume.
@@ -77,9 +75,7 @@ Google common interview questions for company XYZ memorize them.
 Here's one for SpaceX.
 
 You start at a point, walk one mile south, one mile east, one mile north, and end up at the same
-point. Where are you?
-
-Know the answer yet? Quick this is [Elon Musk's favorite question!](https://www.topinterview.com/interview-advice/how-to-answer-Elon-Musks-favorite-interview-question)
+point. Where are you?  Know the answer yet? Quick this is [Elon Musk's favorite question!](https://www.topinterview.com/interview-advice/how-to-answer-Elon-Musks-favorite-interview-question)
 
 ### Narrow focus
 It's that "one company" or that "one perfect role" that is the one for you.
@@ -101,8 +97,7 @@ but ones that I see from folks
 I can understand the appeal, these strategies are
 proximate to your end goal, which is getting a job. 
 It feels like if you just fix your resume, or find that one referral
-or check of all the boxes for SpaceX you'll make it in.
-
+or check of all the boxes for SpaceX you'll make it in. 
 The biggest downside is these strategies largely focus
 on the company you're trying to get which leaves
 you reacting to what you think they want.
