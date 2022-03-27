@@ -6,7 +6,7 @@ Slug: GettingAJob
 Authors: Ravin Kumar
 Status: Draft
 
-If you've reading this yuo likely have reached on `{LinkedIn/Twitter/Github/Email}`
+If you are reading this you likely have reached on `{LinkedIn/Twitter/Github/Email}`
 asking how to get a job at `{Google/SpaceX/Sweetgreen/Some other company}`.
 This post is for you. 
 Rather than give a short 280 character response,
@@ -16,7 +16,7 @@ or quick response you'll be better served by a longer answer.
 I really 
 Let me talk about why you shouldn't listen to me, or just me.
 ### I'm only one person
-Any individual is going to biased, both in their lived experience and the way they tell it.
+Any individual is going to be biased, both in their lived experience and the way they tell it.
 
 Aside from this post look for other people's experiences as well 
 to get a distribution of perspective and form your own independent conclusion
@@ -27,13 +27,13 @@ which brings me to my second point
 ### Survivorship Bias
 <img src="{static}/images/GettingAJob/SurvivorShipBias.png"/>
 
-Only looking for successful cases has a name, it's called survivorship bias.
+Only looking for successful cases has a name, it is called survivorship bias.
 
 When forming a strategy be sure to consider two more categories of folks.
 1. People that have applied and didn't get a job
 2. People that have worked there and quit
 
-The second group provides the most valuable feedback. For examplle
+The second group provides the most valuable feedback. For example,
 I can tell you why I joined *and* left SpaceX , but I can't
 tell you why I left Google because I haven't.
 
@@ -47,7 +47,7 @@ are two reasons I'll do so.
 When I started I was also cold emailing people.
 When people responded it gave me a lot of hope and
 I feel now that now folks are reaching out to me I should do the same.
-I found it very helpful to  least have some data rather than "no data".
+I found it very helpful to at least have some data rather than "no data".
 
 ### To counteract the bad advice out there
 Much of the advice out there is factually false. 
@@ -64,7 +64,7 @@ So let's dive into it
 Here's some possible strategies!
 
 ### Ask for blind referrals or advice
-Connect with everyone at Google on Linkedin and them DM them your resume.
+Connect with everyone at Google on Linkedin and DM them your resume.
 
 ### Resume Engineering
 Stack the resume with lots of programming languages and the latest buzzwords.
@@ -119,17 +119,17 @@ your best work wherever you can. This builds a solid foundation
 of aptitude which is what organizations are testing for. 
 This should be most of your effort.
 
-Be able to explain what your work is and why its valuable.
+Be able to explain what your work is and why it is valuable.
 For example if doing a machine learning project be able to explain
 the details of your model, and why your model is best suited to
-produce value with the choices you've made. Be explain to explain
+produce value with the choices you've made. Be able to explain
 why other choices would be less valuable. 
 
-There's the whole adage of "If a tree falls in the forest deos it 
+There's the whole adage of "If a tree falls in the forest does it 
 make a sound?". Find ways to put your work out in a way that
-gets noticed. If you're in college join clubs with others
+gets noticed. If you are in college join clubs with others
 where your peers can see your outcomes. 
-If in a company already present your work internally, as your
+If you are in a company already present your work internally, as your
 colleagues may move companies and be able to vouch for you. 
 
 If you do all of this your resume and network is a byproduct 
@@ -138,9 +138,9 @@ And instead of you needing to reach out to companies,
 people will start reaching out to you, and you'll be able to land an interview
 which brings us to the final point.
 
-Once you're talking to a recruiter become their best candidate.
-Recruiters entire job is to recruit and they *want you* to join 
-the organization. They'll have insights on what works and doesn't
+Once you're talking to a recruiter, become their best candidate.
+Recruiter's entire job is to recruit and they *want you* to join 
+the organization. They'll have insights on what works and does not
 and while they can't give you the answers they will give you
 really strong hints of how to get to a position.
 Treat them as the strategic partners they are and take their advice.
@@ -149,11 +149,11 @@ I hope this helps. I know you likely were looking for personal advice
 and it may feel impersonal that I've instead sent you this link
 so let me offer you this. Ping me again with a specific question and
 send me the sum of numbers in an isoformat date, with that 
-I'll know yuo have read this and will be able to better help you.
+I'll know you have read this and will be able to better help you.
 
 ## My own story: 0% first time success rate
-Know that I've been rejected to every full time you've seen
-on my LinkedIn at least once. Every, single, one.
+Know that I've been rejected by every full time you've seen
+on my LinkedIn at least once. Every. Single. One.
 Just because you're not in whatever company now or got rejected
 doesn't mean you aren't good enough. 
 Instead of focusing on their decision, focus on yourself.
