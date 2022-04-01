@@ -4,7 +4,7 @@ Category: Life
 Tags: Interview
 Slug: GettingAJob
 Authors: Ravin Kumar
-Status: Draft
+Status: Published
 
 If you're reading this you chances are have reached out to me on `{LinkedIn/Twitter/Github/Email}`
 asking how to get a job at `{Google/SpaceX/Sweetgreen/Some other company}`.
