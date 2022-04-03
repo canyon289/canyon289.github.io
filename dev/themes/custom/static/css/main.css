@@ -340,6 +340,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .footer ul {
@@ -356,12 +357,17 @@ button {
     font-weight: bold;
 }
 .footer-left a {
-    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-left {
     display: flex;
     flex-direction: row;
+}
+.footer-vertical {
+    display: flex;
+    flex-direction: column;
 }
 
 /* ---------- BLOG ---------- */
