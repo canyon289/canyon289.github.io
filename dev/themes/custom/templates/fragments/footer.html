@@ -1,30 +1,30 @@
 <div class="footer">
     <div class="wrapper footer-wrapper">
         <div class="footer-left">
-            <img a="{{ SITEURL }}/images/logo/logo.png"/>
-            <!-- PUT CODE HERE -->
-            <h1>test</h1>
-            <!-- PLACEHOLDER -->
+            <img src="{{ SITEURL }}/images/logo/logo.png"/>
+            <div class="ml-form-embed"
+              data-account="3479153:h8h4b4n7u8"
+              data-form="5635182:k0j3t8">
+            </div>
         </div>
         <div class="footer-right">
             <a href="{{ SITEURL }}">{{ AUTHOR }}</a>
-            <div class="footer-vertical">
-                <ul>
-                    {% for name, link in SOCIAL %}
-                    <li>
-                        {% if name == 'email' %}
-                        <a href="mailto:{{ link }}">
-                            <i class="fa fa-envelope"></i>
-                        </a>
-                        {% else %}
-                        <a href="{{ link }}">
-                            <i class="fa fa-{{ name }}"></i>
-                        </a>
-                        {% endif %}
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
+            <ul>
+                {% for name, link in SOCIAL %}
+                <li>
+                    {% if name == 'email' %}
+                    <a href="mailto:{{ link }}">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    {% else %}
+                    <a href="{{ link }}">
+                        <i class="fa fa-{{ name }}"></i>
+                    </a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+
         </div>
     </div>
 </div>

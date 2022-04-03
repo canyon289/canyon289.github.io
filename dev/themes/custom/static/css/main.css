@@ -333,7 +333,7 @@ button {
 /* ---------- FOOTER ---------- */
 
 .footer {
-    background: linear-gradient(to right, #8cccb2, #fff); /* #f4f5fb */
+    background-color: #f4f5fb;
 }
 
 .footer-wrapper {
@@ -366,6 +366,7 @@ button {
     flex-direction: row;
 }
 .footer-vertical {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
 }
