@@ -82,6 +82,15 @@ button {
     padding: .4rem;
 }
 
+.center-object {
+    display: block;
+    margin: 1rem auto;
+}
+.center-container {
+    display: block;
+    margin: 0 auto;
+}
+
 /* ---------- STRUCTURE ---------- */
 
 .page {
