@@ -1,17 +1,19 @@
 <div class="footer">
     <div class="wrapper footer-wrapper">
         <div class="footer-left">
-            <img src="{{ SITEURL }}/images/logo/logo.png"/>
-            <div class="ml-form-embed"
-              data-account="3479153:h8h4b4n7u8"
-              data-form="5635182:k0j3t8">
+            <div class="footer-logo">
+                <a href="{{ SITEURL }}">
+                    <img src="{{ SITEURL }}/images/logo/logo.png"/>
+                </a>
+            </div>
+            <div class="footer-mailer">
+                <!-- Mailerlite -->
+                {% include "fragments/mailerlite.html" %}
             </div>
         </div>
-        <div class="footer-right">
-            <a href="{{ SITEURL }}">{{ AUTHOR }}</a>
-            <ul>
+        <div class="footer-social footer-right">
+            <div class="social">
                 {% for name, link in SOCIAL %}
-                <li>
                     {% if name == 'email' %}
                     <a href="mailto:{{ link }}">
                         <i class="fa fa-envelope"></i>
@@ -21,10 +23,8 @@
                         <i class="fa fa-{{ name }}"></i>
                     </a>
                     {% endif %}
-                </li>
                 {% endfor %}
-            </ul>
-
+            </div>
         </div>
     </div>
 </div>

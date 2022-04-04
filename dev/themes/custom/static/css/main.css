@@ -35,14 +35,14 @@ h2 {
 }
 
 h3 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.9rem;
 }
 
 p {
     margin-top: 0;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 a {
@@ -334,6 +334,8 @@ button {
 
 .footer {
     background-color: #f4f5fb;
+    padding: 10px 0;
+    min-height: 180px;
 }
 
 .footer-wrapper {
@@ -343,32 +345,73 @@ button {
     margin: 0 auto;
 }
 
-.footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.footer ul li,
 .footer a {
     display: inline-block;
     color: #333;
-    font-size: 0.9rem;
-    line-height: 1.8;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     font-weight: bold;
 }
-.footer-left a {
-    display: flex;
-    flex-direction: row;
-}
-
 .footer-left {
     display: flex;
     flex-direction: row;
+    min-width: 400px;
+    width: 60%;
+    max-width: 800px;
 }
-.footer-vertical {
-    margin-top: 1rem;
+.footer-logo {
     display: flex;
     flex-direction: column;
+    max-width: 50px;
+}
+.footer-mailer {
+    flex-grow: 3;
+}
+.footer-right {
+    width: 30%;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #f4f5fb;
+}
+.social {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+.footer-social a {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 220px;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+    }
+    .footer-left {
+        width: 100%;
+    }
+    .footer-social {
+        width: 100%;
+    }
+    .social {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 572px) {
+    .footer-left {
+        flex-direction: column;
+        min-width: 100px;
+    }
+    .footer-wrapper {
+        padding: 0px !important;
+    }
+    .footer-logo {
+        margin: 0 auto;
+    }
 }
 
 /* ---------- BLOG ---------- */
