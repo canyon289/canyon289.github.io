@@ -21,6 +21,7 @@
 		{% include "fragments/_nb_header.html" %}
 
 		<!-- CSS -->
+		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/codesyntax.css" />
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/svgstyles.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
@@ -74,7 +75,7 @@
 				{% endfor %}
 			{% endif %}
 		{% endif %}
-
+		
 	</body>
 
 </html>

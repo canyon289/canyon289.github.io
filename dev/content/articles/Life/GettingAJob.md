@@ -21,9 +21,9 @@ The truth is that any individual tends to be biased,
 when it comes to both how they experience things around them
 and how they tell their experience.
 
-<div style="justify-content: center;">
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-theme="light"><p lang="en" dir="ltr">People have been repeating that nonsense forever <br><br>Remember that successful people can often be highly biased to think that other successful people have to be just like them, it’s simply not true at all</p>&mdash; Hamel Husain (@HamelHusain) <a href="https://twitter.com/HamelHusain/status/1507757669867667456?ref_src=twsrc%5Etfw">March 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
- </div>
+
+<blockquote class="twitter-tweet tw-align-center" data-conversation="none" data-lang="en" data-theme="light"><p lang="en" dir="ltr">People have been repeating that nonsense forever <br><br>Remember that successful people can often be highly biased to think that other successful people have to be just like them, it’s simply not true at all</p>&mdash; Hamel Husain (@HamelHusain) <a href="https://twitter.com/HamelHusain/status/1507757669867667456?ref_src=twsrc%5Etfw">March 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 
 So you're welcome to read my tips and get the most out of them,
 but you shouldn't limit yourself to only my perspective and knowledge.
