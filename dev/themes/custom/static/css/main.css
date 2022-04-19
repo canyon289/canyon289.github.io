@@ -45,6 +45,11 @@ p {
     font-size: 0.9rem;
 }
 
+li {
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
 a {
     color: #56bb92;
     text-decoration: none;
@@ -74,7 +79,7 @@ img + em {
     display: block;
 }
 
-button { 
+button {
     background-color: #00524b;
     color: #ffffff;
     border: none;
