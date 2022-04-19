@@ -5,66 +5,71 @@ Tags: Interview
 Slug: GettingADSJob
 Authors: Ravin Kumar
 Status: Draft
+
 # My opinion on how to become a DS
 
 If you're reading this, chances are you have reached out to me on {LinkedIn/Twitter/Github/Email} asking how become a data scientist. 
 You also may be asking after I sent you my post on how [to get a job]({filename}../Data Science/GettingAJob.md).
+and are still left wondering about DS jobs specifically.
 
-Here's the summary 
+To just give you the answer here is 
 
-* Data Science is made up term that has little consistent meaning
-* Trying to get *any* DS job from the set of *all* DS jobs
+1. Understand that Data Science is made up term that has little consistent meaning
+2. Figure out what is the specific "thing" you like
+3. Become excellent at it whatever way works best for you
+4. Do it in a way that sets you up to get a job
 
-Instead, focus your efforts
-
-1. Figure out what is the specific "thing" you like
-2. Become excellent at it whatever way works best for you
-3. Do it on a way that's sets you up to get a job
-
-This may be an unsatisfying conclusion summary though so let's elaborate
+This may be an unsatisfying summary though so let's elaborate
 
 ## What is a Data Scientist and what do they do
-This is the obvious question to start with, however it also the worst one. 
-Hidden in the explanation of why there is a useful answer
+This is the seemingly obvious question to start with,
+however it also the worst one. 
+Hidden in the explanation of why its so bad though there is a useful insight.
 
-Now the honest truth is that the term Data Science is completely made up.
-Now could say "Well Ravin everything is made up"  but let's dig in further
+The honest truth is that the term Data Science is completely made up.
+Now you could say "Well Ravin everything is made up" but let's dig in further.
 Let's compare to my previous profession, mechanical engineering.
-Mechanical engineering is a formalized  with long-running organizations that set standards,
+Mechanical engineering is a formalized with long-running organizations which set standards for the field internationally,
 such as the [American Society of Mechanical Engineers](https://en.wikipedia.org/wiki/American_Society_of_Mechanical_Engineers)
-or [ABET](https://en.wikipedia.org/wiki/ABET) which sets standards for the field internationally.
-This means that while the idea of mechanical engineering is made up,
-there are some key organizations that are defining the "center of mass"
+or [ABET](https://en.wikipedia.org/wiki/ABET).
+While the idea of mechanical engineering is made up by people,
+there is a key group of influential people that are defining the "center of mass"
 
-There is no central organization for data science. 
-Everyone is making it up, using whatever method suits their narrative.
+There is no key group of people for data science for data science. 
+Everyone is making it up, in whatever way suits their narrative.
 
-On abstract end this chart from Drew Conway was one of the first "viral definition"
+On abstract end Drew Conway was one of the with this first popular venn diagram.
 
 ![Drew Conway Image](https://images.squarespace-cdn.com/content/v1/5150aec6e4b0e340ec52710a/1364352051365-HZAS3CLBF7ABLE3F5OBY/Data_Science_VD.png)
 
-While it's appealing in simplicity, it's unhelpful if trying to break into data science,
-as it's not clear where to start or what these mean.
+While it's appealing in simplicity, it's unhelpful for newcomers,
+as it's not clear where to start or what these any of these actually mean.
 
 Typical of data scientist writings someone then takes a simple framework and makes it even more complex,
-making it even less useful.
+unfortunately making it even less useful.
 
 ![Complex DS Venn Diagram](http://georgejmount.com/wp-content/uploads/2016/04/1d115e30-ae3b-42a5-b86f-00b97797b787-original.jpeg)
 
-On the other end some people try to strictly define data science to exactly what they think.
-They then post their opinions on Twitter and LinkedIn and flame wars ensue, which does not help newcomers.
+On the other end some people try to strictly define data science to exactly what they do.
+They then post their opinions on Twitter and LinkedIn and arguments ensue,
+which also do not help newcomers.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">In my particular data science role, I don&#39;t currently use statistics. Or R. Or deep learning. But I also don&#39;t go around telling people those aren&#39;t useful in data science as though my job represents all data science work</p>&mdash; Ben Lindsay (@ben_j_lindsay) <a href="https://twitter.com/ben_j_lindsay/status/1508067296115191809?ref_src=twsrc%5Etfw">March 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-"But these are individuals" you may say, "Companies most clearly be consistent". Wrong again.
-Companies like Lyft write publicly about [relabeling all data analysts to scientists, and all data scientists to research scientists](https://medium.com/@chamandy/whats-in-a-name-ce42f419d16c) with no change in expected responsibilities. Doordash has data scientist roles but when youinterview you learn are not very alike, not interchangeable internally and have to completely separate reporting structures, the true differentiator in a large company.
+"But these are individuals" you may say, "Companies most clearly be consistent" you also say.
+Wrong again.
+Companies like Lyft write publicly about [relabeling all data analysts to scientists, and all data scientists to research scientists](https://medium.com/@chamandy/whats-in-a-name-ce42f419d16c) with no change in expected responsibilities. 
+Doordash has data scientist roles but when you interview you learn are not alike at all,
+not interchangeable internally and have to completely separate organizational structures.
 
-### Sets of skills
+So how else can we frame the problem?
+
+### A subset of a set skills
 Because I have been knighted with the title Data Scientist
-I'm legally obligated to provide my own take on this mess.
+I'm legally obligated to provide my own take on this mess,
+or at least make it worse. 
+Let's do that.
 
-Pay attention here because this is where the lesson we referred to
-earlier comes in.
 I tend to think of data science as a **subset** of a set of skills.
 This could include algorithm development, dashboarding, modeling fitting,
 programming in python,
@@ -87,15 +92,14 @@ Sometimes this role is called Decision Scientist,
 This is what I do at Google where, surprise, my title is Data Scientist,
 it previously used to be called quantitative analyst.
 What matters to me though is get to do what I enjoy,
-which is learn things from data, and share those learnings
+which is learning things from data, and share those learnings
 with others.
-
 
 ## A suggested strategy
 So let's focus back on you.
 It's no secret the
 [junior data science field is completely saturated](https://vickiboykis.com/2019/02/13/data-science-is-different-now/)
-Here's my suggestions for concrete steps on how to get a DS job,
+Given that here's my suggestions for concrete steps on how to get a DS job,
 This should help match you to the right company and 
 put you ahead of many other candidates.
 
@@ -150,4 +154,4 @@ Unfortunately they data scientist job search is more of a random search than it 
 Nonetheless, if you're dead set on getting a Data Scientist job I hope this advice helps, 
 And once you get a DS job be sure to send me a link to your blog post or
 tweet thread sharing your advice. 
-At that time you too will become a true data scientist
+At that time you too will become a true data scientist.
