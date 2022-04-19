@@ -33,9 +33,8 @@ Mechanical engineering is a formalized with long-running organizations which set
 such as the [American Society of Mechanical Engineers](https://en.wikipedia.org/wiki/American_Society_of_Mechanical_Engineers)
 or [ABET](https://en.wikipedia.org/wiki/ABET).
 While the idea of mechanical engineering is made up by people,
-there is a key group of influential people that are defining the "center of mass"
-
-There is no key group of people for data science for data science. 
+there is a key group of influential people that are defining the "center of mass".
+There is no such group for data science for data science. 
 Everyone is making it up, in whatever way suits their narrative.
 
 On abstract end Drew Conway was one of the with this first popular venn diagram.
@@ -54,7 +53,7 @@ On the other end some people try to strictly define data science to exactly what
 They then post their opinions on Twitter and LinkedIn and arguments ensue,
 which also do not help newcomers.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In my particular data science role, I don&#39;t currently use statistics. Or R. Or deep learning. But I also don&#39;t go around telling people those aren&#39;t useful in data science as though my job represents all data science work</p>&mdash; Ben Lindsay (@ben_j_lindsay) <a href="https://twitter.com/ben_j_lindsay/status/1508067296115191809?ref_src=twsrc%5Etfw">March 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">In my particular data science role, I don&#39;t currently use statistics. Or R. Or deep learning. But I also don&#39;t go around telling people those aren&#39;t useful in data science as though my job represents all data science work</p>&mdash; Ben Lindsay (@ben_j_lindsay) <a href="https://twitter.com/ben_j_lindsay/status/1508067296115191809?ref_src=twsrc%5Etfw">March 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 "But these are individuals" you may say, "Companies most clearly be consistent" you also say.
 Wrong again.
@@ -98,7 +97,7 @@ with others.
 ## A suggested strategy
 So let's focus back on you.
 It's no secret the
-[junior data science field is completely saturated](https://vickiboykis.com/2019/02/13/data-science-is-different-now/)
+[junior data science field is completely saturated](https://vickiboykis.com/2019/02/13/data-science-is-different-now/).
 Given that here's my suggestions for concrete steps on how to get a DS job,
 This should help match you to the right company and 
 put you ahead of many other candidates.
@@ -141,7 +140,7 @@ talks, and open source notebooks.
 I now spend much of my time honing those skills, 
 writing this blog post for example.
 
-### Step 4: Figure out what organizations value your skill
+### Step 4: Figure out what organizations value your skills
 By this point you'll have a good sense for the code words that appeal to you.
 Look for job postings that specifically contain the thing you're interested in.
 When interviewing be sure to ask how DS provides value to that team.
