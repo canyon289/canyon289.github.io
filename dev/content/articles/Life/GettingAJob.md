@@ -1,5 +1,5 @@
 Title: Getting that job at that one company that you think is cool
-Date: 2022-04-187
+Date: 2022-04-17
 Category: Data Science
 Tags: Interview
 Slug: GettingAJob
