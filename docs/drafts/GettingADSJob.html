@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Ravin Kumar</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/logo/logo.png" />
+
+		<meta name="description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta property="og:title" content="Ravin Kumar" />
+		<meta property="og:url" content=".." />
+		<meta property="og:image" content="../images/logo/logo.png" />
+		<meta property="og:description" content="Ravin Kumar is a data scientist and an open source contributor." />
+		<meta name="twitter:site" content="https://twitter.com/canyon289" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Jupyter Notebooks -->
+
+<!--Notebook Configuration-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true,
+          displayMath: [['$$','$$'], ["\\[","\\]"]]
+      }
+  });
+</script>
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+      $("div.collapseheader").click(function () {
+      $header = $(this).children("span").first();
+      $codearea = $(this).children(".input_area");
+      console.log($(this).children());
+      $codearea.slideToggle(500, function () {
+          $header.text(function () {
+              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+          });
+      });
+  });
+  });
+</script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../theme/css/jupyternotebook.css" />
+		<link rel="stylesheet" href="../theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="../theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="../theme/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!-- CSS for Pelican Javascript plugin -->
+
+		<!-- RSS -->
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+		
+		<!-- Google Analytics -->
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-52706904-2', 'auto');
+			ga('send', 'pageview');
+	</script>
+	</head>
+
+	<body class='page body-article'>  <!-- extends -->
+
+<div id="main-menu-mobile" class="main-menu-mobile">
+    <ul>
+        <li class="menu-item-home"></li>
+            <a href="..">
+                <img alt="Logo" src="../images/logo/logo-stroke-white.png" style="padding: 10px;"/>
+            </a>
+        </li>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="../blog.html">
+                <span>Blog</span>
+            </a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="../pages/References.html">
+                <span>References</span>
+            </a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="../pages/Talks.html">
+                <span>Talks</span>
+            </a>
+        </li>
+     </ul>
+</div>
+		<div class="wrapper body-wrapper">
+			<!-- Header -->
+<div class="header">
+    <div class="logo">
+        <a href="..">
+            <img alt="Logo" src="../images/logo/logo.png" style="padding: 10px;"/>
+        </a>
+    </div>
+    <div class="logo-mobile">
+        <a href="..">
+            <img alt="Logo" src="../images/logo/logo.png" style="padding: 10%;"/>
+        </a>
+    </div>
+<div id="main-menu" class="main-menu">
+    <ul>
+        <!---Add Blog Manually --->
+        <li class="menu-item-blog">
+            <a href="../blog.html">Blog</a>
+        </li>
+        <!---Add Remaining Pages (excluding About) --->
+           <li class="menu-item-references">
+            <a href="../pages/References.html">References</a>
+        </li>
+          <li class="menu-item-talks">
+            <a href="../pages/Talks.html">Talks</a>
+        </li>
+     </ul>
+</div><button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button></div>		
+			<!-- Content -->
+<div class="categories-menu">
+  <h4>Search by Category</h4>
+  <ul class="categories">
+    <li>
+        <a href="../category/data-science.html" class="active">Data Science</a>
+    </li>
+    <li>
+        <a href="../category/life.html" class="">Life</a>
+    </li>
+    <li>
+        <a href="../category/programming.html" class="">Programming</a>
+    </li>
+    <li>
+        <a href="../category/statistics.html" class="">Statistics</a>
+    </li>
+  </ul>
+</div>			<div class="content">
+
+	<h1 class="page-title">Getting that job at that one company that you think is cool</h1>
+	<p class="post-date">Mar 26, 2022</p>
+	<h1 id="my-opinion-on-how-to-become-a-ds">My opinion on how to become a DS</h1>
+<p>If you're reading this, chances are you have reached out to me on {LinkedIn/Twitter/Github/Email} asking how become a data scientist. 
+You also may be asking after I sent you my post on how <a href="{filename}../Data Science/GettingAJob.md">to get a job</a>.
+and are still left wondering about DS jobs specifically.</p>
+<p>To just give you the answer here is </p>
+<ol>
+<li>Understand that Data Science is made up term that has little consistent meaning</li>
+<li>Figure out what is the specific "thing" you like</li>
+<li>Become excellent at it whatever way works best for you</li>
+<li>Do it in a way that sets you up to get a job</li>
+</ol>
+<p>This may be an unsatisfying summary though so let's elaborate</p>
+<h2 id="what-is-a-data-scientist-and-what-do-they-do">What is a Data Scientist and what do they do</h2>
+<p>This is the seemingly obvious question to start with,
+however it also the worst one. 
+Hidden in the explanation of why its so bad though there is a useful insight.</p>
+<p>The honest truth is that the term Data Science is completely made up.
+Now you could say "Well Ravin everything is made up" but let's dig in further.
+Let's compare to my previous profession, mechanical engineering.
+Mechanical engineering is a formalized with long-running organizations which set standards for the field internationally,
+such as the <a href="https://en.wikipedia.org/wiki/American_Society_of_Mechanical_Engineers">American Society of Mechanical Engineers</a>
+or <a href="https://en.wikipedia.org/wiki/ABET">ABET</a>.
+While the idea of mechanical engineering is made up by people,
+there is a key group of influential people that are defining the "center of mass".
+There is no such group for data science for data science. 
+Everyone is making it up, in whatever way suits their narrative.</p>
+<p>On abstract end Drew Conway was one of the with this first popular venn diagram.</p>
+<p><img alt="Drew Conway Image" src="https://images.squarespace-cdn.com/content/v1/5150aec6e4b0e340ec52710a/1364352051365-HZAS3CLBF7ABLE3F5OBY/Data_Science_VD.png"></p>
+<p>While it's appealing in simplicity, it's unhelpful for newcomers,
+as it's not clear where to start or what these any of these actually mean.</p>
+<p>Typical of data scientist writings someone then takes a simple framework and makes it even more complex,
+unfortunately making it even less useful.</p>
+<p><img alt="Complex DS Venn Diagram" src="http://georgejmount.com/wp-content/uploads/2016/04/1d115e30-ae3b-42a5-b86f-00b97797b787-original.jpeg"></p>
+<p>On the other end some people try to strictly define data science to exactly what they do.
+They then post their opinions on Twitter and LinkedIn and arguments ensue,
+which also do not help newcomers.</p>
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">In my particular data science role, I don&#39;t currently use statistics. Or R. Or deep learning. But I also don&#39;t go around telling people those aren&#39;t useful in data science as though my job represents all data science work</p>&mdash; Ben Lindsay (@ben_j_lindsay) <a href="https://twitter.com/ben_j_lindsay/status/1508067296115191809?ref_src=twsrc%5Etfw">March 27, 2022</a></blockquote>
+
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </p>
+<p>"But these are individuals" you may say, "Companies most clearly be consistent" you also say.
+Wrong again.
+Companies like Lyft write publicly about <a href="https://medium.com/@chamandy/whats-in-a-name-ce42f419d16c">relabeling all data analysts to scientists, and all data scientists to research scientists</a> with no change in expected responsibilities. 
+Doordash has data scientist roles but when you interview you learn are not alike at all,
+not interchangeable internally and have to completely separate organizational structures.</p>
+<p>So how else can we frame the problem?</p>
+<h3 id="a-subset-of-a-set-skills">A subset of a set skills</h3>
+<p>Because I have been knighted with the title Data Scientist
+I'm legally obligated to provide my own take on this mess,
+or at least make it worse. 
+Let's do that.</p>
+<p>I tend to think of data science as a <strong>subset</strong> of a set of skills.
+This could include algorithm development, dashboarding, modeling fitting,
+programming in python,
+programming in SQL, fitting black box models, 
+data communication, deploying Spark cluster jobs, the emotional
+numbness to being asked to join two datasets with no common key,
+knowing how to not laugh or express shock when you stakeholders
+ask for models with 99% accuracy,
+writing blog posts or tweets threads about with advice on to become a data scientist
+(Only half joking on this one)</p>
+<p>Now some people with data scientist LinkedIn titles spend their time squeezing out .001 more precision/recall/accuracy out of a black box model.
+Sometimes this role is titled Machine Learning Engineer. 
+Some people find this work to be fascinating.
+I think is very boring and when I was looking for jobs I would avoid these entirely.</p>
+<p>I instead like working with stakeholders to understand a complex business,
+and use data to inform big scale decisions.
+Sometimes this role is called Decision Scientist, 
+This is what I do at Google where, surprise, my title is Data Scientist,
+it previously used to be called quantitative analyst.
+What matters to me though is get to do what I enjoy,
+which is learning things from data, and share those learnings
+with others.</p>
+<h2 id="a-suggested-strategy">A suggested strategy</h2>
+<p>So let's focus back on you.
+It's no secret the
+<a href="https://vickiboykis.com/2019/02/13/data-science-is-different-now/">junior data science field is completely saturated</a>.
+Given that here's my suggestions for concrete steps on how to get a DS job,
+This should help match you to the right company and 
+put you ahead of many other candidates.</p>
+<h3 id="step-1-figure-out-what-you-like">Step 1: Figure out what you like</h3>
+<p>Instead of trying to nail down a specific definition of DS
+start understanding about "DS" is interesting to you
+and start excelling at those. 
+It's a more focused strategy than trying to be good at everything
+which will be impossible. 
+If you take the everything strategy you won't be able to 
+stand out in any interview as each company tends to look for a 
+<em>specific</em> thing, even if they are different.</p>
+<h3 id="step-2-get-good-at-it">Step 2: Get good at it</h3>
+<p>Now that you've narrowed down DS figure out how to be great at it.</p>
+<p>If you're into black box predictions places like Kaggle are the obvious answer.
+If you really like algorithm development papers and algorithm
+competitions would be a good area to focus on.</p>
+<p>For me that learning came in the form of Open Source contributions. 
+By writing code and working with others I was able to more deeply learn the methods.
+It also helped because the networking and public display
+of value was built right in,
+which I write about in my How to get a job post.</p>
+<h3 id="step-3-identify-the-adjacent-skills">Step 3: Identify the adjacent skills</h3>
+<p>Find a person that already are excellent and listen to their talks.
+Write down all those skills. 
+For instance if they work on big prediction models are they also good at 
+deploying them, or are they more focused on the internal mathematics?
+Do this again for another person,
+then see what other skills are commonly listed or mentioned and become proficient in those as well.</p>
+<p>For me I tended to see a stronger emphasis on communication. intuition,
+an explanation versus model accuracy metrics.
+I also saw these folks contributing examples publicly in blog posts,
+talks, and open source notebooks.
+I now spend much of my time honing those skills, 
+writing this blog post for example.</p>
+<h3 id="step-4-figure-out-what-organizations-value-your-skills">Step 4: Figure out what organizations value your skills</h3>
+<p>By this point you'll have a good sense for the code words that appeal to you.
+Look for job postings that specifically contain the thing you're interested in.
+When interviewing be sure to ask how DS provides value to that team.
+Even if you get rejected you'll have extra clues as to what to
+focus on for the next interview.
+Demetri Pananos provides <a href="https://dpananos.github.io/posts/2022/01/blog-post-36/">additional advice</a> on his blog.</p>
+<h2 id="best-of-luck">Best of luck</h2>
+<p>Unfortunately they data scientist job search is more of a random search than it should be. 
+Nonetheless, if you're dead set on getting a Data Scientist job I hope this advice helps, 
+And once you get a DS job be sure to send me a link to your blog post or
+tweet thread sharing your advice. 
+At that time you too will become a true data scientist.</p>
+
+			</div> 
+		</div>
+
+		<!-- Footer -->
+<div class="footer">
+    <div class="wrapper footer-wrapper">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <a href="..">
+                    <img src="../images/logo/logo.png"/>
+                </a>
+            </div>
+            <div class="footer-mailer">
+                <!-- Mailerlite -->
+<div class="ml-form-embed"
+    data-account="3479153:h8h4b4n7u8"
+    data-form="5635182:k0j3t8">
+</div>
+<!-- Hacky workaround for Mailerlite -->
+<style>
+    #mlb2-5635182.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4, #mlb2-5635182.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 0 0 5px 0;
+    }
+</style>
+<script>
+    (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+    var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+    f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+    var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+    _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+    var ml_account = ml('accounts', '3479153', 'h8h4b4n7u8', 'load');
+</script>            </div>
+        </div>
+        <div class="footer-social footer-right">
+            <div class="social">
+                    <a href="https://www.linkedin.com/in/ravinakumar">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/canyon289">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/canyon289">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+            </div>
+        </div>
+    </div>
+</div>
+		<!-- Javascript -->
+		<script type="text/javascript" src="../theme/js/main.js"></script>
+		
+		<!-- Javascript for Pelican Javascript plugin -->
+		
+	</body>
+
+</html>
