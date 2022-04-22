@@ -20,6 +20,22 @@ Any other hidden page will go under `pages/other_hidden`.
 
 Articles will be in folders named by their category. This will help enforce the constraint that each article can have up to 1 category.
 
+### How to center objects and code blocks
+
+Use the custom CSS classes `.center-object` and `.center-content`. By default, images have the same code as `.center-object`. You can find this detail in `main.css`.
+```
+.center-object {
+    display: block;
+    margin: 1rem auto;
+}
+.center-container {
+    display: block;
+    margin: 0 auto;
+}
+```
+
+There are some exceptions, like [embedding Tweets](https://blog.hubspot.com/blog/tabid/6307/bid/34273/how-to-center-align-your-embedded-tweets-quick-tip.aspx) which override your classes with javascript. Twitter has a dedicated class for centering objects, which is by adding the class `tw-align-center` to your blockquote.
+
 # Custom Theme Organization
 
 The custom theme is based on the [Hugo Whisper theme](https://hugo-whisper.netlify.app/docs/install-hugo/). 
