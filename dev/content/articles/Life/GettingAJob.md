@@ -14,7 +14,7 @@ or an off-the-cuff reply,
 I believe you deserve a more detailed answer.
 
 ## Why I shouldn't be the only one you listen to
-Before reading the rest oof the post you should know the following.
+Before reading the restoof the post you should know the following.
 
 ### I'm only one single person
 The truth is that any individual tends to be biased,
