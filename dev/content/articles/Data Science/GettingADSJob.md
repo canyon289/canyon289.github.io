@@ -161,7 +161,7 @@ At that time you too will become a true data scientist.
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:creator" content="@canyon298">
+<meta name="twitter:creator" content="@canyon289">
 <meta name="twitter:title" content="Tips to get a DS job">
 <meta name="twitter:description" content="A blog post with tips on how to get a data science job">
-<meta name="twitter:image" content="{static}/images/SocialMedia/twitter/ds_job_card.png">
+<meta name="twitter:image" content="{static}/images/SocialMedia/twitter/DS_Job_Card.png">
