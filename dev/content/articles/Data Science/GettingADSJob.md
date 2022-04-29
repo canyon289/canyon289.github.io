@@ -158,3 +158,10 @@ Nonetheless, if you're dead set on getting a Data Scientist job I hope the advic
 And once you get a DS job be sure to send me a link to your blog post or
 tweet thread sharing your advice. 
 At that time you too will become a true data scientist.
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@canyon298">
+<meta name="twitter:title" content="Tips to get a DS job">
+<meta name="twitter:description" content="A blog post with tips on how to get a data science job">
+<meta name="twitter:image" content="{static}/images/SocialMedia/twitter/ds_job_card.png">
