@@ -6,4 +6,4 @@ import sys
 sys.path.append('.')
 from pelicanconf import *
 
-RELATIVE_URLS = True
+RELATIVE_URLS = False
