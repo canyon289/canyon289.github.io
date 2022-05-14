@@ -22,7 +22,7 @@ Let's elaborate on each of the points above
 
 ## What is a Data Scientist and what do they do?
 This is seemingly an obvious question to start with;
-however, it also the worst one. 
+however, it is also the worst one. 
 Hidden in the explanation of why this question is so bad lies a useful insight.
 
 The honest truth is that the term Data Science is completely made up.
@@ -37,7 +37,7 @@ there is a key group of influential people that are defining the "central identi
 There is no such group for data science. 
 Everyone is making it up, in whatever way suits their narrative.
 
-On abstract side Drew Conway was one of first to try and define Data Science with his popular Venn diagram.
+On the abstract side Drew Conway was one of first to try and define Data Science with his popular Venn diagram.
 
 ![Drew Conway Image](https://images.squarespace-cdn.com/content/v1/5150aec6e4b0e340ec52710a/1364352051365-HZAS3CLBF7ABLE3F5OBY/Data_Science_VD.png)
 
@@ -49,7 +49,7 @@ unfortunately making it even less useful.
 
 ![Complex DS Venn Diagram](http://georgejmount.com/wp-content/uploads/2016/04/1d115e30-ae3b-42a5-b86f-00b97797b787-original.jpeg)
 
-On the other end some people try to strictly define data science by limit its scope to exactly what they do.
+On the other end some people try to strictly define data science by limiting its scope to exactly what they do.
 They then post their opinions on Twitter and LinkedIn and arguments ensue,
 which also doesn't help newcomers.
 
@@ -111,8 +111,8 @@ start with trying to understand what about DS is interesting to you
 and once you find the things about DS that make you tick,
 and start excelling at those. 
 It's a more focused strategy than trying to be good at everything
-which will be ultimately prove impossible. 
-If you woth with "good at everything strategy" you won't be able to 
+which will  ultimately prove impossible. 
+If you go with "good at everything strategy" you won't be able to 
 stand out in any interview as each company tends to look for 
 *specific* skills and knowledge.
 
