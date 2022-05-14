@@ -55,8 +55,8 @@ which also doesn't help newcomers.
 
 <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">In my particular data science role, I don&#39;t currently use statistics. Or R. Or deep learning. But I also don&#39;t go around telling people those aren&#39;t useful in data science as though my job represents all data science work</p>&mdash; Ben Lindsay (@ben_j_lindsay) <a href="https://twitter.com/ben_j_lindsay/status/1508067296115191809?ref_src=twsrc%5Etfw">March 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-"But these are only individualsa and their" you may say,
-"Companies will clearly be more consistent".
+"But these are only individuals and their own views," you might say,
+"Companies will clearly be more consistent." Wrong again.
 Wrong again.
 Companies like Lyft write publicly about [relabeling all data analysts to scientists, and all data scientists to research scientists](https://medium.com/@chamandy/whats-in-a-name-ce42f419d16c) with no change in expected responsibilities. 
 Doordash has various data scientist roles but when you dig deeper you learn those are not alike at all.
@@ -65,35 +65,37 @@ They are not interchangeable and have two separate organizational structures int
 So how else can we frame the problem?
 
 ### A subset of a set of skills
-Because I have been knighted with the title Data Scientist
+Because I have been knighted with the title Data Scientist,
 I'm legally obligated to provide my own take on this mess,
-or at least make it worse. 
+or at least make it worse.
 Let's do that.
 
-I tend to think of data science as a **subset** of a set of skills.
+I tend to think of data science as a subset of a set of skills.
 This could include algorithm development, dashboarding, modeling fitting,
-programming in Python,
-programming in SQL, fitting black box models, 
-data communication, deploying Spark cluster jobs, the emotional
-numbness of being asked of join two datasets with no common key,
-knowing how to not laugh or express shock when you stakeholders
-ask for models with 99% accuracy,
-writing blog posts or tweet threads with advice on to how become a data scientist
-(Half joking on this one while doing it)
+programming in Python, programming in SQL, fitting black box models, data communication,
+deploying Spark cluster jobs,
+the emotional numbness
+of being asked to join two datasets with no common key,
+knowing how to not laugh or express shock when your
+stakeholders ask for models with 99% accuracy,
+writing blog posts or tweet threads with advice
+on how to become a data scientist (half-joking while doing it).
 
-Now some people with data scientist LinkedIn titles spend their time squeezing out .001 more precision/recall/accuracy out of a black box model.
-Sometimes this role is titled Machine Learning Engineer. 
+Now some people with data scientist LinkedIn titles spend their time squeezing out .001 more
+precision/recall/accuracy out of a black box model.
+Sometimes this role is titled Machine Learning Engineer.
 Some people find this kind of work to be fascinating.
-I think it's very boring and when I was evaluating job offers I avoided them entirely.
+I think it's very boring,
+and when I was looking for a job, I would avoid these entirely.
 
-Instead, I like working with stakeholders to help them understand a complex business,
-and use data make informed big scale decisions.
-Sometimes this role is called Decision Scientist, and
-this is what I do at Google where, surprise, my title is Data Scientist,
+Instead, I like working with stakeholders to help them understand a complex business and use data
+to make informed big-scale decisions.
+Sometimes this role is called Decision Scientist,
+and this is what I do at Google, where, surprise,
+my title is Data Scientist,
 which previously used to be called quantitative analyst.
-What matters to me is that I get to do what I enjoy,
-which is learning things from data, and sharing those learnings
-with others.
+What matters to me though is that I get to do what I enjoy,
+which is learning things from data and sharing those learnings with others.
 
 ## A suggested strategy
 So let's focus back on you.
@@ -118,7 +120,7 @@ stand out in any interview as each company tends to look for
 Now that you've narrowed down the part of DS that interest you the most,
 figure out how to be great at it.
 
-If you're into black box predictions places like Kaggle are the obvious answer.
+If you're into black box predictions, places like Kaggle are the obvious answer.
 If you really like academic algorithm development papers and algorithm
 competitions would be a good area to focus on.
 
@@ -129,7 +131,7 @@ of value was built right in,
 which I write about in my [How to get a job post]({filename}../Life/GettingAJob.md)
 
 ### Step 3: Identify the adjacent skills
-Find people that are already are excellent at what you what to learn and find places where they
+Find people that are excellent at what you want to learn and find places where they
 share their experience, whether it be writings, podcasts, conference talks etc.
 Write down all the skills and useful things they mention.
 For instance if they work on big prediction models are they also good at 
@@ -137,8 +139,8 @@ deploying them, or are they more focused on the internal mathematics?
 Do this again for multiple persons in your field of interest
 then see what other skills are commonly listed or mentioned and become proficient in those as well.
 
-In my case I often noticed to see a stronger emphasis on communication, intuition,
-and explanation versus model accuracy metrics.
+In my case I often noticed a stronger emphasis on communication, intuition,
+and an explanation versus model accuracy metrics.
 I also saw these folks contributing examples publicly in blog posts,
 talks, and open source notebooks.
 I now spend much of my time honing those skills, 
@@ -153,8 +155,10 @@ focus on for the next interview.
 Demetri Pananos provides [additional advice](https://dpananos.github.io/posts/2022/01/blog-post-36/) on his blog.
 
 ## Best of luck
-Unfortunately they data scientist job search is more of a random search than a strict, precise process,
-Nonetheless, if you're dead set on getting a Data Scientist job I hope the advice yhou here will help.
+Unfortunately the data scientist job search is more of a random search than
+a strict, precise process.
+Nonetheless, if you're dead set on getting a Data Scientist job I hope the
+advice you got here will help.
 And once you get a DS job be sure to send me a link to your blog post or
 tweet thread sharing your advice. 
 At that time you too will become a true data scientist.
@@ -162,6 +166,6 @@ At that time you too will become a true data scientist.
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@canyon289">
-<meta name="twitter:title" content="Tips for getting a DS job">
+<meta name="twitter:title" content="Tips for getting pot DS job">
 <meta name="twitter:description" content="Advice for a DS Job Seeker">
 <meta name="twitter:image" content="https://ravinkumar.com/images/SocialMedia/twitter/DS_Job_Card.png">
