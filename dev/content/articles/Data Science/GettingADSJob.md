@@ -166,6 +166,6 @@ At that time you too will become a true data scientist.
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@canyon289">
-<meta name="twitter:title" content="Tips for getting pot DS job">
+<meta name="twitter:title" content="Tips for getting a DS job">
 <meta name="twitter:description" content="Advice for a DS Job Seeker">
 <meta name="twitter:image" content="https://ravinkumar.com/images/SocialMedia/twitter/DS_Job_Card.png">
