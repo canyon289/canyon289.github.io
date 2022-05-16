@@ -4,7 +4,7 @@ Category: Programming
 Tags: Programming
 Slug: PyScriptFirstImpressions
 Authors: Ravin Kumar
-Status: Draft
+Status: Published
 
 PyScript is this awesome new tool that combines the browser with python, was released by the wonderful team at Anaconda,
 and represents a paradigm change in browser capability.
