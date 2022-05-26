@@ -31,7 +31,7 @@ or the [PyCON PyScript keynote](https://anaconda.cloud/pyscript-pycon2022-peter-
 
 My test code is here, and you can watch me code the whole thing 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uW6sWe7yO98?start=13712" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/uW6sWe7yO98?start=13712" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## What is Pyscript
 From the [README](https://github.com/pyscript/pyscript)
