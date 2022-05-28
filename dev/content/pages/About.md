@@ -99,8 +99,8 @@ I also published a [book about Bayesian Statistics](https://www.routledge.com/Ba
 # See my work
 
 <div id="action-links">
-<div class="action-link"><a href="https://github.com/canyon289/canyon289.github.io"><img src="{static}/images/about/github.png" />Open source profile</a></div>
-<div class="action-link"><a href="https://ravinkumar.com/pages/Talks.html"><img src="{static}/images/about/youtube.png" />Various talks</a></div>
-<div class="action-link"><a href="https://bayesiancomputationbook.com/welcome.html"><img src="{static}/images/about/book.jpeg" />Book on bayesian statistics</a></div>
-<div class="action-link"><a href="https://www.intuitivebayes.com/"><img src="{static}/images/about/course.svg" />Course on intuitive statistics</div>
+<div class="action-link"><a href="https://github.com/canyon289/canyon289.github.io"><img src="{static}/images/about/github.png" />Open Source Profile</a></div>
+<div class="action-link"><a href="https://ravinkumar.com/pages/Talks.html"><img src="{static}/images/about/youtube.png" />Various Talks</a></div>
+<div class="action-link"><a href="https://bayesiancomputationbook.com/welcome.html"><img src="{static}/images/about/book.jpeg" />Book on Bayesian Statistics</a></div>
+<div class="action-link"><a href="https://www.intuitivebayes.com/"><img src="{static}/images/about/course.svg" />Course on Intuitive Statistics</div>
 </a></div>
