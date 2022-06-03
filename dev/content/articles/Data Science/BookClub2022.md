@@ -61,7 +61,10 @@ though if you have the means you should buy a copy.
 Purchasing a copy helps the publisher and author continue to put great work out in the open.
 
 ## How to join
-Add your email address to the mailing list using the form below.
+To join email address to the mailing list using the form below and follow the instructions
+sent to your email.
+You can also follow me on [Twitter](https://twitter.com/canyon289) for additional updates.
+
 <div class="ml-form-embed"
   data-account="3479153:h8h4b4n7u8"
   data-form="5689564:h2f9s0">
@@ -79,7 +82,5 @@ var ml_account = ml('accounts', '3479153', 'h8h4b4n7u8', 'load');
 </script>
 <!-- End MailerLite Universal -->
 
-I need to get all the technology first and send out an email with further details.
-The second best is to follow me on [Twitter](https://twitter.com/canyon289).
 You don't need to wait though, if you have ideas send me a message.
 
