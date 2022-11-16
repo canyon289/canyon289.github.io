@@ -107,7 +107,7 @@ save_as: index.html
 <h1 style="margin-top:0; text-align: left;">About Me</h1>
     <p>I am a data scientist at Google. My focus is supporting strategic decision making with data, although all my opinions here are my own. Previously, I worked at Sweetgreen and SpaceX, doing the same line of work as now but on different applications, which is using data to inform staffing strategy and rocket launch cadence.</p>
     
-    <p>To become a better "decision" scientist I'm currently focusing on three topics</p>
+    <p>To become a better "decision" scientist, I'm currently focusing on three topics:</p>
     <ol>
         <li>Organizational influence and leadership</li>
         <li>Advanced applied mathematics, e.g. causal Inference, decision theory</li>
