@@ -4,7 +4,7 @@ Category: Statistics
 Tags: Bayes, Manufacturing
 Slug: BayesianDecisionMaking
 Authors: Ravin Kumar
-Status: Published
+Status: Hidden
 
 
 When [Thomas Wiecki](https://twitter.com/twiecki)
