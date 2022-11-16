@@ -109,9 +109,9 @@ save_as: index.html
     
     <p>To become a better "decision" scientist I'm currently focusing on three topics</p>
     <ol>
-        <li>Organizational Influence and Leadership</li>
-        <li>Advanced applied mathematics e.g. Causal Inference, Decistion Theory</li>
-        <li>Business Domain expertise</li>
+        <li>Organizational influence and leadership</li>
+        <li>Advanced applied mathematics, e.g. causal Inference, decision theory</li>
+        <li>Business domain expertise</li>
     </ol>
     <p>I like to share and teach the skills I've found useful from my career, whether it be here or in my blog, on YouTube, or as part of my course series</p>
     <p>If you'd prefer to updates pushed to you can subscribe to my mailing list </p>
