@@ -113,7 +113,7 @@ save_as: index.html
         <li>Advanced applied mathematics, e.g. Causal Inference, Decision Theory</li>
         <li>Something else TBD</li>
     </ol>
-    <p>I like to share and teach the skills I've found useful from my career, whether it be here or in my blog, on YouTube, or as part of my course series</p>
+    <p>I like to share and teach the skills I've found useful from my career, whether it be here or in my blog, on YouTube, or as part of my course series.</p>
     <p>If you'd prefer to have updates pushed to you, you can subscribe to my mailing list.</p>
     <p>I also contribute heavily to open source, mainly with <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC</a>.</p>
     <p>I'm always happy to connect with interested folks. Feel free to reach out anytime.</p>
