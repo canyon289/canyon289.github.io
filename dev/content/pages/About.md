@@ -105,15 +105,18 @@ save_as: index.html
 <!-- Left -->
 <div class="about-box">
 <h1 style="margin-top:0; text-align: left;">About Me</h1>
-    <p>I am a data scientist at Google where I use data to inform decisions, although all my opinions here are my own. I have previously worked at Sweetgreen, designing systems that would benefit team members and communities through sustainable and healthy food, and SpaceX, creating tools that would ultimately launch rocket ships. I feel fortunate to have worked with amazing teams throughout my career.</p>
-    <p>There are 3 things I strive to be:</p>
+    <p>I am a data scientist at Google. My focus is supporting strategic decision making with data, although all my opinions here are my own. Previously, I worked at Sweetgreen and SpaceX, doing the same line of work as now but on different applications, which is using data to inform staffing strategy and rocket launch cadence.</p>
+    
+    <p>To become a better "decision" scientist, I'm currently focusing on three topics:</p>
     <ol>
-        <li>An expert computational mathematician</li>
-        <li>An effective community member and leader</li>
-        <li>A knowledge contributor</li>
+        <li>Organizational influence and leadership</li>
+        <li>Advanced applied mathematics, e.g. Causal Inference, Decision Theory</li>
+        <li>Something else TBD</li>
     </ol>
-    <p>I always thought it was cool that people would come together and use math to build awesome things, whether it be rocket ships or computational statistics libraries. One of my most rewarding experiences came from contributing to the open source community. Since then, I have been a core contributor to <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC3</a>.</p>
-    <p>I believe in the possibility of creating great outcomes with math. The variety and volume of data has increased faster than the knowledge of how to make full use of it, and I am working to fill the gap. You'll see my public efforts in my open source profile, YouTube channel, book on Bayesian statistics, online course on applied Bayesian statistics, and many more.</p>
+    <p>I like to share and teach the skills I've found useful from my career, whether it be here or in my blog, on YouTube, or as part of my course series.</p>
+    <p>If you'd prefer to have updates pushed to you, you can subscribe to my mailing list.</p>
+    <p>I also contribute heavily to open source, mainly with <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC</a>.</p>
+    <p>I'm always happy to connect with interested folks. Feel free to reach out anytime.</p>
 </div>
 
 <!-- Right -->
