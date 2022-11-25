@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>A Pelican Blog - SQL</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/data-science.html">Data Science</a></li>
+                    <li><a href="/category/life.html">Life</a></li>
+                    <li><a href="/category/pages.html">pages</a></li>
+                    <li><a href="/category/programming.html">Programming</a></li>
+                    <li><a href="/category/statistics.html">Statistics</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/SqlForDataAnalysts.html">SQL for Data Analysts</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2016-11-28T00:00:00+00:00">
+                Published: Mon 28 November 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/data-science.html">Data Science</a>.</p>
+<p>tags: <a href="/tag/sql.html">SQL</a> </p>
+</footer><!-- /.post-info --><p>SQL is a very extensive language but as a Data Analyst you don't have to know
+all the ins and outs to start doing useful work. Here's a list of SQL concepts
+and commands in a rough order of importance for Data Analysts. I'm basing this
+list off of my experience using SQL to answer business questions at 
+SpaceX and National Oilwell Varco. At both companies I used T-SQL/SQL Server
+but the general ideas and commands are present in pretty much every flavor of
+SQL.</p>
+<h1>The Basics</h1>
+<p>If you want to produce any results you'll have to start here.</p>
+<h2>1. Tables</h2>
+<p>Fundamental to relational databases is the concept of tables, all the data
+is stored in these. Quickly learn how business concepts are reprsented in
+tables. You'll quickly find that a couple central tables usually contain an
+overwhelming majority of the useful information for a business area. For instance
+sales, customers, expenses, etc. Start with those and inevitably
+you'll start learning the others.</p>
+<h2>2. Select</h2>
+<p>Select is the workhorse command that will return your results. Might seem
+obvious but there are some important concepts like select, like <strong>Select <code>*</code> </strong>,
+<strong>Select Top</strong> and the order in which Logical Query Processing executes a Select.
+More on this later</p>
+<h2>3. Where</h2>
+<p>Getting a whole table isn't usually very useful. Learn the where filters
+like the <strong>like</strong> comparison, conditional filters, and datetime filters.</p>
+<h2>4. Joins</h2>
+<p>This is entirely fundamental to working with SQL. Aside from just getting
+the query to execute, knowing when to use and inner vs left join can totally
+change the meaning of your results. Master this quickly, including less
+used joins like comma or natural joins.</p>
+<h2>5. Aliasing</h2>
+<p>As soon as you start joining tables together, you'll likely run into
+duplicate column names on keys, or columns like CreateDate. Aliasing
+will ensure the query processor is actually grabbing the columns you want,
+but it will also mean you can rename columns to make sense to people. Aside from
+column aliasing, table aliasing will also help you keep things straight and
+is required for subqueries</p>
+<h2>6. Subquery Syntax</h2>
+<p>Sometimes you'll need to join half the rows from one table with half the rows
+on another other table. Subqueries are the simplest way to do this.</p>
+<h2>7. Order By</h2>
+<p>People usually care the most about the highest or lowest values of things. When
+you're returning millions of results you can't really scan by eye to figure
+it out. Order by does the work for you and, like it sounds, orders results</p>
+<h1>Intermediate SQL</h1>
+<p>After getting the basics people will start asking more pointed questions like,
+<strong>What's my sales per Region?</strong> or <strong>What are the 2nd most expensive parts
+we produce?</strong> To answer these questions you'll need some more knowledge.</p>
+<h2>8a. Built-in Functions</h2>
+<p>You'll need to these to do things like sum over a column, or count the number
+of records, but you'll also need these to numerically rank results.</p>
+<h2>8b. Groupby and Partition By</h2>
+<p>At the same time you'll need to learn how to use aggregations to use the functions
+above. Usually people ask questions like what's the cost per part, or what's the
+sales per region. A quick groupby and sum will answer these questions in a jiffy.
+Partition by is another way to do aggregations that doesn't require subqueries
+if you're only aggregating one column out of many. </p>
+<h2>9. Having</h2>
+<p>Where filters rows, having filters groups. Better explained with examples
+that can be <a href="http://www.w3schools.com/sql/sql_having.asp">found here</a></p>
+<h2>10. Cross Apply and Outer Apply</h2>
+<p>Cross Apply and Outer Apply are advanced joins that let you use information
+from one table into another in a more advanced way than traditional joins.
+For instance one example is being able to use join on table valued functions
+that results. Another is to use information from one table as a filter condition
+in a subquery that's generating another table that you're joining on. You'll
+quickly find out when you need these when you realize you can't accomplish certain
+joins with just left and inner joins.</p>
+<h1>Advanced SQL</h1>
+<h2>11. Variables</h2>
+<p>Variables will you reuse values throughout your code and make certain things
+more obvious. For instance if you're filtering for records after a certain date
+sometimes you could put the dates directly in the where line, but after a while
+it can become cumbersome to find it in your code. Declaring a variable at the
+top with your date, and using the variable later in your code helps you
+quickly modify your code and others. It especially helps when you reuse
+the date multiple times, declaring it once as a variable means you only
+need to edit it one place.</p>
+<h2>12. While Loops</h2>
+<p>With variables you can effectively use while loops. Variables and while loops
+will be necessary to traverse databases that are representations of graph structures.
+For example getting a reporting chain, to see who's boss, is who's boss, is who's boss.
+Or getting all parts that are a part of a Bill of Material. Or tracing transactions
+over time for a certain serial number part.</p>
+<h2>13. Common Table Expressions</h2>
+<p>Common table expressions are a useful way to annotate your code, they're
+somewhat analogous to object oriented programming where you can slowly
+build a results set over a more easily readable series of operations. You'll
+see what I mean when your queries starts with select, has 20 columns from
+various tables, and then 15 joins to get all the columns together. It gets
+a bit hard to keep it all straight. </p>
+<h2>14. Recursive Common Table Expressions</h2>
+<p>However a big reason to learn Common Table Expressions is to take advantage
+of recursive common table expressions. These serve a similar function
+to while loops, but are a slightly different flavor and in my opinion are
+a better syntax. Use this often to perform recursion on data concepts 
+that require it.</p>
+<h1>Generating your own tables</h1>
+<p>Once your queries start getting complex it'll help to store results
+in intermediate tables. To manage these you'll need to get familar with commands
+such as </p>
+<h2>15. Select * into #table_name</h2>
+<p>The easiest way to create a temp table, just select some values and 
+tell SQL Server to automagically create a table from the results.</p>
+<h2>16. Create Table</h2>
+<p>While Select Into is great, as you progress you'll sometimes need to
+have more control over the data types and other details like indexes in your 
+temp table. To do so you'll have to start with Create Table, which then allows
+you to specify all of these details. </p>
+<h2>17. Insert Values into</h2>
+<p>An empty table is fairly useless though. <strong>Insert Values into</strong> will
+help you populate your newly created table quickly.</p>
+<h2>18. Drop Table</h2>
+<p>And sometimes you'll need to get rid of tables you created. Just be careful
+because it's way easier to drop tables than create them.</p>
+<h1>The Other Stuff</h1>
+<p>There's additional concepts like modifying rows, altering columns,
+stored procedures, and functions, but those start getting into the realm
+of Database Administration, and sides by the time you get here anyway
+you'll be strong enough with SQL to figure out what you need.</p>
+<h1>Getting Started</h1>
+<p>Don't let this list intimidate you, you can get a lot of value from just
+the top 5 items. The others will come naturally as you figure out you need them
+and hopefully this list will help you figure out the terms to google once
+you get there.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/LearnSQL.html" rel="bookmark"
+                           title="Permalink to You should learn SQL">You should learn SQL</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-10-22T00:00:00+00:00">
+                Published: Sat 22 October 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/data-science.html">Data Science</a>.</p>
+<p>tags: <a href="/tag/sql.html">SQL</a> </p>
+</footer><!-- /.post-info -->                <p>I'm not the first to say this and I really doubt
+I'll be the last. Being able to use and understand data is 
+becoming, if not already, a very powerful skill. Let me
+go through the two perspectives I've encountered below.</p>
+<h1>But I'm already learning Python/Pandas/R</h1>
+<p>Cool! So …</p>
+                <a class="readmore" href="/LearnSQL.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>A Pelican Blog - Visualization</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/data-science.html">Data Science</a></li>
+                    <li><a href="/category/life.html">Life</a></li>
+                    <li><a href="/category/pages.html">pages</a></li>
+                    <li><a href="/category/programming.html">Programming</a></li>
+                    <li><a href="/category/statistics.html">Statistics</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/CodingConfusion.html">Coding Confusion</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2018-03-12T00:00:00+00:00">
+                Published: Mon 12 March 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/programming.html">Programming</a>.</p>
+<p>tags: <a href="/tag/visualization.html">Visualization</a> </p>
+</footer><!-- /.post-info --><p>Recently I've been teaching more coding than ever, both to coworkers and
+to students in my bootcamp. While they're all catching on and getting
+results, its made me step back and realize, modern day programming is not
+straightforward and with all the various parts, often is just plain confusing.</p>
+<h1>Your first program</h1>
+<p>Python is a popular programming language so it feels simple enough to tell a 
+new programmer, "Hey open up a text editor and write the following commands"</p>
+<div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>At this point the you feel accomplished, the student feels accomplished, 
+but then it quickly wears off as both of you realize this program doesn't
+do anything useful. So you start trying to explain the next steps, but where
+do you start?</p>
+<h1>Your first productionized program</h1>
+<p>There's data types in Python, such as lists, dictionaries, etc. There's also
+the concept of iteration and control loops. But DRY is a thing so you 
+quickly have to explain functions, but then you get into scope, and with
+Python there's whitespace formatting to cover as well. </p>
+<p>Somewhere in there you fit in a lesson about shell commands, and depending
+on whether they're in Windows or a POSIX client you wave your hands about
+OS file systems.</p>
+<p>All the code shouldn't be in one file though or it's confusing, so then you explain
+Python import machinery, but modules have their own nuances. Somewhere
+in there you ramble on about functional design vs OOP.</p>
+<p>Well now the student has something more complex working and they're thrilled
+but they want to deploy it. So now you need to teach them about git, but
+its also important that they know about isolated environments through
+virtualenv, or conda. A conversation ensues about dependencies and why
+pinning versions for imported packages might be necessary.</p>
+<p>After all this they finally get their code packaged up and put into a repo.
+Their code works and is available  but man it's ugly so you start explaining
+the importance of code quality, and how PEP8 is a thing, and why spaces after
+single line comments and camel casing are oh so important. A linting
+package is installed a bunch of messages appear on the console
+after you show they how to run it.</p>
+<p>They didn't know about unit testing though so you go through a lecture on
+Test Driven Development. Their monolithic logic needs to be refactored.</p>
+<p>And now their code needs to be deployed, so you ask them hard questions
+of how it will be used. If it's going to be a local package did they make
+sure it worked across all operating systems and python versions?</p>
+<p>They instead want a webapp, which eliminates most of the issues above, sweet!
+You ask them which web framework they want to use but now they need to learn
+about WSGIs and API design. An explanation about networking and HTTP response
+codes fits in there as well.</p>
+<p>Don't forget the front end though, where they now jump into HTML/CSS/Javascript.
+You explain that while most of the concepts above are still relevant, they're
+ever so different in another language. And let's hope they don't need a backend
+or you'll spend the rest of the day explaining what an ORM is but only
+after you teach them bare SQL so they know what's going on under the hood.</p>
+<p>Then you need to talk about Continuous Integration and explain various
+deployment strategies from Virtual Machines to Docker Containers to self hosting
+versus cloud hosting.</p>
+<p>And if they're doing machine learning be sure to cover at least a semester's
+worth of statistics.</p>
+<h1>The Point</h1>
+<p>Going from starter code to production is a lot of steps and for people
+that are new to programming it can be very frustrating because the code seemed
+to work 10 steps ago. If you're a seasoned
+programmer take a second to step back and realize how many moving parts
+there are to deploying a "maintainable production ready" app/library,
+and how to someone new it can be very difficult to
+see the forest for the trees! There's a lot of steps and concepts between Hello World
+and a robust library or application. When teaching someone new just take a breath
+and remember what it took you to gain that understanding as you guide your
+junior programmer. They will appreciate the help.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/DoubleDataJoin.html" rel="bookmark"
+                           title="Permalink to Double Data Joins">Double Data Joins</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-11-21T00:00:00+00:00">
+                Published: Mon 21 November 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/data-science.html">Data Science</a>.</p>
+<p>tags: <a href="/tag/visualization.html">Visualization</a> <a href="/tag/d3.html">D3</a> </p>
+</footer><!-- /.post-info -->                <p>Perhaps the most fundamental concept of D3 is the <a href="https://bost.ocks.org/mike/join/">data join</a>
+which shortly summarized compares a dataset in memory with the data in a selection.
+New elements are <strong>entered</strong>  where no matched data exists in the selection, 
+current elements are <strong>updated</strong> and missing elements are <strong>exited</strong>.</p>
+<p>One aspect that's easy …</p>
+                <a class="readmore" href="/DoubleDataJoin.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/RotationAndReusability.html" rel="bookmark"
+                           title="Permalink to SVG Rotation and Reusability">SVG Rotation and Reusability</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-10-15T10:20:00+00:00">
+                Published: Sat 15 October 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/programming.html">Programming</a>.</p>
+<p>tags: <a href="/tag/visualization.html">Visualization</a> </p>
+</footer><!-- /.post-info -->                <p>SVGs aren't always the most straightforward to work it and also are deceptively
+simple but as you'll get more familiar with the API you'll be able to
+combine SVG "methods" to more easily get what you need.<br>
+In this post we'll cover rotation and reusability of SVG elements as well …</p>
+                <a class="readmore" href="/RotationAndReusability.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/clippaths.html" rel="bookmark"
+                           title="Permalink to Clip Paths and Transforms">Clip Paths and Transforms</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-10-09T10:20:00+00:00">
+                Published: Sun 09 October 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/data-science.html">Data Science</a>.</p>
+<p>tags: <a href="/tag/visualization.html">Visualization</a> </p>
+</footer><!-- /.post-info -->                <p>When creating visualizations sometimes we want an element to be visible 
+in one portion of the SVG but perhaps in another. An example would be a chart
+with axes that also implements zoom and pan. As we move the chart elements
+into the axes area we don't wany any overlap …</p>
+                <a class="readmore" href="/clippaths.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/D3ZoomDemystified.html" rel="bookmark"
+                           title="Permalink to D3 4.0 Zoom demystified">D3 4.0 Zoom demystified</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-09-25T00:00:00+00:00">
+                Published: Sun 25 September 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/data-science.html">Data Science</a>.</p>
+<p>tags: <a href="/tag/visualization.html">Visualization</a> <a href="/tag/d3.html">D3</a> </p>
+</footer><!-- /.post-info -->                <p>In the <a href="/ImplementingD3Zoom.html">last post</a> we covered how to implement
+basic zoom and pan in a D3 svg with one line but also left ourselves with an example
+of an unexpected behavior.</p>
+<p>In this post will dig deeper to see what's happening under the hood and how we 
+can get around …</p>
+                <a class="readmore" href="/D3ZoomDemystified.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/ImplementingD3Zoom.html" rel="bookmark"
+                           title="Permalink to Implementing Zoom in D3 4.0">Implementing Zoom in D3 4.0</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-08-27T00:00:00+00:00">
+                Published: Sat 27 August 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/data-science.html">Data Science</a>.</p>
+<p>tags: <a href="/tag/visualization.html">Visualization</a> <a href="/tag/d3.html">D3</a> </p>
+</footer><!-- /.post-info -->                <p>D3 is a fantastic library for sharing and engaging users in visualizations.
+One of the best ways it does this is by leveraging user interactions, by means
+of clicks, drags, and scrolls to highlight data. We'll be exploring how to 
+implement one of these interactions, the zoom interaction in D3 …</p>
+                <a class="readmore" href="/ImplementingD3Zoom.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/FriendsCircles.html" rel="bookmark"
+                           title="Permalink to Interview Question: Friend Circles">Interview Question: Friend Circles</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-04-23T00:00:00+00:00">
+                Published: Sat 23 April 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/programming.html">Programming</a>.</p>
+<p>tags: <a href="/tag/visualization.html">Visualization</a> <a href="/tag/algorithms.html">Algorithms</a> <a href="/tag/interview.html">Interview</a> </p>
+</footer><!-- /.post-info -->                <p>There are N students in a class. Some of them are friends, while some are not.
+Their friendship is transitive in nature, i.e., if A is friend of B and B is friend of C,
+then A is also friend of C. A friend circle is a group of …</p>
+                <a class="readmore" href="/FriendsCircles.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>PyScript First Impressions</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+        <meta name="description" content="PyScript is this awesome new tool that combines the browser with python, was released by the wonderful team at Anaconda, and represents a paradigm..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/data-science.html">Data Science</a></li>
+                    <li><a href="/category/life.html">Life</a></li>
+                    <li><a href="/category/pages.html">pages</a></li>
+                    <li class="active"><a href="/category/programming.html">Programming</a></li>
+                    <li><a href="/category/statistics.html">Statistics</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/PyScriptFirstImpressions.html" rel="bookmark"
+           title="Permalink to PyScript First Impressions">PyScript First Impressions</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2022-05-15T00:00:00+00:00">
+                Published: Sun 15 May 2022
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/programming.html">Programming</a>.</p>
+<p>tags: <a href="/tag/programming.html">Programming</a> </p>
+</footer><!-- /.post-info -->      <p>PyScript is this awesome new tool that combines the browser with python, was released by the wonderful team at Anaconda,
+and represents a paradigm change in browser capability.
+I recently spent a number of hours testing it out and even got  PyMC to run (with some effort).
+Longer thoughts below, but let's start wth the summary.</p>
+<p><strong>If you're totally new to Python</strong>:  PyScript is very cool but not ready day to day use yet.
+Use something like Anaconda if you can install stuff locally, or repl.it, Binder, or Colab if you can't.</p>
+<p><strong>If you're an educator</strong>: This is going helpful in two ways.
+First it'll smooth environment setup issues. Ideally eliminate it, students can just open a html file and get going.
+The second is in access low to no internet environments, since all the code is client side it can load from a local file!</p>
+<p><strong>If you're a data Professional</strong>:  This is going to change the game.
+Currently, Plotly/Plotly Dash are the most current analogous solutions,
+but both require hosting and take a "server side" approach.
+PyScript takes a "client side, no server needed" approach which is huge shift. </p>
+<p><strong>If you're an OSS contributor</strong>: Get your packages working on Pyodide ASAP.
+As Peter explains in his talk your potential userbase will increase by over 10x</p>
+<p>The best source fo details is the <a href="https://github.com/pyscript/pyscript">GitHub repo</a>
+or the <a href="https://anaconda.cloud/pyscript-pycon2022-peter-wang-keynote">PyCON PyScript keynote</a></p>
+<p>My test code is here, and you can watch me code the whole thing </p>
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/uW6sWe7yO98?start=13712" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<h2>What is Pyscript</h2>
+<p>From the <a href="https://github.com/pyscript/pyscript">README</a></p>
+<blockquote>
+<p>PyScript is a meta project that aims to combine multiple open technologies into a framework that allows users to create sophisticated browser applications with Python. It integrates seamlessly with the way the DOM works in the browser and allows users to add Python logic in a way that feels natural both to web and Python developers.</p>
+</blockquote>
+<p>The way I see it</p>
+<ul>
+<li>It's a way to get Python and other languages in front of people in an interface everyone is familiar
+with (nearly) no install fuss</li>
+<li>A flexible tool to share and communicate data with professional colleagues, particularly ones
+outside of my technical team</li>
+<li>A way for me to leverage the power of the internet and browser, in programming languages I'm comfortable with</li>
+</ul>
+<h2>Current state and how you can help</h2>
+<p>As prominently displayed it's in an alpha state. 
+However the Anaconda team is openly inviting contributors.
+If you're a developer download the code and try it out, then either contribute directly to
+PyScript and its associated libraries (Pyodide and micropython) or port other packages to the ecosystem.</p>
+<p>In the coming days I will add a section to this post with more in depth advice and tips.</p>
+<h2>Other Takes</h2>
+<p>Eric Ma has a <a href="https://ericmjl.github.io/blog/2022/5/1/pyscript-python-in-the-web-browser/">great writeup</a>
+and embedded example with NetworkX which you should check out.
+As I see more I'll append to this list</p>
+<p><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@canyon289">
+<meta name="twitter:title" content="A new tool in the toolbox">
+<meta name="twitter:description" content="Who doesn't love a new tool?!">
+<meta name="twitter:image" content="https://ravinkumar.com/images/SocialMedia/twitter/PyScript_Card.png"></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

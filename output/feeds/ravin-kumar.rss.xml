@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>A Pelican Blog - Ravin Kumar</title><link>/</link><description></description><lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><item><title>Decisioning with Data Science - PyData Ljubljana Talk</title><link>/DecisioningwithDataScience.html</link><description>&lt;p&gt;Successful decisioning making with data in a business isn't automatic.
+And it doesn't happen by importing a library 
+and writing a couple lines of code.
+There are many factors to consider from data, to timing, to use case.
+This was the topic of my talk from PyData Ljubljana.
+In the …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2022-06-19:/DecisioningwithDataScience.html</guid><category>Data Science</category><category>Education</category></item><item><title>Inaugural Book Club</title><link>/BookClub2022.html</link><description>&lt;p&gt;A couple of days ago I thought a stats book club would be great but wasn't sure if anyone else thought so too
+so thought I'd ask the twitterverse.
+&lt;blockquote class="twitter-tweet tw-align-center"&gt;&lt;p lang="en" dir="ltr"&gt;Thinking of starting a stats book club where each week or two we walk through a chapter, test out models, and …&lt;/p&gt;&lt;/blockquote&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2022-05-27:/BookClub2022.html</guid><category>Data Science</category><category>Community</category></item><item><title>PyScript First Impressions</title><link>/PyScriptFirstImpressions.html</link><description>&lt;p&gt;PyScript is this awesome new tool that combines the browser with python, was released by the wonderful team at Anaconda,
+and represents a paradigm change in browser capability.
+I recently spent a number of hours testing it out and even got  PyMC to run (with some effort).
+Longer thoughts below …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2022-05-15:/PyScriptFirstImpressions.html</guid><category>Programming</category><category>Programming</category></item><item><title>Tips for getting a Data Scientist Job</title><link>/GettingADSJob.html</link><description>&lt;h1&gt;My opinion on how to become a DS&lt;/h1&gt;
+&lt;p&gt;If you're reading this, chances are you have reached out to me on {LinkedIn/Twitter/Github/Email} asking how become a data scientist. 
+or your have read my post on how &lt;a href="/GettingAJob.html"&gt;to get a job&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here are some important things to keep …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2022-04-24:/GettingADSJob.html</guid><category>Data Science</category><category>Interview</category></item><item><title>Getting that job at that one company that you think is cool</title><link>/GettingAJob.html</link><description>&lt;p&gt;If you're reading this you chances are have reached out to me on &lt;code&gt;{LinkedIn/Twitter/Github/Email}&lt;/code&gt;
+asking how to get a job at &lt;code&gt;{Google/SpaceX/Sweetgreen/Some other company}&lt;/code&gt;.
+If so this post is for you. 
+Instead of a short 280 character response,
+or an off-the-cuff reply,
+I believe …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 17 Apr 2022 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2022-04-17:/GettingAJob.html</guid><category>Data Science</category><category>Interview</category></item><item><title>Random Variable Algebra Simulation and Intuition</title><link>/RandomVariableAlgebra.html</link><description>&lt;p&gt;Random Variable Algebra can be challenging to understand mathematically and can sometimes
+feel counterintuitive. Things that have helped me are learning the wrong ways to perform
+RV Algebra as well as numerical simulation, both of which are presented in the notebook below.&lt;/p&gt;
+&lt;p&gt;A recording of me talking over slides is …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Wed, 22 Sep 2021 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2021-09-22:/RandomVariableAlgebra.html</guid><category>Statistics</category><category>Statistics</category></item><item><title>How positive outcomes are correlated with physical activity</title><link>/WhyFitness.html</link><description>&lt;p&gt;&lt;strong&gt;tldr&lt;/strong&gt; A structured fitness plan can greatly improve your career and your quality of life as a knowledge worker.
+Ignoring your health may work in the short term but will catch up to you slowly and subtly.
+I say this as someone who neglected my health while trying to get …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2021-06-07:/WhyFitness.html</guid><category>Life</category><category>Life</category></item><item><title>Migrating from TravisCI to Azure Pipelines</title><link>/AzurePipelines.html</link><description>&lt;p&gt;I'm in the process of testing out Azure Pipelines
+with &lt;a href="https://arviz-devs.github.io/arviz/"&gt;ArviZ&lt;/a&gt;, and in
+the process have learned more about the platform. I'll share
+my motivation as well as some tips.&lt;/p&gt;
+&lt;p&gt;Note that this is a live blog post that I'll continue to
+update as a I learn more.&lt;/p&gt;
+&lt;h1&gt;Motivation&lt;/h1&gt;
+&lt;p&gt;Many …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 02 Jun 2019 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2019-06-02:/AzurePipelines.html</guid><category>Programming</category><category>Programming</category><category>Infra</category></item><item><title>Now Available: Reference Sheets</title><link>/NowAvailableReferenceSheets.html</link><description>&lt;p&gt;When learning new material I find it challenging immediately recall all
+the nuances of a particular term. As a learning strategy I frequently
+create flashcards and reference sheets to reinforce my understanding, and 
+server as external memory. And for the first time I'm publishing them
+for others to use as …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2019-01-26:/NowAvailableReferenceSheets.html</guid><category>Programming</category><category>Education</category><category>Cheat Sheet</category></item><item><title>Better Data Science CI with Docker</title><link>/DockerforDS.html</link><description>&lt;p&gt;Know the feeling when you use a tool that "just works"? instead of feeling
+like you're wasting time and growing frustrated, you end up being more productive?  &lt;/p&gt;
+&lt;p&gt;For Bayesian practitioners, one such tool is ArviZ.
+This Python package allows users to perform detailed exploratory analyses
+of Bayesian models. Bayesian practitioners …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2019-01-20:/DockerforDS.html</guid><category>Data Science</category><category>MLOps</category></item><item><title>Faster blogging with Tmux</title><link>/TmuxBlogging.html</link><description>&lt;p&gt;Writing blog articles is great, but an aspect of it that is not is getting
+running all the scripts to get everything setup. To start a blogging
+session in no particular order I need to  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Traverse to my repository  &lt;/li&gt;
+&lt;li&gt;Start an http server  &lt;/li&gt;
+&lt;li&gt;Traverse directories again  &lt;/li&gt;
+&lt;li&gt;Start pelican  &lt;/li&gt;
+&lt;li&gt;Traverse directories …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2018-05-18:/TmuxBlogging.html</guid><category>Programming</category><category>Programming</category><category>MLOps</category></item><item><title>Coding Confusion</title><link>/CodingConfusion.html</link><description>&lt;p&gt;Recently I've been teaching more coding than ever, both to coworkers and
+to students in my bootcamp. While they're all catching on and getting
+results, its made me step back and realize, modern day programming is not
+straightforward and with all the various parts, often is just plain confusing.&lt;/p&gt;
+&lt;h1&gt;Your …&lt;/h1&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2018-03-12:/CodingConfusion.html</guid><category>Programming</category><category>Visualization</category></item><item><title>A review of Udacity's Machine Learning Nanodegree</title><link>/UdacityMLND.html</link><description>&lt;p&gt;I recently finished the Udacity Machine Learning Nanodegree and wanted to share
+the following thoughts on my experience.&lt;/p&gt;
+&lt;p&gt;If you haven't read my &lt;a href="/DSGuide.html"&gt;Review of Data Science Programs&lt;/a&gt;
+I would do so first, to get a general explanation of the other types
+of machine learning curriculum.&lt;/p&gt;
+&lt;h1&gt;The rundown&lt;/h1&gt;
+&lt;p&gt;The Machine …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2018-01-04:/UdacityMLND.html</guid><category>Programming</category><category>Programming</category><category>Education</category></item><item><title>Maintainable Machine Learning Code</title><link>/ReuseableML.html</link><description>&lt;p&gt;Creating a machine learning pipeline requires almost no thought these days but 
+maintaining a reusable and understandable codebase the whole way
+through is much more challenging. However there are some steps and 
+ideas that can be borrowed from traditional programming that are
+still relevant.&lt;/p&gt;
+&lt;h2&gt;Big Ball of Mud - Machine Learning …&lt;/h2&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 26 Nov 2017 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2017-11-26:/ReuseableML.html</guid><category>Data Science</category><category>MLOps</category></item><item><title>A recommendation on Berkeley's Deep Reinforcement Learning Bootcamp</title><link>/DeepRLBootcamp.html</link><description>&lt;p&gt;I just spent the weekend at the Berkeley Reinforcement Learning Bootcamp. 
+Overall I found it to be an intense but rewarding experience but also
+expensive if you're paying out of pocket.
+Read on for more of my thoughts and my recommendations if you should
+attend.&lt;/p&gt;
+&lt;h1&gt;Recommendations&lt;/h1&gt;
+&lt;p&gt;I'm guessing most people …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 27 Aug 2017 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2017-08-27:/DeepRLBootcamp.html</guid><category>Data Science</category><category>Education</category></item><item><title>A review of the Los Angeles Metro</title><link>/LAMetro.html</link><description>&lt;p&gt;I recently started taking the Los Angeles Metro to work and wanted to share my experience
+especially since it  has overall been  better than I originally
+anticipated.  &lt;/p&gt;
+&lt;h2&gt;The misconception&lt;/h2&gt;
+&lt;p&gt;People tend to think that Los Angeles does not have public transportation.
+At the very least I used to think Los …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Wed, 08 Mar 2017 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2017-03-08:/LAMetro.html</guid><category>Life</category><category>Life</category></item><item><title>Programming as a Non Programmer - Part 3</title><link>/NonProgrammerP3.html</link><description>&lt;p&gt;This is Part 3 in a series about how learning how to program could affect
+your career and some of the experiences I've had with programming in mine&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/NonProgrammerP1.html"&gt;Intent of series and introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/NonProgrammerPart2.html"&gt;What Programming as a Non Programmer means&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Why not to be a programmer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Why you shouldn't learn …&lt;/h1&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2017-01-23:/NonProgrammerP3.html</guid><category>Programming</category><category>Programming</category></item><item><title>Programming as a Non Programmer - Part 2</title><link>/NonProgrammerPart2.html</link><description>&lt;p&gt;This is Part 2 in a series about how learning how to program could affect
+your career and the experiences I've had with programming in mine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/NonProgrammerP1.html"&gt;Intent of series and introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;What Programming as a Non Programmer means&lt;/li&gt;
+&lt;li&gt;Why not to be a programmer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;What Programming without being a Programmer …&lt;/h1&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2017-01-16:/NonProgrammerPart2.html</guid><category>Programming</category><category>Programming</category></item><item><title>Programming as a Non Programmer - Part 1</title><link>/NonProgrammerP1.html</link><description>&lt;p&gt;This is Part 1 in a series about how learning how to program could affect
+your career and some of the experiences I've had with programming in mine&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Intent of series and introduction&lt;/li&gt;
+&lt;li&gt;What Programming as a Non Programmer means&lt;/li&gt;
+&lt;li&gt;Why Programming could be beneficial for your life and career …&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2017-01-09:/NonProgrammerP1.html</guid><category>Programming</category><category>Programming</category></item><item><title>My Guide on Data Science Programs</title><link>/DSGuide.html</link><description>&lt;p&gt;I recently got accepted to the Udacity Artificial Intelligence Nanodegree program.
+While I am planning to write about that when it starts, now is a good
+time to talk about the experience I've had with previous Data Science programs.  &lt;/p&gt;
+&lt;h2&gt;Why am I doing this?&lt;/h2&gt;
+&lt;p&gt;As a beginner it's hard to …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-12-01:/DSGuide.html</guid><category>Data Science</category><category>Education</category></item><item><title>SQL for Data Analysts</title><link>/SqlForDataAnalysts.html</link><description>&lt;p&gt;SQL is a very extensive language but as a Data Analyst you don't have to know
+all the ins and outs to start doing useful work. Here's a list of SQL concepts
+and commands in a rough order of importance for Data Analysts. I'm basing this
+list off of my …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Mon, 28 Nov 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-11-28:/SqlForDataAnalysts.html</guid><category>Data Science</category><category>SQL</category></item><item><title>Using Linux</title><link>/UsingLinux.html</link><description>&lt;p&gt;Recently I decided to start using Linux again as a primary OS on my laptop. I'm
+doing this because I believe Linux is the best OS to solve my problems and 
+I'm committed on sticking with it this time. If you're deciding to do this I'll
+walk you through my …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-11-27:/UsingLinux.html</guid><category>Programming</category><category>Programming</category></item><item><title>Double Data Joins</title><link>/DoubleDataJoin.html</link><description>&lt;p&gt;Perhaps the most fundamental concept of D3 is the &lt;a href="https://bost.ocks.org/mike/join/"&gt;data join&lt;/a&gt;
+which shortly summarized compares a dataset in memory with the data in a selection.
+New elements are &lt;strong&gt;entered&lt;/strong&gt;  where no matched data exists in the selection, 
+current elements are &lt;strong&gt;updated&lt;/strong&gt; and missing elements are &lt;strong&gt;exited&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;One aspect that's easy …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Mon, 21 Nov 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-11-21:/DoubleDataJoin.html</guid><category>Data Science</category><category>Visualization</category><category>D3</category></item><item><title>You should learn SQL</title><link>/LearnSQL.html</link><description>&lt;p&gt;I'm not the first to say this and I really doubt
+I'll be the last. Being able to use and understand data is 
+becoming, if not already, a very powerful skill. Let me
+go through the two perspectives I've encountered below.&lt;/p&gt;
+&lt;h1&gt;But I'm already learning Python/Pandas/R&lt;/h1&gt;
+&lt;p&gt;Cool! So …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sat, 22 Oct 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-10-22:/LearnSQL.html</guid><category>Data Science</category><category>SQL</category></item><item><title>SVG Rotation and Reusability</title><link>/RotationAndReusability.html</link><description>&lt;p&gt;SVGs aren't always the most straightforward to work it and also are deceptively
+simple but as you'll get more familiar with the API you'll be able to
+combine SVG "methods" to more easily get what you need.&lt;br&gt;
+In this post we'll cover rotation and reusability of SVG elements as well …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sat, 15 Oct 2016 10:20:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-10-15:/RotationAndReusability.html</guid><category>Programming</category><category>Visualization</category></item><item><title>Clip Paths and Transforms</title><link>/clippaths.html</link><description>&lt;p&gt;When creating visualizations sometimes we want an element to be visible 
+in one portion of the SVG but perhaps in another. An example would be a chart
+with axes that also implements zoom and pan. As we move the chart elements
+into the axes area we don't wany any overlap …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 09 Oct 2016 10:20:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-10-09:/clippaths.html</guid><category>Data Science</category><category>Visualization</category></item><item><title>Writing good software requires you to have an opinion</title><link>/OpinionatedSoftware.html</link><description>&lt;p&gt;If you want to write good software I would argue that you have to develop a
+a style based on experience partially based on experience but also with a 
+large dose of personal opinion. In fact I would argue go as far to argue that
+if you can't develop an …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Mon, 03 Oct 2016 10:20:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-10-03:/OpinionatedSoftware.html</guid><category>Programming</category><category>Programming</category></item><item><title>A Pivot</title><link>/APivot.html</link><description>&lt;p&gt;Originally when I started this blog I was frustrated with the Data Science
+Interview process, having been in it for a number of months. However,
+shortly after starting this blog I was hired on full time by SpaceX, and
+as a consequence stopped seeking interviews. &lt;/p&gt;
+&lt;h1&gt;Where this put me&lt;/h1&gt;
+&lt;p&gt;As …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sat, 01 Oct 2016 10:20:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-10-01:/APivot.html</guid><category>Life</category><category>Life</category></item><item><title>D3 4.0 Zoom demystified</title><link>/D3ZoomDemystified.html</link><description>&lt;p&gt;In the &lt;a href="/ImplementingD3Zoom.html"&gt;last post&lt;/a&gt; we covered how to implement
+basic zoom and pan in a D3 svg with one line but also left ourselves with an example
+of an unexpected behavior.&lt;/p&gt;
+&lt;p&gt;In this post will dig deeper to see what's happening under the hood and how we 
+can get around …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-09-25:/D3ZoomDemystified.html</guid><category>Data Science</category><category>Visualization</category><category>D3</category></item><item><title>Implementing Zoom in D3 4.0</title><link>/ImplementingD3Zoom.html</link><description>&lt;p&gt;D3 is a fantastic library for sharing and engaging users in visualizations.
+One of the best ways it does this is by leveraging user interactions, by means
+of clicks, drags, and scrolls to highlight data. We'll be exploring how to 
+implement one of these interactions, the zoom interaction in D3 …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sat, 27 Aug 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-08-27:/ImplementingD3Zoom.html</guid><category>Data Science</category><category>Visualization</category><category>D3</category></item><item><title>Modifying a Pelican Template</title><link>/ModifyingATemplate.html</link><description>&lt;p&gt;After deciding to use a &lt;a href="/WhyIChoseaSSG.html"&gt;Statically Generated Site&lt;/a&gt;
+I needed to pick a template. Trouble was that I had already found a template for
+WordPress that I had liked.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="WordPressTheme" src="/images/PelicanTemplate/WordPressTemplate.png"&gt;
+&lt;em&gt;The Wordpress theme&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;Luckily there was a &lt;a href="https://github.com/getpelican/pelican-themes"&gt;GitHubRepo&lt;/a&gt;
+that had many prexisting themes and even more luckily there was one 
+that …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 10 Jul 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-07-10:/ModifyingATemplate.html</guid><category>Programming</category><category>Tutorial</category></item><item><title>Why a Statically Generated Site</title><link>/WhyIChoseaSSG.html</link><description>&lt;p&gt;Initially when I decided to start this blog I started with what I already
+had a WordPress blog. Wordpress had served me well in the past, especially
+when I had a more limited programming background. Given the needs of this blog
+however, a Statically Generated Site, turned out to be …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 10 Jul 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-07-10:/WhyIChoseaSSG.html</guid><category>Programming</category><category>Programming</category></item><item><title>Interview Question: Finding a Match</title><link>/PickingAdjectives.html</link><description>&lt;p&gt;Two people join a dating site independently. Upon signing up they pick 5 words to
+describe themselves out of 25 given words. If 4 out of 5 of the words are the
+same the dating site declares they're a match. What's the probability
+those couples match?&lt;/p&gt;
+&lt;h2&gt;Question Format&lt;/h2&gt;
+&lt;p&gt;Online text …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Mon, 25 Apr 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-04-25:/PickingAdjectives.html</guid><category>Statistics</category><category>Interview</category></item><item><title>Interview Question: Friend Circles</title><link>/FriendsCircles.html</link><description>&lt;p&gt;There are N students in a class. Some of them are friends, while some are not.
+Their friendship is transitive in nature, i.e., if A is friend of B and B is friend of C,
+then A is also friend of C. A friend circle is a group of …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sat, 23 Apr 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-04-23:/FriendsCircles.html</guid><category>Programming</category><category>Visualization</category><category>Algorithms</category><category>Interview</category></item><item><title>Hi, I'm Ravin</title><link>/index.html</link><description>&lt;style type="text/css"&gt;
+    h1, h2, h3, h4 {
+        text-align: center;
+    }
+    h1:not(.page-title), h2, h3, h4 {
+        margin-top: 2.5rem;
+    }
+
+    .about-container {
+        display: flex;
+        flex-wrap: flex-wrap;
+    }
+    .about-container div.about-box {
+        width: 50%;
+        padding: 2rem;
+    }
+    #action-links {
+        max-width: 100%;
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .action-link, .secondary-box {
+        border-radius: 5px;
+        margin: 1.5%;
+        padding: 15px …&lt;/style&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-04-21:/index.html</guid><category>pages</category></item><item><title>Why Data Science</title><link>/WhyDS.html</link><description>&lt;p&gt;Say you're the type of person that curious about how the world 
+works. &lt;/p&gt;
+&lt;p&gt;In most cases you would need to spend years studying the subject,
+learning every nuance and detail. If you wanted to learn about Chess
+you might turn to Gary Kasparov or if you were interested in Go …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Ravin Kumar</dc:creator><pubDate>Sun, 21 Feb 2016 10:20:00 +0000</pubDate><guid isPermaLink="false">tag:None,2016-02-21:/WhyDS.html</guid><category>Data Science</category><category>Data Science</category></item></channel></rss>
