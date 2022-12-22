@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>SVG Rotation and Reusability</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+        <meta name="description" content="SVGs aren't always the most straightforward to work it and also are deceptively simple but as you'll get more familiar with the API you'll be able..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/data-science.html">Data Science</a></li>
+                    <li><a href="/category/life.html">Life</a></li>
+                    <li><a href="/category/pages.html">pages</a></li>
+                    <li class="active"><a href="/category/programming.html">Programming</a></li>
+                    <li><a href="/category/statistics.html">Statistics</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/RotationAndReusability.html" rel="bookmark"
+           title="Permalink to SVG Rotation and Reusability">SVG Rotation and Reusability</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-10-15T10:20:00+00:00">
+                Published: Sat 15 October 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/programming.html">Programming</a>.</p>
+<p>tags: <a href="/tag/visualization.html">Visualization</a> </p>
+</footer><!-- /.post-info -->      <p>SVGs aren't always the most straightforward to work it and also are deceptively
+simple but as you'll get more familiar with the API you'll be able to
+combine SVG "methods" to more easily get what you need.<br>
+In this post we'll cover rotation and reusability of SVG elements as well
+as the practical problem this solved for me</p>
+<h1>The Backstory</h1>
+<p>At SpaceX I'm currently writing a program that will calculate a timeline
+of activities and am using D3 for the visualization portion. For this particular
+business process there are activities, things that happen over a period of time,
+and milestones, significant dates that mark the completion of a series of activities</p>
+<h1>Gantt Charts</h1>
+<p>Schedules are nothing new, over a 100 years ago 
+<a href="https://en.wikipedia.org/wiki/Gantt_chart">the Gantt Chart</a> was developed
+to visualize and communicate project timelines
+<img alt="test" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/ConceptDraw_Project_Gantt_Chart.png"></p>
+<p>There's now numerous visual encodings but the two that are most used are
+the rectangle, displaying activity duration, and diamonds, which signify milestones
+or completion times of important events.
+<div id="unclipped"></div></p>
+<h1>Creating a diamond</h1>
+<p>SVG supports a number of 
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes">basic shapes</a>
+Rectangles are one of these and creating one just requires easily understood parameters
+such as x,y location of te top left corner and width and height.</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;svg&gt;</span>
+  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;10&quot;</span> <span class="na">y=</span><span class="s">&quot;10&quot;</span> <span class="na">height=</span><span class="s">&quot;20&quot;</span> <span class="na">width=</span><span class="s">&quot;40&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;20&quot;</span> <span class="na">y=</span><span class="s">&quot;20&quot;</span> <span class="na">height=</span><span class="s">&quot;20&quot;</span> <span class="na">width=</span><span class="s">&quot;40&quot;</span><span class="nt">&gt;&lt;/rect&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<p>They can be represented in either of the formats above, the only difference
+being the closing block for the svg element.The resulting SVG looks like this.
+Seemingly unspectacular but actually pretty cool for only 4 lines of code.<br>
+<svg>
+  <rect x="10" y="10" height="20" width="40"/>
+  <rect x="20" y="40" height="20" width="40"></rect>
+</svg></p>
+<p>Our next challenge is representing a diamond. There is no basic shape for a
+diamond in the SVG library. Given that we can't just "tell" the renderer
+to draw a diamond we could instead manually "draw" the lines like this.  </p>
+<p><svg width=100 height=100>
+  <path d="M50 15 L15 50 L50 85 L85 50 Z"></path>
+</svg></p>
+<p>But this feels like a bit much, we really just want a diamond.</p>
+<h1>Rotation</h1>
+<p>Taking a step back though if we think about it a diamond really is just 
+a rotated rectangle. Luckily there is a simple method to rotate elements in SVGs.</p>
+<div class="highlight"><pre><span></span>transform = &quot;rotate(degrees, x,y)&quot;
+</pre></div>
+
+
+<p>In the string above degrees are the degree of rotation, and x and y are
+rotation center. If not specified the rotation center defaults to the origin
+of the svg.</p>
+<p>Let's go through an example. Below is a basic rectangle like we saw above.</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;25&quot;</span> <span class="na">y=</span><span class="s">&quot;25&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<p><svg width ="100" height ="100">
+  <rect x="25" y="25" height="50" width="50"></rect>
+</svg>  </p>
+<p>If we specify the rotation as so</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;25&quot;</span> <span class="na">y=</span><span class="s">&quot;25&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50 &quot;</span><span class="na">transform=</span><span class="s">&quot;rotate(45, 50,50)&quot;</span><span class="nt">&gt;&lt;/rect&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<p>we get the diamond with much less work!</p>
+<p><svg width ="100" height ="100">
+  <rect x="25" y="25" height="50" width="50" transform="rotate(45, 50,50)"></rect>
+</svg></p>
+<p>We had to specify the center of the relative to the SVG origin however. If we
+translate the diamond slightly, without changing the rotate x and y coordinates
+we end up with effects like what you see below. We still got a diamond
+but it's not at the coordinates we wanted it to be.</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;400&quot;</span> <span class="na">height =</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;200&quot;</span> <span class="na">y=</span><span class="s">&quot;200&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">fill=</span><span class="s">&quot;blue&quot;</span><span class="nt">&gt;&lt;/rect&gt;</span>
+  <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;200&quot;</span> <span class="na">y=</span><span class="s">&quot;200&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">transform=</span><span class="s">&quot;rotate(45, 50,50)&quot;</span><span class="nt">&gt;&lt;/rect&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<p><svg width ="400" height ="400">
+  <rect x="200" y="200" height="50" width="50" fill="blue"></rect>
+  <rect x="200" y="200" height="50" width="50" transform="rotate(45, 50,50)"></rect>
+  <circle cx="50" cy="50" r="10" fill="red"></circle>
+</svg>
+The blue square and the black diamond share the same x and y attribute, but since
+the center of rotation is at red dot, the diamond isn't in the position as the
+black square.</p>
+<h1>SVG Reusability</h1>
+<p>SVG has another trick up it's sleeve though. Take a guess what the following
+SVG will look like.</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;defs&gt;</span>
+      <span class="nt">&lt;rect</span> <span class="na">id=</span><span class="s">&quot;myshape&quot;</span> <span class="na">x=</span><span class="s">&quot;0&quot;</span> <span class="na">y=</span><span class="s">&quot;0&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/defs&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<p><svg width ="100" height ="100">
+  <defs>
+      <rect id="myshape" x="0" y="0" height="50" width="50"/>
+  </defs>
+</svg>
+If you guessed nothing you were right. However there is geometry defined
+and similar to the <a href="/clippaths.html">clip paths</a> tutorial it's wrapped
+in <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs">defs</a> tags.</p>
+<p>Anything in defs tags can be reused by use of the "use" tag and referencing
+the id of the element.</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;defs&gt;</span>
+      <span class="nt">&lt;rect</span> <span class="na">id=</span><span class="s">&quot;myshape&quot;</span> <span class="na">x=</span><span class="s">&quot;0&quot;</span> <span class="na">y=</span><span class="s">&quot;0&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/defs&gt;</span>
+  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">&quot;#myshape&quot;</span> <span class="na">x=</span><span class="s">&quot;10&quot;</span> <span class="na">y=</span><span class="s">&quot;10&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;0&quot;</span> <span class="na">y=</span><span class="s">&quot;0&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<p><svg width ="100" height ="100">
+  <defs>
+      <rect id="myshape" x="0" y="0" height="50" width="50"/>
+  </defs>
+  <use xlink:href="#myshape" x="10" y="10"/>
+</svg></p>
+<p>So for our diamond we can declare once and then use it anywhere with minimal effort.</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;svg</span> <span class="na">width =</span><span class="s">&quot;100&quot;</span> <span class="na">height =</span><span class="s">&quot;100&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;defs&gt;</span>
+      <span class="nt">&lt;rect</span> <span class="na">id=</span><span class="s">&quot;myshape&quot;</span> <span class="na">x=</span><span class="s">&quot;0&quot;</span> <span class="na">y=</span><span class="s">&quot;0&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/defs&gt;</span>
+  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">&quot;#myshape&quot;</span> <span class="na">x=</span><span class="s">&quot;10&quot;</span> <span class="na">y=</span><span class="s">&quot;10&quot;</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">&quot;0&quot;</span> <span class="na">y=</span><span class="s">&quot;0&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<p><svg width ="200" height ="200">
+  <defs>
+      <rect id="diamond" height="50" width="50" transform="rotate(45)">
+  </defs>
+  <use xlink:href="#diamond" x="50" y="50"/>
+  <use xlink:href="#diamond" x="100" y="100"/>
+</svg></p>
+<h1>In Closing</h1>
+<p>Declaring elements in the defs tag is how DRY, Don't Repeat Yourself, is 
+implemented in SVGs. As you can see they're also extremely useful in
+very practical situations. If you have any questions feel free to contact
+me either through my Linkedin or Github. I hope this was helpful!</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -4,6 +4,11 @@
 
 Use python version 3.6.
 
+To generate the static site pages, run the following from the `dev/` folder.
+```
+pelican -s pelicanconf.py 
+```
+
 # Page and Article Organization
 
 Markdown files live in the `content` folder under `pages` or `articles`. Below is a recommendation of how to keep the workspace organized, although there are no constraints that enforce this in Pelican.

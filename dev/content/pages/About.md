@@ -6,45 +6,90 @@ Status: Published
 save_as: index.html 
 
 <style type="text/css">
-    h1, h2, h3, h4 {
+    /* Headers */
+    h1, h2 {
         text-align: center;
+    }
+    h3 {
+        text-align: left
     }
     h1:not(.page-title), h2, h3, h4 {
         margin-top: 2.5rem;
+    }
+    .action-link h3 {
+        margin: auto 1rem;
+    }  
+    .my-work-text h3,
+    .my-work-text p {
+        margin: auto 0;
+    }
+
+    /* Containers */
+    .about-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .about-container .about-box {
+        flex: 1;
+        padding: 2rem;
     }
     #action-links {
         max-width: 100%;
         margin: 10px auto;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
     }
+    .action-link, .my-work {
+        display: flex;
+        flex-direction: row;
+    }
+    @media (max-width: 768px) {
+        .about-container {
+            flex-direction: column;
+        }
+    }
+
+    /* Box and colors */
     .action-link {
-        border-radius: 5%;
+        width: 100%;
         background-color: #f4f5fb;
-        text-align: center;
-        max-width: 30%;
-        min-width: 120px;
-        padding: 15px;
-        margin: 1.5%;
-        flex: 1;
         -webkit-transition: all 0.15s ease;
         transition: all 0.15s ease;
     }
-    .action-link a {
-        text-decoration: none;
-        color: #12221d;
+    .action-link, .secondary-box {
+        border-radius: 5px;
+        margin: 1.5%;
+        padding: 15px;
     }
-    .action-link:hover {
+    .secondary-box {
+        border: solid 1px #56bb92;
+        min-height: 100px;
+        margin-top: 1.5rem;
+    }
+    .action-link:hover,
+    .my-work:hover {
         box-shadow: 0 0 10px #ccc;
     }
-
-    .action-link img {
-        max-height: 100px;
-        margin-bottom: 1rem;
+    .my-work-text {
+        color: #12221d;
+        margin: auto 0;
     }
-
+    
+    /* Images */
+    .action-link img {
+        height: 60px;
+        width: 60px;
+        margin: auto 0;
+    }
+    .my-work-img-container {
+        width: 80px;
+        margin: auto 20px;
+    }
+    .my-work img {
+        margin: auto;
+    }
 </style>
 
 <svg viewbox="0 0 100 100" style="opacity:12%;max-width:100px;max-height:100px; margin:40px auto;">
@@ -65,7 +110,7 @@ save_as: index.html
         #R-triangle-circle {
             stroke-dasharray: 1;
             stroke-dashoffset: 1;
-            animation: dash 2.4s linear forwards;			}
+            animation: dash 2.4s linear forwards;           }
         @keyframes dash {
             to {
                 stroke-dashoffset: 0;
@@ -81,26 +126,83 @@ save_as: index.html
     </g>
 </svg>
 
-I am a data scientist at Google where I use data to inform decisions, although all my opinions here are my own. I have previously worked at Sweetgreen, designing systems that would benefit team members and communities through sustainable and healthy food, and SpaceX, creating tools that would ultimately launch rocket ships. I feel fortunate to have worked with amazing teams throughout my career.
-
-There are 3 things I strive to be:
-
-1. An expert computational mathematician
-2. An effective community member and leader
-3. A knowledge contributor
-
-I always thought it was cool that people would come together and use math to build awesome things, whether it be rocket ships or computational statistics libraries. One of my most rewarding experiences came from contributing to the open source community. Since then, I have been a core contributor to [ArviZ](https://arviz-devs.github.io/arviz/index.html) and [PyMC3](https://docs.pymc.io/).
-
-I believe in the possibility of creating great outcomes with math. The variety and volume of data has increased faster than the knowledge of how to make full use of it, and I am working to fill the gap. You'll see my public efforts in my [open source profile](https://github.com/canyon289) and data conferences. I enjoy sharing my knowledge at [various talks]({filename}/pages/Talks.md), such as [SciPy](https://www.youtube.com/watch?v=bmWMdVQlzIA) and [PyData](https://www.youtube.com/watch?v=dY1nNtDTruE). 
-
-I also published a [book about Bayesian Statistics](https://www.routledge.com/Bayesian-Modeling-and-Computation-in-Python/Martin-Kumar-Lao/p/book/9780367894368) and am working on an upcoming statistics course.
-
+<div class="about-container">
+<!-- Left -->
+    <div class="about-box">
+        <h1 style="margin-top:0; text-align: left;">About Me</h1>
+        <p>I am a data scientist at Google. My focus is supporting strategic decision making with data, although all my opinions here are my own. Previously, I worked at Sweetgreen and SpaceX, doing the same line of work as now but on different applications, which is using data to inform staffing strategy and rocket launch cadence.</p>
+        <p>To become a better "decision" scientist, I'm currently focusing on three topics:</p>
+        <ol>
+            <li>Organizational influence and leadership</li>
+            <li>Advanced applied mathematics, e.g. Causal Inference, Decision Theory</li>
+            <li>Knowledge of business processes</li>
+        </ol>
+        <p>I like to share and teach the skills I've found useful from my career, whether it be here or in <a href="./blog.html">my blog</a>, on <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/featured">YouTube</a>, or as part of <a href="https://www.intuitivebayes.com/">my course series</a>.</p>
+        <p>If you'd prefer to have updates pushed to you, you can subscribe to my mailing list.</p>
+        <p>I also contribute heavily to open source, mainly with <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC</a>.</p>
+        <p>I'm always happy to connect with interested folks. Feel free to reach out anytime.</p>
+    </div>
+<!-- Right -->
+    <div class="about-box">
+        <h1 style="margin-top:0; text-align: left;">My Ongoing Work</h1>
+        <a href="https://github.com/canyon289/canyon289.github.io"><div class="action-link"><img src="./images/about/github.png" /><h3>My Open Source Profile</h3></div></a>
+        <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/featured"><div class="action-link"><img src="./images/about/youtube.png" /><h3>My YouTube Channel</h3></div></a>
+        <a href="./blog.html"><div class="action-link"><img src="./images/logo/logo.png" /><h3>My Blog</h3></div></a>
+        <div class="secondary-box" style="width: 100%;"> 
+            <h3 style="margin-top:0;">Join my mailing list for updates</h3>
+            <p>Get the latest updates on my blog posts, new YouTube series, upcoming talks, ongoing collaborations, and thoughtful discussions. You can unsubscribe at anytime.</p>
+            <form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/k0j3t8" data-code="k0j3t8" method="post" target="_blank" style="height: 32px;">
+                <div class="ml-form-formContent horozintalForm">
+                    <div class="ml-form-horizontalRow">
+                        <div class="ml-input-horizontal">
+                            <div style="width:100%" class="horizontal-fields">
+                                <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                                    <input type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email" aria-invalid="false">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ml-button-horizontal primary">
+                            <button type="submit" class="primary" style="font-weight: 700; font-size: 14px;">Subscribe</button>
+                            <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span> </button>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="ml-submit" value="1" aria-invalid="false">
+                <div class="ml-mobileButton-horizontal">
+                    <button type="submit" class="primary" style="font-weight: 700; font-size: 14px;">Subscribe</button>
+                    <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span> </button>
+                </div>
+                <input type="hidden" name="anticsrf" value="true" aria-invalid="false">
+            </form>
+        </div>
+    </div>
+</div>
 
 # See my work
 
-<div id="action-links">
-<div class="action-link"><a href="https://github.com/canyon289/canyon289.github.io"><img src="{static}/images/about/github.png" />Open Source Profile</a></div>
-<div class="action-link"><a href="https://ravinkumar.com/pages/Talks.html"><img src="{static}/images/about/youtube.png" />Various Talks</a></div>
-<div class="action-link"><a href="https://bayesiancomputationbook.com/welcome.html"><img src="{static}/images/about/book.jpeg" />Book on Bayesian Statistics</a></div>
-<div class="action-link"><a href="https://www.intuitivebayes.com/"><img src="{static}/images/about/course.svg" />Course on Intuitive Statistics</div>
-</a></div>
+<div><a href="https://bayesiancomputationbook.com/welcome.html"><div class="secondary-box my-work">
+    <div class="my-work-img-container"><img src="./images/about/book.jpeg" /></div>
+    <div class="my-work-text">
+        <h3>Bayesian Modeling and Computation in Python</h3>
+        <p>I co-authored a free textbook on statistical modeling.</p>
+    </div>
+</div></a></div>
+
+<div><a href="https://www.intuitivebayes.com/"><div class="secondary-box my-work">
+    <div class="my-work-img-container"><img src="./images/about/course.png" /></div>
+    <div class="my-work-text">
+        <h3>Courses in Intuitive Statistics</h3>
+        <p>I co-developed courses for professionals looking to learn applied statistics hand-on.</p>
+    </div>
+</div></a></div>
+
+
+# Other Resources
+
+<br>
+
+* [Talk] [SciPy 2019: Intro to Bayesian Model Evaluation and Visualization](https://www.youtube.com/watch?v=bmWMdVQlzIA&E) ([Code](https://github.com/canyon289/bayesian-model-evaluation))
+
+* [Talk] [PyDataLA 2018: PyTest for Data Scientists](https://www.youtube.com/watch?v=dY1nNtDTruE) ([Code](https://github.com/canyon289/PyTestforDataSciencePyDataLA))
+
+* [Talk] [Code Camp 2017: Introduction to PyTest](https://docs.google.com/presentation/d/11A742qhUaQdtwL3IaXQGzT3lB9PfRTXOIN4SpgSbwxo/edit#slide=id.p) ([Code](https://github.com/canyon289/CodeCampPytest))

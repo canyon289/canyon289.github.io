@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Modifying a Pelican Template</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+        <meta name="description" content="After deciding to use a Statically Generated Site I needed to pick a template. Trouble was that I had already found a template for WordPress that..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/data-science.html">Data Science</a></li>
+                    <li><a href="/category/life.html">Life</a></li>
+                    <li><a href="/category/pages.html">pages</a></li>
+                    <li class="active"><a href="/category/programming.html">Programming</a></li>
+                    <li><a href="/category/statistics.html">Statistics</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/ModifyingATemplate.html" rel="bookmark"
+           title="Permalink to Modifying a Pelican Template">Modifying a Pelican Template</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-07-10T00:00:00+00:00">
+                Published: Sun 10 July 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/programming.html">Programming</a>.</p>
+<p>tags: <a href="/tag/tutorial.html">Tutorial</a> </p>
+</footer><!-- /.post-info -->      <p>After deciding to use a <a href="/WhyIChoseaSSG.html">Statically Generated Site</a>
+I needed to pick a template. Trouble was that I had already found a template for
+WordPress that I had liked.</p>
+<p><img alt="WordPressTheme" src="/images/PelicanTemplate/WordPressTemplate.png">
+<em>The Wordpress theme</em> </p>
+<p>Luckily there was a <a href="https://github.com/getpelican/pelican-themes">GitHubRepo</a>
+that had many prexisting themes and even more luckily there was one 
+that was already a <a href="https://github.com/jvanz/pelican-hyde">close fit</a>
+<img alt="WordPressTheme" src="/images/PelicanTemplate/PelicanHydeTheme.png">
+<em>The Pelican-Hyde theme</em> </p>
+<p>There were some things I didn't like though. I didn't like the sidebar size,
+the links to social media, and the font, or that the sidebar was focused
+on the bottom. Additionally I wanted the horizontal line element from the 
+WordPress theme. Given that this theme was so close though, rather than
+start from scratch I decided to modify the existing one instead.</p>
+<h1>Peeking under the hood</h1>
+<p>Given that this is a Statically Generated Site everything you see can be
+traced back to a single file quite easily. However given this is still web
+technology there is still the possibility that the formatting could be coming
+from an html file and multiple css stylesheets. Bluntly put figuring out why
+certain things are laid out a certain way, or why they're a certain color, can
+still be a pain. Luckily though the Chrome Team developed awesome dev tools
+which make figuring out what's going on much easier
+<img alt="ChromeDevTools" src="/images/PelicanTemplate/ChromeDevTools.png">
+<em>Chrome Dev Tools</em></p>
+<p>In the screenshot above you can see a couple of awesome things. One is that
+by highlighting over an element I can both see the code in the Document
+Object Model and the full tree of CSS stylers that are changing it's appearance
+and position. While I won't go into all the tools here, there are numerous
+other tabs and functions to dive even deeper into more complex applications.
+However in generality using the dev tools is what I used in the following
+steps to deconstruct the Wordpress and Pelican themes</p>
+<p><img alt="ChromeDevTools" src="/images/PelicanTemplate/CSSModifications.png">
+<em>Adding a Dark Green Class</em><br>
+For the most part this modifying the CSS to reflect the styles we want.
+For instance above an addition was made the CSS style sheets to allow for
+a Dark Green class that uses the same green in the original WordPress Theme.</p>
+<h1>Modifying the template</h1>
+<p>I also wanted links to be added for the static pages to include pages 
+such as About This Blog and References. Luckily Pelican decided to use 
+the jinja2 templating engine which is simple to use.</p>
+<p><img alt="Template Modifications" src="/images/PelicanTemplate/TemplateModification.png"></p>
+<p>By adding the above loop in white, links will now be added for each sidebar link.</p>
+<h1>Why does this matter for Data Science</h1>
+<p>As a data scientist part of the job is being able to present information
+seamlessly and quickly. The Web was built for this 
+Using it to be able to quickly and effectively use this medium is an extremely
+useful skill to have in your communication toolset, and things like
+the Chrome Devtools and jinja2 templating engine are extremely powerful
+to template and style reusable webpages for reports and internal facing
+dashboards.</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

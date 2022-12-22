@@ -44,7 +44,8 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/ravinakumar'),
           ('github', 'https://github.com/canyon289'),
-          ('twitter', 'https://twitter.com/canyon289'))
+          ('twitter', 'https://twitter.com/canyon289'),
+          ('youtube', 'https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/featured'))
 
 DEFAULT_PAGINATION = False
 DISPLAY_PAGES_ON_MENU = True

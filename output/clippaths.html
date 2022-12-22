@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Clip Paths and Transforms</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+        <meta name="description" content="When creating visualizations sometimes we want an element to be visible in one portion of the SVG but perhaps in another. An example would be a..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog</a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/data-science.html">Data Science</a></li>
+                    <li><a href="/category/life.html">Life</a></li>
+                    <li><a href="/category/pages.html">pages</a></li>
+                    <li><a href="/category/programming.html">Programming</a></li>
+                    <li><a href="/category/statistics.html">Statistics</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/clippaths.html" rel="bookmark"
+           title="Permalink to Clip Paths and Transforms">Clip Paths and Transforms</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-10-09T10:20:00+00:00">
+                Published: Sun 09 October 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/data-science.html">Data Science</a>.</p>
+<p>tags: <a href="/tag/visualization.html">Visualization</a> </p>
+</footer><!-- /.post-info -->      <p>When creating visualizations sometimes we want an element to be visible 
+in one portion of the SVG but perhaps in another. An example would be a chart
+with axes that also implements zoom and pan. As we move the chart elements
+into the axes area we don't wany any overlap.</p>
+<h1>An example</h1>
+<p>In the visualization below zoom and pan have been applied using the method in
+the <a href="/ImplementingD3Zoom.html">zoom and pan post</a>. We only want the blue
+dot to be visible in the blue region but it's clearly visible everywhere.</p>
+<div id="unclipped"></div>
+
+<h1>Clip Paths</h1>
+<p>Luckily the SVGs support a concept called clip-path. The idea is simple,
+essentially defining an area where elements are visible, however the implementation
+is a bit more convoluted.  </p>
+<p>In our example above we only wanted the blue circle to be visible in the blue 
+region. As with nearly everything in SVG we'll have to define the geometry.
+However unlike other svg geometry it needs to be defined in the <strong>defs</strong>
+section of the svg.</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;svg&gt;</span>
+  <span class="nt">&lt;defs&gt;</span>
+    <span class="nt">&lt;clipPath</span> <span class="na">id=</span><span class="s">&quot;bluerect&quot;</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!--Geometry goes here--&gt;</span>
+    <span class="nt">&lt;/clipPath&gt;</span>
+  <span class="nt">&lt;/defs&gt;</span> 
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs">defs</a>
+are a tag for reuseable elements in SVGs. In this case 
+<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath">clipPath</a>
+element needs to be defined in this block.</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;svg&gt;</span>
+  <span class="nt">&lt;defs&gt;</span>
+    <span class="nt">&lt;clipPath</span> <span class="na">id=</span><span class="s">&quot;bluerect&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;rect</span> <span class="na">x=</span><span class="s">0</span> <span class="na">y=</span><span class="s">0</span> <span class="na">height=</span><span class="s">300</span> <span class="na">width=</span><span class="s">150</span><span class="nt">&gt;&lt;/rect&gt;</span>
+    <span class="nt">&lt;/clipPath&gt;</span>
+  <span class="nt">&lt;/defs&gt;</span> 
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<p>Once defined in the defs section the clip path can be applied to an element
+by adding a <strong>clip-path</strong> attribute on the element. The blue is removed
+from the example code for code clarity. 
+[ref] While sample bl.ocks are great sometimes when going through them
+it's hard to isolate the specific feature I'm trying to learn
+from all the other functionality[/ref]</p>
+<div class="highlight"><pre><span></span><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;circle&quot;</span><span class="p">)</span>
+   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cx&quot;</span><span class="p">,</span> <span class="nx">width</span><span class="o">/</span><span class="mf">2</span><span class="p">)</span>
+   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;cy&quot;</span><span class="p">,</span> <span class="nx">height</span><span class="o">/</span><span class="mf">2</span> <span class="o">-</span> <span class="nx">r</span><span class="p">)</span>
+   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="mf">10</span><span class="p">)</span>
+   <span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;clip-path&quot;</span><span class="p">,</span> <span class="s2">&quot;url(#cliprect)&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<div id="staticclipped"></div>
+
+<p>The clip path clearly worked but unfortunately it stick with the element
+regardless of position. What we really want is the circle to be visible
+depending on where it is in the svg.</p>
+<h1>Clip Path Groups</h1>
+<p>Before fixing the issue above it should be mentioned that clip paths 
+can also be applied to groups. There are a lot of uses for it but in our 
+case this is EXTREMELY handy as it allows us to do two major things</p>
+<ul>
+<li>Apply a clip group to one circle but not another</li>
+<li>Apply the clip group to a group that is not transformed</li>
+</ul>
+<p>The simplified SVG structure looks like this.</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;svg&gt;</span>
+<span class="nt">&lt;g</span> <span class="na">id=</span><span class="s">&quot;alwaysvisiblecircle&quot;</span> <span class="na">class=</span><span class="s">&quot;pan_and_zoom_class&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;circle&gt;</span>
+<span class="nt">&lt;/g&gt;</span>
+<span class="nt">&lt;g</span> <span class="na">id=</span><span class="s">&quot;url(#clippathdef)&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;g</span> <span class="na">class=</span><span class="s">&quot;pan_and_zoom_class&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;circle&gt;</span>
+  <span class="nt">&lt;/g&gt;</span>
+<span class="nt">&lt;/g&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</pre></div>
+
+
+<div id="clipped"></div>
+
+<p>This structure results in this visualization which does everything we want it
+to! If you try dragging the circles, you'll notice that one of them starts
+disapearing as it's location moves to the right, but start appearing again
+if you move left</p>
+<h1>References</h1>
+<p>The code for these visualizations are available on my Github. Additionally
+there is a much more extensive writeup on clip paths written by
+<a href="https://sarasoueidan.com/blog/css-svg-clipping/">Sara Soueidan</a> which
+I highly recommend. </p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog - pages</title><link href="/" rel="alternate"></link><link href="/feeds/pages.atom.xml" rel="self"></link><id>/</id><updated>2016-04-21T00:00:00+00:00</updated><entry><title>Hi, I'm Ravin</title><link href="/index.html" rel="alternate"></link><published>2016-04-21T00:00:00+00:00</published><updated>2016-04-21T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2016-04-21:/index.html</id><summary type="html">&lt;style type="text/css"&gt;
+    h1, h2, h3, h4 {
+        text-align: center;
+    }
+    h1:not(.page-title), h2, h3, h4 {
+        margin-top: 2.5rem;
+    }
+
+    .about-container {
+        display: flex;
+        flex-wrap: flex-wrap;
+    }
+    .about-container div.about-box {
+        width: 50%;
+        padding: 2rem;
+    }
+    #action-links {
+        max-width: 100%;
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .action-link, .secondary-box {
+        border-radius: 5px;
+        margin: 1.5%;
+        padding: 15px …&lt;/style&gt;</summary><content type="html">&lt;style type="text/css"&gt;
+    h1, h2, h3, h4 {
+        text-align: center;
+    }
+    h1:not(.page-title), h2, h3, h4 {
+        margin-top: 2.5rem;
+    }
+
+    .about-container {
+        display: flex;
+        flex-wrap: flex-wrap;
+    }
+    .about-container div.about-box {
+        width: 50%;
+        padding: 2rem;
+    }
+    #action-links {
+        max-width: 100%;
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .action-link, .secondary-box {
+        border-radius: 5px;
+        margin: 1.5%;
+        padding: 15px;
+    }
+    .action-link, .my-work {
+        display: flex;
+        flex-direction: row;
+    }
+    .action-link {
+        width: 100%;
+        background-color: #f4f5fb;
+        -webkit-transition: all 0.15s ease;
+        transition: all 0.15s ease;
+    }
+    .action-link img {
+        height: 60px;
+        width: 60px;
+        margin: auto 0;
+    }
+    .action-link h3 {
+        margin: auto 1rem;
+    }  
+    .action-link:hover {
+        box-shadow: 0 0 10px #ccc;
+    }
+    .secondary-box {
+        border: solid 1px #56bb92;
+        min-height: 100px;
+        margin-top: 1.5rem;
+    }
+    .secondary-box img {
+        max-height: 80px;
+        margin: auto 0;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;&lt;svg viewbox="0 0 100 100" style="opacity:12%;max-width:100px;max-height:100px; margin:40px auto;"&gt;
+    &lt;style type="text/css"&gt;
+        path {
+            fill: none;
+            stroke: #12221D;
+            stroke-width: 0.1rem;
+            stroke-miterlimit: 10;
+            stroke-linecap: round;
+        }
+        #K-triangle-1,
+        #K-triangle-2 {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            animation: dash 2s linear forwards;
+        }
+        #R-triangle-circle {
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            animation: dash 2.4s linear forwards;           }
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    &lt;/style&gt;
+    &lt;g id="R"&gt;
+        &lt;path id="R-triangle-circle" d="M 15 42.1297 L 43.5792 91.6304 L 15 91.6304 L 15 8.3696 A 32.0984 32.0984 0 0 1 15 72.5664 Z" pathLength="1"/&gt;
+    &lt;/g&gt;
+    &lt;g id="K"&gt;
+        &lt;path id="K-triangle-1" d="M 56.2434 58.1775 L 85 8.3696 L 56.2434 8.3696 Z" pathLength="1"/&gt;
+        &lt;path id="K-triangle-2" d="M 56.2434 42.1297 L 85 91.6304 L 56.2434 91.6304 Z" pathLength="1"/&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;&lt;/p&gt;
+&lt;div class="about-container"&gt;
+&lt;!-- Left --&gt;
+&lt;div class="about-box"&gt;
+&lt;h1 style="margin-top:0; text-align: left;"&gt;About Me&lt;/h1&gt;
+    &lt;p&gt;I am a data scientist at Google. My focus is supporting strategic decision making with data, although all my opinions here are my own. Previously, I worked at Sweetgreen and SpaceX, doing the same line of work as now but on different applications, which is using data to inform staffing strategy and rocket launch cadence.&lt;/p&gt;
+
+    &lt;p&gt;To become a better "decision" scientist, I'm currently focusing on three topics:&lt;/p&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Organizational influence and leadership&lt;/li&gt;
+        &lt;li&gt;Advanced applied mathematics, e.g. Causal Inference, Decision Theory&lt;/li&gt;
+        &lt;li&gt;Something else TBD&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;I like to share and teach the skills I've found useful from my career, whether it be here or in my blog, on YouTube, or as part of my course series.&lt;/p&gt;
+    &lt;p&gt;If you'd prefer to have updates pushed to you, you can subscribe to my mailing list.&lt;/p&gt;
+    &lt;p&gt;I also contribute heavily to open source, mainly with &lt;a href="https://arviz-devs.github.io/arviz/index.html"&gt;ArviZ&lt;/a&gt; and &lt;a href="https://docs.pymc.io/"&gt;PyMC&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;I'm always happy to connect with interested folks. Feel free to reach out anytime.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- Right --&gt;
+&lt;div class="about-box"&gt;
+&lt;h1 style="margin-top:0; text-align: left;"&gt;My Ongoing Work&lt;/h1&gt;
+&lt;a href="https://github.com/canyon289/canyon289.github.io"&gt;&lt;div class="action-link"&gt;&lt;img src="/images/about/github.png" /&gt;&lt;h3&gt;My Open Source Profile&lt;/h3&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/featured"&gt;&lt;div class="action-link"&gt;&lt;img src="/images/about/youtube.png" /&gt;&lt;h3&gt;My YouTube Channel&lt;/h3&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;a href="/blog.html"&gt;&lt;div class="action-link"&gt;&lt;img src="/images/logo/logo.png" /&gt;&lt;h3&gt;My Blog&lt;/h3&gt;&lt;/div&gt;&lt;/a&gt;
+&lt;div class="secondary-box" style="width: 100%;"&gt; 
+    &lt;h3 style="margin-top:0;"&gt;Join my mailing list for updates&lt;/h3&gt;
+    &lt;p&gt;Get the latest updates on my blog posts, new YouTube series, upcoming talks, ongoing collaborations, and thoughtful discussions. You can unsubscribe at anytime.&lt;/p&gt;
+    &lt;form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/k0j3t8" data-code="k0j3t8" method="post" target="_blank" style="height: 32px;"&gt;
+    &lt;div class="ml-form-formContent horozintalForm"&gt;
+    &lt;div class="ml-form-horizontalRow"&gt;
+    &lt;div class="ml-input-horizontal"&gt;
+    &lt;div style="width:100%" class="horizontal-fields"&gt;
+    &lt;div class="ml-field-group ml-field-email ml-validate-email ml-validate-required"&gt;
+    &lt;input type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email" aria-invalid="false"&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ml-button-horizontal primary"&gt;
+    &lt;button type="submit" class="primary" style="font-weight: 700; font-size: 14px;"&gt;Subscribe&lt;/button&gt;
+    &lt;button disabled="disabled" style="display:none" type="button" class="loading"&gt; &lt;div class="ml-form-embedSubmitLoad"&gt;&lt;/div&gt; &lt;span class="sr-only"&gt;Loading...&lt;/span&gt; &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input type="hidden" name="ml-submit" value="1" aria-invalid="false"&gt;
+    &lt;div class="ml-mobileButton-horizontal"&gt;
+    &lt;button type="submit" class="primary" style="font-weight: 700; font-size: 14px;"&gt;Subscribe&lt;/button&gt;
+    &lt;button disabled="disabled" style="display:none" type="button" class="loading"&gt; &lt;div class="ml-form-embedSubmitLoad"&gt;&lt;/div&gt; &lt;span class="sr-only"&gt;Loading...&lt;/span&gt; &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;input type="hidden" name="anticsrf" value="true" aria-invalid="false"&gt;
+    &lt;/form&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;h1&gt;See my work&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://bayesiancomputationbook.com/welcome.html"&gt;&lt;div class="secondary-box my-work"&gt;
+    &lt;img src="/images/about/book.jpeg" /&gt;
+    &lt;div class="my-work-text"&gt;&lt;h3&gt;Book on Bayesian Statistics&lt;/h3&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/a&gt;
+&lt;a href="https://www.intuitivebayes.com/"&gt;&lt;div class="secondary-box my-work"&gt;
+    &lt;img src="/images/about/course.png" /&gt;
+    &lt;div class="my-work-text"&gt;&lt;h3&gt;Course on Intuitive Statistics&lt;/h3&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;style&gt; h3 {text-align: left} &lt;/style&gt;
+
+&lt;h1&gt;Talks&lt;/h1&gt;
+&lt;h3&gt;Intro to Bayesian Model Evaluation and Visualization&lt;/h3&gt;
+&lt;p&gt;SciPy 2019&lt;br&gt;
+&lt;a href="https://www.youtube.com/watch?v=bmWMdVQlzIA&amp;amp;E"&gt;Recording&lt;/a&gt;
+&amp;nbsp;
+&lt;a href="https://github.com/canyon289/bayesian-model-evaluation"&gt;Code&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h3&gt;PyTest for Data Scientists&lt;/h3&gt;
+&lt;p&gt;PyDataLA 2018&lt;br&gt;
+&lt;a href="https://www.youtube.com/watch?v=dY1nNtDTruE"&gt;Recording&lt;/a&gt;
+&amp;nbsp;
+&lt;a href="https://github.com/canyon289/PyTestforDataSciencePyDataLA"&gt;Code&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;h3&gt;PyTest&lt;/h3&gt;
+&lt;p&gt;Code Camp 2017&lt;br&gt;
+&lt;em&gt;Introductory level talk meant to encourage others to use python testing by going through basic and intermediate PyTest examples.&lt;/em&gt;&lt;br&gt;
+&lt;a href="https://github.com/canyon289/CodeCampPytest"&gt;Code&lt;/a&gt;
+&amp;nbsp;
+&lt;a href="https://docs.google.com/presentation/d/11A742qhUaQdtwL3IaXQGzT3lB9PfRTXOIN4SpgSbwxo/edit#slide=id.p"&gt;Slides&lt;/a&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;</content><category term="pages"></category></entry></feed>

@@ -1,0 +1,1619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog - Data Science</title><link href="/" rel="alternate"></link><link href="/feeds/data-science.atom.xml" rel="self"></link><id>/</id><updated>2022-06-19T00:00:00+00:00</updated><entry><title>Decisioning with Data Science - PyData Ljubljana Talk</title><link href="/DecisioningwithDataScience.html" rel="alternate"></link><published>2022-06-19T00:00:00+00:00</published><updated>2022-06-19T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2022-06-19:/DecisioningwithDataScience.html</id><summary type="html">&lt;p&gt;Successful decisioning making with data in a business isn't automatic.
+And it doesn't happen by importing a library 
+and writing a couple lines of code.
+There are many factors to consider from data, to timing, to use case.
+This was the topic of my talk from PyData Ljubljana.
+In the …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Successful decisioning making with data in a business isn't automatic.
+And it doesn't happen by importing a library 
+and writing a couple lines of code.
+There are many factors to consider from data, to timing, to use case.
+This was the topic of my talk from PyData Ljubljana.
+In the talk I shared my learnings from the various organizations 
+where I've needed aid a decision with the use of data.&lt;/p&gt;
+&lt;p&gt;You can find the slides below,
+I hope they help you in the challenges you're facing.
+Many thanks to &lt;a href="https://twitter.com/mihagazvoda"&gt;Miha Gasvoda&lt;/a&gt; for inviting me to speak.&lt;/p&gt;
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSgd-rRvUMqI9_u8w3voRoh8EbjfEElyF-9e_dhalzCMpg6ByCeNvvdzVTd51g9WI5HLl-E20ufQDPD/embed?start=false&amp;loop=false&amp;delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;meta name="twitter:card" content="summary_large_image"&gt;
+&lt;meta name="twitter:creator" content="@canyon289"&gt;
+&lt;meta name="twitter:title" content="A practical guide"&gt;
+&lt;meta name="twitter:description" content="Many thanks for PyData Ljubljana for hosting"&gt;
+&lt;meta name="twitter:image" content="https://ravinkumar.com/images/SocialMedia/twitter/PyDataLjubljana.png"&gt;&lt;/p&gt;</content><category term="Data Science"></category><category term="Education"></category></entry><entry><title>Inaugural Book Club</title><link href="/BookClub2022.html" rel="alternate"></link><published>2022-05-27T00:00:00+00:00</published><updated>2022-05-27T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2022-05-27:/BookClub2022.html</id><summary type="html">&lt;p&gt;A couple of days ago I thought a stats book club would be great but wasn't sure if anyone else thought so too
+so thought I'd ask the twitterverse.
+&lt;blockquote class="twitter-tweet tw-align-center"&gt;&lt;p lang="en" dir="ltr"&gt;Thinking of starting a stats book club where each week or two we walk through a chapter, test out models, and …&lt;/p&gt;&lt;/blockquote&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;A couple of days ago I thought a stats book club would be great but wasn't sure if anyone else thought so too
+so thought I'd ask the twitterverse.
+&lt;blockquote class="twitter-tweet tw-align-center"&gt;&lt;p lang="en" dir="ltr"&gt;Thinking of starting a stats book club where each week or two we walk through a chapter, test out models, and generally chat about&lt;br&gt;&lt;br&gt;Probably over livestream as that&amp;#39;s been working out great&lt;br&gt;&lt;br&gt;Anyone interested in this idea? Ive already got one book in mind&lt;/p&gt;&amp;mdash; RavinKumar (@canyon289) &lt;a href="https://twitter.com/canyon289/status/1530048907526299648?ref_src=twsrc%5Etfw"&gt;May 27, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; &lt;/p&gt;
+&lt;p&gt;Well my prior uncertainty has been overwhelmed with data. 
+Let's make it happen.
+For everyone who responded, thank you. 
+You made this happen.
+If you're certain you want to sign up the mailing list link is below.&lt;/p&gt;
+&lt;h2&gt;Goal, Structure, and Pacing&lt;/h2&gt;
+&lt;p&gt;The goal of this is to encourage continuous learning and sharing of knowledge in an encouraging environment.
+It's also important that this is accessible to anyone interested.
+Folks should be able to participate when it works for them, at the pace that works for them.&lt;/p&gt;
+&lt;p&gt;From the responses its clear no one timezone or day works, 
+and even within a timezone day people are different levels of "busy".&lt;/p&gt;
+&lt;p&gt;So this is going to be an &lt;mark&gt;&lt;strong&gt;async first&lt;/strong&gt;&lt;/mark&gt; club
+There'll be Discourse for ongoing community conversation and 
+recorded YouTube streams that I'll host for synchronous sessions (at least for the first book). 
+These two platforms capture discussions and knowledge in a persistent way that balances the magic of synchronous
+conversations with the async first principle that's guiding this group.&lt;/p&gt;
+&lt;p&gt;For a working cadence I'm thinking about a two to three week cycle and where we cover a chapter each cycle.
+As we read we can discuss on Discourse so folks can come in on their own time
+and catch up on previous conversations.
+In each cycle I'll also run a livestream where that chapter is discussed
+and share thoughts and impressions from my personal experience with a question and answer component. 
+The livestream will be recorded keeping with the async first principle.
+Without actual data this feels like the right balance between "casual walk" versus "all out sprint",
+synchronous versus async,
+and "leader led" versus open "community".
+I'll figure out other ways to make this useful,
+while sticking to the async first principle,
+and always with the aim of maximizing the amount of learning.&lt;/p&gt;
+&lt;p&gt;Are these choices the perfect ones? I'm honestly not sure but let's try it and adjust from there.&lt;/p&gt;
+&lt;h2&gt;The first book: Causal Inference Mixtape&lt;/h2&gt;
+&lt;p&gt;Causal Inference is a topic that's been on my mind for a while.
+The underlying concepts are universal and common, determine what leads to what, 
+but the skillset to make that determination is far less common.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://mixtape.scunning.com/images/cover.jpg" alt="Causal Inference Mixtape" style="width:400px"&gt; &lt;/p&gt;
+&lt;p&gt;I'm choosing Causal Inference Mixtape in particular because it has lots of code examples in Python and R,
+covers a wide range of practical models with real world context,
+and is very well written.&lt;/p&gt;
+&lt;p&gt;Most importantly its &lt;a href="https://mixtape.scunning.com/"&gt;open access&lt;/a&gt; making it accessible to anyone interested
+though if you have the means you should buy a copy.
+Purchasing a copy helps the publisher and author continue to put great work out in the open.&lt;/p&gt;
+&lt;h2&gt;How to join&lt;/h2&gt;
+&lt;p&gt;Add your email address to the mailing list using the form below.
+&lt;div class="ml-form-embed"
+  data-account="3479153:h8h4b4n7u8"
+  data-form="5689564:h2f9s0"&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;!-- MailerLite Universal --&gt;
+
+&lt;script&gt;
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+var ml_account = ml('accounts', '3479153', 'h8h4b4n7u8', 'load');
+&lt;/script&gt;
+
+&lt;!-- End MailerLite Universal --&gt;
+
+&lt;p&gt;I need to get all the technology first and send out an email with further details.
+The second best is to follow me on &lt;a href="https://twitter.com/canyon289"&gt;Twitter&lt;/a&gt;.
+You don't need to wait though, if you have ideas send me a message.&lt;/p&gt;</content><category term="Data Science"></category><category term="Community"></category></entry><entry><title>Tips for getting a Data Scientist Job</title><link href="/GettingADSJob.html" rel="alternate"></link><published>2022-04-24T00:00:00+00:00</published><updated>2022-04-24T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2022-04-24:/GettingADSJob.html</id><summary type="html">&lt;h1&gt;My opinion on how to become a DS&lt;/h1&gt;
+&lt;p&gt;If you're reading this, chances are you have reached out to me on {LinkedIn/Twitter/Github/Email} asking how become a data scientist. 
+or your have read my post on how &lt;a href="/GettingAJob.html"&gt;to get a job&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here are some important things to keep …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;My opinion on how to become a DS&lt;/h1&gt;
+&lt;p&gt;If you're reading this, chances are you have reached out to me on {LinkedIn/Twitter/Github/Email} asking how become a data scientist. 
+or your have read my post on how &lt;a href="/GettingAJob.html"&gt;to get a job&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here are some important things to keep in mind:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Understand that Data Science is made up term that has little consistent meaning&lt;/li&gt;
+&lt;li&gt;Figure out what the specific "thing" you like about the DS job really is&lt;/li&gt;
+&lt;li&gt;Become excellent at it whatever way works best for you&lt;/li&gt;
+&lt;li&gt;Do it in a way that sets you up to get the job&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let's elaborate on each of the points above&lt;/p&gt;
+&lt;h2&gt;What is a Data Scientist and what do they do?&lt;/h2&gt;
+&lt;p&gt;This is seemingly an obvious question to start with;
+however, it is also the worst one. 
+Hidden in the explanation of why this question is so bad lies a useful insight.&lt;/p&gt;
+&lt;p&gt;The honest truth is that the term Data Science is completely made up.
+Now you could say "Well Ravin everything is made up." 
+But let's dig further.
+Let's compare Data Science to my previous profession, mechanical engineering.
+Mechanical engineering is a formalized process with long-running organizations that set standards for the field internationally,
+such as the &lt;a href="https://en.wikipedia.org/wiki/American_Society_of_Mechanical_Engineers"&gt;American Society of Mechanical Engineers&lt;/a&gt;
+or &lt;a href="https://en.wikipedia.org/wiki/ABET"&gt;ABET&lt;/a&gt;.
+While the idea of mechanical engineering is made up by people,
+there is a key group of influential people that are defining the "central identity" of Mechanical engineering.
+There is no such group for data science. 
+Everyone is making it up, in whatever way suits their narrative.&lt;/p&gt;
+&lt;p&gt;On the abstract side Drew Conway was one of first to try and define Data Science with his popular Venn diagram.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Drew Conway Image" src="https://images.squarespace-cdn.com/content/v1/5150aec6e4b0e340ec52710a/1364352051365-HZAS3CLBF7ABLE3F5OBY/Data_Science_VD.png"&gt;&lt;/p&gt;
+&lt;p&gt;While it's appealing in simplicity, it's quite unhelpful for newcomers,
+as it's not clear where to start or what any of these things included in the diagram actually mean.&lt;/p&gt;
+&lt;p&gt;Typical of data scientist writings someone then took a simple framework and made it even more complex,
+unfortunately making it even less useful.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Complex DS Venn Diagram" src="http://georgejmount.com/wp-content/uploads/2016/04/1d115e30-ae3b-42a5-b86f-00b97797b787-original.jpeg"&gt;&lt;/p&gt;
+&lt;p&gt;On the other end some people try to strictly define data science by limiting its scope to exactly what they do.
+They then post their opinions on Twitter and LinkedIn and arguments ensue,
+which also doesn't help newcomers.&lt;/p&gt;
+&lt;blockquote class="twitter-tweet tw-align-center"&gt;&lt;p lang="en" dir="ltr"&gt;In my particular data science role, I don&amp;#39;t currently use statistics. Or R. Or deep learning. But I also don&amp;#39;t go around telling people those aren&amp;#39;t useful in data science as though my job represents all data science work&lt;/p&gt;&amp;mdash; Ben Lindsay (@ben_j_lindsay) &lt;a href="https://twitter.com/ben_j_lindsay/status/1508067296115191809?ref_src=twsrc%5Etfw"&gt;March 27, 2022&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; &lt;/p&gt;
+&lt;p&gt;"But these are only individuals and their own views," you might say,
+"Companies will clearly be more consistent." Wrong again.
+Wrong again.
+Companies like Lyft write publicly about &lt;a href="https://medium.com/@chamandy/whats-in-a-name-ce42f419d16c"&gt;relabeling all data analysts to scientists, and all data scientists to research scientists&lt;/a&gt; with no change in expected responsibilities. 
+Doordash has various data scientist roles but when you dig deeper you learn those are not alike at all.
+They are not interchangeable and have two separate organizational structures internally.&lt;/p&gt;
+&lt;p&gt;So how else can we frame the problem?&lt;/p&gt;
+&lt;h3&gt;A subset of a set of skills&lt;/h3&gt;
+&lt;p&gt;Because I have been knighted with the title Data Scientist,
+I'm legally obligated to provide my own take on this mess,
+or at least make it worse.
+Let's do that.&lt;/p&gt;
+&lt;p&gt;I tend to think of data science as a subset of a set of skills.
+This could include algorithm development, dashboarding, modeling fitting,
+programming in Python, programming in SQL, fitting black box models, data communication,
+deploying Spark cluster jobs,
+the emotional numbness
+of being asked to join two datasets with no common key,
+knowing how to not laugh or express shock when your
+stakeholders ask for models with 99% accuracy,
+writing blog posts or tweet threads with advice
+on how to become a data scientist (half-joking while doing it).&lt;/p&gt;
+&lt;p&gt;Now some people with data scientist LinkedIn titles spend their time squeezing out .001 more
+precision/recall/accuracy out of a black box model.
+Sometimes this role is titled Machine Learning Engineer.
+Some people find this kind of work to be fascinating.
+I think it's very boring,
+and when I was looking for a job, I would avoid these entirely.&lt;/p&gt;
+&lt;p&gt;Instead, I like working with stakeholders to help them understand a complex business and use data
+to make informed big-scale decisions.
+Sometimes this role is called Decision Scientist,
+and this is what I do at Google, where, surprise,
+my title is Data Scientist,
+which previously used to be called quantitative analyst.
+What matters to me though is that I get to do what I enjoy,
+which is learning things from data and sharing those learnings with others.&lt;/p&gt;
+&lt;h2&gt;A suggested strategy&lt;/h2&gt;
+&lt;p&gt;So let's focus back on you.
+It's no secret the
+&lt;a href="https://vickiboykis.com/2019/02/13/data-science-is-different-now/"&gt;junior data science field is completely saturated&lt;/a&gt;.
+That given here are my suggestions for concrete steps on how to get a DS job.
+This should help match you to the right company and 
+put you ahead of many other candidates.&lt;/p&gt;
+&lt;h3&gt;Step 1: Figure out what you like&lt;/h3&gt;
+&lt;p&gt;Instead of trying to nail down a specific definition of DS
+start with trying to understand what about DS is interesting to you
+and once you find the things about DS that make you tick,
+and start excelling at those. 
+It's a more focused strategy than trying to be good at everything
+which will  ultimately prove impossible. 
+If you go with "good at everything strategy" you won't be able to 
+stand out in any interview as each company tends to look for 
+&lt;em&gt;specific&lt;/em&gt; skills and knowledge.&lt;/p&gt;
+&lt;h3&gt;Step 2: Get good at it&lt;/h3&gt;
+&lt;p&gt;Now that you've narrowed down the part of DS that interest you the most,
+figure out how to be great at it.&lt;/p&gt;
+&lt;p&gt;If you're into black box predictions, places like Kaggle are the obvious answer.
+If you really like academic algorithm development papers and algorithm
+competitions would be a good area to focus on.&lt;/p&gt;
+&lt;p&gt;For me that learning came in the form of Open Source contributions. 
+By writing code and working with others I was able to more deeply learn the methods.
+It also helped because the networking and public display
+of value was built right in,
+which I write about in my &lt;a href="/GettingAJob.html"&gt;How to get a job post&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Step 3: Identify the adjacent skills&lt;/h3&gt;
+&lt;p&gt;Find people that are excellent at what you want to learn and find places where they
+share their experience, whether it be writings, podcasts, conference talks etc.
+Write down all the skills and useful things they mention.
+For instance if they work on big prediction models are they also good at 
+deploying them, or are they more focused on the internal mathematics?
+Do this again for multiple persons in your field of interest
+then see what other skills are commonly listed or mentioned and become proficient in those as well.&lt;/p&gt;
+&lt;p&gt;In my case I often noticed a stronger emphasis on communication, intuition,
+and an explanation versus model accuracy metrics.
+I also saw these folks contributing examples publicly in blog posts,
+talks, and open source notebooks.
+I now spend much of my time honing those skills, 
+writing this blog post for example.&lt;/p&gt;
+&lt;h3&gt;Step 4: Figure out what organizations value your skills&lt;/h3&gt;
+&lt;p&gt;By this point you'll have a good sense for the code words that appeal to you.
+Look for job postings that specifically contain the thing you're interested in.
+During the interview be sure to ask how DS provides value to that team you're about to join.
+Even if you get rejected you'll have extra clues as to what to
+focus on for the next interview.
+Demetri Pananos provides &lt;a href="https://dpananos.github.io/posts/2022/01/blog-post-36/"&gt;additional advice&lt;/a&gt; on his blog.&lt;/p&gt;
+&lt;h2&gt;Best of luck&lt;/h2&gt;
+&lt;p&gt;Unfortunately the data scientist job search is more of a random search than
+a strict, precise process.
+Nonetheless, if you're dead set on getting a Data Scientist job I hope the
+advice you got here will help.
+And once you get a DS job be sure to send me a link to your blog post or
+tweet thread sharing your advice. 
+At that time you too will become a true data scientist.&lt;/p&gt;
+&lt;p&gt;&lt;meta name="twitter:card" content="summary_large_image"&gt;
+&lt;meta name="twitter:creator" content="@canyon289"&gt;
+&lt;meta name="twitter:title" content="Tips for getting a DS job"&gt;
+&lt;meta name="twitter:description" content="Advice for a DS Job Seeker"&gt;
+&lt;meta name="twitter:image" content="https://ravinkumar.com/images/SocialMedia/twitter/DS_Job_Card.png"&gt;&lt;/p&gt;</content><category term="Data Science"></category><category term="Interview"></category></entry><entry><title>Getting that job at that one company that you think is cool</title><link href="/GettingAJob.html" rel="alternate"></link><published>2022-04-17T00:00:00+00:00</published><updated>2022-04-17T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2022-04-17:/GettingAJob.html</id><summary type="html">&lt;p&gt;If you're reading this you chances are have reached out to me on &lt;code&gt;{LinkedIn/Twitter/Github/Email}&lt;/code&gt;
+asking how to get a job at &lt;code&gt;{Google/SpaceX/Sweetgreen/Some other company}&lt;/code&gt;.
+If so this post is for you. 
+Instead of a short 280 character response,
+or an off-the-cuff reply,
+I believe …&lt;/p&gt;</summary><content type="html">&lt;p&gt;If you're reading this you chances are have reached out to me on &lt;code&gt;{LinkedIn/Twitter/Github/Email}&lt;/code&gt;
+asking how to get a job at &lt;code&gt;{Google/SpaceX/Sweetgreen/Some other company}&lt;/code&gt;.
+If so this post is for you. 
+Instead of a short 280 character response,
+or an off-the-cuff reply,
+I believe you deserve a more detailed answer.&lt;/p&gt;
+&lt;h2&gt;Why I shouldn't be the only one you listen to&lt;/h2&gt;
+&lt;p&gt;Before reading the restoof the post you should know the following.&lt;/p&gt;
+&lt;h3&gt;I'm only one single person&lt;/h3&gt;
+&lt;p&gt;The truth is that any individual tends to be biased,
+when it comes to both how they experience things around them
+and how they tell their experience.&lt;/p&gt;
+&lt;blockquote class="twitter-tweet tw-align-center" data-conversation="none" data-lang="en" data-theme="light"&gt;&lt;p lang="en" dir="ltr"&gt;People have been repeating that nonsense forever &lt;br&gt;&lt;br&gt;Remember that successful people can often be highly biased to think that other successful people have to be just like them, it’s simply not true at all&lt;/p&gt;&amp;mdash; Hamel Husain (@HamelHusain) &lt;a href="https://twitter.com/HamelHusain/status/1507757669867667456?ref_src=twsrc%5Etfw"&gt;March 26, 2022&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt; &lt;/p&gt;
+&lt;p&gt;So you're welcome to read my tips and get the most out of them,
+but you shouldn't limit yourself to only my perspective and knowledge.
+You should also look for other people's experience so that you could get difference experiences
+and from your own independent conclusion.&lt;/p&gt;
+&lt;p&gt;Which brings me to my second point&lt;/p&gt;
+&lt;h3&gt;Survivorship Bias&lt;/h3&gt;
+&lt;p&gt;&lt;img src="/images/GettingAJob/SurvivorshipBias.png"/&gt;&lt;/p&gt;
+&lt;p&gt;Only looking for successful cases without considering failures has a name,
+it's called survivorship bias.&lt;/p&gt;
+&lt;p&gt;When forming a strategy be sure to consider two different categories of folks.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;People that have applied for the job that interest you but didn't get it&lt;/li&gt;
+&lt;li&gt;People who had that job and decided to quit&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The second group provides the most valuable feedback. For example,
+I can tell you why I joined &lt;em&gt;and&lt;/em&gt; left SpaceX, but I can't
+tell you why I left Google because I haven't left yet. 
+Mindfully choose where your information comes from and balance it accordingly.&lt;/p&gt;
+&lt;h2&gt;so, why am I here writing this?&lt;/h2&gt;
+&lt;p&gt;Now that you know I'm offering my own perspective which is biased it might seem
+pointless for me to say anything at all.
+Yet again, there are three reasons why I still want to do it.&lt;/p&gt;
+&lt;h3&gt;I was once like you&lt;/h3&gt;
+&lt;p&gt;At the start of my career,
+just like you today,
+I also wanted to get into particular organizations and companies.
+I didn't really know how to do it, so I tried things like cold emailing people.
+And when people would respond, even with a short response, that gave me a lot of hope.&lt;/p&gt;
+&lt;h3&gt;I want to counteract the bad advice out there&lt;/h3&gt;
+&lt;p&gt;The other thing I often did was to google "How to get a job at ..."
+Now that I've worked at these companies, and more importantly
+conducted interviews as part of my job in these companies,
+I know that a lot the advice out there is factually false. &lt;/p&gt;
+&lt;p&gt;And now that when people like you are reaching out to me asking for help with landing a dream job,
+I feel I should provide some useful direction
+even if those directions potentially biased. In other words&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;wrong data &amp;lt; missing data &amp;lt; biased data&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;I want to use time efficiently&lt;/h3&gt;
+&lt;p&gt;I can't give every person that pings me a 1:1 session,
+it would overwhelm me. 
+Additionally providing 1:1 consultation would just be inefficient
+as the majority of my advice to you would be the same.
+I believe the most reasonable thing is to write down down my suggestions,
+so that you can get your questions answered in the most scaleable way.
+Hope this helps! With that lets dive into it&lt;/p&gt;
+&lt;h2&gt;"How can I get a job at XYZ company?"&lt;/h2&gt;
+&lt;p&gt;Here are some possible (and questionable) strategies!&lt;/p&gt;
+&lt;h3&gt;Ask for blind referrals or advice&lt;/h3&gt;
+&lt;p&gt;You're told to go to LinkedIn, find all the people who work at Google,
+or at the company that interests you and direct message them your resume.&lt;/p&gt;
+&lt;h3&gt;Resume Engineering&lt;/h3&gt;
+&lt;p&gt;You're advised to focus entirely on your resume. 
+You fill your resume with lots of programming languages and the latest buzzwords.
+The more the better. &lt;/p&gt;
+&lt;h3&gt;Getting your information from clickbait sources&lt;/h3&gt;
+&lt;p&gt;You google common interview questions for company XYZ and memorize them. 
+Here's one for SpaceX.&lt;/p&gt;
+&lt;p&gt;You're standing on the surfce of the earth,
+walk one mile south, one mile east, one mile north, and end up at the same point.
+Where are you?
+Know the answer yet?
+In fact this is &lt;a href="https://www.topinterview.com/interview-advice/how-to-answer-Elon-Musks-favorite-interview-question"&gt;Elon Musk's favorite question!&lt;/a&gt;
+according to topinterview.com!&lt;/p&gt;
+&lt;h3&gt;Narrow focus&lt;/h3&gt;
+&lt;p&gt;Many people believe there is that "one company" or that "one perfect job opening"
+that is perfect for them.
+Maybe its even a couple of those,
+or it may be one of the FAANG companies.
+If you focus on that one company or one position as your next step you'll surely make it.&lt;/p&gt;
+&lt;h3&gt;Keep trying the same thing over and over&lt;/h3&gt;
+&lt;p&gt;At this point I'm sure you've heard stories about Michael Jordan taking 10,000 shots
+or Steve Jobs getting fired from Apple. 
+From this it's easy to believe "If you fail just try doing the exact same thing again until you suceed!"
+After all how can we achieve success if we're not ready to repeatedly fail?&lt;/p&gt;
+&lt;h2&gt;These are all losing strategies!&lt;/h2&gt;
+&lt;p&gt;I tried each and every one of these strategies earlier in my career, 
+and all turned out to be quite ineffective for me.&lt;/p&gt;
+&lt;p&gt;I can understand the appeal, these strategies are
+directly geared toward to your end goal,
+which is getting a job. 
+It feels like "If I just fix my resume, or find that one referral
+or check all the boxes for SpaceX I'll make it in."
+The biggest downside of these strategies excessively focus
+on the company you're trying to get which leaves
+you reacting to what you think they want rather
+than building up yourself and your vlaue in the job market.&lt;/p&gt;
+&lt;h2&gt;More viable strategies&lt;/h2&gt;
+&lt;p&gt;Here's some steps that I believe are more effective.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Whatever project or task you're working on,
+Do the best work you can in a way that relates to your desired position.&lt;/li&gt;
+&lt;li&gt;Be able to articulate the details of your work adnd why it brings value&lt;/li&gt;
+&lt;li&gt;Showcase that work in a way that builds your reputation&lt;/li&gt;
+&lt;li&gt;Trust your recruiter (if you have one)&lt;/li&gt;
+&lt;li&gt;If don't get the job, &lt;strong&gt;adjust&lt;/strong&gt; and try again&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Instead of focusing on getting into a specific company or position as your
+primary outcome I strongly suggest focusing on doing
+your best work wherever you can. 
+This builds a solid foundation of your aptitude
+for a particular kind of work
+which is what organizations are looking for. 
+This should be the focal point  of your effort.&lt;/p&gt;
+&lt;p&gt;Be able to explain what your work is, what it includes, and why it is valuable.
+For example if you're working on a machine learning project be able to explain
+the details of your model, and why your model is best suited to
+produce value with the choices you've made. Be able to explain
+why other choices would be less valuable. &lt;/p&gt;
+&lt;p&gt;There's the whole adage of "If a tree falls in the forest does it  make a sound?"
+Find ways to showcase your work in a way that ensures your work gets noticed.
+If you're in college join clubs  where your peers can see your work and achievements. 
+If you are working in a company present your work internally,
+as your colleagues may end up working at the companies you'd like to join
+and be able to vouch for skill and experience. &lt;/p&gt;
+&lt;p&gt;If you do all of this your resume and your network of contacts will be created
+naturally as a byproduct of your efforts rather needing to be the direct focus.
+And instead of you needing to reach out to companies, 
+people will start reaching out to you, and you'll be able to land an interview
+which brings us to the final point.&lt;/p&gt;
+&lt;p&gt;Once you start talking to a recruiter,
+do whatever you can to become their best candidate.
+Recruiter's entire job is to recruit, and really they &lt;em&gt;want you&lt;/em&gt; to join the organization
+they're representing, ideally the one you're hoping to join.
+They'll have insights on what works and what doesn't
+and while they may not be able you all the answers you want,
+they will give you really strong suggestions on of how to get the position you want.
+Treat them as the strategic partners they are and take their advice.&lt;/p&gt;
+&lt;p&gt;If you get the job great! Even If you don't get the job
+you've the recruiter built a good relationship with them they'll likely give you useful feedback,
+which you can use to adjust your strategy for your next try.
+Again though don't focus solely on that one company, or one interview.
+Go back to the earlier steps and keep building your expertise and communication skills
+until you get another shot.&lt;/p&gt;
+&lt;p&gt;I hope these suggestions laid out above help you get the job you're looking for.
+I know you were where looking for personal advice,
+and it may feel impersonal that I've instead sent you a link to this essay
+so let me offer you some additional help.
+Ping me again with a specific question and send me the sum of numbers of today's isoformat date.
+With that I'll know you have read this and will be able to better help you in more detail.&lt;/p&gt;
+&lt;h2&gt;My own story: 0% first time success rate&lt;/h2&gt;
+&lt;p&gt;Know that I've been rejected by all the jobs you see on my resume
+on my resume at least once. Every. Single. One.
+Just because you're not in whatever company right now and just because you got rejected
+it doesn't mean you aren't good enough. 
+Instead of focusing on their decision about your job application, focus on yourself.
+and keep working to be the best you can be.&lt;/p&gt;</content><category term="Data Science"></category><category term="Interview"></category></entry><entry><title>Better Data Science CI with Docker</title><link href="/DockerforDS.html" rel="alternate"></link><published>2019-01-20T00:00:00+00:00</published><updated>2019-01-20T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2019-01-20:/DockerforDS.html</id><summary type="html">&lt;p&gt;Know the feeling when you use a tool that "just works"? instead of feeling
+like you're wasting time and growing frustrated, you end up being more productive?  &lt;/p&gt;
+&lt;p&gt;For Bayesian practitioners, one such tool is ArviZ.
+This Python package allows users to perform detailed exploratory analyses
+of Bayesian models. Bayesian practitioners …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Know the feeling when you use a tool that "just works"? instead of feeling
+like you're wasting time and growing frustrated, you end up being more productive?  &lt;/p&gt;
+&lt;p&gt;For Bayesian practitioners, one such tool is ArviZ.
+This Python package allows users to perform detailed exploratory analyses
+of Bayesian models. Bayesian practitioners should be able to use their inference library of choice,
+and be able to visualize their results, with no pain and no time taken away
+from the real work-interpreting results.&lt;/p&gt;
+&lt;p&gt;ArviZ developers have the same expectations for the Continuous Integration pipeline
+It should "just work", so the focus on stays on writing new functionality for users,
+not feeling frustrated with flaky infrastructure.&lt;/p&gt;
+&lt;p&gt;Unfortunately things didn't go as planned. Our Continuous Integration (CI) experience &lt;strong&gt;was&lt;/strong&gt;
+frustrating, not just for us, but particularly for volunteer contributors
+that were submitting great code only to have the CI process abort with
+an obscure failure message. 
+The CI process needs to be smooth,
+partly because the code should be tested and verified, but more so 
+to avoid wasting contributors time and ensure they have a great experience.
+After all, the most finite resource is people's willpower, time, and enthusiasm.&lt;/p&gt;
+&lt;p&gt;In other words...
+&lt;img alt="Arviz Developer Experience" src="/images/DockerForDataScience/MarieKondo.png"&gt;&lt;/p&gt;
+&lt;p&gt;To keep developers joyful we've moved to a Docker-based
+Continuous Integration system. In this post, I'll 
+detail the issues we were having with CI, why we started
+using Docker in our CI, general instructions on how it all works,
+and along with a grab bag of tips.&lt;/p&gt;
+&lt;h2&gt;The tale of 5 deep learning frameworks, a local machine, and a remote virtual machine&lt;/h2&gt;
+&lt;p&gt;While installing one deep learning framework can be a challenging experience,
+installing five at the same time can be perilous. To ensure
+ArviZ runs seamlessly on widely used Bayesian learning libraries, we 
+need to test against all of them, which means we need to install all of them.&lt;/p&gt;
+&lt;p&gt;In the event of issues, debugging locally is painful enough, but when
+an error appears in the CI process, the developer has little access
+to see what went wrong. Debugging amounts to lots of print statements, git commits
+and 15 minutes of waiting to see what happens. It's especially maddening
+when local testing passes but only the CI virtual machine is failing.&lt;/p&gt;
+&lt;p&gt;This is the situation we were facing with plain TravisCI. Code that worked
+great locally, suddenly was failing when contributors made pull requests. This in
+no way is TravisCI's fault; TravisCI is a great tool that we're still using,
+the fault was residing somewhere between the operating system, the five 
+C level libraries, Python, and ArviZ.&lt;/p&gt;
+&lt;p&gt;After a couple months, we switched to Docker-based testing on 
+TravisCI for one simple reason, &lt;strong&gt;the developers' coding environment would
+be an exact replica of the CI environment.&lt;/strong&gt; This meant that any CI
+issue was now locally reproducible and locally solvable.&lt;/p&gt;
+&lt;h2&gt;Docker CI Details&lt;/h2&gt;
+&lt;p&gt;Alright, enough with the talk, on with the details, how is it done?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a Dockerfile for your CI environment&lt;/li&gt;
+&lt;li&gt;Configure Continuous Integration service to build and test in your defined container&lt;/li&gt;
+&lt;li&gt;Fix any integrations that may have broken&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let's talk through each step, one by one&lt;/p&gt;
+&lt;h3&gt;Step 1: Dockerfile&lt;/h3&gt;
+&lt;p&gt;The first step is deciding what you want your environment to contain. In
+general you'll want your container to have all the tools needed to build
+and test your code, and ideally to be as minimal as possible. We'll use the
+&lt;a href="https://github.com/arviz-devs/arviz/blob/master/scripts/Dockerfile"&gt;ArviZ dockerfile&lt;/a&gt;
+as an example.&lt;/p&gt;
+&lt;p&gt;The first line is the base image.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;FROM conda/miniconda3
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It's typically recommended to start with a minimal image, like
+alpine. However, at ArviZ we found it much simpler to start with an environment
+that already had some things set up, and just work from there. This means
+the image isn't as minimal as it could be, but we're not shipping containers
+"at scale" so this tradeoff was worth it.  &lt;/p&gt;
+&lt;p&gt;Next, we setup arguments and environmental variables&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ARG SRC_DIR
+ARG PYTHON_VERSION
+ARG PYSTAN_VERSION
+ARG PYRO_VERSION
+
+ENV PYTHON_VERSION=&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;PYTHON_VERSION&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;
+ENV PYSTAN_VERSION=&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;PYSTAN_VERSION&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;
+ENV PYRO_VERSION=&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;PYRO_VERSION&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;
+ENV DOCKER_BUILD=true
+
+# For Sphinx documentation builds
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The choices are intended to allow some flexibility in what gets installed
+in each image. For ArviZ we test against different versions of libraries
+and we didn't want to create a dockerfile for each. By setting the 
+ENV variables here through command line arguments we afford some flexibility&lt;/p&gt;
+&lt;p&gt;After this, we actually start installing things&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;RUN&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;update&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;build&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;essential&lt;/span&gt; &lt;span class="n"&gt;pandoc&lt;/span&gt; \
+    &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;rm&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;rf&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lib&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;lists&lt;/span&gt;&lt;span class="o"&gt;/*&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Copy requirements and environment installation scripts&lt;/span&gt;
+&lt;span class="n"&gt;COPY&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="n"&gt;SRC_DIR&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;requirements&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;  &lt;span class="n"&gt;opt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;arviz&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="n"&gt;COPY&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="n"&gt;SRC_DIR&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;requirements&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;  &lt;span class="n"&gt;opt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;arviz&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="n"&gt;COPY&lt;/span&gt; &lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="n"&gt;SRC_DIR&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;scripts&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;opt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;arviz&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;scripts&lt;/span&gt;
+
+&lt;span class="n"&gt;WORKDIR&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;opt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;arviz&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Create conda environment. Defaults to Python 3.6&lt;/span&gt;
+&lt;span class="n"&gt;RUN&lt;/span&gt; &lt;span class="o"&gt;./&lt;/span&gt;&lt;span class="n"&gt;scripts&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;create_testenv&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sh&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Installations happen at two levels, some are at the container level,
+and the rest are in the Python environment. We choose to have a separate
+&lt;code&gt;create_testenv.sh&lt;/code&gt; script because this allows users to run it outside
+of Docker.&lt;/p&gt;
+&lt;p&gt;The next section of the file copies the ArviZ code base and
+removes any cached files.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;COPY $SRC_DIR /opt/arviz
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The last section clears any remaining cache files and sets the default
+command of the container to execute tests. There is something weird
+with the &lt;code&gt;source /root/.bashrc&lt;/code&gt; which I'll talk more about in
+the general tips section.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;RUN&lt;/span&gt; &lt;span class="nv"&gt;rm&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;f&lt;/span&gt; &lt;span class="nv"&gt;arviz&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;tests&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;saved_models&lt;/span&gt;&lt;span class="cm"&gt;/*.pkl&lt;/span&gt;
+&lt;span class="cm"&gt;RUN find -type d -name __pycache__ -exec rm -rf {} +&lt;/span&gt;
+
+&lt;span class="cm"&gt;CMD [&amp;quot;/bin/bash&amp;quot;, &amp;quot;-c&amp;quot;, &amp;quot;source /root/.bashrc &amp;amp;&amp;amp; pytest -vv arviz/tests --cov=arviz/ &amp;amp;&amp;amp; echo Finished Testing&amp;quot;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Step 2: Configure your CI service&lt;/h3&gt;
+&lt;p&gt;The next step is configuring TravisCI. Luckily, this is not too hard.
+Adding the lines below will install the latest version of &lt;em&gt;docker-ce&lt;/em&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;addons&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+  &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;packages&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+      &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;docker&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ce&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After that you'll be able to build an image and run tests, capture code coverage,
+generate documentation, or whatever else you'd need.&lt;/p&gt;
+&lt;h3&gt;Step 3: Fix any integrations that may have broken&lt;/h3&gt;
+&lt;p&gt;One downside of testing in a container is that isolation is great,
+until it isn't. We found that some of the tooling that integrates with
+TravisCI no longer worked , such as travis-sphinx, and coveralls, &lt;/p&gt;
+&lt;p&gt;The trick here was to generate the documentation and coverage files in
+the container, but ensure they were available in the TravisCI environment
+by using a bind mount. An example can be found in 
+&lt;a href="https://github.com/arviz-devs/arviz/blob/6d1b65e0c99bb716ee0ebcbdac8cdc9e1380a472/.travis.yml#L68-L69"&gt;the .travis.yml file&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When the files are present in TravisCI file system, the integrated tools
+can deploy the docs and coverage just as they had done it the past.&lt;/p&gt;
+&lt;h2&gt;Miscellaneous tips&lt;/h2&gt;
+&lt;p&gt;There were some gotchas that required some experimentation which I'll document here.&lt;/p&gt;
+&lt;h3&gt;Formatting in TravisCI yml files&lt;/h3&gt;
+&lt;p&gt;TravisCI is picky about semicolons, spaces, and newlines in its &lt;code&gt;.travis.yml&lt;/code&gt; file.
+If you run into odd errors, be sure to troubleshoot these first.&lt;/p&gt;
+&lt;h3&gt;Bash profiles in non-interactive shells&lt;/h3&gt;
+&lt;p&gt;Not all bash shells are interactive, and 
+&lt;a href="https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html"&gt;when they're not, they don't invoke&lt;/a&gt;
+a &lt;code&gt;.bashrc&lt;/code&gt; file. This is why you see &lt;code&gt;source /root/.bashrc&lt;/code&gt; frequently 
+in our &lt;code&gt;.travis.yml&lt;/code&gt; files. This command loads the `.bashrc. file  before
+executing the next command.
+While this workaround isn't the most elegant, it did work for our purposes. 
+However, if you know of a better solution,
+please let us know through an issue or a pull request! We would greatly appreciate it.&lt;/p&gt;</content><category term="Data Science"></category><category term="MLOps"></category></entry><entry><title>Maintainable Machine Learning Code</title><link href="/ReuseableML.html" rel="alternate"></link><published>2017-11-26T00:00:00+00:00</published><updated>2017-11-26T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2017-11-26:/ReuseableML.html</id><summary type="html">&lt;p&gt;Creating a machine learning pipeline requires almost no thought these days but 
+maintaining a reusable and understandable codebase the whole way
+through is much more challenging. However there are some steps and 
+ideas that can be borrowed from traditional programming that are
+still relevant.&lt;/p&gt;
+&lt;h2&gt;Big Ball of Mud - Machine Learning …&lt;/h2&gt;</summary><content type="html">&lt;p&gt;Creating a machine learning pipeline requires almost no thought these days but 
+maintaining a reusable and understandable codebase the whole way
+through is much more challenging. However there are some steps and 
+ideas that can be borrowed from traditional programming that are
+still relevant.&lt;/p&gt;
+&lt;h2&gt;Big Ball of Mud - Machine Learning Edition&lt;/h2&gt;
+&lt;p&gt;Let's say you're starting out with Machine Learning and 
+&lt;em&gt;you need an immediate fix for a small problem, or a quick prototype or proof of concept&lt;/em&gt;.
+Easy, below is a sample program to make predictions on the Iris dataset&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.ensemble&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;RandomForestClassifier&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sklearn.preprocessing&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;LabelEncoder&lt;/span&gt;
+&lt;span class="n"&gt;iris_csv&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://raw.githubusercontent.com/&amp;quot;&lt;/span&gt;
+             &lt;span class="s2"&gt;&amp;quot;uiuc-cse/data-fa14/gh-pages/data/iris.csv&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;iris_csv&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;LabelEncoder&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fit_transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;species&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;drop&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;species&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;clf&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;RandomForestClassifier&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;clf&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;predict&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Even to non programmers the above lines of code are pretty easy to read.
+It's simple enough to just put that into a python script in some
+directory with the data files next to it and start churning out predictions.&lt;/p&gt;
+&lt;p&gt;Later on you realize there's some steps you can do to make your model better.
+It starts off innocently enough, perhaps just one line to normalize
+the features, maybe a loop to perform cross validation
+but within a couple of hours you'll end up with one large python
+script that has true false statements all over the place, code chunks
+that are commented out, and incoherent comments all over the place. Suddenly
+the &lt;em&gt;piecemeal growth&lt;/em&gt; of our project dawns on you.&lt;/p&gt;
+&lt;p&gt;Hopefully you're using version control but even then all your code commits will be
+on the master branch with commit messages like "model 1" or "added pickling column".
+You'll find some features are engineered off other features, or 
+portions of your code relied on a datatype coercion you made somewhere between
+the third and sixth commit. As your code progresses
+&lt;em&gt;Different artifacts change at different rates&lt;/em&gt; and you're trying
+to remember which processing steps were required to run one of the predictions
+you had that other day.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Your code is now a &lt;a href="http://www.laputan.org/mud/"&gt;Big Ball of Mud&lt;/a&gt;.&lt;/em&gt; Big Ball of
+Mud is an excellent paper written in 1999 about what happens when code
+is haphazardly written. The paper is still relevant today, with all the
+text in italics copied and pasted straight from the paper. At
+the core the paper is warning us that if architecture is not persistently considered
+the final code base will become unmaintainable that it will eventually need to be 
+totally torn down.
+Unfortunately this is how I've seen so many machine learning implementations turn out.
+The issue is present even at large companies like &lt;a href="" title="https://eng.uber.com/michelangelo/"&gt;Uber&lt;/a&gt;
+who have built dedicated platforms for creating maintainable machine learning
+pipelines.&lt;/p&gt;
+&lt;p&gt;Even if you're just writing code for yourself there's still benefits intentionally
+writing your code in a reusable way. You'll be able to iterate faster,
+structure your experiments, and be able to revisit your code with minimal effort
+later on. &lt;/p&gt;
+&lt;h1&gt;General approaches&lt;/h1&gt;
+&lt;p&gt;With some experimentation I've been able to find an approach that works for me.&lt;/p&gt;
+&lt;h2&gt;Start with a package&lt;/h2&gt;
+&lt;p&gt;Whether you're using R, Python, or any other language really, study up
+on what is typically done to package the code. &lt;/p&gt;
+&lt;p&gt;With Python I immediately do four things at a minimum  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a requirements.txt or environment.yml file  &lt;/li&gt;
+&lt;li&gt;Create a source code directory  &lt;/li&gt;
+&lt;li&gt;Write a README.md  &lt;/li&gt;
+&lt;li&gt;Initialize a git repo and commit everything  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are the minimum steps for reproducibility. Imagine how hard it would be
+if someone handed you a flash drive full of Python files. How do you know
+what is required to run it, or what packages are needed? Rather
+than worry if they were using Python 2 or 3, or pandas .19, etc 
+With these four basic steps you're guaranteeing that the environment
+is reproducible.&lt;/p&gt;
+&lt;p&gt;A great tool that helps with this is CookieCutter templates,
+specifically this &lt;a href="https://github.com/drivendata/cookiecutter-data-science"&gt;Data Science Template&lt;/a&gt;
+It's got even more than detailed here but really will make setting up a reusable
+package easy.&lt;/p&gt;
+&lt;h2&gt;Write a library for reusable components of your code&lt;/h2&gt;
+&lt;p&gt;Don't put everything in your main.py file. For code that loads datasets,
+or writes predictions to a file, write a package that lets you abstract
+that away from your machine learning code. Although it takes more 
+effort up front, later on it means your actual prediction script
+will be much easier to read.&lt;/p&gt;
+&lt;p&gt;In the example above we can write a function that looks like this&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;load_iris&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Loads iris dataset from github and returns (df,y_raw)&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;iris_csv&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;https://raw.githubusercontent.com/&amp;quot;&lt;/span&gt;
+                &lt;span class="s2"&gt;&amp;quot;uiuc-cse/data-fa14/gh-pages/data/iris.csv&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;iris_csv&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;y_raw&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;species&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;drop&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;species&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axis&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y_raw&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Doing this has multiple benefits, if written in the package you can import
+this into any script without any duplication. It also clearly demarcates
+that this set of code has no dependencies on other lines.&lt;/p&gt;
+&lt;h2&gt;Use a testing package&lt;/h2&gt;
+&lt;p&gt;Unittests are still relevant with machine learning code. You can use
+tests for your own code. There are many examples of 
+&lt;a href="https://www.google.com/search?q=test+driven+development"&gt;test driven development&lt;/a&gt;.
+However I also use tests to test my own understanding of how machine
+learning libraries work. By writing the following tests I can double-check
+my understanding of word lemmatizers and CountVectorizer in scikit-learn.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_lemmatization&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Test that Lemmatizer works&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;wnl&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;WordNetLemmatizer&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;wnl&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;lemmatize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;dogs&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;dog&amp;#39;&lt;/span&gt;
+
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_lemmatization_with_countvectorizer&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Test Lemmatization with Stop Words removal&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+    &lt;span class="n"&gt;strings&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;I like Dogs and&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;I like Churches and&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;CountVectorizer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tokenizer&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;lemmatizer&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;stop_words&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;english&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;strings&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;assert&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;church&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;dog&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;like&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="nb"&gt;set&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get_feature_names&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It's not about my doubt that the code is implemented poorly, but moreso
+to double check and reinforce my own understanding. By writing series
+of these tests I find that I both understand what other libraries are doing and
+that I double check my understanding fundamentals of the theory.&lt;/p&gt;
+&lt;h1&gt;Scikit-learn specific&lt;/h1&gt;
+&lt;p&gt;If you use scikit there are some additional tools that are helpful.
+scikit-learn itself is written in a way that makes machine learning composable.
+It's so good that other non scikit-learn libraries
+tend to build similar APIs to maintain compatibility, for example XGBoost
+implements a scikit-learn abstraction layer.&lt;/p&gt;
+&lt;h2&gt;Use pipelines&lt;/h2&gt;
+&lt;p&gt;scikit-learn makes it very easy to tie data processing steps together, without
+storing intermediate results. It also makes it easy to turn off
+or turn on portions of your pipeline without having to comment entire
+blocks of code. And lastly it makes it very easy to use parameter grid searches
+and cross validation in one or two lines.&lt;/p&gt;
+&lt;h2&gt;Write your own predictors and transformers&lt;/h2&gt;
+&lt;p&gt;Most of the time however data will require some data munging before
+scikit-learns transformers and predictors can use it. For these activities
+scikit-learn provides all the scaffolding you need 
+&lt;a href="http://scikit-learn.org/stable/modules/classes.html#module-sklearn.base"&gt;in its base module&lt;/a&gt;
+By utilizing these it keeps you within the pipeline framework which
+again makes it easy to use all the built-in tools for experimentation.&lt;/p&gt;
+&lt;p&gt;For example here is an implementation of a transformer I used in a Natural 
+Language Processing Problem that found word count and string length for a given string.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TextTransformer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BaseEstimator&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;TransformerMixin&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="fm"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Takes column of text and returns back array of features. Features list is specified by features&lt;/span&gt;
+&lt;span class="sd"&gt;        Parameters&lt;/span&gt;
+&lt;span class="sd"&gt;        ----------&lt;/span&gt;
+&lt;span class="sd"&gt;        features : iter&lt;/span&gt;
+&lt;span class="sd"&gt;            Iterable of features strings that correspond to class&lt;/span&gt;
+&lt;span class="sd"&gt;        &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+
+        &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;features&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;fit&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Accepts Pandas Series and returns back a dataframe where each column is a feature&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;ValueError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Features must be a list of features that will be used in this model&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+        &lt;span class="n"&gt;features&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;DataFrame&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;feature&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+            &lt;span class="n"&gt;transformer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;getattr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;feature&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;col&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;transformer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+            &lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;feature&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;col&lt;/span&gt;
+
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;values&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@staticmethod&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;word_count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Count the number of words in each string&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+
+    &lt;span class="nd"&gt;@staticmethod&lt;/span&gt;
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;sentence_length&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;Get the length of the string for each author&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;While seemingly verbose, if using packages in my machine learning code
+this entire feature processing portion of logic looked like this&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FeatureUnion&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="p"&gt;[&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;basic_preprocessing&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;TextTransformer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;features&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;word_count&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;sentence_length&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])),&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;tfidf&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;TfidfVectorizer&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+    &lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;It made it dead simple for me to add or remove features with just one
+line of code, making my experimentation and feature selection process
+that much quicker.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;It's very much worth the effort to spend the extra effort to make your 
+machine learning code be more like a package and less like a script.
+You'll save anyone using your code time figuring out how to reproduce your 
+results, but you'll also save yourself a bunch of time also trying to 
+reproduce your results! The extra effort goes a long way in protecting
+your sanity and also ensuring you're able to build more than just a prototype
+prediction engine.&lt;/p&gt;</content><category term="Data Science"></category><category term="MLOps"></category></entry><entry><title>A recommendation on Berkeley's Deep Reinforcement Learning Bootcamp</title><link href="/DeepRLBootcamp.html" rel="alternate"></link><published>2017-08-27T00:00:00+00:00</published><updated>2017-08-27T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2017-08-27:/DeepRLBootcamp.html</id><summary type="html">&lt;p&gt;I just spent the weekend at the Berkeley Reinforcement Learning Bootcamp. 
+Overall I found it to be an intense but rewarding experience but also
+expensive if you're paying out of pocket.
+Read on for more of my thoughts and my recommendations if you should
+attend.&lt;/p&gt;
+&lt;h1&gt;Recommendations&lt;/h1&gt;
+&lt;p&gt;I'm guessing most people …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I just spent the weekend at the Berkeley Reinforcement Learning Bootcamp. 
+Overall I found it to be an intense but rewarding experience but also
+expensive if you're paying out of pocket.
+Read on for more of my thoughts and my recommendations if you should
+attend.&lt;/p&gt;
+&lt;h1&gt;Recommendations&lt;/h1&gt;
+&lt;p&gt;I'm guessing most people will care about this so I'll just put it at the top.
+My recommendation is basically split into three categories.&lt;/p&gt;
+&lt;h2&gt;I'm at least lightly interested in AI/RL and my employer will pay&lt;/h2&gt;
+&lt;p&gt;Then you should definitely come. It's definitely worth the weekend because
+no matter what you'll be walking out of here with more knowledge than when
+you started.  The information has been condensed by the experts to maximize
+your learning in a short time.&lt;/p&gt;
+&lt;h2&gt;I'm interested but I'm paying myself&lt;/h2&gt;
+&lt;p&gt;Sort of a toss up here. The bootcamp is pretty expensive but it still might
+be worthwhile. Read on for more details to see if it's worth it for you.&lt;/p&gt;
+&lt;h1&gt;An approximate schedule and what was covered&lt;/h1&gt;
+&lt;p&gt;The bootcamp was split over two days, with approximately 12 hours of activity
+each day. In a day specifically there about&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2 hours of social/networking time, which included things like lunch and coffee breaks&lt;/li&gt;
+&lt;li&gt;3 hours of working on provided labs with PhD students available to help&lt;/li&gt;
+&lt;li&gt;7 hours of lectures with topics ranging from basics to cutting edge research&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Lecture topics&lt;/h2&gt;
+&lt;p&gt;Specifically the lectures covered topics starting from V and Q learning,
+through DQN, and then branched to focus on specific RL focus areas such
+as various types of Model Based Learning, Model Free Learning, Evolutionary
+methods, as well as lectures focused on general tips for learning how to learn
+Reinforcement Learning (say that three times fast). Overall the lectures
+were wellrstructured, given by a variety of speakers, and very informative.
+However, the target audience skillset varied greatly, the difficultly ranged  from 
+basic to extremely intense (literally cutting edge) pretty fast.&lt;/p&gt;
+&lt;h2&gt;Labs&lt;/h2&gt;
+&lt;p&gt;The labs were pretty basic, just implementations of Q and V learning, and
+the "Fill in the two magic lines" type of labs. The neat part where that
+there was plenty of expert TAs around to help with questions. Unfortunately
+the labs were not released ahead of time, so if you came with little knowledge
+of the basics you would spend most of your time stuck in the shallow
+end of the pool, and wouldn't really be able to really utilize the specialized help.&lt;/p&gt;
+&lt;h2&gt;Networking&lt;/h2&gt;
+&lt;p&gt;Everyone here was pretty enthusiastic to be here so overall a great crowd. The
+people certainly made the bootcamp more fun.&lt;/p&gt;
+&lt;h1&gt;So If I'm paying myself is it worth it?&lt;/h1&gt;
+&lt;p&gt;Well you'll definitely learn something, but "Is it worth it?" is a different question.
+If you're just starting out in RL then you really won't be able to grok
+most of the knowledge unfortunately. You'd be better off reading books and following
+tutorials online.  &lt;/p&gt;
+&lt;p&gt;However, if you have some experience and practice using RL you're in the 
+sweet spot, as the advanced topics will push your knowledge, and there are lots
+of friendly experts around to answer detailed questions.  &lt;/p&gt;
+&lt;h1&gt;A Final Note&lt;/h1&gt;
+&lt;p&gt;With AI and Deep RL being a hot topic there's the risk that some of these conferences
+are just cashing in on the hype without providing much content.
+That is &lt;strong&gt;not&lt;/strong&gt; the case with this bootcamp, lecturers and TAs were very knowledgeable,
+just be sure you're prepared to understand what they're teaching you!&lt;/p&gt;</content><category term="Data Science"></category><category term="Education"></category></entry><entry><title>My Guide on Data Science Programs</title><link href="/DSGuide.html" rel="alternate"></link><published>2016-12-01T00:00:00+00:00</published><updated>2016-12-01T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2016-12-01:/DSGuide.html</id><summary type="html">&lt;p&gt;I recently got accepted to the Udacity Artificial Intelligence Nanodegree program.
+While I am planning to write about that when it starts, now is a good
+time to talk about the experience I've had with previous Data Science programs.  &lt;/p&gt;
+&lt;h2&gt;Why am I doing this?&lt;/h2&gt;
+&lt;p&gt;As a beginner it's hard to …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I recently got accepted to the Udacity Artificial Intelligence Nanodegree program.
+While I am planning to write about that when it starts, now is a good
+time to talk about the experience I've had with previous Data Science programs.  &lt;/p&gt;
+&lt;h2&gt;Why am I doing this?&lt;/h2&gt;
+&lt;p&gt;As a beginner it's hard to figure out what's worthwhile and what's
+snake oil, and these days there seems to be hundreds of books, MOOCs, bootcamps
+and traditional degrees that are vying for your money and time. For those
+doing research I hope my experience gives you more information to make
+an informed decision.&lt;/p&gt;
+&lt;h2&gt;What basis does my opinion have?&lt;/h2&gt;
+&lt;p&gt;In the past five years I've enrolled in the Thinkful Data Science course,
+the Coursera Data Science specialization, the Udacity Data Analyst Nanodegree,
+and was accepted to the Berkeley Masters in Data Science masters degree
+program. Between these programs I've spent thousands of dollars and hours
+trying to improve my skills with these programs. Not all of this time 
+was well spent and I bet I could have spent about a third less to get
+where I am now.&lt;/p&gt;
+&lt;h2&gt;So where &lt;em&gt;are&lt;/em&gt; you now?&lt;/h2&gt;
+&lt;p&gt;The details are in the &lt;a href="pages/About.html"&gt;About Me&lt;/a&gt; but essentially I do
+data science work for a living. The programs above actually did help me
+transition into the career I wanted, but as mentioned I could have made better
+decisions.&lt;/p&gt;
+&lt;h1&gt;The Guide&lt;/h1&gt;
+&lt;p&gt;The six categories I've been exposed to are  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Self Learning from Internet&lt;/li&gt;
+&lt;li&gt;Books&lt;/li&gt;
+&lt;li&gt;Coursera Data Science Courses and Specialization&lt;/li&gt;
+&lt;li&gt;Udacity Data Analyst Nanodegree&lt;/li&gt;
+&lt;li&gt;Berkeley Masters in Data Science&lt;/li&gt;
+&lt;li&gt;A PhD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here's my thoughts on each one&lt;/p&gt;
+&lt;h2&gt;Self Learn from Internet&lt;/h2&gt;
+&lt;p&gt;This is certainly the easiest, cheapest, and most flexible. The hard
+part though is piecing together an education that is cohesive and increases
+in difficulty at an appropriate rate. You'll have to spend a lot of time
+both figuring out what you want to learn, finding good resources on that topic
+and actually learning it. Figuring out what you want to learn might seem
+easy until you realize how many buzzwords now exist in the data science space.
+Do you want to learn about Machine Learning or recommender systems? What about
+Deep Learning, or how about Convolutional Neural Networks. What about
+Theano, TensorFlow, or Caffe? When googling by yourself it takes a lot
+of effort to figure out what topics are relevant and which ones are buzzwords.&lt;/p&gt;
+&lt;p&gt;Sources in this category that I recommend are &lt;a href="www.kaggle.com"&gt;Kaggle&lt;/a&gt; and 
+articles that appear on &lt;a href="www.hackernews.com"&gt;HackerNews&lt;/a&gt; and &lt;a href="www.datatau.com"&gt;DataTau&lt;/a&gt;
+but there are literally thousands. You can also take the free courses 
+from Coursera and Udacity. I'll be talking more about their paid programs
+below.&lt;/p&gt;
+&lt;h2&gt;Books&lt;/h2&gt;
+&lt;p&gt;Similar to Internet learning you'll have to first find books that are
+appropriate to the topic you want to learn. When you do find an appropriate
+book however the good news is that it likely covers the topic into much
+more detail than a series of blog posts does. However, the downside is that
+it's hard to get feedback from a book and if you're left with questions
+you have to revert to the Self Learn from the Internet method.&lt;/p&gt;
+&lt;p&gt;An example of a book that I found to be informative includes
+&lt;a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/"&gt;Elements of Statistical Learning&lt;/a&gt;.
+Again like the Internet category there are hundreds, if not thousands, of 
+Data Science related books in every category and I could not possibly list
+them all.  &lt;/p&gt;
+&lt;p&gt;If you've read this far you must really be interested in learning Data Science.
+If so that's good because everything from here down requires more commitment
+and money.&lt;/p&gt;
+&lt;h2&gt;Coursera Data Science Courses&lt;/h2&gt;
+&lt;p&gt;Coursera has two ways you can learn. One is taking free courses, but the 
+more notable is paying for their specializations. For the money Coursera's
+Specializations give you two things that Books and Self Learning do not.
+One is that they guide you through a series of Data Science topics over the
+span of a couple of months, reducing the need for you to piece together
+your own curriculum. The other and much more important, is they give you
+a community and feedback on your assignments. The specializations require
+you to pass quizzes and finish small two week projects that are peer reviewed. 
+This is great because
+getting feedback from others is in my opinion the best way to learn.&lt;/p&gt;
+&lt;p&gt;However, the downside is that the reviewers are usually your peers, and they
+unfortunately they don't know much more than you typically. Another downside
+is their motive for feedback is usually just so they can pass the course themselves,
+giving feedback is a requirement for passing. Therefore, I personally found
+the feedback to be pretty weak. I made it through 8 out of 10 of the
+courses in the Specialization before I stopped participating. The cost
+of the Coursera Data Science program was a fixed 500 dollars.&lt;/p&gt;
+&lt;h2&gt;Udacity Data Analyst Nanodegree&lt;/h2&gt;
+&lt;p&gt;Udacity, like Coursera, has both free and guided courses. However, the major
+difference I found was that Udacity gives you much more access to more experienced
+mentors. The Udacity projects are much more substantive, some taking more 
+than a month to complete, and during the process you get continuous feedback
+from those more experienced mentors. The feedback was critical and 
+forced me to really learn and execute concepts correctly. It was much different
+than Coursera, from which i felt other peers would just rubber stamp my 
+work so they could pass. The cost of the program was $200 dollars a month
+for each month enrolled in the program with the program ending when you finished
+all seven projects with passing reviews. If you finished within 12 months
+Udacity refunded half the money, a clever way to keep you motivated.&lt;/p&gt;
+&lt;p&gt;A potential downside of the Udacity program was that was self-paced, which 
+is great if you have motivation, but bad when you didn't. &lt;/p&gt;
+&lt;h2&gt;Berkeley Master in Data Science Program&lt;/h2&gt;
+&lt;p&gt;The Master Degree programs are some of the newest kids on the block in terms
+of Data Science accreditations. The allure is that they combine traditional
+education with newer data science topics. I enrolled in the 
+Berkeley program because I felt that I would get a comprehensive education 
+with access to experts in the field, along with the Berkeley accreditation.
+After all a number of the leading experts who pioneered the data methods that
+are commonplace now graduated from Berkeley, Stanford, and other high
+pedigree schools.&lt;/p&gt;
+&lt;p&gt;However the programs are expensive, &lt;strong&gt;REALLY&lt;/strong&gt; expensive. The cost
+for Berkeley's program came out to $60,000 dollars, not including additional
+costs like applications fees, travel fees to the campus if you have to visit,
+books etc. And the barrier to entry is high, you'll need to have a bachelors already
+and complete a Masters degree application.&lt;/p&gt;
+&lt;p&gt;Although I was accepted and attended roughly a month's worth of the lectures
+I ultimately ended up dropping out because I felt the price to value ratio
+was lot, especially since I already had spent tens of thousands of dollars on
+two other bachelors and masters degrees. The program itself was well-thought-out
+and well put together, but given the much cheaper alternatives above I couldn't
+justify staying in the program after I learned more about it.&lt;/p&gt;
+&lt;h2&gt;PhD&lt;/h2&gt;
+&lt;p&gt;The last and hardest path is to
+get a PhD in a field related to data science. After all nearly all the people
+that have forged the way in Data methods have done so through research
+and doctorate level work. I myself was enrolled in a PhD program but for
+those considering this option you already know it's a very heavy investment
+requiring at least half a decades worth of work. You're going to have
+to read a lot more than this blog post, and do a lot of soul search, before
+deciding if this option is really what you want to do.&lt;/p&gt;
+&lt;h1&gt;The Other Options&lt;/h1&gt;
+&lt;h2&gt;Bootcamps&lt;/h2&gt;
+&lt;p&gt;There are Data Science Bootcamps run by companies like Metis. These
+typically involve studying on site in places like New York through an intensive
+12 week program. The cost seems to be in the multi thousands. For the money
+though you get to build a network and get coaching in person.&lt;/p&gt;
+&lt;p&gt;I never applied for this option because of the opportunity cost, I would
+have had to quit a paying job, or quit a degreed program I was already in,
+to participate in these. But if you have the time and money these may be a good
+option for you.&lt;/p&gt;
+&lt;h2&gt;Hands-on experience&lt;/h2&gt;
+&lt;p&gt;If you can find someone that will mentor you at your job that is by far
+the best option. Nothing beats real world experience in learning how to actually
+do the job. You may need to refer to some of the learning above to get the
+fundamentals but experience is a great teacher.&lt;/p&gt;
+&lt;h1&gt;So what should I do?&lt;/h1&gt;
+&lt;p&gt;If you're just starting out I suggest you start with an Udacity Nanodegree.
+I think it has the best balance of low cost, but with expert mentorship
+and just difficult enough projects to grow. After that you'll also have
+enough experience to hone in on useful internet and book references without
+getting fooled by marketing pitches.  And since a Nanodegree only typically
+takes a year to complete, the time investment is pretty low.&lt;/p&gt;
+&lt;p&gt;I personally don't think the MIDS program is worth the cost. A traditional
+statistics or mathematics masters costs a third of the price at most
+universities and I believe it's much more valuable.&lt;/p&gt;
+&lt;p&gt;As for the PhD if you're reading this blog post as your first reference
+I'll say having a PhD is a pretty significant achievement, but it's not a light
+decision and you should really read more and think on if this is ultimately
+the right choice for you.&lt;/p&gt;
+&lt;p&gt;As always if you have any further questions feel free to send me a message
+on LinkedIn or Github. &lt;/p&gt;</content><category term="Data Science"></category><category term="Education"></category></entry><entry><title>SQL for Data Analysts</title><link href="/SqlForDataAnalysts.html" rel="alternate"></link><published>2016-11-28T00:00:00+00:00</published><updated>2016-11-28T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2016-11-28:/SqlForDataAnalysts.html</id><summary type="html">&lt;p&gt;SQL is a very extensive language but as a Data Analyst you don't have to know
+all the ins and outs to start doing useful work. Here's a list of SQL concepts
+and commands in a rough order of importance for Data Analysts. I'm basing this
+list off of my …&lt;/p&gt;</summary><content type="html">&lt;p&gt;SQL is a very extensive language but as a Data Analyst you don't have to know
+all the ins and outs to start doing useful work. Here's a list of SQL concepts
+and commands in a rough order of importance for Data Analysts. I'm basing this
+list off of my experience using SQL to answer business questions at 
+SpaceX and National Oilwell Varco. At both companies I used T-SQL/SQL Server
+but the general ideas and commands are present in pretty much every flavor of
+SQL.&lt;/p&gt;
+&lt;h1&gt;The Basics&lt;/h1&gt;
+&lt;p&gt;If you want to produce any results you'll have to start here.&lt;/p&gt;
+&lt;h2&gt;1. Tables&lt;/h2&gt;
+&lt;p&gt;Fundamental to relational databases is the concept of tables, all the data
+is stored in these. Quickly learn how business concepts are reprsented in
+tables. You'll quickly find that a couple central tables usually contain an
+overwhelming majority of the useful information for a business area. For instance
+sales, customers, expenses, etc. Start with those and inevitably
+you'll start learning the others.&lt;/p&gt;
+&lt;h2&gt;2. Select&lt;/h2&gt;
+&lt;p&gt;Select is the workhorse command that will return your results. Might seem
+obvious but there are some important concepts like select, like &lt;strong&gt;Select &lt;code&gt;*&lt;/code&gt; &lt;/strong&gt;,
+&lt;strong&gt;Select Top&lt;/strong&gt; and the order in which Logical Query Processing executes a Select.
+More on this later&lt;/p&gt;
+&lt;h2&gt;3. Where&lt;/h2&gt;
+&lt;p&gt;Getting a whole table isn't usually very useful. Learn the where filters
+like the &lt;strong&gt;like&lt;/strong&gt; comparison, conditional filters, and datetime filters.&lt;/p&gt;
+&lt;h2&gt;4. Joins&lt;/h2&gt;
+&lt;p&gt;This is entirely fundamental to working with SQL. Aside from just getting
+the query to execute, knowing when to use and inner vs left join can totally
+change the meaning of your results. Master this quickly, including less
+used joins like comma or natural joins.&lt;/p&gt;
+&lt;h2&gt;5. Aliasing&lt;/h2&gt;
+&lt;p&gt;As soon as you start joining tables together, you'll likely run into
+duplicate column names on keys, or columns like CreateDate. Aliasing
+will ensure the query processor is actually grabbing the columns you want,
+but it will also mean you can rename columns to make sense to people. Aside from
+column aliasing, table aliasing will also help you keep things straight and
+is required for subqueries&lt;/p&gt;
+&lt;h2&gt;6. Subquery Syntax&lt;/h2&gt;
+&lt;p&gt;Sometimes you'll need to join half the rows from one table with half the rows
+on another other table. Subqueries are the simplest way to do this.&lt;/p&gt;
+&lt;h2&gt;7. Order By&lt;/h2&gt;
+&lt;p&gt;People usually care the most about the highest or lowest values of things. When
+you're returning millions of results you can't really scan by eye to figure
+it out. Order by does the work for you and, like it sounds, orders results&lt;/p&gt;
+&lt;h1&gt;Intermediate SQL&lt;/h1&gt;
+&lt;p&gt;After getting the basics people will start asking more pointed questions like,
+&lt;strong&gt;What's my sales per Region?&lt;/strong&gt; or &lt;strong&gt;What are the 2nd most expensive parts
+we produce?&lt;/strong&gt; To answer these questions you'll need some more knowledge.&lt;/p&gt;
+&lt;h2&gt;8a. Built-in Functions&lt;/h2&gt;
+&lt;p&gt;You'll need to these to do things like sum over a column, or count the number
+of records, but you'll also need these to numerically rank results.&lt;/p&gt;
+&lt;h2&gt;8b. Groupby and Partition By&lt;/h2&gt;
+&lt;p&gt;At the same time you'll need to learn how to use aggregations to use the functions
+above. Usually people ask questions like what's the cost per part, or what's the
+sales per region. A quick groupby and sum will answer these questions in a jiffy.
+Partition by is another way to do aggregations that doesn't require subqueries
+if you're only aggregating one column out of many. &lt;/p&gt;
+&lt;h2&gt;9. Having&lt;/h2&gt;
+&lt;p&gt;Where filters rows, having filters groups. Better explained with examples
+that can be &lt;a href="http://www.w3schools.com/sql/sql_having.asp"&gt;found here&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;10. Cross Apply and Outer Apply&lt;/h2&gt;
+&lt;p&gt;Cross Apply and Outer Apply are advanced joins that let you use information
+from one table into another in a more advanced way than traditional joins.
+For instance one example is being able to use join on table valued functions
+that results. Another is to use information from one table as a filter condition
+in a subquery that's generating another table that you're joining on. You'll
+quickly find out when you need these when you realize you can't accomplish certain
+joins with just left and inner joins.&lt;/p&gt;
+&lt;h1&gt;Advanced SQL&lt;/h1&gt;
+&lt;h2&gt;11. Variables&lt;/h2&gt;
+&lt;p&gt;Variables will you reuse values throughout your code and make certain things
+more obvious. For instance if you're filtering for records after a certain date
+sometimes you could put the dates directly in the where line, but after a while
+it can become cumbersome to find it in your code. Declaring a variable at the
+top with your date, and using the variable later in your code helps you
+quickly modify your code and others. It especially helps when you reuse
+the date multiple times, declaring it once as a variable means you only
+need to edit it one place.&lt;/p&gt;
+&lt;h2&gt;12. While Loops&lt;/h2&gt;
+&lt;p&gt;With variables you can effectively use while loops. Variables and while loops
+will be necessary to traverse databases that are representations of graph structures.
+For example getting a reporting chain, to see who's boss, is who's boss, is who's boss.
+Or getting all parts that are a part of a Bill of Material. Or tracing transactions
+over time for a certain serial number part.&lt;/p&gt;
+&lt;h2&gt;13. Common Table Expressions&lt;/h2&gt;
+&lt;p&gt;Common table expressions are a useful way to annotate your code, they're
+somewhat analogous to object oriented programming where you can slowly
+build a results set over a more easily readable series of operations. You'll
+see what I mean when your queries starts with select, has 20 columns from
+various tables, and then 15 joins to get all the columns together. It gets
+a bit hard to keep it all straight. &lt;/p&gt;
+&lt;h2&gt;14. Recursive Common Table Expressions&lt;/h2&gt;
+&lt;p&gt;However a big reason to learn Common Table Expressions is to take advantage
+of recursive common table expressions. These serve a similar function
+to while loops, but are a slightly different flavor and in my opinion are
+a better syntax. Use this often to perform recursion on data concepts 
+that require it.&lt;/p&gt;
+&lt;h1&gt;Generating your own tables&lt;/h1&gt;
+&lt;p&gt;Once your queries start getting complex it'll help to store results
+in intermediate tables. To manage these you'll need to get familar with commands
+such as &lt;/p&gt;
+&lt;h2&gt;15. Select * into #table_name&lt;/h2&gt;
+&lt;p&gt;The easiest way to create a temp table, just select some values and 
+tell SQL Server to automagically create a table from the results.&lt;/p&gt;
+&lt;h2&gt;16. Create Table&lt;/h2&gt;
+&lt;p&gt;While Select Into is great, as you progress you'll sometimes need to
+have more control over the data types and other details like indexes in your 
+temp table. To do so you'll have to start with Create Table, which then allows
+you to specify all of these details. &lt;/p&gt;
+&lt;h2&gt;17. Insert Values into&lt;/h2&gt;
+&lt;p&gt;An empty table is fairly useless though. &lt;strong&gt;Insert Values into&lt;/strong&gt; will
+help you populate your newly created table quickly.&lt;/p&gt;
+&lt;h2&gt;18. Drop Table&lt;/h2&gt;
+&lt;p&gt;And sometimes you'll need to get rid of tables you created. Just be careful
+because it's way easier to drop tables than create them.&lt;/p&gt;
+&lt;h1&gt;The Other Stuff&lt;/h1&gt;
+&lt;p&gt;There's additional concepts like modifying rows, altering columns,
+stored procedures, and functions, but those start getting into the realm
+of Database Administration, and sides by the time you get here anyway
+you'll be strong enough with SQL to figure out what you need.&lt;/p&gt;
+&lt;h1&gt;Getting Started&lt;/h1&gt;
+&lt;p&gt;Don't let this list intimidate you, you can get a lot of value from just
+the top 5 items. The others will come naturally as you figure out you need them
+and hopefully this list will help you figure out the terms to google once
+you get there.&lt;/p&gt;</content><category term="Data Science"></category><category term="SQL"></category></entry><entry><title>Double Data Joins</title><link href="/DoubleDataJoin.html" rel="alternate"></link><published>2016-11-21T00:00:00+00:00</published><updated>2016-11-21T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2016-11-21:/DoubleDataJoin.html</id><summary type="html">&lt;p&gt;Perhaps the most fundamental concept of D3 is the &lt;a href="https://bost.ocks.org/mike/join/"&gt;data join&lt;/a&gt;
+which shortly summarized compares a dataset in memory with the data in a selection.
+New elements are &lt;strong&gt;entered&lt;/strong&gt;  where no matched data exists in the selection, 
+current elements are &lt;strong&gt;updated&lt;/strong&gt; and missing elements are &lt;strong&gt;exited&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;One aspect that's easy …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Perhaps the most fundamental concept of D3 is the &lt;a href="https://bost.ocks.org/mike/join/"&gt;data join&lt;/a&gt;
+which shortly summarized compares a dataset in memory with the data in a selection.
+New elements are &lt;strong&gt;entered&lt;/strong&gt;  where no matched data exists in the selection, 
+current elements are &lt;strong&gt;updated&lt;/strong&gt; and missing elements are &lt;strong&gt;exited&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;One aspect that's easy to miss though is that the results of a data join
+are also a selection. This means you can chain data joins on top of each other. &lt;/p&gt;
+&lt;h2&gt;An example&lt;/h2&gt;
+&lt;p&gt;Say we have data that has a nested structure like this&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;red&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Strawberries&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Apple&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+            &lt;span class="s2"&gt;&amp;quot;blue&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;BlueBerries&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;We can easily use this structure to our advantage using a d3 snippet like this&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;doubledatajoin&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+         &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;select&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#example&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+           &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;selectAll&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;div&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+           &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;Object&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;keys&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+           &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;enter&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+             &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;div&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+             &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;style&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;color&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
+           &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;selectAll&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+           &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="p"&gt;]})&lt;/span&gt;
+           &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;enter&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; 
+             &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;p&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+             &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="p"&gt;})&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt; 
+
+&lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;select&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#button&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;click&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;doubledatajoin&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div id="example"&gt;
+  &lt;button type="button" id="button"&gt;Perform Double Data&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;p&gt;By using two data joins we can add the corresponding adjectives to into the 
+dom where it makes sense. The above example is quite trivial but where this
+can become extremely useful is nested groups. By being able to create
+hierarchical groups like this it becomes easy to transform, hide, and modify
+like groups of elements. If you want an example of this feel free to contact me
+and I can add one to this post. Otherwise, I hope you see the power of this
+and just how powerful combining concepts in D3 can be.&lt;/p&gt;</content><category term="Data Science"></category><category term="Visualization"></category><category term="D3"></category></entry><entry><title>You should learn SQL</title><link href="/LearnSQL.html" rel="alternate"></link><published>2016-10-22T00:00:00+00:00</published><updated>2016-10-22T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2016-10-22:/LearnSQL.html</id><summary type="html">&lt;p&gt;I'm not the first to say this and I really doubt
+I'll be the last. Being able to use and understand data is 
+becoming, if not already, a very powerful skill. Let me
+go through the two perspectives I've encountered below.&lt;/p&gt;
+&lt;h1&gt;But I'm already learning Python/Pandas/R&lt;/h1&gt;
+&lt;p&gt;Cool! So …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I'm not the first to say this and I really doubt
+I'll be the last. Being able to use and understand data is 
+becoming, if not already, a very powerful skill. Let me
+go through the two perspectives I've encountered below.&lt;/p&gt;
+&lt;h1&gt;But I'm already learning Python/Pandas/R&lt;/h1&gt;
+&lt;p&gt;Cool! So you're already interested and well on your way to being
+a data professional. Then there's two reasons you should learn
+SQL.  &lt;/p&gt;
+&lt;h2&gt;You'll become the data girl/guy faster&lt;/h2&gt;
+&lt;p&gt;If you're trying to break into an analytical role your employer
+will be much more supportive, and likely even pay you, if you
+can show results. I would argue that SQL is the much quicker
+route to get a data role and start gaining experience for
+the following reasons.&lt;/p&gt;
+&lt;h3&gt;Declarative vs Imperative Languages&lt;/h3&gt;
+&lt;p&gt;Without going deeply into the nuances between declarative
+and imperative languages what's easier to write and understand?&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;http: iris url&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# This is dependent on your data source&lt;/span&gt;
+&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;TOP&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;IRIS&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;With Python you'll have know how to import pandas, call
+the correct method to read a csv file, know what argument
+to pass to the read_csv method, know about variables, and then
+know you can call a method on that assignment. A lot of the symbols
+are not "English" intuitive either. &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;TOP&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;IRIS&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Comparatively, SQL is much more approachable and basically reads straight across.
+Now yes SQL has its own set of complexities and limitations but just starting
+out it's been my experience that there's much less you need to learn
+before you're able to do useful things. But.... &lt;/p&gt;
+&lt;h3&gt;It's probably already setup for you&lt;/h3&gt;
+&lt;p&gt;I don't have strong evidence to back this claim I would argue nearly all
+businesses have a need to store data in tabular format and already do. This
+means you just need to start querying it, without having to worry about setting
+up a local Python or R environment, especially when most companies lock
+down admin privileges anyway and make this sometimes difficult to do.&lt;/p&gt;
+&lt;h3&gt;Since it's setup there's a resident Database Admin&lt;/h3&gt;
+&lt;p&gt;If the assumption above holds there already will be at least one person
+whose job it is to maintain that database who knows SQL. I would argue
+there's more companies that pay a DBA than companies that are hiring data scientists.
+In my experience nearly all companies have data these days, not nearly as many
+have Python/R stack data scientists on staff.&lt;/p&gt;
+&lt;h3&gt;SQL has a standard&lt;/h3&gt;
+&lt;p&gt;SQL is more standardized than other data languages.
+While there are differences the basic queries are pretty much the same
+across platforms. The switching cost between Python and R is much higher.
+This makes it easier to learn and use in a variety of settings, even if not 
+every place you go uses the same database and SQL variant.&lt;/p&gt;
+&lt;h3&gt;You're going to have to learn it anyway&lt;/h3&gt;
+&lt;p&gt;Even if you end up using Pandas or R you'll have to find some data. While it's 
+true a lot of data is not in database, a lot of data is in a database.&lt;/p&gt;
+&lt;h2&gt;But I'm a manager&lt;/h2&gt;
+&lt;p&gt;Even if you have direct reports that can write SQL, knowing a bit of SQL will
+help you become much more literate. Some of the managers who I've worked with
+have been able to use data to great effect to paint a story both to their 
+direct reports and in discussions with their peers and superiors. It's harder
+to argue with the results from a query.&lt;/p&gt;
+&lt;h1&gt;In Conclusion&lt;/h1&gt;
+&lt;p&gt;If you're relatively new to data it's my opinion that learning SQL gives you
+the most "bang for your buck". It has a relatively low barrier to entry
+given that most companies already use it, and it's simpler to start out with
+and get useful results. And once your employer sees some results it'll be easier
+to sneak some Python/R and fancier stuff in as well!&lt;/p&gt;</content><category term="Data Science"></category><category term="SQL"></category></entry><entry><title>Clip Paths and Transforms</title><link href="/clippaths.html" rel="alternate"></link><published>2016-10-09T10:20:00+00:00</published><updated>2016-10-09T10:20:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2016-10-09:/clippaths.html</id><summary type="html">&lt;p&gt;When creating visualizations sometimes we want an element to be visible 
+in one portion of the SVG but perhaps in another. An example would be a chart
+with axes that also implements zoom and pan. As we move the chart elements
+into the axes area we don't wany any overlap …&lt;/p&gt;</summary><content type="html">&lt;p&gt;When creating visualizations sometimes we want an element to be visible 
+in one portion of the SVG but perhaps in another. An example would be a chart
+with axes that also implements zoom and pan. As we move the chart elements
+into the axes area we don't wany any overlap.&lt;/p&gt;
+&lt;h1&gt;An example&lt;/h1&gt;
+&lt;p&gt;In the visualization below zoom and pan have been applied using the method in
+the &lt;a href="/ImplementingD3Zoom.html"&gt;zoom and pan post&lt;/a&gt;. We only want the blue
+dot to be visible in the blue region but it's clearly visible everywhere.&lt;/p&gt;
+&lt;div id="unclipped"&gt;&lt;/div&gt;
+
+&lt;h1&gt;Clip Paths&lt;/h1&gt;
+&lt;p&gt;Luckily the SVGs support a concept called clip-path. The idea is simple,
+essentially defining an area where elements are visible, however the implementation
+is a bit more convoluted.  &lt;/p&gt;
+&lt;p&gt;In our example above we only wanted the blue circle to be visible in the blue 
+region. As with nearly everything in SVG we'll have to define the geometry.
+However unlike other svg geometry it needs to be defined in the &lt;strong&gt;defs&lt;/strong&gt;
+section of the svg.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;svg&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;defs&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;clipPath&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;bluerect&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="c"&gt;&amp;lt;!--Geometry goes here--&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/clipPath&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/defs&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs"&gt;defs&lt;/a&gt;
+are a tag for reuseable elements in SVGs. In this case 
+&lt;a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath"&gt;clipPath&lt;/a&gt;
+element needs to be defined in this block.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;svg&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;defs&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;clipPath&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;bluerect&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class="nt"&gt;&amp;lt;rect&lt;/span&gt; &lt;span class="na"&gt;x=&lt;/span&gt;&lt;span class="s"&gt;0&lt;/span&gt; &lt;span class="na"&gt;y=&lt;/span&gt;&lt;span class="s"&gt;0&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;300&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;150&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/rect&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;/clipPath&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/defs&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Once defined in the defs section the clip path can be applied to an element
+by adding a &lt;strong&gt;clip-path&lt;/strong&gt; attribute on the element. The blue is removed
+from the example code for code clarity. 
+[ref] While sample bl.ocks are great sometimes when going through them
+it's hard to isolate the specific feature I'm trying to learn
+from all the other functionality[/ref]&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;circle&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;cx&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;cy&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;2&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="nx"&gt;r&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;r&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;clip-path&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;url(#cliprect)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div id="staticclipped"&gt;&lt;/div&gt;
+
+&lt;p&gt;The clip path clearly worked but unfortunately it stick with the element
+regardless of position. What we really want is the circle to be visible
+depending on where it is in the svg.&lt;/p&gt;
+&lt;h1&gt;Clip Path Groups&lt;/h1&gt;
+&lt;p&gt;Before fixing the issue above it should be mentioned that clip paths 
+can also be applied to groups. There are a lot of uses for it but in our 
+case this is EXTREMELY handy as it allows us to do two major things&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apply a clip group to one circle but not another&lt;/li&gt;
+&lt;li&gt;Apply the clip group to a group that is not transformed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The simplified SVG structure looks like this.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;svg&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;g&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;alwaysvisiblecircle&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pan_and_zoom_class&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;circle&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/g&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;g&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;url(#clippathdef)&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;g&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pan_and_zoom_class&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;circle&amp;gt;&lt;/span&gt;
+  &lt;span class="nt"&gt;&amp;lt;/g&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/g&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div id="clipped"&gt;&lt;/div&gt;
+
+&lt;p&gt;This structure results in this visualization which does everything we want it
+to! If you try dragging the circles, you'll notice that one of them starts
+disapearing as it's location moves to the right, but start appearing again
+if you move left&lt;/p&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;p&gt;The code for these visualizations are available on my Github. Additionally
+there is a much more extensive writeup on clip paths written by
+&lt;a href="https://sarasoueidan.com/blog/css-svg-clipping/"&gt;Sara Soueidan&lt;/a&gt; which
+I highly recommend. &lt;/p&gt;</content><category term="Data Science"></category><category term="Visualization"></category></entry><entry><title>D3 4.0 Zoom demystified</title><link href="/D3ZoomDemystified.html" rel="alternate"></link><published>2016-09-25T00:00:00+00:00</published><updated>2016-09-25T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2016-09-25:/D3ZoomDemystified.html</id><summary type="html">&lt;p&gt;In the &lt;a href="/ImplementingD3Zoom.html"&gt;last post&lt;/a&gt; we covered how to implement
+basic zoom and pan in a D3 svg with one line but also left ourselves with an example
+of an unexpected behavior.&lt;/p&gt;
+&lt;p&gt;In this post will dig deeper to see what's happening under the hood and how we 
+can get around …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In the &lt;a href="/ImplementingD3Zoom.html"&gt;last post&lt;/a&gt; we covered how to implement
+basic zoom and pan in a D3 svg with one line but also left ourselves with an example
+of an unexpected behavior.&lt;/p&gt;
+&lt;p&gt;In this post will dig deeper to see what's happening under the hood and how we 
+can get around our issue. Before we get into D3 let's start with the basics.&lt;/p&gt;
+&lt;h2&gt;What is Zoom and Pan in an SVG?&lt;/h2&gt;
+&lt;p&gt;SVG stands for Scalable Vector Graphics. Vectors are mathematical
+of a magnitude and direction in a coordinate space. So when we're zooming, panning,
+or rotating and skewing, an SVG we are &lt;strong&gt;applying coordinate transformations
+to the vector space&lt;/strong&gt; that our computer eventually turns into graphics.&lt;/p&gt;
+&lt;p&gt;In SVGs these coordinate transforms are defined by attributes such as matrix,
+translate,scale,rotate etc. So for example if we wanted to "pan" a rectangle
+SVG element we would add an attribute tag as so&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;rect&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;100&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;transform =&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;translate(50,50) scale(2)&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/rect&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The render inteprets this as move "50px right and 50px down from the origin and
+double all the linear dimensions". For further details on the SVG spec take a look
+at the &lt;a href="https://developer.mozilla.org/en/docs/Web/SVG/Attribute/transform"&gt;Mozillla Foundation Documentation&lt;/a&gt;
+or visit this blog post by &lt;a href="https://sarasoueidan.com/blog/svg-transformations/"&gt;Sara Soueidan&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;What are DOM Events and Event handlers?&lt;/h2&gt;
+&lt;p&gt;We won't get too far into this one but take a moment to think about the mechanics
+of event handlers. If you're reading this blog you're likely aware that nothing
+is "magic" in programming, but instead a well-structured set of rules has been implemented.&lt;/p&gt;
+&lt;p&gt;In the case of zoom when the user clicks and drags an element, or a user scrolls
+their mousewheel, in d3 we see that the SVG correspondingly reacts.&lt;/p&gt;
+&lt;p&gt;Mozilla Foundation once again comes through and &lt;a href="https://developer.mozilla.org/en-US/docs/Web/Events"&gt;lists nearly all&lt;/a&gt;
+the event handlers available. For those paying close attention you'll notice zoom
+isn't listed, we'll cover that in a second.&lt;/p&gt;
+&lt;h2&gt;How does D3 Implement Zoom&lt;/h2&gt;
+&lt;p&gt;With an understanding how SVGs work with zoom and with how browsers handle events
+we can now focus on D3 itself.
+D3 implements zoom in two major piece, mostly encapsulated in two objects.
+There's the &lt;strong&gt;d3.zoom&lt;/strong&gt; object, which creates a zoom behavior and applies
+the zoom event handler to selections. This is where d3 also implements
+its &lt;a href="https://github.com/d3/d3-zoom#api-reference"&gt;custom event handler&lt;/a&gt; "zoom"&lt;/p&gt;
+&lt;p&gt;There's also the &lt;strong&gt;d3.ZoomTransform&lt;/strong&gt; element which stores the zoom transform
+for a certain element. It is important to note at time of writing d3 does not support
+rotate or any of the other SVG transforms in the Zoom API.&lt;/p&gt;
+&lt;h2&gt;The One Liner explanation&lt;/h2&gt;
+&lt;p&gt;With all this newfound knowledge let's dissect the one liner from the previous post,
+here again for reference&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;zoom&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zoom&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;transform&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;)}))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Working our way from the outside in&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you recall the svg variable here is a refernce to our svg. The call is a d3
+method for applying a function to a selection&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;zoom&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zoom&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In the next statement we are doing a couple of things. We're creating a zoom object,
+&lt;a href="https://github.com/d3/d3-zoom#zoom"&gt;which is also a function&lt;/a&gt; and applying it
+to svg through the call method. We also are binding the zoom behavior to the 
+d3 zoom event handler&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;zoom&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zoom&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;transform&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;)}))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In this last set of code we are telling d3 change the attribute "transform" on the svg
+group g, whenever the zoom event is invoked. d3.event.transform returns
+an svg string that details the current transform.&lt;/p&gt;
+&lt;h2&gt;Why the initial visualization jumps&lt;/h2&gt;
+&lt;p&gt;To answer our question from last week here's why the visualization jumps.&lt;/p&gt;
+&lt;p&gt;When we initially create the svg group, we manually code the transformed
+position as an attribute on the svg group, copied here for reference&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;transform&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;translate(&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;left&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;,&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;top&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;when we do this d3 has no "knowledge" of the state of the SVG, but the svg
+"knows" and subsequently so does the browser rendering engine.&lt;/p&gt;
+&lt;p&gt;After this when we initially try to drag or pan the element if you pay close
+attention to the svg group attribute, you'll notice that the &lt;em&gt;translate&lt;/em&gt; 
+attribute jumps to somewhere near (0,0). Since d3 is now adjusting
+the transform attribute and since it still thinks everything is referenced
+from an identity position, that's where the zoom starts.&lt;/p&gt;
+&lt;p&gt;If the wording is confusing take a look at the adjusted code.
+Starting with line 11 and 14, notice that we're creating an initial zoom object
+and a zoomTransform object that we're offsetting.&lt;/p&gt;
+&lt;p&gt;In line 29 were setting this zoomTransform object on svg. This is the key
+line, the one that "tells" d3 the initial state of the transform.  &lt;/p&gt;
+&lt;p&gt;We then go on to use this object to write the svg attribute string for us on line
+34 and finally we set the event handler on the svg selection on line 42 and 43.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;zoom&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;svg&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;initial_transform&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;g&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt;&lt;span class="p"&gt;};&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;left&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;top&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="c1"&gt;//Create Initial Zoom Behavior&lt;/span&gt;
+&lt;span class="nx"&gt;zoom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;zoom&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="c1"&gt;//Set Initial Transform&lt;/span&gt;
+&lt;span class="nx"&gt;initial_transform&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;zoomIdentity&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;translate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;top&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;left&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nx"&gt;svg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;select&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#margin_zoom&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;svg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;width&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="c1"&gt;//Bounding Box&lt;/span&gt;
+&lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rect&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;width&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;stroke&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;black&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;stroke-width&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2px&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;fill&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;none&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="c1"&gt;//Replace initial SVG zoomTransform object with our previously transformed one&lt;/span&gt;
+&lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;zoom&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;initial_transform&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="nx"&gt;g&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;g&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="c1"&gt;//Rather than manually write transform string let d3 do the work for us&lt;/span&gt;
+  &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;transform&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;initial_transform&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;toString&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+
+&lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;circle&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;cx&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;cy&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;r&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;10&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="c1"&gt;//Set the zoom Behavior, use the one initialized above instead of creating a new one&lt;/span&gt;
+&lt;span class="nx"&gt;svg&lt;/span&gt;
+&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;zoom&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zoom&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;transform&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;)}))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;What we covered&lt;/h2&gt;
+&lt;p&gt;In the previous post we covered how to implement zoom and pan easily in one
+line of code. In this post we covered how d3 controls zoom behavior with the 
+d3.zoom() object/function and how d3 "remembers" zoom states by setting 
+d3.zoomTransform objects on elements where transforms have been applied.  &lt;/p&gt;</content><category term="Data Science"></category><category term="Visualization"></category><category term="D3"></category></entry><entry><title>Implementing Zoom in D3 4.0</title><link href="/ImplementingD3Zoom.html" rel="alternate"></link><published>2016-08-27T00:00:00+00:00</published><updated>2016-08-27T00:00:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2016-08-27:/ImplementingD3Zoom.html</id><summary type="html">&lt;p&gt;D3 is a fantastic library for sharing and engaging users in visualizations.
+One of the best ways it does this is by leveraging user interactions, by means
+of clicks, drags, and scrolls to highlight data. We'll be exploring how to 
+implement one of these interactions, the zoom interaction in D3 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;D3 is a fantastic library for sharing and engaging users in visualizations.
+One of the best ways it does this is by leveraging user interactions, by means
+of clicks, drags, and scrolls to highlight data. We'll be exploring how to 
+implement one of these interactions, the zoom interaction in D3 4.0&lt;/p&gt;
+&lt;h2&gt;The benefits of Zoom&lt;/h2&gt;
+&lt;p&gt;In data visualization zooming is a handy method to allow the user both see the
+whole picture but also the minute details. This also means the user can focus 
+on the details that personally matter to them. Perhaps the most prevalent 
+example of this is with services like Google Maps, where users can seamlessly
+transition from a map of the entire world, to a detailed map of their neighborhood.&lt;/p&gt;
+&lt;h2&gt;Zoom in D3&lt;/h2&gt;
+&lt;p&gt;As with the rest of the library zoom in D3 the API is not immediately obvious,
+and potentially frustrating. However as you become more familiar with it you'll
+come to realize how well it implements an intuitive response and abstracts away
+complicated mathematical but still leaves the ability to change the underlying behavior.&lt;/p&gt;
+&lt;h2&gt;The One Liner&lt;/h2&gt;
+&lt;p&gt;If you need basic zooming and panning behavior and in D3 it's extremely simple
+to implement.  &lt;/p&gt;
+&lt;p&gt;Let's start by creating an svg with a group and adding a circle to it.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;svg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;select&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#basic_zoom&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;svg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;width&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;100&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;g&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;g&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;circle&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;cx&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;cy&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;r&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;10&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;circle&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;cx&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;cy&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;r&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;10&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Adding zoom and pan behavior is one additional line&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;zoom&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zoom&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;transform&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;)}))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div id="basic_zoom"&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Before you leave&lt;/strong&gt; note that the event listener has been applied to the svg
+but the transformation is applied to the group.&lt;/p&gt;
+&lt;h2&gt;Zoom + Margin convention&lt;/h2&gt;
+&lt;p&gt;For the visualization I was building at first I was thrilled having solved
+my problem, but I ran into another problem.  &lt;/p&gt;
+&lt;p&gt;My visualization was using the &lt;a href="https://bl.ocks.org/mbostock/3019563"&gt;margin convention&lt;/a&gt;
+and something odd was happening. See if you can find the same issue.&lt;/p&gt;
+&lt;p&gt;Here's the code (bounding box added for reference)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;top&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;right&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;left&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt;&lt;span class="p"&gt;};&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;left&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;50&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;top&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;right&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;svg&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;select&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#margin_zoom&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;svg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;width&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="c1"&gt;//Bounding Box&lt;/span&gt;
+&lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;rect&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;width&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;height&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;stroke&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;black&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;stroke-width&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;2px&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;fill&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;none&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+
+&lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;g&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;g&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;transform&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;translate(&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;left&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;,&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;margin&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;top&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;)&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;circle&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;cx&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;cy&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;r&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mf"&gt;10&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="nx"&gt;svg&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;call&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;zoom&lt;/span&gt;&lt;span class="p"&gt;().&lt;/span&gt;&lt;span class="nx"&gt;on&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;zoom&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;g&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;attr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;transform&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;d3&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;event&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;)}))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and here's the resulting visualization. Try zooming and panning and see if you
+can spot the issue
+&lt;div id="margin_zoom"&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;You may have noticed that on the initial event the circle jumps to the top
+left corner (0,0 svg coordinates) but behaves normally after that. In the next
+post I'll be explaining why this happens&lt;/p&gt;</content><category term="Data Science"></category><category term="Visualization"></category><category term="D3"></category></entry><entry><title>Why Data Science</title><link href="/WhyDS.html" rel="alternate"></link><published>2016-02-21T10:20:00+00:00</published><updated>2016-02-21T10:20:00+00:00</updated><author><name>Ravin Kumar</name></author><id>tag:None,2016-02-21:/WhyDS.html</id><summary type="html">&lt;p&gt;Say you're the type of person that curious about how the world 
+works. &lt;/p&gt;
+&lt;p&gt;In most cases you would need to spend years studying the subject,
+learning every nuance and detail. If you wanted to learn about Chess
+you might turn to Gary Kasparov or if you were interested in Go …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Say you're the type of person that curious about how the world 
+works. &lt;/p&gt;
+&lt;p&gt;In most cases you would need to spend years studying the subject,
+learning every nuance and detail. If you wanted to learn about Chess
+you might turn to Gary Kasparov or if you were interested in Go 
+Champion Lee Sedol would be a good choice.
+Say you wanted to understand what made a drug safe for humans
+you might need to ask entire team of experts employed company 
+like Merck with over 100 years in the business.&lt;/p&gt;
+&lt;p&gt;No doubt all of these people and organizations would 
+come to mind first. After all as folks
+they have demonstrated their ability to beat any
+other unaided human.&lt;/p&gt;
+&lt;p&gt;But what if a second set of people can outperform these 
+individuals? And what if those people could do it in as little
+as a couple of months, moving from one problem to the next?&lt;/p&gt;
+&lt;p&gt;As you might have guessed the second set of people now exists.
+They are adept at using modern tools and mathematics to 
+to rapidly understand the key drivers
+of complex systems, then create models and predictions
+that outperform any other human or system for the task at hand.&lt;/p&gt;
+&lt;p&gt;As it stands humans using computers are better at Chess, Go,
+and predicting which drugs are safe, better than the traditional experts in
+field. And on top of that these people are given enormous flexibility
+to learn from subject-matter experts, answer difficult questions,
+and learn an enormous amounts about pretty much any topic 
+of their choosing. And they can do this over and over
+for a wide range of subjects.&lt;/p&gt;
+&lt;p&gt;So there exists a job where you get to work with smart people,
+learn, and employers seem to give you a lot of flexibility to do it?&lt;/p&gt;
+&lt;h2&gt;What do I need to know and how do I get this job?&lt;/h2&gt;
+&lt;p&gt;Well it turns out quite a bit. I won't get into the details here
+but typically you have to know a lot of math, be perfect at statistics,
+know a programming language or two, know a lot (seriously a lot) about how
+data is captured, stored, transferred, and interpreted, and be an excellent
+communicator.&lt;/p&gt;
+&lt;p&gt;And then after all trying to learn all that stuff you  have to convince
+one or more people that you're worth paying to do some or all of what's mentioned
+above. This is the data science interview.&lt;/p&gt;</content><category term="Data Science"></category><category term="Data Science"></category></entry></feed>

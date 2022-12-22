@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>A Pelican Blog - Algorithms</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/data-science.html">Data Science</a></li>
+                    <li><a href="/category/life.html">Life</a></li>
+                    <li><a href="/category/pages.html">pages</a></li>
+                    <li><a href="/category/programming.html">Programming</a></li>
+                    <li><a href="/category/statistics.html">Statistics</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/FriendsCircles.html">Interview Question: Friend Circles</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2016-04-23T00:00:00+00:00">
+                Published: Sat 23 April 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/programming.html">Programming</a>.</p>
+<p>tags: <a href="/tag/visualization.html">Visualization</a> <a href="/tag/algorithms.html">Algorithms</a> <a href="/tag/interview.html">Interview</a> </p>
+</footer><!-- /.post-info --><p>There are N students in a class. Some of them are friends, while some are not.
+Their friendship is transitive in nature, i.e., if A is friend of B and B is friend of C,
+then A is also friend of C. A friend circle is a group of students who are directly or
+indirectly friends.
+You have to complete a function int friendCircles(char[][] friends) which returns the
+number of friend circles in the class. Its argument, friends, is a NxN matrix which
+consists of characters 'Y' or 'N'. If friends[i][j] = 'Y', then i and j students are
+friends with each other, otherwise not. You have to return the total number of
+friend circles in the class.
+Note: The method signature will differ by language. For example, Java will have 'int
+friendCircles﴾String[] friends﴿' where "friends" is an array of strings, which can be
+viewed as a 2 dimensional array of characters.</p>
+<p>Constraints:<br>
+-  1 &lt;= N &lt;= 300<br>
+-  Each element of matrix friends will be 'Y' or 'N'<br>
+-  Number of rows and columns will be equal in friends<br>
+-  friends[i][i] = 'Y', where 0 &lt;= i &lt; N<br>
+-  friends[i][j] = friends[j][i], where 0 &lt;= i &lt; j &lt; N  </p>
+<h2>Question Format</h2>
+<p>Online coding challenge</p>
+<h2>Time Constraint</h2>
+<p>1 of 3 Coding problems 2 Hours given</p>
+<h2>Context</h2>
+<p>This question was a 2nd round automated interview question
+given after passing multiple choice statistics question</p>
+<h2>Initial thoughts</h2>
+<p>When I saw this question I made a critical error
+in my initial understanding of what a friends circle meant.</p>
+<p>I was able to make the first key insight which is that the friends and relationships are a structure called
+Network Graph. The problem is asking to find the number
+of unique relationships that span friends. I first
+ran into my first issue here.</p>
+<p>Because of the title Friends Circles I became fixated
+on the thought that a closed loop is what I was
+looking for. Loops in graphs are called cycles
+and numerous algorithms exist to find them. However
+this is not what this question was asked for and I wasted
+pretty much 40 minutes implementing this solution.</p>
+<h2>Where I went wrong</h2>
+<h3>Not understanding the question</h3>
+<p>During the interview I wasn't able to understand the 
+question correctly. Unfortunately since I had no human
+interviewer I was unable to ask for clarification</p>
+<h3>Too slow to iterate</h3>
+<p>It became apparent to me that my understanding was
+wrong when I failed the majority of the test cases.
+But I had already wasted 30 minutes to get to that point
+and ran out of time</p>
+<h2>The Solution</h2>
+<p>It was misleading that the problem was titled Friends Circles
+because the problem is actually asking how many people
+are connected through their friends and their 
+friends. In math terms it's asking how many groups
+of nodes are connected by their edges.  </p>
+<p>Given this understanding the problem is extremely simple.
+Any graph can be composed into a tree. This is a concept
+called tree composition. In this problem all we needed
+to do was pick a node, run a depth first search algorithm
+to find all the nodes that share a tree, then move onto the
+next node and try again. The number of unique trees
+is the answer to all the test cases.</p>
+<h2>Code</h2>
+<p>The first order of business is to read in the inputs that look like this  </p>
+<div class="highlight"><pre><span></span>YYNN  
+YYYN  
+NYYN  
+NNNY  
+</pre></div>
+
+
+<p>into a sparse matrix that looks like this</p>
+<div class="highlight"><pre><span></span><span class="n">network</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:[</span><span class="mi">1</span><span class="p">]</span>
+           <span class="mi">1</span><span class="p">:[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+           <span class="mi">2</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+           <span class="mi">3</span><span class="p">:[]</span>
+           <span class="p">}</span>
+</pre></div>
+
+
+<p>I chose the sparse matrix because beside being very human readable it also
+lends itself to the search process.</p>
+<p>Given a sparse matrix we can now find circles by doing a depth first search
+of that person's friends as shown below.</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">find_circles</span><span class="p">(</span><span class="n">friends_dict</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Iterate through friends dict to find </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="nf">find_friends</span><span class="p">(</span><span class="n">person</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Recursive function that does Depth First Search of all friends</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="n">person</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
+            <span class="n">visited</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">friend</span> <span class="ow">in</span> <span class="n">friends_dict</span><span class="p">[</span><span class="n">person</span><span class="p">]:</span>
+                <span class="n">find_friends</span><span class="p">(</span><span class="n">friend</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">visited</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">circle</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">person</span> <span class="ow">in</span> <span class="n">friends_dict</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">person</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
+            <span class="n">find_friends</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
+            <span class="n">circle</span> <span class="o">+=</span><span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">circle</span>
+</pre></div>
+
+
+<p>The algorithm works initially picking a node. It then traverses the tree
+to find all others nodes (friends) that are connected with the initial node.
+When it exhausts all friends in the chain it tries the next node.</p>
+<p>In particular is the find_friends function. This is the workhouse
+of this implementation. It recursively finds the friends of the current node.
+The find_circles function mostly acts as an outer wrapper, storing the
+friends count and the visited list.</p>
+<p>The visited list is particularly important because it ensures two things.
+One is that we don't waste computational time finding all the friends of a 
+person we've already searched. Additionally, it allows the find_friends
+function to terminate once all the visited friends in a tree have been found.</p>
+<h2>Visualization</h2>
+<p>Here's a visualization of the search process. You notice that once the algorithm
+finds a tree it stays on it until there are no more nodes left.</p>
+<p>To make this visualization the algorithm was also reimplemented in javascript which
+you can find here. The visualization is possible due to the awesome
+d3 javascript library which will get a post of its own in the future</p>
+<h3>Click to start search</h3>
+<p><div id="vis"> </div></p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>You should learn SQL</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+        <meta name="description" content="I'm not the first to say this and I really doubt I'll be the last. Being able to use and understand data is becoming, if not already, a very..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog</a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/data-science.html">Data Science</a></li>
+                    <li><a href="/category/life.html">Life</a></li>
+                    <li><a href="/category/pages.html">pages</a></li>
+                    <li><a href="/category/programming.html">Programming</a></li>
+                    <li><a href="/category/statistics.html">Statistics</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/LearnSQL.html" rel="bookmark"
+           title="Permalink to You should learn SQL">You should learn SQL</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-10-22T00:00:00+00:00">
+                Published: Sat 22 October 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/data-science.html">Data Science</a>.</p>
+<p>tags: <a href="/tag/sql.html">SQL</a> </p>
+</footer><!-- /.post-info -->      <p>I'm not the first to say this and I really doubt
+I'll be the last. Being able to use and understand data is 
+becoming, if not already, a very powerful skill. Let me
+go through the two perspectives I've encountered below.</p>
+<h1>But I'm already learning Python/Pandas/R</h1>
+<p>Cool! So you're already interested and well on your way to being
+a data professional. Then there's two reasons you should learn
+SQL.  </p>
+<h2>You'll become the data girl/guy faster</h2>
+<p>If you're trying to break into an analytical role your employer
+will be much more supportive, and likely even pay you, if you
+can show results. I would argue that SQL is the much quicker
+route to get a data role and start gaining experience for
+the following reasons.</p>
+<h3>Declarative vs Imperative Languages</h3>
+<p>Without going deeply into the nuances between declarative
+and imperative languages what's easier to write and understand?</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;http: iris url&quot;</span><span class="p">)</span> <span class="c1"># This is dependent on your data source</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">5</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">IRIS</span>
+</pre></div>
+
+
+<p>With Python you'll have know how to import pandas, call
+the correct method to read a csv file, know what argument
+to pass to the read_csv method, know about variables, and then
+know you can call a method on that assignment. A lot of the symbols
+are not "English" intuitive either. </p>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">5</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">IRIS</span>
+</pre></div>
+
+
+<p>Comparatively, SQL is much more approachable and basically reads straight across.
+Now yes SQL has its own set of complexities and limitations but just starting
+out it's been my experience that there's much less you need to learn
+before you're able to do useful things. But.... </p>
+<h3>It's probably already setup for you</h3>
+<p>I don't have strong evidence to back this claim I would argue nearly all
+businesses have a need to store data in tabular format and already do. This
+means you just need to start querying it, without having to worry about setting
+up a local Python or R environment, especially when most companies lock
+down admin privileges anyway and make this sometimes difficult to do.</p>
+<h3>Since it's setup there's a resident Database Admin</h3>
+<p>If the assumption above holds there already will be at least one person
+whose job it is to maintain that database who knows SQL. I would argue
+there's more companies that pay a DBA than companies that are hiring data scientists.
+In my experience nearly all companies have data these days, not nearly as many
+have Python/R stack data scientists on staff.</p>
+<h3>SQL has a standard</h3>
+<p>SQL is more standardized than other data languages.
+While there are differences the basic queries are pretty much the same
+across platforms. The switching cost between Python and R is much higher.
+This makes it easier to learn and use in a variety of settings, even if not 
+every place you go uses the same database and SQL variant.</p>
+<h3>You're going to have to learn it anyway</h3>
+<p>Even if you end up using Pandas or R you'll have to find some data. While it's 
+true a lot of data is not in database, a lot of data is in a database.</p>
+<h2>But I'm a manager</h2>
+<p>Even if you have direct reports that can write SQL, knowing a bit of SQL will
+help you become much more literate. Some of the managers who I've worked with
+have been able to use data to great effect to paint a story both to their 
+direct reports and in discussions with their peers and superiors. It's harder
+to argue with the results from a query.</p>
+<h1>In Conclusion</h1>
+<p>If you're relatively new to data it's my opinion that learning SQL gives you
+the most "bang for your buck". It has a relatively low barrier to entry
+given that most companies already use it, and it's simpler to start out with
+and get useful results. And once your employer sees some results it'll be easier
+to sneak some Python/R and fancier stuff in as well!</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

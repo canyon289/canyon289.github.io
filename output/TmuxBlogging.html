@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Faster blogging with Tmux</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+        <meta name="description" content="Writing blog articles is great, but an aspect of it that is not is getting running all the scripts to get everything setup. To start a blogging..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/data-science.html">Data Science</a></li>
+                    <li><a href="/category/life.html">Life</a></li>
+                    <li><a href="/category/pages.html">pages</a></li>
+                    <li class="active"><a href="/category/programming.html">Programming</a></li>
+                    <li><a href="/category/statistics.html">Statistics</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/TmuxBlogging.html" rel="bookmark"
+           title="Permalink to Faster blogging with Tmux">Faster blogging with Tmux</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-05-18T00:00:00+00:00">
+                Published: Fri 18 May 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/ravin-kumar.html">Ravin Kumar</a>
+        </address>
+<p>In <a href="/category/programming.html">Programming</a>.</p>
+<p>tags: <a href="/tag/programming.html">Programming</a> <a href="/tag/mlops.html">MLOps</a> </p>
+</footer><!-- /.post-info -->      <p>Writing blog articles is great, but an aspect of it that is not is getting
+running all the scripts to get everything setup. To start a blogging
+session in no particular order I need to  </p>
+<ul>
+<li>Traverse to my repository  </li>
+<li>Start an http server  </li>
+<li>Traverse directories again  </li>
+<li>Start pelican  </li>
+<li>Traverse directories more  </li>
+<li>Start vim  </li>
+<li>Start writing</li>
+</ul>
+<p>Tmux, a terminal multiplexer, makes it easier to switch between the terminals
+running these processes, but starting them manually is a pain</p>
+<p>Luckily Tmux supports scripting which makes solving this problem really easy.</p>
+<h1>Tmux script</h1>
+<p>The shell script below runs all the commands needed to start a blogging
+environment on my computers.</p>
+<div class="highlight"><pre><span></span><span class="c1"># !/bin/sh</span>
+<span class="c1"># Small script that sets up blogging environment with one command</span>
+
+<span class="c1"># Kill open session</span>
+tmux kill-session -t blog <span class="o">||</span> <span class="nb">true</span>
+
+<span class="c1"># Create new session</span>
+tmux new-session -d -s blog 
+
+<span class="c1"># C-m is carriage return in tmux</span>
+tmux send-keys <span class="s1">&#39;source activate blog &amp;&amp; pelican -r -s pelicanconf.py&#39;</span> <span class="s1">&#39;C-m&#39;</span> 
+
+<span class="c1"># Start http server</span>
+tmux <span class="k">select</span>-window -t blog:0
+tmux split-window -v 
+tmux send-keys <span class="s1">&#39;cd .. &amp;&amp; python -m http.server&#39;</span> <span class="s1">&#39;C-m&#39;</span>
+
+<span class="c1"># Ready to blog</span>
+tmux new-window -n blog_article -c <span class="nv">$PWD</span><span class="s2">&quot;/content&quot;</span>
+tmux att -t blog
+</pre></div>
+
+
+<p>Breaking this apart, the first thing to do is ensure that no other tmux session
+is already running all the processes I need. This is done by checking
+if a session named <code>blog</code> is running and if so kills it. </p>
+<div class="highlight"><pre><span></span><span class="c1"># Kill open session</span>
+tmux kill-session -t blog <span class="o">||</span> <span class="nb">true</span>
+</pre></div>
+
+
+<p>The next step is creating a ession to group all the windows and panes
+that will be running the processes. The first done is starting a session
+named blog. Next the pelican process is started. <code>send-keys</code> was used
+instead of running the command directly because in tmux if process stops
+the pane would close, not a behavior that was desired. <code>C-m</code> is a carriage
+return and instructs tmux to run the command after typing it in, the same
+as pressing enter does when manually typing the command.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Create new session</span>
+tmux new-session -d -s blog 
+
+<span class="c1"># C-m is carriage return in tmux</span>
+tmux send-keys <span class="s1">&#39;source activate blog &amp;&amp; pelican -r -s pelicanconf.py&#39;</span> <span class="s1">&#39;C-m&#39;</span> 
+</pre></div>
+
+
+<p>With the pelican process ready to generate the site, the next step is to
+start a local server to view the blog in a browser</p>
+<div class="highlight"><pre><span></span><span class="c1"># Start http server</span>
+tmux <span class="k">select</span>-window -t blog:0
+tmux split-window -v 
+tmux send-keys <span class="s1">&#39;cd .. &amp;&amp; python -m http.server&#39;</span> <span class="s1">&#39;C-m&#39;</span>
+</pre></div>
+
+
+<p>Lastly we start a new window in the directory where the markdown files 
+where for this blog are stored. The final command is attaching the tmux
+session to the running terminal to start writing.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Ready to blog</span>
+tmux new-window -n blog_article -c <span class="nv">$PWD</span><span class="s2">&quot;/content&quot;</span>
+tmux att -t blog
+</pre></div>
+
+
+<p>And with that were done!</p>
+<h1>Why go through the trouble</h1>
+<p>If the task I want to do is write a blog, every step between is a distraction
+and a time waste. This script allows me to bypass all the manual steps
+and jump straight into the value add work, writing content to share with you! </p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
