@@ -197,26 +197,12 @@ save_as: index.html
 </div></a></div>
 
 
-# Talks
+# Other Resources
 
-### Intro to Bayesian Model Evaluation and Visualization
-SciPy 2019  
-[Recording](https://www.youtube.com/watch?v=bmWMdVQlzIA&E)
-&nbsp;
-[Code](https://github.com/canyon289/bayesian-model-evaluation)  
 <br>
 
-### PyTest for Data Scientists
-PyDataLA 2018  
-[Recording](https://www.youtube.com/watch?v=dY1nNtDTruE)
-&nbsp;
-[Code](https://github.com/canyon289/PyTestforDataSciencePyDataLA)  
-<br>
+* [Talk] [SciPy 2019: Intro to Bayesian Model Evaluation and Visualization](https://www.youtube.com/watch?v=bmWMdVQlzIA&E) ([Code](https://github.com/canyon289/bayesian-model-evaluation))
 
-### PyTest
-Code Camp 2017  
-_Introductory level talk meant to encourage others to use python testing by going through basic and intermediate PyTest examples._  
-[Code](https://github.com/canyon289/CodeCampPytest)
-&nbsp;
-[Slides](https://docs.google.com/presentation/d/11A742qhUaQdtwL3IaXQGzT3lB9PfRTXOIN4SpgSbwxo/edit#slide=id.p)  
-<br>
+* [Talk] [PyDataLA 2018: PyTest for Data Scientists](https://www.youtube.com/watch?v=dY1nNtDTruE) ([Code](https://github.com/canyon289/PyTestforDataSciencePyDataLA))
+
+* [Talk] [Code Camp 2017: Introduction to PyTest](https://docs.google.com/presentation/d/11A742qhUaQdtwL3IaXQGzT3lB9PfRTXOIN4SpgSbwxo/edit#slide=id.p) ([Code](https://github.com/canyon289/CodeCampPytest))
