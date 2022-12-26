@@ -21,11 +21,10 @@ and community discussions will occur on the [Intuitive Bayes Discourse](https://
 If you're already convinced you can sign up for the mailing list here.
 Updates will be sent shortly after the new year.
 
-<!-- MailerLite Universal -->
-
+<!-- MailerLite State Space Model Book Club -->
 <div class="ml-form-embed"
   data-account="3479153:h8h4b4n7u8"
-  data-form="5689564:h2f9s0">
+  data-form="5842164:w6l8b2">
 </div>
 
 
@@ -64,7 +63,7 @@ Dynamax, JAX, and newly released textbooks this was an easy choice!
 We're going to stretch the meaning of book to mean Jupyter notebooks. 
 Our primary material of study will be the notebooks in the [Dynamax documentation](https://probml.github.io/dynamax/).
 Our focus will be on learning the examples and models implemented there thoroughly,
-such as Hidden Markov Models, Linear Gaussian, Non Linear Gaussian, and Generalized Gaussian State space models.
+such as Hidden Markov Models, Linear Gaussian, Non-Linear Gaussian, and Generalized Gaussian State space models.
 We'll use many secondary references such as Kevin's book and others.
 At the end we'll understand the theory of State Space Models and how to use them in practice with Dynamax.
 
@@ -83,6 +82,7 @@ Subscribing to the mailing list will get you an invite link
 to the Discourse and ensure you get all future updates.
 
 <!-- MailerLite Universal -->
+<!-- MailerLite Universal -->
 <script>
 (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
 var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
@@ -92,4 +92,6 @@ _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.ma
 
 var ml_account = ml('accounts', '3479153', 'h8h4b4n7u8', 'load');
 </script>
+<!-- End MailerLite Universal -->
+
 <!-- End MailerLite Universal -->
