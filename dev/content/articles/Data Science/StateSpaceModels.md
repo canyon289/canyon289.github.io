@@ -6,7 +6,7 @@ Slug: ssm-book-club
 Authors: Ravin Kumar
 Status: Published
 
-Our causal inference book club was a success.
+Our [causal inference book club]({filename}BookClub2022.md) was a success.
 Over 300 people took part and every session was well attended
 So we're going to do this again.
 This time we'll focus State Space Models, and specifically on Dynamax
@@ -15,9 +15,11 @@ a new library that makes these simple to use in a modern data stack.
 
 <img src="https://raw.githubusercontent.com/probml/dynamax/main/logo/logo.gif" alt="Dynmax" style="width:400px"> 
 
-
-If you're already convinced you can signup for the mailing list here.
-Emails and updates will be sent shortly after the new year.
+Just like our causal inference bookclub.
+Live sessions will get posted to my [Youtube Channel](https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/featured)
+and community discussions will occur on the [Intuitive Bayes Discourse](https://community.intuitivebayes.com/).
+If you're already convinced you can sign up for the mailing list here.
+Updates will be sent shortly after the new year.
 
 <!-- MailerLite Universal -->
 
@@ -27,7 +29,7 @@ Emails and updates will be sent shortly after the new year.
 </div>
 
 
-Otherwise read on for why we picked this topic 
+Otherwise, read on for why we picked this topic 
 and the details of this next phase of our book club.
 
 ## A focus on explainable data and models
