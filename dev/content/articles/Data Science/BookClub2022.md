@@ -6,6 +6,16 @@ Slug: BookClub2022
 Authors: Ravin Kumar
 Status: Published
 
+### _2023 Update_
+If you're reading this for the first time, this book club has been completed. 
+We read Scott Cunningham's text [Causal Inference: The Mixtape](https://mixtape.scunning.com/)
+There were many great discussions on both [YouTube](https://www.youtube.com/watch?v=B5sxkQlWdU0&list=PLEfTblCtQoU7zqPo1f7iXqQAlN_72lx1k) and in the [community](https://community.intuitivebayes.com/)
+
+
+If you're looking for a current book club to join check my more recent blog posts to find an active one.
+Whichever you route you choose, good on you for your commitment to life long learning.
+
+## Original post
 A couple of days ago I thought a stats book club would be great but wasn't sure if anyone else thought so too
 so thought I'd ask the twitterverse.
 <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Thinking of starting a stats book club where each week or two we walk through a chapter, test out models, and generally chat about<br><br>Probably over livestream as that&#39;s been working out great<br><br>Anyone interested in this idea? Ive already got one book in mind</p>&mdash; RavinKumar (@canyon289) <a href="https://twitter.com/canyon289/status/1530048907526299648?ref_src=twsrc%5Etfw">May 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
@@ -15,6 +25,7 @@ Let's make it happen.
 For everyone who responded, thank you. 
 You made this happen.
 If you're certain you want to sign up the mailing list link is below.
+
 
 ## Goal, Structure, and Pacing
 The goal of this is to encourage continuous learning and sharing of knowledge in an encouraging environment.
