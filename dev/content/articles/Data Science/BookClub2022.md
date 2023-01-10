@@ -8,8 +8,8 @@ Status: Published
 
 ### _2023 Update_
 If you're reading this for the first time, this book club has been completed. 
-We read Scott Cunningham's text [Causal Inference: The Mixtape](https://mixtape.scunning.com/)
-There were many great discussions on both [YouTube](https://www.youtube.com/watch?v=B5sxkQlWdU0&list=PLEfTblCtQoU7zqPo1f7iXqQAlN_72lx1k) and in the [community](https://community.intuitivebayes.com/)
+We read Scott Cunningham's text [Causal Inference: The Mixtape](https://mixtape.scunning.com/).
+There were many great discussions on across [YouTube](https://www.youtube.com/watch?v=B5sxkQlWdU0&list=PLEfTblCtQoU7zqPo1f7iXqQAlN_72lx1k) and in the [community](https://community.intuitivebayes.com/)
 
 
 If you're looking for a current book club to join check my more recent blog posts to find an active one.
