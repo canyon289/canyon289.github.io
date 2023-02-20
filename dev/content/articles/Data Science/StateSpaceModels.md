@@ -72,7 +72,7 @@ At the end we'll understand the theory of State Space Models and how to use them
 This book club will follow the same structure as the previous one.
 Every couple of weeks we'll work through a block of material together.
 Synchronous session will happen over livestream, to get both a live community discussion and also ensured sessions are recorded for folks to watch later.
-We'll use the [Intuitive Bayes discourse](www.community.intuitivebayes.com) for asynchronous discussions 
+We'll use the [Intuitive Bayes discourse](https://community.intuitivebayes.com) for asynchronous discussions 
 
 
 We will be starting this book club in late January after our [final causal inference session](https://community.intuitivebayes.com/t/interview-with-scott-on-jan-15th-post-your-questions-here/647/2).
