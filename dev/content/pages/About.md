@@ -130,12 +130,15 @@ save_as: index.html
 <!-- Left -->
     <div class="about-box">
         <h1 style="margin-top:0; text-align: left;">About Me</h1>
-        <p>I am a data scientist at Google. My focus is supporting strategic decision making with data, although all my opinions here are my own. Previously, I worked at Sweetgreen and SpaceX, doing the same line of work as now but on different applications, which is using data to inform staffing strategy and rocket launch cadence.</p>
-        <p>To become a better "decision" scientist, I'm currently focusing on three topics:</p>
+        <p>I am a research scientist at Google. I've worked on Generative Modeling for 7 years.
+        I started with Bayesian Statistics. Now I focus on GenAI product and research. I [publish papers](https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en) on topics such as AI safety,
+        build products such as [NotebookLM](www.notebooklm.google.com),
+        and develop Gemma and Gemini models.
+        <p>I'm currently focusing on three topics:</p>
         <ol>
-            <li>Organizational influence and leadership</li>
-            <li>Advanced applied mathematics, e.g. Causal Inference, Decision Theory</li>
-            <li>Knowledge of business processes</li>
+            <li>Applied generative modeling</li>
+            <li>Model evalulation and training</li>
+            <li>GenAI model and sociotechnic safety</li>
         </ol>
         <p>I like to share and teach the skills I've found useful from my career, whether it be here or in <a href="./blog.html">my blog</a>, on <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live">YouTube</a>, or as part of <a href="https://www.intuitivebayes.com/">my course series</a>.</p>
         <p>If you'd prefer to have updates pushed to you, you can subscribe to my mailing list.</p>
@@ -179,6 +182,13 @@ save_as: index.html
 </div>
 
 # See my work
+<div><a href="https://ravinkumar.com/GenAiGuidebook/book_intro.html"><div class="secondary-box my-work">
+    <div class="my-work-img-container"><img src="./images/about/GenaIGuidebook.png"/></div>
+    <div class="my-work-text">
+        <h3>A guidebook to Generative AI topics</h3>
+        <p>There's a lot going on in GenAI these days. This guidebook helps you find your way</p>
+    </div>
+</div></a></div>
 
 <div><a href="https://bayesiancomputationbook.com/welcome.html"><div class="secondary-box my-work">
     <div class="my-work-img-container"><img src="./images/about/book.jpeg" /></div>
