@@ -131,8 +131,8 @@ save_as: index.html
     <div class="about-box">
         <h1 style="margin-top:0; text-align: left;">About Me</h1>
         <p>I am a research scientist at Google. I've worked on Generative Modeling for 7 years.
-        I started with Bayesian Statistics. Now I focus on GenAI product and research. I [publish papers](https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en) on topics such as AI safety,
-        build products such as [NotebookLM](www.notebooklm.google.com),
+        I started with Bayesian Statistics. Now I focus on GenAI product and research. I  <a href="https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en"> publish papers </a> on topics such as AI safety,
+        build products such as <a href="https://notebooklm.google.com"> NotebookLM </a>,
         and develop Gemma and Gemini models.
         <p>I'm currently focusing on three topics:</p>
         <ol>
@@ -141,13 +141,13 @@ save_as: index.html
             <li>GenAI model and sociotechnic safety</li>
         </ol>
         <p>I like to share and teach the skills I've found useful from my career, whether it be here or in <a href="./blog.html">my blog</a>, on <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live">YouTube</a>, or as part of <a href="https://www.intuitivebayes.com/">my course series</a>.</p>
-        <p>If you'd prefer to have updates pushed to you, you can subscribe to my mailing list.</p>
-        <p>I also contribute heavily to open source, mainly with <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC</a>.</p>
-        <p>I'm always happy to connect with interested folks. Feel free to reach out anytime.</p>
+        If you'd prefer to have updates pushed to you, you can subscribe to my mailing list.
+        I also contribute heavily to open source, mainly with <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC</a>.
+        I'm always happy to connect with interested folks. Feel free to reach out anytime.</p>
     </div>
 <!-- Right -->
     <div class="about-box">
-        <h1 style="margin-top:0; text-align: left;">My Ongoing Work</h1>
+        <h1 style="margin-top:0; text-align: left;">Some Highlights</h1>
         <a href="https://github.com/canyon289/"><div class="action-link"><img src="./images/about/github.png" /><h3>My Open Source Profile</h3></div></a>
         <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live"><div class="action-link"><img src="./images/about/youtube.png" /><h3>My YouTube Channel</h3></div></a>
         <a href="./blog.html"><div class="action-link"><img src="./images/logo/logo.png" /><h3>My Blog</h3></div></a>
