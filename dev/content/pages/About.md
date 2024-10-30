@@ -185,8 +185,8 @@ save_as: index.html
 <div><a href="https://ravinkumar.com/GenAiGuidebook/book_intro.html"><div class="secondary-box my-work">
     <div class="my-work-img-container"><img src="./images/about/GenaIGuidebook.png"/></div>
     <div class="my-work-text">
-        <h3>A guidebook to Generative AI topics</h3>
-        <p>There's a lot going on in GenAI these days. This guidebook helps you find your way</p>
+        <h3>A guidebook to Generative AI</h3>
+        <p>There's a lot going on in GenAI these days. This guidebook helps you find your way.</p>
     </div>
 </div></a></div>
 
