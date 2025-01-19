@@ -5,6 +5,8 @@ Authors: Ravin Kumar
 Status: Published
 save_as: index.html 
 
+<!-- End MailerLite Universal -->
+
 <style type="text/css">
     /* Headers */
     h1, h2 {
@@ -154,29 +156,8 @@ save_as: index.html
         <div class="secondary-box" style="width: 100%;"> 
             <h3 style="margin-top:0;">Join my mailing list for updates</h3>
             <p>Get the latest updates on my blog posts, new YouTube series, upcoming talks, ongoing collaborations, and thoughtful discussions. You can unsubscribe at anytime.</p>
-            <form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/k0j3t8" data-code="k0j3t8" method="post" target="_blank" style="height: 32px;">
-                <div class="ml-form-formContent horozintalForm">
-                    <div class="ml-form-horizontalRow">
-                        <div class="ml-input-horizontal">
-                            <div style="width:100%" class="horizontal-fields">
-                                <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                                    <input type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email" aria-invalid="false">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ml-button-horizontal primary">
-                            <button type="submit" class="primary" style="font-weight: 700; font-size: 14px;">Subscribe</button>
-                            <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span> </button>
-                        </div>
-                    </div>
-                </div>
-                <input type="hidden" name="ml-submit" value="1" aria-invalid="false">
-                <div class="ml-mobileButton-horizontal">
-                    <button type="submit" class="primary" style="font-weight: 700; font-size: 14px;">Subscribe</button>
-                    <button disabled="disabled" style="display:none" type="button" class="loading"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span> </button>
-                </div>
-                <input type="hidden" name="anticsrf" value="true" aria-invalid="false">
-            </form>
+        <!-- Mailerlite Form -->
+        <div class="ml-embedded" data-form="j1X8Q9"></div>
         </div>
     </div>
 </div>
@@ -216,3 +197,4 @@ save_as: index.html
 * [Talk] [PyDataLA 2018: PyTest for Data Scientists](https://www.youtube.com/watch?v=dY1nNtDTruE) ([Code](https://github.com/canyon289/PyTestforDataSciencePyDataLA))
 
 * [Talk] [Code Camp 2017: Introduction to PyTest](https://docs.google.com/presentation/d/11A742qhUaQdtwL3IaXQGzT3lB9PfRTXOIN4SpgSbwxo/edit#slide=id.p) ([Code](https://github.com/canyon289/CodeCampPytest))
+
