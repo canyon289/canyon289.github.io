@@ -132,9 +132,9 @@ save_as: index.html
 <!-- Left -->
     <div class="about-box">
         <h1 style="margin-top:0; text-align: left;">About Me</h1>
-        <p>I am a researcher at Google Deepmind. My focus for the last decade has been applied generative models. I previously bespoke probabilistic Bayesian model at organizations such as SpaceX. Most recently I've worked on LLMs such as Gemini and Gemma.
+        <p>I am a researcher at Google Deepmind. For the last decade, I've focused on applied generative models. I previously built bespoke probabilistic Bayesian models for organizations such as SpaceX. Most recently I've worked on LLMs such as Gemini and Gemma.
         </p>
-        <p>At Google I contributed both to products such as <a href="https://notebooklm.google.com"> NotebookLM </a> and <a href="https://deepmind.google/models/project-mariner/"> Project Mariner </a>. You can find my work on <a href="https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en"> Google Scholar </a> <a href="./blog.html">my blog</a>, on <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live">YouTube channel</a>, or my text books. </p>
+        <p>At Google I contributed both to products such as <a href="https://notebooklm.google.com"> NotebookLM </a> and <a href="https://deepmind.google/models/project-mariner/"> Project Mariner </a>. You can find my work on <a href="https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en"> Google Scholar </a>, <a href="./blog.html">my blog</a>, on <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live">my YouTube channel</a>, or in my text books. </p>
         <p>I also contribute heavily to open source, mainly with <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC</a>.
         I'm always happy to connect with interested folks. Feel free to reach out anytime.</p>
     </div>
@@ -158,7 +158,7 @@ save_as: index.html
     <div class="my-work-img-container"><img src="./images/about/GenaIGuidebook.png"/></div>
     <div class="my-work-text">
         <h3>A guidebook to Generative AI</h3>
-        <p>There's a lot going on in GenAI these days. This guidebook helps you find your way.</p>
+        <p>This guidebook cuts through the noise, providing a clear roadmap for developers and researchers to navigate the rapidly evolving world of Generative AI.</p>
     </div>
 </div></a></div>
 
@@ -166,7 +166,7 @@ save_as: index.html
     <div class="my-work-img-container"><img src="./images/about/book.jpeg" /></div>
     <div class="my-work-text">
         <h3>Bayesian Modeling and Computation in Python</h3>
-        <p>I co-authored a free textbook on statistical modeling.</p>
+        <p>I co-authored a free, open-source textbook used by thousands for statistical modeling.</p>
     </div>
 </div></a></div>
 
@@ -174,7 +174,7 @@ save_as: index.html
     <div class="my-work-img-container"><img src="./images/about/course.png" /></div>
     <div class="my-work-text">
         <h3>Courses in Intuitive Statistics</h3>
-        <p>I co-developed courses for professionals looking to learn applied statistics hand-on.</p>
+        <p>I developed a series of hands-on courses to help professionals master applied statistics.</p>
     </div>
 </div></a></div>
 
