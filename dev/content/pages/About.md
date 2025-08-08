@@ -132,19 +132,10 @@ save_as: index.html
 <!-- Left -->
     <div class="about-box">
         <h1 style="margin-top:0; text-align: left;">About Me</h1>
-        <p>I am a research scientist at Google. I've worked on Generative Modeling for 7 years.
-        I started with Bayesian Statistics. Now I focus on GenAI product and research. I  <a href="https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en"> publish papers </a> on topics such as AI safety,
-        build products such as <a href="https://notebooklm.google.com"> NotebookLM </a>,
-        and develop Gemma and Gemini models.
-        <p>I'm currently focusing on three topics:</p>
-        <ol>
-            <li>Applied generative modeling</li>
-            <li>Model evalulation and training</li>
-            <li>GenAI model and sociotechnic safety</li>
-        </ol>
-        <p>I like to share and teach the skills I've found useful from my career, whether it be here or in <a href="./blog.html">my blog</a>, on <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live">YouTube</a>, or as part of <a href="https://www.intuitivebayes.com/">my course series</a>.</p>
-        If you'd prefer to have updates pushed to you, you can subscribe to my mailing list.
-        I also contribute heavily to open source, mainly with <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC</a>.
+        <p>I am a researcher at Google Deepmind. My focus for the last decade has been applied generative models. I previously bespoke probabilistic Bayesian model at organizations such as SpaceX. Most recently I've worked on LLMs such as Gemini and Gemma.
+        </p>
+        <p>At Google I contributed both to products such as <a href="https://notebooklm.google.com"> NotebookLM </a> and <a href="https://deepmind.google/models/project-mariner/"> Project Mariner </a>. You can find my work on <a href="https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en"> Google Scholar </a> <a href="./blog.html">my blog</a>, on <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live">YouTube channel</a>, or my text books. </p>
+        <p>I also contribute heavily to open source, mainly with <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC</a>.
         I'm always happy to connect with interested folks. Feel free to reach out anytime.</p>
     </div>
 <!-- Right -->
@@ -153,11 +144,11 @@ save_as: index.html
         <a href="https://github.com/canyon289/"><div class="action-link"><img src="./images/about/github.png" /><h3>My Open Source Profile</h3></div></a>
         <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live"><div class="action-link"><img src="./images/about/youtube.png" /><h3>My YouTube Channel</h3></div></a>
         <a href="./blog.html"><div class="action-link"><img src="./images/logo/logo.png" /><h3>My Blog</h3></div></a>
-        <div class="secondary-box" style="width: 100%;"> 
-            <h3 style="margin-top:0;">Join my mailing list for updates</h3>
-            <p>Get the latest updates on my blog posts, new YouTube series, upcoming talks, ongoing collaborations, and thoughtful discussions. You can unsubscribe at anytime.</p>
         <!-- Mailerlite Form -->
-        <div class="ml-embedded" data-form="j1X8Q9"></div>
+        <!-- <div class="secondary-box" style="width: 100%;"> 
+            <h3 style="margin-top:0;">Join my mailing list for updates</h3>
+            <p>Get the latest updates on my blog posts, new YouTube series, upcoming talks, ongoing collaborations, and thoughtful discussions. You can unsubscribe at anytime.</p> -->
+        <!-- <div class="ml-embedded" data-form="j1X8Q9"></div> -->
         </div>
     </div>
 </div>
@@ -188,7 +179,7 @@ save_as: index.html
 </div></a></div>
 
 
-# Other Resources
+<!-- # Other Resources
 
 <br>
 
@@ -196,5 +187,5 @@ save_as: index.html
 
 * [Talk] [PyDataLA 2018: PyTest for Data Scientists](https://www.youtube.com/watch?v=dY1nNtDTruE) ([Code](https://github.com/canyon289/PyTestforDataSciencePyDataLA))
 
-* [Talk] [Code Camp 2017: Introduction to PyTest](https://docs.google.com/presentation/d/11A742qhUaQdtwL3IaXQGzT3lB9PfRTXOIN4SpgSbwxo/edit#slide=id.p) ([Code](https://github.com/canyon289/CodeCampPytest))
+* [Talk] [Code Camp 2017: Introduction to PyTest](https://docs.google.com/presentation/d/11A742qhUaQdtwL3IaXQGzT3lB9PfRTXOIN4SpgSbwxo/edit#slide=id.p) ([Code](https://github.com/canyon289/CodeCampPytest)) -->
 
