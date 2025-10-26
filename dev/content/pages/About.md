@@ -5,6 +5,81 @@ Authors: Ravin Kumar
 Status: Published
 save_as: index.html 
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://ravinkumar.com/#person",
+      "name": "Ravin Kumar",
+      "url": "https://ravinkumar.com/",
+      "jobTitle": "Researcher",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Google Deepmind"
+      },
+      "description": "Ravin Kumar is a researcher at Google Deepmind specializing in applied generative models, including LLMs like Gemini and Gemma. He has a decade of experience building bespoke probabilistic Bayesian models and contributes to open-source projects like ArviZ and PyMC.",
+      "sameAs": [
+        "https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en",
+        "https://github.com/canyon289/",
+        "https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live"
+        "https://github.com/settings/profile",
+        "https://x.com/canyon289",
+        "https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en&authuser=2",
+        "https://bsky.app/profile/ravink.bsky.social"
+      ],
+      "knowsAbout": [
+        "Generative AI",
+        "Large Language Models",
+        "Bayesian Modeling",
+        "PyMC",
+        "ArviZ",
+        "Statistical Modeling"
+      ],
+      "workExample": [
+        {
+          "@type": "Book",
+          "name": "A guidebook to Generative AI",
+          "url": "https://ravinkumar.com/GenAiGuidebook/book_intro.html",
+          "author": {
+            "@id": "https://ravinkumar.com/#person"
+          }
+        },
+        {
+          "@type": "Book",
+          "name": "Bayesian Modeling and Computation in Python",
+          "url": "https://bayesiancomputationbook.com/welcome.html",
+           "author": {
+            "@id": "https://ravinkumar.com/#person"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Courses in Intuitive Statistics",
+          "url": "https://www.intuitivebayes.com/",
+          "provider": {
+             "@id": "https://ravinkumar.com/#person"
+          }
+        }
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ravinkumar.com/"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://ravinkumar.com/",
+      "name": "Ravin Kumar",
+      "publisher": {
+        "@id": "https://ravinkumar.com/#person"
+      }
+    }
+  ]
+}
+</script>
+
 <!-- End MailerLite Universal -->
 
 <style type="text/css">
