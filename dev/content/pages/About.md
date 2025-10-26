@@ -66,6 +66,12 @@ save_as: index.html
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ravinkumar.com/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ravinkumar.com/images/about/ProfilePhoto.jpg",
+        "height": "480",
+        "width": "480"
       }
     },
     {
@@ -74,6 +80,10 @@ save_as: index.html
       "name": "Ravin Kumar",
       "publisher": {
         "@id": "https://ravinkumar.com/#person"
+      },
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ravinkumar.com/images/logo/logo.png"
       }
     }
   ]
