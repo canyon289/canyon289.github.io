@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Ravin Kumar'
 SITENAME = ['Ravin Kumar']
 SITEURL = 'https://ravinkumar.com'
-META_DESCRIPTION = 'Ravin Kumar is a data scientist and an open source contributor.'
+META_DESCRIPTION = 'Ravin Kumar is a small and large model builder and an open source contributor.'
 
 # Content Path
 PATH = 'content'
