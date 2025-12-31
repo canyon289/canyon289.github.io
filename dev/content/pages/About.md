@@ -23,7 +23,7 @@ save_as: index.html
       "sameAs": [
         "https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en",
         "https://github.com/canyon289/",
-        "https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live"
+        "https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live",
         "https://github.com/settings/profile",
         "https://x.com/canyon289",
         "https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en&authuser=2",
