@@ -17,47 +17,12 @@
 		<meta name="twitter:site" content="https://twitter.com/canyon289" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Jupyter Notebooks -->
-
-<!--Notebook Configuration-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true,
-          displayMath: [['$$','$$'], ["\\[","\\]"]]
-      }
-  });
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-      $("div.collapseheader").click(function () {
-      $header = $(this).children("span").first();
-      $codearea = $(this).children(".input_area");
-      console.log($(this).children());
-      $codearea.slideToggle(500, function () {
-          $header.text(function () {
-              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
-          });
-      });
-  });
-  });
-</script>
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/codesyntax.css" />
         <link rel="stylesheet" href="https://ravinkumar.com/theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -167,23 +132,22 @@ way to solve this.<br>
 However if you're partially lucky you'll be sitting in 
 front of a computer with no one around.</p>
 <p>As it turns out I was partially lucky.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="c1">#Python Monte Carlo Simulation</span></span>
-<span class="code-line"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span></span>
-<span class="code-line"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">)))</span></span>
-<span class="code-line"><span class="n">number_of_trials</span><span class="p">,</span> <span class="n">matches</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="k">while</span> <span class="n">number_of_trials</span> <span class="o">&lt;</span> <span class="mi">1000000</span><span class="p">:</span></span>
-<span class="code-line">    <span class="n">c1</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)]</span></span>
-<span class="code-line">    <span class="n">c2</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)]</span></span>
-<span class="code-line">    <span class="k">if</span> <span class="n">c2</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">c1</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span></span>
-<span class="code-line">        <span class="n">matches</span> <span class="o">+=</span><span class="mi">1</span></span>
-<span class="code-line"></span>
-<span class="code-line">    <span class="n">number_of_trials</span> <span class="o">+=</span><span class="mi">1</span></span>
-<span class="code-line">    <span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="o">/</span><span class="n">number_of_trials</span><span class="p">)</span></span>
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1">#Python Monte Carlo Simulation</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">24</span><span class="p">)))</span>
+<span class="n">number_of_trials</span><span class="p">,</span> <span class="n">matches</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">number_of_trials</span> <span class="o">&lt;</span> <span class="mi">1000000</span><span class="p">:</span>
+    <span class="n">c1</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)]</span>
+    <span class="n">c2</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="n">replace</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="n">c2</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">c1</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="n">matches</span> <span class="o">+=</span><span class="mi">1</span>
+
+    <span class="n">number_of_trials</span> <span class="o">+=</span><span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">matches</span><span class="o">/</span><span class="n">number_of_trials</span><span class="p">)</span>
+</code></pre></div>
 
 <p>The above code is as crude as it gets. Python
 randomly picks 5 integers out of 24 with no replacement twice.
@@ -219,27 +183,26 @@ to get the chance of a sequence of picks. We also can add
 each way the picks could play out to get the total chance
 at least 4 match. To save yourself a lot of multiplication
 and division here's the math in Python.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="nb">print</span><span class="p">(</span></span>
-<span class="code-line"><span class="c1">#All five match</span></span>
-<span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span> <span class="o">+</span> </span>
-<span class="code-line"></span>
-<span class="code-line"><span class="c1">#First four are match words, last one isn&#39;t</span></span>
-<span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span> <span class="o">+</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="c1">#First 3 are match words, 4th doesn&#39;t, last does</span></span>
-<span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>  <span class="o">+</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="c1">#First 2 are match words, 3rd doesn&#39;t, last 2 do</span></span>
-<span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>  <span class="o">+</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="c1">#First matches words, 2nd doesn&#39;t, last 3 do</span></span>
-<span class="code-line"><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>  <span class="o">+</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="c1">#First doesn&#39;t match, last 4 do</span></span>
-<span class="code-line"><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span></span>
-<span class="code-line"><span class="p">)</span></span>
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span>
+<span class="c1">#All five match</span>
+<span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span> <span class="o">+</span> 
 
+<span class="c1">#First four are match words, last one isn&#39;t</span>
+<span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span> <span class="o">+</span>
+
+<span class="c1">#First 3 are match words, 4th doesn&#39;t, last does</span>
+<span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>  <span class="o">+</span>
+
+<span class="c1">#First 2 are match words, 3rd doesn&#39;t, last 2 do</span>
+<span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>  <span class="o">+</span>
+
+<span class="c1">#First matches words, 2nd doesn&#39;t, last 3 do</span>
+<span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>  <span class="o">+</span>
+
+<span class="c1">#First doesn&#39;t match, last 4 do</span>
+<span class="p">(</span><span class="mi">19</span><span class="o">/</span><span class="mi">24</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">23</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">22</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">21</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">20</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div>
 
 <p>If you multiplied and divided by hand it would be a pain
 but you would get the exact answer.</p>
@@ -256,19 +219,18 @@ X winning combinations out of Y possible combinations.</p>
 <div class="math">$${{5 \choose 4}{19 \choose 1} + {5 \choose 5}{19 \choose 0}}
   \over {25 \choose 5}$$</div>
 <p>In python we can use the Combinations function to get the answer</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">combinations</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="k">def</span> <span class="nf">cl</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span></span>
-<span class="code-line">    <span class="sd">&#39;&#39;&#39;</span></span>
-<span class="code-line"><span class="sd">    k combination of out length n set</span></span>
-<span class="code-line"><span class="sd">    &#39;&#39;&#39;</span></span>
-<span class="code-line">    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">combinations</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="n">k</span><span class="p">)))</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="n">numerator</span> <span class="o">=</span>  <span class="n">cl</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="n">cl</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">cl</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="n">cl</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span></span>
-<span class="code-line"><span class="n">denominator</span> <span class="o">=</span> <span class="n">cl</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span></span>
-<span class="code-line"><span class="n">numerator</span><span class="o">/</span><span class="n">denominator</span></span>
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">combinations</span>
 
+<span class="k">def</span><span class="w"> </span><span class="nf">cl</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    k combination of out length n set</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">combinations</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="n">k</span><span class="p">)))</span>
+
+<span class="n">numerator</span> <span class="o">=</span>  <span class="n">cl</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="o">*</span> <span class="n">cl</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">cl</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span><span class="o">*</span><span class="n">cl</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">denominator</span> <span class="o">=</span> <span class="n">cl</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">numerator</span><span class="o">/</span><span class="n">denominator</span>
+</code></pre></div>
 
 <p>There are some additional tricks that would allow you to simplify the calculation
 even further but I leave it up to you to explore combinatorics further</p>
@@ -287,10 +249,13 @@ even further but I leave it up to you to explore combinatorics further</p>
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
     mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
         "    displayAlign: '"+ align +"'," +
@@ -304,6 +269,8 @@ even further but I leave it up to you to explore combinatorics further</p>
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
@@ -324,6 +291,8 @@ even further but I leave it up to you to explore combinatorics further</p>
                 "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
             "});" +
         "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 </script>
@@ -383,8 +352,7 @@ even further but I leave it up to you to explore combinatorics further</p>
 		<!-- Javascript -->
 		<script type="text/javascript" src="https://ravinkumar.com/theme/js/main.js"></script>
 		
-		<!-- Javascript for Pelican Javascript plugin -->
-		
+
 	</body>
 
 </html>

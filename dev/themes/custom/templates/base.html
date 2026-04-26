@@ -17,24 +17,12 @@
 		<meta name="twitter:site" content="{% for name, link in SOCIAL %}{% if name == 'twitter' %}{{ link }}{% endif %}{% endfor %}" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Jupyter Notebooks -->
-		{% include "fragments/_nb_header.html" %}
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/codesyntax.css" />
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/svgstyles.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- CSS for Pelican Javascript plugin -->
-        {% if article %}
-            {% if article.stylesheets %}
-                {% for stylesheet in article.stylesheets %}
-                    {{ stylesheet }}
-                {% endfor %}
-            {% endif %}
-        {% endif %}
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -67,15 +55,7 @@
 		<!-- Javascript -->
 		<script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/main.js"></script>
 		
-		<!-- Javascript for Pelican Javascript plugin -->
-		{% if article %}
-			{% if article.javascripts %}
-				{% for javascript in article.javascripts %}
-					{{ javascript }}
-				{% endfor %}
-			{% endif %}
-		{% endif %}
-		
+
 	</body>
 
 </html>

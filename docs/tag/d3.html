@@ -17,47 +17,12 @@
 		<meta name="twitter:site" content="https://twitter.com/canyon289" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Jupyter Notebooks -->
-
-<!--Notebook Configuration-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true,
-          displayMath: [['$$','$$'], ["\\[","\\]"]]
-      }
-  });
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-      $("div.collapseheader").click(function () {
-      $header = $(this).children("span").first();
-      $codearea = $(this).children(".input_area");
-      console.log($(this).children());
-      $codearea.slideToggle(500, function () {
-          $header.text(function () {
-              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
-          });
-      });
-  });
-  });
-</script>
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/codesyntax.css" />
         <link rel="stylesheet" href="https://ravinkumar.com/theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -251,8 +216,7 @@
 		<!-- Javascript -->
 		<script type="text/javascript" src="https://ravinkumar.com/theme/js/main.js"></script>
 		
-		<!-- Javascript for Pelican Javascript plugin -->
-		
+
 	</body>
 
 </html>

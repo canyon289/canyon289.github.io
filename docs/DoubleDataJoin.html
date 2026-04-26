@@ -17,47 +17,12 @@
 		<meta name="twitter:site" content="https://twitter.com/canyon289" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Jupyter Notebooks -->
-
-<!--Notebook Configuration-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true,
-          displayMath: [['$$','$$'], ["\\[","\\]"]]
-      }
-  });
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-      $("div.collapseheader").click(function () {
-      $header = $(this).children("span").first();
-      $codearea = $(this).children(".input_area");
-      console.log($(this).children());
-      $codearea.slideToggle(500, function () {
-          $header.text(function () {
-              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
-          });
-      });
-  });
-  });
-</script>
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/codesyntax.css" />
         <link rel="stylesheet" href="https://ravinkumar.com/theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -146,30 +111,28 @@ current elements are <strong>updated</strong> and missing elements are <strong>e
 are also a selection. This means you can chain data joins on top of each other. </p>
 <h2 id="an-example">An example</h2>
 <p>Say we have data that has a nested structure like this</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;red&quot;</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;Strawberries&quot;</span><span class="p">,</span> <span class="s2">&quot;Apple&quot;</span><span class="p">],</span></span>
-<span class="code-line">            <span class="s2">&quot;blue&quot;</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;BlueBerries&quot;</span><span class="p">]}</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;red&quot;</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;Strawberries&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Apple&quot;</span><span class="p">],</span>
+<span class="w">            </span><span class="s2">&quot;blue&quot;</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;BlueBerries&quot;</span><span class="p">]}</span>
+</code></pre></div>
 
 <p>We can easily use this structure to our advantage using a d3 snippet like this</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kd">var</span> <span class="nx">doubledatajoin</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span></span>
-<span class="code-line">         <span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">&quot;#example&quot;</span><span class="p">)</span></span>
-<span class="code-line">           <span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">)</span></span>
-<span class="code-line">           <span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span></span>
-<span class="code-line">           <span class="p">.</span><span class="nx">enter</span><span class="p">()</span></span>
-<span class="code-line">             <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">)</span></span>
-<span class="code-line">             <span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="s2">&quot;color&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span><span class="k">return</span> <span class="nx">d</span><span class="p">})</span></span>
-<span class="code-line">           <span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span></span>
-<span class="code-line">           <span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span><span class="k">return</span> <span class="nx">data</span><span class="p">[</span><span class="nx">d</span><span class="p">]})</span></span>
-<span class="code-line">           <span class="p">.</span><span class="nx">enter</span><span class="p">()</span> </span>
-<span class="code-line">             <span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span></span>
-<span class="code-line">             <span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span><span class="k">return</span> <span class="nx">d</span><span class="p">})</span></span>
-<span class="code-line">        <span class="p">}</span> </span>
-<span class="code-line"></span>
-<span class="code-line"><span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">&quot;#button&quot;</span><span class="p">)</span></span>
-<span class="code-line">  <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="nx">doubledatajoin</span><span class="p">)</span></span>
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">doubledatajoin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">         </span><span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">&quot;#example&quot;</span><span class="p">)</span>
+<span class="w">           </span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">)</span>
+<span class="w">           </span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+<span class="w">           </span><span class="p">.</span><span class="nx">enter</span><span class="p">()</span>
+<span class="w">             </span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">)</span>
+<span class="w">             </span><span class="p">.</span><span class="nx">style</span><span class="p">(</span><span class="s2">&quot;color&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="nx">d</span><span class="p">})</span>
+<span class="w">           </span><span class="p">.</span><span class="nx">selectAll</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span>
+<span class="w">           </span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="nx">data</span><span class="p">[</span><span class="nx">d</span><span class="p">]})</span>
+<span class="w">           </span><span class="p">.</span><span class="nx">enter</span><span class="p">()</span><span class="w"> </span>
+<span class="w">             </span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span>
+<span class="w">             </span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="k">return</span><span class="w"> </span><span class="nx">d</span><span class="p">})</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span>
 
+<span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s2">&quot;#button&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">doubledatajoin</span><span class="p">)</span>
+</code></pre></div>
 
 <div id="example">
   <button type="button" id="button">Perform Double Data</button>
@@ -238,10 +201,7 @@ and just how powerful combining concepts in D3 can be.</p>
 		<!-- Javascript -->
 		<script type="text/javascript" src="https://ravinkumar.com/theme/js/main.js"></script>
 		
-		<!-- Javascript for Pelican Javascript plugin -->
-					<script src="https://ravinkumar.com/js/d3.v4.js"></script>
-					<script src="https://ravinkumar.com/js/doubledatajoin.js"></script>
-		
+
 	</body>
 
 </html>

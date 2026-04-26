@@ -17,47 +17,12 @@
 		<meta name="twitter:site" content="https://twitter.com/canyon289" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Jupyter Notebooks -->
-
-<!--Notebook Configuration-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true,
-          displayMath: [['$$','$$'], ["\\[","\\]"]]
-      }
-  });
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-      $("div.collapseheader").click(function () {
-      $header = $(this).children("span").first();
-      $codearea = $(this).children(".input_area");
-      console.log($(this).children());
-      $codearea.slideToggle(500, function () {
-          $header.text(function () {
-              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
-          });
-      });
-  });
-  });
-</script>
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/codesyntax.css" />
         <link rel="stylesheet" href="https://ravinkumar.com/theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -155,24 +120,21 @@ the following reasons.</p>
 <h3 id="declarative-vs-imperative-languages">Declarative vs Imperative Languages</h3>
 <p>Without going deeply into the nuances between declarative
 and imperative languages what's easier to write and understand?</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span></span>
-<span class="code-line"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;http: iris url&quot;</span><span class="p">)</span> <span class="c1"># This is dependent on your data source</span></span>
-<span class="code-line"><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span></span>
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;http: iris url&quot;</span><span class="p">)</span> <span class="c1"># This is dependent on your data source</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div>
 
-
-<div class="highlight"><pre><span class="code-line"><span></span><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">5</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">IRIS</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">TOP</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">IRIS</span>
+</code></pre></div>
 
 <p>With Python you'll have know how to import pandas, call
 the correct method to read a csv file, know what argument
 to pass to the read_csv method, know about variables, and then
 know you can call a method on that assignment. A lot of the symbols
 are not "English" intuitive either. </p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="k">SELECT</span> <span class="n">TOP</span> <span class="mi">5</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">IRIS</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">TOP</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">IRIS</span>
+</code></pre></div>
 
 <p>Comparatively, SQL is much more approachable and basically reads straight across.
 Now yes SQL has its own set of complexities and limitations but just starting
@@ -267,8 +229,7 @@ to sneak some Python/R and fancier stuff in as well!</p>
 		<!-- Javascript -->
 		<script type="text/javascript" src="https://ravinkumar.com/theme/js/main.js"></script>
 		
-		<!-- Javascript for Pelican Javascript plugin -->
-		
+
 	</body>
 
 </html>

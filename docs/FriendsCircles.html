@@ -17,48 +17,12 @@
 		<meta name="twitter:site" content="https://twitter.com/canyon289" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Jupyter Notebooks -->
-
-<!--Notebook Configuration-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true,
-          displayMath: [['$$','$$'], ["\\[","\\]"]]
-      }
-  });
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-      $("div.collapseheader").click(function () {
-      $header = $(this).children("span").first();
-      $codearea = $(this).children(".input_area");
-      console.log($(this).children());
-      $codearea.slideToggle(500, function () {
-          $header.text(function () {
-              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
-          });
-      });
-  });
-  });
-</script>
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/codesyntax.css" />
         <link rel="stylesheet" href="https://ravinkumar.com/theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- CSS for Pelican Javascript plugin -->
-                    <link rel="stylesheet" href="https://ravinkumar.com/css/friends_vis.css" type="text/css" />
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -202,51 +166,48 @@ next node and try again. The number of unique trees
 is the answer to all the test cases.</p>
 <h2 id="code">Code</h2>
 <p>The first order of business is to read in the inputs that look like this  </p>
-<div class="highlight"><pre><span class="code-line"><span></span>YYNN  </span>
-<span class="code-line">YYYN  </span>
-<span class="code-line">NYYN  </span>
-<span class="code-line">NNNY  </span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>YYNN  
+YYYN  
+NYYN  
+NNNY  
+</code></pre></div>
 
 <p>into a sparse matrix that looks like this</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="n">network</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:[</span><span class="mi">1</span><span class="p">]</span></span>
-<span class="code-line">           <span class="mi">1</span><span class="p">:[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span></span>
-<span class="code-line">           <span class="mi">2</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span></span>
-<span class="code-line">           <span class="mi">3</span><span class="p">:[]</span></span>
-<span class="code-line">           <span class="p">}</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="n">network</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:[</span><span class="mi">1</span><span class="p">]</span>
+           <span class="mi">1</span><span class="p">:[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+           <span class="mi">2</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+           <span class="mi">3</span><span class="p">:[]</span>
+           <span class="p">}</span>
+</code></pre></div>
 
 <p>I chose the sparse matrix because beside being very human readable it also
 lends itself to the search process.</p>
 <p>Given a sparse matrix we can now find circles by doing a depth first search
 of that person's friends as shown below.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="k">def</span> <span class="nf">find_circles</span><span class="p">(</span><span class="n">friends_dict</span><span class="p">):</span></span>
-<span class="code-line">    <span class="sd">&#39;&#39;&#39;</span></span>
-<span class="code-line"><span class="sd">    Iterate through friends dict to find </span></span>
-<span class="code-line"><span class="sd">    &#39;&#39;&#39;</span></span>
-<span class="code-line"></span>
-<span class="code-line">    <span class="k">def</span> <span class="nf">find_friends</span><span class="p">(</span><span class="n">person</span><span class="p">):</span></span>
-<span class="code-line">        <span class="sd">&#39;&#39;&#39;</span></span>
-<span class="code-line"><span class="sd">        Recursive function that does Depth First Search of all friends</span></span>
-<span class="code-line"><span class="sd">        &#39;&#39;&#39;</span></span>
-<span class="code-line">        <span class="k">if</span> <span class="n">person</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span></span>
-<span class="code-line">            <span class="n">visited</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">person</span><span class="p">)</span></span>
-<span class="code-line">            <span class="k">for</span> <span class="n">friend</span> <span class="ow">in</span> <span class="n">friends_dict</span><span class="p">[</span><span class="n">person</span><span class="p">]:</span></span>
-<span class="code-line">                <span class="n">find_friends</span><span class="p">(</span><span class="n">friend</span><span class="p">)</span></span>
-<span class="code-line">        <span class="k">return</span></span>
-<span class="code-line"></span>
-<span class="code-line">    <span class="n">visited</span> <span class="o">=</span> <span class="p">[]</span></span>
-<span class="code-line">    <span class="n">circle</span> <span class="o">=</span> <span class="mi">0</span></span>
-<span class="code-line">    <span class="k">for</span> <span class="n">person</span> <span class="ow">in</span> <span class="n">friends_dict</span><span class="p">:</span></span>
-<span class="code-line">        <span class="k">if</span> <span class="n">person</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span></span>
-<span class="code-line">            <span class="n">find_friends</span><span class="p">(</span><span class="n">person</span><span class="p">)</span></span>
-<span class="code-line">            <span class="n">circle</span> <span class="o">+=</span><span class="mi">1</span></span>
-<span class="code-line"></span>
-<span class="code-line">    <span class="k">return</span> <span class="n">circle</span></span>
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">find_circles</span><span class="p">(</span><span class="n">friends_dict</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Iterate through friends dict to find </span>
+<span class="sd">    &#39;&#39;&#39;</span>
 
+    <span class="k">def</span><span class="w"> </span><span class="nf">find_friends</span><span class="p">(</span><span class="n">person</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Recursive function that does Depth First Search of all friends</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="n">person</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
+            <span class="n">visited</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">friend</span> <span class="ow">in</span> <span class="n">friends_dict</span><span class="p">[</span><span class="n">person</span><span class="p">]:</span>
+                <span class="n">find_friends</span><span class="p">(</span><span class="n">friend</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">visited</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">circle</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">person</span> <span class="ow">in</span> <span class="n">friends_dict</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">person</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
+            <span class="n">find_friends</span><span class="p">(</span><span class="n">person</span><span class="p">)</span>
+            <span class="n">circle</span> <span class="o">+=</span><span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">circle</span>
+</code></pre></div>
 
 <p>The algorithm works initially picking a node. It then traverses the tree
 to find all others nodes (friends) that are connected with the initial node.
@@ -266,7 +227,7 @@ finds a tree it stays on it until there are no more nodes left.</p>
 you can find here. The visualization is possible due to the awesome
 d3 javascript library which will get a post of its own in the future</p>
 <h3 id="click-to-start-search">Click to start search</h3>
-<p><div id="vis"> </div></p>
+<div id="vis"> </div>
 
 			</div> 
 		</div>
@@ -323,11 +284,7 @@ d3 javascript library which will get a post of its own in the future</p>
 		<!-- Javascript -->
 		<script type="text/javascript" src="https://ravinkumar.com/theme/js/main.js"></script>
 		
-		<!-- Javascript for Pelican Javascript plugin -->
-					<script src="https://d3js.org/d3.v3.min.js"></script>
-					<script src="https://ravinkumar.com/js/friends.js"></script>
-					<script src="https://ravinkumar.com/js/friends_vis.js"></script>
-		
+
 	</body>
 
 </html>

@@ -17,47 +17,12 @@
 		<meta name="twitter:site" content="https://twitter.com/canyon289" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Jupyter Notebooks -->
-
-<!--Notebook Configuration-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true,
-          displayMath: [['$$','$$'], ["\\[","\\]"]]
-      }
-  });
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-      $("div.collapseheader").click(function () {
-      $header = $(this).children("span").first();
-      $codearea = $(this).children(".input_area");
-      console.log($(this).children());
-      $codearea.slideToggle(500, function () {
-          $header.text(function () {
-              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
-          });
-      });
-  });
-  });
-</script>
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/jupyternotebook.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/codesyntax.css" />
         <link rel="stylesheet" href="https://ravinkumar.com/theme/css/svgstyles.css" />
 		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -160,11 +125,10 @@ and develop your own fairly early in your learning.</p>
 This means you can now google away and always find "the best way" to do things.</p>
 <p>For example if we want to print each letter I've seen a lot of beginners 
 write this.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="n">array</span> <span class="o">=</span>  <span class="p">[</span><span class="s2">&quot;Foo&quot;</span><span class="p">,</span> <span class="s2">&quot;Bar&quot;</span><span class="p">,</span> <span class="s2">&quot;Baz&quot;</span></span>
-<span class="code-line"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)):</span></span>
-<span class="code-line">    <span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">])</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="n">array</span> <span class="o">=</span>  <span class="p">[</span><span class="s2">&quot;Foo&quot;</span><span class="p">,</span> <span class="s2">&quot;Bar&quot;</span><span class="p">,</span> <span class="s2">&quot;Baz&quot;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</code></pre></div>
 
 <p>Great it works.
 But now you wan to make your code better and you want to see how the experts 
@@ -175,10 +139,9 @@ and items 1.2.1 and 1.2.2 in "Writing Effective Python".</p>
 <p>"Now I know to iterate directly over an array rather over a range and index"
 you say, and quickly write what almost everyone will agree is better or
 more "Pythonic".</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="n">array</span><span class="p">:</span></span>
-<span class="code-line">    <span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="n">array</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+</code></pre></div>
 
 <p>In Python you can actually get really far this way, as a community there are
 a ton of "almost always" best practices for doing things and the Python
@@ -191,31 +154,29 @@ a message telling us so.</p>
 <p>Here's out first attempt using the requests library. Writing Idiomatic Python
 suggests this structure saying that "even if the for structure isn't clear,
 our code is clear enough to teach them"</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">requests</span></span>
-<span class="code-line"><span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;google.com&quot;</span><span class="p">,</span> <span class="s2">&quot;facebook.com&quot;</span><span class="p">,</span> <span class="s2">&quot;cnn.com&quot;</span><span class="p">]:</span></span>
-<span class="code-line">   <span class="n">reqest</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span></span>
-<span class="code-line">   <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span></span>
-<span class="code-line">      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Request Failed&quot;</span><span class="p">)</span></span>
-<span class="code-line">      <span class="k">break</span></span>
-<span class="code-line"><span class="k">else</span><span class="p">:</span></span>
-<span class="code-line">   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All good&quot;</span><span class="p">)</span></span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;google.com&quot;</span><span class="p">,</span> <span class="s2">&quot;facebook.com&quot;</span><span class="p">,</span> <span class="s2">&quot;cnn.com&quot;</span><span class="p">]:</span>
+   <span class="n">reqest</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+   <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Request Failed&quot;</span><span class="p">)</span>
+      <span class="k">break</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All good&quot;</span><span class="p">)</span>
+</code></pre></div>
 
 <p>However if we take a look at what Effective Python suggests using this approach</p>
-<div class="highlight"><pre><span class="code-line"><span></span><span class="kn">import</span> <span class="nn">requests</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="n">success</span> <span class="o">=</span> <span class="kc">True</span></span>
-<span class="code-line"><span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;google.com&quot;</span><span class="p">,</span> <span class="s2">&quot;facebook.com&quot;</span><span class="p">,</span> <span class="s2">&quot;cnn.com&quot;</span><span class="p">]:</span></span>
-<span class="code-line">   <span class="n">reqest</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span></span>
-<span class="code-line">   <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span></span>
-<span class="code-line">      <span class="n">success</span> <span class="o">=</span> <span class="kc">False</span></span>
-<span class="code-line">      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Request Failed&quot;</span><span class="p">)</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="k">if</span> <span class="n">success</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span></span>
-<span class="code-line">   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All good&quot;</span><span class="p">)</span></span>
-</pre></div>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
 
+<span class="n">success</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;google.com&quot;</span><span class="p">,</span> <span class="s2">&quot;facebook.com&quot;</span><span class="p">,</span> <span class="s2">&quot;cnn.com&quot;</span><span class="p">]:</span>
+   <span class="n">reqest</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+   <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+      <span class="n">success</span> <span class="o">=</span> <span class="kc">False</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Request Failed&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">success</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All good&quot;</span><span class="p">)</span>
+</code></pre></div>
 
 <p>but this is the exact opposite of what Idiomatic Python suggests. In fact
 these two books completely disagree with each other, each saying each others
@@ -309,8 +270,7 @@ you'll never get anything done.</li>
 		<!-- Javascript -->
 		<script type="text/javascript" src="https://ravinkumar.com/theme/js/main.js"></script>
 		
-		<!-- Javascript for Pelican Javascript plugin -->
-		
+
 	</body>
 
 </html>
