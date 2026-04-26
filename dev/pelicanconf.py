@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 
 AUTHOR = 'Ravin Kumar'
 SITENAME = ['Ravin Kumar']
@@ -50,15 +48,20 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/ravinakumar'),
 DEFAULT_PAGINATION = False
 DISPLAY_PAGES_ON_MENU = True
 PLUGIN_PATHS = ["pelican-plugins"]
-PLUGINS = ["better_codeblock_line_numbering",
-           "pelican_javascript",
-           "render_math",
-           "simple_footnotes"]
+PLUGINS = [
+    "better_codeblock_line_numbering",
+    "pelican_javascript",
+    "render_math",
+    "simple_footnotes",
+    "sitemap",
+]
 
-NOTEBOOK_DIR = 'notebooks'
-LIQUID_TAGS = ["img", "literal", "notebook", "include_code"]
-from io import open
-EXTRA_HEADER = open('_nb_header.html').read()
+SITEMAP = {
+    "format": "xml",
+    "priorities": {"articles": 0.8, "indexes": 0.5, "pages": 0.5},
+    "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
+    "exclude": ["tag/", "category/", "author/", "drafts/"],
+}
 
 
 # Uncomment following line if you want document-relative URLs when developing

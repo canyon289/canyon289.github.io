@@ -138,7 +138,411 @@
 
 	<h1 class="page-title">Bayesian Inference Cheatsheet</h1>
 	<p class="post-date">Feb 07, 2019</p>
-	<p>{% notebook InferenceCheatsheet.ipynb cells[1:] %}</p>
+	<p><strong>Note</strong>: This cheatsheet is in "beta". Suggestions are welcome</p>
+<p>When performing Bayesian Inference, there are numerous ways to solve, or approximate, a posterior distribution. Usually an author of a book or tutorial will choose one, or they will present both but many chapters apart. This notebook solves the same problem each way all in Python. References are provided for each method for further exploration as well.</p>
+<h2 id="another-great-reference">Another great reference</h2>
+<p>Chapter 8 of <a href="https://www.packtpub.com/big-data-and-business-intelligence/bayesian-analysis-python-second-edition">Osvaldo Martin's book</a> contains a more in depth overview of the methods below. I highly recommend reading it as well, particularly if you would like a deeper understanding of each method.</p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span></span>
+<span class="code-line"><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span></span>
+<span class="code-line"><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span></span>
+<span class="code-line"><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span></span>
+<span class="code-line"><span class="kn">import</span><span class="w"> </span><span class="nn">pymc3</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pm</span></span>
+<span class="code-line"><span class="kn">import</span><span class="w"> </span><span class="nn">pystan</span></span>
+<span class="code-line"><span class="kn">import</span><span class="w"> </span><span class="nn">arviz</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">az</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nx">WARNING</span><span class="w"> </span><span class="p">(</span><span class="nx">theano</span><span class="p">.</span><span class="nx">configdefaults</span><span class="p">):</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">mkl</span><span class="w"> </span><span class="nx">with</span><span class="w"> </span><span class="err">`</span><span class="nx">conda</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">mkl</span><span class="o">-</span><span class="nx">service</span><span class="err">`</span><span class="p">:</span><span class="w"> </span><span class="nx">No</span><span class="w"> </span><span class="nx">module</span><span class="w"> </span><span class="nx">named</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">mkl</span><span class="err">&#39;</span></span>
+<span class="code-line"><span class="nx">WARNING</span><span class="w"> </span><span class="p">(</span><span class="nx">theano</span><span class="p">.</span><span class="nx">tensor</span><span class="p">.</span><span class="nx">blas</span><span class="p">):</span><span class="w"> </span><span class="nx">Using</span><span class="w"> </span><span class="nx">NumPy</span><span class="w"> </span><span class="nx">C</span><span class="o">-</span><span class="nx">API</span><span class="w"> </span><span class="nx">based</span><span class="w"> </span><span class="nx">implementation</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">BLAS</span><span class="w"> </span><span class="nx">functions</span><span class="p">.</span></span>
+<span class="code-line"></code></pre></div>
+
+<h2 id="the-problem">The problem</h2>
+<p>What is the proportion of water on the globe, given measurements of random tosses?
+This question is taken from Richard McElreath's books and his lecture. Professor McElreath explains the problem <a href="https://youtu.be/XoVtOAN0htU?t=278">in his lecture</a> or alternatively I have a short write <a href="http://BayesUser289.github.io/pages/BayesianGlossary.html">in my Bayesian Glossary</a></p>
+<h3 id="problem-definition-in-python">Problem definition in Python</h3>
+<p>Usually this is done with numpy arrays, where water and land is encoded with 0 and 1 for success. I'm doing it here in two steps to highlight that the ones and zeros just stand for success and failure</p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">observations</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="s2">&quot;l&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">,</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="s2">&quot;l&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">])</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># Convert to binomial representation</span></span>
+<span class="code-line"><span class="n">observations_binom</span> <span class="o">=</span> <span class="p">(</span><span class="n">observations</span> <span class="o">==</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="o">.</span><span class="n">values</span></span>
+<span class="code-line"><span class="n">observations_binom</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code>array([1, 0, 1, 1, 1, 0, 1, 0, 1])</span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">water_observations</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">observations_binom</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">total_observations</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">observations_binom</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">water_observations</span><span class="p">,</span> <span class="n">total_observations</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code>(6, 9)</span>
+<span class="code-line"></code></pre></div>
+
+<h1 id="inference-methods">Inference Methods</h1>
+<p>There are multiple ways of doing inference, even more than the ones here. For each method there is an example, reference links, and short list of pros and cons.</p>
+<h2 id="conjugate-prior">Conjugate Prior</h2>
+<p>Conjugate priors are the "original" way of solving Bayes rule. Conjugate priors are analytical solutions, meaning that a good (probably great) mathematician was able to create a closed form solution by hand. For our Beta Binominal water tossing problem we can use a formula (taken from Wikipedia) and to get the exact solution.</p>
+<h4 id="references">References</h4>
+<p>https://en.wikipedia.org/wiki/Conjugate_prior</p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="c1"># Analytical Formula magic</span></span>
+<span class="code-line"><span class="n">_alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">water_observations</span></span>
+<span class="code-line"><span class="n">_beta</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">total_observations</span> <span class="o">-</span> <span class="n">water_observations</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">posterior_conjugate</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">beta</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="n">_alpha</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="n">_beta</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span></span>
+<span class="code-line"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">posterior_conjugate</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span></span>
+<span class="code-line"><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Exact Posterior through Conjugate Prior&quot;</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code>Text(0.5, 0.98, &#39;Exact Posterior through Conjugate Prior&#39;)</span>
+<span class="code-line"></code></pre></div>
+
+<p><img alt="png" src="https://ravinkumar.com/images/notebooks/InferenceCheatsheet_files/InferenceCheatsheet_9_1.png"></p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">posterior_conjugate</span><span class="p">[</span><span class="mi">40</span><span class="p">]</span> <span class="o">/</span> <span class="n">posterior_conjugate</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">0.2931796007669374</span></span>
+<span class="code-line"></code></pre></div>
+
+<h3 id="conjugate-prior-pros">Conjugate Prior Pros</h3>
+<ul>
+<li>Posterior distribution is exact. It is <em>not</em> a numerical approximation</li>
+<li>The fastest way to perform Bayesian Inference. At least 4 orders of magnitude faster than other methods</li>
+<li>Speed allows for novel applications, such as online updates for posteriors for real time applications</li>
+</ul>
+<h3 id="conjugate-prior-cons">Conjugate Prior Cons</h3>
+<ul>
+<li>Requires advanced math skills to derive analytical solution</li>
+<li>Only simple problems have been solved (https://en.wikipedia.org/wiki/Conjugate_prior#Table_of_conjugate_distributions)</li>
+</ul>
+<h2 id="grid-search">Grid Search</h2>
+<h4 id="steps">Steps</h4>
+<ol>
+<li>Generate a grid of points</li>
+<li>Calculate likelihood for each point</li>
+<li>For each beta take another grid of points to get probability</li>
+<li>Calculate likelihood and posterior</li>
+</ol>
+<h4 id="references_1">References</h4>
+<p><strong>Statistical Rethinking</strong> Chapter 3 contains a great overview of Grid Search<br>
+https://xcelab.net/rm/statistical-rethinking/</p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">possible_probabilities</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">prior</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">likelihood</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">binom</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">water_observations</span><span class="p">,</span> <span class="n">total_observations</span><span class="p">,</span> <span class="n">possible_probabilities</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">posterior_unstandardized</span> <span class="o">=</span> <span class="n">likelihood</span> <span class="o">*</span> <span class="n">prior</span></span>
+<span class="code-line"><span class="n">posterior_grid_search</span> <span class="o">=</span> <span class="n">posterior_unstandardized</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">posterior_unstandardized</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span></span>
+<span class="code-line"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">possible_probabilities</span><span class="p">,</span> <span class="n">posterior_grid_search</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span></span>
+<span class="code-line"><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Posterior through Grid Approximation&quot;</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code>Text(0.5, 0.98, &#39;Posterior through Grid Approximation&#39;)</span>
+<span class="code-line"></code></pre></div>
+
+<p><img alt="png" src="https://ravinkumar.com/images/notebooks/InferenceCheatsheet_files/InferenceCheatsheet_14_1.png"></p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">posterior_grid_search</span><span class="p">[</span><span class="mi">40</span><span class="p">]</span> <span class="o">/</span> <span class="n">posterior_grid_search</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">0.29317960076693733</span></span>
+<span class="code-line"></code></pre></div>
+
+<h3 id="grid-search-pros">Grid Search Pros</h3>
+<ul>
+<li>Conceptually simple</li>
+<li>Can theoretically be used to solve any problems</li>
+</ul>
+<h3 id="grid-search-cons">Grid Search Cons</h3>
+<ul>
+<li>Due to combinatoric explosion ("the curse of dimensionality"), this solution scales very poorly and can take a very long time to solve for non trivial models. The sun will explode before inference is completed on most models</li>
+</ul>
+<h2 id="quadratic-laplace-approximation">Quadratic (Laplace) Approximation</h2>
+<p>http://www.sumsar.net/blog/2013/11/easy-laplace-approximation/<br>
+https://github.com/pymc-devs/resources/blob/master/Rethinking/Chp_02.ipynb</p>
+<h4 id="references_2">References</h4>
+<p>Bayesian Analysis in Python Chapter 8
+https://www.packtpub.com/big-data-and-business-intelligence/bayesian-analysis-python-second-edition</p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="k">with</span> <span class="n">pm</span><span class="o">.</span><span class="n">Model</span><span class="p">()</span> <span class="k">as</span> <span class="n">normal_aproximation</span><span class="p">:</span></span>
+<span class="code-line">    <span class="n">p</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Uniform</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">w</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Binomial</span><span class="p">(</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">total_observations</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="n">water_observations</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">mean_q</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">find_MAP</span><span class="p">()</span></span>
+<span class="code-line">    <span class="n">std_q</span> <span class="o">=</span> <span class="p">((</span><span class="mi">1</span><span class="o">/</span><span class="n">pm</span><span class="o">.</span><span class="n">find_hessian</span><span class="p">(</span><span class="n">mean_q</span><span class="p">,</span> <span class="nb">vars</span><span class="o">=</span><span class="p">[</span><span class="n">p</span><span class="p">]))</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></span>
+<span class="code-line"><span class="n">mean_q</span><span class="p">[</span><span class="s1">&#39;p&#39;</span><span class="p">],</span> <span class="n">std_q</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="o">/</span><span class="nx">home</span><span class="o">/</span><span class="nx">BayesUser</span><span class="o">/</span><span class="nx">miniconda3</span><span class="o">/</span><span class="nx">envs</span><span class="o">/</span><span class="nx">arviz</span><span class="o">/</span><span class="nx">lib</span><span class="o">/</span><span class="nx">python3</span><span class="m m-Double">.6</span><span class="o">/</span><span class="nx">site</span><span class="o">-</span><span class="nx">packages</span><span class="o">/</span><span class="nx">pymc3</span><span class="o">/</span><span class="nx">tuning</span><span class="o">/</span><span class="nx">starting</span><span class="p">.</span><span class="nx">py</span><span class="p">:</span><span class="mi">61</span><span class="p">:</span><span class="w"> </span><span class="nx">UserWarning</span><span class="p">:</span><span class="w"> </span><span class="nx">find_MAP</span><span class="w"> </span><span class="nx">should</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="nx">be</span><span class="w"> </span><span class="nx">used</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">initialize</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">NUTS</span><span class="w"> </span><span class="nx">sampler</span><span class="p">,</span><span class="w"> </span><span class="nx">simply</span><span class="w"> </span><span class="nx">call</span><span class="w"> </span><span class="nx">pymc3</span><span class="p">.</span><span class="nx">sample</span><span class="p">()</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="nx">it</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">automatically</span><span class="w"> </span><span class="nx">initialize</span><span class="w"> </span><span class="nx">NUTS</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">better</span><span class="w"> </span><span class="nx">way</span><span class="p">.</span></span>
+<span class="code-line"><span class="w">  </span><span class="nx">warnings</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="err">&#39;</span><span class="nx">find_MAP</span><span class="w"> </span><span class="nx">should</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="nx">be</span><span class="w"> </span><span class="nx">used</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">initialize</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">NUTS</span><span class="w"> </span><span class="nx">sampler</span><span class="p">,</span><span class="w"> </span><span class="nx">simply</span><span class="w"> </span><span class="nx">call</span><span class="w"> </span><span class="nx">pymc3</span><span class="p">.</span><span class="nx">sample</span><span class="p">()</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="nx">it</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">automatically</span><span class="w"> </span><span class="nx">initialize</span><span class="w"> </span><span class="nx">NUTS</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">better</span><span class="w"> </span><span class="nx">way</span><span class="p">.</span><span class="err">&#39;</span><span class="p">)</span></span>
+<span class="code-line"><span class="nx">logp</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">-</span><span class="m m-Double">1.8075</span><span class="p">,</span><span class="w"> </span><span class="o">||</span><span class="nx">grad</span><span class="o">||</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="m m-Double">1.5</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="o">%|</span><span class="err">██████████</span><span class="o">|</span><span class="w"> </span><span class="mi">7</span><span class="o">/</span><span class="mi">7</span><span class="w"> </span><span class="p">[</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="p">&lt;</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="p">,</span><span class="w"> </span><span class="m m-Double">151.39</span><span class="nx">it</span><span class="o">/</span><span class="nx">s</span><span class="p">]</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="p">(</span><span class="nx">array</span><span class="p">(</span><span class="m m-Double">0.66666667</span><span class="p">),</span><span class="w"> </span><span class="nx">array</span><span class="p">([</span><span class="m m-Double">0.15713484</span><span class="p">]))</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">possible_probabilities</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">posterior_laplace</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">possible_probabilities</span><span class="p">,</span> <span class="n">mean_q</span><span class="p">[</span><span class="s1">&#39;p&#39;</span><span class="p">],</span> <span class="n">std_q</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span></span>
+<span class="code-line"><span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span></span>
+<span class="code-line"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">possible_probabilities</span><span class="p">,</span> <span class="n">posterior_laplace</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Posterior Approximation through Quadratic Approximation&quot;</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code>Text(0.5, 0.98, &#39;Posterior Approximation through Quadratic Approximation&#39;)</span>
+<span class="code-line"></code></pre></div>
+
+<p><img alt="png" src="https://ravinkumar.com/images/notebooks/InferenceCheatsheet_files/InferenceCheatsheet_19_1.png"></p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">posterior_laplace</span><span class="p">[</span><span class="mi">40</span><span class="p">]</span> <span class="o">/</span> <span class="n">posterior_laplace</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">0.255729157826732</span></span>
+<span class="code-line"></code></pre></div>
+
+<h3 id="laplace-approximation-pros">Laplace Approximation Pros</h3>
+<ul>
+<li>Relatively fast compared to methods such as MCMC or ADVI</li>
+</ul>
+<h3 id="laplace-approximation-cons">Laplace Approximation Cons</h3>
+<ul>
+<li>Normal distributions can't approximate everything, for example bimodal or discrete distributions</li>
+</ul>
+<h2 id="markov-chain-monte-carlo">Markov Chain Monte Carlo</h2>
+<p>Markov Chain Monte Carlo (MCMC) is a way to numerically approximate a posterior distribution by iteratively sampling from it. I found the visualizations in the link below make it easier to see what this means. The advances in MCMC are coming from advances in samplers. The No U Turn Sampler (NUTS) for example is one of the most widely popular at the moment, since it can "find" good samples more often than older samples such as Metropolis Hastings.</p>
+<p>There are many Bayesian libraries in addition to the two shown here.</p>
+<h4 id="references_3">References</h4>
+<p>https://twiecki.io/blog/2015/11/10/mcmc-sampling/<br>
+http://elevanth.org/blog/2017/11/28/build-a-better-markov-chain/</p>
+<h3 id="hand-built-metropolis-hastings">"Hand built" Metropolis Hastings</h3>
+<p>This example is adapated from <a href="https://twiecki.io/blog/2015/11/10/mcmc-sampling/">Thomas Wiecki's blog post</a></p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">samples</span> <span class="o">=</span> <span class="mi">5000</span></span>
+<span class="code-line"><span class="n">proposal_width</span> <span class="o">=</span> <span class="mf">.1</span></span>
+<span class="code-line"><span class="n">p_accept</span> <span class="o">=</span> <span class="mf">.5</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="c1"># Assume Normal Prior for this example</span></span>
+<span class="code-line"><span class="n">p_water_current</span> <span class="o">=</span> <span class="mf">.5</span></span>
+<span class="code-line"><span class="n">p_water_prior_normal_mu</span> <span class="o">=</span> <span class="mf">.5</span></span>
+<span class="code-line"><span class="n">p_water_prior_normal_sd</span> <span class="o">=</span> <span class="mi">1</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">mh_posterior</span> <span class="o">=</span> <span class="p">[]</span></span>
+<span class="code-line"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">samples</span><span class="p">):</span></span>
+<span class="code-line">    <span class="c1"># Proposal Normal distribution</span></span>
+<span class="code-line">    <span class="n">p_water_proposal</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">p_water_current</span><span class="p">,</span> <span class="n">proposal_width</span><span class="p">)</span><span class="o">.</span><span class="n">rvs</span><span class="p">()</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="c1"># Calculate likelihood of each</span></span>
+<span class="code-line">    <span class="n">likelihood_current</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">binom</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">water_observations</span><span class="p">,</span> <span class="n">total_observations</span><span class="p">,</span> <span class="n">p_water_current</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">likelihood_proposal</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">binom</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">water_observations</span><span class="p">,</span> <span class="n">total_observations</span><span class="p">,</span> <span class="n">p_water_proposal</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="c1"># Convert likelihoods that evaluate to nans to zero</span></span>
+<span class="code-line">    <span class="n">likelihood_current</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan_to_num</span><span class="p">(</span><span class="n">likelihood_current</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">likelihood_proposal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan_to_num</span><span class="p">(</span><span class="n">likelihood_proposal</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="c1"># Calculate prior value given proposal and current</span></span>
+<span class="code-line">    <span class="n">prior_current</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">p_water_prior_normal_mu</span><span class="p">,</span> <span class="n">p_water_prior_normal_sd</span><span class="p">)</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">p_water_current</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">prior_proposal</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">p_water_prior_normal_mu</span><span class="p">,</span> <span class="n">p_water_prior_normal_sd</span><span class="p">)</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">p_water_proposal</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="c1"># Calculate posterior probability of current and proposals</span></span>
+<span class="code-line">    <span class="n">p_current</span> <span class="o">=</span> <span class="n">likelihood_current</span> <span class="o">*</span> <span class="n">prior_current</span></span>
+<span class="code-line">    <span class="n">p_proposal</span> <span class="o">=</span> <span class="n">likelihood_proposal</span> <span class="o">*</span> <span class="n">prior_proposal</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="n">p_accept</span> <span class="o">=</span> <span class="n">p_proposal</span> <span class="o">/</span> <span class="n">p_current</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">p_accept</span><span class="p">:</span></span>
+<span class="code-line">        <span class="n">p_water_current</span> <span class="o">=</span> <span class="n">p_water_proposal</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="k">assert</span> <span class="n">p_water_current</span> <span class="o">&gt;</span> <span class="mi">0</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="n">mh_posterior</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p_water_current</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">mh_posterior</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">mh_posterior</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">az</span><span class="o">.</span><span class="n">plot_posterior</span><span class="p">(</span><span class="n">mh_posterior</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nx">array</span><span class="p">([&lt;</span><span class="nx">matplotlib</span><span class="p">.</span><span class="nx">axes</span><span class="p">.</span><span class="nx">_subplots</span><span class="p">.</span><span class="nx">AxesSubplot</span><span class="w"> </span><span class="nx">object</span><span class="w"> </span><span class="nx">at</span><span class="w"> </span><span class="mh">0x7fac4c4cf5f8</span><span class="p">&gt;],</span></span>
+<span class="code-line"><span class="w">      </span><span class="nx">dtype</span><span class="p">=</span><span class="nx">object</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<p><img alt="png" src="https://ravinkumar.com/images/notebooks/InferenceCheatsheet_files/InferenceCheatsheet_25_1.png"></p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">mh_posterior</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code>array([0.6391594 , 0.53115708, 0.55828625, ..., 0.54408089, 0.57741335,</span>
+<span class="code-line">       0.5757483 ])</span>
+<span class="code-line"></code></pre></div>
+
+<h3 id="estimate-local-probability">Estimate local probability</h3>
+<p>Because MCMC provides samples and not an exact distribution, we have to take a ratio of counts, not a ratio of areas as before</p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">estimate_prob_ratio_from_samples</span><span class="p">(</span><span class="n">mcmc_posterior</span><span class="p">,</span> <span class="n">prob_1</span><span class="o">=</span><span class="n">possible_probabilities</span><span class="p">[</span><span class="mi">40</span><span class="p">],</span></span>
+<span class="code-line">                                     <span class="n">prob_2</span><span class="o">=</span><span class="n">possible_probabilities</span><span class="p">[</span><span class="mi">70</span><span class="p">],</span> <span class="n">width</span><span class="o">=</span><span class="mf">.01</span><span class="p">):</span></span>
+<span class="code-line"></span>
+<span class="code-line">    <span class="c1"># We need to compare the same interval in the distribution as we did above</span></span>
+<span class="code-line">    <span class="c1"># In the above case x[20] is .01 wide centered at </span></span>
+<span class="code-line">    <span class="n">num_samples_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">prob_1</span><span class="p">,</span> <span class="n">mcmc_posterior</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">atol</span><span class="o">=</span><span class="n">width</span><span class="p">))</span></span>
+<span class="code-line">    <span class="n">num_samples_2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">prob_2</span><span class="p">,</span> <span class="n">mcmc_posterior</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">atol</span><span class="o">=</span><span class="n">width</span><span class="p">))</span></span>
+<span class="code-line">    <span class="k">return</span> <span class="n">num_samples_1</span> <span class="o">/</span> <span class="n">num_samples_2</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">estimate_prob_ratio_from_samples</span><span class="p">(</span><span class="n">mh_posterior</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">0.28214285714285714</span></span>
+<span class="code-line"></code></pre></div>
+
+<h2 id="pymc3-mcmc-hamiltonian-monte-carlo-specifically-no-u-turn-sampler">PyMC3 MCMC Hamiltonian Monte Carlo (Specifically No U Turn Sampler)</h2>
+<p>Probabilistic Programming languages simplify Bayesian modeling tremendously but letting letting the statistician focus on the model, and less so on the sampler or other implementation details. From a s</p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="k">with</span> <span class="n">pm</span><span class="o">.</span><span class="n">Model</span><span class="p">()</span> <span class="k">as</span> <span class="n">mcmc_nuts</span><span class="p">:</span></span>
+<span class="code-line">    <span class="n">p_water</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Uniform</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span><span class="mi">1</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">w</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Binomial</span><span class="p">(</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p_water</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">total_observations</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="n">water_observations</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">trace</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">50000</span><span class="p">,</span> <span class="n">chains</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">az</span><span class="o">.</span><span class="n">plot_posterior</span><span class="p">(</span><span class="n">trace</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">Auto</span><span class="o">-</span><span class="n">assigning</span><span class="w"> </span><span class="n">NUTS</span><span class="w"> </span><span class="n">sampler</span><span class="p">...</span></span>
+<span class="code-line"><span class="nl">INFO</span><span class="p">:</span><span class="nl">pymc3</span><span class="p">:</span><span class="n">Auto</span><span class="o">-</span><span class="n">assigning</span><span class="w"> </span><span class="n">NUTS</span><span class="w"> </span><span class="n">sampler</span><span class="p">...</span></span>
+<span class="code-line"><span class="n">Initializing</span><span class="w"> </span><span class="n">NUTS</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">jitter</span><span class="o">+</span><span class="n">adapt_diag</span><span class="p">...</span></span>
+<span class="code-line"><span class="nl">INFO</span><span class="p">:</span><span class="nl">pymc3</span><span class="p">:</span><span class="n">Initializing</span><span class="w"> </span><span class="n">NUTS</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">jitter</span><span class="o">+</span><span class="n">adapt_diag</span><span class="p">...</span></span>
+<span class="code-line"><span class="n">Multiprocess</span><span class="w"> </span><span class="n">sampling</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="n">chains</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="n">jobs</span><span class="p">)</span></span>
+<span class="code-line"><span class="nl">INFO</span><span class="p">:</span><span class="nl">pymc3</span><span class="p">:</span><span class="n">Multiprocess</span><span class="w"> </span><span class="n">sampling</span><span class="w"> </span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="n">chains</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="n">jobs</span><span class="p">)</span></span>
+<span class="code-line"><span class="nl">NUTS</span><span class="p">:</span><span class="w"> </span><span class="o">[</span><span class="n">p</span><span class="o">]</span></span>
+<span class="code-line"><span class="nl">INFO</span><span class="p">:</span><span class="nl">pymc3</span><span class="p">:</span><span class="nl">NUTS</span><span class="p">:</span><span class="w"> </span><span class="o">[</span><span class="n">p</span><span class="o">]</span></span>
+<span class="code-line"><span class="n">Sampling</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="nl">chains</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="o">%|</span><span class="err">██████████</span><span class="o">|</span><span class="w"> </span><span class="mi">101000</span><span class="o">/</span><span class="mi">101000</span><span class="w"> </span><span class="o">[</span><span class="n">00:16&lt;00:00, 6234.09draws/s</span><span class="o">]</span></span>
+<span class="code-line"><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">BayesUser</span><span class="o">/</span><span class="n">repos</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="k">data</span><span class="o">/</span><span class="n">io_pymc3</span><span class="p">.</span><span class="nl">py</span><span class="p">:</span><span class="mi">56</span><span class="err">:</span><span class="w"> </span><span class="nl">FutureWarning</span><span class="p">:</span><span class="w"> </span><span class="n">arrays</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">stack</span><span class="w"> </span><span class="n">must</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">passed</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="ss">&quot;sequence&quot;</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">such</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">list</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">tuple</span><span class="p">.</span><span class="w"> </span><span class="n">Support</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">non</span><span class="o">-</span><span class="k">sequence</span><span class="w"> </span><span class="n">iterables</span><span class="w"> </span><span class="n">such</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">generators</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">deprecated</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">NumPy</span><span class="w"> </span><span class="mf">1.16</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">raise</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">future</span><span class="p">.</span></span>
+<span class="code-line"><span class="w">  </span><span class="n">chain_likelihoods</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">stack</span><span class="p">(</span><span class="n">log_like</span><span class="p">))</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="k">array</span><span class="p">(</span><span class="o">[</span><span class="n">&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7fac48a8b6d8&gt;</span><span class="o">]</span><span class="p">,</span></span>
+<span class="code-line"><span class="w">      </span><span class="n">dtype</span><span class="o">=</span><span class="k">object</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<p><img alt="png" src="https://ravinkumar.com/images/notebooks/InferenceCheatsheet_files/InferenceCheatsheet_30_2.png"></p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">pymc3_samples</span> <span class="o">=</span> <span class="n">trace</span><span class="o">.</span><span class="n">get_values</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">estimate_prob_ratio_from_samples</span><span class="p">(</span><span class="n">pymc3_samples</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">0.3025787965616046</span></span>
+<span class="code-line"></code></pre></div>
+
+<h2 id="stan-mcmc-hamiltonian-monte-carlo-specifically-no-u-turn-sampler">Stan MCMC Hamiltonian Monte Carlo (Specifically No U Turn Sampler)</h2>
+<p>We can fit the same model in pystan as well, in this case pystan, which is a python interface to Stan.</p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">water_code</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span></span>
+<span class="code-line"><span class="s2">data {</span></span>
+<span class="code-line"><span class="s2">    int&lt;lower=0&gt; water_observations; // number of water observations</span></span>
+<span class="code-line"><span class="s2">    int&lt;lower=0&gt; number_of_tosses; // number of globe tosses</span></span>
+<span class="code-line"><span class="s2">}</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">parameters {</span></span>
+<span class="code-line"><span class="s2">    real p_water; // Proportion of water on globe</span></span>
+<span class="code-line"><span class="s2">}</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="s2">model {</span></span>
+<span class="code-line"><span class="s2">    p_water~uniform(0.0,1.0);</span></span>
+<span class="code-line"><span class="s2">    water_observations ~ binomial(number_of_tosses, p_water);</span></span>
+<span class="code-line"><span class="s2">}</span></span>
+<span class="code-line"><span class="s2">&quot;&quot;&quot;</span></span>
+<span class="code-line"><span class="n">water_dat</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;water_observations&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span></span>
+<span class="code-line">               <span class="s1">&#39;number_of_tosses&#39;</span><span class="p">:</span> <span class="mi">9</span><span class="p">}</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">sm</span> <span class="o">=</span> <span class="n">pystan</span><span class="o">.</span><span class="n">StanModel</span><span class="p">(</span><span class="n">model_code</span><span class="o">=</span><span class="n">water_code</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">INFO</span><span class="o">:</span><span class="n">pystan</span><span class="o">:</span><span class="n">COMPILING</span><span class="w"> </span><span class="n">THE</span><span class="w"> </span><span class="n">C</span><span class="o">++</span><span class="w"> </span><span class="n">CODE</span><span class="w"> </span><span class="n">FOR</span><span class="w"> </span><span class="n">MODEL</span><span class="w"> </span><span class="n">anon_model_dedfcbf67db9d2d5064f58308236c51b</span><span class="w"> </span><span class="n">NOW</span><span class="o">.</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">fit</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">sampling</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">water_dat</span><span class="p">,</span> <span class="nb">iter</span><span class="o">=</span><span class="mi">50000</span><span class="p">,</span> <span class="n">chains</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">WARNING</span><span class="o">:</span><span class="n">pystan</span><span class="o">:</span><span class="mi">2776</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="mi">100000</span><span class="w"> </span><span class="n">iterations</span><span class="w"> </span><span class="n">ended</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">divergence</span><span class="w"> </span><span class="o">(</span><span class="mf">2.78</span><span class="w"> </span><span class="o">%).</span></span>
+<span class="code-line"><span class="n">WARNING</span><span class="o">:</span><span class="n">pystan</span><span class="o">:</span><span class="n">Try</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">adapt_delta</span><span class="w"> </span><span class="n">larger</span><span class="w"> </span><span class="n">than</span><span class="w"> </span><span class="mf">0.8</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">remove</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">divergences</span><span class="o">.</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">stan_samples</span> <span class="o">=</span> <span class="n">fit</span><span class="p">[</span><span class="s2">&quot;p_water&quot;</span><span class="p">]</span></span>
+<span class="code-line"><span class="n">estimate_prob_ratio_from_samples</span><span class="p">(</span><span class="n">stan_samples</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">0.29606625258799174</span></span>
+<span class="code-line"></code></pre></div>
+
+<h3 id="markov-monte-carlo-chain-pros">Markov Monte Carlo Chain Pros</h3>
+<ul>
+<li>MCMC seems to be most popular method at time of writing</li>
+<li>Popular libraries such as Stan, PyMC3, emcee, Pyro, use MCMC as main inference engine</li>
+</ul>
+<h3 id="markov-monte-carlo-chain-cons">Markov Monte Carlo Chain Cons</h3>
+<ul>
+<li>Sampling is not very computationally efficient. Advanced samplers such as NUTS help but MCMC still can take a while</li>
+<li>MCMC is sensitive to model parametrizations. An example of this is hierarchical funnels. (Read Michael Betancourt's great blog post explaining the issue)[https://mc-stan.org/users/documentation/case-studies/divergences_and_bias.html]</li>
+<li>Although mostly "magic" MCMC st</li>
+</ul>
+<h2 id="pymc3-variational-inference-specifically-automatic-differentiation-variational-inference">PyMC3 Variational Inference (Specifically Automatic Differentiation Variational Inference)</h2>
+<p>In short Variational Inference iteratively transforms a model into an unconstrained space, then tries to optimize the Kullback-Leibler divergence.</p>
+<h4 id="references_4">References</h4>
+<p>https://www.cs.toronto.edu/~duvenaud/papers/blackbox.pdf<br>
+https://arxiv.org/pdf/1601.00670.pdf</p>
+<p>A great explanation of the exact steps can be found at the bottom of page 3 in the paper below.<br>
+http://www.jmlr.org/papers/volume18/16-107/16-107.pdf  </p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="k">with</span> <span class="n">pm</span><span class="o">.</span><span class="n">Model</span><span class="p">()</span> <span class="k">as</span> <span class="n">advi</span><span class="p">:</span></span>
+<span class="code-line">    <span class="n">p_water</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Uniform</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">,</span> <span class="mi">0</span> <span class="p">,</span><span class="mi">1</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">w</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Binomial</span><span class="p">(</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p_water</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">total_observations</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="n">water_observations</span><span class="p">)</span></span>
+<span class="code-line">    <span class="n">mean_field</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;advi&#39;</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">50000</span><span class="p">)</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">advi_samples</span> <span class="o">=</span> <span class="n">mean_field</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">50000</span><span class="p">)</span><span class="o">.</span><span class="n">get_values</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">)</span></span>
+<span class="code-line"><span class="n">az</span><span class="o">.</span><span class="n">plot_posterior</span><span class="p">(</span><span class="n">advi_samples</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">Average</span><span class="w"> </span><span class="n">Loss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.3092</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="o">%|</span><span class="err">██████████</span><span class="o">|</span><span class="w"> </span><span class="mi">50000</span><span class="o">/</span><span class="mi">50000</span><span class="w"> </span><span class="p">[</span><span class="mi">00</span><span class="p">:</span><span class="mi">10</span><span class="o">&lt;</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="p">,</span><span class="w"> </span><span class="mf">4553.81</span><span class="n">it</span><span class="o">/</span><span class="n">s</span><span class="p">]</span></span>
+<span class="code-line"><span class="n">Finished</span><span class="w"> </span><span class="p">[</span><span class="mi">100</span><span class="o">%</span><span class="p">]:</span><span class="w"> </span><span class="n">Average</span><span class="w"> </span><span class="n">Loss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.3102</span></span>
+<span class="code-line"><span class="n">INFO</span><span class="p">:</span><span class="n">pymc3</span><span class="o">.</span><span class="n">variational</span><span class="o">.</span><span class="n">inference</span><span class="p">:</span><span class="n">Finished</span><span class="w"> </span><span class="p">[</span><span class="mi">100</span><span class="o">%</span><span class="p">]:</span><span class="w"> </span><span class="n">Average</span><span class="w"> </span><span class="n">Loss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2.3102</span></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">array</span><span class="p">([</span><span class="o">&lt;</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">_subplots</span><span class="o">.</span><span class="n">AxesSubplot</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">at</span><span class="w"> </span><span class="mh">0x7fac3dfb98d0</span><span class="o">&gt;</span><span class="p">],</span></span>
+<span class="code-line"><span class="w">      </span><span class="n">dtype</span><span class="o">=</span><span class="n">object</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<p><img alt="png" src="https://ravinkumar.com/images/notebooks/InferenceCheatsheet_files/InferenceCheatsheet_38_2.png"></p>
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">estimate_prob_ratio_from_samples</span><span class="p">(</span><span class="n">advi_samples</span><span class="p">)</span></span>
+<span class="code-line"></code></pre></div>
+
+<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">0.358148893360161</span></span>
+<span class="code-line"></code></pre></div>
+
+<h3 id="variational-inference-pros">Variational Inference Pros</h3>
+<ul>
+<li>No sampling required (unlike MCMC)</li>
+<li>Able to handle complex models</li>
+<li>Scales to large amounts of data better than MCMC</li>
+<li>Faster than MCMC</li>
+</ul>
+<h3 id="variational-inference-cons">Variational Inference Cons</h3>
+<ul>
+<li>Not guaranteed to reach "optimal" KL Divergence</li>
+<li>The true posterior may not be well approximated by any distribution in the chosen class</li>
+</ul>
+<h1 id="other-inference-methods">Other Inference Methods</h1>
+<p>There are other Bayesian methods that I frankly don't know enough about to write a full treatment here. I will list the ones I do know about however.</p>
+<h2 id="approximate-bayesian-computing">Approximate Bayesian Computing</h2>
+<p>Agustina Arroyuelo has a great write up for Google Summer of Code 2018.<br>
+https://agustinaarroyuelo.github.io/jekyll/update/2018/05/29/PyMC3's-Journal-Club.html</p>
+<h2 id="acknowledgements">Acknowledgements'</h2>
+<ul>
+<li>Austin Rochford (twitter: @AustinRochford)</li>
+<li>George Ho (twitter: @_eigenfoo)</li>
+<li>Neal Fultz (LinkedIn: https://www.linkedin.com/in/nfultz/)</li>
+</ul>
 
 			</div> 
 		</div>
