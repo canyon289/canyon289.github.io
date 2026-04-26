@@ -2,11 +2,33 @@
 
 # Setup
 
-Use python version 3.6.
-
-To generate the static site pages, run the following from the `dev/` folder.
+Requires [uv](https://docs.astral.sh/uv/). Install dependencies once from the `dev/` folder:
 ```
-pelican -s pelicanconf.py 
+cd dev
+uv sync
+```
+
+## Dev server (live reload)
+```
+cd dev
+bash blog.sh
+```
+
+## Publish
+```
+cd dev
+bash publish.sh   # builds site + appends GenAiGuidebook URLs to sitemap.xml
+```
+Then commit and push `docs/`.
+
+## Updating notebook-based articles
+
+The 4 Statistics articles are generated from `.ipynb` files in `dev/content/notebooks/`.
+Edit the notebook, then regenerate before publishing:
+```
+cd dev
+uv run python convert_notebooks.py
+bash publish.sh
 ```
 
 # Page and Article Organization
