@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 import yaml  # PyYAML, installed transitively via pelican
 
 TOC_PATH = Path.home() / "repos/GenAiGuidebook/genaiguidebook/_toc.yml"
-SITEMAP_PATH = Path("../docs/sitemap.xml")
+SITEMAP_PATH = Path("docs/sitemap.xml")
 BASE_URL = "https://ravinkumar.com/GenAiGuidebook"
 NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 

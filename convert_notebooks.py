@@ -14,9 +14,9 @@ import sys
 import tempfile
 from pathlib import Path
 
-NOTEBOOKS_DIR = Path("content/notebooks")
-OUTPUT_STATS_DIR = Path("content/articles/Statistics")
-IMAGES_DIR = Path("content/images/notebooks")
+NOTEBOOKS_DIR = Path("dev/content/notebooks")
+OUTPUT_STATS_DIR = Path("dev/content/articles/Statistics")
+IMAGES_DIR = Path("dev/content/images/notebooks")
 
 NOTEBOOKS = [
     {
