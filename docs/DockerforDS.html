@@ -7,57 +7,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
-		<link rel="shortcut icon" type="image/x-icon" href="https://ravinkumar.com/images/logo/logo.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
 		<meta name="description" content="Ravin Kumar is a small and large model builder and an open source contributor." />
 		<meta property="og:title" content="Ravin Kumar" />
-		<meta property="og:url" content="https://ravinkumar.com" />
-		<meta property="og:image" content="https://ravinkumar.com/images/logo/logo.png" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
 		<meta property="og:description" content="Ravin Kumar is a small and large model builder and an open source contributor." />
 		<meta name="twitter:site" content="https://twitter.com/canyon289" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Jupyter Notebooks -->
-
-<!--Notebook Configuration-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true,
-          displayMath: [['$$','$$'], ["\\[","\\]"]]
-      }
-  });
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-      $("div.collapseheader").click(function () {
-      $header = $(this).children("span").first();
-      $codearea = $(this).children(".input_area");
-      console.log($(this).children());
-      $codearea.slideToggle(500, function () {
-          $header.text(function () {
-              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
-          });
-      });
-  });
-  });
-</script>
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/jupyternotebook.css" />
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/codesyntax.css" />
-        <link rel="stylesheet" href="https://ravinkumar.com/theme/css/svgstyles.css" />
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/main.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -78,13 +43,13 @@
 <div id="main-menu-mobile" class="main-menu-mobile">
     <ul>
         <li class="menu-item-home"></li>
-            <a href="https://ravinkumar.com">
-                <img alt="Logo" src="https://ravinkumar.com/images/logo/logo-stroke-white.png" style="padding: 10px;"/>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
         </li>
         <!---Add Blog Manually --->
         <li class="menu-item-blog">
-            <a href="https://ravinkumar.com/blog.html">
+            <a href="./blog.html">
                 <span>Blog</span>
             </a>
         </li>
@@ -95,20 +60,20 @@
 			<!-- Header -->
 <div class="header">
     <div class="logo">
-        <a href="https://ravinkumar.com">
-            <img alt="Logo" src="https://ravinkumar.com/images/logo/logo.png" style="padding: 10px;"/>
+        <a href=".">
+            <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
         </a>
     </div>
     <div class="logo-mobile">
-        <a href="https://ravinkumar.com">
-            <img alt="Logo" src="https://ravinkumar.com/images/logo/logo.png" style="padding: 10%;"/>
+        <a href=".">
+            <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
         </a>
     </div>
 <div id="main-menu" class="main-menu">
     <ul>
         <!---Add Blog Manually --->
         <li class="menu-item-blog">
-            <a href="https://ravinkumar.com/blog.html">Blog</a>
+            <a href="./blog.html">Blog</a>
         </li>
         <!---Add Remaining Pages (excluding About) --->
       </ul>
@@ -122,16 +87,16 @@
   <h4>Search by Category</h4>
   <ul class="categories">
     <li>
-        <a href="https://ravinkumar.com/category/data-science.html" class="active">Data Science</a>
+        <a href="./category/data-science.html" class="active">Data Science</a>
     </li>
     <li>
-        <a href="https://ravinkumar.com/category/life.html" class="">Life</a>
+        <a href="./category/life.html" class="">Life</a>
     </li>
     <li>
-        <a href="https://ravinkumar.com/category/programming.html" class="">Programming</a>
+        <a href="./category/programming.html" class="">Programming</a>
     </li>
     <li>
-        <a href="https://ravinkumar.com/category/statistics.html" class="">Statistics</a>
+        <a href="./category/statistics.html" class="">Statistics</a>
     </li>
   </ul>
 </div>			<div class="content">
@@ -157,7 +122,7 @@ partly because the code should be tested and verified, but more so
 to avoid wasting contributors time and ensure they have a great experience.
 After all, the most finite resource is people's willpower, time, and enthusiasm.</p>
 <p>In other words...
-<img alt="Arviz Developer Experience" src="https://ravinkumar.com/images/DockerForDataScience/MarieKondo.png"></p>
+<img alt="Arviz Developer Experience" src="./images/DockerForDataScience/MarieKondo.png"></p>
 <p>To keep developers joyful we've moved to a Docker-based
 Continuous Integration system. In this post, I'll 
 detail the issues we were having with CI, why we started
@@ -197,8 +162,8 @@ and test your code, and ideally to be as minimal as possible. We'll use the
 <a href="https://github.com/arviz-devs/arviz/blob/master/scripts/Dockerfile">ArviZ dockerfile</a>
 as an example.</p>
 <p>The first line is the base image.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code>FROM conda/miniconda3</span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code>FROM conda/miniconda3
+</code></pre></div>
 
 <p>It's typically recommended to start with a minimal image, like
 alpine. However, at ArviZ we found it much simpler to start with an environment
@@ -206,39 +171,39 @@ that already had some things set up, and just work from there. This means
 the image isn't as minimal as it could be, but we're not shipping containers
 "at scale" so this tradeoff was worth it.  </p>
 <p>Next, we setup arguments and environmental variables</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code>ARG<span class="w"> </span>SRC_DIR</span>
-<span class="code-line">ARG<span class="w"> </span>PYTHON_VERSION</span>
-<span class="code-line">ARG<span class="w"> </span>PYSTAN_VERSION</span>
-<span class="code-line">ARG<span class="w"> </span>PYRO_VERSION</span>
-<span class="code-line"></span>
-<span class="code-line">ENV<span class="w"> </span>PYTHON_VERSION=<span class="cp">${</span><span class="n">PYTHON_VERSION</span><span class="cp">}</span></span>
-<span class="code-line">ENV<span class="w"> </span>PYSTAN_VERSION=<span class="cp">${</span><span class="n">PYSTAN_VERSION</span><span class="cp">}</span></span>
-<span class="code-line">ENV<span class="w"> </span>PYRO_VERSION=<span class="cp">${</span><span class="n">PYRO_VERSION</span><span class="cp">}</span></span>
-<span class="code-line">ENV<span class="w"> </span>DOCKER_BUILD=true</span>
-<span class="code-line"></span>
-<span class="code-line">#<span class="w"> </span>For<span class="w"> </span>Sphinx<span class="w"> </span>documentation<span class="w"> </span>builds</span>
-<span class="code-line">ENV<span class="w"> </span>LC_ALL=C.UTF-8</span>
-<span class="code-line">ENV<span class="w"> </span>LANG=C.UTF-8</span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code>ARG<span class="w"> </span>SRC_DIR
+ARG<span class="w"> </span>PYTHON_VERSION
+ARG<span class="w"> </span>PYSTAN_VERSION
+ARG<span class="w"> </span>PYRO_VERSION
+
+ENV<span class="w"> </span>PYTHON_VERSION=<span class="cp">${</span><span class="n">PYTHON_VERSION</span><span class="cp">}</span>
+ENV<span class="w"> </span>PYSTAN_VERSION=<span class="cp">${</span><span class="n">PYSTAN_VERSION</span><span class="cp">}</span>
+ENV<span class="w"> </span>PYRO_VERSION=<span class="cp">${</span><span class="n">PYRO_VERSION</span><span class="cp">}</span>
+ENV<span class="w"> </span>DOCKER_BUILD=true
+
+#<span class="w"> </span>For<span class="w"> </span>Sphinx<span class="w"> </span>documentation<span class="w"> </span>builds
+ENV<span class="w"> </span>LC_ALL=C.UTF-8
+ENV<span class="w"> </span>LANG=C.UTF-8
+</code></pre></div>
 
 <p>The choices are intended to allow some flexibility in what gets installed
 in each image. For ArviZ we test against different versions of libraries
 and we didn't want to create a dockerfile for each. By setting the 
 ENV variables here through command line arguments we afford some flexibility</p>
 <p>After this, we actually start installing things</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">RUN</span><span class="w"> </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">update</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">-</span><span class="n">y</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">build</span><span class="o">-</span><span class="n">essential</span><span class="w"> </span><span class="n">pandoc</span><span class="w"> </span>\</span>
-<span class="code-line"><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="o">-</span><span class="n">rf</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="o">/*</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="c1"># Copy requirements and environment installation scripts</span></span>
-<span class="code-line"><span class="n">COPY</span><span class="w"> </span><span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span><span class="w">  </span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span></span>
-<span class="code-line"><span class="n">COPY</span><span class="w"> </span><span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">requirements</span><span class="o">-</span><span class="n">dev</span><span class="o">.</span><span class="n">txt</span><span class="w">  </span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span></span>
-<span class="code-line"><span class="n">COPY</span><span class="w"> </span><span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="w"> </span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">scripts</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="n">WORKDIR</span><span class="w"> </span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="c1"># Create conda environment. Defaults to Python 3.6</span></span>
-<span class="code-line"><span class="n">RUN</span><span class="w"> </span><span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">create_testenv</span><span class="o">.</span><span class="n">sh</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">RUN</span><span class="w"> </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">update</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">-</span><span class="n">y</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">build</span><span class="o">-</span><span class="n">essential</span><span class="w"> </span><span class="n">pandoc</span><span class="w"> </span>\
+<span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="o">-</span><span class="n">rf</span><span class="w"> </span><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="o">/*</span>
+
+<span class="c1"># Copy requirements and environment installation scripts</span>
+<span class="n">COPY</span><span class="w"> </span><span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span><span class="w">  </span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span>
+<span class="n">COPY</span><span class="w"> </span><span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">requirements</span><span class="o">-</span><span class="n">dev</span><span class="o">.</span><span class="n">txt</span><span class="w">  </span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span>
+<span class="n">COPY</span><span class="w"> </span><span class="o">$</span><span class="n">SRC_DIR</span><span class="o">/</span><span class="n">scripts</span><span class="o">/</span><span class="w"> </span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">scripts</span>
+
+<span class="n">WORKDIR</span><span class="w"> </span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">arviz</span>
+
+<span class="c1"># Create conda environment. Defaults to Python 3.6</span>
+<span class="n">RUN</span><span class="w"> </span><span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">create_testenv</span><span class="o">.</span><span class="n">sh</span>
+</code></pre></div>
 
 <p>Installations happen at two levels, some are at the container level,
 and the rest are in the Python environment. We choose to have a separate
@@ -246,27 +211,27 @@ and the rest are in the Python environment. We choose to have a separate
 of Docker.</p>
 <p>The next section of the file copies the ArviZ code base and
 removes any cached files.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code>COPY $SRC_DIR /opt/arviz</span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code>COPY $SRC_DIR /opt/arviz
+</code></pre></div>
 
 <p>The last section clears any remaining cache files and sets the default
 command of the container to execute tests. There is something weird
 with the <code>source /root/.bashrc</code> which I'll talk more about in
 the general tips section.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nx">RUN</span><span class="w"> </span><span class="nx">rm</span><span class="w"> </span><span class="o">-</span><span class="nx">f</span><span class="w"> </span><span class="nx">arviz</span><span class="o">/</span><span class="nx">tests</span><span class="o">/</span><span class="nx">saved_models</span><span class="o">/*</span><span class="p">.</span><span class="nx">pkl</span></span>
-<span class="code-line"><span class="nx">RUN</span><span class="w"> </span><span class="nx">find</span><span class="w"> </span><span class="o">-</span><span class="k">type</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="o">-</span><span class="nx">name</span><span class="w"> </span><span class="nx">__pycache__</span><span class="w"> </span><span class="o">-</span><span class="nx">exec</span><span class="w"> </span><span class="nx">rm</span><span class="w"> </span><span class="o">-</span><span class="nx">rf</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span><span class="o">+</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="nx">CMD</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;/bin/bash&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-c&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;source /root/.bashrc &amp;&amp; pytest -vv arviz/tests --cov=arviz/ &amp;&amp; echo Finished Testing&quot;</span><span class="p">]</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nx">RUN</span><span class="w"> </span><span class="nx">rm</span><span class="w"> </span><span class="o">-</span><span class="nx">f</span><span class="w"> </span><span class="nx">arviz</span><span class="o">/</span><span class="nx">tests</span><span class="o">/</span><span class="nx">saved_models</span><span class="o">/*</span><span class="p">.</span><span class="nx">pkl</span>
+<span class="nx">RUN</span><span class="w"> </span><span class="nx">find</span><span class="w"> </span><span class="o">-</span><span class="k">type</span><span class="w"> </span><span class="nx">d</span><span class="w"> </span><span class="o">-</span><span class="nx">name</span><span class="w"> </span><span class="nx">__pycache__</span><span class="w"> </span><span class="o">-</span><span class="nx">exec</span><span class="w"> </span><span class="nx">rm</span><span class="w"> </span><span class="o">-</span><span class="nx">rf</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span><span class="o">+</span>
+
+<span class="nx">CMD</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;/bin/bash&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;-c&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;source /root/.bashrc &amp;&amp; pytest -vv arviz/tests --cov=arviz/ &amp;&amp; echo Finished Testing&quot;</span><span class="p">]</span>
+</code></pre></div>
 
 <h3 id="step-2-configure-your-ci-service">Step 2: Configure your CI service</h3>
 <p>The next step is configuring TravisCI. Luckily, this is not too hard.
 Adding the lines below will install the latest version of <em>docker-ce</em>.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">addons</span><span class="o">:</span></span>
-<span class="code-line"><span class="w">  </span><span class="n">apt</span><span class="o">:</span></span>
-<span class="code-line"><span class="w">    </span><span class="n">packages</span><span class="o">:</span></span>
-<span class="code-line"><span class="w">      </span><span class="o">-</span><span class="w"> </span><span class="n">docker</span><span class="o">-</span><span class="n">ce</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">addons</span><span class="o">:</span>
+<span class="w">  </span><span class="n">apt</span><span class="o">:</span>
+<span class="w">    </span><span class="n">packages</span><span class="o">:</span>
+<span class="w">      </span><span class="o">-</span><span class="w"> </span><span class="n">docker</span><span class="o">-</span><span class="n">ce</span>
+</code></pre></div>
 
 <p>After that you'll be able to build an image and run tests, capture code coverage,
 generate documentation, or whatever else you'd need.</p>
@@ -303,8 +268,8 @@ please let us know through an issue or a pull request! We would greatly apprecia
     <div class="wrapper footer-wrapper">
         <div class="footer-left">
             <div class="footer-logo">
-                <a href="https://ravinkumar.com">
-                    <img src="https://ravinkumar.com/images/logo/logo.png"/>
+                <a href=".">
+                    <img src="./images/logo/logo.png"/>
                 </a>
             </div>
             <div class="footer-mailer">
@@ -348,10 +313,9 @@ please let us know through an issue or a pull request! We would greatly apprecia
     </div>
 </div>
 		<!-- Javascript -->
-		<script type="text/javascript" src="https://ravinkumar.com/theme/js/main.js"></script>
+		<script type="text/javascript" src="./theme/js/main.js"></script>
 		
-		<!-- Javascript for Pelican Javascript plugin -->
-		
+
 	</body>
 
 </html>

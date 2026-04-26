@@ -7,57 +7,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
-		<link rel="shortcut icon" type="image/x-icon" href="https://ravinkumar.com/images/logo/logo.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
 		<meta name="description" content="Ravin Kumar is a small and large model builder and an open source contributor." />
 		<meta property="og:title" content="Ravin Kumar" />
-		<meta property="og:url" content="https://ravinkumar.com" />
-		<meta property="og:image" content="https://ravinkumar.com/images/logo/logo.png" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
 		<meta property="og:description" content="Ravin Kumar is a small and large model builder and an open source contributor." />
 		<meta name="twitter:site" content="https://twitter.com/canyon289" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Jupyter Notebooks -->
-
-<!--Notebook Configuration-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true,
-          displayMath: [['$$','$$'], ["\\[","\\]"]]
-      }
-  });
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-      $("div.collapseheader").click(function () {
-      $header = $(this).children("span").first();
-      $codearea = $(this).children(".input_area");
-      console.log($(this).children());
-      $codearea.slideToggle(500, function () {
-          $header.text(function () {
-              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
-          });
-      });
-  });
-  });
-</script>
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/jupyternotebook.css" />
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/codesyntax.css" />
-        <link rel="stylesheet" href="https://ravinkumar.com/theme/css/svgstyles.css" />
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/main.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -78,13 +43,13 @@
 <div id="main-menu-mobile" class="main-menu-mobile">
     <ul>
         <li class="menu-item-home"></li>
-            <a href="https://ravinkumar.com">
-                <img alt="Logo" src="https://ravinkumar.com/images/logo/logo-stroke-white.png" style="padding: 10px;"/>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
         </li>
         <!---Add Blog Manually --->
         <li class="menu-item-blog">
-            <a href="https://ravinkumar.com/blog.html">
+            <a href="./blog.html">
                 <span>Blog</span>
             </a>
         </li>
@@ -95,20 +60,20 @@
 			<!-- Header -->
 <div class="header">
     <div class="logo">
-        <a href="https://ravinkumar.com">
-            <img alt="Logo" src="https://ravinkumar.com/images/logo/logo.png" style="padding: 10px;"/>
+        <a href=".">
+            <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
         </a>
     </div>
     <div class="logo-mobile">
-        <a href="https://ravinkumar.com">
-            <img alt="Logo" src="https://ravinkumar.com/images/logo/logo.png" style="padding: 10%;"/>
+        <a href=".">
+            <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
         </a>
     </div>
 <div id="main-menu" class="main-menu">
     <ul>
         <!---Add Blog Manually --->
         <li class="menu-item-blog">
-            <a href="https://ravinkumar.com/blog.html">Blog</a>
+            <a href="./blog.html">Blog</a>
         </li>
         <!---Add Remaining Pages (excluding About) --->
       </ul>
@@ -122,16 +87,16 @@
   <h4>Search by Category</h4>
   <ul class="categories">
     <li>
-        <a href="https://ravinkumar.com/category/data-science.html" class="">Data Science</a>
+        <a href="./category/data-science.html" class="">Data Science</a>
     </li>
     <li>
-        <a href="https://ravinkumar.com/category/life.html" class="">Life</a>
+        <a href="./category/life.html" class="">Life</a>
     </li>
     <li>
-        <a href="https://ravinkumar.com/category/programming.html" class="">Programming</a>
+        <a href="./category/programming.html" class="">Programming</a>
     </li>
     <li>
-        <a href="https://ravinkumar.com/category/statistics.html" class="active">Statistics</a>
+        <a href="./category/statistics.html" class="active">Statistics</a>
     </li>
   </ul>
 </div>			<div class="content">
@@ -146,9 +111,9 @@
 <h3 id="a-bunch-of-wrong-ways-one-sort-of-right-way-compared-to-the-always-right-way">A bunch of wrong ways, one sort of right way, compared to the always right way</h3>
 <p>But enough to understand why its important and how to build an intuition</p>
 <h1 id="random-variable-math-can-be-hard-to-understand">Random variable math can be hard to understand</h1>
-<p><img alt="image.png" src="https://ravinkumar.com/images/notebooks/RandomVariableAlgebra_files/image.png"></p>
+<p><img alt="image.png" src="./images/notebooks/RandomVariableAlgebra_files/image.png"></p>
 <h1 id="even-wikipedia-knows-this">Even Wikipedia knows this</h1>
-<p><img alt="RVWikipedia.png" src="https://ravinkumar.com/images/notebooks/RandomVariableAlgebra_files/RVWikipedia.png"></p>
+<p><img alt="RVWikipedia.png" src="./images/notebooks/RandomVariableAlgebra_files/RVWikipedia.png"></p>
 <h1 id="the-concepts-are-relevant-to-every-business-and-data-person-out-there">The concepts are relevant to every business and data person out there</h1>
 <p>Too often they ignored or misapplied however.
 We're going to build intuition with an example and simulation to help clear things up</p>
@@ -165,7 +130,7 @@ We're going to build intuition with an example and simulation to help clear thin
 <li>Each dose is .3ml</li>
 <li>Ignore the vial size constraint for our purposes</li>
 </ul>
-<p><img alt="image-2.png" src="https://ravinkumar.com/images/notebooks/RandomVariableAlgebra_files/image-2.png"></p>
+<p><img alt="image-2.png" src="./images/notebooks/RandomVariableAlgebra_files/image-2.png"></p>
 <h2 id="algebra-101">Algebra 101</h2>
 <p>Each dose is <strong>.3 ml</strong>, for <strong>1 million people</strong> we'll need 300,000 ml</p>
 <p>If our variable <span class="math">\(s\)</span> is size of scoop, and <span class="math">\(c\)</span> as number of customers</p>
@@ -175,13 +140,13 @@ people = 1000000 \\
 dose*people = 300000
 $$</div>
 <h1 id="algebra-101-with-the-help-of-a-computer">Algebra 101 (with the help of a computer)</h1>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">number_of_people</span> <span class="o">=</span> <span class="mf">1e6</span></span>
-<span class="code-line"><span class="n">dose_per_person_ml</span> <span class="o">=</span> <span class="mf">.3</span></span>
-<span class="code-line"><span class="n">number_of_people</span> <span class="o">*</span> <span class="n">dose_per_person_ml</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">number_of_people</span> <span class="o">=</span> <span class="mf">1e6</span>
+<span class="n">dose_per_person_ml</span> <span class="o">=</span> <span class="mf">.3</span>
+<span class="n">number_of_people</span> <span class="o">*</span> <span class="n">dose_per_person_ml</span>
+</code></pre></div>
 
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">300000.0</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mf">300000.0</span>
+</code></pre></div>
 
 <h1 id="unfortunately-everything-is-random">Unfortunately everything is random</h1>
 <p>Each dose isn't perfectly .3 ml, but we need to define the randomness somehow to work with it</p>
@@ -192,100 +157,100 @@ Gaussian distributed is just one of many possible choices, and is a human decisi
 <div class="math">$$
 \mathcal{N}(\mu = .3, \sigma=.05)
 $$</div>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="n">mean_dose</span> <span class="o">=</span> <span class="mf">.3</span></span>
-<span class="code-line"><span class="n">std_dose</span> <span class="o">=</span> <span class="mf">.05</span></span>
-<span class="code-line"><span class="n">dose_rv</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">mean_dose</span><span class="p">,</span> <span class="n">std_dose</span><span class="p">)</span></span>
-<span class="code-line"><span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">()</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
 
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">0.2725595065696113</span></span>
-<span class="code-line"></code></pre></div>
+<span class="n">mean_dose</span> <span class="o">=</span> <span class="mf">.3</span>
+<span class="n">std_dose</span> <span class="o">=</span> <span class="mf">.05</span>
+<span class="n">dose_rv</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">mean_dose</span><span class="p">,</span> <span class="n">std_dose</span><span class="p">)</span>
+<span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">()</span>
+</code></pre></div>
 
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">num_random_draws</span> <span class="o">=</span> <span class="mi">10000</span></span>
-<span class="code-line"><span class="n">samples</span> <span class="o">=</span> <span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">num_random_draws</span><span class="p">)</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span></span>
-<span class="code-line"><span class="n">az</span><span class="o">.</span><span class="n">plot_dist</span><span class="p">(</span><span class="n">samples</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span></span>
-<span class="code-line"><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mf">0.2725595065696113</span>
+</code></pre></div>
 
-<p><img alt="png" src="https://ravinkumar.com/images/notebooks/RandomVariableAlgebra_files/RandomVariableAlgebra_11_0.png"></p>
+<div class="highlight"><pre><span></span><code><span class="n">num_random_draws</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">samples</span> <span class="o">=</span> <span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">num_random_draws</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">az</span><span class="o">.</span><span class="n">plot_dist</span><span class="p">(</span><span class="n">samples</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="png" src="./images/notebooks/RandomVariableAlgebra_files/RandomVariableAlgebra_11_0.png"></p>
 <h1 id="using-simulation-to-recover-parameters">Using simulation (to recover parameters)</h1>
 <p>Because we've computationally defined our RV we can sample from it and make estimations from those samples</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">num_random_draws</span> <span class="o">=</span> <span class="mi">10000</span></span>
-<span class="code-line"><span class="n">samples</span> <span class="o">=</span> <span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">num_random_draws</span><span class="p">)</span></span>
-<span class="code-line"><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The recovered mean is </span><span class="si">{</span><span class="n">samples</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s2">, &quot;</span></span>
-<span class="code-line"><span class="sa">f</span><span class="s2">&quot;The recovered standard deviation is </span><span class="si">{</span><span class="n">samples</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">num_random_draws</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">samples</span> <span class="o">=</span> <span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="n">num_random_draws</span><span class="p">)</span>
+<span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The recovered mean is </span><span class="si">{</span><span class="n">samples</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s2">, &quot;</span>
+<span class="sa">f</span><span class="s2">&quot;The recovered standard deviation is </span><span class="si">{</span><span class="n">samples</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
 
-<div class="highlight"><pre><span class="code-line"><span></span><code>&#39;The recovered mean is 0.2997408994886067, The recovered standard deviation is 0.049557663708513&#39;</span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code>&#39;The recovered mean is 0.2997408994886067, The recovered standard deviation is 0.049557663708513&#39;
+</code></pre></div>
 
 <h1 id="back-to-the-point-how-much-do-we-need-to-vaccinate-a-million-people">Back to the point: How much do we need to vaccinate a million people?</h1>
 <p>We've specified the random variable individual dose but still need to figure out random variable represents a million doses.</p>
 <p>But we can just multiply our dose random variable right? right?????</p>
 <h1 id="wrong-way-1-multiply-the-mean-and-standard-deviation-by-million-because-that-seems-to-make-sense">Wrong Way 1: Multiply the mean and standard deviation by million (because that seems to make sense)</h1>
 <p>This one assumes the mean and standard  linearly. The intuitiveness and ease is tempting but with statistics intuition like this is more often wrong than right.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">mean</span> <span class="o">=</span> <span class="n">mean_dose</span><span class="o">*</span><span class="mi">1_000_000</span></span>
-<span class="code-line"><span class="n">sd</span> <span class="o">=</span> <span class="n">std_dose</span><span class="o">*</span><span class="mi">1_000_000</span></span>
-<span class="code-line"><span class="n">mean</span><span class="p">,</span> <span class="n">sd</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">mean</span> <span class="o">=</span> <span class="n">mean_dose</span><span class="o">*</span><span class="mi">1_000_000</span>
+<span class="n">sd</span> <span class="o">=</span> <span class="n">std_dose</span><span class="o">*</span><span class="mi">1_000_000</span>
+<span class="n">mean</span><span class="p">,</span> <span class="n">sd</span>
+</code></pre></div>
 
-<div class="highlight"><pre><span class="code-line"><span></span><code>(300000.0, 50000.0)</span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code>(300000.0, 50000.0)
+</code></pre></div>
 
 <p>In this case it happens to be right for the the mean but wrong for the standard deviation</p>
 <h1 id="wrong-way-2-multiply-a-single-sample-by-a-million">Wrong Way 2: Multiply a single sample by a million</h1>
 <p>This first dose is random, the next 2,999,999 are then assumed to exactly the same. Besides with just one number how do we calculation the standard deviation?</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">1_000_000</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">1_000_000</span>
+</code></pre></div>
 
-<div class="highlight"><pre><span class="code-line"><span></span><code>array([309076.79928766])</span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code>array([309076.79928766])
+</code></pre></div>
 
 <h1 id="wrong-way-3-take-a-million-draws-and-sum-them-together">Wrong Way 3: Take a million draws and sum them together</h1>
 <p>Each single sample is random which is great but like Wrong Way 2, how would we estimate the uncertainty, which was why we started down this path</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">samples</span> <span class="o">=</span> <span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="mi">1_000_000</span><span class="p">)</span></span>
-<span class="code-line"><span class="n">samples</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">samples</span> <span class="o">=</span> <span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="mi">1_000_000</span><span class="p">)</span>
+<span class="n">samples</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</code></pre></div>
 
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">299985.82573344326</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mf">299985.82573344326</span>
+</code></pre></div>
 
 <h1 id="correctly-simulating-the-entire-random-process-a-bunch">Correctly simulating the entire random process a bunch</h1>
 <p>Simulate the entire sequence of random events not just once, but many many times, then make an estimation from that.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="c1"># Decide on the number of simulations</span></span>
-<span class="code-line"><span class="n">num_trials</span> <span class="o">=</span> <span class="mi">10000</span></span>
-<span class="code-line"></span>
-<span class="code-line"><span class="n">amount_for_million_doses</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_trials</span><span class="p">)</span></span>
-<span class="code-line"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span></span>
-<span class="code-line"></span>
-<span class="code-line">    <span class="c1"># Take a million random draws once per simulation</span></span>
-<span class="code-line">    <span class="n">amount</span> <span class="o">=</span> <span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="mi">1_000_000</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span></span>
-<span class="code-line"></span>
-<span class="code-line">    <span class="c1"># Keep track of the simulation result</span></span>
-<span class="code-line">    <span class="n">amount_for_million_doses</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">amount</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Decide on the number of simulations</span>
+<span class="n">num_trials</span> <span class="o">=</span> <span class="mi">10000</span>
 
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The recovered mean is </span><span class="si">{</span><span class="n">amount_for_million_doses</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s2">, &quot;</span></span>
-<span class="code-line"><span class="sa">f</span><span class="s2">&quot;The recovered standard deviation is </span><span class="si">{</span><span class="n">amount_for_million_doses</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></span>
-<span class="code-line"></code></pre></div>
+<span class="n">amount_for_million_doses</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">num_trials</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
 
-<div class="highlight"><pre><span class="code-line"><span></span><code>&#39;The recovered mean is 299999.65053315327, The recovered standard deviation is 50.71133054352981&#39;</span>
-<span class="code-line"></code></pre></div>
+    <span class="c1"># Take a million random draws once per simulation</span>
+    <span class="n">amount</span> <span class="o">=</span> <span class="n">dose_rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="mi">1_000_000</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+    <span class="c1"># Keep track of the simulation result</span>
+    <span class="n">amount_for_million_doses</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">amount</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The recovered mean is </span><span class="si">{</span><span class="n">amount_for_million_doses</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">}</span><span class="s2">, &quot;</span>
+<span class="sa">f</span><span class="s2">&quot;The recovered standard deviation is </span><span class="si">{</span><span class="n">amount_for_million_doses</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>&#39;The recovered mean is 299999.65053315327, The recovered standard deviation is 50.71133054352981&#39;
+</code></pre></div>
 
 <h1 id="comparison-to-the-analytical-answer">Comparison to the analytical answer</h1>
 <p>If we know the formula the analytic answer is easier, and more correct</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">std_dose</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">1_000_000</span><span class="p">)</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">std_dose</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="mi">1_000_000</span><span class="p">)</span>
+</code></pre></div>
 
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="mf">50.00000000000001</span></span>
-<span class="code-line"></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="mf">50.00000000000001</span>
+</code></pre></div>
 
 <p>But I wouldn't blame you if it wasn't "super obvious"
-<img alt="image.png" src="https://ravinkumar.com/images/notebooks/RandomVariableAlgebra_files/image.png"></p>
+<img alt="image.png" src="./images/notebooks/RandomVariableAlgebra_files/image.png"></p>
 <h1 id="gaps-with-simulation">Gaps with simulation</h1>
 <ul>
 <li>Simulation is not exact and not guaranteed to be close<ul>
@@ -377,8 +342,8 @@ Use simulations if you're up against a deadline and stuck</p>
     <div class="wrapper footer-wrapper">
         <div class="footer-left">
             <div class="footer-logo">
-                <a href="https://ravinkumar.com">
-                    <img src="https://ravinkumar.com/images/logo/logo.png"/>
+                <a href=".">
+                    <img src="./images/logo/logo.png"/>
                 </a>
             </div>
             <div class="footer-mailer">
@@ -422,10 +387,9 @@ Use simulations if you're up against a deadline and stuck</p>
     </div>
 </div>
 		<!-- Javascript -->
-		<script type="text/javascript" src="https://ravinkumar.com/theme/js/main.js"></script>
+		<script type="text/javascript" src="./theme/js/main.js"></script>
 		
-		<!-- Javascript for Pelican Javascript plugin -->
-		
+
 	</body>
 
 </html>

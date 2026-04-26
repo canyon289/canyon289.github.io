@@ -47,14 +47,7 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/ravinakumar'),
 
 DEFAULT_PAGINATION = False
 DISPLAY_PAGES_ON_MENU = True
-PLUGIN_PATHS = ["dev/pelican-plugins"]
-PLUGINS = [
-    "better_codeblock_line_numbering",
-    "pelican_javascript",
-    "render_math",
-    "simple_footnotes",
-    "sitemap",
-]
+PLUGINS = ["render_math", "simple_footnotes", "sitemap"]
 
 SITEMAP = {
     "format": "xml",

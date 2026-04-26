@@ -7,57 +7,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>Ravin Kumar</title>
-		<link rel="shortcut icon" type="image/x-icon" href="https://ravinkumar.com/images/logo/logo.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="./images/logo/logo.png" />
 
 		<meta name="description" content="Ravin Kumar is a small and large model builder and an open source contributor." />
 		<meta property="og:title" content="Ravin Kumar" />
-		<meta property="og:url" content="https://ravinkumar.com" />
-		<meta property="og:image" content="https://ravinkumar.com/images/logo/logo.png" />
+		<meta property="og:url" content="." />
+		<meta property="og:image" content="./images/logo/logo.png" />
 		<meta property="og:description" content="Ravin Kumar is a small and large model builder and an open source contributor." />
 		<meta name="twitter:site" content="https://twitter.com/canyon289" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<!-- Jupyter Notebooks -->
-
-<!--Notebook Configuration-->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true,
-          displayMath: [['$$','$$'], ["\\[","\\]"]]
-      }
-  });
-</script>
-
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<script type="text/javascript">
-  jQuery(document).ready(function($) {
-      $("div.collapseheader").click(function () {
-      $header = $(this).children("span").first();
-      $codearea = $(this).children(".input_area");
-      console.log($(this).children());
-      $codearea.slideToggle(500, function () {
-          $header.text(function () {
-              return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
-          });
-      });
-  });
-  });
-</script>
-
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/jupyternotebook.css" />
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/codesyntax.css" />
-        <link rel="stylesheet" href="https://ravinkumar.com/theme/css/svgstyles.css" />
-		<link rel="stylesheet" href="https://ravinkumar.com/theme/css/main.css" />
+		<link rel="stylesheet" href="./theme/css/codesyntax.css" />
+        <link rel="stylesheet" href="./theme/css/svgstyles.css" />
+		<link rel="stylesheet" href="./theme/css/main.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-        <!-- CSS for Pelican Javascript plugin -->
 
 		<!-- RSS -->
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -78,13 +43,13 @@
 <div id="main-menu-mobile" class="main-menu-mobile">
     <ul>
         <li class="menu-item-home"></li>
-            <a href="https://ravinkumar.com">
-                <img alt="Logo" src="https://ravinkumar.com/images/logo/logo-stroke-white.png" style="padding: 10px;"/>
+            <a href=".">
+                <img alt="Logo" src="./images/logo/logo-stroke-white.png" style="padding: 10px;"/>
             </a>
         </li>
         <!---Add Blog Manually --->
         <li class="menu-item-blog">
-            <a href="https://ravinkumar.com/blog.html">
+            <a href="./blog.html">
                 <span>Blog</span>
             </a>
         </li>
@@ -95,20 +60,20 @@
 			<!-- Header -->
 <div class="header">
     <div class="logo">
-        <a href="https://ravinkumar.com">
-            <img alt="Logo" src="https://ravinkumar.com/images/logo/logo.png" style="padding: 10px;"/>
+        <a href=".">
+            <img alt="Logo" src="./images/logo/logo.png" style="padding: 10px;"/>
         </a>
     </div>
     <div class="logo-mobile">
-        <a href="https://ravinkumar.com">
-            <img alt="Logo" src="https://ravinkumar.com/images/logo/logo.png" style="padding: 10%;"/>
+        <a href=".">
+            <img alt="Logo" src="./images/logo/logo.png" style="padding: 10%;"/>
         </a>
     </div>
 <div id="main-menu" class="main-menu">
     <ul>
         <!---Add Blog Manually --->
         <li class="menu-item-blog">
-            <a href="https://ravinkumar.com/blog.html">Blog</a>
+            <a href="./blog.html">Blog</a>
         </li>
         <!---Add Remaining Pages (excluding About) --->
       </ul>
@@ -122,16 +87,16 @@
   <h4>Search by Category</h4>
   <ul class="categories">
     <li>
-        <a href="https://ravinkumar.com/category/data-science.html" class="active">Data Science</a>
+        <a href="./category/data-science.html" class="active">Data Science</a>
     </li>
     <li>
-        <a href="https://ravinkumar.com/category/life.html" class="">Life</a>
+        <a href="./category/life.html" class="">Life</a>
     </li>
     <li>
-        <a href="https://ravinkumar.com/category/programming.html" class="">Programming</a>
+        <a href="./category/programming.html" class="">Programming</a>
     </li>
     <li>
-        <a href="https://ravinkumar.com/category/statistics.html" class="">Statistics</a>
+        <a href="./category/statistics.html" class="">Statistics</a>
     </li>
   </ul>
 </div>			<div class="content">
@@ -144,7 +109,7 @@ with axes that also implements zoom and pan. As we move the chart elements
 into the axes area we don't wany any overlap.</p>
 <h1 id="an-example">An example</h1>
 <p>In the visualization below zoom and pan have been applied using the method in
-the <a href="https://ravinkumar.com/ImplementingD3Zoom.html">zoom and pan post</a>. We only want the blue
+the <a href="./ImplementingD3Zoom.html">zoom and pan post</a>. We only want the blue
 dot to be visible in the blue region but it's clearly visible everywhere.</p>
 <div id="unclipped"></div>
 
@@ -156,38 +121,38 @@ is a bit more convoluted.  </p>
 region. As with nearly everything in SVG we'll have to define the geometry.
 However unlike other svg geometry it needs to be defined in the <strong>defs</strong>
 section of the svg.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;svg&gt;</span></code></span><code>
-<span class="code-line"><span class="w">  </span><span class="nt">&lt;defs&gt;</span></span>
-<span class="code-line"><span class="w">    </span><span class="nt">&lt;clipPath</span><span class="w"> </span><span class="na">id=</span><span class="s">"bluerect"</span><span class="nt">&gt;</span></span>
-<span class="code-line"><span class="w">      </span><span class="cm">&lt;!--Geometry goes here--&gt;</span></span>
-<span class="code-line"><span class="w">    </span><span class="nt">&lt;/clipPath&gt;</span></span>
-<span class="code-line"><span class="w">  </span><span class="nt">&lt;/defs&gt;</span><span class="w"> </span></span>
-<span class="code-line"><span class="nt">&lt;/svg&gt;</span></span>
-<span class="code-line"></span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;svg&gt;</span>
+<span class="w">  </span><span class="nt">&lt;defs&gt;</span>
+<span class="w">    </span><span class="nt">&lt;clipPath</span><span class="w"> </span><span class="na">id=</span><span class="s">"bluerect"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="cm">&lt;!--Geometry goes here--&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/clipPath&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/defs&gt;</span><span class="w"> </span>
+<span class="nt">&lt;/svg&gt;</span>
+</code></pre></div>
 
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs">defs</a>
 are a tag for reuseable elements in SVGs. In this case 
 <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath">clipPath</a>
 element needs to be defined in this block.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;svg&gt;</span></code></span><code>
-<span class="code-line"><span class="w">  </span><span class="nt">&lt;defs&gt;</span></span>
-<span class="code-line"><span class="w">    </span><span class="nt">&lt;clipPath</span><span class="w"> </span><span class="na">id=</span><span class="s">"bluerect"</span><span class="nt">&gt;</span></span>
-<span class="code-line"><span class="w">      </span><span class="nt">&lt;rect</span><span class="w"> </span><span class="na">x=</span><span class="s">0</span><span class="w"> </span><span class="na">y=</span><span class="s">0</span><span class="w"> </span><span class="na">height=</span><span class="s">300</span><span class="w"> </span><span class="na">width=</span><span class="s">150</span><span class="nt">&gt;&lt;/rect&gt;</span></span>
-<span class="code-line"><span class="w">    </span><span class="nt">&lt;/clipPath&gt;</span></span>
-<span class="code-line"><span class="w">  </span><span class="nt">&lt;/defs&gt;</span><span class="w"> </span></span>
-<span class="code-line"><span class="nt">&lt;/svg&gt;</span></span>
-<span class="code-line"></span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;svg&gt;</span>
+<span class="w">  </span><span class="nt">&lt;defs&gt;</span>
+<span class="w">    </span><span class="nt">&lt;clipPath</span><span class="w"> </span><span class="na">id=</span><span class="s">"bluerect"</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;rect</span><span class="w"> </span><span class="na">x=</span><span class="s">0</span><span class="w"> </span><span class="na">y=</span><span class="s">0</span><span class="w"> </span><span class="na">height=</span><span class="s">300</span><span class="w"> </span><span class="na">width=</span><span class="s">150</span><span class="nt">&gt;&lt;/rect&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/clipPath&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/defs&gt;</span><span class="w"> </span>
+<span class="nt">&lt;/svg&gt;</span>
+</code></pre></div>
 
 <p>Once defined in the defs section the clip path can be applied to an element
 by adding a <strong>clip-path</strong> attribute on the element. The blue is removed
 from the example code for code clarity. 
 <sup id="sf-clippaths-1-back"><a href="#sf-clippaths-1" class="simple-footnote" title=" While sample bl.ocks are great sometimes when going through them it's hard to isolate the specific feature I'm trying to learn from all the other functionality">1</a></sup></p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"circle"</span><span class="p">)</span></code></span><code>
-<span class="code-line"><span class="w">   </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"cx"</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="o">/</span><span class="mf">2</span><span class="p">)</span></span>
-<span class="code-line"><span class="w">   </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"cy"</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="o">/</span><span class="mf">2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">r</span><span class="p">)</span></span>
-<span class="code-line"><span class="w">   </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"r"</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">)</span></span>
-<span class="code-line"><span class="w">   </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"clip-path"</span><span class="p">,</span><span class="w"> </span><span class="s2">"url(#cliprect)"</span><span class="p">)</span></span>
-<span class="code-line"></span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nx">g</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"circle"</span><span class="p">)</span>
+<span class="w">   </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"cx"</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="o">/</span><span class="mf">2</span><span class="p">)</span>
+<span class="w">   </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"cy"</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="o">/</span><span class="mf">2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">r</span><span class="p">)</span>
+<span class="w">   </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"r"</span><span class="p">,</span><span class="w"> </span><span class="mf">10</span><span class="p">)</span>
+<span class="w">   </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"clip-path"</span><span class="p">,</span><span class="w"> </span><span class="s2">"url(#cliprect)"</span><span class="p">)</span>
+</code></pre></div>
 
 <div id="staticclipped"></div>
 <p>The clip path clearly worked but unfortunately it stick with the element
@@ -202,17 +167,17 @@ case this is EXTREMELY handy as it allows us to do two major things</p>
 <li>Apply the clip group to a group that is not transformed</li>
 </ul>
 <p>The simplified SVG structure looks like this.</p>
-<div class="highlight"><pre><span class="code-line"><span></span><code><span class="nt">&lt;svg&gt;</span></code></span><code>
-<span class="code-line"><span class="nt">&lt;g</span><span class="w"> </span><span class="na">id=</span><span class="s">"alwaysvisiblecircle"</span><span class="w"> </span><span class="na">class=</span><span class="s">"pan_and_zoom_class"</span><span class="nt">&gt;</span></span>
-<span class="code-line"><span class="w">  </span><span class="nt">&lt;circle&gt;</span></span>
-<span class="code-line"><span class="nt">&lt;/g&gt;</span></span>
-<span class="code-line"><span class="nt">&lt;g</span><span class="w"> </span><span class="na">id=</span><span class="s">"url(#clippathdef)"</span><span class="nt">&gt;</span></span>
-<span class="code-line"><span class="w">  </span><span class="nt">&lt;g</span><span class="w"> </span><span class="na">class=</span><span class="s">"pan_and_zoom_class"</span><span class="nt">&gt;</span></span>
-<span class="code-line"><span class="w">    </span><span class="nt">&lt;circle&gt;</span></span>
-<span class="code-line"><span class="w">  </span><span class="nt">&lt;/g&gt;</span></span>
-<span class="code-line"><span class="nt">&lt;/g&gt;</span></span>
-<span class="code-line"><span class="nt">&lt;/svg&gt;</span></span>
-<span class="code-line"></span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;svg&gt;</span>
+<span class="nt">&lt;g</span><span class="w"> </span><span class="na">id=</span><span class="s">"alwaysvisiblecircle"</span><span class="w"> </span><span class="na">class=</span><span class="s">"pan_and_zoom_class"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;circle&gt;</span>
+<span class="nt">&lt;/g&gt;</span>
+<span class="nt">&lt;g</span><span class="w"> </span><span class="na">id=</span><span class="s">"url(#clippathdef)"</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;g</span><span class="w"> </span><span class="na">class=</span><span class="s">"pan_and_zoom_class"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;circle&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/g&gt;</span>
+<span class="nt">&lt;/g&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+</code></pre></div>
 
 <div id="clipped"></div>
 
@@ -236,8 +201,8 @@ from all the other functionality <a href="#sf-clippaths-1-back" class="simple-fo
     <div class="wrapper footer-wrapper">
         <div class="footer-left">
             <div class="footer-logo">
-                <a href="https://ravinkumar.com">
-                    <img src="https://ravinkumar.com/images/logo/logo.png"/>
+                <a href=".">
+                    <img src="./images/logo/logo.png"/>
                 </a>
             </div>
             <div class="footer-mailer">
@@ -281,14 +246,9 @@ from all the other functionality <a href="#sf-clippaths-1-back" class="simple-fo
     </div>
 </div>
 		<!-- Javascript -->
-		<script type="text/javascript" src="https://ravinkumar.com/theme/js/main.js"></script>
+		<script type="text/javascript" src="./theme/js/main.js"></script>
 		
-		<!-- Javascript for Pelican Javascript plugin -->
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
-					<script src="https://ravinkumar.com/js/unclipped.js"></script>
-					<script src="https://ravinkumar.com/js/clippath_groups.js"></script>
-					<script src="https://ravinkumar.com/js/clippath.js"></script>
-		
+
 	</body>
 
 </html>

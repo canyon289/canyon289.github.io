@@ -81,28 +81,3 @@ code {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-/* Following http://bililite.com/blog/2012/08/05/line-numbering-in-pre-elements/,
- use CSS to add line numbers to all spans that have the class 'code-line' */
-
-.highlight pre {
-    counter-reset: linecounter;
-    padding-left: 2em;
-}
-.highlight pre span.code-line {
-    counter-increment: linecounter;
-    padding-left: 1em;
-    text-indent: -1em;
-    /* display: inline-block; */
-}
-.highlight pre span.code-line:before {
-    content: counter(linecounter);
-    padding-right: 1em;
-    width: 1em;
-    margin-right: 5px;
-    display: inline-block;
-    color: black;
-    text-align: right;
-    border-right: 1px solid black;
-
-}
-
