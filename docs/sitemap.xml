@@ -1,12 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://ravinkumar.com/APivot.html</loc>
-    <lastmod>2016-10-01T10:20:00-07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://ravinkumar.com/AzurePipelines.html</loc>
     <lastmod>2019-06-02T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -21,18 +15,6 @@
   <url>
     <loc>https://ravinkumar.com/BayesianGlossary.html</loc>
     <lastmod>2019-01-14T00:00:00-08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ravinkumar.com/BookClub2022.html</loc>
-    <lastmod>2022-05-27T00:00:00-07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ravinkumar.com/CodingConfusion.html</loc>
-    <lastmod>2018-03-12T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -55,12 +37,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravinkumar.com/DeepRLBootcamp.html</loc>
-    <lastmod>2017-08-27T00:00:00-07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://ravinkumar.com/DockerforDS.html</loc>
     <lastmod>2019-01-20T00:00:00-08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -79,18 +55,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravinkumar.com/GettingADSJob.html</loc>
-    <lastmod>2022-04-24T00:00:00-07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ravinkumar.com/GettingAJob.html</loc>
-    <lastmod>2022-04-17T00:00:00-07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://ravinkumar.com/ImplementingD3Zoom.html</loc>
     <lastmod>2016-08-27T00:00:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -99,12 +63,6 @@
   <url>
     <loc>https://ravinkumar.com/InferenceCheatsheet.html</loc>
     <lastmod>2019-02-07T00:00:00-08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ravinkumar.com/LAMetro.html</loc>
-    <lastmod>2017-03-08T00:00:00-08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -141,12 +99,6 @@
   <url>
     <loc>https://ravinkumar.com/NowAvailableReferenceSheets.html</loc>
     <lastmod>2019-01-26T00:00:00-08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ravinkumar.com/OpinionatedSoftware.html</loc>
-    <lastmod>2016-10-03T10:20:00-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -193,56 +145,32 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravinkumar.com/UdacityMLND.html</loc>
-    <lastmod>2018-01-04T00:00:00-08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://ravinkumar.com/UsingLinux.html</loc>
     <lastmod>2016-11-27T00:00:00-08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ravinkumar.com/WhyDS.html</loc>
-    <lastmod>2016-02-21T10:20:00-08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ravinkumar.com/WhyFitness.html</loc>
-    <lastmod>2021-06-07T00:00:00-07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ravinkumar.com/WhyIChoseaSSG.html</loc>
-    <lastmod>2016-07-10T00:00:00-07:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://ravinkumar.com/archives.html</loc>
-    <lastmod>2026-04-26T16:45:35-00:00</lastmod>
+    <lastmod>2026-04-26T17:02:37-00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ravinkumar.com/authors.html</loc>
-    <lastmod>2026-04-26T16:45:35-00:00</lastmod>
+    <lastmod>2026-04-26T17:02:37-00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ravinkumar.com/blog.html</loc>
-    <lastmod>2026-04-26T16:45:35-00:00</lastmod>
+    <lastmod>2026-04-26T17:02:37-00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ravinkumar.com/categories.html</loc>
-    <lastmod>2026-04-26T16:45:35-00:00</lastmod>
+    <lastmod>2026-04-26T17:02:37-00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -259,14 +187,8 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://ravinkumar.com/ssm-book-club.html</loc>
-    <lastmod>2022-12-26T00:00:00-08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://ravinkumar.com/tags.html</loc>
-    <lastmod>2026-04-26T16:45:35-00:00</lastmod>
+    <lastmod>2026-04-26T17:02:37-00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

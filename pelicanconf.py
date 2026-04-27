@@ -53,7 +53,26 @@ SITEMAP = {
     "format": "xml",
     "priorities": {"articles": 0.8, "indexes": 0.5, "pages": 0.5},
     "changefreqs": {"articles": "monthly", "indexes": "daily", "pages": "monthly"},
-    "exclude": ["tag/", "category/", "author/", "drafts/"],
+    "exclude": [
+        "tag/",
+        "category/",
+        "author/",
+        "drafts/",
+        # Personal / opinion / dated review pages — kept live but hidden from sitemap
+        "LAMetro.html",
+        "WhyFitness.html",
+        "APivot.html",
+        "WhyDS.html",
+        "BookClub2022.html",
+        "ssm-book-club.html",
+        "UdacityMLND.html",
+        "DeepRLBootcamp.html",
+        "GettingAJob.html",
+        "GettingADSJob.html",
+        "OpinionatedSoftware.html",
+        "CodingConfusion.html",
+        "WhyIChoseaSSG.html",
+    ],
 }
 
 
