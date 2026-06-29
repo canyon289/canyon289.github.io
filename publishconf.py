@@ -8,5 +8,6 @@ from pelicanconf import *
 
 RELATIVE_URLS = False
 
-# Generate the Atom feed for the published site (linked as /atom.xml in the theme)
+# Generate the Atom and RSS feeds for the published site (linked in the theme)
 FEED_ALL_ATOM = 'atom.xml'
+FEED_ALL_RSS = 'rss.xml'
