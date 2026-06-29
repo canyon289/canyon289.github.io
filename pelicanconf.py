@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 AUTHOR = 'Ravin Kumar'
-SITENAME = ['Ravin Kumar']
+SITENAME = 'Ravin Kumar'
 SITEURL = 'https://ravinkumar.com'
 META_DESCRIPTION = 'Ravin Kumar is a small and large model builder and an open source contributor.'
 
@@ -24,7 +24,7 @@ STATIC_PATHS = ['images', 'data', 'js', 'css']
 
 OUTPUT_RETENTION = [".git", "dev", "CNAME"]
 
-GOOGLE_ANALYTICS = 'UA-52706904-2'
+GOOGLE_ANALYTICS = 'G-8BWZ14X2XP'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
