@@ -16,6 +16,11 @@ dependencies = [
 ]
 
 [tool.uv]
+
+[dependency-groups]
+dev = [
+    "playwright>=1.61.0",
+]
 # Run all pelican commands from the dev/ directory:
 #   uv run pelican -r -s pelicanconf.py    (dev server)
 #   uv run pelican -s publishconf.py       (production build)

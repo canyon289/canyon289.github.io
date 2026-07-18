@@ -102,7 +102,7 @@ save_as: index.html
         text-align: left
     }
     h1:not(.page-title), h2, h3, h4 {
-        margin-top: 2.5rem;
+        margin-top: 1rem;
     }
     .action-link h3 {
         margin: auto 1rem;
@@ -119,7 +119,7 @@ save_as: index.html
     }
     .about-container .about-box {
         flex: 1;
-        padding: 2rem;
+        padding: 1rem 2rem;
     }
     #action-links {
         max-width: 100%;
@@ -232,17 +232,18 @@ save_as: index.html
 <!-- Left -->
     <div class="about-box">
         <h1 style="margin-top:0; text-align: left;">About Me</h1>
-        <p>I am a researcher at Google Deepmind working on Gemma and Gemini models. 
-        I have 10+ years of experience on applied generative models.
-        Prior to LLMS, I built bespoke probabilistic Bayesian models for organizations such as SpaceX.
+        <p>I lead focused teams building applied models at the intersection of digital and physical technology, with 10+ years of experience turning generative research into real-world products. Currently I lead a research team at Google Deepmind focused on specialized Gemma models.
         </p>
-        <p>At Google I contributed both to products such as <a href="https://notebooklm.google.com"> NotebookLM </a> and <a href="https://deepmind.google/models/project-mariner/"> Project Mariner </a>. You can find my work on <a href="https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en"> Google Scholar </a>, <a href="./blog.html">my blog</a>, on <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live">my YouTube channel</a>, or in my text books. </p>
+        <p>I've also contributed to Gemini model development and products such as <a href="https://notebooklm.google.com"> NotebookLM </a> and <a href="https://deepmind.google/models/project-mariner/"> Project Mariner </a>. You can find my work on <a href="https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en"> Google Scholar </a>, <a href="./blog.html">my blog</a>, on <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live">my YouTube channel</a>, or in my text books. </p>
+        <p>Prior to LLMs, I led a team building bespoke probabilistic Bayesian models for organizations such as SpaceX.
+        </p>
         <p>I also contribute heavily to open source, mainly with <a href="https://arviz-devs.github.io/arviz/index.html">ArviZ</a> and <a href="https://docs.pymc.io/">PyMC</a>.
         I'm always happy to connect with interested folks. Feel free to reach out anytime.</p>
     </div>
 <!-- Right -->
     <div class="about-box">
         <h1 style="margin-top:0; text-align: left;">Find Me Elsewhere</h1>
+        <a href="https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en"><div class="action-link"><img src="./images/about/scholar.svg" /><h3>My Google Scholar</h3></div></a>
         <a href="https://github.com/canyon289/"><div class="action-link"><img src="./images/about/github.png" /><h3>My Open Source Profile</h3></div></a>
         <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live"><div class="action-link"><img src="./images/about/youtube.png" /><h3>My YouTube Channel</h3></div></a>
         <a href="https://ravinkumar.com/GenAiGuidebook/book_intro.html"><div class="action-link"><img src="./images/about/GenaIGuidebook.png" /><h3>Guide to Generative AI</h3></div></a>
@@ -261,7 +262,7 @@ save_as: index.html
     <div class="my-work-img-container"><img src="./images/about/functiongemma.png" /></div>
     <div class="my-work-text">
         <h3>FunctionGemma</h3>
-        <p>I led training, design, and release of FunctionGemma, a specialized Gemma model built for on-device function calling.</p>
+        <p>Led training, design, and release of FunctionGemma, a specialized Gemma model built for on-device function calling.</p>
     </div>
 </div></a></div>
 
@@ -278,15 +279,15 @@ save_as: index.html
     <div class="my-work-img-container"><img src="./images/about/book.jpeg" /></div>
     <div class="my-work-text">
         <h3>Bayesian Modeling and Computation in Python</h3>
-        <p>I co-authored a free, open-source textbook used by thousands for statistical modeling.</p>
+        <p>Co-authored a free, open-source textbook used by thousands for statistical modeling.</p>
     </div>
 </div></a></div>
 
 <div><a href="https://www.intuitivebayes.com/"><div class="secondary-box my-work">
     <div class="my-work-img-container"><img src="./images/about/course.png" /></div>
     <div class="my-work-text">
-        <h3>Built Another Business</h3>
-        <p>Built and grew Intuitive Bayes, a business teaching working professionals applied generative Bayesian modeling.</p>
+        <h3>Intuitive Bayes</h3>
+        <p>Founded and grew a business teaching working professionals applied generative Bayesian modeling.</p>
     </div>
 </div></a></div>
 
@@ -294,7 +295,7 @@ save_as: index.html
     <div class="my-work-img-container"><img src="./images/about/spacex.png" /></div>
     <div class="my-work-text">
         <h3>SpaceX</h3>
-        <p>Built supply chain models and software that helped build a lot of rockets.</p>
+        <p>Led a team building supply chain models and software that powered rocket production.</p>
     </div>
 </div></div>
 
@@ -302,7 +303,7 @@ save_as: index.html
     <div class="my-work-img-container"><img src="./images/about/formulahybrid.jpg" /></div>
     <div class="my-work-text">
         <h3>Cal Poly Pomona Formula Hybrid</h3>
-        <p>Led a student team that built a hybrid car from scratch.</p>
+        <p>Captained a student team that built a hybrid car from scratch.</p>
     </div>
 </div></a></div>
 
