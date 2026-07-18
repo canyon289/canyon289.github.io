@@ -3,7 +3,7 @@
 AUTHOR = 'Ravin Kumar'
 SITENAME = 'Ravin Kumar'
 SITEURL = 'https://ravinkumar.com'
-META_DESCRIPTION = 'Ravin Kumar is a small and large model builder and an open source contributor.'
+META_DESCRIPTION = 'Ravin is an AI researcher at Deepmind and in open source with a focus on specialized model training, physical AI, and safety.'
 
 # Content Path
 PATH = 'dev/content'
