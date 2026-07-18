@@ -4,8 +4,7 @@ publish: notebooks
 	bash publish.sh
 
 preview: notebooks
-	uv run pelican -s pelicanconf.py
-	cd docs && uv run python -m http.server 8000
+	uv run pelican -lr -s pelicanconf.py
 
 notebooks:
 	uv run python convert_notebooks.py

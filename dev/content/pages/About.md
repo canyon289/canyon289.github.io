@@ -96,6 +96,7 @@ save_as: index.html
     /* Headers */
     h1, h2 {
         text-align: center;
+        color: #00524b;
     }
     h3 {
         text-align: left
@@ -148,7 +149,7 @@ save_as: index.html
     .action-link, .secondary-box {
         border-radius: 5px;
         margin: 1.5%;
-        padding: 15px;
+        padding: 8px 15px;
     }
     .secondary-box {
         border: solid 1px #56bb92;
@@ -162,6 +163,20 @@ save_as: index.html
     .my-work-text {
         color: #12221d;
         margin: auto 0;
+    }
+    .my-work-text a {
+        color: inherit;
+        text-decoration: underline;
+        position: relative;
+        z-index: 2;
+    }
+    .my-work {
+        position: relative;
+    }
+    .card-link-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
     }
     
     /* Images */
@@ -227,7 +242,7 @@ save_as: index.html
     </div>
 <!-- Right -->
     <div class="about-box">
-        <h1 style="margin-top:0; text-align: left;">Some Highlights</h1>
+        <h1 style="margin-top:0; text-align: left;">Find Me Elsewhere</h1>
         <a href="https://github.com/canyon289/"><div class="action-link"><img src="./images/about/github.png" /><h3>My Open Source Profile</h3></div></a>
         <a href="https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live"><div class="action-link"><img src="./images/about/youtube.png" /><h3>My YouTube Channel</h3></div></a>
         <a href="https://ravinkumar.com/GenAiGuidebook/book_intro.html"><div class="action-link"><img src="./images/about/GenaIGuidebook.png" /><h3>Guide to Generative AI</h3></div></a>
@@ -240,7 +255,24 @@ save_as: index.html
     </div>
 </div>
 
-# See my work
+# Highlights
+
+<div><a href="https://blog.google/innovation-and-ai/technology/developers-tools/functiongemma/"><div class="secondary-box my-work">
+    <div class="my-work-img-container"><img src="./images/about/functiongemma.png" /></div>
+    <div class="my-work-text">
+        <h3>FunctionGemma</h3>
+        <p>I led training, design, and release of FunctionGemma, a specialized Gemma model built for on-device function calling.</p>
+    </div>
+</div></a></div>
+
+<div><div class="secondary-box my-work">
+    <a class="card-link-overlay" href="https://developers.googleblog.com/en/introducing-gemma-3-270m/" aria-label="Gemma3 270m"></a>
+    <div class="my-work-img-container"><img src="./images/about/gemma270m.png" /></div>
+    <div class="my-work-text">
+        <h3>Gemma3 270m</h3>
+        <p>Led Gemma 270m design and release. Currently tracking at 2 million downloads per month on <a href="https://huggingface.co/google/gemma-3-270m">Hugging Face</a>.</p>
+    </div>
+</div></div>
 
 <div><a href="https://bayesiancomputationbook.com/welcome.html"><div class="secondary-box my-work">
     <div class="my-work-img-container"><img src="./images/about/book.jpeg" /></div>
@@ -253,8 +285,24 @@ save_as: index.html
 <div><a href="https://www.intuitivebayes.com/"><div class="secondary-box my-work">
     <div class="my-work-img-container"><img src="./images/about/course.png" /></div>
     <div class="my-work-text">
-        <h3>Courses in Intuitive Statistics</h3>
-        <p>I developed a series of hands-on courses to help professionals master applied statistics.</p>
+        <h3>Built Another Business</h3>
+        <p>Built and grew Intuitive Bayes, a business teaching working professionals applied generative Bayesian modeling.</p>
+    </div>
+</div></a></div>
+
+<div><div class="secondary-box my-work">
+    <div class="my-work-img-container"><img src="./images/about/spacex.png" /></div>
+    <div class="my-work-text">
+        <h3>SpaceX</h3>
+        <p>Built supply chain models and software that helped build a lot of rockets.</p>
+    </div>
+</div></div>
+
+<div><a href="https://www.youtube.com/watch?v=DgiiOAurdlA"><div class="secondary-box my-work">
+    <div class="my-work-img-container"><img src="./images/about/formulahybrid.jpg" /></div>
+    <div class="my-work-text">
+        <h3>Cal Poly Pomona Formula Hybrid</h3>
+        <p>Led a student team that built a hybrid car from scratch.</p>
     </div>
 </div></a></div>
 
