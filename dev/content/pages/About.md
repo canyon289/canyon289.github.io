@@ -291,13 +291,13 @@ save_as: index.html
     </div>
 </div></a></div>
 
-<div><div class="secondary-box my-work">
+<div><a href="./BayesianDecisionMaking.html"><div class="secondary-box my-work">
     <div class="my-work-img-container"><img src="./images/about/spacex.png" /></div>
     <div class="my-work-text">
         <h3>SpaceX</h3>
         <p>Led a team building supply chain models and software that powered rocket production.</p>
     </div>
-</div></div>
+</div></a></div>
 
 <div><a href="https://www.youtube.com/watch?v=DgiiOAurdlA"><div class="secondary-box my-work">
     <div class="my-work-img-container"><img src="./images/about/formulahybrid.jpg" /></div>
