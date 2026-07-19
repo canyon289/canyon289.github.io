@@ -20,7 +20,7 @@ THEME = "dev/themes/custom"
 
 SUMMARY_MAX_LENGTH = 0
 
-STATIC_PATHS = ['images', 'data', 'js', 'css']
+STATIC_PATHS = ['images', 'data', 'js', 'css', 'extra/robots.txt']
 
 OUTPUT_RETENTION = [".git", "dev", "CNAME"]
 
@@ -91,7 +91,8 @@ MARKDOWN = {
                 }
 
 EXTRA_PATH_METADATA = {
-    'images/logo/favicon.ico': {'path': 'favicon.ico'}
+    'images/logo/favicon.ico': {'path': 'favicon.ico'},
+    'extra/robots.txt': {'path': 'robots.txt'},
 }
 
 INDEX_SAVE_AS = 'blog.html'
