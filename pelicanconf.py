@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-AUTHOR = 'Ravin Kumar'
+AUTHOR = 'Ravin Kumar - Research Engineer at Deepmind'
 SITENAME = 'Ravin Kumar'
 SITEURL = 'https://ravinkumar.com'
-META_DESCRIPTION = 'Ravin is an AI researcher at Deepmind and in open source with a focus on specialized model training, physical AI, and safety.'
+META_DESCRIPTION = 'Ravin is an AI researcher at Deepmind and open source contributor with a focus on specialized model training, physical AI, and safety.'
 
 # Content Path
 PATH = 'dev/content'
