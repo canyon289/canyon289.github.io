@@ -194,10 +194,10 @@ save_as: index.html
     }
 </style>
 
-<svg viewbox="0 0 100 100" style="opacity:12%;max-width:100px;max-height:100px; margin:40px auto;">
+<svg viewbox="0 0 100 100" style="opacity:100%;max-width:100px;max-height:100px; margin:40px auto;">
     <style type="text/css">
         path {
-            fill: none;
+            fill-opacity: 0;
             stroke: #12221D;
             stroke-width: 0.1rem;
             stroke-miterlimit: 10;
@@ -205,26 +205,60 @@ save_as: index.html
         }
         #K-triangle-1,
         #K-triangle-2 {
+            fill: #00524b;
             stroke-dasharray: 1;
             stroke-dashoffset: 1;
-            animation: dash 2s linear forwards;
+            animation: dash 2s linear forwards,
+                       fill-in 0.6s ease forwards 2s,
+                       stroke-fade 0.3s linear forwards 2s;
         }
-        #R-triangle-circle {
+        #R-bulge {
+            fill: #00524b;
             stroke-dasharray: 1;
             stroke-dashoffset: 1;
-            animation: dash 2.4s linear forwards;           }
+            animation: dash 1.5s linear forwards,
+                       fill-in 0.5s ease forwards 1.5s,
+                       stroke-fade 0.3s linear forwards 1.5s;
+        }
+        #R-leg {
+            fill: #00524b;
+            stroke-dasharray: 1;
+            stroke-dashoffset: 1;
+            animation: dash 0.9s linear forwards 1.5s,
+                       fill-in 0.5s ease forwards 2.4s,
+                       stroke-fade 0.3s linear forwards 2.4s;
+        }
+        #R-accent,
+        #K-accent {
+            fill: #56bb92;
+            stroke: none;
+            animation: fill-in 0.5s ease forwards 2.9s;
+        }
         @keyframes dash {
             to {
                 stroke-dashoffset: 0;
             }
         }
+        @keyframes fill-in {
+            to {
+                fill-opacity: 1;
+            }
+        }
+        @keyframes stroke-fade {
+            to {
+                stroke-opacity: 0;
+            }
+        }
     </style>
     <g id="R">
-        <path id="R-triangle-circle" d="M 15 42.1297 L 43.5792 91.6304 L 15 91.6304 L 15 8.3696 A 32.0984 32.0984 0 0 1 15 72.5664 Z" pathLength="1"/>
+        <path id="R-bulge" d="M 15 42.1297 L 15 8.3696 A 32.0984 32.0984 0 0 1 15 72.5664 Z" pathLength="1"/>
+        <path id="R-leg" d="M 15 42.1297 L 43.5792 91.6304 L 15 91.6304 Z" pathLength="1"/>
+        <path id="R-accent" d="M 15 43 L 15 68 L 26 62 Z" pathLength="1"/>
     </g>
     <g id="K">
         <path id="K-triangle-1" d="M 56.2434 58.1775 L 85 8.3696 L 56.2434 8.3696 Z" pathLength="1"/>
         <path id="K-triangle-2" d="M 56.2434 42.1297 L 85 91.6304 L 56.2434 91.6304 Z" pathLength="1"/>
+        <path id="K-accent" d="M 56.2434 45 L 56.2434 55 L 59.5 50 Z" pathLength="1"/>
     </g>
 </svg>
 
