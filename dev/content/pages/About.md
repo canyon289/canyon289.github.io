@@ -26,7 +26,6 @@ save_as: index.html
         "https://www.youtube.com/channel/UCX78cJQ_6JZVUWw8cj-f0uA/live",
         "https://github.com/settings/profile",
         "https://x.com/canyon289",
-        "https://scholar.google.com/citations?user=Oq99ddEAAAAJ&hl=en&authuser=2",
         "https://bsky.app/profile/ravink.bsky.social"
       ],
       "knowsAbout": [
